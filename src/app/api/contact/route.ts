@@ -1,13 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
-// Parse recipients from env (comma-separated)
-const getRecipients = () => {
-  const recipients = process.env.CONTACT_EMAIL_RECIPIENTS || 'ethanr@silq.tech,brianm@silq.tech'
-  return recipients.split(',').map(email => email.trim())
-}
+// Email sending is disabled until Resend is configured
+// Set RESEND_API_KEY environment variable to enable email sending
 
 export async function POST(request: NextRequest) {
   try {
@@ -31,81 +25,52 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const recipients = getRecipients()
+    // Check if Resend is configured
+    const resendApiKey = process.env.RESEND_API_KEY
 
-    // Send email via Resend
-    const { data, error } = await resend.emails.send({
-      from: 'Silq Website <noreply@silq.tech>',
-      to: recipients,
-      replyTo: email,
-      subject: `New Contact Form: ${inquiryType || 'General Inquiry'} from ${name}`,
-      html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-            body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #1E4A6D 0%, #2D5F7E 100%); color: white; padding: 24px; border-radius: 8px 8px 0 0; }
-            .content { background: #f9fafb; padding: 24px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 8px 8px; }
-            .field { margin-bottom: 16px; }
-            .label { font-size: 12px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; }
-            .value { font-size: 15px; color: #1a1a1a; margin-top: 4px; }
-            .message-box { background: white; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb; margin-top: 8px; }
-            .footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #9ca3af; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
-              <h1 style="margin: 0; font-size: 20px;">New Contact Form Submission</h1>
-              <p style="margin: 8px 0 0; opacity: 0.8; font-size: 14px;">${inquiryType || 'General Inquiry'}</p>
-            </div>
-            <div class="content">
-              <div class="field">
-                <div class="label">Name</div>
-                <div class="value">${name}</div>
-              </div>
-              <div class="field">
-                <div class="label">Email</div>
-                <div class="value"><a href="mailto:${email}">${email}</a></div>
-              </div>
-              ${company ? `
-              <div class="field">
-                <div class="label">Company</div>
-                <div class="value">${company}</div>
-              </div>
-              ` : ''}
-              ${phone ? `
-              <div class="field">
-                <div class="label">Phone</div>
-                <div class="value"><a href="tel:${phone}">${phone}</a></div>
-              </div>
-              ` : ''}
-              <div class="field">
-                <div class="label">Message</div>
-                <div class="message-box">${message.replace(/\n/g, '<br>')}</div>
-              </div>
-              <div class="footer">
-                <p>Submitted from silq.tech contact form</p>
-                <p>Reply directly to this email to respond to ${name}</p>
-              </div>
-            </div>
-          </div>
-        </body>
-        </html>
-      `,
-    })
+    if (resendApiKey && resendApiKey !== 'your_api_key_here') {
+      // Dynamic import to avoid build errors when Resend isn't configured
+      const { Resend } = await import('resend')
+      const resend = new Resend(resendApiKey)
+      
+      const recipients = (process.env.CONTACT_EMAIL_RECIPIENTS || 'ethanr@silq.tech,brianm@silq.tech')
+        .split(',')
+        .map(e => e.trim())
 
-    if (error) {
-      console.error('Resend error:', error)
-      return NextResponse.json(
-        { error: 'Failed to send email' },
-        { status: 500 }
-      )
+      const { error } = await resend.emails.send({
+        from: 'Silq Website <noreply@silq.tech>',
+        to: recipients,
+        replyTo: email,
+        subject: `New Contact Form: ${inquiryType || 'General Inquiry'} from ${name}`,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
+          ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
+          <p><strong>Inquiry Type:</strong> ${inquiryType || 'General'}</p>
+          <p><strong>Message:</strong></p>
+          <p>${message.replace(/\n/g, '<br>')}</p>
+        `,
+      })
+
+      if (error) {
+        console.error('Resend error:', error)
+        // Still return success to user - we'll see error in logs
+      } else {
+        console.log('Email sent successfully')
+      }
+    } else {
+      // Log submission when email is not configured (staging mode)
+      console.log('=== CONTACT FORM SUBMISSION (Email not configured) ===')
+      console.log('Name:', name)
+      console.log('Email:', email)
+      console.log('Company:', company || 'Not provided')
+      console.log('Phone:', phone || 'Not provided')
+      console.log('Inquiry Type:', inquiryType || 'General')
+      console.log('Message:', message)
+      console.log('================================================')
     }
-
-    console.log('Email sent successfully:', data)
 
     return NextResponse.json(
       { success: true, message: 'Form submitted successfully' },
