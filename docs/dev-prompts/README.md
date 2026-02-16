@@ -6,14 +6,15 @@ This folder contains comprehensive specification documents for the Silq Technolo
 
 | Document | Purpose | Priority |
 |----------|---------|----------|
-| **DEV_PROMPT_SYSTEM_VERIFICATION.md** | System Verification, Bug Fixes & Deployment: Ensure all pages work, email setup, GitHub + Digital Ocean deployment | 🔴 CRITICAL |
+| **DEV_PROMPT_VISUAL_ENHANCEMENT.md** | Visual polish & content tightening: Remove redundant text, clean aesthetics, investor-ready | 🔴 CRITICAL |
 
-## After System Verification
+## Completed / Reference
 
-| Document | Purpose | Priority |
-|----------|---------|----------|
-| **DEV_PROMPT_FINAL_POLISH.md** | Final Polish & Code Cleanup: Fix formatting, enhance copy, remove unused code | ⚠️ After Verification |
-| **DEV_PROMPT_HOMEPAGE_ENHANCEMENTS.md** | Homepage & Site Enhancements: News cards, GPO logos, testimonial integration | ⚠️ After Polish |
+| Document | Purpose | Status |
+|----------|---------|--------|
+| **DEV_PROMPT_SYSTEM_VERIFICATION.md** | System Verification & Deployment setup | ✅ Deployed |
+| **DEV_PROMPT_FINAL_POLISH.md** | Code cleanup, remove unused components | ⚠️ Reference |
+| **DEV_PROMPT_HOMEPAGE_ENHANCEMENTS.md** | Homepage features (news cards, etc.) | ⚠️ Reference |
 
 ## Recently Completed
 
