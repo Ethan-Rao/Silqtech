@@ -69,7 +69,7 @@ export default function TeamPage() {
         
         <div className="container-silq text-center relative">
               <h1 className="text-hero-sm md:text-hero font-bold text-silq-dark">
-            The Story. <span className="bg-gradient-to-r from-silq-blue to-silq-teal bg-clip-text text-transparent">The Team.</span>
+            Leadership
           </h1>
           <p className="mt-6 text-lg text-silq-dark/70 max-w-2xl mx-auto">
             Silq Technologies brings together world-class experts in material science, medical devices, and business development to transform surface technology.

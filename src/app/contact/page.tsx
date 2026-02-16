@@ -53,7 +53,7 @@ export default function ContactPage() {
             <div className="lg:pl-8">
               <div className="sticky top-32">
                 <h2 className="text-2xl font-bold text-silq-dark mb-8">
-                    Contact Information
+                    Contact
                 </h2>
 
                 <div className="space-y-8">

@@ -20,9 +20,6 @@ export default function TechnologyPage() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-silq-blue blur-3xl" />
         </div>
         <div className="container-silq text-center relative z-10">
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold text-silq-teal bg-silq-teal/10 rounded-full border border-silq-teal/20 backdrop-blur-sm">
-            UCLA-Born Innovation
-          </span>
           <h1 className="text-hero-sm md:text-hero font-bold">
             Platform <span className="text-transparent bg-clip-text bg-gradient-to-r from-silq-teal to-silq-teal/80">Technology</span>
           </h1>
@@ -32,7 +29,7 @@ export default function TechnologyPage() {
           <div className="mt-8 flex justify-center">
             <Link href="/contact">
               <Button variant="primary" size="lg">
-                Schedule a Consultation
+                Get Started
               </Button>
             </Link>
           </div>
@@ -45,11 +42,8 @@ export default function TechnologyPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
             {/* Left: Contact Angle Data */}
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-silq-blue mb-2">
-                Wide Applicability
-              </p>
               <h2 className="text-display-sm font-bold text-silq-dark mb-4">
-                Works Across Materials
+                Multi-Substrate Compatibility
               </h2>
               <p className="text-silq-dark/70 mb-8">
                 Our treatment demonstrates consistent performance across multiple polymer substrates.
@@ -188,7 +182,7 @@ export default function TechnologyPage() {
         <div className="container-silq">
           <div className="text-center mb-12">
             <h2 className="text-display-sm font-bold text-silq-dark">
-              Customizable Surface Properties
+              Surface Properties
             </h2>
             <p className="text-silq-dark/60 mt-3 max-w-xl mx-auto">
               Tunable performance characteristics for diverse application requirements.
@@ -273,7 +267,7 @@ export default function TechnologyPage() {
               License Our Technology
             </h2>
             <p className="text-white/60 mb-8 max-w-lg mx-auto">
-              Partner with us to bring proven antibiofouling technology to your devices.
+              Bring antibiofouling technology to your devices.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <Link href="/products/surface-treatment">

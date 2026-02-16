@@ -15,9 +15,6 @@ export default function SurfaceTreatmentPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-silq-dark via-silq-blue-900 to-silq-dark text-white relative overflow-hidden">
         <div className="container-silq text-center relative">
-          <span className="inline-block px-4 py-1.5 mb-4 text-sm font-semibold text-silq-teal bg-silq-teal/20 rounded-full">
-            For Device Manufacturers
-          </span>
           <h1 className="text-hero-sm md:text-hero font-bold">
             External Coating <span className="text-silq-teal">Solutions</span>
           </h1>
@@ -27,7 +24,7 @@ export default function SurfaceTreatmentPage() {
           <div className="mt-8 flex justify-center">
             <Link href="/contact">
               <Button variant="primary" size="lg">
-                Request Partnership Information
+                Partner With Us
               </Button>
             </Link>
           </div>
@@ -93,7 +90,7 @@ export default function SurfaceTreatmentPage() {
         <div className="container-silq">
           <div className="text-center mb-12">
             <h2 className="text-display-sm font-bold text-silq-dark">
-              Customizable Outcomes
+              Surface Properties
             </h2>
             <p className="text-silq-dark/60 mt-2 max-w-2xl mx-auto">
               The resulting surface can be customized to deliver a unique combination of properties.
@@ -187,9 +184,6 @@ export default function SurfaceTreatmentPage() {
       <section className="section-padding bg-silq-dark text-white">
         <div className="container-silq">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-display-sm font-bold mb-3">
-              Why Partner with Silq?
-            </h2>
             <p className="text-white/60 mb-8 max-w-xl mx-auto">
               A proven platform backed by world-class research and regulatory clearance.
             </p>

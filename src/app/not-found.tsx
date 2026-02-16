@@ -62,7 +62,7 @@ export default function NotFound() {
           
           {/* Helpful Links */}
           <div className="mt-10 pt-8 border-t border-silq-dark/10">
-            <p className="text-sm text-silq-dark/50 mb-4">Try these pages:</p>
+            <p className="text-sm text-silq-dark/50 mb-4">Try these:</p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <Link href="/products/cleartract" className="text-silq-blue hover:underline">
                 ClearTract® Catheters

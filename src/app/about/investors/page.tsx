@@ -18,11 +18,6 @@ export default function InvestorsPage() {
             Invest in Silq
           </h1>
           
-          {/* Decorative divider */}
-          <div className="mt-8 flex justify-center">
-            <div className="w-24 h-1 bg-gradient-to-r from-silq-blue to-silq-teal rounded-full" />
-          </div>
-          
           <p className="mt-6 text-lg text-silq-dark/70 max-w-2xl mx-auto">
             Fill out the form below to speak to a member of our team about investment 
             opportunities with Silq Technologies.
@@ -53,19 +48,19 @@ export default function InvestorsPage() {
                   {[
                     {
                       title: 'FDA-Cleared Product',
-                      description: 'FDA-cleared product in commercial distribution.',
+                      description: 'FDA-cleared product in market.',
                     },
                     {
                       title: 'Platform Technology',
-                      description: 'Platform technology applicable across device categories.',
+                      description: 'Platform technology for multiple device categories.',
                     },
                     {
                       title: 'Strong IP Portfolio',
-                      description: 'Strong IP portfolio with exclusive UCLA license.',
+                      description: 'Exclusive UCLA patent license.',
                     },
                     {
                       title: 'Large Market Opportunity',
-                      description: '$1B+ addressable market with clear unmet need.',
+                      description: '$1B+ addressable market.',
                     },
                     {
                       title: 'Experienced Team',
@@ -73,7 +68,7 @@ export default function InvestorsPage() {
                     },
                     {
                       title: 'Clinical Validation',
-                      description: 'Clinical evidence demonstrating efficacy.',
+                      description: 'Clinical evidence of efficacy.',
                     },
                   ].map((item, index) => (
                     <div key={index} className="flex gap-4">
@@ -176,9 +171,6 @@ export default function InvestorsPage() {
       <section className="py-16 bg-silq-cream">
         <div className="container-silq">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-silq-dark mb-8">
-              Credentials
-            </h2>
             <div className="flex flex-wrap justify-center items-center gap-8">
               <Image
                 src="/images/trust/ucla.jpg"

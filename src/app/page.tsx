@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -74,43 +73,7 @@ const newsItems = [
   },
 ]
 
-const placeholderTestimonials = [
-  {
-    quote: "Placeholder testimonial text. This will be replaced with actual content.",
-    author: "Placeholder Name",
-    role: "Title, Organization",
-  },
-  {
-    quote: "Placeholder testimonial text. This will be replaced with actual content.",
-    author: "Placeholder Name",
-    role: "Title, Organization",
-  },
-  {
-    quote: "Placeholder testimonial text. This will be replaced with actual content.",
-    author: "Placeholder Name",
-    role: "Title, Organization",
-  },
-  {
-    quote: "Placeholder testimonial text. This will be replaced with actual content.",
-    author: "Placeholder Name",
-    role: "Title, Organization",
-  },
-  {
-    quote: "Placeholder testimonial text. This will be replaced with actual content.",
-    author: "Placeholder Name",
-    role: "Title, Organization",
-  },
-  {
-    quote: "Placeholder testimonial text. This will be replaced with actual content.",
-    author: "Placeholder Name",
-    role: "Title, Organization",
-  },
-]
-
 export default function HomePage() {
-  const [testimonialIndex, setTestimonialIndex] = useState(0)
-  const maxIndex = Math.max(0, placeholderTestimonials.length - 2)
-
   return (
     <>
       {/* Section 1: Hero */}
@@ -138,7 +101,7 @@ export default function HomePage() {
                 Innovation That Matters
               </h2>
               <p className="text-silq-dark/70 mb-8">
-                Zwitterionic molecules create a hydration barrier that resists protein and bacterial adhesion—mimicking natural cell membranes.
+                Zwitterionic molecules create a hydration barrier that repels proteins and bacteria.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {features.map((feature, index) => (
@@ -241,9 +204,6 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-4 py-1.5 mb-4 text-sm font-semibold text-silq-teal bg-silq-teal/20 rounded-full">
-                FDA 510(k) Cleared
-              </span>
               <h2 className="text-display-sm font-bold mb-4">
                 ClearTract® Foley Catheters
               </h2>
@@ -264,78 +224,6 @@ export default function HomePage() {
             </motion.div>
           </div>
 
-          {/* Scrollable Testimonials */}
-          <div className="mt-16">
-            <h3 className="text-lg font-semibold text-white/90 mb-6 text-center">What People Are Saying</h3>
-            <div className="relative max-w-4xl mx-auto">
-              {/* Carousel */}
-              <div className="overflow-hidden rounded-xl">
-                <div 
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${testimonialIndex * (100 / 2)}%)` }}
-                >
-                  {placeholderTestimonials.map((t, i) => (
-                    <div key={i} className="w-1/2 flex-shrink-0 px-2">
-                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10 h-full">
-                        <svg className="w-6 h-6 text-silq-teal/40 mb-3" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
-                        </svg>
-                        <blockquote className="text-white/85 text-sm leading-relaxed mb-4">
-                          &ldquo;{t.quote}&rdquo;
-                        </blockquote>
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-full bg-silq-teal/30 flex items-center justify-center text-xs font-bold text-white">
-                            {t.author.split(' ').map(n => n[0]).join('')}
-                          </div>
-                          <div>
-                            <p className="font-medium text-white text-xs">{t.author}</p>
-                            <p className="text-white/50 text-xs">{t.role}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Navigation Arrows */}
-              <div className="flex justify-center items-center gap-4 mt-6">
-                <button
-                  onClick={() => setTestimonialIndex(Math.max(0, testimonialIndex - 1))}
-                  disabled={testimonialIndex === 0}
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors"
-                  aria-label="Previous testimonials"
-                >
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                
-                {/* Dots */}
-                <div className="flex gap-1.5">
-                  {Array.from({ length: maxIndex + 1 }, (_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setTestimonialIndex(i)}
-                      className={`w-2 h-2 rounded-full transition-colors ${i === testimonialIndex ? 'bg-silq-teal' : 'bg-white/30'}`}
-                      aria-label={`Go to testimonial group ${i + 1}`}
-                    />
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => setTestimonialIndex(Math.min(maxIndex, testimonialIndex + 1))}
-                  disabled={testimonialIndex === maxIndex}
-                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors"
-                  aria-label="Next testimonials"
-                >
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -368,13 +256,29 @@ export default function HomePage() {
               {/* Key capabilities grid */}
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { icon: '🔬', label: 'Custom Formulations' },
-                  { icon: '📏', label: 'Multi-Substrate' },
-                  { icon: '🏭', label: 'Scalable Production' },
-                  { icon: '✓', label: 'FDA Platform' },
+                  { icon: (
+                    <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                  ), label: 'Custom Formulations' },
+                  { icon: (
+                    <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                    </svg>
+                  ), label: 'Multi-Substrate' },
+                  { icon: (
+                    <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                    </svg>
+                  ), label: 'Scalable Production' },
+                  { icon: (
+                    <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  ), label: 'FDA Platform' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm text-silq-dark/80">
-                    <span className="text-lg">{item.icon}</span>
+                    {item.icon}
                     <span>{item.label}</span>
                   </div>
                 ))}
@@ -464,29 +368,10 @@ export default function HomePage() {
       <section className="py-14 bg-white border-t border-silq-dark/5">
         <div className="container-silq">
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-            <div className="h-14 flex items-center">
-              <Image src="/images/trust/fda.png" alt="FDA Cleared" width={50} height={50} className="object-contain" />
-            </div>
-            <div className="h-14 flex items-center">
-              <Image src="/images/trust/ucla.jpg" alt="UCLA" width={90} height={45} className="h-10 w-auto object-contain" />
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-14 flex items-center justify-center gap-3">
-                <Image src="/images/trust/premier-logo.svg" alt="Premier" width={50} height={35} className="h-7 w-auto object-contain" />
-                <Image src="/images/trust/vizient-logo.svg" alt="Vizient" width={50} height={35} className="h-7 w-auto object-contain" />
-              </div>
-              <p className="text-xs text-silq-dark/40 mt-1">GPO Approved</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-14 flex items-center justify-center">
-                <div className="w-10 h-10 rounded-full bg-silq-blue/10 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
-              <p className="text-xs text-silq-dark/40 mt-1">Made in USA</p>
-            </div>
+            <Image src="/images/trust/fda.png" alt="FDA Cleared" width={50} height={50} className="object-contain" />
+            <Image src="/images/trust/ucla.jpg" alt="UCLA" width={90} height={45} className="h-10 w-auto object-contain" />
+            <Image src="/images/trust/premier-logo.svg" alt="Premier" width={60} height={30} className="h-7 w-auto object-contain" />
+            <Image src="/images/trust/vizient-logo.svg" alt="Vizient" width={60} height={30} className="h-7 w-auto object-contain" />
           </div>
         </div>
       </section>

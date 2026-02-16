@@ -124,7 +124,7 @@ export default function ClearTractPage() {
         <div className="container-silq">
           <div className="text-center mb-12">
             <h2 className="text-display-sm font-bold text-silq-dark">
-              Designed for Better Outcomes
+              Clinical Benefits
             </h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -149,7 +149,7 @@ export default function ClearTractPage() {
                   <h3 className="text-xl font-bold text-silq-dark">Resisting Bacterial Adhesion</h3>
                 </div>
                 <p className="text-silq-dark/70">
-                  Our patented zwitterionic treatment creates a covalent bond with the catheter surface, resulting in a permanently transformed device capable of repelling bacteria and restricting biofilm growth—without antibiotics or antimicrobial agents.
+                  Permanent zwitterionic bond repels bacteria without antibiotics.
                 </p>
               </div>
             </div>
@@ -175,7 +175,7 @@ export default function ClearTractPage() {
                   <h3 className="text-xl font-bold text-silq-dark">Reduced Encrustation</h3>
                 </div>
                 <p className="text-silq-dark/70">
-                  ClearTract&apos;s surface treatment is engineered to mitigate mineral deposit buildup. Reduced encrustation means fewer blockages, reduced trauma during removal, and improved patient comfort throughout catheterization.
+                  Engineered to reduce mineral buildup. Fewer blockages, less trauma.
                 </p>
               </div>
             </div>
