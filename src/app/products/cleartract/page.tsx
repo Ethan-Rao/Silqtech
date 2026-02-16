@@ -132,7 +132,7 @@ export default function ClearTractPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 md:h-56 overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
                 <Image 
-                  src="/images/science/bacteria-panel.png"
+                  src="/images/science/Bacteria%20Panel.png"
                   alt="Bacterial adhesion comparison"
                   width={600}
                   height={400}
@@ -158,7 +158,7 @@ export default function ClearTractPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 md:h-56 overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
                 <Image 
-                  src="/images/science/encrustation-comparison.png"
+                  src="/images/science/Encrustation1.png"
                   alt="Encrustation comparison - standard vs ClearTract"
                   width={600}
                   height={400}

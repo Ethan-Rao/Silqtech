@@ -221,7 +221,7 @@ export default function HomePage() {
               <div className="mt-6 rounded-xl overflow-hidden">
                 <div className="h-48 md:h-56 overflow-hidden">
                   <Image 
-                    src="/images/science/encrustation-comparison.png"
+                    src="/images/science/Encrustation1.png"
                     alt="Encrustation comparison - standard catheter vs ClearTract"
                     width={500}
                     height={250}

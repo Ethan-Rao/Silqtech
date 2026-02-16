@@ -106,7 +106,7 @@ export default function SurfaceTreatmentPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 md:h-56 overflow-hidden">
                 <Image 
-                  src="/images/science/bacteria-panel.png"
+                  src="/images/science/Bacteria%20Panel.png"
                   alt="Bacterial adhesion reduction data"
                   width={600}
                   height={400}
