@@ -1,0 +1,6792 @@
+{
+  "meta": {
+    "slug": "wood",
+    "company": "Wood",
+    "name": "Wood",
+    "email": "matt@wasatchmedspec.com",
+    "territory": [
+      "ND",
+      "NE",
+      "SD"
+    ],
+    "generated": "2026-02-08T03:46:07.939057Z",
+    "dataVersion": "08_2025"
+  },
+  "stats": {
+    "facilityCount": 196,
+    "totalCatheterDays": 160874,
+    "highCautiCount": 1,
+    "highVolumeCount": 1,
+    "physicianCount": 542
+  },
+  "facilities": [
+    {
+      "id": "431319",
+      "name": "HANS P PETERSON MEMORIAL HOSPITAL - CAH",
+      "address": "503 W PINE  POST OFFICE BOX 790",
+      "city": "PHILIP",
+      "state": "SD",
+      "zipCode": "57567",
+      "phone": "(605) 859-2511",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 440,
+      "observedCAUTI": 4,
+      "predictedCAUTI": 1.074,
+      "sir": 3.724,
+      "cautiStatus": "Worse than the National Benchmark",
+      "priority": "HIGH_CAUTI",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "280013",
+      "name": "THE NEBRASKA MEDICAL CENTER",
+      "address": "988102 Nebrasks Medical Center",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68198",
+      "phone": "(402) 559-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (2682025), Vizient (2682027)",
+      "catheterDays": 16852,
+      "observedCAUTI": 19,
+      "predictedCAUTI": 26.625,
+      "sir": 0.714,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Daniel Brailita",
+          "npi": "1124220801",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Warren",
+          "npi": "1669499190",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mark Rupp",
+          "npi": "1821045154",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mackenzie Keintz",
+          "npi": "1770078511",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Angela Hewlett",
+          "npi": "1598824146",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Millie Erickson",
+          "npi": "1033374525",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Cawcutt",
+          "npi": "1982868436",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Lawler",
+          "npi": "1225099831",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Juan Teran Plasencia",
+          "npi": "1538693791",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Elizabeth Schnaubelt",
+          "npi": "1003098039",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jordan Stegman",
+          "npi": "1285293761",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brett Hill",
+          "npi": "1649498403",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Ryder",
+          "npi": "1558899674",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Bishay",
+          "npi": "1992933758",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Muhammad Ashraf",
+          "npi": "1891979183",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Richard Hankins",
+          "npi": "1154736668",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Patrick Leu",
+          "npi": "1013910280",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Wiltfong",
+          "npi": "1467475731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Carlos Gomez Alvarez",
+          "npi": "1891073870",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Samuel David",
+          "npi": "1437416054",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Howe",
+          "npi": "1225065535",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrea Zimmer",
+          "npi": "1295997336",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Cybulski",
+          "npi": "1487044152",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Richard Starlin",
+          "npi": "1881642775",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Judson Davies",
+          "npi": "1972776888",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jasmine Marcelin",
+          "npi": "1710272109",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jennifer Davis",
+          "npi": "1235633249",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Amir Gholami",
+          "npi": "1942236807",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Steven Koukol",
+          "npi": "1760484059",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Trevor Vanschooneveld",
+          "npi": "1568544799",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Christiansen",
+          "npi": "1982017455",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jose De Guzman",
+          "npi": "1477507697",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jared Schober",
+          "npi": "1104232743",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Blazek",
+          "npi": "1881259489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sias Scherger",
+          "npi": "1376930578",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anum Abbas",
+          "npi": "1902214083",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Subhadra Mandadi",
+          "npi": "1396021929",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anthony Oberle",
+          "npi": "1487033817",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jon Morton",
+          "npi": "1174526198",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jennifer Dwyer",
+          "npi": "1033524640",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicolas Cortes Penfield",
+          "npi": "1245676626",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Deibert",
+          "npi": "1588824395",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chad Lagrange",
+          "npi": "1962592873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sara Bares",
+          "npi": "1174780126",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Corder",
+          "npi": "1871857219",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eduardo Augusto Freitas",
+          "npi": "1437248994",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andre Kalil",
+          "npi": "1265480750",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Erica Stohs",
+          "npi": "1366736803",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Oluyemi Akin-Olugbade",
+          "npi": "1851555460",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 49
+    },
+    {
+      "id": "28006F",
+      "name": "OMAHA VA MEDICAL CENTER (VA NEBRASKA WESTERN IOWA HEALTHCARE SYSTEM)",
+      "address": "4101 WOOLWORTH AVENUE",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68105",
+      "phone": "(402) 346-8800",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 1943,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 1.455,
+      "sir": 2.062,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "43005F",
+      "name": "SIOUX FALLS VA MEDICAL CENTER",
+      "address": "2501 WEST 22ND STREET",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zipCode": "57117",
+      "phone": "(605) 336-3230",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "Vizient (1068318)",
+      "catheterDays": 941,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.75,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "35002F",
+      "name": "FARGO VA MEDICAL CENTER",
+      "address": "2101 ELM STREET",
+      "city": "FARGO",
+      "state": "ND",
+      "zipCode": "58102",
+      "phone": "(701) 232-3241",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 921,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.576,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "430016",
+      "name": "AVERA MCKENNAN HOSPITAL & UNIVERSITY HEALTH CENTER",
+      "address": "1325 S CLIFF AVE  POST OFFICE BOX 5045",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zipCode": "57117",
+      "phone": "(605) 322-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 10389,
+      "observedCAUTI": 11,
+      "predictedCAUTI": 17.189,
+      "sir": 0.64,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lauren Thum",
+          "npi": "1780022921",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jose Suarez Isaacs",
+          "npi": "1053793661",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jawad Nazir",
+          "npi": "1972579118",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Dileep Bhat",
+          "npi": "1528130085",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Pepito",
+          "npi": "1093909756",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Larson",
+          "npi": "1346703634",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dennis Thum",
+          "npi": "1245619543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Gillett",
+          "npi": "1619954542",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Witte",
+          "npi": "1548228141",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Anthony Diaz",
+          "npi": "1417364563",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nathan Bockholt",
+          "npi": "1295901460",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Lindaman",
+          "npi": "1912121229",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Kessler",
+          "npi": "1932368602",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jeffrey Edman",
+          "npi": "1003475591",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Xenofon Papadopoulos",
+          "npi": "1306943576",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Arend",
+          "npi": "1548478118",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Wyatt",
+          "npi": "1871561126",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dayana Maita Coronel",
+          "npi": "1447697693",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jennifer Hsu",
+          "npi": "1801844329",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Fares Masannat",
+          "npi": "1144425323",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Hathaway",
+          "npi": "1639392475",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eugene Park",
+          "npi": "1275654782",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Darlys Hofer",
+          "npi": "1164470076",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 23
+    },
+    {
+      "id": "350019",
+      "name": "ALTRU HOSPITAL",
+      "address": "1200 S COLUMBIA RD",
+      "city": "GRAND FORKS",
+      "state": "ND",
+      "zipCode": "58201",
+      "phone": "(701) 780-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (457)",
+      "catheterDays": 9883,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 9.897,
+      "sir": 0.505,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thomas Jang",
+          "npi": "1699927566",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Cordell Davis",
+          "npi": "1255592903",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sara Nausheen",
+          "npi": "1821261256",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Adam Nicholson",
+          "npi": "1063619237",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "280060",
+      "name": "CHI HEALTH BERGAN MERCY",
+      "address": "7500 MERCY RD",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68124",
+      "phone": "(402) 398-6020",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 9114,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 14.69,
+      "sir": 0.068,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Renuga Vivekanandan",
+          "npi": "1508003914",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lilian Vargas Barahona",
+          "npi": "1346761004",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gary Gorby",
+          "npi": "1437260965",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kelsey Witherspoon",
+          "npi": "1174972160",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anthony Oberle",
+          "npi": "1487033817",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Faran Ahmad",
+          "npi": "1801204979",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Koren",
+          "npi": "1881914802",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rima El-Herte",
+          "npi": "1164787412",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Feloney",
+          "npi": "1073620712",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joan Delto",
+          "npi": "1275769093",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Quimby",
+          "npi": "1235183369",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Horne",
+          "npi": "1306166244",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Justin De Grado",
+          "npi": "1982888228",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Larry Siref",
+          "npi": "1043219546",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taylor Soon-Sutton",
+          "npi": "1649766130",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erica Stohs",
+          "npi": "1366736803",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Galen Meyer",
+          "npi": "1881692903",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dane Klett",
+          "npi": "1376967901",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 18
+    },
+    {
+      "id": "430077",
+      "name": "MONUMENT HEALTH RAPID CITY HOSPITAL",
+      "address": "353 FAIRMONT BLVD",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zipCode": "57701",
+      "phone": "(605) 755-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 9110,
+      "observedCAUTI": 10,
+      "predictedCAUTI": 12.436,
+      "sir": 0.804,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Sandeep Sohal",
+          "npi": "1801381744",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alisa Berger",
+          "npi": "1619017043",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alexandru David",
+          "npi": "1427202381",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nicholas Goodhope",
+          "npi": "1902465685",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ghazi Ghanem",
+          "npi": "1669540423",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Levi Hamilton",
+          "npi": "1225527252",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Manuel Arbo",
+          "npi": "1114993128",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nicholas Hopson",
+          "npi": "1821433509",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kevin Nasseri",
+          "npi": "1053368118",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jon Axton",
+          "npi": "1265596969",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Milton Nathan",
+          "npi": "1114909744",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Greene",
+          "npi": "1962961268",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Melissa Brown",
+          "npi": "1679557391",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bradley Anderson",
+          "npi": "1053403105",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Kasprenski",
+          "npi": "1558676429",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Roger Stuart",
+          "npi": "1942336276",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrea Calderon",
+          "npi": "1225598550",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Medendorp",
+          "npi": "1841346871",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brennan Tesdahl",
+          "npi": "1326564055",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 19
+    },
+    {
+      "id": "280040",
+      "name": "THE NEBRASKA METHODIST HOSPITAL",
+      "address": "8303 DODGE ST",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68114",
+      "phone": "(402) 354-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 8525,
+      "observedCAUTI": 10,
+      "predictedCAUTI": 10.49,
+      "sir": 0.953,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jessica Jones",
+          "npi": "1720299704",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ansar Khan",
+          "npi": "1093794935",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rebecca Mccrery",
+          "npi": "1316978695",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Oberle",
+          "npi": "1487033817",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Emily Kean-Puccioni",
+          "npi": "1881697944",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Euclid Desouza",
+          "npi": "1609879733",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jon Morton",
+          "npi": "1174526198",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Horgan",
+          "npi": "1568465680",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jennifer Dwyer",
+          "npi": "1033524640",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Judson Davies",
+          "npi": "1972776888",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rudolf Kotula",
+          "npi": "1063477834",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Angela Sukstorf",
+          "npi": "1326092453",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Bishay",
+          "npi": "1992933758",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sida Niu",
+          "npi": "1699201905",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Penn",
+          "npi": "1013937374",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Patrick Leu",
+          "npi": "1013910280",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Trainer",
+          "npi": "1477556561",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Caleb Miller",
+          "npi": "1093379562",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amir Gholami",
+          "npi": "1942236807",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Arther",
+          "npi": "1134355167",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Koukol",
+          "npi": "1760484059",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Corder",
+          "npi": "1871857219",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Simms",
+          "npi": "1124518030",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Amandeep Mahal",
+          "npi": "1588983266",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jordan Stegman",
+          "npi": "1285293761",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Charles Wakefield",
+          "npi": "1215151543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Blazek",
+          "npi": "1881259489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Sartin",
+          "npi": "1013911692",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brett Hill",
+          "npi": "1649498403",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 29
+    },
+    {
+      "id": "430027",
+      "name": "SANFORD USD MEDICAL CENTER",
+      "address": "1305 W 18TH ST  POST OFFICE BOX 5039",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zipCode": "57117",
+      "phone": "(605) 333-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (228)",
+      "catheterDays": 8014,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 10.259,
+      "sir": 0.682,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lauren Thum",
+          "npi": "1780022921",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Emad Abu Sitta",
+          "npi": "1194165977",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Larson",
+          "npi": "1346703634",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dennis Thum",
+          "npi": "1245619543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Gillett",
+          "npi": "1619954542",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Witte",
+          "npi": "1548228141",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nirmal Muthukumarasamy",
+          "npi": "1518528611",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nathan Bockholt",
+          "npi": "1295901460",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Lindaman",
+          "npi": "1912121229",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Srividya Srinivasan",
+          "npi": "1790923100",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jeffrey Edman",
+          "npi": "1003475591",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Arend",
+          "npi": "1548478118",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eugene Park",
+          "npi": "1275654782",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Miguel Cervera Hernandez",
+          "npi": "1093166209",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Darlys Hofer",
+          "npi": "1164470076",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 15
+    },
+    {
+      "id": "350011",
+      "name": "SANFORD MEDICAL CENTER FARGO",
+      "address": "801 BROADWAY NORTH",
+      "city": "FARGO",
+      "state": "ND",
+      "zipCode": "58122",
+      "phone": "(701) 234-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1019376)",
+      "catheterDays": 7998,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 9.94,
+      "sir": 0.101,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Suha Abu Khalaf",
+          "npi": "1235623331",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Samy Heshmat",
+          "npi": "1124218664",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William See",
+          "npi": "1457303208",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ali Mahmoud",
+          "npi": "1043879323",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Abiola Fashanu",
+          "npi": "1457582074",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bradley Smith",
+          "npi": "1790002913",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Atkinson",
+          "npi": "1487844668",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Schommer",
+          "npi": "1295179687",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mehboob Rehan",
+          "npi": "1952899767",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sammantha Kouba",
+          "npi": "1760877344",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Avish Nagpal",
+          "npi": "1922250273",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Theodore Sawchuk",
+          "npi": "1629090261",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brent Williams",
+          "npi": "1710125893",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jon Axton",
+          "npi": "1265596969",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Moore",
+          "npi": "1982678108",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Cordell Davis",
+          "npi": "1255592903",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jerry Rittenhouse",
+          "npi": "1831124916",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Bischof",
+          "npi": "1871607945",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Thomas Noah",
+          "npi": "1720005275",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ronald Macintyre",
+          "npi": "1609886092",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kathryn Agamawi",
+          "npi": "1972023018",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 21
+    },
+    {
+      "id": "350015",
+      "name": "SANFORD MEDICAL CENTER BISMARCK",
+      "address": "300 N 7TH ST",
+      "city": "BISMARCK",
+      "state": "ND",
+      "zipCode": "58506",
+      "phone": "(701) 323-6000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (38)",
+      "catheterDays": 6924,
+      "observedCAUTI": 4,
+      "predictedCAUTI": 8.473,
+      "sir": 0.472,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nadim Koleilat",
+          "npi": "1700997780",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Randy Everett",
+          "npi": "1285680306",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Fisher",
+          "npi": "1043746068",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Abiola Fashanu",
+          "npi": "1457582074",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Noe Mateo",
+          "npi": "1255307203",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Karim Courtemanche",
+          "npi": "1255827697",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Cameron Charchenko",
+          "npi": "1750676201",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Supha Arthurs",
+          "npi": "1790765865",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lovin George",
+          "npi": "1760036065",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "350006",
+      "name": "TRINITY HOSPITALS",
+      "address": "407 3RD ST SE",
+      "city": "MINOT",
+      "state": "ND",
+      "zipCode": "58701",
+      "phone": "(701) 857-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 5862,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 7.335,
+      "sir": 0.136,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Robert Fisher",
+          "npi": "1043746068",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Castello",
+          "npi": "1578728507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mathew Oommen",
+          "npi": "1467406140",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Casmiar Nwaigwe",
+          "npi": "1902832041",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "280003",
+      "name": "BRYAN MEDICAL CENTER",
+      "address": "1600 SOUTH 48TH ST",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zipCode": "68506",
+      "phone": "(402) 481-1111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 4732,
+      "observedCAUTI": 9,
+      "predictedCAUTI": 5.763,
+      "sir": 1.562,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Antonio Beltran",
+          "npi": "1811940596",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Brush",
+          "npi": "1669889200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tara Kirkpatrick",
+          "npi": "1518227958",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jamie Olsen",
+          "npi": "1518300573",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Don Henslee",
+          "npi": "1285657551",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Logan Mcguffey",
+          "npi": "1033524582",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Lepinski",
+          "npi": "1902829989",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Nora",
+          "npi": "1821091588",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Aaron Pomajzl",
+          "npi": "1932550084",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Cybulski",
+          "npi": "1487044152",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lance Wiebusch",
+          "npi": "1154442507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Rademacher",
+          "npi": "1528252350",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Wiltfong",
+          "npi": "1467475731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Smith",
+          "npi": "1134498330",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Hathaway",
+          "npi": "1639392475",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Henning",
+          "npi": "1518120823",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Mues",
+          "npi": "1871700054",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 17
+    },
+    {
+      "id": "350070",
+      "name": "ESSENTIA HEALTH",
+      "address": "3000 32ND AVE SOUTH",
+      "city": "FARGO",
+      "state": "ND",
+      "zipCode": "58104",
+      "phone": "(701) 364-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (111033), Vizient (3790412)",
+      "catheterDays": 4073,
+      "observedCAUTI": 4,
+      "predictedCAUTI": 4.027,
+      "sir": 0.993,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Suha Abu Khalaf",
+          "npi": "1235623331",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Philip Wanzek",
+          "npi": "1326301250",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amy Arisco",
+          "npi": "1821183856",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kolawole Olugbade",
+          "npi": "1831519024",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Aaron Phillipps",
+          "npi": "1487041000",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bertha Ayi",
+          "npi": "1083670343",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brent Williams",
+          "npi": "1710125893",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mansel Kevwitch",
+          "npi": "1568540771",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Leichter",
+          "npi": "1295822104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alonso Carrasco",
+          "npi": "1710299706",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Hom",
+          "npi": "1659351583",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 11
+    },
+    {
+      "id": "280081",
+      "name": "CHI HEALTH IMMANUEL",
+      "address": "6901 NORTH 72ND ST",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68122",
+      "phone": "(402) 572-2121",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 3786,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 4.16,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Renuga Vivekanandan",
+          "npi": "1508003914",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lilian Vargas Barahona",
+          "npi": "1346761004",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kelsey Witherspoon",
+          "npi": "1174972160",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Faran Ahmad",
+          "npi": "1801204979",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rima El-Herte",
+          "npi": "1164787412",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Feloney",
+          "npi": "1073620712",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joan Delto",
+          "npi": "1275769093",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Quimby",
+          "npi": "1235183369",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Horne",
+          "npi": "1306166244",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Larry Siref",
+          "npi": "1043219546",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taylor Soon-Sutton",
+          "npi": "1649766130",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erica Stohs",
+          "npi": "1366736803",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Galen Meyer",
+          "npi": "1881692903",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Neil Mendoza",
+          "npi": "1407146632",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 14
+    },
+    {
+      "id": "280130",
+      "name": "CHI HEALTH LAKESIDE",
+      "address": "16901 LAKESIDE HILLS CT",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68130",
+      "phone": "(402) 717-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 3777,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 3.802,
+      "sir": 0.263,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Renuga Vivekanandan",
+          "npi": "1508003914",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lilian Vargas Barahona",
+          "npi": "1346761004",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Feloney",
+          "npi": "1073620712",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Euclid Desouza",
+          "npi": "1609879733",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jon Morton",
+          "npi": "1174526198",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Horgan",
+          "npi": "1568465680",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Judson Davies",
+          "npi": "1972776888",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joan Delto",
+          "npi": "1275769093",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Bishay",
+          "npi": "1992933758",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sida Niu",
+          "npi": "1699201905",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Quimby",
+          "npi": "1235183369",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Patrick Leu",
+          "npi": "1013910280",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Trainer",
+          "npi": "1477556561",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Caleb Miller",
+          "npi": "1093379562",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Horne",
+          "npi": "1306166244",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Arther",
+          "npi": "1134355167",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Koukol",
+          "npi": "1760484059",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erica Stohs",
+          "npi": "1366736803",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Charles Wakefield",
+          "npi": "1215151543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Blazek",
+          "npi": "1881259489",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 20
+    },
+    {
+      "id": "280061",
+      "name": "REGIONAL WEST MEDICAL CENTER",
+      "address": "4021 AVE B",
+      "city": "SCOTTSBLUFF",
+      "state": "NE",
+      "zipCode": "69361",
+      "phone": "(308) 635-3711",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 3747,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.923,
+      "sir": 0.342,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nathan Ullrich",
+          "npi": "1518067339",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Faaborg",
+          "npi": "1265724470",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Caldwell",
+          "npi": "1285196188",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Derek Zukosky",
+          "npi": "1912942038",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Kabalin",
+          "npi": "1043302748",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jon Suleskey",
+          "npi": "1841255585",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "430014",
+      "name": "AVERA ST LUKES",
+      "address": "305 S STATE ST  POST OFFICE BOX 4450",
+      "city": "ABERDEEN",
+      "state": "SD",
+      "zipCode": "57401",
+      "phone": "(605) 622-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 2906,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.958,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jennifer Hsu",
+          "npi": "1801844329",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Kessler",
+          "npi": "1932368602",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Abbey Gaske",
+          "npi": "1265426886",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Fares Masannat",
+          "npi": "1144425323",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mark Anthony Diaz",
+          "npi": "1417364563",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jose Suarez Isaacs",
+          "npi": "1053793661",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eric Leichter",
+          "npi": "1295822104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jawad Nazir",
+          "npi": "1972579118",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Susan Pursell",
+          "npi": "1942220371",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dayana Maita Coronel",
+          "npi": "1447697693",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "350002",
+      "name": "CHI ST ALEXIUS HEALTH",
+      "address": "900 E BROADWAY",
+      "city": "BISMARCK",
+      "state": "ND",
+      "zipCode": "58501",
+      "phone": "(701) 530-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 2616,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.607,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Muna Abuerreish",
+          "npi": "1790870020",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Fisher",
+          "npi": "1043746068",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Hawley-Molloy",
+          "npi": "1700876570",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Castello",
+          "npi": "1578728507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Ioffe",
+          "npi": "1376830976",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Aldiana Soljic",
+          "npi": "1679724900",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Shapiro",
+          "npi": "1578663829",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Harris",
+          "npi": "1215913975",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "280132",
+      "name": "BELLEVUE MEDICAL CENTER, LLC",
+      "address": "2500 BELLEVUE MEDICAL CENTER DR",
+      "city": "BELLEVUE",
+      "state": "NE",
+      "zipCode": "68123",
+      "phone": "(402) 763-3600",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 2429,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 1.79,
+      "sir": 0.559,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Brailita",
+          "npi": "1124220801",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Subhadra Mandadi",
+          "npi": "1396021929",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jonathan Ryder",
+          "npi": "1558899674",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mackenzie Keintz",
+          "npi": "1770078511",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Richard Starlin",
+          "npi": "1881642775",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Judson Davies",
+          "npi": "1972776888",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicolas Cortes Penfield",
+          "npi": "1245676626",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Deibert",
+          "npi": "1588824395",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Hankins",
+          "npi": "1154736668",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Chad Lagrange",
+          "npi": "1962592873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Juan Teran Plasencia",
+          "npi": "1538693791",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Christiansen",
+          "npi": "1982017455",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Samuel David",
+          "npi": "1437416054",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jared Schober",
+          "npi": "1104232743",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 14
+    },
+    {
+      "id": "280134",
+      "name": "KEARNEY REGIONAL MEDICAL CENTER",
+      "address": "804 22ND AVENUE",
+      "city": "KEARNEY",
+      "state": "NE",
+      "zipCode": "68845",
+      "phone": "(308) 455-3600",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Vizient (3400109)",
+      "catheterDays": 2293,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 1.651,
+      "sir": 1.211,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Laroy Williams",
+          "npi": "1619904927",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Howe",
+          "npi": "1225065535",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Earl Larson",
+          "npi": "1598792509",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Garrett Pohlman",
+          "npi": "1437378171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "280009",
+      "name": "CHI HEALTH GOOD SAMARITAN",
+      "address": "P O BOX 1990, 10 EAST 31ST ST",
+      "city": "KEARNEY",
+      "state": "NE",
+      "zipCode": "68848",
+      "phone": "(308) 865-7900",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 2232,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.308,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Laroy Williams",
+          "npi": "1619904927",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Howe",
+          "npi": "1225065535",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sida Niu",
+          "npi": "1699201905",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Earl Larson",
+          "npi": "1598792509",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Mues",
+          "npi": "1871700054",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Natvarlal Patel",
+          "npi": "1710196746",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Oana Majorant",
+          "npi": "1518205103",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Garrett Pohlman",
+          "npi": "1437378171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "280020",
+      "name": "CHI HEALTH ST. ELIZABETH",
+      "address": "555 SOUTH 70TH ST",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zipCode": "68510",
+      "phone": "(402) 219-7700",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 2034,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.025,
+      "sir": 0.494,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thomas Brush",
+          "npi": "1669889200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Don Henslee",
+          "npi": "1285657551",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Logan Mcguffey",
+          "npi": "1033524582",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Lepinski",
+          "npi": "1902829989",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Nora",
+          "npi": "1821091588",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Aaron Pomajzl",
+          "npi": "1932550084",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Gobbo",
+          "npi": "1144383449",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lance Wiebusch",
+          "npi": "1154442507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Wiltfong",
+          "npi": "1467475731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Smith",
+          "npi": "1134498330",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jonathan Henning",
+          "npi": "1518120823",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Mues",
+          "npi": "1871700054",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "280032",
+      "name": "MARY LANNING HEALTHCARE",
+      "address": "715 N ST JOSEPH AVE",
+      "city": "HASTINGS",
+      "state": "NE",
+      "zipCode": "68901",
+      "phone": "(402) 463-4521",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 1579,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.572,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Brailita",
+          "npi": "1124220801",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Shawn Acino",
+          "npi": "1942319850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Starlin",
+          "npi": "1881642775",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Larson",
+          "npi": "1831112747",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gregory Alberts",
+          "npi": "1588666275",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "280023",
+      "name": "CHI HEALTH ST. FRANCIS",
+      "address": "2620 WEST FAIDLEY AVE",
+      "city": "GRAND ISLAND",
+      "state": "NE",
+      "zipCode": "68803",
+      "phone": "(308) 384-4600",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 1520,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.541,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Shawn Acino",
+          "npi": "1942319850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Larson",
+          "npi": "1831112747",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Julie Jerabek",
+          "npi": "1568585263",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gregory Alberts",
+          "npi": "1588666275",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "430012",
+      "name": "AVERA SACRED HEART HOSPITAL",
+      "address": "501 SUMMIT ST",
+      "city": "YANKTON",
+      "state": "SD",
+      "zipCode": "57078",
+      "phone": "(605) 668-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 1378,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 1.022,
+      "sir": 1.957,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jennifer Hsu",
+          "npi": "1801844329",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Kessler",
+          "npi": "1932368602",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mark Anthony Diaz",
+          "npi": "1417364563",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Hathaway",
+          "npi": "1639392475",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jawad Nazir",
+          "npi": "1972579118",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Dayana Maita Coronel",
+          "npi": "1447697693",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "280065",
+      "name": "GREAT PLAINS HEALTH",
+      "address": "601 WEST LEOTA ST",
+      "city": "NORTH PLATTE",
+      "state": "NE",
+      "zipCode": "69101",
+      "phone": "(308) 568-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 1296,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.924,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thara Damodaran",
+          "npi": "1265455604",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eduardo Augusto Freitas",
+          "npi": "1437248994",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Chad Lagrange",
+          "npi": "1962592873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Millie Erickson",
+          "npi": "1033374525",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Aerie Chung",
+          "npi": "1992960850",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jose De Guzman",
+          "npi": "1477507697",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Brown",
+          "npi": "1336115302",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shammai Rockove",
+          "npi": "1720070873",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "430008",
+      "name": "BROOKINGS HEALTH SYSTEM",
+      "address": "300 22ND AVE",
+      "city": "BROOKINGS",
+      "state": "SD",
+      "zipCode": "57006",
+      "phone": "(605) 696-9000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 1150,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.567,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Dileep Bhat",
+          "npi": "1528130085",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "430005",
+      "name": "PRAIRIE LAKES HEALTHCARE SYSTEM, INC",
+      "address": "401 9TH AVENUE NW  POST OFFICE BOX 1210",
+      "city": "WATERTOWN",
+      "state": "SD",
+      "zipCode": "57201",
+      "phone": "(605) 882-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 1111,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.559,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Keegan Maxwell",
+          "npi": "1790712883",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "280125",
+      "name": "FAITH REGIONAL HEALTH SERVICES",
+      "address": "2700 WEST NORFOLK AVE",
+      "city": "NORFOLK",
+      "state": "NE",
+      "zipCode": "68701",
+      "phone": "(402) 371-4880",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 1096,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.775,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Afua Ntem-Mensah",
+          "npi": "1588079586",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ansar Khan",
+          "npi": "1093794935",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Hathaway",
+          "npi": "1639392475",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Bishay",
+          "npi": "1992933758",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Oluyemi Akin-Olugbade",
+          "npi": "1851555460",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Natvarlal Patel",
+          "npi": "1710196746",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "280111",
+      "name": "COLUMBUS COMMUNITY HOSPITAL, INC",
+      "address": "4600 38TH ST",
+      "city": "COLUMBUS",
+      "state": "NE",
+      "zipCode": "68601",
+      "phone": "(402) 564-7118",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 960,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.483,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Patrick Leu",
+          "npi": "1013910280",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Afua Ntem-Mensah",
+          "npi": "1588079586",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jordan Stegman",
+          "npi": "1285293761",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jennifer Dwyer",
+          "npi": "1033524640",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Bishay",
+          "npi": "1992933758",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brett Hill",
+          "npi": "1649498403",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Koukol",
+          "npi": "1760484059",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Natvarlal Patel",
+          "npi": "1710196746",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "430015",
+      "name": "AVERA ST MARY'S HOSPITAL",
+      "address": "801 E SIOUX",
+      "city": "PIERRE",
+      "state": "SD",
+      "zipCode": "57501",
+      "phone": "(605) 224-3100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 861,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.496,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jawad Nazir",
+          "npi": "1972579118",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joseph Wyatt",
+          "npi": "1871561126",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "430089",
+      "name": "DUNES SURGICAL HOSPITAL",
+      "address": "600 N SIOUX POINT ROAD",
+      "city": "DAKOTA DUNES",
+      "state": "SD",
+      "zipCode": "57049",
+      "phone": "(605) 232-3332",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 854,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.283,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Michael Oberle",
+          "npi": "1790248953",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Olsen",
+          "npi": "1366973950",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Kneib",
+          "npi": "1518932367",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jamie Olsen",
+          "npi": "1518300573",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Craig Block",
+          "npi": "1154530137",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Althaus",
+          "npi": "1952660011",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Daniels",
+          "npi": "1538394952",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Bourne",
+          "npi": "1346462702",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "280139",
+      "name": "GRAND ISLAND REGIONAL MEDICAL CENTER",
+      "address": "3533 PRAIRIEVIEW STREET",
+      "city": "GRAND ISLAND",
+      "state": "NE",
+      "zipCode": "68803",
+      "phone": "(308) 675-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (3568630)",
+      "catheterDays": 693,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.386,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Shawn Acino",
+          "npi": "1942319850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gregory Alberts",
+          "npi": "1588666275",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431335",
+      "name": "HURON REGIONAL MEDICAL CENTER",
+      "address": "172 FOURTH STREET SE",
+      "city": "HURON",
+      "state": "SD",
+      "zipCode": "57350",
+      "phone": "(605) 353-6200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 659,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.43,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nathan Bockholt",
+          "npi": "1295901460",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Darlys Hofer",
+          "npi": "1164470076",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "430098",
+      "name": "PINE RIDGE IHS HOSPITAL",
+      "address": "EAST HIGHWAY 18",
+      "city": "PINE RIDGE",
+      "state": "SD",
+      "zipCode": "57770",
+      "phone": "(605) 867-5131",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "gpo": "",
+      "catheterDays": 610,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.332,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431300",
+      "name": "MADISON REGIONAL HEALTH SYSTEM",
+      "address": "323 SW 10TH ST",
+      "city": "MADISON",
+      "state": "SD",
+      "zipCode": "57042",
+      "phone": "(605) 256-6551",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 538,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.352,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Michael Gillett",
+          "npi": "1619954542",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Larson",
+          "npi": "1346703634",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281364",
+      "name": "BEATRICE COMMUNITY HOSPITAL & HEALTH CENTER, INC",
+      "address": "P O BOX 278, 4800 HOSPITAL PARKWAY",
+      "city": "BEATRICE",
+      "state": "NE",
+      "zipCode": "68310",
+      "phone": "(402) 228-3344",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 515,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.258,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Logan Mcguffey",
+          "npi": "1033524582",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351334",
+      "name": "CHI ST ALEXIUS HEALTH WILLISTON",
+      "address": "1301 15TH AVE W",
+      "city": "WILLISTON",
+      "state": "ND",
+      "zipCode": "58801",
+      "phone": "(701) 774-7400",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 469,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.306,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281362",
+      "name": "PHELPS MEMORIAL HEALTH CENTER",
+      "address": "1215 TIBBALS ST",
+      "city": "HOLDREGE",
+      "state": "NE",
+      "zipCode": "68949",
+      "phone": "(308) 995-2211",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 457,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.116,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Antonio Beltran",
+          "npi": "1811940596",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Mues",
+          "npi": "1871700054",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Garrett Pohlman",
+          "npi": "1437378171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "281363",
+      "name": "COMMUNITY HOSPITAL",
+      "address": "P O BOX 1328, 1301 EAST H ST",
+      "city": "MCCOOK",
+      "state": "NE",
+      "zipCode": "69001",
+      "phone": "(308) 344-2650",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Vizient (2813888), Vizient (2813928), Vizient (3004351), Vizient (2622990), Vizient (38566), Vizient (956542)",
+      "catheterDays": 421,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.275,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Eduardo Augusto Freitas",
+          "npi": "1437248994",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Millie Erickson",
+          "npi": "1033374525",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Laroy Williams",
+          "npi": "1619904927",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Brown",
+          "npi": "1336115302",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "351333",
+      "name": "CHI ST ALEXIUS HEALTH DEVILS LAKE",
+      "address": "1031 7TH ST NE",
+      "city": "DEVILS LAKE",
+      "state": "ND",
+      "zipCode": "58301",
+      "phone": "(701) 662-2131",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 413,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.271,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281322",
+      "name": "ST FRANCIS MEMORIAL HOSPITAL",
+      "address": "430 NORTH MONITOR ST",
+      "city": "WEST POINT",
+      "state": "NE",
+      "zipCode": "68788",
+      "phone": "(402) 372-2404",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 406,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.266,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Charles Wakefield",
+          "npi": "1215151543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Corder",
+          "npi": "1871857219",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ansar Khan",
+          "npi": "1093794935",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Judson Davies",
+          "npi": "1972776888",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Arther",
+          "npi": "1134355167",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "43002F",
+      "name": "VA BLACK HILLS HEALTHCARE SYSTEM",
+      "address": "113 COMANCHE ROAD",
+      "city": "FORT MEADE",
+      "state": "SD",
+      "zipCode": "57741",
+      "phone": "(605) 347-2511",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 398,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.316,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281359",
+      "name": "MEMORIAL COMMUNITY HOSPITAL & HEALTH SYSTEM",
+      "address": "810 NORTH 22ND ST",
+      "city": "BLAIR",
+      "state": "NE",
+      "zipCode": "68008",
+      "phone": "(402) 426-1502",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 378,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.248,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Ansar Khan",
+          "npi": "1093794935",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Galen Meyer",
+          "npi": "1881692903",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "351336",
+      "name": "CHI ST ALEXIUS HEALTH DICKINSON",
+      "address": "2500 FAIRWAY STREET",
+      "city": "DICKINSON",
+      "state": "ND",
+      "zipCode": "58601",
+      "phone": "(701) 456-4000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 367,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.239,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "430048",
+      "name": "MONUMENT HEALTH SPEARFISH HOSPITAL",
+      "address": "1440 N MAIN ST",
+      "city": "SPEARFISH",
+      "state": "SD",
+      "zipCode": "57783",
+      "phone": "(605) 644-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier",
+      "catheterDays": 353,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.255,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Bradley Anderson",
+          "npi": "1053403105",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sandeep Sohal",
+          "npi": "1801381744",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Levi Hamilton",
+          "npi": "1225527252",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Melissa Brown",
+          "npi": "1679557391",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrea Calderon",
+          "npi": "1225598550",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brennan Tesdahl",
+          "npi": "1326564055",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicholas Goodhope",
+          "npi": "1902465685",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nicholas Hopson",
+          "npi": "1821433509",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "281329",
+      "name": "AVERA ST ANTHONY'S HOSPITAL",
+      "address": "300 NORTH 2ND ST",
+      "city": "O' NEILL",
+      "state": "NE",
+      "zipCode": "68763",
+      "phone": "(402) 336-2611",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 337,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.22,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Adam Althaus",
+          "npi": "1952660011",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351335",
+      "name": "JAMESTOWN REGIONAL MEDICAL CENTER",
+      "address": "2422 20TH ST SW",
+      "city": "JAMESTOWN",
+      "state": "ND",
+      "zipCode": "58401",
+      "phone": "(701) 252-1050",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1068333), Vizient (464)",
+      "catheterDays": 322,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.787,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Brent Williams",
+          "npi": "1710125893",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "430097",
+      "name": "SANFORD MEDICAL CENTER ABERDEEN",
+      "address": "2905 3RD AVE SE",
+      "city": "ABERDEEN",
+      "state": "SD",
+      "zipCode": "57402",
+      "phone": "(605) 626-4200",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (903982)",
+      "catheterDays": 316,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.173,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Olsen",
+          "npi": "1366973950",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jamie Olsen",
+          "npi": "1518300573",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Craig Block",
+          "npi": "1154530137",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Althaus",
+          "npi": "1952660011",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Bourne",
+          "npi": "1346462702",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "281319",
+      "name": "JEFFERSON COMMUNITY HEALTH & LIFE",
+      "address": "P O BOX 277, 2200 H ST",
+      "city": "FAIRBURY",
+      "state": "NE",
+      "zipCode": "68352",
+      "phone": "(402) 729-3351",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 314,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.175,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Don Henslee",
+          "npi": "1285657551",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431321",
+      "name": "MONUMENT HEALTH STURGIS HOSPITAL",
+      "address": "2140 JUNCTION AVE",
+      "city": "STURGIS",
+      "state": "SD",
+      "zipCode": "57785",
+      "phone": "(605) 720-2400",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 309,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.202,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Bradley Anderson",
+          "npi": "1053403105",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sandeep Sohal",
+          "npi": "1801381744",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ghazi Ghanem",
+          "npi": "1669540423",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Levi Hamilton",
+          "npi": "1225527252",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Melissa Brown",
+          "npi": "1679557391",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Roger Stuart",
+          "npi": "1942336276",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brennan Tesdahl",
+          "npi": "1326564055",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicholas Hopson",
+          "npi": "1821433509",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "430091",
+      "name": "BLACK HILLS SURGICAL HOSPITAL LLC",
+      "address": "216 ANAMARIA DR",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zipCode": "57703",
+      "phone": "(605) 721-4700",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 294,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.097,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431316",
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "111 W 10TH AVE  POST OFFICE BOX 420",
+      "city": "REDFIELD",
+      "state": "SD",
+      "zipCode": "57469",
+      "phone": "(605) 472-1110",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Vizient (2672774), Vizient (1650), Vizient (2156), Vizient (6064537), Vizient (2623943)",
+      "catheterDays": 287,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.701,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Eric Leichter",
+          "npi": "1295822104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dayana Maita Coronel",
+          "npi": "1447697693",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281360",
+      "name": "BOX BUTTE GENERAL HOSPITAL",
+      "address": "P O BOX 810, 2101 BOX BUTTE AVE",
+      "city": "ALLIANCE",
+      "state": "NE",
+      "zipCode": "69301",
+      "phone": "(308) 762-6660",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 279,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.183,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nathan Ullrich",
+          "npi": "1518067339",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Derek Zukosky",
+          "npi": "1912942038",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431330",
+      "name": "AVERA ST BENEDICT HEALTH CENTER - CAH",
+      "address": "401 WEST GLYNN DRIVE",
+      "city": "PARKSTON",
+      "state": "SD",
+      "zipCode": "57366",
+      "phone": "(605) 928-3311",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 277,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.182,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Arend",
+          "npi": "1548478118",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431323",
+      "name": "MONUMENT HEALTH CUSTER HOSPITAL",
+      "address": "1220 MONTGOMERY STREET",
+      "city": "CUSTER",
+      "state": "SD",
+      "zipCode": "57730",
+      "phone": "(605) 673-9400",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier",
+      "catheterDays": 264,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.172,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Sandeep Sohal",
+          "npi": "1801381744",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Levi Hamilton",
+          "npi": "1225527252",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Greene",
+          "npi": "1962961268",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nicholas Hopson",
+          "npi": "1821433509",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "281361",
+      "name": "LEXINGTON REGIONAL HEALTH CENTER",
+      "address": "P O BOX 980, 1201 NORTH ERIE ST",
+      "city": "LEXINGTON",
+      "state": "NE",
+      "zipCode": "68850",
+      "phone": "(308) 324-5651",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (1314)",
+      "catheterDays": 263,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.172,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Matthew Rutman",
+          "npi": "1083650170",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351324",
+      "name": "CHI MERCY HEALTH",
+      "address": "570 CHAUTAUQUA BLVD",
+      "city": "VALLEY CITY",
+      "state": "ND",
+      "zipCode": "58072",
+      "phone": "(701) 845-6400",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 258,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.169,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281339",
+      "name": "MEMORIAL HEALTH CARE SYSTEMS",
+      "address": "300 NORTH COLUMBIA AVE",
+      "city": "SEWARD",
+      "state": "NE",
+      "zipCode": "68434",
+      "phone": "(402) 643-2971",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 247,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.604,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Don Henslee",
+          "npi": "1285657551",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431339",
+      "name": "COTEAU DES PRAIRIES HEALTH CARE SYSTEM",
+      "address": "205 ORCHARD DR",
+      "city": "SISSETON",
+      "state": "SD",
+      "zipCode": "57262",
+      "phone": "(605) 698-7647",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (2757508)",
+      "catheterDays": 243,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.594,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Keegan Maxwell",
+          "npi": "1790712883",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281341",
+      "name": "CHADRON COMMUNITY HOSPITAL AND HEALTH SERVICES",
+      "address": "825 CENTENNIAL DRIVE",
+      "city": "CHADRON",
+      "state": "NE",
+      "zipCode": "69337",
+      "phone": "(308) 432-5586",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 241,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.157,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Derek Zukosky",
+          "npi": "1912942038",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431320",
+      "name": "MONUMENT HEALTH LEAD-DEADWOOD HOSPITAL",
+      "address": "61 CHARLES STREET",
+      "city": "DEADWOOD",
+      "state": "SD",
+      "zipCode": "57732",
+      "phone": "(605) 717-6000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier",
+      "catheterDays": 228,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.149,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Melissa Brown",
+          "npi": "1679557391",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brennan Tesdahl",
+          "npi": "1326564055",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281315",
+      "name": "BRODSTONE HEALTHCARE",
+      "address": "P O BOX 187, 520 EAST 10TH ST",
+      "city": "SUPERIOR",
+      "state": "NE",
+      "zipCode": "68978",
+      "phone": "(402) 879-3281",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 219,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.143,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Tara Kirkpatrick",
+          "npi": "1518227958",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "280105",
+      "name": "CHI HEALTH MIDLANDS",
+      "address": "11111 SOUTH 84TH ST",
+      "city": "PAPILLION",
+      "state": "NE",
+      "zipCode": "68046",
+      "phone": "(402) 593-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 215,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.148,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Taylor Soon-Sutton",
+          "npi": "1649766130",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Feloney",
+          "npi": "1073620712",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Galen Meyer",
+          "npi": "1881692903",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joan Delto",
+          "npi": "1275769093",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "281346",
+      "name": "CHI HEALTH PLAINVIEW HOSPITAL",
+      "address": "P O BOX 489, 704 NORTH THIRD ST",
+      "city": "PLAINVIEW",
+      "state": "NE",
+      "zipCode": "68769",
+      "phone": "(402) 582-4245",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Premier",
+      "catheterDays": 215,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.141,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jamie Olsen",
+          "npi": "1518300573",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Natvarlal Patel",
+          "npi": "1710196746",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "350063",
+      "name": "P H S INDIAN HOSP AT BELCOURT-QUENTIN N BURDICK",
+      "address": "PO BOX 160",
+      "city": "BELCOURT",
+      "state": "ND",
+      "zipCode": "58316",
+      "phone": "(701) 477-6111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "gpo": "",
+      "catheterDays": 215,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.106,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431334",
+      "name": "WINNER REGIONAL HEALTHCARE CENTER - CAH",
+      "address": "745 EAST 8TH STREET",
+      "city": "WINNER",
+      "state": "SD",
+      "zipCode": "57580",
+      "phone": "(605) 842-7100",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 200,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.131,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Emad Abu Sitta",
+          "npi": "1194165977",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Derek Zukosky",
+          "npi": "1912942038",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431329",
+      "name": "SANFORD CHAMBERLAIN MEDICAL CENTER",
+      "address": "300 S BYRON",
+      "city": "CHAMBERLAIN",
+      "state": "SD",
+      "zipCode": "57325",
+      "phone": "(605) 234-5511",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 197,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.128,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351310",
+      "name": "SAKAKAWEA MEDICAL CENTER - CAH",
+      "address": "510 8TH AVENUE NE",
+      "city": "HAZEN",
+      "state": "ND",
+      "zipCode": "58545",
+      "phone": "(701) 748-2225",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 191,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.466,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Michael Castello",
+          "npi": "1578728507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Karim Courtemanche",
+          "npi": "1255827697",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281355",
+      "name": "OGALLALA COMMUNITY HOSPITAL",
+      "address": "2601 NORTH SPRUCE ST",
+      "city": "OGALLALA",
+      "state": "NE",
+      "zipCode": "69153",
+      "phone": "(308) 284-4011",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 185,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.121,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Eduardo Augusto Freitas",
+          "npi": "1437248994",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Millie Erickson",
+          "npi": "1033374525",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281313",
+      "name": "GOTHENBURG HEALTH",
+      "address": "PO BOX 469 910 20TH ST",
+      "city": "GOTHENBURG",
+      "state": "NE",
+      "zipCode": "69138",
+      "phone": "(308) 537-3661",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 182,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.444,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Laroy Williams",
+          "npi": "1619904927",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281332",
+      "name": "BUTLER COUNTY HEALTH",
+      "address": "372 SOUTH 9TH STREET",
+      "city": "DAVID CITY",
+      "state": "NE",
+      "zipCode": "68632",
+      "phone": "(402) 367-1200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 178,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.116,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Wiltfong",
+          "npi": "1467475731",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281365",
+      "name": "JENNIE M MELHAM MEMORIAL MEDICAL CENTER",
+      "address": "145 MEMORIAL DRIVE",
+      "city": "BROKEN BOW",
+      "state": "NE",
+      "zipCode": "68822",
+      "phone": "(308) 872-4100",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1347)",
+      "catheterDays": 178,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.117,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Garrett Pohlman",
+          "npi": "1437378171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281323",
+      "name": "CHI HEALTH SCHUYLER",
+      "address": "104 WEST 17TH ST",
+      "city": "SCHUYLER",
+      "state": "NE",
+      "zipCode": "68661",
+      "phone": "(402) 352-2441",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 171,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.111,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431315",
+      "name": "WAGNER COMMUNITY MEMORIAL HOSPITAL - CAH",
+      "address": "513 3RD ST SW",
+      "city": "WAGNER",
+      "state": "SD",
+      "zipCode": "57380",
+      "phone": "(605) 384-3611",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 168,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.11,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Xenofon Papadopoulos",
+          "npi": "1306943576",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431326",
+      "name": "MILBANK AREA HOSPITAL/AVERA HEALTH",
+      "address": "301 FLYNN DRIVE",
+      "city": "MILBANK",
+      "state": "SD",
+      "zipCode": "57252",
+      "phone": "(605) 432-4538",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 164,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.107,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Robert Kessler",
+          "npi": "1932368602",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Keegan Maxwell",
+          "npi": "1790712883",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431313",
+      "name": "FREEMAN MEDICAL CENTER - CAH",
+      "address": "510 E 8TH ST  POST OFFICE BOX 370",
+      "city": "FREEMAN",
+      "state": "SD",
+      "zipCode": "57029",
+      "phone": "(605) 925-4000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 161,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.105,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281318",
+      "name": "MORRILL COUNTY COMMUNITY HOSPITAL",
+      "address": "1313 S STREET",
+      "city": "BRIDGEPORT",
+      "state": "NE",
+      "zipCode": "69336",
+      "phone": "(308) 262-1616",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 152,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.371,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Joshua Caldwell",
+          "npi": "1285196188",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nathan Ullrich",
+          "npi": "1518067339",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281314",
+      "name": "ANNIE JEFFREY MEMORIAL COUNTY HEALTH CENTER",
+      "address": "P O BOX 428, 531 BEEBE ST",
+      "city": "OSCEOLA",
+      "state": "NE",
+      "zipCode": "68651",
+      "phone": "(402) 747-2031",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier",
+      "catheterDays": 148,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.097,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Logan Mcguffey",
+          "npi": "1033524582",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281348",
+      "name": "TRI VALLEY HEALTH SYSTEM",
+      "address": "1305 WEST HIGHWAY 6/34",
+      "city": "CAMBRIDGE",
+      "state": "NE",
+      "zipCode": "69022",
+      "phone": "(308) 697-3329",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 147,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.096,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351318",
+      "name": "CARRINGTON HEALTH CENTER",
+      "address": "PO BOX 461",
+      "city": "CARRINGTON",
+      "state": "ND",
+      "zipCode": "58421",
+      "phone": "(701) 652-3141",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier",
+      "catheterDays": 139,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.091,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Brent Williams",
+          "npi": "1710125893",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431325",
+      "name": "MOBRIDGE REGIONAL HOSPITAL - CAH",
+      "address": "1401 10TH AVE WEST",
+      "city": "MOBRIDGE",
+      "state": "SD",
+      "zipCode": "57601",
+      "phone": "(605) 845-3692",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 135,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.33,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Paul Eckrich",
+          "npi": "1184681108",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431302",
+      "name": "AVERA MISSOURI RIVER HEALTH CENTER",
+      "address": "606 EAST GARFIELD",
+      "city": "GETTYSBURG",
+      "state": "SD",
+      "zipCode": "57442",
+      "phone": "(605) 765-2488",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 127,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.084,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431337",
+      "name": "AVERA HAND COUNTY MEMORIAL HOSPITAL AND CLINIC",
+      "address": "300 W 5TH ST",
+      "city": "MILLER",
+      "state": "SD",
+      "zipCode": "57362",
+      "phone": "(605) 853-2421",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 126,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.083,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Joseph Wyatt",
+          "npi": "1871561126",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431312",
+      "name": "MARSHALL COUNTY HEALTHCARE CENTER - CAH",
+      "address": "413 9TH STREET",
+      "city": "BRITTON",
+      "state": "SD",
+      "zipCode": "57430",
+      "phone": "(605) 448-2253",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 125,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.082,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Eric Leichter",
+          "npi": "1295822104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Abbey Gaske",
+          "npi": "1265426886",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431327",
+      "name": "ST MICHAEL'S HOSPITAL - CAH",
+      "address": "410 W 16TH AVE",
+      "city": "TYNDALL",
+      "state": "SD",
+      "zipCode": "57066",
+      "phone": "(605) 589-2100",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 119,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.291,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281304",
+      "name": "THAYER COUNTY HEALTH SERVICES",
+      "address": "120 PARK AVE",
+      "city": "HEBRON",
+      "state": "NE",
+      "zipCode": "68370",
+      "phone": "(402) 768-6041",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier, Vizient (3699448)",
+      "catheterDays": 117,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.076,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Tara Kirkpatrick",
+          "npi": "1518227958",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431338",
+      "name": "AVERA GREGORY HOSPITAL",
+      "address": "110 S LOGAN AVE",
+      "city": "GREGORY",
+      "state": "SD",
+      "zipCode": "57533",
+      "phone": "(605) 835-8394",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 116,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.076,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Xenofon Papadopoulos",
+          "npi": "1306943576",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Wyatt",
+          "npi": "1871561126",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281349",
+      "name": "PENDER COMMUNITY HOSPITAL",
+      "address": "100 HOSPITAL DRIVE, PO BOX 100",
+      "city": "PENDER",
+      "state": "NE",
+      "zipCode": "68047",
+      "phone": "(402) 385-3083",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 110,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.268,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thomas Brush",
+          "npi": "1669889200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Daniels",
+          "npi": "1538394952",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431333",
+      "name": "SANFORD CANTON-INWOOD MEDICAL CENTER - CAH",
+      "address": "440 NORTH HIAWATHA DRIVE",
+      "city": "CANTON",
+      "state": "SD",
+      "zipCode": "57013",
+      "phone": "(605) 764-1500",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 108,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.264,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431336",
+      "name": "SANFORD VERMILLION HOSPITAL",
+      "address": "20 SOUTH PLUM STREET",
+      "city": "VERMILLION",
+      "state": "SD",
+      "zipCode": "57069",
+      "phone": "(605) 624-2611",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 107,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.069,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Daniels",
+          "npi": "1538394952",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351309",
+      "name": "SANFORD MAYVILLE",
+      "address": "42 6TH AVENUE SE",
+      "city": "MAYVILLE",
+      "state": "ND",
+      "zipCode": "58257",
+      "phone": "(701) 788-3800",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 105,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.069,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thomas Noah",
+          "npi": "1720005275",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Schommer",
+          "npi": "1295179687",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281320",
+      "name": "MEMORIAL HOSPITAL",
+      "address": "1423 SEVENTH ST",
+      "city": "AURORA",
+      "state": "NE",
+      "zipCode": "68818",
+      "phone": "(402) 694-3171",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (1160276), Vizient (1996), Vizient (2252), Vizient (779306), Vizient (3271206)",
+      "catheterDays": 97,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.237,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Laroy Williams",
+          "npi": "1619904927",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281328",
+      "name": "MERRICK MEDICAL CENTER",
+      "address": "1715  26TH ST",
+      "city": "CENTRAL CITY",
+      "state": "NE",
+      "zipCode": "68826",
+      "phone": "(308) 946-3015",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2741525)",
+      "catheterDays": 97,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.063,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Brett Hill",
+          "npi": "1649498403",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351303",
+      "name": "GARRISON MEMORIAL HOSPITAL",
+      "address": "407 3RD AVE SE",
+      "city": "GARRISON",
+      "state": "ND",
+      "zipCode": "58540",
+      "phone": "(701) 463-2275",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Premier",
+      "catheterDays": 94,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.061,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Robert Fisher",
+          "npi": "1043746068",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281342",
+      "name": "CHI HEALTH ST. MARY'S",
+      "address": "1301 GRUNDMAN BLVD",
+      "city": "NEBRASKA CITY",
+      "state": "NE",
+      "zipCode": "68410",
+      "phone": "(402) 873-3321",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 87,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.057,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lance Wiebusch",
+          "npi": "1154442507",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "430093",
+      "name": "SAME DAY SURGERY CENTER LLC",
+      "address": "651 CATHEDRAL DRIVE",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zipCode": "57701",
+      "phone": "(605) 755-9900",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 87,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.033,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Melissa Brown",
+          "npi": "1679557391",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431301",
+      "name": "FAULKTON AREA MEDICAL CENTER",
+      "address": "1300 OAK STREET  POST OFFICE BOX 100",
+      "city": "FAULKTON",
+      "state": "SD",
+      "zipCode": "57438",
+      "phone": "(605) 598-6262",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier",
+      "catheterDays": 81,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.053,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431317",
+      "name": "LANDMANN-JUNGMAN MEMORIAL HOSPITAL - CAH",
+      "address": "600 BILLARS ST",
+      "city": "SCOTLAND",
+      "state": "SD",
+      "zipCode": "57059",
+      "phone": "(605) 583-2226",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 73,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.048,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281324",
+      "name": "NEMAHA COUNTY HOSPITAL",
+      "address": "2022 13TH STREET",
+      "city": "AUBURN",
+      "state": "NE",
+      "zipCode": "68305",
+      "phone": "(402) 274-4366",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier",
+      "catheterDays": 72,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.176,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Tara Kirkpatrick",
+          "npi": "1518227958",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431311",
+      "name": "SANFORD HOSPITAL WEBSTER - CAH",
+      "address": "1401 W FIRST ST POST OFFICE BOX 489",
+      "city": "WEBSTER",
+      "state": "SD",
+      "zipCode": "57274",
+      "phone": "(605) 345-3336",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 72,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.047,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Keegan Maxwell",
+          "npi": "1790712883",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431306",
+      "name": "PLATTE HEALTH CENTER",
+      "address": "601 E 7TH ST  POST OFFICE BOX 200",
+      "city": "PLATTE",
+      "state": "SD",
+      "zipCode": "57369",
+      "phone": "(605) 337-3364",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 69,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.045,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Xenofon Papadopoulos",
+          "npi": "1306943576",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "430084",
+      "name": "PHS INDIAN HOSPITAL AT ROSEBUD",
+      "address": "400 SOLDIER CREEK ROAD",
+      "city": "ROSEBUD",
+      "state": "SD",
+      "zipCode": "57570",
+      "phone": "(605) 747-2231",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "gpo": "",
+      "catheterDays": 68,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.042,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431309",
+      "name": "COMMUNITY MEMORIAL HOSPITAL",
+      "address": "809 JACKSON",
+      "city": "BURKE",
+      "state": "SD",
+      "zipCode": "57523",
+      "phone": "(605) 775-2621",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Vizient (2672774), Vizient (1650), Vizient (2156), Vizient (6064537), Vizient (2623943)",
+      "catheterDays": 65,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.042,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281331",
+      "name": "AVERA CREIGHTON HOSPITAL",
+      "address": "P O BOX 186, 1503 MAIN ST",
+      "city": "CREIGHTON",
+      "state": "NE",
+      "zipCode": "68729",
+      "phone": "(402) 358-5700",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier",
+      "catheterDays": 61,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.04,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Oluyemi Akin-Olugbade",
+          "npi": "1851555460",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431307",
+      "name": "SANFORD CLEAR LAKE MEDICAL CENTER",
+      "address": "701 THIRD AVENUE SOUTH",
+      "city": "CLEAR LAKE",
+      "state": "SD",
+      "zipCode": "57226",
+      "phone": "(605) 874-2141",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 57,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.139,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281306",
+      "name": "KEARNEY COUNTY HEALTH SERVICES HOSPITAL",
+      "address": "727 EAST 1ST ST",
+      "city": "MINDEN",
+      "state": "NE",
+      "zipCode": "68959",
+      "phone": "(308) 832-3400",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 56,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.037,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Matthew Rutman",
+          "npi": "1083650170",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431322",
+      "name": "FALL RIVER HOSPITAL - CAH",
+      "address": "1201 HIGHWAY 71 SOUTH",
+      "city": "HOT SPRINGS",
+      "state": "SD",
+      "zipCode": "57747",
+      "phone": "(605) 745-8910",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 53,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.13,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "280131",
+      "name": "MIDWEST SURGICAL HOSPITAL LLC",
+      "address": "7915 FARNAM DRIVE",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68114",
+      "phone": "(402) 399-1900",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "gpo": "",
+      "catheterDays": 50,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.016,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351312",
+      "name": "NORTHWOOD DEACONESS HEALTH CENTER",
+      "address": "PO BOX 190",
+      "city": "NORTHWOOD",
+      "state": "ND",
+      "zipCode": "58267",
+      "phone": "(701) 587-6060",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Vizient (948446)",
+      "catheterDays": 45,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.03,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Adam Nicholson",
+          "npi": "1063619237",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431331",
+      "name": "AVERA DELLS AREA HOSPITAL  - CAH",
+      "address": "909 N IOWA AVE",
+      "city": "DELL RAPIDS",
+      "state": "SD",
+      "zipCode": "57022",
+      "phone": "(605) 428-5431",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 44,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.029,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431305",
+      "name": "DOUGLAS COUNTY MEMORIAL HOSPITAL-CAH",
+      "address": "708 8TH ST",
+      "city": "ARMOUR",
+      "state": "SD",
+      "zipCode": "57313",
+      "phone": "(605) 724-2159",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 42,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.027,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431324",
+      "name": "AVERA WESKOTA MEMORIAL MEDICAL CENTER - CAH",
+      "address": "604 1ST ST NE",
+      "city": "WESSINGTON SPRINGS",
+      "state": "SD",
+      "zipCode": "57382",
+      "phone": "(605) 539-1201",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 41,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.101,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431328",
+      "name": "PIONEER MEMORIAL HOSPITAL - CAH",
+      "address": "315 N WASHINGTON AVE  POST OFFICE BOX 368",
+      "city": "VIBORG",
+      "state": "SD",
+      "zipCode": "57070",
+      "phone": "(605) 326-5161",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 34,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.083,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281335",
+      "name": "CALLAWAY DISTRICT HOSPITAL",
+      "address": "P O BOX 100, 211 E KIMBALL",
+      "city": "CALLAWAY",
+      "state": "NE",
+      "zipCode": "68825",
+      "phone": "(308) 836-2228",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 32,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.021,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "430090",
+      "name": "SIOUX FALLS SPECIALTY HOSPITAL",
+      "address": "910 EAST 20TH STREET",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zipCode": "57105",
+      "phone": "(605) 334-6730",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Premier, Premier",
+      "catheterDays": 32,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.015,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Dennis Thum",
+          "npi": "1245619543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Gillett",
+          "npi": "1619954542",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Witte",
+          "npi": "1548228141",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lauren Thum",
+          "npi": "1780022921",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Edman",
+          "npi": "1003475591",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nathan Bockholt",
+          "npi": "1295901460",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Lindaman",
+          "npi": "1912121229",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Arend",
+          "npi": "1548478118",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eugene Park",
+          "npi": "1275654782",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Darlys Hofer",
+          "npi": "1164470076",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Larson",
+          "npi": "1346703634",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 11
+    },
+    {
+      "id": "281350",
+      "name": "JOHNSON COUNTY HOSPITAL",
+      "address": "202 HIGH ST",
+      "city": "TECUMSEH",
+      "state": "NE",
+      "zipCode": "68450",
+      "phone": "(402) 335-3361",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Vizient (2228440)",
+      "catheterDays": 29,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.019,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Aaron Pomajzl",
+          "npi": "1932550084",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431332",
+      "name": "AVERA DE SMET MEMORIAL HOSPITAL - CAH",
+      "address": "306 PRAIRIE AVENUE SW  POST OFFICE BOX 160",
+      "city": "DE SMET",
+      "state": "SD",
+      "zipCode": "57231",
+      "phone": "(605) 854-3329",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 29,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.019,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Dileep Bhat",
+          "npi": "1528130085",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281347",
+      "name": "OSMOND GENERAL HOSPITAL",
+      "address": "402 NORTH MAPLE ST",
+      "city": "OSMOND",
+      "state": "NE",
+      "zipCode": "68765",
+      "phone": "(402) 748-3393",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1953)",
+      "catheterDays": 28,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.018,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jamie Olsen",
+          "npi": "1518300573",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "431308",
+      "name": "EUREKA COMMUNITY HEALTH SERVICES - CAH",
+      "address": "200 J AVE POST OFFICE BOX 517",
+      "city": "EUREKA",
+      "state": "SD",
+      "zipCode": "57437",
+      "phone": "(605) 284-2661",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 21,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.014,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351311",
+      "name": "LISBON AREA HEALTH SERVICES",
+      "address": "905 MAIN ST",
+      "city": "LISBON",
+      "state": "ND",
+      "zipCode": "58054",
+      "phone": "(701) 683-6400",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier",
+      "catheterDays": 18,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.043,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351315",
+      "name": "CHI OAKES HOSPITAL",
+      "address": "1200 N 7TH ST",
+      "city": "OAKES",
+      "state": "ND",
+      "zipCode": "58474",
+      "phone": "(701) 742-3291",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 14,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.009,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "280059",
+      "name": "TWELVE CLANS UNITY HOSPITAL",
+      "address": "225 S BLUFF STREET",
+      "city": "WINNEBAGO",
+      "state": "NE",
+      "zipCode": "68071",
+      "phone": "(402) 878-2231",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "gpo": "",
+      "catheterDays": 2,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.001,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351304",
+      "name": "CHI ST ALEXIUS HEALTH TURTLE LAKE",
+      "address": "220 5TH AVE W",
+      "city": "TURTLE LAKE",
+      "state": "ND",
+      "zipCode": "58575",
+      "phone": "(701) 448-2331",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 2,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.001,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "280077",
+      "name": "METHODIST FREMONT HEALTH",
+      "address": "450 EAST 23RD ST",
+      "city": "FREMONT",
+      "state": "NE",
+      "zipCode": "68025",
+      "phone": "(402) 721-1610",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (769614)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Amandeep Mahal",
+          "npi": "1588983266",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ansar Khan",
+          "npi": "1093794935",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amir Gholami",
+          "npi": "1942236807",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Charles Wakefield",
+          "npi": "1215151543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Angela Sukstorf",
+          "npi": "1326092453",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Arther",
+          "npi": "1134355167",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sida Niu",
+          "npi": "1699201905",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "280127",
+      "name": "LINCOLN SURGICAL HOSPITAL",
+      "address": "1710 SOUTH 70TH STREET",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zipCode": "68506",
+      "phone": "(402) 484-9090",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Premier, Vizient (54427)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thomas Brush",
+          "npi": "1669889200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lance Wiebusch",
+          "npi": "1154442507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Wiltfong",
+          "npi": "1467475731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Logan Mcguffey",
+          "npi": "1033524582",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Henning",
+          "npi": "1518120823",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "280128",
+      "name": "CHI HEALTH NEBRASKA HEART",
+      "address": "7500 SOUTH 91ST ST",
+      "city": "LINCOLN",
+      "state": "NE",
+      "zipCode": "68526",
+      "phone": "(402) 328-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Paul Gobbo",
+          "npi": "1144383449",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "280129",
+      "name": "NEBRASKA ORTHOPAEDIC HOSPITAL",
+      "address": "2808 SOUTH 143RD PLAZA",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68144",
+      "phone": "(402) 609-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Physician",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "280133",
+      "name": "NEBRASKA SPINE HOSPITAL, LLC",
+      "address": "6901 NORTH 72ND ST, STE 20300",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68122",
+      "phone": "(402) 572-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281300",
+      "name": "HARLAN COUNTY HEALTH SYSTEM",
+      "address": "717 BROWN ST",
+      "city": "ALMA",
+      "state": "NE",
+      "zipCode": "68920",
+      "phone": "(308) 928-2151",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281301",
+      "name": "FILLMORE COUNTY HOSPITAL",
+      "address": "P O BOX 193, 1900 F STREET",
+      "city": "GENEVA",
+      "state": "NE",
+      "zipCode": "68361",
+      "phone": "(402) 759-3167",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Vizient (6065690)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Tara Kirkpatrick",
+          "npi": "1518227958",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281302",
+      "name": "PAWNEE COUNTY MEMORIAL HOSPITAL",
+      "address": "600 I STREET",
+      "city": "PAWNEE CITY",
+      "state": "NE",
+      "zipCode": "68420",
+      "phone": "(402) 852-2231",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Aaron Pomajzl",
+          "npi": "1932550084",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281303",
+      "name": "NIOBRARA VALLEY HOSPITAL",
+      "address": "P O BOX 118, 401 SOUTH 5TH STREET",
+      "city": "LYNCH",
+      "state": "NE",
+      "zipCode": "68746",
+      "phone": "(402) 569-2451",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Natvarlal Patel",
+          "npi": "1710196746",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281305",
+      "name": "KIMBALL HEALTH SERVICES",
+      "address": "505 SOUTH BURG ST",
+      "city": "KIMBALL",
+      "state": "NE",
+      "zipCode": "69145",
+      "phone": "(308) 235-1952",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Faaborg",
+          "npi": "1265724470",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281307",
+      "name": "SAUNDERS MEDICAL CENTER",
+      "address": "1760 COUNTY RD J",
+      "city": "WAHOO",
+      "state": "NE",
+      "zipCode": "68066",
+      "phone": "(402) 443-4191",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jonathan Henning",
+          "npi": "1518120823",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281308",
+      "name": "HENDERSON COMMUNITY HOSPITAL",
+      "address": "1621 FRONT STREET",
+      "city": "HENDERSON",
+      "state": "NE",
+      "zipCode": "68371",
+      "phone": "(402) 723-4512",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Thomas Brush",
+          "npi": "1669889200",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281309",
+      "name": "SYRACUSE AREA HEALTH",
+      "address": "2731 HEALTHCARE DR",
+      "city": "SYRACUSE",
+      "state": "NE",
+      "zipCode": "68446",
+      "phone": "(402) 269-2011",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lance Wiebusch",
+          "npi": "1154442507",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281310",
+      "name": "GARDEN COUNTY HEALTH SERVICES",
+      "address": "1100 WEST 2ND ST",
+      "city": "OSHKOSH",
+      "state": "NE",
+      "zipCode": "69154",
+      "phone": "(308) 772-3283",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281311",
+      "name": "FRANKLIN COUNTY MEMORIAL HOSPITAL",
+      "address": "1406 Q ST",
+      "city": "FRANKLIN",
+      "state": "NE",
+      "zipCode": "68939",
+      "phone": "(308) 425-6221",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Vizient (2623178), Vizient (2084)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281312",
+      "name": "GENOA COMMUNITY HOSPITAL",
+      "address": "P O BOX 310, 706 EWING AVE",
+      "city": "GENOA",
+      "state": "NE",
+      "zipCode": "68640",
+      "phone": "(402) 993-2283",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281316",
+      "name": "WEBSTER COUNTY COMMUNITY HOSPITAL",
+      "address": "P O BOX 465, 621 N FRANKLIN ST",
+      "city": "RED CLOUD",
+      "state": "NE",
+      "zipCode": "68970",
+      "phone": "(402) 746-5600",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281325",
+      "name": "BROWN COUNTY HOSPITAL",
+      "address": "945 EAST ZERO ST",
+      "city": "AINSWORTH",
+      "state": "NE",
+      "zipCode": "69210",
+      "phone": "(402) 387-2800",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281326",
+      "name": "ANTELOPE MEMORIAL HOSPITAL",
+      "address": "P O BOX 229, 102 WEST 9TH ST",
+      "city": "NELIGH",
+      "state": "NE",
+      "zipCode": "68756",
+      "phone": "(402) 887-4151",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1952)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Afua Ntem-Mensah",
+          "npi": "1588079586",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Hathaway",
+          "npi": "1639392475",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Oluyemi Akin-Olugbade",
+          "npi": "1851555460",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "281327",
+      "name": "COZAD COMMUNITY HOSPITAL",
+      "address": "P O BOX 108, 300 EAST 12TH ST",
+      "city": "COZAD",
+      "state": "NE",
+      "zipCode": "69130",
+      "phone": "(308) 784-2261",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "James Brown",
+          "npi": "1336115302",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281333",
+      "name": "ROCK COUNTY HOSPITAL",
+      "address": "102 EAST SOUTH STREET",
+      "city": "BASSETT",
+      "state": "NE",
+      "zipCode": "68714",
+      "phone": "(402) 684-3366",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier, Vizient (1083033)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281334",
+      "name": "BOONE COUNTY HEALTH CENTER",
+      "address": "P O BOX 151, 723 WEST FAIRVIEW ST",
+      "city": "ALBION",
+      "state": "NE",
+      "zipCode": "68620",
+      "phone": "(402) 395-2191",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Vizient (2558026)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jordan Stegman",
+          "npi": "1285293761",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Afua Ntem-Mensah",
+          "npi": "1588079586",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brett Hill",
+          "npi": "1649498403",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "281336",
+      "name": "YORK GENERAL HEALTH CARE SERVICES",
+      "address": "2222 LINCOLN AVE",
+      "city": "YORK",
+      "state": "NE",
+      "zipCode": "68467",
+      "phone": "(402) 362-6671",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Andrew Lepinski",
+          "npi": "1902829989",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281338",
+      "name": "HOWARD COUNTY MEDICAL CENTER",
+      "address": "P O BOX 406, 1113 SHERMAN ST",
+      "city": "ST PAUL",
+      "state": "NE",
+      "zipCode": "68873",
+      "phone": "(308) 754-4421",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Gregory Alberts",
+          "npi": "1588666275",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281340",
+      "name": "DUNDY COUNTY HOSPITAL",
+      "address": "P O BOX 626, 1313 NORTH CHEYENNE ST",
+      "city": "BENKELMAN",
+      "state": "NE",
+      "zipCode": "69021",
+      "phone": "(308) 423-2204",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (2623011)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281343",
+      "name": "WEST HOLT MEMORIAL HOSPITAL",
+      "address": "406 W NEELY ST",
+      "city": "ATKINSON",
+      "state": "NE",
+      "zipCode": "68713",
+      "phone": "(402) 925-2811",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "281344",
+      "name": "CHERRY COUNTY HOSPITAL",
+      "address": "510 NORTH GREEN ST",
+      "city": "VALENTINE",
+      "state": "NE",
+      "zipCode": "69201",
+      "phone": "(402) 376-2525",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nicholas Hopson",
+          "npi": "1821433509",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281345",
+      "name": "PROVIDENCE MEDICAL CENTER",
+      "address": "1200 PROVIDENCE RD",
+      "city": "WAYNE",
+      "state": "NE",
+      "zipCode": "68787",
+      "phone": "(402) 375-3800",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (3661131), Vizient (1087897)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Afua Ntem-Mensah",
+          "npi": "1588079586",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Olsen",
+          "npi": "1366973950",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281351",
+      "name": "CHASE COUNTY COMMUNITY HOSPITAL",
+      "address": "P O BOX 819, 600 W 12TH ST",
+      "city": "IMPERIAL",
+      "state": "NE",
+      "zipCode": "69033",
+      "phone": "(308) 882-7111",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Matthew Rutman",
+          "npi": "1083650170",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281352",
+      "name": "COMMUNITY MEDICAL CENTER, INC",
+      "address": "P O BOX 399, 3307 BILL SCHOCK BOULEVARD",
+      "city": "FALLS CITY",
+      "state": "NE",
+      "zipCode": "68355",
+      "phone": "(402) 245-2428",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Phillip Mann",
+          "npi": "1215425871",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Aaron Pomajzl",
+          "npi": "1932550084",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281353",
+      "name": "VALLEY COUNTY HEALTH SYSTEM",
+      "address": "2707 L STREET",
+      "city": "ORD",
+      "state": "NE",
+      "zipCode": "68862",
+      "phone": "(308) 728-4200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (708451)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Gregory Alberts",
+          "npi": "1588666275",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Garrett Pohlman",
+          "npi": "1437378171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281354",
+      "name": "CRETE AREA MEDICAL CENTER",
+      "address": "2910 BETTEN DR",
+      "city": "CRETE",
+      "state": "NE",
+      "zipCode": "68333",
+      "phone": "(402) 826-2102",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (3099)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Don Henslee",
+          "npi": "1285657551",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "281356",
+      "name": "PERKINS COUNTY HEALTH SERVICES",
+      "address": "900 LINCOLN AVE",
+      "city": "GRANT",
+      "state": "NE",
+      "zipCode": "69140",
+      "phone": "(308) 352-7200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Vizient (6112521)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "James Brown",
+          "npi": "1336115302",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eduardo Augusto Freitas",
+          "npi": "1437248994",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Millie Erickson",
+          "npi": "1033374525",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "281357",
+      "name": "SIDNEY REGIONAL MEDICAL CENTER",
+      "address": "1000 POLE CREEK CROSSING",
+      "city": "SIDNEY",
+      "state": "NE",
+      "zipCode": "69162",
+      "phone": "(308) 254-5825",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nathan Ullrich",
+          "npi": "1518067339",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Caldwell",
+          "npi": "1285196188",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "281358",
+      "name": "GORDON MEMORIAL HOSPITAL DISTRICT",
+      "address": "300 EAST 8TH ST",
+      "city": "GORDON",
+      "state": "NE",
+      "zipCode": "69343",
+      "phone": "(308) 282-0401",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Derek Zukosky",
+          "npi": "1912942038",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "283300",
+      "name": "BOYS TOWN NATIONAL RESEARCH HOSPITAL",
+      "address": "14000 BOYS TOWN HOSPITAL ROAD",
+      "city": "BOYS TOWN",
+      "state": "NE",
+      "zipCode": "68010",
+      "phone": "(531) 355-6594",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (102552)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Euclid Desouza",
+          "npi": "1609879733",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Trainer",
+          "npi": "1477556561",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "283301",
+      "name": "CHILDREN'S NEBRASKA",
+      "address": "8200 DODGE ST",
+      "city": "OMAHA",
+      "state": "NE",
+      "zipCode": "68114",
+      "phone": "(402) 955-5400",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351300",
+      "name": "TIOGA MEDICAL CENTER",
+      "address": "810 N WELO ST",
+      "city": "TIOGA",
+      "state": "ND",
+      "zipCode": "58852",
+      "phone": "(701) 664-3305",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (2415456)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351301",
+      "name": "MOUNTRAIL COUNTY MEDICAL CENTER INC",
+      "address": "615 6TH ST SE",
+      "city": "STANLEY",
+      "state": "ND",
+      "zipCode": "58784",
+      "phone": "(701) 628-2424",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351302",
+      "name": "MCKENZIE COUNTY HEALTHCARE SYSTEMS INC",
+      "address": "709 4TH AVE NE",
+      "city": "WATFORD CITY",
+      "state": "ND",
+      "zipCode": "58854",
+      "phone": "(701) 842-3000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2305143)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Ludlow",
+          "npi": "1710927728",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Bates",
+          "npi": "1538164231",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "351305",
+      "name": "TRINITY KENMARE COMMUNITY HOSPITAL",
+      "address": "PO BOX 697",
+      "city": "KENMARE",
+      "state": "ND",
+      "zipCode": "58746",
+      "phone": "(701) 385-4296",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351306",
+      "name": "COOPERSTOWN MEDICAL CENTER",
+      "address": "1200 ROBERTS AVE NE",
+      "city": "COOPERSTOWN",
+      "state": "ND",
+      "zipCode": "58425",
+      "phone": "(701) 797-2221",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351307",
+      "name": "ST ANDREW'S HOSPITAL",
+      "address": "316 OHMER STREET",
+      "city": "BOTTINEAU",
+      "state": "ND",
+      "zipCode": "58318",
+      "phone": "(701) 228-9300",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351308",
+      "name": "NELSON COUNTY HEALTH SYSTEM",
+      "address": "200 N MAIN ST",
+      "city": "MCVILLE",
+      "state": "ND",
+      "zipCode": "58254",
+      "phone": "(701) 322-4328",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (72313)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351313",
+      "name": "SOUTHWEST HEALTHCARE SERVICES",
+      "address": "802 2ND ST NW",
+      "city": "BOWMAN",
+      "state": "ND",
+      "zipCode": "58623",
+      "phone": "(701) 523-6555",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2868147)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351314",
+      "name": "JACOBSON MEMORIAL HOSPITAL CARE CENTER",
+      "address": "601 EAST ST N",
+      "city": "ELGIN",
+      "state": "ND",
+      "zipCode": "58533",
+      "phone": "(701) 584-2792",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2762233)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351316",
+      "name": "PRESENTATION MEDICAL CENTER",
+      "address": "213 SECOND AVE NE",
+      "city": "ROLLA",
+      "state": "ND",
+      "zipCode": "58367",
+      "phone": "(701) 477-3161",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (4162440)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351319",
+      "name": "PEMBINA COUNTY MEMORIAL HOSPITAL",
+      "address": "BOX 380",
+      "city": "CAVALIER",
+      "state": "ND",
+      "zipCode": "58220",
+      "phone": "(701) 265-8461",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (2622950)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Cordell Davis",
+          "npi": "1255592903",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Nicholson",
+          "npi": "1063619237",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "351320",
+      "name": "UNITY MEDICAL CENTER",
+      "address": "164 W 13TH STREET",
+      "city": "GRAFTON",
+      "state": "ND",
+      "zipCode": "58237",
+      "phone": "(701) 352-1620",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2913566)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351321",
+      "name": "SOUTH CENTRAL HEALTH",
+      "address": "1007 4TH AVE S",
+      "city": "WISHEK",
+      "state": "ND",
+      "zipCode": "58495",
+      "phone": "(701) 452-2326",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (2305539)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351322",
+      "name": "ASHLEY MEDICAL CENTER",
+      "address": "612 CENTER AVENUE N",
+      "city": "ASHLEY",
+      "state": "ND",
+      "zipCode": "58413",
+      "phone": "(701) 288-3433",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2762171)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351323",
+      "name": "CAVALIER COUNTY MEMORIAL HOSPITAL ASSOCIATION",
+      "address": "909 2ND ST",
+      "city": "LANGDON",
+      "state": "ND",
+      "zipCode": "58249",
+      "phone": "(701) 256-6100",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351325",
+      "name": "ST LUKE'S HOSPITAL",
+      "address": "702 1ST ST SW",
+      "city": "CROSBY",
+      "state": "ND",
+      "zipCode": "58730",
+      "phone": "(701) 965-6384",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351326",
+      "name": "FIRST CARE HEALTH CENTER",
+      "address": "115 VIVIAN ST",
+      "city": "PARK RIVER",
+      "state": "ND",
+      "zipCode": "58270",
+      "phone": "(701) 284-7500",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (3708814), Vizient (3969062)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351327",
+      "name": "SMP HEALTH ST ALOISIUS",
+      "address": "325 E BREWSTER ST",
+      "city": "HARVEY",
+      "state": "ND",
+      "zipCode": "58341",
+      "phone": "(701) 324-4651",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Brent Williams",
+          "npi": "1710125893",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351328",
+      "name": "LINTON HOSPITAL - CAH",
+      "address": "111 ELM AVE W",
+      "city": "LINTON",
+      "state": "ND",
+      "zipCode": "58552",
+      "phone": "(701) 254-4511",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351329",
+      "name": "SANFORD HILLSBORO",
+      "address": "12 THIRD STREET SE",
+      "city": "HILLSBORO",
+      "state": "ND",
+      "zipCode": "58045",
+      "phone": "(701) 636-3200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "351330",
+      "name": "WEST RIVER REGIONAL MEDICAL CENTER",
+      "address": "1000 HIGHWAY 12",
+      "city": "HETTINGER",
+      "state": "ND",
+      "zipCode": "58639",
+      "phone": "(701) 567-4561",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Cameron Charchenko",
+          "npi": "1750676201",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351331",
+      "name": "TOWNER COUNTY MEDICAL CENTER",
+      "address": "7448 HWY 281 N",
+      "city": "CANDO",
+      "state": "ND",
+      "zipCode": "58324",
+      "phone": "(701) 968-4411",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2762308)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Adam Nicholson",
+          "npi": "1063619237",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351332",
+      "name": "HEART OF AMERICA MEDICAL CENTER",
+      "address": "800 S MAIN AVE",
+      "city": "RUGBY",
+      "state": "ND",
+      "zipCode": "58368",
+      "phone": "(701) 776-5261",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (2305011)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Mathew Oommen",
+          "npi": "1467406140",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "351364",
+      "name": "STANDING ROCK SERVICE UNIT",
+      "address": "10 NORTH RIVER ROAD",
+      "city": "FORT YATES,",
+      "state": "ND",
+      "zipCode": "58538",
+      "phone": "(701) 854-3831",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "430095",
+      "name": "AVERA HEART HOSPITAL OF SOUTH DAKOTA",
+      "address": "4500 W 69TH ST",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zipCode": "57108",
+      "phone": "(605) 977-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jawad Nazir",
+          "npi": "1972579118",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian Pepito",
+          "npi": "1093909756",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "430099",
+      "name": "REHAB & CRITICAL CARE HOSPITAL OF THE BLACK HILLS",
+      "address": "2115 PROMISE ROAD",
+      "city": "RAPID CITY",
+      "state": "SD",
+      "zipCode": "57701",
+      "phone": "(605) 646-6040",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431310",
+      "name": "AVERA FLANDREAU HOSPITAL - CAH",
+      "address": "214 NORTH PRAIRIE STREET",
+      "city": "FLANDREAU",
+      "state": "SD",
+      "zipCode": "57028",
+      "phone": "(605) 997-2433",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431314",
+      "name": "BENNETT COUNTY HOSPITAL AND NURSING HOME - CAH",
+      "address": "102 MAJOR ALLEN   POST OFFICE BOX 70D",
+      "city": "MARTIN",
+      "state": "SD",
+      "zipCode": "57551",
+      "phone": "(605) 685-6622",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431318",
+      "name": "BOWDLE HOSPITAL - CAH",
+      "address": "8001 W 5TH  POST OFFICE BOX 556",
+      "city": "BOWDLE",
+      "state": "SD",
+      "zipCode": "57428",
+      "phone": "(605) 285-6146",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "431340",
+      "name": "AVERA QUEEN OF PEACE",
+      "address": "525 NORTH FOSTER STREET",
+      "city": "MITCHELL",
+      "state": "SD",
+      "zipCode": "57301",
+      "phone": "(605) 995-2000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Xenofon Papadopoulos",
+          "npi": "1306943576",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Arend",
+          "npi": "1548478118",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "431383",
+      "name": "EAGLE BUTTE INDIAN HEALTH SERVICE HOSPITAL",
+      "address": "24276 166TH AIRPORT ROAD",
+      "city": "EAGLE BUTTE",
+      "state": "SD",
+      "zipCode": "57625",
+      "phone": "(605) 964-3005",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Federal",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "433300",
+      "name": "LIFESCAPE",
+      "address": "2501 W 26TH ST",
+      "city": "SIOUX FALLS",
+      "state": "SD",
+      "zipCode": "57105",
+      "phone": "(605) 444-9500",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    }
+  ],
+  "mapConfig": {
+    "priorityColors": {
+      "HIGH_CAUTI": "#e41a1c",
+      "HIGH_VOLUME": "#377eb8",
+      "STANDARD": "#4daf4a",
+      "VA": "#ff7f00"
+    },
+    "facilityTypes": [
+      "Acute Care - Veterans Administration",
+      "Childrens",
+      "Acute Care Hospitals",
+      "Critical Access Hospitals"
+    ]
+  }
+}

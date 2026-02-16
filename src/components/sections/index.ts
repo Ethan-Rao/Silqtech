@@ -1,0 +1,6 @@
+export { Hero } from './Hero'
+export { TeamGrid } from './TeamGrid'
+export { ContactForm } from './ContactForm'
+export { InvestorForm } from './InvestorForm'
+export { CTABanner } from './CTABanner'
+export { Accordion } from './Accordion'

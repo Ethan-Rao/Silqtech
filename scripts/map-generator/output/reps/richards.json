@@ -1,0 +1,4759 @@
+{
+  "meta": {
+    "slug": "richards",
+    "company": "Richards",
+    "name": "Richards",
+    "email": "nathan@wasatchmedspec.com",
+    "territory": [
+      "TN"
+    ],
+    "generated": "2026-02-08T03:46:07.689641Z",
+    "dataVersion": "08_2025"
+  },
+  "stats": {
+    "facilityCount": 100,
+    "totalCatheterDays": 445239,
+    "highCautiCount": 0,
+    "highVolumeCount": 11,
+    "physicianCount": 530
+  },
+  "facilities": [
+    {
+      "id": "440039",
+      "name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+      "address": "1211 MEDICAL CENTER DRIVE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37232",
+      "phone": "(615) 322-3454",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2683836), Vizient (2683837), Vizient (2683843), Vizient (2626373), Vizient (2941255)",
+      "catheterDays": 36645,
+      "observedCAUTI": 38,
+      "predictedCAUTI": 64.282,
+      "sir": 0.591,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Jacob Mccoy",
+          "npi": "1346686847",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joanne Dale",
+          "npi": "1285860742",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicole Miller",
+          "npi": "1669672606",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Dooley",
+          "npi": "1568508489",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jennifer Robles",
+          "npi": "1326326471",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Penson",
+          "npi": "1164457867",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sara Haddad",
+          "npi": "1598327611",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "C  William Wester",
+          "npi": "1134376072",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sarah Flury",
+          "npi": "1770797193",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Barocas",
+          "npi": "1225259831",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Roger Dmochowski",
+          "npi": "1508953613",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Joyce",
+          "npi": "1710333182",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Melissa Kaufman",
+          "npi": "1376690255",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anna Person",
+          "npi": "1669657763",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sean Kelly",
+          "npi": "1932477171",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ban Allos",
+          "npi": "1457435562",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bryan Harris",
+          "npi": "1659514354",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "April Pettit",
+          "npi": "1174670046",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mary Lee",
+          "npi": "1689234775",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Niels Johnsen",
+          "npi": "1720345671",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Celestine Wanjalla",
+          "npi": "1255674594",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Cameron Britton",
+          "npi": "1588225254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelvin Moses",
+          "npi": "1609052554",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elizabeth Phillips",
+          "npi": "1952737439",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Yuri Van Der Heijden",
+          "npi": "1922155811",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Patty Wright",
+          "npi": "1932296043",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rebecca Stern",
+          "npi": "1699200576",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Krystn Wagner",
+          "npi": "1669455127",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christina Fiske",
+          "npi": "1982751707",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Richard Larue",
+          "npi": "1194987867",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Maricar Malinis",
+          "npi": "1619005055",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Amir Khan",
+          "npi": "1215592050",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicholas Kavoussi",
+          "npi": "1164868493",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ryan Hsi",
+          "npi": "1043451073",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Fionna Feller",
+          "npi": "1487142683",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rebecca Berhanu",
+          "npi": "1043462997",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Thomas Talbot",
+          "npi": "1578650602",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Helen Talbot",
+          "npi": "1295899920",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Avi Baskin",
+          "npi": "1689105090",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kimberly Maciolek",
+          "npi": "1831686799",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stanley Herrell",
+          "npi": "1972690089",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katie White",
+          "npi": "1790001410",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ruchika Talwar",
+          "npi": "1003349440",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elisabeth Sebesta",
+          "npi": "1134545346",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ryan Khodadadi",
+          "npi": "1992238976",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Haas",
+          "npi": "1134211543",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Cary Stimson",
+          "npi": "1780903914",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Karen Bloch",
+          "npi": "1083798193",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Richier",
+          "npi": "1437116324",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Noonan",
+          "npi": "1366893133",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jeffrey Tosoian",
+          "npi": "1548583354",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shelia Dunaway",
+          "npi": "1326124132",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kristen Scarpato",
+          "npi": "1164659801",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amy Luckenbaugh",
+          "npi": "1871939132",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sam Chang",
+          "npi": "1922107358",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Titus Daniels",
+          "npi": "1235286121",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kevin Dee",
+          "npi": "1700105319",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 57
+    },
+    {
+      "id": "440049",
+      "name": "METHODIST HOSPITALS OF MEMPHIS",
+      "address": "1265 UNION AVE SUITE 700",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38104",
+      "phone": "(901) 516-8274",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 32123,
+      "observedCAUTI": 9,
+      "predictedCAUTI": 47.879,
+      "sir": 0.188,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Robert Hollabaugh",
+          "npi": "1437117561",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Vladimir Chachanidze",
+          "npi": "1750327607",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Threlkeld",
+          "npi": "1356318661",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Granieri",
+          "npi": "1992095541",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Zielie",
+          "npi": "1306959861",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Sims",
+          "npi": "1184119455",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shirin Mazumder",
+          "npi": "1396921623",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1962469023",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Suhel Sabunwala",
+          "npi": "1821528134",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Manoj Jain",
+          "npi": "1003858168",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Imad Omer",
+          "npi": "1356318059",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ava Saidian",
+          "npi": "1205281912",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Eber",
+          "npi": "1124085634",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Stewart",
+          "npi": "1659544385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Shelton",
+          "npi": "1710945522",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Gubin",
+          "npi": "1235164286",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ravi Chauhan",
+          "npi": "1588621254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Gelfand",
+          "npi": "1982662961",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Wake",
+          "npi": "1982661088",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Gleason",
+          "npi": "1760669808",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stephen Threlkeld",
+          "npi": "1578530895",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nikhil Gopal",
+          "npi": "1629422563",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kevin Reed",
+          "npi": "1831695873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chinelo Animalu",
+          "npi": "1881858165",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Margarita Lamothe",
+          "npi": "1306887187",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William Shappley",
+          "npi": "1588733992",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kerry Cleveland",
+          "npi": "1114984911",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William Shappley",
+          "npi": "1508889817",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Corr",
+          "npi": "1700101441",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Patterson",
+          "npi": "1730147877",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 30
+    },
+    {
+      "id": "440015",
+      "name": "UNIVERSITY HEALTH SYSTEM, INC",
+      "address": "1924 ALCOA HIGHWAY",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zipCode": "37920",
+      "phone": "(865) 305-9000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 30078,
+      "observedCAUTI": 28,
+      "predictedCAUTI": 45.55,
+      "sir": 0.615,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Bryan Walker",
+          "npi": "1144727959",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Wesley White",
+          "npi": "1730353780",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ryan Pickens",
+          "npi": "1760639850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Lacy",
+          "npi": "1538487939",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Supriya Singh",
+          "npi": "1366812109",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Simi Vincent",
+          "npi": "1902836620",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Edward Kim",
+          "npi": "1316948029",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Angelle",
+          "npi": "1386059368",
+          "specialty": "Urology"
+        },
+        {
+          "name": "C Bowling",
+          "npi": "1255398004",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Bienvenu",
+          "npi": "1407167018",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Riedinger",
+          "npi": "1255860672",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mahmoud Shorman",
+          "npi": "1780011809",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Russell Smith",
+          "npi": "1831232305",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Hiediliza Tan",
+          "npi": "1306810395",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Wang",
+          "npi": "1124524004",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 15
+    },
+    {
+      "id": "440048",
+      "name": "BAPTIST MEMORIAL HOSPITAL",
+      "address": "6019 WALNUT GROVE ROAD",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38120",
+      "phone": "(901) 226-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 22635,
+      "observedCAUTI": 14,
+      "predictedCAUTI": 31.207,
+      "sir": 0.449,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Robert Hollabaugh",
+          "npi": "1437117561",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Gubin",
+          "npi": "1235164286",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stephen Threlkeld",
+          "npi": "1578530895",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1962469023",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Suhel Sabunwala",
+          "npi": "1821528134",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Leslie Mcgowan",
+          "npi": "1710902440",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Manoj Jain",
+          "npi": "1003858168",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kristie Nowak",
+          "npi": "1275598781",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Imad Omer",
+          "npi": "1356318059",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Threlkeld",
+          "npi": "1356318661",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ravi Chauhan",
+          "npi": "1588621254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ghalib Mannan",
+          "npi": "1831144013",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kevin Reed",
+          "npi": "1831695873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Donato",
+          "npi": "1710945860",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Margarita Lamothe",
+          "npi": "1306887187",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Granieri",
+          "npi": "1992095541",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Wake",
+          "npi": "1982661088",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Zielie",
+          "npi": "1306959861",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hiren Pokharna",
+          "npi": "1114172376",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Eber",
+          "npi": "1124085634",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Shappley",
+          "npi": "1588733992",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Shappley",
+          "npi": "1508889817",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Corr",
+          "npi": "1700101441",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tuhina Cornelius",
+          "npi": "1538680590",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Sims",
+          "npi": "1184119455",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Stewart",
+          "npi": "1659544385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Bingham",
+          "npi": "1275613408",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerald Dang",
+          "npi": "1992908297",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Shelton",
+          "npi": "1710945522",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Greenberger",
+          "npi": "1497860720",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Gleason",
+          "npi": "1760669808",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Saslawsky",
+          "npi": "1184739401",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chiemeziem Nwanyanwu",
+          "npi": "1477937548",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 33
+    },
+    {
+      "id": "440002",
+      "name": "JACKSON-MADISON COUNTY GENERAL HOSPITAL",
+      "address": "620 SKYLINE DRIVE",
+      "city": "JACKSON",
+      "state": "TN",
+      "zipCode": "38301",
+      "phone": "(731) 541-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (59177)",
+      "catheterDays": 20071,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 32.323,
+      "sir": 0.217,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "John Beddies",
+          "npi": "1063642403",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brent Morris",
+          "npi": "1992929368",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tina Wilson",
+          "npi": "1376579854",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brent Zamzow",
+          "npi": "1962548149",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Donald Mcknight",
+          "npi": "1225011588",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Davenport",
+          "npi": "1760653505",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Julie Antique",
+          "npi": "1982623591",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Debra Rainey",
+          "npi": "1952336513",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Barbara Menzies",
+          "npi": "1144330291",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joe Mobley",
+          "npi": "1356597983",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alfred Aiyanyor",
+          "npi": "1245790658",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Casey Zelus",
+          "npi": "1801316583",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Raymond Howard",
+          "npi": "1639152622",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Peter Lawrence",
+          "npi": "1124001219",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 14
+    },
+    {
+      "id": "440104",
+      "name": "ERLANGER MEDICAL CENTER",
+      "address": "975 E 3RD ST",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zipCode": "37403",
+      "phone": "(423) 778-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 18117,
+      "observedCAUTI": 8,
+      "predictedCAUTI": 24.074,
+      "sir": 0.332,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Amar Singh",
+          "npi": "1770650145",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Sizemore",
+          "npi": "1124021340",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Henry Okafor",
+          "npi": "1225263254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Martin",
+          "npi": "1962593202",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jessica Lange",
+          "npi": "1649537093",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anand Shridharani",
+          "npi": "1992834923",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taylor Peak",
+          "npi": "1992246383",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Benjamin Waldorf",
+          "npi": "1285945253",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ethan Matz",
+          "npi": "1023512761",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amanda Threlkeld",
+          "npi": "1679927057",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Soufleris",
+          "npi": "1184687378",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 11
+    },
+    {
+      "id": "440059",
+      "name": "COOKEVILLE REGIONAL MEDICAL CENTER",
+      "address": "1 MEDICAL CENTER BOULEVARD",
+      "city": "COOKEVILLE",
+      "state": "TN",
+      "zipCode": "38501",
+      "phone": "(931) 783-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (2510938), Vizient (2916349), Vizient (1131594)",
+      "catheterDays": 16600,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 14.248,
+      "sir": 0.491,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "John Lacy",
+          "npi": "1538487939",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Dykes",
+          "npi": "1710069034",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Collins",
+          "npi": "1598735052",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ricky Smith",
+          "npi": "1578670477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Lambert",
+          "npi": "1790342590",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Pierce",
+          "npi": "1053388561",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jason Easterday",
+          "npi": "1831689546",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shobhit Keswani",
+          "npi": "1427519073",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "440091",
+      "name": "MEMORIAL HEALTHCARE SYSTEM, INC",
+      "address": "2525 DESALES AVE",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zipCode": "37404",
+      "phone": "(423) 495-2525",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 15784,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 17.009,
+      "sir": 0.412,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Jeffrey Mullins",
+          "npi": "1508038944",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Sahaj",
+          "npi": "1275630907",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marty Scheinberg",
+          "npi": "1215037726",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Currin",
+          "npi": "1821438441",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Henson",
+          "npi": "1699722892",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hal Hill",
+          "npi": "1689663197",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John House",
+          "npi": "1538138805",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Young",
+          "npi": "1952308421",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Sizemore",
+          "npi": "1124021340",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Cornea",
+          "npi": "1083603906",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kymber Habenicht",
+          "npi": "1164528873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Thacker",
+          "npi": "1881658664",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hayden Jahn",
+          "npi": "1992151286",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Mcintire",
+          "npi": "1184689788",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 14
+    },
+    {
+      "id": "440161",
+      "name": "TRISTAR CENTENNIAL MEDICAL CENTER",
+      "address": "2300 PATTERSON STREET",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37203",
+      "phone": "(615) 342-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 13442,
+      "observedCAUTI": 4,
+      "predictedCAUTI": 20.609,
+      "sir": 0.194,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Harriette Scarpero",
+          "npi": "1861589970",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Flora",
+          "npi": "1336126358",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elizabeth Schiftan",
+          "npi": "1548656705",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Bryant",
+          "npi": "1437441847",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William French",
+          "npi": "1356906283",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sydney Hester",
+          "npi": "1417169319",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Duong",
+          "npi": "1356538904",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gautam Jayram",
+          "npi": "1265669683",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Juli Horton",
+          "npi": "1679568364",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Knoll",
+          "npi": "1932528411",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adnan Dervishi",
+          "npi": "1932528692",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marcy Abel",
+          "npi": "1952388977",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tara Allen",
+          "npi": "1497966105",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Selph",
+          "npi": "1336383934",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 14
+    },
+    {
+      "id": "440120",
+      "name": "PHYSICIANS REGIONAL MEDICAL CENTER",
+      "address": "7565 DANNAHER WAY POWELL",
+      "city": "POWELL",
+      "state": "TN",
+      "zipCode": "37849",
+      "phone": "(865) 545-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 11575,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 8.839,
+      "sir": 0.226,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Adam Shrewsberry",
+          "npi": "1295977783",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Garrett Lischer",
+          "npi": "1831185107",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katherine Cameron",
+          "npi": "1508076936",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sean Delair",
+          "npi": "1730155094",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Leor Arbel",
+          "npi": "1235633207",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440017",
+      "name": "WELLMONT HOLSTON VALLEY MEDICAL CENTER",
+      "address": "130 WEST RAVINE ROAD",
+      "city": "KINGSPORT",
+      "state": "TN",
+      "zipCode": "37662",
+      "phone": "(423) 224-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2717194)",
+      "catheterDays": 11004,
+      "observedCAUTI": 12,
+      "predictedCAUTI": 13.598,
+      "sir": 0.882,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Jim Littlejohn",
+          "npi": "1225036841",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Franklin",
+          "npi": "1285996140",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Carter",
+          "npi": "1912991670",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Rogers",
+          "npi": "1043463029",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Peter Tran",
+          "npi": "1891864203",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Neethu Vedantam",
+          "npi": "1154851350",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lincoln Olsen",
+          "npi": "1801920061",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Krolikowski",
+          "npi": "1215372578",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Grant Taylor",
+          "npi": "1427013044",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mathew Finniss",
+          "npi": "1346773793",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Santosh Shanmuga",
+          "npi": "1386146769",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hiren Patel",
+          "npi": "1225042831",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Phillip Stokes",
+          "npi": "1851778682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Howard Aubert",
+          "npi": "1912116989",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Whitney Krolikowski",
+          "npi": "1780099937",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ashley Dixon",
+          "npi": "1710331699",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bruce Woodworth",
+          "npi": "1366538258",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wayne Tongco",
+          "npi": "1609830504",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 18
+    },
+    {
+      "id": "44013F",
+      "name": "MEMPHIS VA MEDICAL CENTER",
+      "address": "1030 JEFFERSON AVENUE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38104",
+      "phone": "(901) 577-7200",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 4572,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 3.806,
+      "sir": 0.788,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "44016F",
+      "name": "MOUNTAIN HOME VA MEDICAL CENTER",
+      "address": "CORNER OF LAMONT STREET AND VETERANS WAY",
+      "city": "MOUNTAIN HOME",
+      "state": "TN",
+      "zipCode": "37684",
+      "phone": "(423) 926-1171",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 2505,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.071,
+      "sir": 0.483,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440012",
+      "name": "WELLMONT BRISTOL REGIONAL MEDICAL CENTER",
+      "address": "ONE MEDICAL PARK BLVD",
+      "city": "BRISTOL",
+      "state": "TN",
+      "zipCode": "37620",
+      "phone": "(423) 844-1121",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 10695,
+      "observedCAUTI": 8,
+      "predictedCAUTI": 13.031,
+      "sir": 0.614,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jim Littlejohn",
+          "npi": "1225036841",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Hill",
+          "npi": "1366429813",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Parrish Moree",
+          "npi": "1518123447",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shawna Boyle",
+          "npi": "1518347913",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Arif",
+          "npi": "1366974768",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Patricia Kloser",
+          "npi": "1801988787",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Susan Pursell",
+          "npi": "1942220371",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Rogers",
+          "npi": "1043463029",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Neethu Vedantam",
+          "npi": "1154851350",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lincoln Olsen",
+          "npi": "1801920061",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mathew Finniss",
+          "npi": "1346773793",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Mecca",
+          "npi": "1851891303",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Santosh Shanmuga",
+          "npi": "1386146769",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Phillip Stokes",
+          "npi": "1851778682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kate Molony",
+          "npi": "1184999120",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Cameron Britton",
+          "npi": "1588225254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bruce Woodworth",
+          "npi": "1366538258",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lisa Carter",
+          "npi": "1225599319",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Wayne Tongco",
+          "npi": "1609830504",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 19
+    },
+    {
+      "id": "440006",
+      "name": "TRISTAR SKYLINE MEDICAL CENTER",
+      "address": "3441 DICKERSON PIKE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37207",
+      "phone": "(615) 769-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 10515,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 16.336,
+      "sir": 0.306,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Vidhush Yarlagadda",
+          "npi": "1700297553",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Noonan",
+          "npi": "1366893133",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lisa Laya",
+          "npi": "1427046622",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Chambers",
+          "npi": "1194259523",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Ramirez",
+          "npi": "1316176233",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Morris",
+          "npi": "1194841452",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerard Shu Tangyie",
+          "npi": "1740252642",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jayesh Patel",
+          "npi": "1720079114",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gregory Head",
+          "npi": "1740301712",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "440063",
+      "name": "JOHNSON CITY MEDICAL CENTER",
+      "address": "400 N STATE OF FRANKLIN RD",
+      "city": "JOHNSON CITY",
+      "state": "TN",
+      "zipCode": "37604",
+      "phone": "(423) 431-6111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Vizient (109888)",
+      "catheterDays": 10117,
+      "observedCAUTI": 11,
+      "predictedCAUTI": 14.783,
+      "sir": 0.744,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lamis Ibrahim",
+          "npi": "1780872358",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Beaird",
+          "npi": "1992760516",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Arif",
+          "npi": "1366974768",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William Rogers",
+          "npi": "1043463029",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lincoln Olsen",
+          "npi": "1801920061",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dima Youssef",
+          "npi": "1245411255",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Krolikowski",
+          "npi": "1215372578",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Phillip Stokes",
+          "npi": "1851778682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Howard Aubert",
+          "npi": "1912116989",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wayne Tongco",
+          "npi": "1609830504",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "440125",
+      "name": "FORT SANDERS REGIONAL MEDICAL CENTER",
+      "address": "1901 W CLINCH AVE",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zipCode": "37916",
+      "phone": "(865) 541-1101",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (95)",
+      "catheterDays": 9915,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 11.324,
+      "sir": 0.442,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Philip Serbin",
+          "npi": "1336153311",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Tieng",
+          "npi": "1184624140",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ernest Kemp",
+          "npi": "1790764637",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Renee Quillin",
+          "npi": "1194988436",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Shiflett",
+          "npi": "1528421658",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Catherine Sarbah",
+          "npi": "1821002429",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jeff Flickinger",
+          "npi": "1497755458",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1578542338",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jamison Norwood",
+          "npi": "1902293038",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John-Paul Newport",
+          "npi": "1891940904",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "440082",
+      "name": "ASCENSION SAINT THOMAS HOSPITAL",
+      "address": "4220 HARDING RD, PO BOX 380",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37205",
+      "phone": "(615) 222-2111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 9835,
+      "observedCAUTI": 6,
+      "predictedCAUTI": 13.755,
+      "sir": 0.436,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Caroline Eskind",
+          "npi": "1184043978",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mark Flora",
+          "npi": "1336126358",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elizabeth Schiftan",
+          "npi": "1548656705",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William French",
+          "npi": "1356906283",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Vanhook",
+          "npi": "1841237450",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joshua Calvert",
+          "npi": "1629424585",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Duong",
+          "npi": "1356538904",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gautam Jayram",
+          "npi": "1265669683",
+          "specialty": "Urology"
+        },
+        {
+          "name": "L. Knoll",
+          "npi": "1346206893",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Toni Hall",
+          "npi": "1841680162",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Knoll",
+          "npi": "1932528411",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Mason",
+          "npi": "1467509349",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Adnan Dervishi",
+          "npi": "1932528692",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Carr",
+          "npi": "1770640187",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Trabue",
+          "npi": "1568406411",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Selph",
+          "npi": "1336383934",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 16
+    },
+    {
+      "id": "440173",
+      "name": "PARKWEST MEDICAL CENTER",
+      "address": "9352 PARK WEST BLVD",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zipCode": "37923",
+      "phone": "(865) 970-1001",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (7065)",
+      "catheterDays": 8687,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 7.545,
+      "sir": 0.398,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Christopher Ramsey",
+          "npi": "1205836343",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ernest Kemp",
+          "npi": "1790764637",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Walter Chiles",
+          "npi": "1124019682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Renee Quillin",
+          "npi": "1194988436",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Leroy",
+          "npi": "1770754137",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Shiflett",
+          "npi": "1528421658",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Catherine Sarbah",
+          "npi": "1821002429",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Maull",
+          "npi": "1356301840",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Garrett Lischer",
+          "npi": "1831185107",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1578542338",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian Parker",
+          "npi": "1871593814",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jamison Norwood",
+          "npi": "1902293038",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lee Congleton",
+          "npi": "1699775718",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 13
+    },
+    {
+      "id": "440034",
+      "name": "METHODIST MEDICAL CENTER OF OAK RIDGE",
+      "address": "990 OAK RIDGE TURNPIKE BOX 529",
+      "city": "OAK RIDGE",
+      "state": "TN",
+      "zipCode": "37830",
+      "phone": "(865) 835-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (189)",
+      "catheterDays": 7933,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 5.547,
+      "sir": 0.541,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Christopher Maull",
+          "npi": "1356301840",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Douglas",
+          "npi": "1902169543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Parker",
+          "npi": "1871593814",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sean Delair",
+          "npi": "1730155094",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "440073",
+      "name": "MAURY REGIONAL HOSPITAL",
+      "address": "1224 TROTWOOD AVE",
+      "city": "COLUMBIA",
+      "state": "TN",
+      "zipCode": "38401",
+      "phone": "(931) 381-1111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 7669,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 6.762,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Anthony Khim",
+          "npi": "1295736940",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Coursey",
+          "npi": "1114998507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Charlotte Batey",
+          "npi": "1265433916",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Baldwin",
+          "npi": "1851354104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Deborah Goldsmith",
+          "npi": "1710058136",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Shaza Khalid",
+          "npi": "1457702466",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Troy Larson",
+          "npi": "1023542610",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Justin Kropf",
+          "npi": "1942428628",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "440152",
+      "name": "REGIONAL ONE HEALTH",
+      "address": "877 JEFFERSON AVENUE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38103",
+      "phone": "(901) 545-7928",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Vizient (1057074)",
+      "catheterDays": 7542,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 16.188,
+      "sir": 0.309,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Nikhil Gopal",
+          "npi": "1629422563",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ava Saidian",
+          "npi": "1205281912",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Wake",
+          "npi": "1982661088",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Allison Nazinitsky",
+          "npi": "1922324011",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Ledbetter",
+          "npi": "1730380304",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nathan Summers",
+          "npi": "1649512468",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anthony Patterson",
+          "npi": "1730147877",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "440156",
+      "name": "PARKRIDGE MEDICAL CENTER",
+      "address": "2333 MCCALLIE AVE",
+      "city": "CHATTANOOGA",
+      "state": "TN",
+      "zipCode": "37404",
+      "phone": "(423) 894-4220",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 7261,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 6.416,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jeffrey Mullins",
+          "npi": "1508038944",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John House",
+          "npi": "1538138805",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440011",
+      "name": "BLOUNT MEMORIAL HOSPITAL",
+      "address": "907 E LAMAR ALEXANDER PARKWAY",
+      "city": "MARYVILLE",
+      "state": "TN",
+      "zipCode": "37804",
+      "phone": "(865) 983-7211",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 5829,
+      "observedCAUTI": 4,
+      "predictedCAUTI": 3.961,
+      "sir": 1.01,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Wesley White",
+          "npi": "1730353780",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Bowles",
+          "npi": "1548260599",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Peter Sershon",
+          "npi": "1104813138",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeff Flickinger",
+          "npi": "1497755458",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rebecca Lavelle",
+          "npi": "1104099662",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Bienvenu",
+          "npi": "1407167018",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Byrd",
+          "npi": "1609148436",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Russell Smith",
+          "npi": "1831232305",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Hiediliza Tan",
+          "npi": "1306810395",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "440053",
+      "name": "SAINT THOMAS RUTHERFORD HOSPITAL",
+      "address": "1700 MEDICAL CENTER PARKWAY",
+      "city": "MURFREESBORO",
+      "state": "TN",
+      "zipCode": "37129",
+      "phone": "(615) 396-4100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 5829,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 7.024,
+      "sir": 0.285,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Robert Bass",
+          "npi": "1003957952",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Payne",
+          "npi": "1780045286",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Vlada Melekhin",
+          "npi": "1043351471",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gregory Stewart",
+          "npi": "1487888558",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chad Jackson",
+          "npi": "1386678191",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lucille Cox",
+          "npi": "1275192551",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brennan Hyler",
+          "npi": "1336676774",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rakesh Kumar",
+          "npi": "1235154683",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "440030",
+      "name": "MORRISTOWN HAMBLEN HOSPITAL ASSOCIATION",
+      "address": "908 W 4TH NORTH ST",
+      "city": "MORRISTOWN",
+      "state": "TN",
+      "zipCode": "37814",
+      "phone": "(423) 492-6900",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 5677,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 4.433,
+      "sir": 0.677,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jonathan Angelle",
+          "npi": "1386059368",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Philip Serbin",
+          "npi": "1336153311",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeff Flickinger",
+          "npi": "1497755458",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wesley White",
+          "npi": "1730353780",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Renee Quillin",
+          "npi": "1194988436",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katherine Cameron",
+          "npi": "1508076936",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Leroy",
+          "npi": "1770754137",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "440185",
+      "name": "AFFILIATE OF VITRUVIAN HEALTH",
+      "address": "2305 CHAMBLISS AVE NW",
+      "city": "CLEVELAND",
+      "state": "TN",
+      "zipCode": "37311",
+      "phone": "(423) 339-4100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 5250,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 4.161,
+      "sir": 0.721,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Box",
+          "npi": "1083970198",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Mcintire",
+          "npi": "1184689788",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Froilan Joves",
+          "npi": "1063508356",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Thacker",
+          "npi": "1881658664",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Ivey",
+          "npi": "1376079269",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440150",
+      "name": "TRISTAR SUMMIT MEDICAL CENTER",
+      "address": "5655 FRIST BLVD",
+      "city": "HERMITAGE",
+      "state": "TN",
+      "zipCode": "37076",
+      "phone": "(615) 316-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 5201,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 4.942,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Timothy Noonan",
+          "npi": "1366893133",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Belsante",
+          "npi": "1710118682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lisa Laya",
+          "npi": "1427046622",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Chambers",
+          "npi": "1194259523",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Scott Wendland",
+          "npi": "1376538843",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jay Sulek",
+          "npi": "1104187632",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerard Shu Tangyie",
+          "npi": "1740252642",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jayesh Patel",
+          "npi": "1720079114",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Hawkins",
+          "npi": "1720245301",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "440035",
+      "name": "TENNOVA HEALTHCARE-CLARKSVILLE",
+      "address": "651 DUNLOP LANE",
+      "city": "CLARKSVILLE",
+      "state": "TN",
+      "zipCode": "37040",
+      "phone": "(931) 502-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 5094,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 4.349,
+      "sir": 0.46,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Vidhush Yarlagadda",
+          "npi": "1700297553",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dino Delaurentis",
+          "npi": "1235143025",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sean Mclaughlin",
+          "npi": "1669415667",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Benjamin Dehner",
+          "npi": "1649481938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Titus Daniels",
+          "npi": "1235286121",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440228",
+      "name": "SAINT FRANCIS BARTLETT MEDICAL CENTER",
+      "address": "2986 KATE BOND RD",
+      "city": "BARTLETT",
+      "state": "TN",
+      "zipCode": "38133",
+      "phone": "(901) 820-7050",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 4872,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 3.339,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Margarita Lamothe",
+          "npi": "1306887187",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Zachary Corr",
+          "npi": "1700101441",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Gubin",
+          "npi": "1235164286",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Bingham",
+          "npi": "1275613408",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Shappley",
+          "npi": "1588733992",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kevin Reed",
+          "npi": "1831695873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rowena Desouza",
+          "npi": "1326201567",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "440183",
+      "name": "ST FRANCIS HOSPITAL",
+      "address": "5959 PARK AVE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38119",
+      "phone": "(901) 765-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Vizient (1104811), Vizient (39117), Vizient (5028), Vizient (3184)",
+      "catheterDays": 4357,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 4.449,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "William Shappley",
+          "npi": "1508889817",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Corr",
+          "npi": "1700101441",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Gubin",
+          "npi": "1235164286",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Bingham",
+          "npi": "1275613408",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Shappley",
+          "npi": "1588733992",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerald Dang",
+          "npi": "1992908297",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kevin Reed",
+          "npi": "1831695873",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Walter Rayford",
+          "npi": "1821103151",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Donato",
+          "npi": "1710945860",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Greenberger",
+          "npi": "1497860720",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Saslawsky",
+          "npi": "1184739401",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rowena Desouza",
+          "npi": "1326201567",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "440009",
+      "name": "CUMBERLAND MEDICAL CENTER",
+      "address": "421 S MAIN ST",
+      "city": "CROSSVILLE",
+      "state": "TN",
+      "zipCode": "38555",
+      "phone": "(931) 484-9511",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (888188), Vizient (637)",
+      "catheterDays": 4216,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.238,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Christopher Maull",
+          "npi": "1356301840",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Garrett Lischer",
+          "npi": "1831185107",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Shrewsberry",
+          "npi": "1295977783",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Young",
+          "npi": "1952308421",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Easterday",
+          "npi": "1831689546",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ricky Smith",
+          "npi": "1578670477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Lambert",
+          "npi": "1790342590",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Izzuddin Mansur",
+          "npi": "1508828344",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ryan Pickens",
+          "npi": "1760639850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Walter Chiles",
+          "npi": "1124019682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Lacy",
+          "npi": "1538487939",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Bienvenu",
+          "npi": "1407167018",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "44018F",
+      "name": "VA MIDDLE TENNESSEE HEALTHCARE SYSTEM",
+      "address": "1310 24TH AVENUE SOUTH",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37212",
+      "phone": "(615) 327-5332",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 3955,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 3.368,
+      "sir": 1.485,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440029",
+      "name": "WILLIAMSON MEDICAL CENTER",
+      "address": "4321 CAROTHERS PARKWAY",
+      "city": "FRANKLIN",
+      "state": "TN",
+      "zipCode": "37067",
+      "phone": "(615) 435-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 3869,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 2.675,
+      "sir": 1.121,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Rebecca Stern",
+          "npi": "1699200576",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Shelia Dunaway",
+          "npi": "1326124132",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William Tissot",
+          "npi": "1083668594",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Byrge",
+          "npi": "1538588470",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Hassan",
+          "npi": "1497721526",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Titus Daniels",
+          "npi": "1235286121",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Selph",
+          "npi": "1336383934",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Jacob",
+          "npi": "1598024283",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "440003",
+      "name": "HIGHPOINT HEALTH-SUMNER WITH ASCENSION SAINT THOMA",
+      "address": "555 HARTSVILLE PIKE",
+      "city": "GALLATIN",
+      "state": "TN",
+      "zipCode": "37066",
+      "phone": "(615) 328-8888",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 3617,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 3.686,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Morris",
+          "npi": "1194841452",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Haroon Khan",
+          "npi": "1730114315",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Vivek Narain",
+          "npi": "1598743031",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Walter Little",
+          "npi": "1760460208",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Ramirez",
+          "npi": "1316176233",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440050",
+      "name": "GREENEVILLE COMMUNITY HOSPITAL",
+      "address": "1420 TUSCULUM BOULEVARD",
+      "city": "GREENEVILLE",
+      "state": "TN",
+      "zipCode": "37745",
+      "phone": "(423) 639-3151",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 3220,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.206,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lincoln Olsen",
+          "npi": "1801920061",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dima Youssef",
+          "npi": "1245411255",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Krolikowski",
+          "npi": "1215372578",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jason Carter",
+          "npi": "1912991670",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "440197",
+      "name": "TRISTAR SOUTHERN HILLS MEDICAL CENTER",
+      "address": "391 WALLACE RD",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37211",
+      "phone": "(615) 781-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 3105,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 3.24,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Scott Wendland",
+          "npi": "1376538843",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440072",
+      "name": "DYERSBURG REGIONAL MEDICAL CENTER",
+      "address": "400 EAST TICKLE STREET",
+      "city": "DYERSBURG",
+      "state": "TN",
+      "zipCode": "38024",
+      "phone": "(731) 285-2410",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 3103,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.654,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Julie Antique",
+          "npi": "1982623591",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brent Zamzow",
+          "npi": "1962548149",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Howard",
+          "npi": "1639152622",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tina Wilson",
+          "npi": "1376579854",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "440193",
+      "name": "VANDERBILT WILSON COUNTY HOSPITAL",
+      "address": "1411 BADDOUR PARKWAY",
+      "city": "LEBANON",
+      "state": "TN",
+      "zipCode": "37087",
+      "phone": "(615) 444-2250",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2415402)",
+      "catheterDays": 3054,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.161,
+      "sir": 0.463,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Joanne Dale",
+          "npi": "1285860742",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amy Luckenbaugh",
+          "npi": "1871939132",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Titus Daniels",
+          "npi": "1235286121",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mary Lee",
+          "npi": "1689234775",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Karen Bloch",
+          "npi": "1083798193",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440084",
+      "name": "SWEETWATER HOSPITAL ASSOCIATION",
+      "address": "304 WRIGHT ST",
+      "city": "SWEETWATER",
+      "state": "TN",
+      "zipCode": "37874",
+      "phone": "(865) 213-8200",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (2623161)",
+      "catheterDays": 2711,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 1.502,
+      "sir": 1.332,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Adam Shrewsberry",
+          "npi": "1295977783",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Bienvenu",
+          "npi": "1407167018",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440184",
+      "name": "FRANKLIN WOODS COMMUNITY HOSPITAL",
+      "address": "300 MED TECH PARKWAY",
+      "city": "JOHNSON CITY",
+      "state": "TN",
+      "zipCode": "37604",
+      "phone": "(423) 302-1120",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (1044692)",
+      "catheterDays": 2394,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 1.216,
+      "sir": 0.822,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lamis Ibrahim",
+          "npi": "1780872358",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Beaird",
+          "npi": "1992760516",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Rogers",
+          "npi": "1043463029",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lincoln Olsen",
+          "npi": "1801920061",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dima Youssef",
+          "npi": "1245411255",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Phillip Stokes",
+          "npi": "1851778682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wayne Tongco",
+          "npi": "1609830504",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "440194",
+      "name": "TRISTAR HENDERSONVILLE MEDICAL CENTER",
+      "address": "355 NEW SHACKLE ISLAND RD",
+      "city": "HENDERSONVILLE",
+      "state": "TN",
+      "zipCode": "37075",
+      "phone": "(615) 338-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 2386,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 1.612,
+      "sir": 0.62,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Morris",
+          "npi": "1194841452",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerard Shu Tangyie",
+          "npi": "1740252642",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lisa Laya",
+          "npi": "1427046622",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Vivek Narain",
+          "npi": "1598743031",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jayesh Patel",
+          "npi": "1720079114",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Walter Little",
+          "npi": "1760460208",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Ramirez",
+          "npi": "1316176233",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Noonan",
+          "npi": "1366893133",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Chambers",
+          "npi": "1194259523",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "440132",
+      "name": "WEST TENNESSEE HEALTHCARE HENRY COUNTY HOSPITAL",
+      "address": "301 TYSON AVENUE",
+      "city": "PARIS",
+      "state": "TN",
+      "zipCode": "38242",
+      "phone": "(731) 642-1220",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 2245,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 1.278,
+      "sir": 2.347,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Beddies",
+          "npi": "1063642403",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joe Mobley",
+          "npi": "1356597983",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440153",
+      "name": "TENNOVA HEALTHCARE - NEWPORT MEDICAL CENTER",
+      "address": "435 2ND ST",
+      "city": "NEWPORT",
+      "state": "TN",
+      "zipCode": "37821",
+      "phone": "(423) 625-2200",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 2194,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.206,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Sean Delair",
+          "npi": "1730155094",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440144",
+      "name": "VANDERBILT TULLAHOMA-HARTON HOSPITAL",
+      "address": "1801 N JACKSON ST BOX 460",
+      "city": "TULLAHOMA",
+      "state": "TN",
+      "zipCode": "37388",
+      "phone": "(931) 393-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (2623015)",
+      "catheterDays": 2173,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.499,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Titus Daniels",
+          "npi": "1235286121",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mary Lee",
+          "npi": "1689234775",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Strickland",
+          "npi": "1528033537",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Richier",
+          "npi": "1437116324",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Karen Bloch",
+          "npi": "1083798193",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Tepedino",
+          "npi": "1245288562",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "440081",
+      "name": "LECONTE MEDICAL CENTER",
+      "address": "742 MIDDLECREEK ROAD",
+      "city": "SEVIERVILLE",
+      "state": "TN",
+      "zipCode": "37862",
+      "phone": "(865) 446-7500",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (223)",
+      "catheterDays": 2050,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 1.058,
+      "sir": 0.945,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jeff Flickinger",
+          "npi": "1497755458",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Tieng",
+          "npi": "1184624140",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Douglas",
+          "npi": "1023055290",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440033",
+      "name": "LAFOLLETTE MEDICAL CENTER",
+      "address": "923 EAST CENTRAL AVENUE",
+      "city": "LA FOLLETTE",
+      "state": "TN",
+      "zipCode": "37766",
+      "phone": "(423) 907-1200",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 2006,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.053,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Adam Shrewsberry",
+          "npi": "1295977783",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Kim",
+          "npi": "1316948029",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sean Delair",
+          "npi": "1730155094",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440058",
+      "name": "SOUTHERN TENNESSEE REGIONAL HLTH SYSTEM WINCHESTER",
+      "address": "185 HOSPITAL ROAD",
+      "city": "WINCHESTER",
+      "state": "TN",
+      "zipCode": "37398",
+      "phone": "(931) 967-8295",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 1972,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.338,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Michael Strickland",
+          "npi": "1528033537",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440046",
+      "name": "TRISTAR HORIZON MEDICAL CENTER",
+      "address": "111 HIGHWAY 70 EAST",
+      "city": "DICKSON",
+      "state": "TN",
+      "zipCode": "37055",
+      "phone": "(615) 446-0446",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 1920,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.37,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Duong",
+          "npi": "1356538904",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Morris",
+          "npi": "1194841452",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elizabeth Schiftan",
+          "npi": "1548656705",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tara Allen",
+          "npi": "1497966105",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Noonan",
+          "npi": "1366893133",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440031",
+      "name": "ROANE MEDICAL CENTER",
+      "address": "8045 ROANE MEDICAL CENTER DRIVE",
+      "city": "HARRIMAN",
+      "state": "TN",
+      "zipCode": "37748",
+      "phone": "(865) 316-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (592)",
+      "catheterDays": 1809,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.037,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Christopher Maull",
+          "npi": "1356301840",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Douglas",
+          "npi": "1902169543",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Leroy",
+          "npi": "1770754137",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Parker",
+          "npi": "1871593814",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "440227",
+      "name": "TRISTAR STONECREST MEDICAL CENTER",
+      "address": "200 STONECREST BOULEVARD",
+      "city": "SMYRNA",
+      "state": "TN",
+      "zipCode": "37167",
+      "phone": "(615) 768-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 1662,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.169,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Grant Johnson",
+          "npi": "1851778609",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alberic Rogman",
+          "npi": "1043584949",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Wendland",
+          "npi": "1376538843",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440187",
+      "name": "LIVINGSTON REGIONAL HOSPITAL",
+      "address": "315 OAK ST BOX 550",
+      "city": "LIVINGSTON",
+      "state": "TN",
+      "zipCode": "38570",
+      "phone": "(931) 823-5611",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 1657,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 1.1,
+      "sir": 0.909,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440068",
+      "name": "STARR REGIONAL MEDICAL CENTER ATHENS",
+      "address": "1114 W MADISON AVE",
+      "city": "ATHENS",
+      "state": "TN",
+      "zipCode": "37371",
+      "phone": "(423) 745-1411",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 1654,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.244,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Box",
+          "npi": "1083970198",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Mcintire",
+          "npi": "1184689788",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Thacker",
+          "npi": "1881658664",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Bienvenu",
+          "npi": "1407167018",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Ivey",
+          "npi": "1376079269",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440110",
+      "name": "FORT LOUDOUN MEDICAL CENTER",
+      "address": "550 FORT LOUDON MEDICAL CENTER DR",
+      "city": "LENOIR CITY",
+      "state": "TN",
+      "zipCode": "37772",
+      "phone": "(865) 271-6000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (4620)",
+      "catheterDays": 1438,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.735,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jeff Flickinger",
+          "npi": "1497755458",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1578542338",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian Parker",
+          "npi": "1871593814",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Walter Chiles",
+          "npi": "1124019682",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Shiflett",
+          "npi": "1528421658",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Lacy",
+          "npi": "1538487939",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "440130",
+      "name": "BAPTIST MEMORIAL HOSPITAL UNION CITY",
+      "address": "1201 BISHOP ST, PO BOX 310",
+      "city": "UNION CITY",
+      "state": "TN",
+      "zipCode": "38261",
+      "phone": "(731) 885-2410",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 1354,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.826,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Stephen Threlkeld",
+          "npi": "1578530895",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Davis",
+          "npi": "1740639533",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Peter Lawrence",
+          "npi": "1124001219",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440056",
+      "name": "TENNOVA HEALTHCARE-JEFFERSON MEMORIAL HOSPITAL",
+      "address": "110 HOSPITAL DRIVE",
+      "city": "JEFFERSON CITY",
+      "state": "TN",
+      "zipCode": "37760",
+      "phone": "(865) 471-2500",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 1300,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.662,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jonathan Angelle",
+          "npi": "1386059368",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Adam Shrewsberry",
+          "npi": "1295977783",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katherine Cameron",
+          "npi": "1508076936",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Leroy",
+          "npi": "1770754137",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sean Delair",
+          "npi": "1730155094",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "440137",
+      "name": "VANDERBILT BEDFORD HOSPITAL",
+      "address": "2835 HWY 231 NORTH",
+      "city": "SHELBYVILLE",
+      "state": "TN",
+      "zipCode": "37160",
+      "phone": "(931) 685-5433",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Vizient (2904427)",
+      "catheterDays": 1209,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.627,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Richier",
+          "npi": "1437116324",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Karen Bloch",
+          "npi": "1083798193",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440175",
+      "name": "SOUTHERN TENNESSEE REGIONAL HEALTH SYSTEM LAWRENCE",
+      "address": "1607 SOUTH LOCUST AVENUE",
+      "city": "LAWRENCEBURG",
+      "state": "TN",
+      "zipCode": "38464",
+      "phone": "(931) 762-6571",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 1164,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.603,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Coursey",
+          "npi": "1114998507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Baldwin",
+          "npi": "1851354104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Khim",
+          "npi": "1295736940",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440008",
+      "name": "HENDERSON COUNTY COMMUNITY HOSPITAL",
+      "address": "200 W CHURCH ST",
+      "city": "LEXINGTON",
+      "state": "TN",
+      "zipCode": "38351",
+      "phone": "(731) 968-1801",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Vizient (2624877)",
+      "catheterDays": 1157,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.567,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Julie Antique",
+          "npi": "1982623591",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440065",
+      "name": "TRISTAR NORTHCREST MEDICAL CENTER",
+      "address": "100 NORTHCREST DRIVE",
+      "city": "SPRINGFIELD",
+      "state": "TN",
+      "zipCode": "37172",
+      "phone": "(615) 384-2411",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 1134,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.604,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Vidhush Yarlagadda",
+          "npi": "1700297553",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gregory Head",
+          "npi": "1740301712",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dino Delaurentis",
+          "npi": "1235143025",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440057",
+      "name": "CLAIBORNE MEDICAL CENTER",
+      "address": "1850 OLD KNOXVILLE HIGHWAY",
+      "city": "TAZEWELL",
+      "state": "TN",
+      "zipCode": "37879",
+      "phone": "(423) 626-4211",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Vizient (770654)",
+      "catheterDays": 989,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.598,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Wesley White",
+          "npi": "1730353780",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Riedinger",
+          "npi": "1255860672",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440018",
+      "name": "SYCAMORE SHOALS HOSPITAL",
+      "address": "1501 WEST ELK AVENUE",
+      "city": "ELIZABETHTON",
+      "state": "TN",
+      "zipCode": "37643",
+      "phone": "(423) 542-1300",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (110252)",
+      "catheterDays": 950,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.531,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Wael Shams",
+          "npi": "1265420046",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Wayne Tongco",
+          "npi": "1609830504",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440111",
+      "name": "METRO NASHVILLE GENERAL HOSPITAL",
+      "address": "1818 ALBION STREET",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37208",
+      "phone": "(615) 341-4490",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 927,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.714,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Douglas Altenbern",
+          "npi": "1124005145",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440061",
+      "name": "VOLUNTEER COMMUNITY HOSPITAL",
+      "address": "161 MOUNT PELIA RD",
+      "city": "MARTIN",
+      "state": "TN",
+      "zipCode": "38237",
+      "phone": "(731) 479-6057",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 900,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.468,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Peter Lawrence",
+          "npi": "1124001219",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440131",
+      "name": "BAPTIST MEMORIAL HOSPITAL TIPTON",
+      "address": "1995 HIGHWAY 51 S",
+      "city": "COVINGTON",
+      "state": "TN",
+      "zipCode": "38019",
+      "phone": "(901) 476-2621",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 880,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.444,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Imad Omer",
+          "npi": "1356318059",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Stephen Threlkeld",
+          "npi": "1578530895",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Manoj Jain",
+          "npi": "1003858168",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440007",
+      "name": "UNITY MEDICAL CENTER",
+      "address": "481 INTERSTATE DRIVE",
+      "city": "MANCHESTER",
+      "state": "TN",
+      "zipCode": "37355",
+      "phone": "(931) 728-6354",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2913566)",
+      "catheterDays": 872,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.427,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441310",
+      "name": "RHEA MEDICAL CENTER",
+      "address": "9400 RHEA COUNTY HIGHWAY",
+      "city": "DAYTON",
+      "state": "TN",
+      "zipCode": "37321",
+      "phone": "(423) 775-1121",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 791,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.516,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John House",
+          "npi": "1538138805",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Seema Patel",
+          "npi": "1235127671",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440020",
+      "name": "SOUTHERN TENNESSEE REGIONAL HEALTH SYSTEM PULASKI",
+      "address": "1265 E COLLEGE ST",
+      "city": "PULASKI",
+      "state": "TN",
+      "zipCode": "38478",
+      "phone": "(931) 363-7531",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 746,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.391,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Kelly Baldwin",
+          "npi": "1851354104",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Khim",
+          "npi": "1295736940",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "440102",
+      "name": "LINCOLN MEDICAL CENTER",
+      "address": "106 MEDICAL CENTER BLVD",
+      "city": "FAYETTEVILLE",
+      "state": "TN",
+      "zipCode": "37334",
+      "phone": "(931) 438-1100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier, Vizient (936255)",
+      "catheterDays": 728,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.379,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Richier",
+          "npi": "1437116324",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440016",
+      "name": "BAPTIST MEMORIAL HOSPITAL - CARROLL COUNTY",
+      "address": "631 RB WILSON DR",
+      "city": "HUNTINGDON",
+      "state": "TN",
+      "zipCode": "38344",
+      "phone": "(731) 986-4461",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (373)",
+      "catheterDays": 577,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.285,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Timothy Davenport",
+          "npi": "1760653505",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "440176",
+      "name": "INDIAN PATH COMMUNITY HOSPITAL",
+      "address": "2000 BROOKSIDE DR",
+      "city": "KINGSPORT",
+      "state": "TN",
+      "zipCode": "37660",
+      "phone": "(423) 857-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (1033449)",
+      "catheterDays": 541,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.303,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jim Littlejohn",
+          "npi": "1225036841",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Howard Aubert",
+          "npi": "1912116989",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Whitney Krolikowski",
+          "npi": "1780099937",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ashley Dixon",
+          "npi": "1710331699",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Krolikowski",
+          "npi": "1215372578",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Grant Taylor",
+          "npi": "1427013044",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bruce Woodworth",
+          "npi": "1366538258",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Santosh Shanmuga",
+          "npi": "1386146769",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Peter Tran",
+          "npi": "1891864203",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hiren Patel",
+          "npi": "1225042831",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "44017F",
+      "name": "VA MIDDLE TENNESSEE HEALTHCARE SYSTEM - MURFREESBORO",
+      "address": "3400 LEBANON PIKE",
+      "city": "MURFREESBORO",
+      "state": "TN",
+      "zipCode": "37129",
+      "phone": "(615) 867-6000",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 486,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.238,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440151",
+      "name": "SAINT THOMAS RIVER PARK HOSPITAL",
+      "address": "1559 SPARTA STREET",
+      "city": "MCMINNVILLE",
+      "state": "TN",
+      "zipCode": "37110",
+      "phone": "(931) 815-4101",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (3721093)",
+      "catheterDays": 484,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.327,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Oscar Spivey",
+          "npi": "1326146911",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "441307",
+      "name": "HIGHPOINT HEALTH-RIVERVIEW WITH ASCENSION SAINT TH",
+      "address": "158 HOSPITAL DRIVE",
+      "city": "CARTHAGE",
+      "state": "TN",
+      "zipCode": "37030",
+      "phone": "(615) 735-9815",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 422,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.276,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440060",
+      "name": "WEST TENNESSEE HEALTHCARE MILAN HOSPITAL",
+      "address": "4039 HIGHLAND ST",
+      "city": "MILAN",
+      "state": "TN",
+      "zipCode": "38358",
+      "phone": "(731) 686-1591",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (41559)",
+      "catheterDays": 397,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.199,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Brent Zamzow",
+          "npi": "1962548149",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "441322",
+      "name": "HOUSTON COUNTY COMMUNITY HOSPITAL",
+      "address": "5001 EAST MAIN STREET",
+      "city": "ERIN",
+      "state": "TN",
+      "zipCode": "37061",
+      "phone": "(931) 289-4211",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (2623240)",
+      "catheterDays": 285,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.696,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441305",
+      "name": "MACON COMMUNITY HOSPITAL",
+      "address": "204 MEDICAL DRIVE",
+      "city": "LAFAYETTE",
+      "state": "TN",
+      "zipCode": "37083",
+      "phone": "(615) 666-2147",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 247,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.162,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Morris",
+          "npi": "1194841452",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Vivek Narain",
+          "npi": "1598743031",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Ramirez",
+          "npi": "1316176233",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "440001",
+      "name": "UNICOI COUNTY  HOSPITAL",
+      "address": "2030 TEMPLE HILL ROAD",
+      "city": "ERWIN",
+      "state": "TN",
+      "zipCode": "37650",
+      "phone": "(423) 743-3141",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 218,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.122,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440109",
+      "name": "HARDIN MEDICAL CENTER",
+      "address": "935 WAYNE ROAD",
+      "city": "SAVANNAH",
+      "state": "TN",
+      "zipCode": "38372",
+      "phone": "(731) 926-8121",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (750)",
+      "catheterDays": 212,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.104,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "William Senf",
+          "npi": "1295805190",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "441316",
+      "name": "WEST TENNESSEE HEALTHCARE CAMDEN HOSPITAL",
+      "address": "175 HOSPITAL DRIVE",
+      "city": "CAMDEN",
+      "state": "TN",
+      "zipCode": "38320",
+      "phone": "(731) 593-6300",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (2122)",
+      "catheterDays": 125,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.083,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440032",
+      "name": "HAWKINS COUNTY MEMORIAL HOSPITAL",
+      "address": "851 LOCUST STREET",
+      "city": "ROGERSVILLE",
+      "state": "TN",
+      "zipCode": "37857",
+      "phone": "(423) 921-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (2623862)",
+      "catheterDays": 70,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.034,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440192",
+      "name": "SAINT THOMAS HIGHLANDS HOSPITAL",
+      "address": "401 SEWELL DR",
+      "city": "SPARTA",
+      "state": "TN",
+      "zipCode": "38583",
+      "phone": "(931) 738-9211",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 67,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.033,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441313",
+      "name": "HANCOCK COUNTY HOSPITAL",
+      "address": "1519 MAIN STREET HWY 33",
+      "city": "SNEEDVILLE",
+      "state": "TN",
+      "zipCode": "37869",
+      "phone": "(423) 733-5001",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Premier, Vizient (2624841)",
+      "catheterDays": 45,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.11,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440148",
+      "name": "DEKALB COMMUNITY HOSPITAL",
+      "address": "520 W MAIN ST",
+      "city": "SMITHVILLE",
+      "state": "TN",
+      "zipCode": "37166",
+      "phone": "(615) 215-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 44,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.022,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441320",
+      "name": "WEST TENNESSEE HEALTHCARE BOLIVAR HOSPITAL",
+      "address": "650 NUCKOLLS ROAD",
+      "city": "BOLIVAR",
+      "state": "TN",
+      "zipCode": "38008",
+      "phone": "(731) 658-3100",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (2384)",
+      "catheterDays": 39,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.025,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441301",
+      "name": "HIGHPOINT HEALTH-TROUSDALE WITH ASCENSION SAINT",
+      "address": "500 CHURCH STREET",
+      "city": "HARTSVILLE",
+      "state": "TN",
+      "zipCode": "37074",
+      "phone": "(615) 374-2221",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 32,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.078,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440200",
+      "name": "STONES RIVER HOSPITAL",
+      "address": "324 DOOLITTLE ROAD",
+      "city": "WOODBURY",
+      "state": "TN",
+      "zipCode": "37190",
+      "phone": "(615) 563-4001",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 8,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.004,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440159",
+      "name": "DELTA SPECIALTY HOSPITAL",
+      "address": "3000 GETWELL RD",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38118",
+      "phone": "(901) 369-8100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440218",
+      "name": "SAINT THOMAS HOSPITAL FOR SPINAL SURGERY",
+      "address": "2011 MURPHY AVENUE",
+      "city": "NASHVILLE",
+      "state": "TN",
+      "zipCode": "37203",
+      "phone": "(615) 515-8200",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440231",
+      "name": "TRUSTPOINT HOSPITAL",
+      "address": "1009 NORTH THOMPSON LANE",
+      "city": "MURFREESBORO",
+      "state": "TN",
+      "zipCode": "37129",
+      "phone": "(615) 867-1111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "440238",
+      "name": "HAYWOOD COUNTY COMMUNITY HOSPITAL",
+      "address": "2545 NORTH WASHINGTON AVENUE",
+      "city": "BROWNSVILLE",
+      "state": "TN",
+      "zipCode": "38012",
+      "phone": "(731) 968-3646",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Vizient (2884029)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441300",
+      "name": "SAINT THOMAS HICKMAN HOSPITAL",
+      "address": "135 EAST SWAN STREET",
+      "city": "CENTERVILLE",
+      "state": "TN",
+      "zipCode": "37033",
+      "phone": "(931) 729-4271",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441303",
+      "name": "ASCENSION SAINT THOMAS THREE RIVERS",
+      "address": "451 HIGHWAY 13 SOUTH",
+      "city": "WAVERLY",
+      "state": "TN",
+      "zipCode": "37185",
+      "phone": "(931) 296-4203",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441304",
+      "name": "JOHNSON COUNTY COMMUNITY HOSPITAL",
+      "address": "1901 S SHADY ST",
+      "city": "MOUNTAIN CITY",
+      "state": "TN",
+      "zipCode": "37683",
+      "phone": "(423) 727-1110",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Vizient (2625090)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Phillip Stokes",
+          "npi": "1851778682",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "441306",
+      "name": "ERLANGER BLEDSOE HOSPITAL",
+      "address": "71 WHEELERTOWN AVENUE",
+      "city": "PIKEVILLE",
+      "state": "TN",
+      "zipCode": "37367",
+      "phone": "(423) 447-2112",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "William Young",
+          "npi": "1952308421",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Mullins",
+          "npi": "1508038944",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "441309",
+      "name": "MARSHALL MEDICAL CENTER",
+      "address": "1080 NORTH ELLINGTON PARKWAY",
+      "city": "LEWISBURG",
+      "state": "TN",
+      "zipCode": "37091",
+      "phone": "(931) 359-6276",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Vizient (2623430), Vizient (34890)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Coursey",
+          "npi": "1114998507",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Khim",
+          "npi": "1295736940",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Troy Larson",
+          "npi": "1023542610",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Justin Kropf",
+          "npi": "1942428628",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "441314",
+      "name": "LAUDERDALE COMMUNITY HOSPITAL",
+      "address": "340 ASBURY AVENUE",
+      "city": "RIPLEY",
+      "state": "TN",
+      "zipCode": "38063",
+      "phone": "(731) 221-2200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Premier, Vizient (2624263)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "441323",
+      "name": "BIG SOUTH FORK MEDICAL CENTER",
+      "address": "18797 ALBERTA STREET",
+      "city": "ONEIDA",
+      "state": "TN",
+      "zipCode": "37841",
+      "phone": "(423) 286-5300",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "443302",
+      "name": "ST JUDE CHILDRENS RESEARCH HOSPITAL",
+      "address": "262 DANNY THOMAS PLACE",
+      "city": "MEMPHIS",
+      "state": "TN",
+      "zipCode": "38105",
+      "phone": "(901) 495-3300",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "443303",
+      "name": "EAST TENNESSEE CHILDRENS HOSPITAL",
+      "address": "2018 CLINCH AVE SW",
+      "city": "KNOXVILLE",
+      "state": "TN",
+      "zipCode": "37916",
+      "phone": "(865) 541-8000",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (5650)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    }
+  ],
+  "mapConfig": {
+    "priorityColors": {
+      "HIGH_CAUTI": "#e41a1c",
+      "HIGH_VOLUME": "#377eb8",
+      "STANDARD": "#4daf4a",
+      "VA": "#ff7f00"
+    },
+    "facilityTypes": [
+      "Childrens",
+      "Acute Care Hospitals",
+      "Acute Care - Veterans Administration",
+      "Critical Access Hospitals"
+    ]
+  }
+}

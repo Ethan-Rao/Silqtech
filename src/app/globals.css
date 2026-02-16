@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --silq-blue: #314780;
+    --silq-teal: #00ADEF;
+    --silq-dark: #0E1216;
+    --silq-light: #EBEAE3;
+    --silq-cream: #F8F7F4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-silq-cream text-silq-dark antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    @apply bg-silq-blue/20 text-silq-dark;
+  }
+
+  /* Focus styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-silq-blue;
+  }
+
+  /* Skip to main content link */
+  .skip-link {
+    @apply absolute -top-full left-4 z-[100] bg-silq-blue text-white px-4 py-2 rounded-b-lg;
+    @apply focus:top-0 transition-all;
+  }
+}
+
+@layer components {
+  /* Container with responsive max-width */
+  .container-silq {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Text gradient effect */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-silq-gradient;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-2xl shadow-lg shadow-silq-dark/5 overflow-hidden;
+    @apply transition-all duration-300 hover:shadow-xl hover:shadow-silq-dark/10;
+  }
+
+  /* Button base styles */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2;
+    @apply px-6 py-3 rounded-full font-semibold text-sm;
+    @apply transition-all duration-300 ease-out;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-silq-blue text-white;
+    @apply hover:bg-silq-blue-600 hover:scale-105;
+    @apply focus-visible:ring-silq-blue;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent text-silq-blue border-2 border-silq-blue;
+    @apply hover:bg-silq-blue hover:text-white;
+    @apply focus-visible:ring-silq-blue;
+  }
+
+  .btn-teal {
+    @apply btn bg-silq-teal text-white;
+    @apply hover:bg-silq-teal-600 hover:scale-105;
+    @apply focus-visible:ring-silq-teal;
+  }
+
+  /* Form input styles */
+  .form-input {
+    @apply w-full px-4 py-3 rounded-lg border border-silq-dark/10;
+    @apply bg-white text-silq-dark placeholder-silq-dark/40;
+    @apply focus:outline-none focus:ring-2 focus:ring-silq-blue/50 focus:border-silq-blue;
+    @apply transition-all duration-200;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-silq-dark mb-2;
+  }
+
+  .form-error {
+    @apply text-sm text-red-600 mt-1;
+  }
+
+  /* Hero background patterns */
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(0, 173, 239, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(49, 71, 128, 0.1) 0%, transparent 40%),
+      radial-gradient(circle at 40% 80%, rgba(0, 173, 239, 0.05) 0%, transparent 35%);
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+
+  /* Animated underline for links */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-silq-blue;
+    @apply transition-all duration-300 ease-out;
+    content: '';
+  }
+
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Stagger animation delays for children */
+  .stagger-children > * {
+    @apply opacity-0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+  .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+  .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+  .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+  .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+  .stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+}
+
+@layer utilities {
+  /* Fluid typography */
+  .text-fluid-sm {
+    font-size: clamp(0.875rem, 0.8rem + 0.25vw, 1rem);
+  }
+
+  .text-fluid-base {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  }
+
+  .text-fluid-lg {
+    font-size: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  }
+
+  .text-fluid-xl {
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  }
+
+  .text-fluid-2xl {
+    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+  }
+
+  .text-fluid-hero {
+    font-size: clamp(2.5rem, 2rem + 3vw, 4.5rem);
+  }
+
+  /* Aspect ratios */
+  .aspect-hero {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-product {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Animation utilities */
+  .animate-delay-100 { animation-delay: 0.1s; }
+  .animate-delay-200 { animation-delay: 0.2s; }
+  .animate-delay-300 { animation-delay: 0.3s; }
+  .animate-delay-400 { animation-delay: 0.4s; }
+  .animate-delay-500 { animation-delay: 0.5s; }
+
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Hide scrollbar for news ticker and horizontal scroll areas */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-silq-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-silq-blue/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-silq-blue/50;
+}

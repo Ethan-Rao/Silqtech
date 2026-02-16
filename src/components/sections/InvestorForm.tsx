@@ -1,0 +1,188 @@
+'use client'
+
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import { motion } from 'framer-motion'
+import { Button } from '@/components/ui/Button'
+import { cn } from '@/lib/utils'
+
+const investorSchema = z.object({
+  firstName: z.string().min(2, 'First name is required'),
+  lastName: z.string().min(2, 'Last name is required'),
+  organization: z.string().min(2, 'Organization is required'),
+  email: z.string().email('Please enter a valid email'),
+  message: z.string().min(10, 'Message must be at least 10 characters'),
+})
+
+type InvestorFormData = z.infer<typeof investorSchema>
+
+interface InvestorFormProps {
+  className?: string
+}
+
+export function InvestorForm({ className }: InvestorFormProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<InvestorFormData>({
+    resolver: zodResolver(investorSchema),
+  })
+
+  const onSubmit = async (data: InvestorFormData) => {
+    setIsSubmitting(true)
+    try {
+      // API call would go here
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+      console.log('Investor form submitted:', data)
+      setIsSubmitted(true)
+      reset()
+    } catch (error) {
+      console.error('Error submitting form:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  if (isSubmitted) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className={cn('text-center p-8 bg-green-50 rounded-2xl', className)}
+      >
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+          <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold text-green-800">Thank you for your inquiry!</h3>
+        <p className="mt-2 text-green-700">
+          A Silq team member will be in contact with you shortly.
+        </p>
+        <Button
+          variant="secondary"
+          className="mt-6"
+          onClick={() => setIsSubmitted(false)}
+        >
+          Submit another inquiry
+        </Button>
+      </motion.div>
+    )
+  }
+
+  return (
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={cn('space-y-6', className)}
+    >
+      <div className="grid md:grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="firstName" className="form-label">
+            First Name <span className="text-red-500">*</span>
+          </label>
+          <input
+            {...register('firstName')}
+            type="text"
+            id="firstName"
+            className={cn('form-input', errors.firstName && 'border-red-500')}
+            placeholder="First name"
+          />
+          {errors.firstName && (
+            <p className="form-error">{errors.firstName.message}</p>
+          )}
+        </div>
+
+        <div>
+          <label htmlFor="lastName" className="form-label">
+            Last Name <span className="text-red-500">*</span>
+          </label>
+          <input
+            {...register('lastName')}
+            type="text"
+            id="lastName"
+            className={cn('form-input', errors.lastName && 'border-red-500')}
+            placeholder="Last name"
+          />
+          {errors.lastName && (
+            <p className="form-error">{errors.lastName.message}</p>
+          )}
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="organization" className="form-label">
+          Organization <span className="text-red-500">*</span>
+        </label>
+        <input
+          {...register('organization')}
+          type="text"
+          id="organization"
+          className={cn('form-input', errors.organization && 'border-red-500')}
+          placeholder="Your organization"
+        />
+        {errors.organization && (
+          <p className="form-error">{errors.organization.message}</p>
+        )}
+      </div>
+
+      <div>
+        <label htmlFor="email" className="form-label">
+          Email <span className="text-red-500">*</span>
+        </label>
+        <input
+          {...register('email')}
+          type="email"
+          id="email"
+          className={cn('form-input', errors.email && 'border-red-500')}
+          placeholder="you@organization.com"
+        />
+        {errors.email && (
+          <p className="form-error">{errors.email.message}</p>
+        )}
+      </div>
+
+      <div>
+        <label htmlFor="message" className="form-label">
+          Message <span className="text-red-500">*</span>
+        </label>
+        <textarea
+          {...register('message')}
+          id="message"
+          rows={5}
+          className={cn('form-input resize-none', errors.message && 'border-red-500')}
+          placeholder="Tell us about your investment interests..."
+        />
+        {errors.message && (
+          <p className="form-error">{errors.message.message}</p>
+        )}
+      </div>
+
+      <Button
+        type="submit"
+        variant="primary"
+        size="lg"
+        className="w-full"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? (
+          <>
+            <svg className="animate-spin -ml-1 mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+            </svg>
+            Submitting...
+          </>
+        ) : (
+          'Submit Inquiry'
+        )}
+      </Button>
+    </form>
+  )
+}
