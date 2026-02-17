@@ -143,7 +143,7 @@ export default function TechnologyPage() {
                 {[
                   { label: 'Covalent bond to substrate', desc: 'Permanent surface transformation' },
                   { label: 'Bio-inspired hydration barrier', desc: 'Mimics natural cell membranes to resist fouling' },
-                  { label: 'Sterilization compatible', desc: 'Withstands autoclaving, EtO, and gamma irradiation' },
+                  { label: 'Sterilization compatible', desc: 'Compatible with Ethylene Oxide (EtO) and Gamma irradiation' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 group">
                     <span className="w-6 h-6 rounded-full bg-silq-teal/15 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-silq-teal/25 transition-colors">

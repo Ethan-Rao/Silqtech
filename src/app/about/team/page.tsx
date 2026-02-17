@@ -86,7 +86,7 @@ export default function TeamPage() {
         
         <div className="container-silq relative">
           <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
               <div className="text-center p-6 rounded-2xl bg-silq-cream/50">
                 <div className="text-3xl font-bold text-silq-blue mb-2">UCLA</div>
                 <div className="text-sm text-silq-dark/60">Research Origins</div>
@@ -94,10 +94,6 @@ export default function TeamPage() {
               <div className="text-center p-6 rounded-2xl bg-silq-cream/50">
                 <div className="text-3xl font-bold text-silq-blue mb-2">FDA</div>
                 <div className="text-sm text-silq-dark/60">510(k) Cleared</div>
-              </div>
-              <div className="text-center p-6 rounded-2xl bg-silq-cream/50">
-                <div className="text-3xl font-bold text-silq-blue mb-2">2022</div>
-                <div className="text-sm text-silq-dark/60">Advanced Materials Publication</div>
               </div>
             </div>
             
