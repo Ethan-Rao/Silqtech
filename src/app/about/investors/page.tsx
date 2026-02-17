@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import { InvestorForm } from '@/components/sections/InvestorForm'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 
 export const metadata: Metadata = {
   title: 'Investor Opportunities',
@@ -122,12 +121,13 @@ export default function InvestorsPage() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="rounded-2xl overflow-hidden">
-              {/* TODO: Replace with actual manufacturing facility photo */}
-              <ImagePlaceholder 
-                label="Manufacturing Facility" 
-                icon="building" 
-                variant="dark"
-                className="w-full h-64 rounded-t-2xl" 
+              <Image
+                src="/images/science/silq-machine.gif"
+                alt="Silq manufacturing system"
+                width={600}
+                height={300}
+                className="w-full h-64 object-cover"
+                unoptimized
               />
               <div className="p-6 bg-white/10">
                 <h3 className="font-semibold text-white mb-2">Contract Manufacturing</h3>
@@ -138,17 +138,17 @@ export default function InvestorsPage() {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden">
-              {/* TODO: Replace with actual manufacturing scale photo */}
-              <ImagePlaceholder 
-                label="Manufacturing Facility" 
-                icon="building" 
-                variant="dark"
-                className="w-full h-64 rounded-t-2xl" 
+              <Image
+                src="/images/products/boxnew.jpeg"
+                alt="ClearTract Foley Catheter product"
+                width={600}
+                height={300}
+                className="w-full h-64 object-cover"
               />
               <div className="p-6 bg-white/10">
                 <h3 className="font-semibold text-white mb-2">Production Scale</h3>
                 <p className="text-white/70 text-sm">
-                  Established manufacturing processes ready to meet growing demand, with 
+                  Established manufacturing processes ready to meet growing demand, with
                   capacity to scale as market adoption increases.
                 </p>
               </div>
@@ -191,8 +191,8 @@ export default function InvestorsPage() {
                 className="h-10 w-auto grayscale hover:grayscale-0 transition-all"
               />
               <Image
-                src="/images/trust/verizon-award.png"
-                alt="Verizon Award"
+                src="/images/trust/premier-logo.svg"
+                alt="Premier GPO"
                 width={120}
                 height={60}
                 className="h-12 w-auto grayscale hover:grayscale-0 transition-all"

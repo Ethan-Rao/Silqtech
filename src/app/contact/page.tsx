@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
-import { Hero } from '@/components/sections/Hero'
 import { ContactForm } from '@/components/sections/ContactForm'
 
 export const metadata: Metadata = {

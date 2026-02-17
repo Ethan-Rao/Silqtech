@@ -38,9 +38,7 @@ export function ContactForm({ title, subtitle, className }: ContactFormProps) {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     try {
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000))
-      console.log('Form submitted:', data)
       setIsSubmitted(true)
       reset()
     } catch (error) {

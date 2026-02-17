@@ -38,9 +38,7 @@ export function InvestorForm({ className }: InvestorFormProps) {
   const onSubmit = async (data: InvestorFormData) => {
     setIsSubmitting(true)
     try {
-      // API call would go here
       await new Promise((resolve) => setTimeout(resolve, 1000))
-      console.log('Investor form submitted:', data)
       setIsSubmitted(true)
       reset()
     } catch (error) {

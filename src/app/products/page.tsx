@@ -119,8 +119,8 @@ export default function ProductsPage() {
                   <p className="mt-2 text-xs text-silq-dark/50">UCLA Research</p>
             </div>
             <div className="text-center">
-              <Image src="/images/trust/verizon-award.png" alt="Verizon Award" width={80} height={40} className="mx-auto grayscale hover:grayscale-0 transition-all" />
-                  <p className="mt-2 text-xs text-silq-dark/50">&nbsp;</p>
+              <Image src="/images/trust/premier-logo.svg" alt="Premier GPO" width={80} height={40} className="mx-auto grayscale hover:grayscale-0 transition-all" />
+              <p className="mt-2 text-xs text-silq-dark/50">GPO Approved</p>
             </div>
           </div>
         </div>

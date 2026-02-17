@@ -1,48 +1,55 @@
-'use client'
-
-import { useState } from 'react'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { CTABanner } from '@/components/sections/CTABanner'
 import { Button } from '@/components/ui/Button'
+import { TestimonialCarousel } from '@/components/ui/TestimonialCarousel'
+
+export const metadata: Metadata = {
+  title: 'ClearTract® Foley Catheters',
+  description: 'FDA-cleared urinary catheters with drug-free zwitterionic surface treatment to reduce infection, encrustation, and improve comfort.',
+}
 
 const testimonials = [
   {
     quote: "ClearTract catheters have made a significant difference in reducing catheter-associated infections in my practice.",
     author: "Evgeniy Kreydin, M.D.",
     role: "Urologist, Cedars-Sinai",
+    initials: "EK",
   },
   {
     quote: "I would not go back to other catheters ever again. The comfort has been life-changing for my daily routine.",
     author: "Ana Garcia",
     role: "Long-term Catheter Patient",
+    initials: "AG",
   },
   {
     quote: "Her UTIs have completely subsided, no more blockages or emergency room visits. My mom is completely satisfied.",
     author: "Stephen Newhouse",
     role: "Caregiver",
+    initials: "SN",
   },
   {
-    quote: "Placeholder testimonial - to be replaced with actual content.",
+    quote: "Placeholder testimonial - content pending team review.",
     author: "Placeholder Name",
     role: "Title, Organization",
+    initials: "PN",
   },
   {
-    quote: "Placeholder testimonial - to be replaced with actual content.",
+    quote: "Placeholder testimonial - content pending team review.",
     author: "Placeholder Name",
     role: "Title, Organization",
+    initials: "PN",
   },
   {
-    quote: "Placeholder testimonial - to be replaced with actual content.",
+    quote: "Placeholder testimonial - content pending team review.",
     author: "Placeholder Name",
     role: "Title, Organization",
+    initials: "PN",
   },
 ]
 
 export default function ClearTractPage() {
-  const [testimonialIndex, setTestimonialIndex] = useState(0)
-  const maxIndex = Math.max(0, testimonials.length - 3)
 
   return (
     <>
@@ -110,57 +117,7 @@ export default function ClearTractPage() {
           
           {/* Testimonials Carousel */}
           <h2 className="text-xl font-bold text-center mb-5">What People Are Saying</h2>
-          <div className="relative">
-            <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto overflow-hidden">
-              {testimonials.slice(testimonialIndex, testimonialIndex + 3).map((t, i) => (
-                <motion.div
-                  key={`${testimonialIndex}-${i}`}
-                  className="bg-white/8 backdrop-blur-sm rounded-xl p-4 border border-white/8 hover:bg-white/12 transition-all duration-300"
-                  initial={{ opacity: 0, y: 15 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.1 }}
-                >
-                  <blockquote className="text-white/90 text-base leading-relaxed mb-4">
-                    &ldquo;{t.quote}&rdquo;
-                  </blockquote>
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-silq-teal/30 flex items-center justify-center text-[10px] font-bold text-white">
-                      {t.author.split(' ').map(n => n[0]).join('')}
-                    </div>
-                    <div>
-                      <p className="font-medium text-white text-xs">{t.author}</p>
-                      <p className="text-white/45 text-[11px]">{t.role}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-            
-            {/* Navigation */}
-            {testimonials.length > 3 && (
-              <div className="flex justify-center gap-4 mt-6">
-                <button
-                  onClick={() => setTestimonialIndex(Math.max(0, testimonialIndex - 1))}
-                  disabled={testimonialIndex === 0}
-                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 flex items-center justify-center transition-colors"
-                >
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button
-                  onClick={() => setTestimonialIndex(Math.min(maxIndex, testimonialIndex + 1))}
-                  disabled={testimonialIndex === maxIndex}
-                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 flex items-center justify-center transition-colors"
-                >
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            )}
-          </div>
+          <TestimonialCarousel testimonials={testimonials} />
         </div>
       </section>
 

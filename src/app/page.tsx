@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Hero } from '@/components/sections/Hero'
 import { Button } from '@/components/ui/Button'
+import { TestimonialCarousel } from '@/components/ui/TestimonialCarousel'
 
 const features = [
   {
@@ -206,48 +207,30 @@ export default function HomePage() {
             </Link>
           </motion.div>
 
-          {/* Testimonials */}
-          <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
-            {[
+          {/* Testimonials Carousel */}
+          <TestimonialCarousel
+            testimonials={[
               {
                 quote: "ClearTract catheters have made a significant difference in reducing catheter-associated infections in my practice.",
                 author: "Evgeniy Kreydin, M.D.",
                 role: "Urologist, Cedars-Sinai",
+                initials: "EK",
               },
               {
                 quote: "I would not go back to other catheters ever again. The comfort has been life-changing for my daily routine.",
                 author: "Ana Garcia",
                 role: "Long-term Catheter Patient",
+                initials: "AG",
               },
               {
                 quote: "Her UTIs have completely subsided, no more blockages or emergency room visits. My mom is completely satisfied.",
                 author: "Stephen Newhouse",
                 role: "Caregiver",
+                initials: "SN",
               },
-            ].map((t, i) => (
-              <motion.div
-                key={i}
-                className="bg-white/8 backdrop-blur-sm rounded-xl p-5 border border-white/8 hover:bg-white/12 transition-all duration-300"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.1 }}
-              >
-                <blockquote className="text-white/90 text-base leading-relaxed mb-4">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-silq-teal/30 flex items-center justify-center text-[10px] font-bold text-white">
-                    {t.author.split(' ').map(n => n[0]).join('')}
-                  </div>
-                  <div>
-                    <p className="font-medium text-white text-xs">{t.author}</p>
-                    <p className="text-white/45 text-[11px]">{t.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+            ]}
+            className="mb-12"
+          />
 
           {/* Images Row - Box and Publication side by side */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">
