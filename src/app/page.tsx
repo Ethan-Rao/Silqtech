@@ -175,7 +175,7 @@ export default function HomePage() {
               ClearTract® Foley Catheters
             </h2>
             <p className="mt-4 text-white/70 max-w-2xl mx-auto">
-              Drug-free infection resistance. Reduced encrustation. Superior patient comfort.
+              Drug-free surface treatment designed to reduce infection, encrustation, and improve patient comfort.
             </p>
           </motion.div>
 
