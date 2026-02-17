@@ -142,8 +142,8 @@ export default function TechnologyPage() {
               <ul className="space-y-4 text-sm text-silq-dark/70">
                 {[
                   { label: 'Covalent bond to substrate', desc: 'Permanent surface transformation' },
-                  { label: 'Electrically neutral surface', desc: 'Resists protein adsorption' },
-                  { label: 'Durable through device lifetime', desc: 'No leaching or degradation' },
+                  { label: 'Bio-inspired hydration barrier', desc: 'Mimics natural cell membranes to resist fouling' },
+                  { label: 'Sterilization compatible', desc: 'Withstands autoclaving, EtO, and gamma irradiation' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 group">
                     <span className="w-6 h-6 rounded-full bg-silq-teal/15 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-silq-teal/25 transition-colors">
@@ -191,66 +191,62 @@ export default function TechnologyPage() {
           
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Microbial Resistance */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-xl hover:border-silq-blue/20 transition-all duration-500">
-              <div className="h-48 md:h-52 overflow-hidden">
+            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
+              <div className="h-56 md:h-64 overflow-hidden">
                 <Image 
                   src="/images/science/Bacteria%20Panel.png"
                   alt="Bacterial adhesion reduction data"
                   width={600}
                   height={400}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="p-6 text-center">
-                <h4 className="font-bold text-silq-dark text-lg mb-2">Microbial Resistance</h4>
-                <p className="text-sm text-silq-dark/60">Permanently transformed surface repels bacteria without drugs</p>
+              <div className="p-5 text-center">
+                <h4 className="font-bold text-silq-dark text-lg">Microbial Resistance</h4>
               </div>
             </div>
             
             {/* Anti-Thrombogenicity */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-xl hover:border-silq-blue/20 transition-all duration-500">
-              <div className="h-48 md:h-52 overflow-hidden">
+            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
+              <div className="h-56 md:h-64 overflow-hidden">
                 <Image 
                   src="/images/science/blood-loop.webp"
                   alt="Blood loop thrombosis comparison"
                   width={600}
                   height={400}
-                  className="w-full h-full object-contain bg-white"
+                  className="w-full h-full object-contain bg-white p-2 group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="p-6 text-center">
-                <h4 className="font-bold text-silq-dark text-lg mb-2">Anti-Thrombogenicity</h4>
-                <p className="text-sm text-silq-dark/60">Reduces clot formation on vascular access devices</p>
+              <div className="p-5 text-center">
+                <h4 className="font-bold text-silq-dark text-lg">Anti-Thrombogenicity</h4>
               </div>
             </div>
             
             {/* Enhanced Lubricity - Video */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-xl hover:border-silq-blue/20 transition-all duration-500">
-              <div className="h-48 md:h-52 overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
+            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
+              <div className="overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
                 <video 
                   src="/videos/frictionless-silicone.mp4" 
                   autoPlay loop muted playsInline
-                  className="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-700"
+                  className="w-full aspect-video object-contain relative z-10"
                 />
               </div>
-              <div className="p-6 text-center">
-                <h4 className="font-bold text-silq-dark text-lg mb-2">Enhanced Lubricity</h4>
-                <p className="text-sm text-silq-dark/60">Low friction coefficient for improved patient comfort</p>
+              <div className="p-5 text-center">
+                <h4 className="font-bold text-silq-dark text-lg">Enhanced Lubricity</h4>
               </div>
             </div>
             
             {/* Hydrophilicity - Video */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-xl hover:border-silq-blue/20 transition-all duration-500">
-              <div className="h-48 md:h-52 overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
+            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
+              <div className="overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
                 <video 
                   src="/videos/contact-lens-drying.mp4" 
                   autoPlay loop muted playsInline
-                  className="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-700"
+                  className="w-full aspect-video object-contain relative z-10"
                 />
               </div>
-              <div className="p-6 text-center">
-                <h4 className="font-bold text-silq-dark text-lg mb-2">Hydrophilicity</h4>
-                <p className="text-sm text-silq-dark/60">Enhanced wettability for moisture-critical applications</p>
+              <div className="p-5 text-center">
+                <h4 className="font-bold text-silq-dark text-lg">Hydrophilicity</h4>
               </div>
             </div>
           </div>

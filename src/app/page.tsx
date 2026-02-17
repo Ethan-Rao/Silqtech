@@ -271,13 +271,13 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="rounded-xl overflow-hidden shadow-xl">
+              <div className="rounded-xl overflow-hidden shadow-xl max-w-lg w-full">
                 <Image
                   src="/images/science/Encrustation1.jpg"
                   alt="Encrustation comparison"
-                  width={500}
-                  height={300}
-                  className="w-full"
+                  width={700}
+                  height={420}
+                  className="w-full h-auto"
                 />
                 <p className="text-center text-white/60 text-sm py-3 bg-silq-dark/50">
                   Visible difference in mineral buildup after extended use
