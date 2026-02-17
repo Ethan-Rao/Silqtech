@@ -192,13 +192,14 @@ export default function TechnologyPage() {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Microbial Resistance */}
             <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-xl hover:border-silq-blue/20 transition-all duration-500">
-              <div className="h-48 md:h-52 bg-gradient-to-br from-silq-blue/[0.06] to-silq-teal/[0.06] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
-                <div className="w-20 h-20 rounded-2xl bg-silq-blue/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <svg className="w-10 h-10 text-silq-blue/50 group-hover:text-silq-blue/70 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
+              <div className="h-48 md:h-52 overflow-hidden">
+                <Image 
+                  src="/images/science/Bacteria%20Panel.png"
+                  alt="Bacterial adhesion reduction data"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 text-center">
                 <h4 className="font-bold text-silq-dark text-lg mb-2">Microbial Resistance</h4>
@@ -208,13 +209,14 @@ export default function TechnologyPage() {
             
             {/* Anti-Thrombogenicity */}
             <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-xl hover:border-silq-blue/20 transition-all duration-500">
-              <div className="h-48 md:h-52 bg-gradient-to-br from-silq-blue/[0.06] to-silq-teal/[0.06] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
-                <div className="w-20 h-20 rounded-2xl bg-silq-blue/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <svg className="w-10 h-10 text-silq-blue/50 group-hover:text-silq-blue/70 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
+              <div className="h-48 md:h-52 overflow-hidden">
+                <Image 
+                  src="/images/science/blood-loop.webp"
+                  alt="Blood loop thrombosis comparison"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-contain bg-white"
+                />
               </div>
               <div className="p-6 text-center">
                 <h4 className="font-bold text-silq-dark text-lg mb-2">Anti-Thrombogenicity</h4>

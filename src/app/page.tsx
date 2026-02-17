@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Hero } from '@/components/sections/Hero'
-import { CTABanner } from '@/components/sections/CTABanner'
 import { Button } from '@/components/ui/Button'
 
 const features = [
@@ -125,9 +124,9 @@ export default function HomePage() {
             </div>
             
             {/* Right: How It Works Video - Centered Vertically */}
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center h-full">
               <motion.div 
-                className="rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto"
+                className="rounded-2xl overflow-hidden shadow-2xl w-full max-w-md"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -144,11 +143,11 @@ export default function HomePage() {
                     className="w-full aspect-video object-cover relative z-10"
                   />
                 </div>
+                <div className="p-3 bg-gradient-to-r from-silq-blue to-silq-teal text-white text-center">
+                  <p className="text-sm font-medium">Surface Treatment in Action</p>
+                </div>
               </motion.div>
-              <div className="mt-6 text-center max-w-md mx-auto">
-                <p className="text-sm text-silq-dark/50 mb-3">
-                  Surface treatment in action
-                </p>
+              <div className="mt-4 text-center">
                 <Link href="/technology" className="text-sm text-silq-blue hover:underline font-medium">
                   Learn how it works →
                 </Link>
@@ -164,6 +163,66 @@ export default function HomePage() {
       {/* Section 3: ClearTract + Scrollable Testimonials (Combined Dark Section) */}
       <section className="section-padding bg-gradient-to-br from-silq-blue-900 via-silq-dark to-silq-blue-800 text-white">
         <div className="container-silq">
+          {/* ClearTract Heading + Description */}
+          <motion.div
+            className="text-center mb-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-display-sm font-bold mb-4">
+              ClearTract® Foley Catheters
+            </h2>
+            <p className="text-white/80 max-w-2xl mx-auto">
+              Drug-free infection resistance. Reduced encrustation. Superior patient comfort.
+            </p>
+          </motion.div>
+
+          {/* Testimonials Carousel */}
+          <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
+            {[
+              {
+                quote: "ClearTract catheters have made a significant difference in reducing catheter-associated infections in my practice.",
+                author: "Evgeniy Kreydin, M.D.",
+                role: "Urologist, Cedars-Sinai",
+              },
+              {
+                quote: "I would not go back to other catheters ever again. The comfort has been life-changing for my daily routine.",
+                author: "Ana Garcia",
+                role: "Long-term Catheter Patient",
+              },
+              {
+                quote: "Her UTIs have completely subsided, no more blockages or emergency room visits. My mom is completely satisfied.",
+                author: "Stephen Newhouse",
+                role: "Caregiver",
+              },
+            ].map((t, i) => (
+              <motion.div
+                key={i}
+                className="bg-white/8 backdrop-blur-sm rounded-xl p-5 border border-white/8 hover:bg-white/12 transition-all duration-300"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: i * 0.1 }}
+              >
+                <blockquote className="text-white/90 text-base leading-relaxed mb-4">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-silq-teal/30 flex items-center justify-center text-[10px] font-bold text-white">
+                    {t.author.split(' ').map(n => n[0]).join('')}
+                  </div>
+                  <div>
+                    <p className="font-medium text-white text-xs">{t.author}</p>
+                    <p className="text-white/45 text-[11px]">{t.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Product Image + Encrustation */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Product + Encrustation Image */}
             <motion.div 
@@ -174,7 +233,7 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
             >
               <Image
-                src="/images/products/boxnew.jpg"
+                src="/images/products/boxnew.jpeg"
                 alt="ClearTract Foley Catheter"
                 width={500}
                 height={500}
@@ -184,7 +243,7 @@ export default function HomePage() {
               <div className="mt-6 rounded-xl overflow-hidden">
                 <div className="h-48 md:h-56 overflow-hidden">
                   <Image 
-                    src="/images/science/Encrustation1.png"
+                    src="/images/science/Encrustation1.jpg"
                     alt="Encrustation comparison - standard catheter vs ClearTract"
                     width={500}
                     height={250}
@@ -204,13 +263,6 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-display-sm font-bold mb-4">
-                ClearTract® Foley Catheters
-              </h2>
-              <p className="text-white/80 mb-6">
-                Drug-free infection resistance. Reduced encrustation. Superior patient comfort.
-              </p>
-              
               <div className="flex flex-wrap gap-4">
                 <Link href="/products/cleartract">
                   <Button variant="primary" size="lg">Learn More</Button>
@@ -376,13 +428,59 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 7: CTA */}
-      <CTABanner
-        title="Ready to Learn More?"
-        description="Connect with our team."
-        cta={{ text: 'Contact Us', href: '/contact' }}
-        variant="gradient"
-      />
+      {/* Section 7: CTA with Promotional Video */}
+      <section className="py-20 bg-gradient-to-br from-silq-dark to-silq-blue relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.05]">
+          <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-silq-teal blur-3xl" />
+          <div className="absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-silq-blue blur-3xl" />
+        </div>
+        <div className="container-silq relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              Ready to Learn More?
+            </motion.h2>
+            
+            {/* Promotional video */}
+            <motion.div 
+              className="mb-8 max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <div className="relative aspect-video">
+                <iframe
+                  src="https://player.vimeo.com/video/710986413?h=&title=0&byline=0&portrait=0"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="Silq Technology Overview"
+                />
+              </div>
+              <div className="p-3 bg-gradient-to-r from-silq-blue to-silq-teal text-white text-center">
+                <p className="text-sm font-medium">Silq Technology Overview</p>
+              </div>
+            </motion.div>
+            
+            <div className="flex justify-center gap-4 flex-wrap">
+              <Link href="/contact">
+                <Button variant="primary" size="lg">Contact Us</Button>
+              </Link>
+              <Link href="/products/cleartract">
+                <Button variant="secondary" size="lg" className="text-white border-white/20 hover:bg-white/10">
+                  ClearTract® Catheters
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

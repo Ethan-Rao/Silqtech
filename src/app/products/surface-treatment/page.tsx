@@ -126,7 +126,7 @@ export default function SurfaceTreatmentPage() {
                   alt="Blood loop thrombosis comparison"
                   width={600}
                   height={400}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain bg-white p-4"
                 />
               </div>
               <div className="p-6">

@@ -56,7 +56,7 @@ export default function InvestorsPage() {
                     },
                     {
                       title: 'Strong IP Portfolio',
-                      description: 'Exclusive UCLA patent license.',
+                      description: 'Numerous patents established in the US and abroad.',
                     },
                     {
                       title: 'Large Market Opportunity',
@@ -69,6 +69,10 @@ export default function InvestorsPage() {
                     {
                       title: 'Clinical Validation',
                       description: 'Clinical evidence of efficacy.',
+                    },
+                    {
+                      title: 'Highly Scalable',
+                      description: 'Manufacturing process scales to commercial volumes.',
                     },
                   ].map((item, index) => (
                     <div key={index} className="flex gap-4">
@@ -108,11 +112,11 @@ export default function InvestorsPage() {
         <div className="container-silq">
           <div className="text-center mb-12">
             <h2 className="text-display-sm md:text-display font-bold">
-              Scalable Production Capability
+              Scalable Technology Platform
             </h2>
             <p className="mt-4 text-white/70 max-w-2xl mx-auto">
-              Our FDA-registered manufacturing facility operates under strict quality controls 
-              to produce medical-grade devices at scale.
+              Our patented surface treatment process is designed for commercial-scale production 
+              through qualified contract manufacturing partners.
             </p>
           </div>
           
@@ -126,10 +130,10 @@ export default function InvestorsPage() {
                 className="w-full h-64 rounded-t-2xl" 
               />
               <div className="p-6 bg-white/10">
-                <h3 className="font-semibold text-white mb-2">Cleanroom Operations</h3>
+                <h3 className="font-semibold text-white mb-2">Contract Manufacturing</h3>
                 <p className="text-white/70 text-sm">
-                  ISO-certified cleanroom environment with trained technicians ensuring 
-                  consistent quality in every device produced.
+                  Qualified contract manufacturing partners with established processes
+                  ensuring consistent quality in every device produced.
                 </p>
               </div>
             </div>
@@ -153,10 +157,10 @@ export default function InvestorsPage() {
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
-              { value: 'FDA', label: 'Registered Facility' },
-              { value: 'ISO', label: 'Quality Certified' },
-              { value: 'GMP', label: 'Compliant Processes' },
-              { value: '100%', label: 'US Manufactured' },
+              { value: '3', label: '510(k) Clearances' },
+              { value: '1', label: 'FDA Master File' },
+              { value: 'US', label: 'Based Company' },
+              { value: '∞', label: 'Scalable Production' },
             ].map((stat, index) => (
               <div key={index} className="text-center p-4 rounded-xl bg-white/5">
                 <div className="text-2xl font-bold text-silq-teal">{stat.value}</div>

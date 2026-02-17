@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -22,9 +23,27 @@ const testimonials = [
     author: "Stephen Newhouse",
     role: "Caregiver",
   },
+  {
+    quote: "Placeholder testimonial - to be replaced with actual content.",
+    author: "Placeholder Name",
+    role: "Title, Organization",
+  },
+  {
+    quote: "Placeholder testimonial - to be replaced with actual content.",
+    author: "Placeholder Name",
+    role: "Title, Organization",
+  },
+  {
+    quote: "Placeholder testimonial - to be replaced with actual content.",
+    author: "Placeholder Name",
+    role: "Title, Organization",
+  },
 ]
 
 export default function ClearTractPage() {
+  const [testimonialIndex, setTestimonialIndex] = useState(0)
+  const maxIndex = Math.max(0, testimonials.length - 3)
+
   return (
     <>
       {/* Hero */}
@@ -53,7 +72,7 @@ export default function ClearTractPage() {
             </div>
             
             <Image
-              src="/images/products/boxnew.jpg"
+              src="/images/products/boxnew.jpeg"
               alt="ClearTract"
               width={600}
               height={600}
@@ -82,39 +101,65 @@ export default function ClearTractPage() {
             </div>
             <div>
               <p className="text-sm font-semibold text-silq-teal">Low Endotoxin</p>
-              <p className="text-xs text-white/50">Reduced vs. alternatives*</p>
+              <p className="text-xs text-white/50">Safe for suprapubic insertions</p>
             </div>
           </div>
           
           {/* Divider */}
           <div className="w-20 h-px bg-white/15 mx-auto my-8" />
           
-          {/* Compact Testimonials */}
+          {/* Testimonials Carousel */}
           <h2 className="text-xl font-bold text-center mb-5">What People Are Saying</h2>
-          <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {testimonials.map((t, i) => (
-              <motion.div
-                key={i}
-                className="bg-white/8 backdrop-blur-sm rounded-xl p-4 border border-white/8 hover:bg-white/12 transition-all duration-300"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.1 }}
-              >
-                <blockquote className="text-white/85 text-sm leading-relaxed mb-3">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-silq-teal/30 flex items-center justify-center text-[10px] font-bold text-white">
-                    {t.author.split(' ').map(n => n[0]).join('')}
+          <div className="relative">
+            <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto overflow-hidden">
+              {testimonials.slice(testimonialIndex, testimonialIndex + 3).map((t, i) => (
+                <motion.div
+                  key={`${testimonialIndex}-${i}`}
+                  className="bg-white/8 backdrop-blur-sm rounded-xl p-4 border border-white/8 hover:bg-white/12 transition-all duration-300"
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.1 }}
+                >
+                  <blockquote className="text-white/90 text-base leading-relaxed mb-4">
+                    &ldquo;{t.quote}&rdquo;
+                  </blockquote>
+                  <div className="flex items-center gap-2">
+                    <div className="w-7 h-7 rounded-full bg-silq-teal/30 flex items-center justify-center text-[10px] font-bold text-white">
+                      {t.author.split(' ').map(n => n[0]).join('')}
+                    </div>
+                    <div>
+                      <p className="font-medium text-white text-xs">{t.author}</p>
+                      <p className="text-white/45 text-[11px]">{t.role}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium text-white text-xs">{t.author}</p>
-                    <p className="text-white/45 text-[11px]">{t.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
+            
+            {/* Navigation */}
+            {testimonials.length > 3 && (
+              <div className="flex justify-center gap-4 mt-6">
+                <button
+                  onClick={() => setTestimonialIndex(Math.max(0, testimonialIndex - 1))}
+                  disabled={testimonialIndex === 0}
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 flex items-center justify-center transition-colors"
+                >
+                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => setTestimonialIndex(Math.min(maxIndex, testimonialIndex + 1))}
+                  disabled={testimonialIndex === maxIndex}
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-30 flex items-center justify-center transition-colors"
+                >
+                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -158,7 +203,7 @@ export default function ClearTractPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 md:h-56 overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
                 <Image 
-                  src="/images/science/Encrustation1.png"
+                  src="/images/science/Encrustation1.jpg"
                   alt="Encrustation comparison - standard vs ClearTract"
                   width={600}
                   height={400}

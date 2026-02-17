@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { CTABanner } from '@/components/sections/CTABanner'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 
 export const metadata: Metadata = {
   title: 'Products',
@@ -15,7 +14,7 @@ const products = [
   {
     title: 'ClearTract® Foley Catheters',
     description: 'FDA-cleared urinary catheters featuring our patented zwitterionic surface treatment to reduce catheter-associated infections without antibiotics.',
-    image: '/images/products/boxnew.jpg',
+    image: '/images/products/boxnew.jpeg',
     href: '/products/cleartract',
     badge: 'Flagship Product',
     highlights: ['FDA 510(k) Cleared', '100% Silicone', 'Drug-Free'],
@@ -61,11 +60,12 @@ export default function ProductsPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
-                    /* TODO: Replace with actual Surface Treatment image */
-                    <ImagePlaceholder
-                      label="Surface Treatment"
-                      icon="science"
-                      className="w-full h-full"
+                    <Image
+                      src="/images/science/silq-machine.gif"
+                      alt="Surface Treatment Process"
+                      fill
+                      className="object-cover"
+                      unoptimized
                     />
                   )}
                   <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold text-white bg-silq-blue rounded-full shadow-lg">
