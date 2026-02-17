@@ -32,7 +32,7 @@ export default function SurfaceTreatmentPage() {
       </section>
 
       {/* Scalability Section with Silq Machine GIF */}
-      <section className="section-padding bg-white">
+      <section className="py-20 bg-white">
         <div className="container-silq">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             {/* Left: Machine GIF */}
@@ -85,11 +85,11 @@ export default function SurfaceTreatmentPage() {
         </div>
       </section>
 
-      {/* Customizable Surface Properties - WITH Videos */}
-      <section className="section-padding bg-silq-cream">
+      {/* Customizable Surface Properties */}
+      <section className="py-20 bg-silq-cream">
         <div className="container-silq">
           <div className="text-center mb-12">
-            <h2 className="text-display-sm font-bold text-silq-dark">
+            <h2 className="text-3xl md:text-4xl font-bold text-silq-dark">
               Surface Properties
             </h2>
             <p className="text-silq-dark/60 mt-2 max-w-2xl mx-auto">
@@ -97,83 +97,118 @@ export default function SurfaceTreatmentPage() {
             </p>
           </div>
           
-          {/* 2x2 Grid: Images + Videos */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Microbial Resistance - Image */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 md:h-56 overflow-hidden">
-                <Image 
-                  src="/images/science/Bacteria%20Panel.png"
-                  alt="Bacterial adhesion reduction data"
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          {/* Row 1: Bacteria Panel - Full Width */}
+          <div className="mb-8">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-4xl mx-auto">
               <div className="p-6">
-                <h3 className="font-bold text-silq-dark text-lg mb-2">Microbial Resistance</h3>
+                <h3 className="text-xl font-bold text-silq-blue mb-2">Microbial Resistance</h3>
                 <p className="text-silq-dark/70 text-sm">
-                  Resists bacterial adhesion and biofilm formation.
+                  Resists bacterial adhesion and biofilm formation across multiple pathogenic species.
                 </p>
               </div>
+              <Image 
+                src="/images/science/Bacteria%20Panel.png"
+                alt="Bacterial adhesion reduction data"
+                width={1200}
+                height={400}
+                className="w-full object-contain"
+              />
             </div>
-            
-            {/* Anti-Thrombogenicity - Image */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 md:h-56 overflow-hidden">
-                <Image 
-                  src="/images/science/blood-loop.webp"
-                  alt="Blood loop thrombosis comparison"
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-contain bg-white p-4"
-                />
+          </div>
+          
+          {/* Row 2: Other 3 Cards */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Anti-Thrombogenicity - Stacked Images */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-silq-blue">Anti-Thrombogenicity</h3>
+                <p className="text-silq-dark/70 text-sm mt-1">Reduced blood clot formation.</p>
               </div>
-              <div className="p-6">
-                <h3 className="font-bold text-silq-dark text-lg mb-2">Anti-Thrombogenicity</h3>
-                <p className="text-silq-dark/70 text-sm">
-                  50% reduction in surface thrombus coverage.*
-                </p>
+              <div className="flex flex-col gap-1 px-2 pb-2">
+                <div className="rounded-lg overflow-hidden">
+                  <Image 
+                    src="/images/science/blood-loop-treated.jpg"
+                    alt="Blood loop - treated surface"
+                    width={600}
+                    height={250}
+                    className="w-full object-contain bg-white"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <Image 
+                    src="/images/science/blood-loop-untreated.jpg"
+                    alt="Blood loop - control surface"
+                    width={600}
+                    height={250}
+                    className="w-full object-contain bg-white"
+                  />
+                </div>
               </div>
             </div>
             
             {/* Enhanced Lubricity - Video */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 md:h-56 overflow-hidden">
-                <video 
-                  src="/videos/frictionless-silicone.mp4" 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="w-full h-full object-cover"
-                />
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-silq-blue">Enhanced Lubricity</h3>
+                <p className="text-silq-dark/70 text-sm mt-1">Improved patient comfort.</p>
               </div>
-              <div className="p-6">
-                <h3 className="font-bold text-silq-dark text-lg mb-2">Enhanced Lubricity</h3>
-                <p className="text-silq-dark/70 text-sm">
-                  Dramatically improved surface lubricity.
-                </p>
+              <div className="px-2 pb-2">
+                <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
+                  <video 
+                    src="/videos/frictionless-silicone.mp4" 
+                    autoPlay loop muted playsInline
+                    className="w-full aspect-video object-contain"
+                  />
+                </div>
               </div>
             </div>
             
             {/* Hydrophilicity - Video */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 md:h-56 overflow-hidden">
-                <video 
-                  src="/videos/contact-lens-drying.mp4" 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="w-full h-full object-cover"
-                />
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-silq-blue">Surface Hydrophilicity</h3>
+                <p className="text-silq-dark/70 text-sm mt-1">Water-attracting surface prevents fouling.</p>
               </div>
-              <div className="p-6">
-                <h3 className="font-bold text-silq-dark text-lg mb-2">Hydrophilicity</h3>
-                <p className="text-silq-dark/70 text-sm">
-                  Enhanced wettability and moisture retention.
+              <div className="px-2 pb-2">
+                <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
+                  <video 
+                    src="/videos/contact-lens-drying.mp4" 
+                    autoPlay loop muted playsInline
+                    className="w-full aspect-video object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Angle Chart */}
+          <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-xl font-bold text-silq-blue mb-4">Surface Wettability</h3>
+                <p className="text-silq-dark/70">
+                  Our treatment dramatically reduces contact angle across multiple substrate materials, 
+                  creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
                 </p>
+                <ul className="mt-4 space-y-2">
+                  <li className="flex items-center gap-2 text-sm text-silq-dark/70">
+                    <span className="w-2 h-2 bg-silq-blue rounded-full flex-shrink-0"></span>
+                    Lower contact angle = more hydrophilic
+                  </li>
+                  <li className="flex items-center gap-2 text-sm text-silq-dark/70">
+                    <span className="w-2 h-2 bg-silq-teal rounded-full flex-shrink-0"></span>
+                    Works on silicone, polyurethane, PDMS, and more
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <Image 
+                  src="/images/science/contact-angle-comparison.jpg"
+                  alt="Contact angle comparison chart"
+                  width={500}
+                  height={350}
+                  className="w-full rounded-lg"
+                />
               </div>
             </div>
           </div>
@@ -181,7 +216,7 @@ export default function SurfaceTreatmentPage() {
       </section>
 
       {/* Partnership Benefits - Dark Section */}
-      <section className="section-padding bg-silq-dark text-white">
+      <section className="py-20 bg-silq-dark text-white">
         <div className="container-silq">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-white/60 mb-8 max-w-xl mx-auto">

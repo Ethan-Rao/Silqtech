@@ -37,7 +37,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Contact Angle + Manufacturing - Two Column */}
-      <section className="section-padding bg-white">
+      <section className="py-20 bg-white">
         <div className="container-silq">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
             {/* Left: Contact Angle Data */}
@@ -128,7 +128,7 @@ export default function TechnologyPage() {
       <div className="h-px bg-gradient-to-r from-transparent via-silq-dark/10 to-transparent" />
 
       {/* How It Works - Compact with Video */}
-      <section className="section-padding bg-gradient-to-b from-silq-cream to-white">
+      <section className="py-20 bg-gradient-to-b from-silq-cream to-white">
         <div className="container-silq">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
@@ -177,11 +177,11 @@ export default function TechnologyPage() {
       {/* Gradient Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-silq-dark/10 to-transparent" />
 
-      {/* Customizable Properties - 2x2 Grid */}
-      <section className="section-padding bg-white">
+      {/* Surface Properties - Bacteria Panel + 3 Cards */}
+      <section className="py-20 bg-white">
         <div className="container-silq">
           <div className="text-center mb-12">
-            <h2 className="text-display-sm font-bold text-silq-dark">
+            <h2 className="text-3xl md:text-4xl font-bold text-silq-dark">
               Surface Properties
             </h2>
             <p className="text-silq-dark/60 mt-3 max-w-xl mx-auto">
@@ -189,64 +189,86 @@ export default function TechnologyPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {/* Microbial Resistance */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
-              <div className="h-56 md:h-64 overflow-hidden">
-                <Image 
-                  src="/images/science/Bacteria%20Panel.png"
-                  alt="Bacterial adhesion reduction data"
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+          {/* Row 1: Bacteria Panel - Full Width */}
+          <div className="mb-8">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-4xl mx-auto">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-silq-blue mb-2">Microbial Resistance</h3>
+                <p className="text-silq-dark/70 text-sm">
+                  Significant reduction in bacterial adhesion across multiple pathogenic species.
+                </p>
               </div>
-              <div className="p-5 text-center">
-                <h4 className="font-bold text-silq-dark text-lg">Microbial Resistance</h4>
-              </div>
+              <Image 
+                src="/images/science/Bacteria%20Panel.png"
+                alt="Bacterial adhesion reduction data"
+                width={1200}
+                height={400}
+                className="w-full object-contain"
+              />
             </div>
-            
-            {/* Anti-Thrombogenicity */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
-              <div className="h-56 md:h-64 overflow-hidden">
-                <Image 
-                  src="/images/science/blood-loop.webp"
-                  alt="Blood loop thrombosis comparison"
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-contain bg-white p-2 group-hover:scale-105 transition-transform duration-700"
-                />
+          </div>
+          
+          {/* Row 2: Other 3 Cards */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Anti-Thrombogenicity - Stacked Images */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-silq-blue">Anti-Thrombogenicity</h3>
+                <p className="text-silq-dark/70 text-sm mt-1">Reduced blood clot formation.</p>
               </div>
-              <div className="p-5 text-center">
-                <h4 className="font-bold text-silq-dark text-lg">Anti-Thrombogenicity</h4>
+              <div className="flex flex-col gap-1 px-2 pb-2">
+                <div className="rounded-lg overflow-hidden">
+                  <Image 
+                    src="/images/science/blood-loop-treated.jpg"
+                    alt="Blood loop - treated surface"
+                    width={600}
+                    height={300}
+                    className="w-full object-contain bg-white"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <Image 
+                    src="/images/science/blood-loop-untreated.jpg"
+                    alt="Blood loop - control surface"
+                    width={600}
+                    height={300}
+                    className="w-full object-contain bg-white"
+                  />
+                </div>
               </div>
             </div>
             
             {/* Enhanced Lubricity - Video */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
-              <div className="overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
-                <video 
-                  src="/videos/frictionless-silicone.mp4" 
-                  autoPlay loop muted playsInline
-                  className="w-full aspect-video object-contain relative z-10"
-                />
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-silq-blue">Enhanced Lubricity</h3>
+                <p className="text-silq-dark/70 text-sm mt-1">Improved patient comfort.</p>
               </div>
-              <div className="p-5 text-center">
-                <h4 className="font-bold text-silq-dark text-lg">Enhanced Lubricity</h4>
+              <div className="px-2 pb-2">
+                <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
+                  <video 
+                    src="/videos/frictionless-silicone.mp4" 
+                    autoPlay loop muted playsInline
+                    className="w-full aspect-video object-contain"
+                  />
+                </div>
               </div>
             </div>
             
             {/* Hydrophilicity - Video */}
-            <div className="group bg-white rounded-2xl overflow-hidden border border-silq-dark/5 shadow-sm hover:shadow-2xl hover:border-silq-blue/20 hover:scale-[1.03] transition-all duration-500 cursor-pointer">
-              <div className="overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
-                <video 
-                  src="/videos/contact-lens-drying.mp4" 
-                  autoPlay loop muted playsInline
-                  className="w-full aspect-video object-contain relative z-10"
-                />
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-silq-blue">Surface Hydrophilicity</h3>
+                <p className="text-silq-dark/70 text-sm mt-1">Water-attracting surface prevents fouling.</p>
               </div>
-              <div className="p-5 text-center">
-                <h4 className="font-bold text-silq-dark text-lg">Hydrophilicity</h4>
+              <div className="px-2 pb-2">
+                <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
+                  <video 
+                    src="/videos/contact-lens-drying.mp4" 
+                    autoPlay loop muted playsInline
+                    className="w-full aspect-video object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -254,7 +276,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Partner CTA */}
-      <section className="relative section-padding bg-gradient-to-br from-silq-dark via-silq-blue-900 to-silq-dark text-white overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-silq-dark via-silq-blue-900 to-silq-dark text-white overflow-hidden">
         <div className="absolute inset-0 opacity-[0.05]">
           <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-silq-teal blur-3xl" />
           <div className="absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-silq-blue blur-3xl" />

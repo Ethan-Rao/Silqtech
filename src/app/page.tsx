@@ -91,18 +91,19 @@ export default function HomePage() {
       />
 
       {/* Section 2: Innovation That Matters + How It Works Video */}
-      <section className="section-padding bg-white">
+      <section className="py-20 bg-white">
         <div className="container-silq">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Feature Cards + How It Works */}
-            <div>
-              <h2 className="text-display-sm font-bold text-silq-dark mb-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* Left: Text + Cards */}
+            <div className="flex flex-col">
+              <h2 className="text-3xl md:text-4xl font-bold text-silq-dark mb-4">
                 Innovation That Matters
               </h2>
               <p className="text-silq-dark/70 mb-8">
                 Zwitterionic molecules create a hydration barrier that repels proteins and bacteria.
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              {/* 2x2 Feature Cards - Fill remaining space */}
+              <div className="grid grid-cols-2 gap-4 flex-1">
                 {features.map((feature, index) => (
                   <motion.div 
                     key={feature.title} 
@@ -123,26 +124,24 @@ export default function HomePage() {
               </div>
             </div>
             
-            {/* Right: How It Works Video - Centered Vertically */}
-            <div className="flex flex-col items-center justify-center h-full">
+            {/* Right: Video - Match height of left column */}
+            <div className="flex flex-col h-full">
               <motion.div 
-                className="rounded-2xl overflow-hidden shadow-2xl w-full max-w-md"
+                className="rounded-2xl overflow-hidden shadow-2xl flex-1 flex flex-col"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="bg-gradient-to-br from-silq-blue/5 to-silq-teal/5 relative">
-                  <video 
-                    src="/videos/silq-technology-demo.mp4" 
-                    poster="/images/textures/tech-overview.gif"
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline
-                    className="w-full aspect-video object-cover relative z-10"
-                  />
-                </div>
+                <video 
+                  src="/videos/silq-technology-demo.mp4" 
+                  poster="/images/textures/tech-overview.gif"
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-full object-cover flex-1"
+                />
                 <div className="p-3 bg-gradient-to-r from-silq-blue to-silq-teal text-white text-center">
                   <p className="text-sm font-medium">Surface Treatment in Action</p>
                 </div>
@@ -194,10 +193,16 @@ export default function HomePage() {
               Learn More
             </Link>
             <Link
-              href="/contact?inquiry=samples"
+              href="/technology"
               className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold border border-white/20 transition-colors"
             >
-              Request Samples
+              Learn the Science
+            </Link>
+            <Link
+              href="/contact?inquiry=ordering"
+              className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
+            >
+              Ordering Information
             </Link>
           </motion.div>
 
@@ -244,7 +249,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Images Row - Box and Encrustation side by side */}
+          {/* Images Row - Box and Publication side by side */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">
             {/* Left: Product Box */}
             <motion.div
@@ -258,30 +263,47 @@ export default function HomePage() {
                 src="/images/products/boxnew.jpeg"
                 alt="ClearTract Foley Catheter"
                 width={400}
-                height={400}
-                className="rounded-2xl shadow-2xl"
+                height={500}
+                className="rounded-2xl shadow-2xl object-contain"
               />
             </motion.div>
 
-            {/* Right: Encrustation Comparison */}
+            {/* Right: Publication */}
             <motion.div
-              className="flex justify-center"
+              className="flex flex-col items-center h-full justify-center"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="rounded-xl overflow-hidden shadow-xl max-w-lg w-full">
-                <Image
-                  src="/images/science/Encrustation1.jpg"
-                  alt="Encrustation comparison"
-                  width={700}
-                  height={420}
-                  className="w-full h-auto"
+              <a 
+                href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow bg-white"
+              >
+                <Image 
+                  src="/images/publications/advanced-materials-cover.jpg"
+                  alt="Advanced Materials Journal Cover"
+                  width={350}
+                  height={450}
+                  className="object-contain"
                 />
-                <p className="text-center text-white/60 text-sm py-3 bg-silq-dark/50">
-                  Visible difference in mineral buildup after extended use
+              </a>
+              <div className="mt-4 text-center max-w-sm">
+                <p className="text-white/80 text-sm">
+                  <span className="font-semibold text-white">Published in Advanced Materials (2022)</span>
+                  <br />
+                  &ldquo;A Readily Scalable, Clinically Demonstrated, Antibiofouling Zwitterionic Surface Treatment&rdquo;
                 </p>
+                <a 
+                  href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-silq-teal hover:text-white text-sm font-medium transition-colors"
+                >
+                  Read the full paper →
+                </a>
               </div>
             </motion.div>
           </div>
@@ -289,7 +311,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 4: Surface Treatment Services Teaser */}
-      <section className="section-padding bg-silq-cream relative overflow-hidden">
+      <section className="py-20 bg-silq-cream relative overflow-hidden">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
           <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #1E4A6D 1px, transparent 0)', backgroundSize: '40px 40px' }} />
