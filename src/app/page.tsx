@@ -160,26 +160,48 @@ export default function HomePage() {
       {/* Section Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-silq-dark/10 to-transparent" />
 
-      {/* Section 3: ClearTract + Scrollable Testimonials (Combined Dark Section) */}
-      <section className="section-padding bg-gradient-to-br from-silq-blue-900 via-silq-dark to-silq-blue-800 text-white">
+      {/* Section 3: ClearTract + Testimonials + Images (Combined Dark Section) */}
+      <section className="py-20 bg-gradient-to-b from-silq-dark to-[#1a3a52] text-white">
         <div className="container-silq">
-          {/* ClearTract Heading + Description */}
+          {/* Title */}
           <motion.div
-            className="text-center mb-10"
+            className="text-center mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-display-sm font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold">
               ClearTract® Foley Catheters
             </h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
+            <p className="mt-4 text-white/70 max-w-2xl mx-auto">
               Drug-free infection resistance. Reduced encrustation. Superior patient comfort.
             </p>
           </motion.div>
 
-          {/* Testimonials Carousel */}
+          {/* Buttons - IMMEDIATELY after title */}
+          <motion.div
+            className="flex flex-wrap justify-center gap-4 mb-12"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+          >
+            <Link
+              href="/products/cleartract"
+              className="px-8 py-3 bg-silq-blue hover:bg-silq-blue/90 text-white rounded-lg font-semibold transition-colors"
+            >
+              Learn More
+            </Link>
+            <Link
+              href="/contact?inquiry=samples"
+              className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold border border-white/20 transition-colors"
+            >
+              Request Samples
+            </Link>
+          </motion.div>
+
+          {/* Testimonials */}
           <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
             {[
               {
@@ -222,11 +244,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Product Image + Encrustation */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Product + Encrustation Image */}
-            <motion.div 
-              className="relative"
+          {/* Images Row - Box and Encrustation side by side */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">
+            {/* Left: Product Box */}
+            <motion.div
+              className="flex justify-center"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -235,47 +257,34 @@ export default function HomePage() {
               <Image
                 src="/images/products/boxnew.jpeg"
                 alt="ClearTract Foley Catheter"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 className="rounded-2xl shadow-2xl"
               />
-              {/* Encrustation comparison */}
-              <div className="mt-6 rounded-xl overflow-hidden">
-                <div className="h-48 md:h-56 overflow-hidden">
-                  <Image 
-                    src="/images/science/Encrustation1.jpg"
-                    alt="Encrustation comparison - standard catheter vs ClearTract"
-                    width={500}
-                    height={250}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <p className="text-xs text-white/60 mt-2 text-center">
-                  Visible difference in mineral buildup after extended use
-                </p>
-              </div>
             </motion.div>
-            
-            {/* Right: Copy + CTA */}
+
+            {/* Right: Encrustation Comparison */}
             <motion.div
+              className="flex justify-center"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="flex flex-wrap gap-4">
-                <Link href="/products/cleartract">
-                  <Button variant="primary" size="lg">Learn More</Button>
-                </Link>
-                <Link href="/contact">
-                  <Button variant="secondary" size="lg" className="text-white border-white/30 hover:bg-white/10">
-                    Request Samples
-                  </Button>
-                </Link>
+              <div className="rounded-xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/science/Encrustation1.jpg"
+                  alt="Encrustation comparison"
+                  width={500}
+                  height={300}
+                  className="w-full"
+                />
+                <p className="text-center text-white/60 text-sm py-3 bg-silq-dark/50">
+                  Visible difference in mineral buildup after extended use
+                </p>
               </div>
             </motion.div>
           </div>
-
         </div>
       </section>
 
@@ -420,7 +429,7 @@ export default function HomePage() {
       <section className="py-14 bg-white border-t border-silq-dark/5">
         <div className="container-silq">
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-            <Image src="/images/trust/fda.png" alt="FDA Cleared" width={50} height={50} className="object-contain" />
+            <Image src="/images/trust/fda.png" alt="FDA Cleared" width={80} height={80} className="w-16 h-16 md:w-20 md:h-20 object-contain" />
             <Image src="/images/trust/ucla.jpg" alt="UCLA" width={90} height={45} className="h-10 w-auto object-contain" />
             <Image src="/images/trust/premier-logo.svg" alt="Premier" width={60} height={30} className="h-7 w-auto object-contain" />
             <Image src="/images/trust/vizient-logo.svg" alt="Vizient" width={60} height={30} className="h-7 w-auto object-contain" />

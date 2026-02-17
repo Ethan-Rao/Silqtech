@@ -196,7 +196,7 @@ export default function SurfaceTreatmentPage() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-silq-teal mb-2">FDA-Cleared</h3>
-                <p className="text-white/70 text-sm">Technology validated with 510(k) clearance</p>
+                <p className="text-white/70 text-sm">Technology validated with 510(k) clearance. Master File Available</p>
               </div>
               <div className="p-6 rounded-xl bg-white/10 hover:bg-white/15 transition-colors duration-300">
                 <div className="w-10 h-10 rounded-full bg-silq-teal/20 flex items-center justify-center mb-3">
