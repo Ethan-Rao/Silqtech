@@ -101,7 +101,7 @@ export default function HomePage() {
                 Innovation That Matters
               </h2>
               <p className="text-silq-dark/70 mb-8">
-                Zwitterionic molecules create a hydration barrier that repels proteins and bacteria.
+                Zwitterionic molecules create a hydration barrier that repels proteins and bacteria. Designed for:
               </p>
               {/* 2x2 Feature Cards - Fill remaining space */}
               <div className="grid grid-cols-2 gap-4 flex-1">
