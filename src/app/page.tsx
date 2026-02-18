@@ -191,7 +191,7 @@ export default function HomePage() {
               href="/products/cleartract"
               className="px-8 py-3 bg-silq-blue hover:bg-silq-blue/90 text-white rounded-lg font-semibold transition-colors"
             >
-              Learn More
+              Product Information
             </Link>
             <Link
               href="/technology"
@@ -207,53 +207,58 @@ export default function HomePage() {
             </Link>
           </motion.div>
 
-          {/* Testimonials Carousel */}
-          <TestimonialCarousel
-            testimonials={[
-              {
-                quote: "ClearTract catheters have made a significant difference in reducing catheter-associated infections in my practice.",
-                author: "Evgeniy Kreydin, M.D.",
-                role: "Urologist, Cedars-Sinai",
-                initials: "EK",
-              },
-              {
-                quote: "I would not go back to other catheters ever again. The comfort has been life-changing for my daily routine.",
-                author: "Ana Garcia",
-                role: "Long-term Catheter Patient",
-                initials: "AG",
-              },
-              {
-                quote: "Her UTIs have completely subsided, no more blockages or emergency room visits. My mom is completely satisfied.",
-                author: "Stephen Newhouse",
-                role: "Caregiver",
-                initials: "SN",
-              },
-            ]}
-            className="mb-12"
-          />
+          {/* Images Row - Testimonial + Box on left, Publication on right */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Left Column: Testimonial above Box */}
+            <div className="flex flex-col gap-6">
+              {/* Compact Testimonial Carousel */}
+              <div className="flex-shrink-0">
+                <TestimonialCarousel
+                  testimonials={[
+                    {
+                      quote: "ClearTract catheters have made a significant difference in reducing catheter-associated infections in my practice.",
+                      author: "Evgeniy Kreydin, M.D.",
+                      role: "Urologist, Cedars-Sinai",
+                      initials: "EK",
+                    },
+                    {
+                      quote: "I would not go back to other catheters ever again. The comfort has been life-changing for my daily routine.",
+                      author: "Ana Garcia",
+                      role: "Long-term Catheter Patient",
+                      initials: "AG",
+                    },
+                    {
+                      quote: "Her UTIs have completely subsided, no more blockages or emergency room visits. My mom is completely satisfied.",
+                      author: "Stephen Newhouse",
+                      role: "Caregiver",
+                      initials: "SN",
+                    },
+                  ]}
+                  className="!max-w-none"
+                />
+              </div>
 
-          {/* Images Row - Box and Publication side by side */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">
-            {/* Left: Product Box */}
-            <motion.div
-              className="flex justify-center"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <Image
-                src="/images/products/boxnew.jpeg"
-                alt="ClearTract Foley Catheter"
-                width={400}
-                height={500}
-                className="rounded-2xl shadow-2xl object-contain"
-              />
-            </motion.div>
+              {/* Product Box - Takes remaining space */}
+              <motion.div 
+                className="flex justify-center flex-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <Image
+                  src="/images/products/boxnew.jpeg"
+                  alt="ClearTract Foley Catheter"
+                  width={450}
+                  height={550}
+                  className="rounded-2xl shadow-2xl object-contain w-full max-w-md"
+                />
+              </motion.div>
+            </div>
 
-            {/* Right: Publication */}
-            <motion.div
-              className="flex flex-col items-center h-full justify-center"
+            {/* Right: Publication - Full height */}
+            <motion.div 
+              className="flex flex-col items-center justify-center"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -268,8 +273,8 @@ export default function HomePage() {
                 <Image 
                   src="/images/publications/advanced-materials-cover.jpg"
                   alt="Advanced Materials Journal Cover"
-                  width={350}
-                  height={450}
+                  width={400}
+                  height={520}
                   className="object-contain"
                 />
               </a>
@@ -430,14 +435,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 6: Trust Logos */}
+      {/* Section 6: Trust Indicators - Text Only */}
       <section className="py-14 bg-white border-t border-silq-dark/5">
         <div className="container-silq">
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-            <Image src="/images/trust/fda.png" alt="FDA Cleared" width={80} height={80} className="w-16 h-16 md:w-20 md:h-20 object-contain" />
-            <Image src="/images/trust/ucla.jpg" alt="UCLA" width={90} height={45} className="h-10 w-auto object-contain" />
-            <Image src="/images/trust/premier-logo.svg" alt="Premier" width={60} height={30} className="h-7 w-auto object-contain" />
-            <Image src="/images/trust/vizient-logo.svg" alt="Vizient" width={60} height={30} className="h-7 w-auto object-contain" />
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            {[
+              { label: 'FDA 510(k) Cleared', sublabel: '3 Clearances' },
+              { label: 'UCLA Research', sublabel: 'Technology Origin' },
+              { label: 'Premier', sublabel: 'GPO Contract' },
+              { label: 'Vizient', sublabel: 'Innovative Technology' },
+            ].map((item, index) => (
+              <div 
+                key={index} 
+                className="text-center px-6 py-3 border border-silq-dark/10 rounded-lg bg-silq-cream/30"
+              >
+                <p className="font-semibold text-silq-dark text-sm">{item.label}</p>
+                <p className="text-xs text-silq-dark/50">{item.sublabel}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

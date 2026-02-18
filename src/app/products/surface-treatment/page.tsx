@@ -129,18 +129,18 @@ export default function SurfaceTreatmentPage() {
                   <Image 
                     src="/images/science/blood-loop-treated.jpg"
                     alt="Blood loop - treated surface"
-                    width={600}
-                    height={250}
-                    className="w-full object-contain bg-white"
+                    width={400}
+                    height={150}
+                    className="w-full h-32 object-contain bg-white"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden">
                   <Image 
                     src="/images/science/blood-loop-untreated.jpg"
                     alt="Blood loop - control surface"
-                    width={600}
-                    height={250}
-                    className="w-full object-contain bg-white"
+                    width={400}
+                    height={150}
+                    className="w-full h-32 object-contain bg-white"
                   />
                 </div>
               </div>

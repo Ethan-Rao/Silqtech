@@ -221,18 +221,18 @@ export default function TechnologyPage() {
                   <Image 
                     src="/images/science/blood-loop-treated.jpg"
                     alt="Blood loop - treated surface"
-                    width={600}
-                    height={300}
-                    className="w-full object-contain bg-white"
+                    width={400}
+                    height={150}
+                    className="w-full h-32 object-contain bg-white"
                   />
                 </div>
                 <div className="rounded-lg overflow-hidden">
                   <Image 
                     src="/images/science/blood-loop-untreated.jpg"
                     alt="Blood loop - control surface"
-                    width={600}
-                    height={300}
-                    className="w-full object-contain bg-white"
+                    width={400}
+                    height={150}
+                    className="w-full h-32 object-contain bg-white"
                   />
                 </div>
               </div>
@@ -271,6 +271,26 @@ export default function TechnologyPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Data Availability Note */}
+      <section className="py-6 bg-white">
+        <div className="container-silq">
+          <div className="text-center">
+            <p className="text-sm text-silq-dark/60">
+              Data available{' '}
+              <a 
+                href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-silq-blue hover:underline"
+              >
+                here
+              </a>
+              {' '}and by request.
+            </p>
           </div>
         </div>
       </section>

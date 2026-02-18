@@ -75,6 +75,11 @@ export default function ClearTractPage() {
                 <Link href="/technology">
                   <Button variant="secondary" size="lg">Learn the Science</Button>
                 </Link>
+                <Link href="/contact?inquiry=ordering">
+                  <Button variant="teal" size="lg">
+                    Ordering Information
+                  </Button>
+                </Link>
               </div>
             </div>
             
@@ -159,7 +164,7 @@ export default function ClearTractPage() {
                 </svg>
               </div>
               <h4 className="font-semibold text-silq-blue mb-2">Reduced Encrustation</h4>
-              <p className="text-sm text-silq-dark/60">Hydrophilic surface reduces mineral buildup for longer catheter life and fewer replacements.</p>
+              <p className="text-sm text-silq-dark/60">Zwitterionic surface reduces mineral buildup for longer catheter life and fewer replacements.</p>
             </div>
 
             {/* Drug-Free */}
