@@ -258,7 +258,7 @@ export default function TechnologyPage() {
             {/* Hydrophilicity - Video */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
-                <h3 className="text-lg font-bold text-silq-blue">Surface Hydrophilicity</h3>
+                <h3 className="text-lg font-bold text-silq-blue">Enhanced Hydrophilicity</h3>
                 <p className="text-silq-dark/70 text-sm mt-1">Water-attracting surface prevents fouling.</p>
               </div>
               <div className="px-2 pb-2">

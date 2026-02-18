@@ -109,19 +109,21 @@ export default function ProductsPage() {
       {/* Trust Section */}
       <section className="py-12 bg-silq-cream">
         <div className="container-silq">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <div className="text-center">
-              <Image src="/images/trust/fda.png" alt="FDA Cleared" width={60} height={60} className="mx-auto grayscale hover:grayscale-0 transition-all" />
-              <p className="mt-2 text-xs text-silq-dark/50">510(k) Cleared</p>
-            </div>
-            <div className="text-center">
-              <Image src="/images/trust/ucla.jpg" alt="UCLA Research" width={80} height={40} className="mx-auto grayscale hover:grayscale-0 transition-all" />
-                  <p className="mt-2 text-xs text-silq-dark/50">UCLA Research</p>
-            </div>
-            <div className="text-center">
-              <Image src="/images/trust/premier-logo.svg" alt="Premier GPO" width={80} height={40} className="mx-auto grayscale hover:grayscale-0 transition-all" />
-              <p className="mt-2 text-xs text-silq-dark/50">GPO Approved</p>
-            </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            {[
+              { label: 'FDA 510(k) Cleared', sublabel: '3 Clearances' },
+              { label: 'UCLA Research', sublabel: 'Technology Origin' },
+              { label: 'Premier', sublabel: 'GPO Contract' },
+              { label: 'Vizient', sublabel: 'Innovative Technology' },
+            ].map((item, index) => (
+              <div 
+                key={index} 
+                className="text-center px-6 py-3 border border-silq-dark/10 rounded-lg bg-white/50"
+              >
+                <p className="font-semibold text-silq-dark text-sm">{item.label}</p>
+                <p className="text-xs text-silq-dark/50">{item.sublabel}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

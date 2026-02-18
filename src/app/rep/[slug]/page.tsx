@@ -251,6 +251,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                         key={pdf.name}
                         href={pdf.path}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors group"
                       >
                         <div className="w-8 h-8 rounded-lg bg-silq-blue/20 flex items-center justify-center text-silq-blue group-hover:bg-silq-blue group-hover:text-white transition-colors flex-shrink-0">
@@ -275,6 +276,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                         key={pdf.name}
                         href={pdf.path}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors group"
                       >
                         <div className="w-8 h-8 rounded-lg bg-silq-teal/20 flex items-center justify-center text-silq-teal group-hover:bg-silq-teal group-hover:text-white transition-colors flex-shrink-0">

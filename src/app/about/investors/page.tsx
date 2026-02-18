@@ -174,29 +174,22 @@ export default function InvestorsPage() {
       {/* Trust Section */}
       <section className="py-16 bg-silq-cream">
         <div className="container-silq">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex flex-wrap justify-center items-center gap-8">
-              <Image
-                src="/images/trust/ucla.jpg"
-                alt="UCLA"
-                width={120}
-                height={60}
-                className="h-12 w-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <Image
-                src="/images/trust/fda.png"
-                alt="FDA Cleared"
-                width={100}
-                height={50}
-                className="h-10 w-auto grayscale hover:grayscale-0 transition-all"
-              />
-              <Image
-                src="/images/trust/premier-logo.svg"
-                alt="Premier GPO"
-                width={120}
-                height={60}
-                className="h-12 w-auto grayscale hover:grayscale-0 transition-all"
-              />
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              {[
+                { label: 'FDA 510(k) Cleared', sublabel: '3 Clearances' },
+                { label: 'UCLA Research', sublabel: 'Technology Origin' },
+                { label: 'Premier', sublabel: 'GPO Contract' },
+                { label: 'Vizient', sublabel: 'Innovative Technology' },
+              ].map((item, index) => (
+                <div 
+                  key={index} 
+                  className="text-center px-6 py-3 border border-silq-dark/10 rounded-lg bg-white/50"
+                >
+                  <p className="font-semibold text-silq-dark text-sm">{item.label}</p>
+                  <p className="text-xs text-silq-dark/50">{item.sublabel}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
