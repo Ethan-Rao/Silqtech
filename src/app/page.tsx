@@ -438,19 +438,18 @@ export default function HomePage() {
       {/* Section 6: Trust Indicators - Text Only */}
       <section className="py-14 bg-white border-t border-silq-dark/5">
         <div className="container-silq">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
             {[
-              { label: 'FDA 510(k) Cleared', sublabel: '3 Clearances' },
-              { label: 'UCLA Research', sublabel: 'Technology Origin' },
-              { label: 'Premier', sublabel: 'GPO Contract' },
-              { label: 'Vizient', sublabel: 'Innovative Technology' },
+              'FDA 510(k) Cleared',
+              'UCLA Research',
+              'Premier GPO Contract',
+              'Vizient GPO Contract',
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="text-center px-6 py-3 border border-silq-dark/10 rounded-lg bg-silq-cream/30"
+                className="text-center px-5 py-2.5 border border-silq-dark/10 rounded-lg bg-silq-cream/30"
               >
-                <p className="font-semibold text-silq-dark text-sm">{item.label}</p>
-                <p className="text-xs text-silq-dark/50">{item.sublabel}</p>
+                <p className="font-semibold text-silq-dark text-sm">{item}</p>
               </div>
             ))}
           </div>

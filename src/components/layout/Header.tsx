@@ -178,7 +178,7 @@ export function Header() {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          'lg:hidden fixed inset-0 top-20 bg-white z-40 transition-all duration-300',
+          'lg:hidden fixed inset-x-0 top-20 bottom-0 bg-white z-50 transition-all duration-300 overflow-y-auto',
           mobileMenuOpen
             ? 'opacity-100 visible'
             : 'opacity-0 invisible pointer-events-none'
@@ -190,21 +190,23 @@ export function Header() {
               <Link
                 href={item.href}
                 className={cn(
-                  'block py-4 px-2 text-lg font-medium border-b border-silq-dark/10 transition-colors',
-                  pathname === item.href ? 'text-silq-blue' : 'text-silq-dark hover:text-silq-blue'
+                  'block py-5 px-4 text-lg font-semibold border-b border-silq-dark/10 transition-colors',
+                  pathname === item.href ? 'text-silq-blue bg-silq-blue/5' : 'text-silq-dark hover:text-silq-blue hover:bg-silq-cream/50'
                 )}
               >
                 {item.name}
               </Link>
               {item.children && (
-                <div className="pl-4 py-2 space-y-2">
+                <div className="pl-6 py-2 space-y-1 bg-silq-cream/30">
                   {item.children.map((child) => (
                     <Link
                       key={child.name}
                       href={child.href}
                       className={cn(
-                        'block py-2 text-base',
-                        pathname === child.href ? 'text-silq-blue' : 'text-silq-dark/70'
+                        'block py-3 px-4 text-base font-medium rounded-lg transition-colors',
+                        pathname === child.href 
+                          ? 'text-silq-blue bg-silq-blue/10' 
+                          : 'text-silq-dark/80 hover:text-silq-blue hover:bg-silq-blue/5'
                       )}
                     >
                       {child.name}

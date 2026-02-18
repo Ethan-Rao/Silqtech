@@ -100,20 +100,20 @@ export default function ClearTractPage() {
           {/* Specs Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6 max-w-4xl mx-auto text-center">
             <div>
-              <p className="text-sm font-semibold text-silq-teal">Medical Grade Silicone</p>
-              <p className="text-xs text-white/50">Latex, BPA, DEHP-free</p>
+              <p className="text-base font-semibold text-silq-teal">Medical Grade Silicone</p>
+              <p className="text-sm text-white/60">Latex, BPA, DEHP-free</p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-silq-teal">FDA Cleared</p>
-              <p className="text-xs text-white/50">510(k) regulatory approval</p>
+              <p className="text-base font-semibold text-silq-teal">FDA Cleared</p>
+              <p className="text-sm text-white/60">510(k) regulatory approval</p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-silq-teal">Drug-Free</p>
-              <p className="text-xs text-white/50">No antibiotics or antimicrobials</p>
+              <p className="text-base font-semibold text-silq-teal">Drug-Free</p>
+              <p className="text-sm text-white/60">No antibiotics or antimicrobials</p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-silq-teal">Low Endotoxin</p>
-              <p className="text-xs text-white/50">Safe for suprapubic insertions</p>
+              <p className="text-base font-semibold text-silq-teal">Low Endotoxin</p>
+              <p className="text-sm text-white/60">Safe for suprapubic insertions</p>
             </div>
           </div>
           
@@ -164,7 +164,7 @@ export default function ClearTractPage() {
                 </svg>
               </div>
               <h4 className="font-semibold text-silq-blue mb-2">Reduced Encrustation</h4>
-              <p className="text-sm text-silq-dark/60">Zwitterionic surface reduces mineral buildup for longer catheter life and fewer replacements.</p>
+              <p className="text-sm text-silq-dark/60">Zwitterionic surfaces reduce mineral buildup for longer catheter life and fewer replacements.</p>
             </div>
 
             {/* Drug-Free */}
