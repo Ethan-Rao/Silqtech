@@ -210,12 +210,14 @@ export default function TechnologyPage() {
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Lubricity</h3>
                 <p className="text-silq-dark/70 text-sm mt-1">Easier insertions</p>
               </div>
-              <div className="relative">
-                <video 
-                  src="/videos/frictionless-silicone.mp4" 
-                  autoPlay loop muted playsInline
-                  className="w-full aspect-[4/3] object-cover"
-                />
+              <div className="px-2 pb-2">
+                <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
+                  <video 
+                    src="/videos/frictionless-silicone.mp4" 
+                    autoPlay loop muted playsInline
+                    className="w-full aspect-video object-contain"
+                  />
+                </div>
               </div>
             </div>
             
@@ -225,12 +227,14 @@ export default function TechnologyPage() {
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Hydrophilicity</h3>
                 <p className="text-silq-dark/70 text-sm mt-1">Extended wetting time</p>
               </div>
-              <div className="relative">
-                <video 
-                  src="/videos/contact-lens-drying.mp4" 
-                  autoPlay loop muted playsInline
-                  className="w-full aspect-[4/3] object-cover"
-                />
+              <div className="px-2 pb-2">
+                <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
+                  <video 
+                    src="/videos/contact-lens-drying.mp4" 
+                    autoPlay loop muted playsInline
+                    className="w-full aspect-video object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -205,6 +205,22 @@ export default function SurfaceTreatmentPage() {
               <ContactAngleChart />
             </div>
           </div>
+
+          {/* Data Availability Note */}
+          <div className="text-center mt-10">
+            <p className="text-sm text-silq-dark/60">
+              Data available{' '}
+              <a 
+                href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-silq-blue hover:underline"
+              >
+                here
+              </a>
+              {' '}and by request.
+            </p>
+          </div>
         </div>
       </section>
 
