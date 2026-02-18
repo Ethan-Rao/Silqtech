@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CTABanner } from '@/components/sections/CTABanner'
 import { Button } from '@/components/ui/Button'
+import { ContactAngleChart } from '@/components/ui/ContactAngleChart'
 
 export const metadata: Metadata = {
   title: 'Surface Treatment Services',
@@ -117,7 +118,7 @@ export default function SurfaceTreatmentPage() {
           </div>
           
           {/* Row 2: Other 3 Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Anti-Thrombogenicity - Stacked Images */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
@@ -150,7 +151,7 @@ export default function SurfaceTreatmentPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Lubricity</h3>
-                <p className="text-silq-dark/70 text-sm mt-1">Improved patient comfort.</p>
+                <p className="text-silq-dark/70 text-sm mt-1">Easier insertions</p>
               </div>
               <div className="px-2 pb-2">
                 <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
@@ -167,7 +168,7 @@ export default function SurfaceTreatmentPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Hydrophilicity</h3>
-                <p className="text-silq-dark/70 text-sm mt-1">Water-attracting surface prevents fouling.</p>
+                <p className="text-silq-dark/70 text-sm mt-1">Extended wetting time</p>
               </div>
               <div className="px-2 pb-2">
                 <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">
@@ -183,33 +184,25 @@ export default function SurfaceTreatmentPage() {
 
           {/* Contact Angle Chart */}
           <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-8 items-start">
               <div>
                 <h3 className="text-xl font-bold text-silq-blue mb-4">Surface Wettability</h3>
-                <p className="text-silq-dark/70">
+                <p className="text-silq-dark/70 mb-6">
                   Our treatment dramatically reduces contact angle across multiple substrate materials, 
                   creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
                 </p>
-                <ul className="mt-4 space-y-2">
+                <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-sm text-silq-dark/70">
                     <span className="w-2 h-2 bg-silq-blue rounded-full flex-shrink-0"></span>
                     Lower contact angle = more hydrophilic
                   </li>
                   <li className="flex items-center gap-2 text-sm text-silq-dark/70">
                     <span className="w-2 h-2 bg-silq-teal rounded-full flex-shrink-0"></span>
-                    Works on silicone, polyurethane, PDMS, and more
+                    Click any value to see the measurement
                   </li>
                 </ul>
               </div>
-              <div>
-                <Image 
-                  src="/images/science/contact-angle-comparison.jpg"
-                  alt="Contact angle comparison chart"
-                  width={500}
-                  height={350}
-                  className="w-full rounded-lg"
-                />
-              </div>
+              <ContactAngleChart />
             </div>
           </div>
         </div>

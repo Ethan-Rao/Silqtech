@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CTABanner } from '@/components/sections/CTABanner'
 import { Button } from '@/components/ui/Button'
+import { ContactAngleChart } from '@/components/ui/ContactAngleChart'
 
 export const metadata: Metadata = {
   title: 'Platform Technology',
@@ -40,7 +41,7 @@ export default function TechnologyPage() {
       <section className="py-20 bg-white">
         <div className="container-silq">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-            {/* Left: Contact Angle Data */}
+            {/* Left: Interactive Contact Angle Chart */}
             <div>
               <h2 className="text-display-sm font-bold text-silq-dark mb-4">
                 Multi-Substrate Compatibility
@@ -49,43 +50,7 @@ export default function TechnologyPage() {
                 Our treatment demonstrates consistent performance across multiple polymer substrates.
               </p>
               
-              {/* Material & Contact Angle Table */}
-              <div className="bg-gradient-to-br from-silq-cream to-white rounded-2xl p-6 border border-silq-dark/5 shadow-sm">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="text-left text-silq-dark/50 border-b border-silq-dark/10">
-                      <th className="pb-3 font-medium text-xs uppercase tracking-wider">Material</th>
-                      <th className="pb-3 font-medium text-right text-xs uppercase tracking-wider">Untreated</th>
-                      <th className="pb-3 font-medium text-right text-xs uppercase tracking-wider">Treated</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-silq-dark">
-                    {[
-                      { material: 'Silicone', untreated: '108°', treated: '32°' },
-                      { material: 'Polyurethane', untreated: '85°', treated: '28°' },
-                      { material: 'PTFE', untreated: '120°', treated: '35°' },
-                      { material: 'Polycarbonate', untreated: '82°', treated: '24°' },
-                    ].map((row, i, arr) => (
-                      <tr key={row.material} className={`${i < arr.length - 1 ? 'border-b border-silq-dark/5' : ''} hover:bg-silq-blue/[0.02] transition-colors`}>
-                        <td className="py-3 font-medium">{row.material}</td>
-                        <td className="py-3 text-right text-silq-dark/50">{row.untreated}</td>
-                        <td className="py-3 text-right">
-                          <span className="inline-flex items-center gap-1.5 text-silq-teal font-semibold">
-                            <span className="w-1.5 h-1.5 rounded-full bg-silq-teal" />
-                            {row.treated}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                <p className="text-xs text-silq-dark/40 mt-4 flex items-center gap-1">
-                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Lower contact angle = more hydrophilic surface
-                </p>
-              </div>
+              <ContactAngleChart />
             </div>
             
             {/* Right: Manufacturing GIF */}
@@ -210,7 +175,7 @@ export default function TechnologyPage() {
           </div>
           
           {/* Row 2: Other 3 Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Anti-Thrombogenicity - Stacked Images */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
@@ -243,7 +208,7 @@ export default function TechnologyPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Lubricity</h3>
-                <p className="text-silq-dark/70 text-sm mt-1">Improved patient comfort.</p>
+                <p className="text-silq-dark/70 text-sm mt-1">Easier insertions</p>
               </div>
               <div className="relative">
                 <video 
@@ -258,7 +223,7 @@ export default function TechnologyPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Hydrophilicity</h3>
-                <p className="text-silq-dark/70 text-sm mt-1">Water-attracting surface prevents fouling.</p>
+                <p className="text-silq-dark/70 text-sm mt-1">Extended wetting time</p>
               </div>
               <div className="relative">
                 <video 

@@ -208,12 +208,31 @@ export default function ClearTractPage() {
         </div>
       </section>
 
+      {/* Ordering CTA Section */}
+      <section className="py-12 bg-white">
+        <div className="container-silq">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-silq-dark mb-4">Ready to Order?</h2>
+            <p className="text-silq-dark/70 mb-6">
+              Contact our team to discuss ordering options and availability.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact">
+                <Button variant="primary" size="lg">Request Samples</Button>
+              </Link>
+              <Link href="/contact?inquiry=ordering">
+                <Button variant="teal" size="lg">Ordering Information</Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <CTABanner
-        title="Ready to Try ClearTract?"
-        description="Request samples or speak with our team."
-        cta={{ text: 'Request Samples', href: '/contact' }}
-        secondaryCta={{ text: 'View Technology', href: '/technology' }}
+        title="Learn About Our Technology"
+        cta={{ text: 'View Technology', href: '/technology' }}
+        secondaryCta={{ text: 'Contact Us', href: '/contact' }}
         variant="gradient"
       />
     </>

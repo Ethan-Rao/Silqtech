@@ -1,3 +1,6 @@
 export { Button } from './Button'
 export { Card, CardHeader, CardContent, CardFooter } from './Card'
 export { VideoEmbed } from './VideoEmbed'
+export { TestimonialCarousel } from './TestimonialCarousel'
+export { BiographyCard } from './BiographyCard'
+export { ContactAngleChart } from './ContactAngleChart'
