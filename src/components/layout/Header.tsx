@@ -175,57 +175,54 @@ export function Header() {
         </div>
       </nav>
 
-      {/* Mobile Navigation */}
-      <div
-        className={cn(
-          'lg:hidden fixed inset-x-0 top-20 bottom-0 bg-white z-50 transition-all duration-300 overflow-y-auto',
-          mobileMenuOpen
-            ? 'opacity-100 visible'
-            : 'opacity-0 invisible pointer-events-none'
-        )}
-      >
-        <div className="container-silq py-6 space-y-4">
-          {navigation.map((item) => (
-            <div key={item.name}>
-              <Link
-                href={item.href}
-                className={cn(
-                  'block py-5 px-4 text-lg font-semibold border-b border-silq-dark/10 transition-colors',
-                  pathname === item.href ? 'text-silq-blue bg-silq-blue/5' : 'text-silq-dark hover:text-silq-blue hover:bg-silq-cream/50'
+      {/* Mobile Navigation - dropdown pinned below header */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden bg-white border-b border-silq-dark/10 shadow-lg">
+          <div className="container-silq py-3 space-y-1">
+            {navigation.map((item) => (
+              <div key={item.name}>
+                <Link
+                  href={item.href}
+                  className={cn(
+                    'block py-3 px-3 text-sm font-medium rounded-lg transition-colors',
+                    pathname === item.href
+                      ? 'text-silq-blue bg-silq-blue/5'
+                      : 'text-silq-dark hover:text-silq-blue hover:bg-silq-cream/50'
+                  )}
+                >
+                  {item.name}
+                </Link>
+                {item.children && (
+                  <div className="pl-5 space-y-1">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.name}
+                        href={child.href}
+                        className={cn(
+                          'block py-2.5 px-3 text-sm rounded-lg transition-colors',
+                          pathname === child.href
+                            ? 'text-silq-blue bg-silq-blue/10'
+                            : 'text-silq-dark/70 hover:text-silq-blue hover:bg-silq-blue/5'
+                        )}
+                      >
+                        {child.name}
+                      </Link>
+                    ))}
+                  </div>
                 )}
-              >
-                {item.name}
-              </Link>
-              {item.children && (
-                <div className="pl-6 py-2 space-y-1 bg-silq-cream/30">
-                  {item.children.map((child) => (
-                    <Link
-                      key={child.name}
-                      href={child.href}
-                      className={cn(
-                        'block py-3 px-4 text-base font-medium rounded-lg transition-colors',
-                        pathname === child.href 
-                          ? 'text-silq-blue bg-silq-blue/10' 
-                          : 'text-silq-dark/80 hover:text-silq-blue hover:bg-silq-blue/5'
-                      )}
-                    >
-                      {child.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+              </div>
+            ))}
 
-          <div className="pt-4">
-            <Link href="/contact" className="block">
-              <Button variant="primary" size="lg" className="w-full">
-                Contact Us
-              </Button>
-            </Link>
+            <div className="pt-2 pb-1">
+              <Link href="/contact" className="block">
+                <Button variant="primary" size="md" className="w-full">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   )
 }

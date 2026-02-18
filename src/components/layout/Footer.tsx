@@ -17,12 +17,17 @@ export function Footer() {
                 className="h-11 w-auto"
               />
             </Link>
-            <p className="text-white/60 text-sm font-light tracking-wide mb-2">
+            <p className="text-white/60 text-sm font-light tracking-wide mb-3">
               Surface Science Perfected
             </p>
-            <p className="text-white/40 text-xs">
-              Los Angeles, California
-            </p>
+            <div className="text-white/40 text-xs space-y-1">
+              <p>
+                <a href="tel:+14243098523" className="hover:text-white transition-colors">(424) 309-8523</a>
+              </p>
+              <p>323 Sunny Isles Blvd.</p>
+              <p>7th Floor</p>
+              <p>Sunny Isles Beach, FL 33160</p>
+            </div>
           </div>
 
           {/* Column 2: Products */}
