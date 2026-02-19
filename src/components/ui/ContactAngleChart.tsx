@@ -31,6 +31,14 @@ const materials: MaterialData[] = [
     treatedImage: '/images/science/contact-angles/nylon-treated.jpg',
   },
   {
+    name: 'peek',
+    displayName: 'PEEK',
+    untreatedAngle: '72°',
+    treatedAngle: '35°',
+    untreatedImage: '/images/science/contact-angles/peek-untreated.png',
+    treatedImage: '/images/science/contact-angles/peek-treated.png',
+  },
+  {
     name: 'polyethylene',
     displayName: 'Polyethylene',
     untreatedAngle: '95°',
@@ -53,6 +61,22 @@ const materials: MaterialData[] = [
     treatedAngle: '26°',
     untreatedImage: '/images/science/contact-angles/pvc-control.jpg',
     treatedImage: '/images/science/contact-angles/pvc-treated.jpg',
+  },
+  {
+    name: 'stainless-steel',
+    displayName: 'Stainless Steel',
+    untreatedAngle: '75°',
+    treatedAngle: '33°',
+    untreatedImage: '/images/science/contact-angles/stainless-steel-untreated.png',
+    treatedImage: '/images/science/contact-angles/stainless-steel-treated.png',
+  },
+  {
+    name: 'titanium',
+    displayName: 'Titanium',
+    untreatedAngle: '68°',
+    treatedAngle: '29°',
+    untreatedImage: '/images/science/contact-angles/titanium-untreated.jpg',
+    treatedImage: '/images/science/contact-angles/titanium-treated.jpg',
   },
 ]
 
