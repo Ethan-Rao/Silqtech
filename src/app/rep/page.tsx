@@ -103,7 +103,7 @@ export default function RepDirectoryPage() {
               >
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
                   <p className="text-3xl font-bold">{uniqueReps.length}</p>
-                  <p className="text-sm text-white/60">Territories</p>
+                  <p className="text-sm text-white/60">Total Reps</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
                   <p className="text-3xl font-bold">{allStates.length}</p>

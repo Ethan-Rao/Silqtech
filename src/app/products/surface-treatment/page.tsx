@@ -186,7 +186,7 @@ export default function SurfaceTreatmentPage() {
           <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div>
-                <h3 className="text-xl font-bold text-silq-blue mb-4">Surface Wettability</h3>
+                <h3 className="text-xl font-bold text-silq-blue mb-4">Multi-Substrate Compatibility</h3>
                 <p className="text-silq-dark/70 mb-6">
                   Our treatment dramatically reduces contact angle across multiple substrate materials, 
                   creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
