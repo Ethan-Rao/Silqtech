@@ -537,7 +537,8 @@ export default function RepPage({ params }: { params: { slug: string } }) {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Overview Video */}
             <div className="bg-silq-cream rounded-2xl overflow-hidden shadow-xl">
               <VideoEmbed 
                 vimeoId="869354523"
@@ -545,7 +546,19 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-silq-dark">Silq Technologies Overview</h3>
-                <p className="text-silq-dark/60 mt-2">See how our zwitterionic coating transforms medical device surfaces to resist bacterial adhesion and reduce friction.</p>
+                <p className="text-silq-dark/60 mt-2">See how our zwitterionic coating transforms medical device surfaces.</p>
+              </div>
+            </div>
+            
+            {/* Surface Treatment in Action */}
+            <div className="bg-silq-cream rounded-2xl overflow-hidden shadow-xl">
+              <VideoEmbed 
+                vimeoId="710986413"
+                title="Surface Treatment in Action"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-silq-dark">Surface Treatment in Action</h3>
+                <p className="text-silq-dark/60 mt-2">Watch our coating technology reduce friction and repel contaminants.</p>
               </div>
             </div>
           </div>

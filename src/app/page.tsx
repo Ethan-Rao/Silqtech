@@ -203,7 +203,13 @@ export default function HomePage() {
               href="/contact?inquiry=ordering"
               className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
             >
-              Ordering Information
+              Facility Ordering Information
+            </Link>
+            <Link
+              href="/contact?inquiry=ordering"
+              className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
+            >
+              Patient Ordering Information
             </Link>
           </motion.div>
 
@@ -216,21 +222,31 @@ export default function HomePage() {
                 <TestimonialCarousel
                   testimonials={[
                     {
-                      quote: "ClearTract catheters have made a significant difference in reducing catheter-associated infections in my practice.",
+                      quote: "By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters.",
+                      fullContent: `Although urinary catheters are an integral part of any healthcare setting, they can cause significant complications, such as urinary tract infections and stone formation. In addition, urinary catheters can become obstructed or calcified. By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage. My early experience using these catheters indicates that they are less likely to result in infection and become obstructed, and that patients are more satisfied with their use than with the standard non-coated catheters available today.`,
                       author: "Evgeniy Kreydin, M.D.",
-                      role: "Urologist, Cedars-Sinai",
+                      role: "Assistant Professor of Clinical Urology, Keck Hospital of USC",
                       initials: "EK",
                     },
                     {
-                      quote: "I would not go back to other catheters ever again. The comfort has been life-changing for my daily routine.",
+                      quote: "Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking.",
+                      fullContent: `I have been using the Silq ClearTract catheters in my neurogenic bladder patients who use chronic indwelling suprapubic tubes. These are a population of patients that are at high risk for infections, colonization and the SPT often will get clogged/encrusted. Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking from the catheter becoming clogged with sediment and debris. Just recently, I had three patients who were in the ER every other week for SPT changes because the tubes were clogged. Now I am seeing them every 4 weeks for change with no recent ER visits.`,
+                      author: "Jennifer Linehan, M.D.",
+                      role: "Associate Professor of Urology, St. John Cancer Institute",
+                      initials: "JL",
+                    },
+                    {
+                      quote: "I do not have pain when the catheter is changed. I have not developed any bladder stones since using this catheter.",
+                      fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.\n\nOne day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I do not think I would go back to the other catheters ever again.`,
                       author: "Ana Garcia",
-                      role: "Long-term Catheter Patient",
+                      role: "Long-term ClearTract Patient",
                       initials: "AG",
                     },
                     {
-                      quote: "Her UTIs have completely subsided, no more blockages or emergency room visits. My mom is completely satisfied.",
+                      quote: "The first time this SILQ catheter was used we saw an immediate improvement. This has been a life-changing event for not only Nathan, but also his group home and us.",
+                      fullContent: `My son Nathan who has been developmentally disabled since birth needed to have his condom catheter replaced by a suprapubic catheter in 2016 due to recurring urinary tract infections. The surgery was successful and for the first couple of years the tube would stay free of blockage by sediment for about 4 weeks after which it would need to be replaced. Starting about 1 and a half years ago the interval between replacements due to sediment blockage became 3 weeks. And then it was 2 weeks and then about a year ago, one week and then finally it had to be replaced every 4-5 days.\n\nSometime in the last year the University of Michigan Hospital Urology Clinic received the SILQ sp catheter and part of samples to try. The first time this SILQ catheter was used we saw an immediate improvement in there being no clogging or sediment buildup in the catheter. Right from the first replacement we have been able to 6 weeks between replacements (the recommended interval) and there was still no sediment buildup in the catheter.\n\nNeedless to say, this has been a life-changing event for not only Nathan, but also his group home and us, his parents who take him to his appointments!`,
                       author: "Stephen Newhouse",
-                      role: "Caregiver",
+                      role: "Caregiver to ClearTract Patient",
                       initials: "SN",
                     },
                   ]}
@@ -346,7 +362,7 @@ export default function HomePage() {
                     <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
-                  ), label: 'FDA Platform' },
+                  ), label: 'FDA Cleared Platform' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm text-silq-dark/80">
                     {item.icon}

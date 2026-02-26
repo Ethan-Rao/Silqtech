@@ -1,5 +1,6 @@
-export { Button } from './Button'
+﻿export { Button } from './Button'
 export { Card, CardHeader, CardContent, CardFooter } from './Card'
 export { VideoEmbed } from './VideoEmbed'
 export { TestimonialCarousel } from './TestimonialCarousel'
+export { TestimonialModal } from './TestimonialModal'
 export { BiographyCard } from './BiographyCard'

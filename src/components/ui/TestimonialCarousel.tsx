@@ -2,9 +2,11 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { TestimonialModal } from './TestimonialModal'
 
 interface Testimonial {
   quote: string
+  fullContent?: string
   author: string
   role: string
   initials: string
@@ -22,6 +24,7 @@ export function TestimonialCarousel({
   className = '',
 }: TestimonialCarouselProps) {
   const [current, setCurrent] = useState(0)
+  const [modalOpen, setModalOpen] = useState(false)
 
   const goNext = useCallback(() => {
     setCurrent((prev) => (prev + 1) % testimonials.length)
@@ -32,9 +35,10 @@ export function TestimonialCarousel({
   }, [testimonials.length])
 
   useEffect(() => {
+    if (modalOpen) return // pause auto-advance when modal is open
     const timer = setInterval(goNext, autoAdvanceMs)
     return () => clearInterval(timer)
-  }, [goNext, autoAdvanceMs])
+  }, [goNext, autoAdvanceMs, modalOpen])
 
   return (
     <div className={`max-w-2xl mx-auto ${className}`}>
@@ -53,25 +57,37 @@ export function TestimonialCarousel({
             <div className="text-silq-teal/30 text-4xl font-serif leading-none mb-2">&ldquo;</div>
 
             {/* Quote Text */}
-            <blockquote className="text-white/90 text-lg leading-relaxed mb-6">
+            <blockquote className="text-white/90 text-lg leading-relaxed mb-4">
               {testimonials[current].quote}
             </blockquote>
 
-            {/* Author */}
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-silq-teal/20 flex items-center justify-center">
-                <span className="text-silq-teal text-sm font-semibold">
-                  {testimonials[current].initials}
-                </span>
+            {/* Author + Read Full Button */}
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-silq-teal/20 flex items-center justify-center">
+                  <span className="text-silq-teal text-sm font-semibold">
+                    {testimonials[current].initials}
+                  </span>
+                </div>
+                <div>
+                  <p className="text-white font-medium text-sm">
+                    {testimonials[current].author}
+                  </p>
+                  <p className="text-white/50 text-xs">
+                    {testimonials[current].role}
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-white font-medium text-sm">
-                  {testimonials[current].author}
-                </p>
-                <p className="text-white/50 text-xs">
-                  {testimonials[current].role}
-                </p>
-              </div>
+
+              {/* Read Full Testimonial Button */}
+              {testimonials[current].fullContent && (
+                <button
+                  onClick={() => setModalOpen(true)}
+                  className="text-sm text-silq-teal hover:text-silq-teal/80 font-medium transition-colors whitespace-nowrap"
+                >
+                  Read Full Testimonial →
+                </button>
+              )}
             </div>
           </motion.div>
         </AnimatePresence>
@@ -114,6 +130,13 @@ export function TestimonialCarousel({
           </svg>
         </button>
       </div>
+
+      {/* Modal */}
+      <TestimonialModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        testimonial={testimonials[current]}
+      />
     </div>
   )
 }
