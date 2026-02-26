@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const testimonials = [
   {
-    quote: "By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters.",
+    quote: "Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage.",
     fullContent: `Although urinary catheters are an integral part of any healthcare setting, they can cause significant complications, such as urinary tract infections and stone formation. In addition, urinary catheters can become obstructed or calcified. By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage. My early experience using these catheters indicates that they are less likely to result in infection and become obstructed, and that patients are more satisfied with their use than with the standard non-coated catheters available today.`,
     author: "Evgeniy Kreydin, M.D.",
     role: "Assistant Professor of Clinical Urology, Keck Hospital of USC",
@@ -26,14 +26,14 @@ const testimonials = [
     initials: "JL",
   },
   {
-    quote: "Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization in all temporary and permanent implantable devices.",
+    quote: "Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization.",
     fullContent: `There have been no significant medical advances since the advent of antibiotics and handwashing that have the potential to reduce biofilm and catheter-associated infections like SILQ's zwitterion technology. Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization in all temporary and permanent implantable devices in humans.`,
     author: "Lora A. Plaskon, M.D.",
     role: "Board Certified in Urology & Female Pelvic Medicine, Evergreen Health",
     initials: "LP",
   },
   {
-    quote: "The incidence of UTIs has dramatically decreased. This has not only improved my patients' quality of life but also resulted in a reduction in healthcare costs.",
+    quote: "It has been a gamechanger. Not only did the Silq coating promote biofilm resistance, but it also improved patient comfort significantly.",
     fullContent: `I recently had the opportunity to use Foley catheters with Silq coating, and I must say, it has been a gamechanger. Not only did the Silq coating promote biofilm resistance, but it also improved patient comfort significantly. As a urologist, I utilize a significant number of foley catheters in the course of providing urological care. The fact that patients who have had to rely on Foley catheters for an extended period report back to me the reduction in discomfort and irritation was remarkable. The smooth and soft surface of the Silq coating made a noticeable difference in my overall comfort level.
 
 Moreover, the use of the Silq coating on Foley catheters had an impressive impact on reducing urinary tract infections. Generally, foley catheter-acquired infections are a major problem in the medical profession, costing billions of dollars in hospitalization and treatment. Before using Silq-coated catheters, I experienced unacceptable rate of recurrent UTIs in patients with traditional foley catheters. Since switching to Silq coated catheters, the incidence of UTIs has dramatically decreased. This has not only improved my patients' quality of life but also resulted in a reduction in healthcare costs and need for antibiotic treatments.
@@ -44,7 +44,7 @@ I highly recommend Foley catheters with Silq coating to anyone in need of long-t
     initials: "MB",
   },
   {
-    quote: "I do not have pain when the catheter is changed. I have not developed any bladder stones since using this catheter.",
+    quote: "I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis.",
     fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
 
 One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I am lucky because this catheter is being available at Rancho Los Amigos now. I do not think I would go back to the other catheters ever again. I believe it's important to make this product available to more patients who would not only benefit from the catheter but have a better quality of life with something so simple as a catheter.`,

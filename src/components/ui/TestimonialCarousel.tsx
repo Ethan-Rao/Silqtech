@@ -20,7 +20,7 @@ interface TestimonialCarouselProps {
 
 export function TestimonialCarousel({
   testimonials,
-  autoAdvanceMs = 6000,
+  autoAdvanceMs = 10000,
   className = '',
 }: TestimonialCarouselProps) {
   const [current, setCurrent] = useState(0)

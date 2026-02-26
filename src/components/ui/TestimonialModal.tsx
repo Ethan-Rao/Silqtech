@@ -52,11 +52,9 @@ export function TestimonialModal({ isOpen, onClose, testimonial }: TestimonialMo
             
             {/* Content */}
             <div className="p-6 overflow-y-auto flex-1">
-              <div className="text-silq-teal/30 text-5xl font-serif leading-none mb-4">&ldquo;</div>
-              <div className="prose prose-lg max-w-none text-silq-dark/80 whitespace-pre-line">
+              <blockquote className="text-lg leading-relaxed text-silq-dark/80 italic border-l-4 border-silq-teal/30 pl-4 whitespace-pre-line">
                 {testimonial.fullContent}
-              </div>
-              <div className="text-silq-teal/30 text-5xl font-serif leading-none text-right mt-4">&rdquo;</div>
+              </blockquote>
             </div>
             
             {/* Footer */}
