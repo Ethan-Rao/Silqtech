@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 }
 
 const testimonials = [
+  // Patient first
+  {
+    quote: "I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis.",
+    fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
+
+One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I am lucky because this catheter is being available at Rancho Los Amigos now. I do not think I would go back to the other catheters ever again. I believe it's important to make this product available to more patients who would not only benefit from the catheter but have a better quality of life with something so simple as a catheter.`,
+    author: "Ana Garcia",
+    role: "Long-term ClearTract Patient",
+    initials: "AG",
+  },
+  // Physician second
   {
     quote: "Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage.",
     fullContent: `Although urinary catheters are an integral part of any healthcare setting, they can cause significant complications, such as urinary tract infections and stone formation. In addition, urinary catheters can become obstructed or calcified. By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage. My early experience using these catheters indicates that they are less likely to result in infection and become obstructed, and that patients are more satisfied with their use than with the standard non-coated catheters available today.`,
@@ -18,6 +29,7 @@ const testimonials = [
     role: "Assistant Professor of Clinical Urology, Keck Hospital of USC",
     initials: "EK",
   },
+  // Mixed order after
   {
     quote: "Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking.",
     fullContent: `I have been using the Silq ClearTract catheters in my neurogenic bladder patients who use chronic indwelling suprapubic tubes. These are a population of patients that are at high risk for infections, colonization and the SPT often will get clogged/encrusted. Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking from the catheter becoming clogged with sediment and debris. Just recently, I had three patients who were in the ER every other week for SPT changes because the tubes were clogged. Now I am seeing them every 4 weeks for change with no recent ER visits.`,
@@ -42,15 +54,6 @@ I highly recommend Foley catheters with Silq coating to anyone in need of long-t
     author: "Matthew Bui, M.D., Ph.D.",
     role: "Director, Tower Urology Institute for Robotic Surgery, Cedars-Sinai",
     initials: "MB",
-  },
-  {
-    quote: "I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis.",
-    fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
-
-One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I am lucky because this catheter is being available at Rancho Los Amigos now. I do not think I would go back to the other catheters ever again. I believe it's important to make this product available to more patients who would not only benefit from the catheter but have a better quality of life with something so simple as a catheter.`,
-    author: "Ana Garcia",
-    role: "Long-term ClearTract Patient",
-    initials: "AG",
   },
   {
     quote: "From the time I started using Silq everything changed. I no longer had to flush with anything whatsoever. I won't use any other catheter.",
