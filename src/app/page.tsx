@@ -221,39 +221,19 @@ export default function HomePage() {
               <div className="flex-shrink-0">
                 <TestimonialCarousel
                   testimonials={[
-                    // Patient first
+                    // 1. Stephen Newhouse
                     {
-                      quote: "I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis.",
-                      fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
+                      quote: "The first time this SILQ catheter was used we saw an immediate improvement. This has been a life-changing event for not only Nathan, but also his group home and us.",
+                      fullContent: `My son Nathan who has been developmentally disabled since birth needed to have his condom catheter replaced by a suprapubic catheter in 2016 due to recurring urinary tract infections. The surgery was successful and for the first couple of years the tube would stay free of blockage by sediment for about 4 weeks after which it would need to be replaced. Starting about 1 and a half years ago the interval between replacements due to sediment blockage became 3 weeks. And then it was 2 weeks and then about a year ago, one week and then finally it had to be replaced every 4-5 days.
 
-One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I do not think I would go back to the other catheters ever again.`,
-                      author: "Ana Garcia",
-                      role: "Long-term ClearTract Patient",
-                      initials: "AG",
+Sometime in the last year the University of Michigan Hospital Urology Clinic received the SILQ sp catheter and part of samples to try. The first time this SILQ catheter was used we saw an immediate improvement in there being no clogging or sediment buildup in the catheter. Right from the first replacement we have been able to 6 weeks between replacements (the recommended interval) and there was still no sediment buildup in the catheter.
+
+Needless to say, this has been a life-changing event for not only Nathan, but also his group home and us, his parents who take him to his appointments!`,
+                      author: "Stephen Newhouse",
+                      role: "Caregiver to ClearTract Patient",
+                      initials: "SN",
                     },
-                    // Physician second
-                    {
-                      quote: "Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage.",
-                      fullContent: `Although urinary catheters are an integral part of any healthcare setting, they can cause significant complications, such as urinary tract infections and stone formation. In addition, urinary catheters can become obstructed or calcified. By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage. My early experience using these catheters indicates that they are less likely to result in infection and become obstructed, and that patients are more satisfied with their use than with the standard non-coated catheters available today.`,
-                      author: "Evgeniy Kreydin, M.D.",
-                      role: "Assistant Professor of Clinical Urology, Keck Hospital of USC",
-                      initials: "EK",
-                    },
-                    // Mixed order after
-                    {
-                      quote: "Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking.",
-                      fullContent: `I have been using the Silq ClearTract catheters in my neurogenic bladder patients who use chronic indwelling suprapubic tubes. These are a population of patients that are at high risk for infections, colonization and the SPT often will get clogged/encrusted. Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking from the catheter becoming clogged with sediment and debris. Just recently, I had three patients who were in the ER every other week for SPT changes because the tubes were clogged. Now I am seeing them every 4 weeks for change with no recent ER visits.`,
-                      author: "Jennifer Linehan, M.D.",
-                      role: "Associate Professor of Urology, St. John Cancer Institute",
-                      initials: "JL",
-                    },
-                    {
-                      quote: "Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization.",
-                      fullContent: `There have been no significant medical advances since the advent of antibiotics and handwashing that have the potential to reduce biofilm and catheter-associated infections like SILQ's zwitterion technology. Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization in all temporary and permanent implantable devices in humans.`,
-                      author: "Lora A. Plaskon, M.D.",
-                      role: "Board Certified in Urology & Female Pelvic Medicine, Evergreen Health",
-                      initials: "LP",
-                    },
+                    // 2. Matthew Bui
                     {
                       quote: "It has been a gamechanger. Not only did the Silq coating promote biofilm resistance, but it also improved patient comfort significantly.",
                       fullContent: `I recently had the opportunity to use Foley catheters with Silq coating, and I must say, it has been a gamechanger. Not only did the Silq coating promote biofilm resistance, but it also improved patient comfort significantly. As a urologist, I utilize a significant number of foley catheters in the course of providing urological care. The fact that patients who have had to rely on Foley catheters for an extended period report back to me the reduction in discomfort and irritation was remarkable. The smooth and soft surface of the Silq coating made a noticeable difference in my overall comfort level.
@@ -265,6 +245,7 @@ I highly recommend Foley catheters with Silq coating to anyone in need of long-t
                       role: "Director, Tower Urology Institute for Robotic Surgery, Cedars-Sinai",
                       initials: "MB",
                     },
+                    // 3. Dulce Garcia
                     {
                       quote: "From the time I started using Silq everything changed. I no longer had to flush with anything whatsoever. I won't use any other catheter.",
                       fullContent: `I would like to start off with sharing with you how life altering the Silq catheter has been to me. I used to have chronic UTIs when using the latex and plastic catheters. I struggled with the catheters for 3+ years in the sense of chronic infection, having to flush saline daily and use a compound antibiotic flush I would use 2/3 a week. That would not always work so I had to take oral antibiotics too. With my health being what it is taking oral antibiotics tends to cause other issues in my body that requires me to take an additional 2 antibiotics with the one for the UTI. I'm a firm believer in quality of life over quantity of life, believe me when I say I did not have quality of life. I even had to be hospitalized because of the severe infections, it finally went down to where I had to have a catheter change every 4/5 days.
@@ -274,6 +255,41 @@ When I was approached with the option to try the Silq catheter I was excited to 
                       role: "Long-term ClearTract Patient",
                       initials: "DG",
                     },
+                    // 4. Evgeniy Kreydin
+                    {
+                      quote: "Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage.",
+                      fullContent: `Although urinary catheters are an integral part of any healthcare setting, they can cause significant complications, such as urinary tract infections and stone formation. In addition, urinary catheters can become obstructed or calcified. By providing a coating that resists bacterial and protein adhesion, Silq Technologies is bringing a game changing innovation to the care of patients who require catheters for bladder drainage. My early experience using these catheters indicates that they are less likely to result in infection and become obstructed, and that patients are more satisfied with their use than with the standard non-coated catheters available today.`,
+                      author: "Evgeniy Kreydin, M.D.",
+                      role: "Assistant Professor of Clinical Urology, Keck Hospital of USC",
+                      initials: "EK",
+                    },
+                    // 5. Ana Garcia
+                    {
+                      quote: "I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis.",
+                      fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
+
+One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I do not think I would go back to the other catheters ever again.`,
+                      author: "Ana Garcia",
+                      role: "Long-term ClearTract Patient",
+                      initials: "AG",
+                    },
+                    // 6. Jennifer Linehan
+                    {
+                      quote: "Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking.",
+                      fullContent: `I have been using the Silq ClearTract catheters in my neurogenic bladder patients who use chronic indwelling suprapubic tubes. These are a population of patients that are at high risk for infections, colonization and the SPT often will get clogged/encrusted. Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking from the catheter becoming clogged with sediment and debris. Just recently, I had three patients who were in the ER every other week for SPT changes because the tubes were clogged. Now I am seeing them every 4 weeks for change with no recent ER visits.`,
+                      author: "Jennifer Linehan, M.D.",
+                      role: "Associate Professor of Urology, St. John Cancer Institute",
+                      initials: "JL",
+                    },
+                    // 7. Lora Plaskon
+                    {
+                      quote: "Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization.",
+                      fullContent: `There have been no significant medical advances since the advent of antibiotics and handwashing that have the potential to reduce biofilm and catheter-associated infections like SILQ's zwitterion technology. Silq catheter-coating technology has the potential to revolutionize how we manage the constant threat of microbial colonization in all temporary and permanent implantable devices in humans.`,
+                      author: "Lora A. Plaskon, M.D.",
+                      role: "Board Certified in Urology & Female Pelvic Medicine, Evergreen Health",
+                      initials: "LP",
+                    },
+                    // 8. Maria Luisa Trevino
                     {
                       quote: "Ever since my mom started using the new Silq suprapubic tube, her urinary tract infections have subsided, no more blockage of sediment.",
                       fullContent: `My mother was diagnosed with an epidural cyst at the T7 level which left her paralyzed from the waist down after removing the cyst via surgery. After surgery, my mom was wheelchair bound and with incontinence. When she arrived home, she was doing intermittent catheterization every 3 hours. This was too much on my mother physically to keep doing the IC. I believe it was 2010 that my mom went under surgery to utilize the suprapubic catheter. It was somewhat of a relief for my mom to have the suprapubic catheter except for the constant urinary tract infections that my mom had acquired. Her urologist at the time told her it was the downside of having the suprapubic tube. My mom tried cranberry supplements, probiotics, countless gallons of cranberry juice and medications to prevent urinary tract infections with little to no relief.
@@ -282,17 +298,6 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                       author: "Maria Luisa Trevino",
                       role: "Caregiver to ClearTract Patient",
                       initials: "MT",
-                    },
-                    {
-                      quote: "The first time this SILQ catheter was used we saw an immediate improvement. This has been a life-changing event for not only Nathan, but also his group home and us.",
-                      fullContent: `My son Nathan who has been developmentally disabled since birth needed to have his condom catheter replaced by a suprapubic catheter in 2016 due to recurring urinary tract infections. The surgery was successful and for the first couple of years the tube would stay free of blockage by sediment for about 4 weeks after which it would need to be replaced. Starting about 1 and a half years ago the interval between replacements due to sediment blockage became 3 weeks. And then it was 2 weeks and then about a year ago, one week and then finally it had to be replaced every 4-5 days.
-
-Sometime in the last year the University of Michigan Hospital Urology Clinic received the SILQ sp catheter and part of samples to try. The first time this SILQ catheter was used we saw an immediate improvement in there being no clogging or sediment buildup in the catheter. Right from the first replacement we have been able to 6 weeks between replacements (the recommended interval) and there was still no sediment buildup in the catheter.
-
-Needless to say, this has been a life-changing event for not only Nathan, but also his group home and us, his parents who take him to his appointments!`,
-                      author: "Stephen Newhouse",
-                      role: "Caregiver to ClearTract Patient",
-                      initials: "SN",
                     },
                   ]}
                   className="!max-w-none"
