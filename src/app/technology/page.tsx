@@ -164,7 +164,7 @@ export default function TechnologyPage() {
                 </p>
               </div>
               <Image 
-                src="/images/science/Bacteria%20Panel.png"
+                src="/images/science/BacPanelV2.jpg"
                 alt="Bacterial adhesion reduction data"
                 width={1200}
                 height={400}

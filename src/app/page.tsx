@@ -313,7 +313,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                 transition={{ duration: 0.6 }}
               >
                 <Image
-                  src="/images/products/boxnew.jpeg"
+                  src="/images/products/BoxV2.jpg"
                   alt="ClearTract Foley Catheter"
                   width={450}
                   height={550}

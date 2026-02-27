@@ -131,7 +131,7 @@ export default function ClearTractPage() {
             </div>
             
             <Image
-              src="/images/products/boxnew.jpeg"
+              src="/images/products/BoxV2.jpg"
               alt="ClearTract"
               width={600}
               height={600}
@@ -192,7 +192,7 @@ export default function ClearTractPage() {
                 </p>
               </div>
               <Image 
-                src="/images/science/Bacteria%20Panel.png"
+                src="/images/science/BacPanelV2.jpg"
                 alt="Bacterial adhesion comparison"
                 width={1200}
                 height={400}
