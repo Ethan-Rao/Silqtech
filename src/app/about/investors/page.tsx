@@ -139,11 +139,12 @@ export default function InvestorsPage() {
             </div>
             <div className="rounded-2xl overflow-hidden">
               <Image
-                src="/images/products/boxnew.jpeg"
+                src="/images/products/BoxV2.jpg"
                 alt="ClearTract Foley Catheter product"
                 width={600}
                 height={300}
                 className="w-full h-64 object-cover"
+                unoptimized
               />
               <div className="p-6 bg-white/10">
                 <h3 className="font-semibold text-white mb-2">Production Scale</h3>

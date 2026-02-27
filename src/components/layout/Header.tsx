@@ -59,11 +59,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="relative z-10 flex-shrink-0">
             <Image
-              src="/images/logos/logo-main.png"
-              alt="Silq Technologies"
-              width={140}
-              height={40}
-              className="h-10 w-auto"
+              src="/images/branding/HeaderLogo.png"
+              alt="Silq Technologies Corp"
+              width={280}
+              height={50}
+              className="h-10 md:h-12 w-auto"
               priority
             />
           </Link>

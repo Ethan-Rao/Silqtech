@@ -318,6 +318,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                   width={450}
                   height={550}
                   className="rounded-2xl shadow-2xl object-contain w-full max-w-md"
+                  unoptimized
                 />
               </motion.div>
             </div>

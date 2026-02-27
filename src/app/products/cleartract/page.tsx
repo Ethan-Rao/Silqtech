@@ -136,6 +136,7 @@ export default function ClearTractPage() {
               width={600}
               height={600}
               className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto"
+              unoptimized
             />
           </div>
         </div>

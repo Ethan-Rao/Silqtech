@@ -14,7 +14,7 @@ const products = [
   {
     title: 'ClearTract® Foley Catheters',
     description: 'FDA-cleared urinary catheters featuring our patented zwitterionic surface treatment to reduce catheter-associated infections without antibiotics.',
-    image: '/images/products/boxnew.jpeg',
+    image: '/images/products/BoxV2.jpg',
     href: '/products/cleartract',
     badge: 'Flagship Product',
     highlights: ['FDA 510(k) Cleared', '100% Silicone', 'Drug-Free'],
@@ -58,6 +58,7 @@ export default function ProductsPage() {
                       alt={product.title}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      unoptimized
                     />
                   ) : (
                     <Image
