@@ -10,11 +10,11 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <Image
-                src="/images/branding/HeaderLogo.png"
-                alt="Silq Technologies Corp"
-                width={200}
-                height={40}
-                className="h-10 w-auto"
+                src="/images/logos/logo-main.png"
+                alt="Silq Technologies"
+                width={140}
+                height={45}
+                className="h-11 w-auto"
               />
             </Link>
             <p className="text-white/60 text-sm font-light tracking-wide mb-3">
