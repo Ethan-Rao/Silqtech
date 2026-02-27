@@ -289,15 +289,15 @@ One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. 
                       role: "Board Certified in Urology & Female Pelvic Medicine, Evergreen Health",
                       initials: "LP",
                     },
-                    // 8. Maria Luisa Trevino
+                    // 8. Jesus Trevino
                     {
                       quote: "Ever since my mom started using the new Silq suprapubic tube, her urinary tract infections have subsided, no more blockage of sediment.",
                       fullContent: `My mother was diagnosed with an epidural cyst at the T7 level which left her paralyzed from the waist down after removing the cyst via surgery. After surgery, my mom was wheelchair bound and with incontinence. When she arrived home, she was doing intermittent catheterization every 3 hours. This was too much on my mother physically to keep doing the IC. I believe it was 2010 that my mom went under surgery to utilize the suprapubic catheter. It was somewhat of a relief for my mom to have the suprapubic catheter except for the constant urinary tract infections that my mom had acquired. Her urologist at the time told her it was the downside of having the suprapubic tube. My mom tried cranberry supplements, probiotics, countless gallons of cranberry juice and medications to prevent urinary tract infections with little to no relief.
 
 On one of my mom's monthly appointments to replace the old catheter, her physician Dr. Kreydin told her of a new suprapubic product called Silq and she agreed to try it. Ever since my mom started using the new Silq suprapubic tube (5 months), her urinary tract infections have subsided, no more blockage of sediment and the tube doesn't stick to the stroma during removal for replacement of new tubes every month. My mom is completely relieved and satisfied with the new Silq suprapubic tubes. It has improved my mom's health both physically and mentally.`,
-                      author: "Maria Luisa Trevino",
+                      author: "Jesus Trevino",
                       role: "Caregiver to ClearTract Patient",
-                      initials: "MT",
+                      initials: "JT",
                     },
                   ]}
                   className="!max-w-none"
