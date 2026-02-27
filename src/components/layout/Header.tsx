@@ -61,9 +61,10 @@ export function Header() {
             <Image
               src="/images/branding/logo-oneline.webp"
               alt="Silq Technologies Corp"
-              width={180}
-              height={32}
-              className="h-7 md:h-8 w-auto"
+              width={600}
+              height={80}
+              className="h-5 md:h-6 w-auto"
+              unoptimized
               priority
             />
           </Link>
