@@ -108,7 +108,7 @@ export default function SurfaceTreatmentPage() {
                 </p>
               </div>
               <Image 
-                src="/images/science/BacPanelV2.jpg"
+                src="/images/science/BacPanelV2.png"
                 alt="Bacterial adhesion reduction data"
                 width={1200}
                 height={400}

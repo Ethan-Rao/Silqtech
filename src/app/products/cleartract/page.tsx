@@ -192,7 +192,7 @@ export default function ClearTractPage() {
                 </p>
               </div>
               <Image 
-                src="/images/science/BacPanelV2.jpg"
+                src="/images/science/BacPanelV2.png"
                 alt="Bacterial adhesion comparison"
                 width={1200}
                 height={400}
