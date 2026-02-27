@@ -79,13 +79,13 @@ export function TestimonialCarousel({
                 </div>
               </div>
 
-              {/* Read Full Testimonial Button */}
+              {/* Read Full Review Button */}
               {testimonials[current].fullContent && (
                 <button
                   onClick={() => setModalOpen(true)}
                   className="text-sm text-silq-teal hover:text-silq-teal/80 font-medium transition-colors whitespace-nowrap"
                 >
-                  Read Full Testimonial →
+                  Read Full Review →
                 </button>
               )}
             </div>
