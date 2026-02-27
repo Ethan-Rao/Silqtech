@@ -45,7 +45,7 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        'bg-white border-b border-silq-dark/5 backdrop-blur-lg',
+        'bg-slate-50 border-b border-silq-dark/5 backdrop-blur-lg',
         isScrolled && 'shadow-lg shadow-silq-dark/5'
       )}
     >
@@ -116,7 +116,7 @@ export function Header() {
                         : 'opacity-0 invisible -translate-y-2'
                     )}
                   >
-                    <div className="bg-white rounded-xl shadow-xl shadow-silq-dark/10 border border-silq-dark/5 py-2 min-w-[220px]">
+                    <div className="bg-slate-50 rounded-xl shadow-xl shadow-silq-dark/10 border border-silq-dark/5 py-2 min-w-[220px]">
                       {item.children.map((child) => (
                         <Link
                           key={child.name}
@@ -178,7 +178,7 @@ export function Header() {
 
       {/* Mobile Navigation - dropdown pinned below header */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-silq-dark/10 shadow-lg">
+        <div className="lg:hidden bg-slate-50 border-b border-silq-dark/10 shadow-lg">
           <div className="container-silq py-3 space-y-1">
             {navigation.map((item) => (
               <div key={item.name}>
