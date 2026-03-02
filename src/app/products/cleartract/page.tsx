@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CTABanner } from '@/components/sections/CTABanner'
 import { Button } from '@/components/ui/Button'
 import { TestimonialCarousel } from '@/components/ui/TestimonialCarousel'
 
@@ -270,13 +269,45 @@ export default function ClearTractPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <CTABanner
-        title="Learn About Our Technology"
-        cta={{ text: 'View Technology', href: '/technology' }}
-        secondaryCta={{ text: 'Contact Us', href: '/contact' }}
-        variant="gradient"
-      />
+      {/* Learn About Our Technology + Video */}
+      <section className="py-20 bg-gradient-to-br from-silq-dark via-silq-blue-900 to-silq-dark text-white">
+        <div className="container-silq">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold">Learn About Our Technology</h2>
+              <p className="mt-3 text-white/60 max-w-xl mx-auto">
+                See how Silq&apos;s zwitterionic surface treatment works to protect patients.
+              </p>
+            </div>
+            
+            {/* Vimeo Video Embed */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 mb-10">
+              <div className="relative w-full" style={{ padding: '56.25% 0 0 0' }}>
+                <iframe
+                  src="https://player.vimeo.com/video/869354523?h=&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                  title="ClearTract Technology Overview"
+                />
+              </div>
+            </div>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/technology">
+                <Button variant="teal" size="lg">View Technology</Button>
+              </Link>
+              <Link href="/contact">
+                <Button variant="secondary" size="lg" className="text-white border-white/20 hover:bg-white/10">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
