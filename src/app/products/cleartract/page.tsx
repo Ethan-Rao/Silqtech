@@ -104,7 +104,7 @@ export default function ClearTractPage() {
                 FDA 510(k) Cleared
               </span>
               <h1 className="text-hero-sm md:text-hero font-bold text-silq-dark">
-                ClearTract® Foley Catheters
+                ClearTract<span className="text-[0.5em] align-super">®</span> Foley Catheters
               </h1>
               <p className="mt-4 text-lg text-silq-dark/70">
                 Drug-free surface treatment designed to reduce infections and encrustation, and improve patient comfort.
@@ -203,18 +203,7 @@ export default function ClearTractPage() {
           </div>
           
           {/* Row 2: Encrustation + Drug-Free + Comfort + FDA cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {/* Reduced Encrustation - Text-only card */}
-            <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-silq-teal/10 flex items-center justify-center">
-                <svg className="w-6 h-6 text-silq-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
-                </svg>
-              </div>
-              <h4 className="font-semibold text-silq-blue mb-2">Reduced Encrustation</h4>
-              <p className="text-sm text-silq-dark/60">Zwitterionic surfaces reduce mineral buildup for longer catheter life and fewer replacements.</p>
-            </div>
-
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {/* Drug-Free */}
             <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-silq-blue/10 flex items-center justify-center">
