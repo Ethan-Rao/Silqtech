@@ -159,7 +159,7 @@ export default function SurfaceTreatmentPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
                 <h3 className="text-lg font-bold text-silq-blue">Enhanced Lubricity</h3>
-                <p className="text-silq-dark/70 text-sm mt-1">Easier insertions</p>
+                <p className="text-silq-dark/70 text-sm mt-1">Easier insertions and explants</p>
               </div>
               <div className="px-2 pb-2">
                 <div className="rounded-lg overflow-hidden bg-gradient-to-br from-silq-blue/5 to-silq-teal/5">

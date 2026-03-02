@@ -87,7 +87,8 @@ export default function HomePage() {
         size="large"
         backgroundMedia={{
           type: 'gif',
-          src: '/images/hero/banner.gif'
+          src: '/images/hero/banner.gif',
+          loop: false
         }}
       />
 

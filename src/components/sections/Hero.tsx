@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -49,6 +50,47 @@ export function Hero({
   showParticles = false,
   gradientAnimation = false,
 }: HeroProps) {
+  // For GIFs with loop=false, modify the GIF binary to play once and stop on last frame
+  const [playOnceGifUrl, setPlayOnceGifUrl] = useState<string | null>(null)
+  const blobUrlRef = useRef<string | null>(null)
+
+  useEffect(() => {
+    if (backgroundMedia?.type !== 'gif' || backgroundMedia.loop !== false) return
+
+    let cancelled = false
+
+    fetch(backgroundMedia.src)
+      .then(res => res.arrayBuffer())
+      .then(buffer => {
+        if (cancelled) return
+        const bytes = new Uint8Array(buffer)
+        // Find the NETSCAPE2.0 application extension that controls GIF looping
+        for (let i = 0; i < bytes.length - 18; i++) {
+          if (bytes[i] === 0x21 && bytes[i + 1] === 0xFF && bytes[i + 2] === 0x0B) {
+            const text = String.fromCharCode.apply(null, Array.from(bytes.slice(i + 3, i + 14)))
+            if (text === 'NETSCAPE2.0') {
+              // Set loop count to 1 (play once then stop)
+              bytes[i + 16] = 1
+              bytes[i + 17] = 0
+              break
+            }
+          }
+        }
+        const blob = new Blob([bytes], { type: 'image/gif' })
+        const url = URL.createObjectURL(blob)
+        blobUrlRef.current = url
+        setPlayOnceGifUrl(url)
+      })
+
+    return () => {
+      cancelled = true
+      if (blobUrlRef.current) {
+        URL.revokeObjectURL(blobUrlRef.current)
+        blobUrlRef.current = null
+      }
+    }
+  }, [backgroundMedia?.src, backgroundMedia?.type, backgroundMedia?.loop])
+
   return (
     <section
       className={cn(
@@ -72,6 +114,14 @@ export function Hero({
               loop={backgroundMedia.loop !== false}
               muted 
               playsInline 
+              className="w-full h-full object-cover"
+            />
+          ) : backgroundMedia.type === 'gif' && backgroundMedia.loop === false ? (
+            /* Play-once GIF: use modified blob URL that stops on last frame */
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img 
+              src={playOnceGifUrl || backgroundMedia.src} 
+              alt="" 
               className="w-full h-full object-cover"
             />
           ) : (
