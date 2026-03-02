@@ -230,6 +230,110 @@ The Contact Angle Chart doesn't look good in the dark section. Improvements need
 
 ---
 
+## SURFACE TREATMENT SERVICES PAGE (`src/app/products/surface-treatment/page.tsx`)
+
+### Improve Contact Angle Section Layout
+
+The current layout has too much white space on the left side. The section should use space more efficiently.
+
+**Current Issues:**
+- Left column with explanatory text has excessive empty space
+- Single-column table wastes horizontal space
+- Overall section feels unbalanced
+
+**Solution: Create a more compact, efficient layout**
+
+Option A - Two-column material table:
+
+Update `ContactAngleChart.tsx` to display materials in two columns:
+
+```tsx
+export function ContactAngleChart({ className = '', compact = false }: ContactAngleChartProps) {
+  // ... existing state ...
+  
+  // Split materials into two columns
+  const midpoint = Math.ceil(materials.length / 2)
+  const leftColumn = materials.slice(0, midpoint)
+  const rightColumn = materials.slice(midpoint)
+
+  return (
+    <div className={className}>
+      <div className="bg-gradient-to-br from-silq-cream to-white rounded-2xl p-5 border border-silq-dark/5 shadow-sm">
+        {/* Two-column grid for materials */}
+        <div className="grid grid-cols-2 gap-6">
+          {/* Left Column */}
+          <div>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-silq-dark/50 border-b border-silq-dark/10">
+                  <th className="pb-2 font-medium text-xs uppercase tracking-wider">Material</th>
+                  <th className="pb-2 font-medium text-center text-xs uppercase tracking-wider">Untreated</th>
+                  <th className="pb-2 font-medium text-center text-xs uppercase tracking-wider">Treated</th>
+                </tr>
+              </thead>
+              <tbody className="text-silq-dark">
+                {leftColumn.map((material, i) => (
+                  <tr key={material.name} className="border-b border-silq-dark/5 hover:bg-silq-blue/[0.02]">
+                    <td className="py-2 font-medium text-sm">{material.displayName}</td>
+                    <td className="py-2 text-center">
+                      <button onClick={() => /* ... */} className="text-silq-dark/60 hover:text-silq-blue text-sm">
+                        {material.untreatedAngle}
+                      </button>
+                    </td>
+                    <td className="py-2 text-center">
+                      <button onClick={() => /* ... */} className="inline-flex items-center gap-1 text-silq-teal font-semibold text-sm">
+                        <span className="w-1.5 h-1.5 rounded-full bg-silq-teal" />
+                        {material.treatedAngle}
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          
+          {/* Right Column */}
+          <div>
+            <table className="w-full text-sm">
+              {/* Same structure for rightColumn */}
+            </table>
+          </div>
+        </div>
+        
+        <p className="text-xs text-silq-dark/40 mt-4 text-center">
+          Click any angle to view measurement. Lower = more hydrophilic.
+        </p>
+      </div>
+    </div>
+  )
+}
+```
+
+**Option B - Restructure the section layout:**
+
+In `surface-treatment/page.tsx`, change the contact angle section to be more compact:
+
+```tsx
+{/* Contact Angle Chart - Compact Layout */}
+<div className="mt-12 bg-white rounded-2xl p-6 shadow-lg max-w-4xl mx-auto">
+  <div className="text-center mb-6">
+    <h3 className="text-xl font-bold text-silq-blue">Multi-Substrate Compatibility</h3>
+    <p className="text-silq-dark/70 text-sm mt-2 max-w-xl mx-auto">
+      Our treatment dramatically reduces contact angle across multiple substrate materials, 
+      creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
+    </p>
+  </div>
+  <ContactAngleChart />
+  <p className="text-xs text-silq-dark/50 mt-4 text-center">
+    Lower contact angle = more hydrophilic surface
+  </p>
+</div>
+```
+
+**Recommended approach:** Combine both options - restructure the section to have centered header text above a two-column materials table. This eliminates the large left-side white space and makes the data more scannable.
+
+---
+
 ## ABOUT PAGE (`src/app/about/team/page.tsx`)
 
 ### Reduce Headshot Sizes
@@ -324,6 +428,11 @@ In `src/components/sections/ContactForm.tsx`, update the success message (Lines 
 - [ ] Contact Angle Chart in white card for contrast
 - [ ] Move CTA buttons under Scalable Manufacturing
 - [ ] Update description text
+
+### Surface Treatment Services Page
+- [ ] Restructure Contact Angle section to eliminate white space
+- [ ] Use two-column layout for materials table
+- [ ] Center the header text above the chart
 
 ### About Page
 - [ ] Reduce headshot sizes significantly
