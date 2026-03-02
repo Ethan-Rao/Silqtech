@@ -17,7 +17,7 @@ export default function SurfaceTreatmentPage() {
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-silq-dark via-silq-blue-900 to-silq-dark text-white relative overflow-hidden">
         <div className="container-silq text-center relative">
           <h1 className="text-hero-sm md:text-hero font-bold">
-            External Coating <span className="text-silq-teal">Solutions</span>
+            Surface Treatment <span className="text-silq-teal">Services</span>
           </h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
             A scalable manufacturing system delivering turn-key coating solutions to customers worldwide.
@@ -56,7 +56,7 @@ export default function SurfaceTreatmentPage() {
                 Scalable Manufacturing
               </h2>
               <p className="text-silq-dark/70 mb-4">
-                Silq&apos;s proprietary surface treatment can be utilized in numerous applications across medicine and industry. Our business model includes offering a turn-key coating solution to customers worldwide.
+                Silq&apos;s proprietary surface treatment can be utilized in numerous applications across medicine and industry. Our business model includes offering turn-key coating solutions to customers worldwide.
               </p>
               <p className="text-silq-dark/70 mb-4">
                 Our deposition process is rapid, performed under ambient conditions, and does not require exotic reaction conditions or toxic chemicals. This results in:
@@ -66,7 +66,7 @@ export default function SurfaceTreatmentPage() {
                   <span className="w-6 h-6 rounded-full bg-silq-teal/15 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-3.5 h-3.5 text-silq-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                   </span>
-                  <span className="text-silq-dark/70">Scalability up to commercial quantities</span>
+                  <span className="text-silq-dark/70">Scalability from prototypes to large scale commercial quantities</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-6 h-6 rounded-full bg-silq-teal/15 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -79,6 +79,12 @@ export default function SurfaceTreatmentPage() {
                     <svg className="w-3.5 h-3.5 text-silq-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                   </span>
                   <span className="text-silq-dark/70">Competitive economics</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-silq-teal/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3.5 h-3.5 text-silq-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                  </span>
+                  <span className="text-silq-dark/70">Adaptable to various substrates, geometries, and configurations</span>
                 </li>
               </ul>
             </div>
@@ -167,7 +173,7 @@ export default function SurfaceTreatmentPage() {
             {/* Hydrophilicity - Video */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
-                <h3 className="text-lg font-bold text-silq-blue">Enhanced Hydrophilicity</h3>
+                <h3 className="text-lg font-bold text-silq-blue">Improved Wettability</h3>
                 <p className="text-silq-dark/70 text-sm mt-1">Extended wetting time</p>
               </div>
               <div className="px-2 pb-2">

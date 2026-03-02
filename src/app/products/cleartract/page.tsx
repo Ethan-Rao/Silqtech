@@ -107,7 +107,7 @@ export default function ClearTractPage() {
                 ClearTract® Foley Catheters
               </h1>
               <p className="mt-4 text-lg text-silq-dark/70">
-                Drug-free surface treatment designed to reduce infection, encrustation, and improve patient comfort.
+                Drug-free surface treatment designed to reduce infections and encrustation, and improve patient comfort.
               </p>
               
               <div className="mt-8 flex flex-wrap gap-4">
@@ -119,12 +119,12 @@ export default function ClearTractPage() {
                 </Link>
                 <Link href="/contact?inquiry=ordering">
                   <Button variant="teal" size="lg">
-                    Facility Ordering Information
+                    Healthcare Facility Ordering
                   </Button>
                 </Link>
                 <Link href="/contact?inquiry=ordering">
                   <Button variant="teal" size="lg">
-                    Patient Ordering Information
+                    Patient Ordering
                   </Button>
                 </Link>
               </div>
@@ -269,10 +269,10 @@ export default function ClearTractPage() {
                 <Button variant="primary" size="lg">Request Samples</Button>
               </Link>
               <Link href="/contact?inquiry=ordering">
-                <Button variant="teal" size="lg">Facility Ordering Information</Button>
+                <Button variant="teal" size="lg">Healthcare Facility Ordering</Button>
               </Link>
               <Link href="/contact?inquiry=ordering">
-                <Button variant="teal" size="lg">Patient Ordering Information</Button>
+                <Button variant="teal" size="lg">Patient Ordering</Button>
               </Link>
             </div>
           </div>

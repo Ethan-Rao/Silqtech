@@ -24,6 +24,7 @@ interface HeroProps {
   backgroundMedia?: {
     type: 'image' | 'gif' | 'video'
     src: string
+    loop?: boolean
   }
   variant?: 'default' | 'dark' | 'gradient'
   size?: 'default' | 'large' | 'small'
@@ -68,7 +69,7 @@ export function Hero({
             <video 
               src={backgroundMedia.src} 
               autoPlay 
-              loop 
+              loop={backgroundMedia.loop !== false}
               muted 
               playsInline 
               className="w-full h-full object-cover"

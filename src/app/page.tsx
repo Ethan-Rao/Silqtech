@@ -80,7 +80,7 @@ export default function HomePage() {
       <Hero
         title="Transforming Surfaces Through"
         highlightedText="Advanced Material Science"
-        description="Surface technology for better, safer medical implants. FDA Cleared, Antibiotic-free."
+        description="Zwitterion Surface technology for better, safer medical implants. FDA Cleared, Antibiotic-free."
         primaryCta={{ text: 'Our Technology', href: '/technology' }}
         secondaryCta={{ text: 'ClearTract® Foley Catheters', href: '/products/cleartract' }}
         variant="default"
@@ -138,7 +138,6 @@ export default function HomePage() {
                   src="/videos/silq-technology-demo.mp4" 
                   poster="/images/textures/tech-overview.gif"
                   autoPlay 
-                  loop 
                   muted 
                   playsInline
                   className="w-full h-full object-cover flex-1"
@@ -175,7 +174,7 @@ export default function HomePage() {
               ClearTract® Foley Catheters
             </h2>
             <p className="mt-4 text-white/70 max-w-2xl mx-auto">
-              Drug-free surface treatment designed to reduce infection, encrustation, and improve patient comfort.
+              Drug-free surface treatment designed to reduce infections and encrustation, and improve patient comfort.
             </p>
           </motion.div>
 
@@ -203,13 +202,13 @@ export default function HomePage() {
               href="/contact?inquiry=ordering"
               className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
             >
-              Facility Ordering Information
+              Healthcare Facility Ordering
             </Link>
             <Link
               href="/contact?inquiry=ordering"
               className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
             >
-              Patient Ordering Information
+              Patient Ordering
             </Link>
           </motion.div>
 
@@ -388,7 +387,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                 Surface Treatment Services
               </h2>
               <p className="text-silq-dark/70 mb-6">
-                Bring our proven antibiofouling technology to your medical devices. We offer contract surface treatment services with customizable properties for various substrates.
+                Bring our proven antibiofouling technology to your medical devices or industrial/commercial products. We offer contract surface treatment services with customizable solutions for various substrates and environments.
               </p>
               
               {/* Key capabilities grid */}
@@ -413,7 +412,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                     <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
-                  ), label: 'FDA Cleared Platform' },
+                  ), label: 'FDA Cleared Product' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm text-silq-dark/80">
                     {item.icon}
@@ -502,28 +501,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
         </div>
       </section>
 
-      {/* Section 6: Trust Indicators - Text Only */}
-      <section className="py-14 bg-white border-t border-silq-dark/5">
-        <div className="container-silq">
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-            {[
-              'FDA 510(k) Cleared',
-              'UCLA Research',
-              'Premier GPO Contract',
-              'Vizient GPO Contract',
-            ].map((item, index) => (
-              <div 
-                key={index} 
-                className="text-center px-5 py-2.5 border border-silq-dark/10 rounded-lg bg-silq-cream/30"
-              >
-                <p className="font-semibold text-silq-dark text-sm">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: CTA with Promotional Video */}
+      {/* Section 6: CTA with Promotional Video */}
       <section className="py-20 bg-gradient-to-br from-silq-dark to-silq-blue relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.05]">
           <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-silq-teal blur-3xl" />
