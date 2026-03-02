@@ -24,7 +24,7 @@ export default function TechnologyPage() {
             Platform <span className="text-transparent bg-clip-text bg-gradient-to-r from-silq-teal to-silq-teal/80">Technology</span>
           </h1>
           <p className="mt-4 text-lg text-white/60 max-w-xl mx-auto">
-            Bio-inspired zwitterionic chemistry that resists fouling on any surface.
+            Bio-inspired zwitterionic chemistry for better, safer medical implants. FDA Cleared, Antibiotic-free.
           </p>
           <div className="mt-8 flex justify-center">
             <Link href="/contact">
@@ -78,6 +78,9 @@ export default function TechnologyPage() {
                   className="w-full aspect-video object-cover relative z-10"
                 />
               </div>
+              <div className="p-3 bg-gradient-to-r from-silq-blue to-silq-teal text-white text-center">
+                <p className="text-sm font-medium">Treatment Effect Demonstration</p>
+              </div>
             </div>
           </div>
 
@@ -87,14 +90,14 @@ export default function TechnologyPage() {
               href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-6 bg-silq-cream rounded-xl p-4 hover:shadow-lg transition-shadow max-w-2xl"
+              className="flex items-center gap-8 bg-white rounded-2xl p-6 hover:shadow-xl transition-shadow max-w-3xl border border-silq-dark/5 shadow-lg"
             >
               <Image 
                 src="/images/publications/advanced-materials-cover.jpg"
                 alt="Advanced Materials Journal Cover"
-                width={80}
-                height={104}
-                className="rounded-lg shadow-md flex-shrink-0"
+                width={100}
+                height={130}
+                className="rounded-lg shadow-lg flex-shrink-0"
               />
               <div>
                 <p className="text-xs text-silq-dark/50 uppercase tracking-wider mb-1">Published in Advanced Materials</p>
@@ -214,8 +217,9 @@ export default function TechnologyPage() {
       </section>
 
       {/* Adopt Our Technology - Combined with Multi-Substrate */}
-      <section className="relative py-20 bg-gradient-to-br from-silq-dark via-silq-blue-900 to-silq-dark text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.05]">
+      <section className="relative py-20 bg-gradient-to-b from-silq-cream/50 to-white overflow-hidden">
+        {/* Subtle decorative elements */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
           <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-silq-teal blur-3xl" />
           <div className="absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-silq-blue blur-3xl" />
         </div>
@@ -223,18 +227,18 @@ export default function TechnologyPage() {
           <div className="max-w-5xl mx-auto">
             {/* Header */}
             <div className="text-center mb-12">
-              <h2 className="text-display-sm font-bold mb-4">
+              <h2 className="text-display-sm font-bold text-silq-dark mb-4">
                 Adopt Our Technology
               </h2>
-              <p className="text-white/70 max-w-lg mx-auto">
+              <p className="text-silq-dark/70 max-w-lg mx-auto">
                 Bring Silq&apos;s technology to your medical devices or industrial/commercial products.
               </p>
             </div>
             
             {/* Two Column Layout */}
             <div className="grid lg:grid-cols-2 gap-8">
-              {/* Left: Contact Angle Chart in white card */}
-              <div className="bg-white rounded-2xl p-6 shadow-xl">
+              {/* Left: Contact Angle Chart */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-silq-dark/5">
                 <h3 className="text-lg font-bold text-silq-dark mb-4">Multi-Substrate Compatibility</h3>
                 <p className="text-sm text-silq-dark/70 mb-4">
                   Our treatment demonstrates consistent performance across multiple polymer substrates.
@@ -244,7 +248,7 @@ export default function TechnologyPage() {
               
               {/* Right: Manufacturing + Buttons */}
               <div className="flex flex-col">
-                <div className="rounded-2xl overflow-hidden shadow-xl mb-6">
+                <div className="rounded-2xl overflow-hidden shadow-lg border border-silq-dark/5 mb-6">
                   <Image 
                     src="/images/science/silq-machine.gif"
                     alt="Silq Manufacturing System"
@@ -254,14 +258,14 @@ export default function TechnologyPage() {
                     unoptimized
                   />
                 </div>
-                <div className="bg-white/10 rounded-xl p-5 mb-6">
-                  <h3 className="text-base font-bold text-silq-teal mb-2">Scalable Manufacturing</h3>
-                  <p className="text-sm text-white/70">
+                <div className="bg-silq-blue/5 rounded-xl p-5 mb-6 border border-silq-blue/10">
+                  <h3 className="text-base font-bold text-silq-blue mb-2">Scalable Manufacturing</h3>
+                  <p className="text-sm text-silq-dark/70">
                     Rapid deposition process under ambient conditions. No exotic chemicals. Commercial-scale capacity.
                   </p>
                 </div>
                 
-                {/* CTA Buttons - Directly under manufacturing */}
+                {/* CTA Buttons */}
                 <div className="flex gap-4 flex-wrap">
                   <Link href="/products/surface-treatment">
                     <Button variant="primary" size="lg">
@@ -269,7 +273,7 @@ export default function TechnologyPage() {
                     </Button>
                   </Link>
                   <Link href="/contact">
-                    <Button variant="secondary" size="lg" className="text-white border-white/20 hover:bg-white/10">
+                    <Button variant="secondary" size="lg">
                       Contact Us
                     </Button>
                   </Link>

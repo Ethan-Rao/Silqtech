@@ -82,6 +82,7 @@ const materials: MaterialData[] = [
 
 interface ContactAngleChartProps {
   className?: string
+  compact?: boolean
 }
 
 function MaterialTable({ items, onSelectImage }: { 
@@ -138,7 +139,7 @@ function MaterialTable({ items, onSelectImage }: {
   )
 }
 
-export function ContactAngleChart({ className = '' }: ContactAngleChartProps) {
+export function ContactAngleChart({ className = '', compact = false }: ContactAngleChartProps) {
   const [selectedImage, setSelectedImage] = useState<{
     src: string
     material: string
@@ -153,12 +154,12 @@ export function ContactAngleChart({ className = '' }: ContactAngleChartProps) {
   return (
     <div className={className}>
       {/* Two-column table */}
-      <div className="bg-gradient-to-br from-silq-cream to-white rounded-2xl p-5 border border-silq-dark/5 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className={`bg-gradient-to-br from-silq-cream to-white border border-silq-dark/5 ${compact ? 'rounded-xl p-4 shadow-sm' : 'rounded-2xl p-5 shadow-sm'}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${compact ? 'gap-x-8' : 'gap-6'}`}>
           <MaterialTable items={leftColumn} onSelectImage={setSelectedImage} />
           <MaterialTable items={rightColumn} onSelectImage={setSelectedImage} />
         </div>
-        <p className="text-xs text-silq-dark/40 mt-4 text-center flex items-center justify-center gap-1">
+        <p className="text-xs text-silq-dark/40 mt-3 text-center flex items-center justify-center gap-1">
           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>

@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-silq-cream via-white to-silq-blue/5 relative overflow-hidden">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-silq-blue/10 via-silq-blue/5 to-white relative overflow-hidden">
         {/* Decorative background */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-silq-teal/10 rounded-full blur-3xl" />

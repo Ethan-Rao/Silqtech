@@ -13,7 +13,6 @@ const teamMembers = [
     image: '/images/team/verne-sharma.jpg',
     bio: 'D. Verne Sharma is a former Chairman, Chief Executive Officer and President of both public and private companies. Mr. Sharma was most recently Chairman, CEO and President of Rx Sight Inc. (formerly Calhoun Vision Inc.), serving from 2008 until his retirement in early 2015. Rx Sight developed an intraocular lens that can be adjusted to the precise prescription of each patient by application of light, eliminating the need for glasses. The company received FDA approval in November 2017. Mr. Sharma has had 25 years of senior level medical device experience at public companies including General Electric Medical Systems, US Surgical Corp. and Summit Technology Inc. As President and COO of Summit, he pioneered the development and worldwide commercialization of LASIK, leading to the sale of the company in 2000 for $963 million. He served on the Board of American Medical Systems (acquired for $3 billion in 2011) and was a director of ZetaRx, which was acquired by Juno Therapeutics in 2013 (Juno was later acquired by Celgene for $10.1 billion). Mr. Sharma holds an MBA with distinction from the Wharton School of the University of Pennsylvania and an undergraduate degree in Chemical Engineering from the University of the West Indies.',
     shortBio: 'Former Chairman, CEO and President of Rx Sight Inc. 25 years of senior medical device experience at GE Medical Systems, US Surgical Corp, and Summit Technology. Pioneered LASIK commercialization. MBA from Wharton.',
-    email: 'info@silq.tech',
   },
   {
     name: 'Jack Kavanaugh',
@@ -38,7 +37,6 @@ const teamMembers = [
     image: '/images/team/brian-mcverry.jpg',
     bio: 'Dr. McVerry designed and developed the Silq Technologies Corporation coating during his Ph.D. studies at UCLA under the guidance of Professor Richard Kaner. He was awarded two fellowships from the National Science Foundation: the prestigious Graduate Research Fellowship Program (GRFP) award and the Clean Energy for Green Industry (CGI) award that helped him begin focusing on the technology for commercial application. The chemistry behind the Silq Technologies Corporation coating has led to multiple patents and publications in peer-reviewed journals, as well as earning Dr. McVerry a finalist position in the nationwide Collegiate Inventors Competition. In 2015, the coating was selected as the "Most Innovative Technology" at the Los Angeles Port Tech EXPO.',
     shortBio: 'Inventor of Silq\'s core coating technology, developed during PhD studies at UCLA. NSF Graduate Research Fellow. Multiple patents and publications. Named "Most Innovative Technology" at LA Port Tech EXPO 2015.',
-    email: 'brianm@silq.tech',
   },
   {
     name: 'Mahi de Silva',

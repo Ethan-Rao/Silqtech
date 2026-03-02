@@ -199,10 +199,7 @@ export default function SurfaceTreatmentPage() {
                 creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
               </p>
             </div>
-            <ContactAngleChart />
-            <p className="text-xs text-silq-dark/50 mt-4 text-center">
-              Lower contact angle = more hydrophilic surface
-            </p>
+            <ContactAngleChart compact />
           </div>
 
           {/* Data Availability Note */}
