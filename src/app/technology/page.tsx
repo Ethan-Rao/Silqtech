@@ -132,7 +132,7 @@ export default function TechnologyPage() {
           <div className="mb-8">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-4xl mx-auto">
               <div className="p-6">
-                <h3 className="text-xl font-bold text-silq-blue mb-2">Microbial Resistance</h3>
+                <h3 className="text-xl font-bold text-silq-blue mb-2">Resisting Bacterial Adhesion</h3>
                 <p className="text-silq-dark/70 text-sm">
                   Significant reduction in bacterial adhesion across multiple pathogenic species.
                 </p>
@@ -216,7 +216,7 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      {/* Adopt Our Technology - Combined with Multi-Substrate */}
+      {/* Adopt Silq Technology */}
       <section className="relative py-20 bg-gradient-to-b from-silq-cream/50 to-white overflow-hidden">
         {/* Subtle decorative elements */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
@@ -228,36 +228,37 @@ export default function TechnologyPage() {
             {/* Header */}
             <div className="text-center mb-12">
               <h2 className="text-display-sm font-bold text-silq-dark mb-4">
-                Adopt Our Technology
+                Adopt Silq Technology
               </h2>
               <p className="text-silq-dark/70 max-w-lg mx-auto">
-                Bring Silq&apos;s technology to your medical devices or industrial/commercial products.
+                Bring Silq&apos;s surface treatment to your medical devices or commercial products.
               </p>
             </div>
             
-            {/* Two Column Layout */}
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Left: Contact Angle Chart */}
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-silq-dark/5">
-                <h3 className="text-lg font-bold text-silq-dark mb-4">Multi-Substrate Compatibility</h3>
-                <p className="text-sm text-silq-dark/70 mb-4">
-                  Our treatment demonstrates consistent performance across multiple polymer substrates.
+            {/* Contact Angle Chart - Full Width */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-silq-dark/5 mb-10">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-bold text-silq-blue">Multi-Substrate Compatibility</h3>
+                <p className="text-silq-dark/70 text-sm mt-2 max-w-xl mx-auto">
+                  Our treatment demonstrates consistent performance across multiple substrate materials.
                 </p>
-                <ContactAngleChart />
               </div>
-              
-              {/* Right: Manufacturing + Buttons */}
+              <ContactAngleChart compact />
+            </div>
+            
+            {/* Scalable Manufacturing - GIF + Info + Buttons */}
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-silq-dark/5">
+                <Image 
+                  src="/images/science/silq-machine.gif"
+                  alt="Silq Manufacturing System"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  unoptimized
+                />
+              </div>
               <div className="flex flex-col">
-                <div className="rounded-2xl overflow-hidden shadow-lg border border-silq-dark/5 mb-6">
-                  <Image 
-                    src="/images/science/silq-machine.gif"
-                    alt="Silq Manufacturing System"
-                    width={600}
-                    height={400}
-                    className="w-full h-auto"
-                    unoptimized
-                  />
-                </div>
                 <div className="bg-silq-blue/5 rounded-xl p-5 mb-6 border border-silq-blue/10">
                   <h3 className="text-base font-bold text-silq-blue mb-2">Scalable Manufacturing</h3>
                   <p className="text-sm text-silq-dark/70">
