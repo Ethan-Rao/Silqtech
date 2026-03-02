@@ -84,6 +84,60 @@ interface ContactAngleChartProps {
   className?: string
 }
 
+function MaterialTable({ items, onSelectImage }: { 
+  items: MaterialData[]
+  onSelectImage: (img: { src: string; material: string; type: 'untreated' | 'treated'; angle: string }) => void 
+}) {
+  return (
+    <table className="w-full text-sm">
+      <thead>
+        <tr className="text-left text-silq-dark/50 border-b border-silq-dark/10">
+          <th className="pb-2 font-medium text-xs uppercase tracking-wider">Material</th>
+          <th className="pb-2 font-medium text-center text-xs uppercase tracking-wider">Untreated</th>
+          <th className="pb-2 font-medium text-center text-xs uppercase tracking-wider">Treated</th>
+        </tr>
+      </thead>
+      <tbody className="text-silq-dark">
+        {items.map((material, i, arr) => (
+          <tr 
+            key={material.name} 
+            className={`${i < arr.length - 1 ? 'border-b border-silq-dark/5' : ''} hover:bg-silq-blue/[0.02] transition-colors`}
+          >
+            <td className="py-2 font-medium text-sm">{material.displayName}</td>
+            <td className="py-2 text-center">
+              <button
+                onClick={() => onSelectImage({
+                  src: material.untreatedImage,
+                  material: material.displayName,
+                  type: 'untreated',
+                  angle: material.untreatedAngle,
+                })}
+                className="text-silq-dark/60 hover:text-silq-blue hover:underline cursor-pointer transition-colors text-sm"
+              >
+                {material.untreatedAngle}
+              </button>
+            </td>
+            <td className="py-2 text-center">
+              <button
+                onClick={() => onSelectImage({
+                  src: material.treatedImage,
+                  material: material.displayName,
+                  type: 'treated',
+                  angle: material.treatedAngle,
+                })}
+                className="inline-flex items-center gap-1 text-silq-teal font-semibold hover:underline cursor-pointer transition-colors text-sm"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-silq-teal" />
+                {material.treatedAngle}
+              </button>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+
 export function ContactAngleChart({ className = '' }: ContactAngleChartProps) {
   const [selectedImage, setSelectedImage] = useState<{
     src: string
@@ -92,67 +146,23 @@ export function ContactAngleChart({ className = '' }: ContactAngleChartProps) {
     angle: string
   } | null>(null)
 
+  const midpoint = Math.ceil(materials.length / 2)
+  const leftColumn = materials.slice(0, midpoint)
+  const rightColumn = materials.slice(midpoint)
+
   return (
     <div className={className}>
-      {/* Table */}
-      <div className="bg-gradient-to-br from-silq-cream to-white rounded-2xl p-6 border border-silq-dark/5 shadow-sm">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="text-left text-silq-dark/50 border-b border-silq-dark/10">
-              <th className="pb-3 font-medium text-xs uppercase tracking-wider">Material</th>
-              <th className="pb-3 font-medium text-center text-xs uppercase tracking-wider" colSpan={2}>
-                Contact Angle
-              </th>
-            </tr>
-            <tr className="text-left text-silq-dark/40 border-b border-silq-dark/5">
-              <th className="pb-2"></th>
-              <th className="pb-2 font-normal text-xs text-center">Untreated</th>
-              <th className="pb-2 font-normal text-xs text-center">Treated</th>
-            </tr>
-          </thead>
-          <tbody className="text-silq-dark">
-            {materials.map((material, i, arr) => (
-              <tr 
-                key={material.name} 
-                className={`${i < arr.length - 1 ? 'border-b border-silq-dark/5' : ''} hover:bg-silq-blue/[0.02] transition-colors`}
-              >
-                <td className="py-3 font-medium">{material.displayName}</td>
-                <td className="py-3 text-center">
-                  <button
-                    onClick={() => setSelectedImage({
-                      src: material.untreatedImage,
-                      material: material.displayName,
-                      type: 'untreated',
-                      angle: material.untreatedAngle,
-                    })}
-                    className="text-silq-dark/60 hover:text-silq-blue hover:underline cursor-pointer transition-colors"
-                  >
-                    {material.untreatedAngle}
-                  </button>
-                </td>
-                <td className="py-3 text-center">
-                  <button
-                    onClick={() => setSelectedImage({
-                      src: material.treatedImage,
-                      material: material.displayName,
-                      type: 'treated',
-                      angle: material.treatedAngle,
-                    })}
-                    className="inline-flex items-center gap-1.5 text-silq-teal font-semibold hover:underline cursor-pointer transition-colors"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-silq-teal" />
-                    {material.treatedAngle}
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <p className="text-xs text-silq-dark/40 mt-4 flex items-center gap-1">
+      {/* Two-column table */}
+      <div className="bg-gradient-to-br from-silq-cream to-white rounded-2xl p-5 border border-silq-dark/5 shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <MaterialTable items={leftColumn} onSelectImage={setSelectedImage} />
+          <MaterialTable items={rightColumn} onSelectImage={setSelectedImage} />
+        </div>
+        <p className="text-xs text-silq-dark/40 mt-4 text-center flex items-center justify-center gap-1">
           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          Click any angle to view the contact angle measurement. Lower = more hydrophilic.
+          Click any angle to view measurement. Lower = more hydrophilic.
         </p>
       </div>
 

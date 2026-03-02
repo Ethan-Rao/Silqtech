@@ -119,6 +119,8 @@ export default function SurfaceTreatmentPage() {
                 width={1200}
                 height={400}
                 className="w-full object-contain"
+                unoptimized
+                priority
               />
             </div>
           </div>
@@ -188,28 +190,19 @@ export default function SurfaceTreatmentPage() {
             </div>
           </div>
 
-          {/* Contact Angle Chart */}
-          <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div>
-                <h3 className="text-xl font-bold text-silq-blue mb-4">Multi-Substrate Compatibility</h3>
-                <p className="text-silq-dark/70 mb-6">
-                  Our treatment dramatically reduces contact angle across multiple substrate materials, 
-                  creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2 text-sm text-silq-dark/70">
-                    <span className="w-2 h-2 bg-silq-blue rounded-full flex-shrink-0"></span>
-                    Lower contact angle = more hydrophilic
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-silq-dark/70">
-                    <span className="w-2 h-2 bg-silq-teal rounded-full flex-shrink-0"></span>
-                    Click any value to see the measurement
-                  </li>
-                </ul>
-              </div>
-              <ContactAngleChart />
+          {/* Contact Angle Chart - Compact Layout */}
+          <div className="mt-12 bg-white rounded-2xl p-6 shadow-lg max-w-4xl mx-auto">
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-bold text-silq-blue">Multi-Substrate Compatibility</h3>
+              <p className="text-silq-dark/70 text-sm mt-2 max-w-xl mx-auto">
+                Our treatment dramatically reduces contact angle across multiple substrate materials, 
+                creating highly hydrophilic surfaces that resist protein and bacterial adhesion.
+              </p>
             </div>
+            <ContactAngleChart />
+            <p className="text-xs text-silq-dark/50 mt-4 text-center">
+              Lower contact angle = more hydrophilic surface
+            </p>
           </div>
 
           {/* Data Availability Note */}

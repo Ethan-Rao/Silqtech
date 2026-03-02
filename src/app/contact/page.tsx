@@ -40,8 +40,12 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-white relative">
-        <div className="container-silq">
+      <section className="py-16 bg-gradient-to-b from-white to-silq-cream/40 relative">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #1E4A6D 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+        </div>
+        <div className="container-silq relative">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Form */}
             <div>

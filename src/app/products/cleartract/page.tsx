@@ -198,6 +198,8 @@ export default function ClearTractPage() {
                 width={1200}
                 height={400}
                 className="w-full object-contain"
+                unoptimized
+                priority
               />
             </div>
           </div>

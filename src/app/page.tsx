@@ -143,7 +143,7 @@ export default function HomePage() {
                   className="w-full h-full object-cover flex-1"
                 />
                 <div className="p-3 bg-gradient-to-r from-silq-blue to-silq-teal text-white text-center">
-                  <p className="text-sm font-medium">Surface Treatment in Action</p>
+                  <p className="text-sm font-medium">Treatment Effect Demonstration</p>
                 </div>
               </motion.div>
               <div className="mt-4 text-center">
@@ -412,7 +412,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                     <svg className="w-5 h-5 text-silq-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
-                  ), label: 'FDA Cleared Product' },
+                  ), label: 'FDA Cleared Products' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm text-silq-dark/80">
                     {item.icon}
@@ -450,7 +450,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                 />
                 <div className="p-4 bg-gradient-to-r from-silq-blue to-silq-teal text-white">
                   <p className="text-sm font-medium">Scalable Treatment Process</p>
-                  <p className="text-xs text-white/70">In-house manufacturing capability</p>
+                  <p className="text-xs text-white/70">Adaptable to various substrates, geometries, and configurations</p>
                 </div>
               </div>
             </motion.div>

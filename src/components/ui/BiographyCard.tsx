@@ -34,7 +34,7 @@ export function BiographyCard({
       layout
     >
       {/* Image */}
-      <div className="aspect-[4/5] relative overflow-hidden group">
+      <div className="h-56 relative overflow-hidden group">
         {imgError ? (
           <div className="w-full h-full bg-gradient-to-br from-silq-blue/20 to-silq-teal/10 flex items-center justify-center">
             <span className="text-5xl font-bold text-silq-blue/30">

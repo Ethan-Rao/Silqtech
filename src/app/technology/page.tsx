@@ -51,7 +51,7 @@ export default function TechnologyPage() {
               <ul className="space-y-4 text-sm text-silq-dark/70">
                 {[
                   { label: 'Covalent bond to substrate', desc: 'Permanent surface transformation' },
-                  { label: 'Bio-inspired hydration barrier', desc: 'Mimics natural cell membranes to resist fouling' },
+                  { label: 'Bio-inspired hydration barrier', desc: 'Mimics natural cell membranes to resist the host immune system\'s foreign body response' },
                   { label: 'Sterilization compatible', desc: 'Compatible with Ethylene Oxide (EtO) and Gamma irradiation' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 group">
@@ -80,13 +80,40 @@ export default function TechnologyPage() {
               </div>
             </div>
           </div>
+
+          {/* Publication Reference - At bottom of How It Works */}
+          <div className="mt-12 flex justify-center">
+            <a 
+              href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-6 bg-silq-cream rounded-xl p-4 hover:shadow-lg transition-shadow max-w-2xl"
+            >
+              <Image 
+                src="/images/publications/advanced-materials-cover.jpg"
+                alt="Advanced Materials Journal Cover"
+                width={80}
+                height={104}
+                className="rounded-lg shadow-md flex-shrink-0"
+              />
+              <div>
+                <p className="text-xs text-silq-dark/50 uppercase tracking-wider mb-1">Published in Advanced Materials</p>
+                <p className="text-sm font-medium text-silq-dark leading-snug">
+                  &ldquo;A Readily Scalable, Clinically Demonstrated, Antibiofouling Zwitterionic Surface Treatment&rdquo;
+                </p>
+                <p className="text-xs text-silq-blue mt-2 font-medium">
+                  Read the full paper →
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Gradient Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-silq-dark/10 to-transparent" />
 
-      {/* Surface Properties - Bacteria Panel + Publication + 3 Cards */}
+      {/* Surface Properties - Bacteria Panel + 3 Cards */}
       <section className="py-20 bg-white">
         <div className="container-silq">
           <div className="text-center mb-12">
@@ -113,48 +140,22 @@ export default function TechnologyPage() {
                 width={1200}
                 height={400}
                 className="w-full object-contain"
+                unoptimized
                 priority
               />
             </div>
           </div>
-
-          {/* Publication Reference - Compact */}
-          <div className="mb-8 flex justify-center">
-            <a 
-              href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202200254"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-6 bg-silq-cream rounded-xl p-4 hover:shadow-lg transition-shadow max-w-2xl"
-            >
-              <Image 
-                src="/images/publications/advanced-materials-cover.jpg"
-                alt="Advanced Materials Journal Cover"
-                width={80}
-                height={104}
-                className="rounded-lg shadow-md flex-shrink-0"
-              />
-              <div>
-                <p className="text-xs text-silq-dark/50 uppercase tracking-wider mb-1">Published in Advanced Materials (2022)</p>
-                <p className="text-sm font-medium text-silq-dark leading-snug">
-                  &ldquo;A Readily Scalable, Clinically Demonstrated, Antibiofouling Zwitterionic Surface Treatment&rdquo;
-                </p>
-                <p className="text-xs text-silq-blue mt-2 font-medium">
-                  Read the full paper →
-                </p>
-              </div>
-            </a>
-          </div>
           
           {/* Row 2: Other 3 Cards */}
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {/* Anti-Thrombogenicity - Stacked Images with Labels */}
+            {/* Anti-Thrombogenicity - Stacked Images (no labels - images are self-labeled) */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
                 <h3 className="text-lg font-bold text-silq-blue">Anti-Thrombogenicity</h3>
                 <p className="text-silq-dark/70 text-sm mt-1">Reduced blood clot formation.</p>
               </div>
               <div className="flex flex-col gap-1 px-2 pb-2">
-                <div className="rounded-lg overflow-hidden relative">
+                <div className="rounded-lg overflow-hidden">
                   <Image 
                     src="/images/science/blood-loop-treated.jpg"
                     alt="Blood loop - Silq treated surface"
@@ -162,9 +163,8 @@ export default function TechnologyPage() {
                     height={150}
                     className="w-full h-32 object-contain bg-white"
                   />
-                  <span className="absolute bottom-1 left-2 text-xs bg-silq-teal/90 text-white px-2 py-0.5 rounded">Silq Treated</span>
                 </div>
-                <div className="rounded-lg overflow-hidden relative">
+                <div className="rounded-lg overflow-hidden">
                   <Image 
                     src="/images/science/blood-loop-untreated.jpg"
                     alt="Blood loop - untreated control"
@@ -172,7 +172,6 @@ export default function TechnologyPage() {
                     height={150}
                     className="w-full h-32 object-contain bg-white"
                   />
-                  <span className="absolute bottom-1 left-2 text-xs bg-gray-500/90 text-white px-2 py-0.5 rounded">Control</span>
                 </div>
               </div>
             </div>
@@ -194,10 +193,10 @@ export default function TechnologyPage() {
               </div>
             </div>
             
-            {/* Hydrophilicity - Video */}
+            {/* Improved Wettability - Video */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="p-5">
-                <h3 className="text-lg font-bold text-silq-blue">Enhanced Hydrophilicity</h3>
+                <h3 className="text-lg font-bold text-silq-blue">Improved Wettability</h3>
                 <p className="text-silq-dark/70 text-sm mt-1">Extended wetting time</p>
               </div>
               <div className="px-2 pb-2">
@@ -227,29 +226,25 @@ export default function TechnologyPage() {
               <h2 className="text-display-sm font-bold mb-4">
                 Adopt Our Technology
               </h2>
-              <p className="text-white/60 max-w-lg mx-auto">
-                Bring antibiofouling technology to your devices.
+              <p className="text-white/70 max-w-lg mx-auto">
+                Bring Silq&apos;s technology to your medical devices or industrial/commercial products.
               </p>
             </div>
             
-            {/* Two Column: Multi-Substrate Chart + Manufacturing */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-              {/* Left: Multi-Substrate Compatibility */}
-              <div>
-                <h3 className="text-xl font-bold text-silq-teal mb-4">
-                  Multi-Substrate Compatibility
-                </h3>
-                <p className="text-white/70 mb-6">
+            {/* Two Column Layout */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Left: Contact Angle Chart in white card */}
+              <div className="bg-white rounded-2xl p-6 shadow-xl">
+                <h3 className="text-lg font-bold text-silq-dark mb-4">Multi-Substrate Compatibility</h3>
+                <p className="text-sm text-silq-dark/70 mb-4">
                   Our treatment demonstrates consistent performance across multiple polymer substrates.
                 </p>
-                <div className="bg-white/10 rounded-xl p-4">
-                  <ContactAngleChart />
-                </div>
+                <ContactAngleChart />
               </div>
               
-              {/* Right: Manufacturing */}
-              <div>
-                <div className="rounded-2xl overflow-hidden shadow-2xl mb-4">
+              {/* Right: Manufacturing + Buttons */}
+              <div className="flex flex-col">
+                <div className="rounded-2xl overflow-hidden shadow-xl mb-6">
                   <Image 
                     src="/images/science/silq-machine.gif"
                     alt="Silq Manufacturing System"
@@ -259,27 +254,27 @@ export default function TechnologyPage() {
                     unoptimized
                   />
                 </div>
-                <div className="bg-white/10 rounded-xl p-4">
+                <div className="bg-white/10 rounded-xl p-5 mb-6">
                   <h3 className="text-base font-bold text-silq-teal mb-2">Scalable Manufacturing</h3>
                   <p className="text-sm text-white/70">
                     Rapid deposition process under ambient conditions. No exotic chemicals. Commercial-scale capacity.
                   </p>
                 </div>
+                
+                {/* CTA Buttons - Directly under manufacturing */}
+                <div className="flex gap-4 flex-wrap">
+                  <Link href="/products/surface-treatment">
+                    <Button variant="primary" size="lg">
+                      Surface Treatment Services →
+                    </Button>
+                  </Link>
+                  <Link href="/contact">
+                    <Button variant="secondary" size="lg" className="text-white border-white/20 hover:bg-white/10">
+                      Contact Us
+                    </Button>
+                  </Link>
+                </div>
               </div>
-            </div>
-            
-            {/* CTA Buttons */}
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Link href="/products/surface-treatment">
-                <Button variant="primary" size="lg">
-                  Surface Treatment Services →
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="secondary" size="lg" className="text-white border-white/20 hover:bg-white/10">
-                  Contact Us
-                </Button>
-              </Link>
             </div>
           </div>
         </div>

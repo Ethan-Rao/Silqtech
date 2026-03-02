@@ -85,7 +85,7 @@ export function ContactForm({ title, subtitle, className }: ContactFormProps) {
             </div>
             <h3 className="text-xl font-bold text-green-800">Thank you!</h3>
             <p className="mt-2 text-green-700">
-              We&apos;ve received your message and will be in touch soon.
+              We&apos;ve received your message. A Silq team member will reach out within 48 hours.
             </p>
             <Button
               variant="secondary"
