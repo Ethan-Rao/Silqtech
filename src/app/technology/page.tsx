@@ -26,13 +26,6 @@ export default function TechnologyPage() {
           <p className="mt-4 text-lg text-white/60 max-w-xl mx-auto">
             Bio-inspired zwitterionic chemistry for better, safer medical implants. FDA Cleared, Antibiotic-free.
           </p>
-          <div className="mt-8 flex justify-center">
-            <Link href="/contact">
-              <Button variant="primary" size="lg">
-                Get Started
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
