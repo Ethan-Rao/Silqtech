@@ -48,27 +48,27 @@ const features = [
 
 const newsItems = [
   {
-    source: 'PR Newswire',
+    source: 'KGET News',
     title: 'Silq Technologies Awarded Group Purchasing Agreement for ClearTract® Catheters with Premier, Inc.',
-    url: 'https://www.prnewswire.com/news-releases/silq-technologies-awarded-group-purchasing-agreement-for-cleartract-catheters-with-premier-inc-301234567.html',
+    url: 'https://www.kget.com/business/press-releases/ein-presswire/803095417/silq-technologies-awarded-group-purchasing-agreement-for-cleartract-catheters-with-premier-inc/',
     logo: '/images/news/prnewswire.svg',
   },
   {
     source: 'Business Wire',
     title: 'Silq Technologies and NuSil Announce Collaboration Agreement to Drive Broad-based Adoption',
-    url: 'https://www.businesswire.com/',
+    url: 'https://www.businesswire.com/news/home/20250219365843/en/Silq-Technologies-Corp.-and-NuSil-Technology-LLC-Announce-Collaboration-Agreement-to-Drive-Broad-based-Adoption-of-Silqs-Novel-Surface-Treatment-Technology',
     logo: '/images/news/businesswire.svg',
   },
   {
     source: 'Business Wire',
     title: 'Silq Technologies Receives Innovative Technology Contract From Vizient for ClearTract® Foley Catheter',
-    url: 'https://www.businesswire.com/',
+    url: 'https://www.businesswire.com/news/home/20240613586175/en/Silq-Technologies-Receives-Innovative-Technology-Contract-From-Vizient-for-ClearTract-Foley-Catheter',
     logo: '/images/news/businesswire.svg',
   },
   {
     source: 'UCLA Newsroom',
     title: 'Scientists Devise Method to Prevent Deadly Hospital Infections without Antibiotics',
-    url: 'https://newsroom.ucla.edu/',
+    url: 'https://newsroom.ucla.edu/releases/surface-treatment-for-medical-devices',
     logo: '/images/trust/ucla.jpg',
   },
 ]
