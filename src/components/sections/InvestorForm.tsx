@@ -38,11 +38,23 @@ export function InvestorForm({ className }: InvestorFormProps) {
   const onSubmit = async (data: InvestorFormData) => {
     setIsSubmitting(true)
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const response = await fetch('/api/investor-inquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit form')
+      }
+      
       setIsSubmitted(true)
       reset()
     } catch (error) {
       console.error('Error submitting form:', error)
+      alert('There was an error submitting your inquiry. Please try again or email us directly at info@silq.tech')
     } finally {
       setIsSubmitting(false)
     }

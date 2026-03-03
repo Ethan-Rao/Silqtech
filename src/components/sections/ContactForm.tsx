@@ -38,11 +38,23 @@ export function ContactForm({ title, subtitle, className }: ContactFormProps) {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      
+      if (!response.ok) {
+        throw new Error('Failed to submit form')
+      }
+      
       setIsSubmitted(true)
       reset()
     } catch (error) {
       console.error('Error submitting form:', error)
+      alert('There was an error submitting your message. Please try again or email us directly at info@silq.tech')
     } finally {
       setIsSubmitting(false)
     }
