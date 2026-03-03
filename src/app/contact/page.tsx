@@ -33,7 +33,7 @@ export default function ContactPage() {
             Let&apos;s Talk.
           </h1>
           <p className="mt-6 text-lg text-silq-dark/70 max-w-2xl mx-auto">
-            We have samples available. Whether you&apos;re a healthcare professional, potential partner, or interested investor, we&apos;d love to hear from you.
+            We have samples available. Whether you&apos;re a catheter patient, healthcare professional, potential partner, or interested investor, we&apos;d love to hear from you.
           </p>
           
         </div>
