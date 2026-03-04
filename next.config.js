@@ -42,6 +42,7 @@ const nextConfig = {
       { source: '/greatdane', destination: '/rep/great-dane-medical-solutions' },
       { source: '/dwb', destination: '/rep/dwb-medical-inc' },
       { source: '/noreaster', destination: '/rep/noreaster-medical-llc' },
+      { source: '/emina-taylor', destination: '/rep/emina-taylor' },
       
       // ============================================
       // WASATCH REP PAGES (/wasatch/[name])
@@ -113,6 +114,7 @@ const nextConfig = {
       { source: '/rep/great-dane-medical-solutions', destination: '/greatdane', permanent: true },
       { source: '/rep/dwb-medical-inc', destination: '/dwb', permanent: true },
       { source: '/rep/noreaster-medical-llc', destination: '/noreaster', permanent: true },
+      { source: '/rep/emina-taylor', destination: '/emina-taylor', permanent: true },
       // Wasatch redirects
       { source: '/rep/chowning', destination: '/wasatch/chowning', permanent: true },
       { source: '/rep/gerrard', destination: '/wasatch/gerrard', permanent: true },

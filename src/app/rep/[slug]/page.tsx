@@ -550,14 +550,22 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
             
-            {/* Surface Treatment in Action */}
-            <div className="bg-silq-cream rounded-2xl overflow-hidden shadow-xl">
-              <VideoEmbed 
-                vimeoId="710986413"
-                title="Surface Treatment in Action"
+            {/* Treatment Effect Demonstration */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
+              <video 
+                src="/videos/silq-technology-demo.mp4" 
+                poster="/images/textures/tech-overview.gif"
+                autoPlay 
+                loop
+                muted 
+                playsInline
+                className="w-full aspect-video object-cover"
               />
+              <div className="p-3 bg-gradient-to-r from-silq-blue to-silq-teal text-white text-center">
+                <p className="text-sm font-medium">Treatment Effect Demonstration</p>
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-silq-dark">Surface Treatment in Action</h3>
+                <h3 className="text-xl font-bold text-silq-dark">Treatment Effect Demonstration</h3>
                 <p className="text-silq-dark/60 mt-2">Watch our coating technology reduce friction and repel contaminants.</p>
               </div>
             </div>
