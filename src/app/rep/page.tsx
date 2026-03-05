@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { USCoverageMap } from '@/components/ui/USCoverageMap'
+import { PasswordGate } from '@/components/ui/PasswordGate'
 
 interface RepEntry {
   slug: string
@@ -69,16 +70,19 @@ export default function RepDirectoryPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-silq-cream flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full border-4 border-silq-blue/20 border-t-silq-blue animate-spin" />
-          <p className="text-silq-dark/60 font-medium">Loading rep directory...</p>
+      <PasswordGate>
+        <div className="min-h-screen bg-silq-cream flex items-center justify-center">
+          <div className="text-center">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full border-4 border-silq-blue/20 border-t-silq-blue animate-spin" />
+            <p className="text-silq-dark/60 font-medium">Loading rep directory...</p>
+          </div>
         </div>
-      </div>
+      </PasswordGate>
     )
   }
 
   return (
+    <PasswordGate>
     <div className="min-h-screen bg-silq-cream">
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-silq-blue-900 via-silq-dark to-silq-blue-800 text-white">
@@ -245,5 +249,6 @@ export default function RepDirectoryPage() {
             </div>
           </section>
     </div>
+    </PasswordGate>
   )
 }
