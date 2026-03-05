@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { USCoverageMap } from '@/components/ui/USCoverageMap'
 
 interface RepEntry {
   slug: string
@@ -110,6 +111,19 @@ export default function RepDirectoryPage() {
                   <p className="text-sm text-white/60">States</p>
                 </div>
               </motion.div>
+        </div>
+      </section>
+
+      {/* Coverage Map Section */}
+      <section className="py-12 bg-silq-cream">
+        <div className="container-silq">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <USCoverageMap reps={manifest?.reps || []} />
+          </motion.div>
         </div>
       </section>
 
