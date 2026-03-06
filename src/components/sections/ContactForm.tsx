@@ -8,6 +8,13 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 
+// Extend Window interface for dataLayer
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
 const contactSchema = z.object({
   name: z.string().min(2, 'Name is required'),
   email: z.string().email('Please enter a valid email'),
@@ -48,6 +55,15 @@ export function ContactForm({ title, subtitle, className }: ContactFormProps) {
       
       if (!response.ok) {
         throw new Error('Failed to submit form')
+      }
+      
+      // Push event to dataLayer for Google Ads conversion tracking
+      if (typeof window !== 'undefined' && window.dataLayer) {
+        window.dataLayer.push({
+          event: 'form_submission_success',
+          form_type: 'contact',
+          form_location: window.location.pathname
+        });
       }
       
       setIsSubmitted(true)

@@ -84,6 +84,30 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Schema.org Organization structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalBusiness",
+              "name": "Silq Technologies",
+              "url": "https://silq.tech",
+              "logo": "https://silq.tech/images/logos/silq-logo.png",
+              "description": "Medical device company developing advanced biomaterials technology for safer medical implants. FDA-cleared ClearTract® Foley Catheters with zwitterionic surface treatment.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "323 Sunny Isles Blvd., 7th Floor",
+                "addressLocality": "Sunny Isles Beach",
+                "addressRegion": "FL",
+                "postalCode": "33160",
+                "addressCountry": "US"
+              },
+              "telephone": "+1-424-309-8523",
+              "email": "info@silq.tech"
+            })
+          }}
+        />
       </head>
       <body className="font-sans">
         {/* Google Tag Manager (noscript) */}

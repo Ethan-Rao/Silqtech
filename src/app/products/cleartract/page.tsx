@@ -94,6 +94,30 @@ export default function ClearTractPage() {
 
   return (
     <>
+      {/* Schema.org MedicalDevice structured data for SEO and ad quality */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalDevice",
+            "name": "ClearTract® Foley Catheter",
+            "description": "FDA-cleared urinary catheter with drug-free zwitterionic surface treatment to reduce infection, encrustation, and improve patient comfort.",
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Silq Technologies",
+              "url": "https://silq.tech"
+            },
+            "url": "https://silq.tech/products/cleartract",
+            "category": "Urinary Catheter",
+            "relevantSpecialty": "Urology",
+            "availableIn": {
+              "@type": "Country",
+              "name": "United States"
+            }
+          })
+        }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
         <div className="container-silq">
@@ -116,12 +140,12 @@ export default function ClearTractPage() {
                 <Link href="/technology">
                   <Button variant="secondary" size="lg">Learn the Science</Button>
                 </Link>
-                <Link href="/contact?inquiry=ordering">
+                <Link href="/contact?inquiry=ordering" data-track="ordering-facility">
                   <Button variant="teal" size="lg">
                     Healthcare Facility Ordering
                   </Button>
                 </Link>
-                <Link href="/contact?inquiry=ordering">
+                <Link href="/contact?inquiry=ordering" data-track="ordering-patient">
                   <Button variant="teal" size="lg">
                     Patient Ordering
                   </Button>
@@ -258,10 +282,10 @@ export default function ClearTractPage() {
               <Link href="/contact">
                 <Button variant="primary" size="lg">Request Samples</Button>
               </Link>
-              <Link href="/contact?inquiry=ordering">
+              <Link href="/contact?inquiry=ordering" data-track="ordering-facility">
                 <Button variant="teal" size="lg">Healthcare Facility Ordering</Button>
               </Link>
-              <Link href="/contact?inquiry=ordering">
+              <Link href="/contact?inquiry=ordering" data-track="ordering-patient">
                 <Button variant="teal" size="lg">Patient Ordering</Button>
               </Link>
             </div>

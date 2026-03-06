@@ -90,6 +90,7 @@ export default function ContactPage() {
                       <a
                         href="tel:4243098523"
                         className="text-silq-blue hover:underline"
+                        data-track="phone-click"
                       >
                         (424) 309-8523
                       </a>

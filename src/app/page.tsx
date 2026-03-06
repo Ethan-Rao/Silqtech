@@ -202,12 +202,14 @@ export default function HomePage() {
             <Link
               href="/contact?inquiry=ordering"
               className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
+              data-track="ordering-facility"
             >
               Healthcare Facility Ordering
             </Link>
             <Link
               href="/contact?inquiry=ordering"
               className="px-8 py-3 bg-silq-teal hover:bg-silq-teal/90 text-white rounded-lg font-semibold transition-colors"
+              data-track="ordering-patient"
             >
               Patient Ordering
             </Link>

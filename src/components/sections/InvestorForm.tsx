@@ -8,6 +8,13 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 
+// Extend Window interface for dataLayer
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
 const investorSchema = z.object({
   firstName: z.string().min(2, 'First name is required'),
   lastName: z.string().min(2, 'Last name is required'),
@@ -48,6 +55,15 @@ export function InvestorForm({ className }: InvestorFormProps) {
       
       if (!response.ok) {
         throw new Error('Failed to submit form')
+      }
+      
+      // Push event to dataLayer for Google Ads conversion tracking
+      if (typeof window !== 'undefined' && window.dataLayer) {
+        window.dataLayer.push({
+          event: 'form_submission_success',
+          form_type: 'investor',
+          form_location: window.location.pathname
+        });
       }
       
       setIsSubmitted(true)
