@@ -8,10 +8,11 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 
-// Extend Window interface for dataLayer
+// Extend Window interface for dataLayer and gtag
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -57,12 +58,19 @@ export function InvestorForm({ className }: InvestorFormProps) {
         throw new Error('Failed to submit form')
       }
       
-      // Push event to dataLayer for Google Ads conversion tracking
+      // Push event to dataLayer for Google Tag Manager
       if (typeof window !== 'undefined' && window.dataLayer) {
         window.dataLayer.push({
           event: 'form_submission_success',
           form_type: 'investor',
           form_location: window.location.pathname
+        });
+      }
+      
+      // Fire Google Ads conversion event directly
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {
+          'send_to': 'AW-16744648389/HzRsCI7N1uoZEMWdvLA-'
         });
       }
       
