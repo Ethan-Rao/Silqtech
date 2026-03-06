@@ -7,6 +7,8 @@ import { Footer } from '@/components/layout/Footer'
 
 // Google Tag Manager ID
 const GTM_ID = 'GTM-WW5WDN4T'
+// Google Ads Tag ID
+const GADS_ID = 'AW-16744648389'
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin'],
@@ -81,6 +83,24 @@ export default function RootLayout({
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','${GTM_ID}');
+            `,
+          }}
+        />
+        {/* Google Ads Tag */}
+        <Script
+          id="gads-script"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GADS_ID}`}
+        />
+        <Script
+          id="gads-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GADS_ID}');
             `,
           }}
         />
