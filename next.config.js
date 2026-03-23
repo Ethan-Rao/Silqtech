@@ -11,42 +11,40 @@ const nextConfig = {
   
   async rewrites() {
     return [
-      // ============================================
-      // ROOT LEVEL REP PAGES (no /rep/ prefix)
-      // ============================================
-      { source: '/proactive-representation', destination: '/rep/proactive' },
-      { source: '/mark-klinkacek', destination: '/rep/mark-klinkacek' },
-      { source: '/healthcare-cellutions', destination: '/rep/healthcare-cellutions-of-texas' },
-      { source: '/jordan-distribution', destination: '/rep/jordan-distribution-company-llc' },
-      { source: '/gollar-medical', destination: '/rep/gollar-medical-llc' },
-      { source: '/franklin-mountain-group', destination: '/rep/franklin-mountain-group-corp' },
-      { source: '/jh-medical', destination: '/rep/jh-medical' },
-      { source: '/patriot-medical', destination: '/rep/patriot-medical-distribution-llc' },
+      // ROOT LEVEL REP PAGES
+      { source: '/jordan-distribution', destination: '/rep/jordan-distribution' },
+      { source: '/gollar-medical', destination: '/rep/gollar-medical' },
+      { source: '/franklin-mountain-group', destination: '/rep/franklin-mountain-group' },
       { source: '/expert-medical-sales', destination: '/rep/expert-medical-sales' },
-      { source: '/activize', destination: '/rep/activize-inc' },
-      { source: '/southern-surgical', destination: '/rep/southern-surgical-medical-device-llc' },
-      { source: '/samu-sales', destination: '/rep/samu-sales-llc' },
-      { source: '/fladmo', destination: '/rep/fladmo-llc' },
-      { source: '/a3-biomedical', destination: '/rep/a3biomedical-llc' },
-      { source: '/mjfhealth', destination: '/rep/mjf-health-inc' },
-      { source: '/tplconsulting', destination: '/rep/tpl-consulting-llc' },
-      { source: '/hubgroup', destination: '/rep/hubgroup-llc' },
-      { source: '/zenecare', destination: '/rep/zenecare-llc' },
-      { source: '/signature-medical', destination: '/rep/signature-medical-products-and-services-llc' },
-      { source: '/uromobile', destination: '/rep/uromobile-llc' },
-      { source: '/streamline', destination: '/rep/streamline-savings-llc' },
-      { source: '/onpoint', destination: '/rep/onpoint-medcillory-solutions' },
-      { source: '/tbmedical', destination: '/rep/tb-medical-sales-consulting' },
-      { source: '/meinnovations', destination: '/rep/medical-equipment-innovations-llc' },
-      { source: '/sandia', destination: '/rep/sandia-medical-resources' },
-      { source: '/greatdane', destination: '/rep/great-dane-medical-solutions' },
-      { source: '/dwb', destination: '/rep/dwb-medical-inc' },
-      { source: '/noreaster', destination: '/rep/noreaster-medical-llc' },
+      { source: '/activize', destination: '/rep/activize' },
+      { source: '/southern-surgical', destination: '/rep/southern-surgical' },
+      { source: '/samu-sales', destination: '/rep/samu-sales' },
+      { source: '/fladmo', destination: '/rep/fladmo' },
+      { source: '/a3-biomedical', destination: '/rep/a3-biomedical' },
+      { source: '/mjfhealth', destination: '/rep/mjfhealth' },
+      { source: '/tplconsulting', destination: '/rep/tplconsulting' },
+      { source: '/hubgroup', destination: '/rep/hubgroup' },
+      { source: '/zenecare', destination: '/rep/zenecare' },
+      { source: '/signature-medical', destination: '/rep/signature-medical' },
+      { source: '/uromobile', destination: '/rep/uromobile' },
+      { source: '/streamline', destination: '/rep/streamline' },
+      { source: '/onpoint', destination: '/rep/onpoint' },
+      { source: '/tbmedical', destination: '/rep/tbmedical' },
+      { source: '/meinnovations', destination: '/rep/meinnovations' },
+      { source: '/sandia', destination: '/rep/sandia' },
+      { source: '/greatdane', destination: '/rep/greatdane' },
       { source: '/emina-taylor', destination: '/rep/emina-taylor' },
-      
-      // ============================================
-      // WASATCH REP PAGES (/wasatch/[name])
-      // ============================================
+      { source: '/noreaster', destination: '/rep/noreaster' },
+      { source: '/titan', destination: '/rep/titan' },
+      { source: '/intuitek', destination: '/rep/intuitek' },
+      { source: '/stengel', destination: '/rep/stengel' },
+      { source: '/genesis', destination: '/rep/genesis' },
+      { source: '/klea', destination: '/rep/klea' },
+      { source: '/kleamedical', destination: '/rep/kleamedical' },
+      { source: '/lifesource', destination: '/rep/lifesource' },
+      { source: '/gptsurgical', destination: '/rep/gptsurgical' },
+
+      // WASATCH REP PAGES
       { source: '/wasatch/chowning', destination: '/rep/chowning' },
       { source: '/wasatch/gerrard', destination: '/rep/gerrard' },
       { source: '/wasatch/ghanem', destination: '/rep/ghanem' },
@@ -69,31 +67,23 @@ const nextConfig = {
       { source: '/wasatch/whittiker', destination: '/rep/whittiker' },
       { source: '/wasatch/wood', destination: '/rep/wood' },
       { source: '/wasatch/sisco', destination: '/rep/sisco' },
-      
-      // ============================================
-      // COMEDICAL REP PAGES (/comedical/[name])
-      // ============================================
-      { source: '/comedical/dowdy', destination: '/rep/marti-dowdy' },
-      { source: '/comedical/dennehy', destination: '/rep/molly-dennehy' },
-      { source: '/comedical/murray', destination: '/rep/ryan-murray' },
-      { source: '/comedical/hagarty', destination: '/rep/nick-hagarty' },
-      { source: '/comedical/collins', destination: '/rep/erin-collins' },
+
+      // COMEDICAL REP PAGES
+      { source: '/comedical/dowdy', destination: '/rep/dowdy' },
+      { source: '/comedical/dennehy', destination: '/rep/dennehy' },
+      { source: '/comedical/murray', destination: '/rep/murray' },
+      { source: '/comedical/hagarty', destination: '/rep/hagarty' },
+      { source: '/comedical/collins', destination: '/rep/collins' },
     ]
   },
 
   async redirects() {
     return [
-      // ============================================
-      // REDIRECT OLD URLs TO NEW URLs (for SEO)
-      // ============================================
-      { source: '/rep/proactive', destination: '/proactive-representation', permanent: true },
-      { source: '/rep/mark-klinkacek', destination: '/mark-klinkacek', permanent: true },
-      { source: '/rep/healthcare-cellutions-of-texas', destination: '/healthcare-cellutions', permanent: true },
+      // Redirects from old /rep/old-slug to new canonical vanity URLs
+      { source: '/rep/healthcare-cellutions-of-texas', destination: '/rep/healthcare-cellutions', permanent: true },
       { source: '/rep/jordan-distribution-company-llc', destination: '/jordan-distribution', permanent: true },
       { source: '/rep/gollar-medical-llc', destination: '/gollar-medical', permanent: true },
       { source: '/rep/franklin-mountain-group-corp', destination: '/franklin-mountain-group', permanent: true },
-      { source: '/rep/jh-medical', destination: '/jh-medical', permanent: true },
-      { source: '/rep/patriot-medical-distribution-llc', destination: '/patriot-medical', permanent: true },
       { source: '/rep/expert-medical-sales', destination: '/expert-medical-sales', permanent: true },
       { source: '/rep/activize-inc', destination: '/activize', permanent: true },
       { source: '/rep/southern-surgical-medical-device-llc', destination: '/southern-surgical', permanent: true },
@@ -112,10 +102,21 @@ const nextConfig = {
       { source: '/rep/medical-equipment-innovations-llc', destination: '/meinnovations', permanent: true },
       { source: '/rep/sandia-medical-resources', destination: '/sandia', permanent: true },
       { source: '/rep/great-dane-medical-solutions', destination: '/greatdane', permanent: true },
-      { source: '/rep/dwb-medical-inc', destination: '/dwb', permanent: true },
       { source: '/rep/noreaster-medical-llc', destination: '/noreaster', permanent: true },
       { source: '/rep/emina-taylor', destination: '/emina-taylor', permanent: true },
-      // Wasatch redirects
+      // Also redirect old vanity URLs that have changed
+      { source: '/proactive-representation', destination: '/rep/proactive', permanent: true },
+      { source: '/healthcare-cellutions', destination: '/rep/healthcare-cellutions', permanent: true },
+      // Removed rep redirects (point to rep directory)
+      { source: '/rep/mark-klinkacek', destination: '/rep', permanent: true },
+      { source: '/mark-klinkacek', destination: '/rep', permanent: true },
+      { source: '/rep/jh-medical', destination: '/rep', permanent: true },
+      { source: '/jh-medical', destination: '/rep', permanent: true },
+      { source: '/rep/patriot-medical-distribution-llc', destination: '/rep', permanent: true },
+      { source: '/patriot-medical', destination: '/rep', permanent: true },
+      { source: '/rep/dwb-medical-inc', destination: '/rep', permanent: true },
+      { source: '/dwb', destination: '/rep', permanent: true },
+      // Wasatch redirects (old /rep/name → /wasatch/name)
       { source: '/rep/chowning', destination: '/wasatch/chowning', permanent: true },
       { source: '/rep/gerrard', destination: '/wasatch/gerrard', permanent: true },
       { source: '/rep/ghanem', destination: '/wasatch/ghanem', permanent: true },
@@ -138,12 +139,18 @@ const nextConfig = {
       { source: '/rep/whittiker', destination: '/wasatch/whittiker', permanent: true },
       { source: '/rep/wood', destination: '/wasatch/wood', permanent: true },
       { source: '/rep/sisco', destination: '/wasatch/sisco', permanent: true },
-      // Comedical redirects
+      // Comedical redirects (old /rep/name → /comedical/name)
       { source: '/rep/marti-dowdy', destination: '/comedical/dowdy', permanent: true },
       { source: '/rep/molly-dennehy', destination: '/comedical/dennehy', permanent: true },
       { source: '/rep/ryan-murray', destination: '/comedical/murray', permanent: true },
       { source: '/rep/nick-hagarty', destination: '/comedical/hagarty', permanent: true },
       { source: '/rep/erin-collins', destination: '/comedical/collins', permanent: true },
+      // Also redirect old comedical slugs that changed
+      { source: '/rep/dowdy', destination: '/comedical/dowdy', permanent: true },
+      { source: '/rep/dennehy', destination: '/comedical/dennehy', permanent: true },
+      { source: '/rep/murray', destination: '/comedical/murray', permanent: true },
+      { source: '/rep/hagarty', destination: '/comedical/hagarty', permanent: true },
+      { source: '/rep/collins', destination: '/comedical/collins', permanent: true },
     ]
   },
 }

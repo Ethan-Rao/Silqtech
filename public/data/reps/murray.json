@@ -1,0 +1,5269 @@
+{
+  "meta": {
+    "slug": "murray",
+    "company": "Ryan Murray",
+    "name": "Ryan Murray",
+    "email": "ryan@comedical.com",
+    "territory": [
+      "WA"
+    ],
+    "generated": "2026-02-08T03:46:08.030884Z",
+    "dataVersion": "08_2025"
+  },
+  "stats": {
+    "facilityCount": 91,
+    "totalCatheterDays": 359166,
+    "highCautiCount": 0,
+    "highVolumeCount": 12,
+    "physicianCount": 667
+  },
+  "facilities": [
+    {
+      "id": "500064",
+      "name": "HARBORVIEW MEDICAL CENTER",
+      "address": "325 9TH AVENUE",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98104",
+      "phone": "(206) 744-9535",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (1081667), Vizient (40356)",
+      "catheterDays": 31956,
+      "observedCAUTI": 71,
+      "predictedCAUTI": 70.799,
+      "sir": 1.003,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "William Hahn",
+          "npi": "1164650347",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Shireesha Dhanireddy",
+          "npi": "1568577286",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Tara Babu",
+          "npi": "1790945871",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Connie Celum",
+          "npi": "1124185319",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Skokan",
+          "npi": "1851719900",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Santiago Neme",
+          "npi": "1215039821",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Carey Farquhar",
+          "npi": "1376623355",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Spach",
+          "npi": "1578649208",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eric Chow",
+          "npi": "1184061400",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sylvia Lacourse",
+          "npi": "1508068909",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nandita Mani",
+          "npi": "1508283656",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Margaret Green",
+          "npi": "1558586156",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Chetan Seshadri",
+          "npi": "1558342675",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Harrington",
+          "npi": "1912083718",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Abir Hussein",
+          "npi": "1598152647",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Heidi Crane",
+          "npi": "1700962560",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Claire Yang",
+          "npi": "1245342419",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Meena Ramchandani",
+          "npi": "1518294255",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Raymond Mcclelland",
+          "npi": "1013119627",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rachel Bender Ignacio",
+          "npi": "1659532885",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Hyang Kim",
+          "npi": "1205876463",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Hunter Wessells",
+          "npi": "1164502142",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Scott",
+          "npi": "1649350638",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jonathan Wingate",
+          "npi": "1235405192",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Julia Dombrowski",
+          "npi": "1255523866",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Marie-Therese Valovska",
+          "npi": "1962963884",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lara Strick",
+          "npi": "1477642411",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sarah Psutka",
+          "npi": "1235334897",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sandra Hadjinian",
+          "npi": "1003937947",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alison Roxby",
+          "npi": "1700981974",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Lynch",
+          "npi": "1962510057",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Elaine Thomas",
+          "npi": "1073520029",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Adrienne Shapiro",
+          "npi": "1902175862",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christine Johnston",
+          "npi": "1104928720",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Menza",
+          "npi": "1003105891",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Audrey Li",
+          "npi": "1417441924",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Janine Maenza",
+          "npi": "1427134295",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Judith Hagedorn",
+          "npi": "1871754929",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 38
+    },
+    {
+      "id": "500008",
+      "name": "UNIVERSITY OF WASHINGTON MEDICAL CTR",
+      "address": "1959 NE PACIFIC ST  BOX 356151",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98195",
+      "phone": "(206) 598-3300",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - State",
+      "gpo": "",
+      "catheterDays": 23052,
+      "observedCAUTI": 38,
+      "predictedCAUTI": 28.752,
+      "sir": 1.322,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Atreya Dash",
+          "npi": "1578768255",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Catherine Liu",
+          "npi": "1346421773",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ryan Nasseri",
+          "npi": "1841853058",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ana Weil",
+          "npi": "1255648275",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Meera Chappidi",
+          "npi": "1366864076",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Walsh",
+          "npi": "1730274689",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alexander Zhu",
+          "npi": "1427615376",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Sweet",
+          "npi": "1992894059",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Hill",
+          "npi": "1528296803",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian Jordan",
+          "npi": "1457693939",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Psutka",
+          "npi": "1235334897",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jane Miller",
+          "npi": "1437239423",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marah Hehemann",
+          "npi": "1396011193",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Emily Rosen",
+          "npi": "1447754718",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jared Wachterman",
+          "npi": "1740597475",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Warren Phipps",
+          "npi": "1881708352",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jonathan Wright",
+          "npi": "1336250752",
+          "specialty": "Urology"
+        },
+        {
+          "name": "George Schade",
+          "npi": "1740491265",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tristan Nicholson",
+          "npi": "1053707398",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Lin",
+          "npi": "1548356306",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Fitzpatrick",
+          "npi": "1891359543",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Tara Babu",
+          "npi": "1790945871",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anthony Bui",
+          "npi": "1598325805",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Santiago Neme",
+          "npi": "1215039821",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Gonzalez",
+          "npi": "1154785871",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Frederick Buckner",
+          "npi": "1497845358",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Margaret Green",
+          "npi": "1558586156",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Bui",
+          "npi": "1992246136",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Deck",
+          "npi": "1437181948",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rachel Bender Ignacio",
+          "npi": "1659532885",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Hunter Wessells",
+          "npi": "1164502142",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Crisostomo-Wynne",
+          "npi": "1316486186",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Cynthia Fisher",
+          "npi": "1679775092",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nehizena Aihie",
+          "npi": "1215499793",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Rakita",
+          "npi": "1073606331",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ralph Tayyar",
+          "npi": "1477074250",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Skokan",
+          "npi": "1851719900",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sylvia Lacourse",
+          "npi": "1508068909",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rand Wilcox Vanden Berg",
+          "npi": "1568824217",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Claire Yang",
+          "npi": "1245342419",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hyang Kim",
+          "npi": "1205876463",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alana Desai",
+          "npi": "1578643375",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wesley Vanvoorhis",
+          "npi": "1851481717",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alison Roxby",
+          "npi": "1700981974",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Claire De La Calle",
+          "npi": "1629464581",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mabel Jimenez",
+          "npi": "1659937431",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Fredricks",
+          "npi": "1235219213",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Danniel Zamora",
+          "npi": "1326468158",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anna Wald",
+          "npi": "1679630115",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michelle Sabo",
+          "npi": "1669714614",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Gore",
+          "npi": "1265553374",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yaw Nyame",
+          "npi": "1073889044",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nandita Mani",
+          "npi": "1508283656",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Seth Cohen",
+          "npi": "1801124276",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Abir Hussein",
+          "npi": "1598152647",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jim Boonyaratanakornkit",
+          "npi": "1356630222",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Noelle Benzekri",
+          "npi": "1740506773",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sandra Hadjinian",
+          "npi": "1003937947",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Harper",
+          "npi": "1336358274",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Geoffrey Gottlieb",
+          "npi": "1275618001",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mathew Sorensen",
+          "npi": "1134230014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Audrey Li",
+          "npi": "1417441924",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Pottinger",
+          "npi": "1992892517",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Judith Hagedorn",
+          "npi": "1871754929",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 64
+    },
+    {
+      "id": "500005",
+      "name": "VIRGINIA MASON MEDICAL CENTER",
+      "address": "925 SENECA ST",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98101",
+      "phone": "(206) 223-6600",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Vizient (933571), Vizient (2225887), Vizient (2225889), Vizient (2225898)",
+      "catheterDays": 15884,
+      "observedCAUTI": 4,
+      "predictedCAUTI": 19.387,
+      "sir": 0.206,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Nicholas Cowan",
+          "npi": "1760626386",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Fuller",
+          "npi": "1972865335",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alvaro Lucioni",
+          "npi": "1639344534",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elham Rahmati",
+          "npi": "1093827248",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Uma Malhotra",
+          "npi": "1194805184",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Adam Daily",
+          "npi": "1164982484",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Una Lee",
+          "npi": "1790957520",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Margot Schwartz",
+          "npi": "1275689267",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Cristina Palmer",
+          "npi": "1457645772",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christian Kuhr",
+          "npi": "1962587774",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Baliga",
+          "npi": "1154534170",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Smith",
+          "npi": "1043653942",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Kozlowski",
+          "npi": "1235231200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jj Zhang",
+          "npi": "1235523598",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chia Wang",
+          "npi": "1306955166",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joseph Marquez",
+          "npi": "1730157611",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shingo Chihara",
+          "npi": "1205020310",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Geise",
+          "npi": "1528065471",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ksenija Stefanovic",
+          "npi": "1902995939",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 19
+    },
+    {
+      "id": "500014",
+      "name": "PROVIDENCE REGIONAL MEDICAL CENTER EVERETT",
+      "address": "1321 COLBY AVENUE",
+      "city": "EVERETT",
+      "state": "WA",
+      "zipCode": "98201",
+      "phone": "(425) 261-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Vizient (43300)",
+      "catheterDays": 15383,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 19.526,
+      "sir": 0.358,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Stephen Mock",
+          "npi": "1144488503",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wen Chen",
+          "npi": "1528528643",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Mcclung",
+          "npi": "1629396338",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Hempel",
+          "npi": "1629194030",
+          "specialty": "Urology"
+        },
+        {
+          "name": "George Diaz",
+          "npi": "1164523130",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christine Cho",
+          "npi": "1518225689",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian Fong",
+          "npi": "1407888910",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Bishop",
+          "npi": "1639734130",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ahmet Tural",
+          "npi": "1205927035",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jeong Yoon",
+          "npi": "1851317002",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Choi",
+          "npi": "1962518472",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Terry Corwin",
+          "npi": "1912954744",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Watson",
+          "npi": "1275066441",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rakesh Khanna",
+          "npi": "1326278458",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 14
+    },
+    {
+      "id": "500129",
+      "name": "TACOMA GENERAL ALLENMORE HOSPITAL",
+      "address": "315 S MLK JR WAY",
+      "city": "TACOMA",
+      "state": "WA",
+      "zipCode": "98405",
+      "phone": "(253) 403-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 15342,
+      "observedCAUTI": 18,
+      "predictedCAUTI": 18.292,
+      "sir": 0.984,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Ronald Caras",
+          "npi": "1639306954",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Antonie Auguste",
+          "npi": "1508063165",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Nupur Gupta",
+          "npi": "1417375940",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ryan Street",
+          "npi": "1437443348",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gregory Lamberton",
+          "npi": "1003094889",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Francis Kim",
+          "npi": "1215070297",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Pekala",
+          "npi": "1114375557",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jack Walter",
+          "npi": "1306879366",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Wright",
+          "npi": "1336250752",
+          "specialty": "Urology"
+        },
+        {
+          "name": "George Schade",
+          "npi": "1740491265",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ushma Shah",
+          "npi": "1467865295",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jesse Mierzwiak",
+          "npi": "1013117803",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kyaw Htun",
+          "npi": "1962992776",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Richard Greene",
+          "npi": "1568610707",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ryan Speir",
+          "npi": "1396987921",
+          "specialty": "Urology"
+        },
+        {
+          "name": "April Ferguson",
+          "npi": "1811167588",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Arnold Paul Cua",
+          "npi": "1649243304",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Sackman",
+          "npi": "1730447731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Crisostomo-Wynne",
+          "npi": "1316486186",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Murray",
+          "npi": "1548606346",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Anderson",
+          "npi": "1215900303",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Brown",
+          "npi": "1043203771",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kevin Tsai",
+          "npi": "1487911236",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jolie Keenan",
+          "npi": "1407236417",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Basil Ferenczi",
+          "npi": "1417488933",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Fernando Casado Castillo",
+          "npi": "1528411774",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Roumen Iordanov",
+          "npi": "1386006518",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Douglas Sutherland",
+          "npi": "1235210493",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eugene Lee",
+          "npi": "1831586981",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Muenchrath",
+          "npi": "1104801356",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ken Haberman",
+          "npi": "1225290489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sandra Hadjinian",
+          "npi": "1003937947",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Sibley",
+          "npi": "1396240180",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Leslie Linares-Hengen",
+          "npi": "1750565743",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Tepera",
+          "npi": "1194980565",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 35
+    },
+    {
+      "id": "500024",
+      "name": "PROVIDENCE ST PETER HOSPITAL",
+      "address": "413 LILLY ROAD NE",
+      "city": "OLYMPIA",
+      "state": "WA",
+      "zipCode": "98506",
+      "phone": "(360) 493-7179",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (43351)",
+      "catheterDays": 14319,
+      "observedCAUTI": 14,
+      "predictedCAUTI": 14.346,
+      "sir": 0.976,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Stanley Clark",
+          "npi": "1770591620",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Krista Reagan",
+          "npi": "1720251523",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Ward",
+          "npi": "1679502017",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Preeti Kondal",
+          "npi": "1205099181",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Valeria Ilieva",
+          "npi": "1184962680",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Steven Standaert",
+          "npi": "1750455317",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Marina Cheng",
+          "npi": "1174720569",
+          "specialty": "Urology"
+        },
+        {
+          "name": "April Ferguson",
+          "npi": "1811167588",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Susan Fraser",
+          "npi": "1932187663",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rogerio Huang",
+          "npi": "1639676984",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Simon Zadina",
+          "npi": "1124020110",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hunter Mckay",
+          "npi": "1033112107",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yen-Huang Chen",
+          "npi": "1841335171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 13
+    },
+    {
+      "id": "500079",
+      "name": "MULTICARE GOOD SAMARITAN HOSPITAL",
+      "address": "401 15TH AVENUE SE",
+      "city": "PUYALLUP",
+      "state": "WA",
+      "zipCode": "98372",
+      "phone": "(253) 697-2102",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2369)",
+      "catheterDays": 14063,
+      "observedCAUTI": 9,
+      "predictedCAUTI": 17.963,
+      "sir": 0.501,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Ushma Shah",
+          "npi": "1467865295",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kyaw Htun",
+          "npi": "1962992776",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ryan Street",
+          "npi": "1437443348",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Sackman",
+          "npi": "1730447731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gregory Lamberton",
+          "npi": "1003094889",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Anderson",
+          "npi": "1215900303",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Sibley",
+          "npi": "1396240180",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Pekala",
+          "npi": "1114375557",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Douglas Sutherland",
+          "npi": "1235210493",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jack Walter",
+          "npi": "1306879366",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "500088",
+      "name": "VALLEY MEDICAL CENTER",
+      "address": "400 S 43RD ST",
+      "city": "RENTON",
+      "state": "WA",
+      "zipCode": "98055",
+      "phone": "(425) 228-3450",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Vizient (2734554), Vizient (869566), Vizient (3353459), Vizient (3952295)",
+      "catheterDays": 12940,
+      "observedCAUTI": 16,
+      "predictedCAUTI": 11.294,
+      "sir": 1.417,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Shan Dong",
+          "npi": "1861783912",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stephen King",
+          "npi": "1891897468",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nam Pham",
+          "npi": "1053817205",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anthony Caruso",
+          "npi": "1013913938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Reed",
+          "npi": "1912945791",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Cooper",
+          "npi": "1588634935",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yi Hsieh",
+          "npi": "1184628661",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Simon",
+          "npi": "1619135738",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Trierweiler",
+          "npi": "1508327891",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "500054",
+      "name": "PROV SACRED HRT MED CTR & CHILDS HOSP.",
+      "address": "101 WEST 8TH AVENUE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zipCode": "99220",
+      "phone": "(509) 474-3131",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 12470,
+      "observedCAUTI": 12,
+      "predictedCAUTI": 16.109,
+      "sir": 0.745,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Duncan Sloan",
+          "npi": "1124482385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Samantha Mathews-Klebes",
+          "npi": "1871977454",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Maccini",
+          "npi": "1861767121",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Lance",
+          "npi": "1710930607",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Evan Carlos",
+          "npi": "1063807477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Levi Deters",
+          "npi": "1942427471",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hui Quan Zhang",
+          "npi": "1871956912",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bradford Nelson",
+          "npi": "1962466045",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Arguinchona",
+          "npi": "1740228170",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Maughan",
+          "npi": "1346282373",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bryan Voelzke",
+          "npi": "1245355163",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shane Pearce",
+          "npi": "1518253988",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "500108",
+      "name": "ST JOSEPH MEDICAL CENTER",
+      "address": "1717 SOUTH J STREET",
+      "city": "TACOMA",
+      "state": "WA",
+      "zipCode": "98405",
+      "phone": "(253) 627-4101",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Vizient (983501), Vizient (75235), Vizient (712693)",
+      "catheterDays": 12124,
+      "observedCAUTI": 10,
+      "predictedCAUTI": 21.755,
+      "sir": 0.46,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Craig Iriye",
+          "npi": "1558420596",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Schomogyi",
+          "npi": "1407848559",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eugene Hong",
+          "npi": "1720166812",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alex Borchert",
+          "npi": "1295194850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jolie Keenan",
+          "npi": "1407236417",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jaspreet Parihar",
+          "npi": "1447563317",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yi Hsieh",
+          "npi": "1184628661",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Susan Fraser",
+          "npi": "1932187663",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Elizabeth Lien",
+          "npi": "1851489827",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Bak",
+          "npi": "1063413938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Leslie Linares-Hengen",
+          "npi": "1750565743",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Tepera",
+          "npi": "1194980565",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Mcardle",
+          "npi": "1962849521",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 13
+    },
+    {
+      "id": "500027",
+      "name": "SWEDISH MEDICAL CENTER",
+      "address": "747 BROADWAY",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98122",
+      "phone": "(206) 386-6000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1086313), Vizient (2605083), Vizient (714313)",
+      "catheterDays": 12044,
+      "observedCAUTI": 12,
+      "predictedCAUTI": 14.618,
+      "sir": 0.821,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Devon Snow-Lisy",
+          "npi": "1376718106",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Akhil Saji",
+          "npi": "1326544867",
+          "specialty": "Urology"
+        },
+        {
+          "name": "San Wong",
+          "npi": "1508054826",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Steven Han",
+          "npi": "1013033190",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Porter",
+          "npi": "1215989546",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sonam Nyatsatsang",
+          "npi": "1821288911",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William Berrington",
+          "npi": "1558374025",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Amy Treakle",
+          "npi": "1831224435",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Maahum Haider",
+          "npi": "1902121254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tanya Nazemi",
+          "npi": "1649291907",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Muth",
+          "npi": "1598853822",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Luis Lantigua-Tatem",
+          "npi": "1205125820",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Cantrell",
+          "npi": "1356605729",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Pauk",
+          "npi": "1538137385",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Erik Torgerson",
+          "npi": "1972554277",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Evans",
+          "npi": "1326088014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Phillip Chapman",
+          "npi": "1275585598",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Kowitz",
+          "npi": "1346700986",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Mcguffin",
+          "npi": "1902223282",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Rogerio Huang",
+          "npi": "1639676984",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Zou",
+          "npi": "1003336165",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Kuan",
+          "npi": "1891885745",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Janet Lee",
+          "npi": "1952536906",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Susan Hoover",
+          "npi": "1487690210",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robin Lee",
+          "npi": "1801098405",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kathleen Doss",
+          "npi": "1518313550",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 26
+    },
+    {
+      "id": "500058",
+      "name": "KADLEC REGIONAL MEDICAL CENTER",
+      "address": "888 SWIFT BLVD",
+      "city": "RICHLAND",
+      "state": "WA",
+      "zipCode": "99352",
+      "phone": "(509) 946-4611",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Vizient (105658), Vizient (4036878)",
+      "catheterDays": 11779,
+      "observedCAUTI": 12,
+      "predictedCAUTI": 11.137,
+      "sir": 1.077,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "HIGH_VOLUME",
+      "physicians": [
+        {
+          "name": "Angela Bertriz Cruz",
+          "npi": "1538623319",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jose Echaiz Arroyo",
+          "npi": "1912155524",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kathleen Paranada",
+          "npi": "1750330601",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joshua Spendlove",
+          "npi": "1356513014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Gore",
+          "npi": "1265553374",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Naeem Chavla",
+          "npi": "1528090032",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Gavin",
+          "npi": "1861620627",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sunitha Suresh",
+          "npi": "1780962431",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian York",
+          "npi": "1285709568",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Julio Slongo",
+          "npi": "1952797763",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Vance",
+          "npi": "1326261637",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kacey Provenzano",
+          "npi": "1740523158",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "50030F",
+      "name": "SEATTLE VA MEDICAL CENTER (VA PUGET SOUND HEALTHCARE SYSTEM)",
+      "address": "1660 S. COLUMBIAN WAY",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98108",
+      "phone": "(206) 764-2299",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 4519,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 5.961,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "50011F",
+      "name": "SPOKANE VA MEDICAL CENTER",
+      "address": "4815 N. ASSEMBLY STREET",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zipCode": "99205",
+      "phone": "(509) 434-7000",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "",
+      "catheterDays": 685,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.392,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "VA",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "500050",
+      "name": "PEACEHEALTH SOUTHWEST MEDICAL CENTER",
+      "address": "400 NE MOTHER JOSEPH PLACE",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zipCode": "98664",
+      "phone": "(360) 256-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 10972,
+      "observedCAUTI": 8,
+      "predictedCAUTI": 10.547,
+      "sir": 0.759,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Michael Lin-Brande",
+          "npi": "1275095085",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alex Belshoff",
+          "npi": "1760876056",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jose Rivera",
+          "npi": "1003349176",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Hillary Wagner",
+          "npi": "1437579570",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Neil Mistry",
+          "npi": "1124401823",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Conte",
+          "npi": "1619400561",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Charles Steiger",
+          "npi": "1104811876",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rohan Vaidya",
+          "npi": "1679014518",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Root",
+          "npi": "1992976781",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "500044",
+      "name": "DEACONESS MEDICAL CENTER",
+      "address": "W 800 FIFTH AVENUE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zipCode": "99210",
+      "phone": "(509) 473-5800",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 9397,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 11.484,
+      "sir": 0.087,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Duncan Sloan",
+          "npi": "1124482385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Maccini",
+          "npi": "1861767121",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Evan Carlos",
+          "npi": "1063807477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Levi Deters",
+          "npi": "1942427471",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hui Quan Zhang",
+          "npi": "1871956912",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bradford Nelson",
+          "npi": "1962466045",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Arguinchona",
+          "npi": "1740228170",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Maughan",
+          "npi": "1346282373",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bryan Voelzke",
+          "npi": "1245355163",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shane Pearce",
+          "npi": "1518253988",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "500124",
+      "name": "EVERGREENHEALTH MEDICAL CENTER",
+      "address": "12040 NE 128TH STREET",
+      "city": "KIRKLAND",
+      "state": "WA",
+      "zipCode": "98034",
+      "phone": "(425) 899-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 9234,
+      "observedCAUTI": 10,
+      "predictedCAUTI": 11.62,
+      "sir": 0.861,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Kevin Ostrowski",
+          "npi": "1033352794",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lora Plaskon",
+          "npi": "1477500544",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amanda Casto",
+          "npi": "1497012090",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sabrina Stair",
+          "npi": "1508257262",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Karny Jacoby",
+          "npi": "1841274412",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Francis Riedo",
+          "npi": "1154376382",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Scott Vanappledorn",
+          "npi": "1215923479",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jessica Dai",
+          "npi": "1407274905",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Van Winkle",
+          "npi": "1215198254",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Philip May",
+          "npi": "1144595299",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Diego Zea Pineros",
+          "npi": "1427386135",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Marco Salazar",
+          "npi": "1962511717",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Diego Lopez De Castilla",
+          "npi": "1982854352",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 13
+    },
+    {
+      "id": "500039",
+      "name": "HARRISON MEDICAL CENTER",
+      "address": "2520 CHERRY AVENUE",
+      "city": "BREMERTON",
+      "state": "WA",
+      "zipCode": "98310",
+      "phone": "(360) 377-3911",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1155848), Vizient (50968)",
+      "catheterDays": 8165,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 9.932,
+      "sir": 0.705,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Snehal Bansod",
+          "npi": "1083116834",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Allen",
+          "npi": "1730175290",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Todd Garvin",
+          "npi": "1538111836",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Herman",
+          "npi": "1558358531",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Marc Mitchell",
+          "npi": "1265620363",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Caruso",
+          "npi": "1013913938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gang Zhang",
+          "npi": "1447238373",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Laurie Welton",
+          "npi": "1215914353",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jaspreet Parihar",
+          "npi": "1447563317",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michelle Chen",
+          "npi": "1245890581",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Pallavi Bhargava",
+          "npi": "1316229628",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Leslie Linares-Hengen",
+          "npi": "1750565743",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Stamm",
+          "npi": "1891182259",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Durbin",
+          "npi": "1124098173",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Tepera",
+          "npi": "1194980565",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Samay Jain",
+          "npi": "1679505515",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amy Li",
+          "npi": "1275823684",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katy Konkle",
+          "npi": "1467749978",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 18
+    },
+    {
+      "id": "500051",
+      "name": "OVERLAKE HOSPITAL MEDICAL CENTER",
+      "address": "1035-116TH AVE NE",
+      "city": "BELLEVUE",
+      "state": "WA",
+      "zipCode": "98004",
+      "phone": "(425) 688-5000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (808348)",
+      "catheterDays": 7336,
+      "observedCAUTI": 8,
+      "predictedCAUTI": 6.549,
+      "sir": 1.222,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Kripa Kavasseri",
+          "npi": "1720246267",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amanda Casto",
+          "npi": "1497012090",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Peter Hashisaki",
+          "npi": "1063445211",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Karny Jacoby",
+          "npi": "1841274412",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Takayama",
+          "npi": "1720166184",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Martin Wall",
+          "npi": "1447338579",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elizabeth Miller",
+          "npi": "1639257090",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Abdul Siddiqui",
+          "npi": "1073552709",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Diego Zea Pineros",
+          "npi": "1427386135",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Khanh Pham",
+          "npi": "1538331665",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Leonard",
+          "npi": "1407874795",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Diego Lopez De Castilla",
+          "npi": "1982854352",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "500036",
+      "name": "YAKIMA VALLEY MEMORIAL",
+      "address": "2811 TIETON DRIVE",
+      "city": "YAKIMA",
+      "state": "WA",
+      "zipCode": "98902",
+      "phone": "(509) 575-8000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 7209,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 8.947,
+      "sir": 0.335,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Neil Barg",
+          "npi": "1134213457",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Meier",
+          "npi": "1699033258",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Maria Del Mar Lucio Paredes Aulestia",
+          "npi": "1497278790",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Dennis Gaskill",
+          "npi": "1760479281",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amrit Kaur",
+          "npi": "1164771416",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Tiffany Yuh",
+          "npi": "1790147072",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Akram Shakhashiro",
+          "npi": "1033128665",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eric Lauer",
+          "npi": "1154533297",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Uhlman",
+          "npi": "1144546433",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Thorner",
+          "npi": "1275795445",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Cox",
+          "npi": "1215034111",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 11
+    },
+    {
+      "id": "500150",
+      "name": "LEGACY SALMON CREEK MEDICAL CENTER",
+      "address": "2211 NE 139TH STREET",
+      "city": "VANCOUVER",
+      "state": "WA",
+      "zipCode": "98686",
+      "phone": "(360) 487-1000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2624992)",
+      "catheterDays": 6929,
+      "observedCAUTI": 9,
+      "predictedCAUTI": 5.489,
+      "sir": 1.64,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Chad Mccormick",
+          "npi": "1215377312",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eric Kline",
+          "npi": "1841339884",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Lin-Brande",
+          "npi": "1275095085",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Matz",
+          "npi": "1295996122",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Regina Won",
+          "npi": "1619173085",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alex Belshoff",
+          "npi": "1760876056",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kathy Hoang",
+          "npi": "1841679818",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sasha Druskin",
+          "npi": "1376885418",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eli Thompson",
+          "npi": "1952852386",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brianna Ray",
+          "npi": "1477915932",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Tammy Bloom",
+          "npi": "1164482949",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Chang",
+          "npi": "1720290190",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Cliffton Bong",
+          "npi": "1609950849",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jean Gibb",
+          "npi": "1700204260",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Stanley Myers",
+          "npi": "1740288158",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Neil Mistry",
+          "npi": "1124401823",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Smith",
+          "npi": "1538376405",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erin Gibbons",
+          "npi": "1063647816",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rohan Vaidya",
+          "npi": "1679014518",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Terry Milam",
+          "npi": "1700987963",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 20
+    },
+    {
+      "id": "500025",
+      "name": "SWEDISH MEDICAL CENTER / CHERRY HILL",
+      "address": "500 17TH AVENUE",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98122",
+      "phone": "(206) 320-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 6077,
+      "observedCAUTI": 9,
+      "predictedCAUTI": 7.559,
+      "sir": 1.191,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Akhil Saji",
+          "npi": "1326544867",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Porter",
+          "npi": "1215989546",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sonam Nyatsatsang",
+          "npi": "1821288911",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Maahum Haider",
+          "npi": "1902121254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Luis Lantigua-Tatem",
+          "npi": "1205125820",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Pauk",
+          "npi": "1538137385",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Kozlowski",
+          "npi": "1235231200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Mcguffin",
+          "npi": "1902223282",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Zou",
+          "npi": "1003336165",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Susan Hoover",
+          "npi": "1487690210",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robin Lee",
+          "npi": "1801098405",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kathleen Doss",
+          "npi": "1518313550",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "500003",
+      "name": "SKAGIT VALLEY HOSPITAL",
+      "address": "1415 KINCAID STREET",
+      "city": "MOUNT VERNON",
+      "state": "WA",
+      "zipCode": "98274",
+      "phone": "(360) 424-4111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (2622860)",
+      "catheterDays": 5962,
+      "observedCAUTI": 9,
+      "predictedCAUTI": 4.658,
+      "sir": 1.932,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Atreya Dash",
+          "npi": "1578768255",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Ho",
+          "npi": "1457693244",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Pettit",
+          "npi": "1407937253",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mary Bavaro",
+          "npi": "1508837329",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Uma Malhotra",
+          "npi": "1194805184",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Collin Dela Houssaye",
+          "npi": "1285044917",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Rice",
+          "npi": "1740232248",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kyle Schuyler",
+          "npi": "1871882548",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Fong",
+          "npi": "1407888910",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Roeter",
+          "npi": "1386955870",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brock Boehm",
+          "npi": "1700299773",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sandra Hadjinian",
+          "npi": "1003937947",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Campbell Bryson",
+          "npi": "1225457773",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rehman Ukani",
+          "npi": "1700272564",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Claire De La Calle",
+          "npi": "1629464581",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jordan Kramer",
+          "npi": "1104302447",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Curran Emeruwa",
+          "npi": "1558719609",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 17
+    },
+    {
+      "id": "500016",
+      "name": "CONFLUENCE HEALTH HOSPITAL",
+      "address": "1201 S MILLER STREET",
+      "city": "WENATCHEE",
+      "state": "WA",
+      "zipCode": "98807",
+      "phone": "(509) 662-1511",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 5800,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 4.804,
+      "sir": 0.624,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Travis Clark",
+          "npi": "1083647838",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bert Ivey",
+          "npi": "1245497825",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brent Knight",
+          "npi": "1457713240",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Harris",
+          "npi": "1780614289",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brent Barber",
+          "npi": "1023014065",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Moises Vargas Mena",
+          "npi": "1679060131",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Mark Johnson",
+          "npi": "1033105788",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ian Mclaren",
+          "npi": "1215290705",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ahmad Musmar",
+          "npi": "1003337031",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "500030",
+      "name": "ST JOSEPH HOSPITAL",
+      "address": "2901 SQUALICUM PARKWAY",
+      "city": "BELLINGHAM",
+      "state": "WA",
+      "zipCode": "98225",
+      "phone": "(360) 734-5400",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (1161494), Vizient (2626887), Vizient (770878), Vizient (71157)",
+      "catheterDays": 5719,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 4.889,
+      "sir": 0.614,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Sean Okeefe",
+          "npi": "1477634046",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mitchell Nguyen",
+          "npi": "1053871582",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Pettit",
+          "npi": "1407937253",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marcus Tomberlin",
+          "npi": "1750349486",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Reznicek",
+          "npi": "1134414477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Roeter",
+          "npi": "1386955870",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Wright",
+          "npi": "1700102639",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jason Kowitz",
+          "npi": "1346700986",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Joel Chandranesan",
+          "npi": "1720375876",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Courtney Beuning",
+          "npi": "1356795165",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "500141",
+      "name": "ST FRANCIS COMMUNITY HOSPITAL",
+      "address": "34515 9TH AVENUE SOUTH",
+      "city": "FEDERAL WAY",
+      "state": "WA",
+      "zipCode": "98003",
+      "phone": "(253) 944-8100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 5394,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 5.543,
+      "sir": 0.541,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Stephen King",
+          "npi": "1891897468",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Caruso",
+          "npi": "1013913938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alex Borchert",
+          "npi": "1295194850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jaspreet Parihar",
+          "npi": "1447563317",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Johnston",
+          "npi": "1477839066",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ken Haberman",
+          "npi": "1225290489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yi Hsieh",
+          "npi": "1184628661",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Susan Fraser",
+          "npi": "1932187663",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "500151",
+      "name": "ST ANTHONY HOSPITAL",
+      "address": "11567 CANTERWOOD BOULEVARD NW",
+      "city": "GIG HARBOR",
+      "state": "WA",
+      "zipCode": "98332",
+      "phone": "(253) 530-2050",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Premier, Premier",
+      "catheterDays": 4864,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 4.942,
+      "sir": 0.202,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Eugene Hong",
+          "npi": "1720166812",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alex Borchert",
+          "npi": "1295194850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jolie Keenan",
+          "npi": "1407236417",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jaspreet Parihar",
+          "npi": "1447563317",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michelle Chen",
+          "npi": "1245890581",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Leslie Linares-Hengen",
+          "npi": "1750565743",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Christopher Tepera",
+          "npi": "1194980565",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Samay Jain",
+          "npi": "1679505515",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "500077",
+      "name": "PROVIDENCE HOLY FAMILY HOSPITAL",
+      "address": "5633 NORTH LIDGERWOOD",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zipCode": "99208",
+      "phone": "(509) 482-0111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (712688)",
+      "catheterDays": 4661,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 3.251,
+      "sir": 1.538,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Duncan Sloan",
+          "npi": "1124482385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Maccini",
+          "npi": "1861767121",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Lance",
+          "npi": "1710930607",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Evan Carlos",
+          "npi": "1063807477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Kalisvaart",
+          "npi": "1013196864",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Levi Deters",
+          "npi": "1942427471",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Hui Quan Zhang",
+          "npi": "1871956912",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bradford Nelson",
+          "npi": "1962466045",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Arguinchona",
+          "npi": "1740228170",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Maughan",
+          "npi": "1346282373",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bryan Voelzke",
+          "npi": "1245355163",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shane Pearce",
+          "npi": "1518253988",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 12
+    },
+    {
+      "id": "500119",
+      "name": "MULTICARE VALLEY HOSPITAL",
+      "address": "12606 EAST MISSION AVENUE",
+      "city": "SPOKANE VALLEY",
+      "state": "WA",
+      "zipCode": "99216",
+      "phone": "(509) 924-6650",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2623853)",
+      "catheterDays": 4441,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 3.198,
+      "sir": 0.0,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Duncan Sloan",
+          "npi": "1124482385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Maccini",
+          "npi": "1861767121",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Lance",
+          "npi": "1710930607",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Evan Carlos",
+          "npi": "1063807477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bradford Nelson",
+          "npi": "1962466045",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Henry Arguinchona",
+          "npi": "1740228170",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Maughan",
+          "npi": "1346282373",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Carl Walker",
+          "npi": "1053301440",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "500031",
+      "name": "GRAYS HARBOR COMMUNITY HOSPITAL",
+      "address": "915 ANDERSON DRIVE",
+      "city": "ABERDEEN",
+      "state": "WA",
+      "zipCode": "98520",
+      "phone": "(360) 532-8330",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 4073,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.075,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Brown",
+          "npi": "1043203771",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Murray",
+          "npi": "1548606346",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Charles Best",
+          "npi": "1962423418",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "500026",
+      "name": "SWEDISH EDMONDS HOSPITAL",
+      "address": "21601 76TH AVENUE WEST",
+      "city": "EDMONDS",
+      "state": "WA",
+      "zipCode": "98026",
+      "phone": "(425) 640-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 3793,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 3.804,
+      "sir": 0.789,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Akhil Saji",
+          "npi": "1326544867",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wen Chen",
+          "npi": "1528528643",
+          "specialty": "Urology"
+        },
+        {
+          "name": "San Wong",
+          "npi": "1508054826",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Cantrell",
+          "npi": "1356605729",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Johnston",
+          "npi": "1477839066",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erik Torgerson",
+          "npi": "1972554277",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Fong",
+          "npi": "1407888910",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Evans",
+          "npi": "1326088014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Mcguffin",
+          "npi": "1902223282",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Abdul Siddiqui",
+          "npi": "1073552709",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Janet Lee",
+          "npi": "1952536906",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Bolton",
+          "npi": "1114103629",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Watson",
+          "npi": "1275066441",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 13
+    },
+    {
+      "id": "500015",
+      "name": "MULTICARE AUBURN MEDICAL CENTER",
+      "address": "202 NORTH DIVISION STREET PLAZA ONE",
+      "city": "AUBURN",
+      "state": "WA",
+      "zipCode": "98001",
+      "phone": "(253) 833-7711",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1013670)",
+      "catheterDays": 3727,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 3.773,
+      "sir": 0.265,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Stephen King",
+          "npi": "1891897468",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anthony Caruso",
+          "npi": "1013913938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Johnston",
+          "npi": "1477839066",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ken Haberman",
+          "npi": "1225290489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yi Hsieh",
+          "npi": "1184628661",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Arnold Paul Cua",
+          "npi": "1649243304",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Daniel Sackman",
+          "npi": "1730447731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Pekala",
+          "npi": "1114375557",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "500152",
+      "name": "SWEDISH ISSAQUAH",
+      "address": "751 NE BLAKELY DR",
+      "city": "ISSAQUAH",
+      "state": "WA",
+      "zipCode": "98029",
+      "phone": "(425) 313-4000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 3609,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.559,
+      "sir": 0.391,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Kripa Kavasseri",
+          "npi": "1720246267",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Akhil Saji",
+          "npi": "1326544867",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Han",
+          "npi": "1013033190",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sonam Nyatsatsang",
+          "npi": "1821288911",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Cantrell",
+          "npi": "1356605729",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Karny Jacoby",
+          "npi": "1841274412",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeffrey Evans",
+          "npi": "1326088014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Zou",
+          "npi": "1003336165",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Susan Hoover",
+          "npi": "1487690210",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Mullen",
+          "npi": "1013982636",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "500041",
+      "name": "PEACEHEALTH ST JOHN MEDICAL CENTER",
+      "address": "1615 DELAWARE STREET",
+      "city": "LONGVIEW",
+      "state": "WA",
+      "zipCode": "98632",
+      "phone": "(360) 414-2000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 3568,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 2.496,
+      "sir": 0.801,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Patrick Lassen",
+          "npi": "1285632919",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jose Rivera",
+          "npi": "1003349176",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Chad Chesley",
+          "npi": "1831197243",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rohan Vaidya",
+          "npi": "1679014518",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Root",
+          "npi": "1992976781",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Conte",
+          "npi": "1619400561",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eric Yang",
+          "npi": "1770710386",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "500019",
+      "name": "PROVIDENCE CENTRALIA HOSPITAL",
+      "address": "914 S SCHEUBER ROAD",
+      "city": "CENTRALIA",
+      "state": "WA",
+      "zipCode": "98531",
+      "phone": "(360) 330-8530",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (43336)",
+      "catheterDays": 3491,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.831,
+      "sir": 0.353,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Charles Best",
+          "npi": "1962423418",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Ward",
+          "npi": "1679502017",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Steven Standaert",
+          "npi": "1750455317",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Marina Cheng",
+          "npi": "1174720569",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yen-Huang Chen",
+          "npi": "1841335171",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "500053",
+      "name": "TRIOS HEALTH",
+      "address": "3780 PLAZA WAY",
+      "city": "KENNEWICK",
+      "state": "WA",
+      "zipCode": "99338",
+      "phone": "(509) 586-6111",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (3008026)",
+      "catheterDays": 3351,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.632,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Naeem Chavla",
+          "npi": "1528090032",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Nnadi",
+          "npi": "1558506782",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joshua Spendlove",
+          "npi": "1356513014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Maria Nguyen",
+          "npi": "1841209194",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Julio Slongo",
+          "npi": "1952797763",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "500139",
+      "name": "CAPITAL MEDICAL CENTER",
+      "address": "3900 CAPITAL MALL DR SW",
+      "city": "OLYMPIA",
+      "state": "WA",
+      "zipCode": "98502",
+      "phone": "(360) 956-2550",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (4052136), Vizient (1151753)",
+      "catheterDays": 3304,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 2.473,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Keith Schulze",
+          "npi": "1174625693",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Muenchrath",
+          "npi": "1104801356",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Greene",
+          "npi": "1568610707",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Murray",
+          "npi": "1548606346",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Brown",
+          "npi": "1043203771",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jack Walter",
+          "npi": "1306879366",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Arroyo",
+          "npi": "1770567893",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "500011",
+      "name": "HIGHLINE MEDICAL CENTER",
+      "address": "16251 SYLVESTER ROAD SW",
+      "city": "BURIEN",
+      "state": "WA",
+      "zipCode": "98166",
+      "phone": "(206) 431-5237",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 2876,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 3.04,
+      "sir": 0.987,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Stephen King",
+          "npi": "1891897468",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jolie Keenan",
+          "npi": "1407236417",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jian Ma",
+          "npi": "1831242213",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Johnston",
+          "npi": "1477839066",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ken Haberman",
+          "npi": "1225290489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Linda Hsu",
+          "npi": "1316351356",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "50005F",
+      "name": "Madigan AMC (FT Lewis)",
+      "address": "9040A Jackson Ave",
+      "city": "Joint Base Lewis-McChord",
+      "state": "WA",
+      "zipCode": "98431",
+      "phone": "(253) 968-1110",
+      "hospitalType": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "gpo": "",
+      "catheterDays": 2715,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 2.08,
+      "sir": 0.962,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "500072",
+      "name": "OLYMPIC MEDICAL CENTER",
+      "address": "939 CAROLINE ST",
+      "city": "PORT ANGELES",
+      "state": "WA",
+      "zipCode": "98362",
+      "phone": "(360) 417-7000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (770404)",
+      "catheterDays": 2606,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 1.971,
+      "sir": 0.507,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Atreya Dash",
+          "npi": "1578768255",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Hewitt",
+          "npi": "1396205332",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Fuller",
+          "npi": "1972865335",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Gore",
+          "npi": "1265553374",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Maahum Haider",
+          "npi": "1902121254",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dimitri Kuznetsov",
+          "npi": "1659473825",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Laurel Mast",
+          "npi": "1588195135",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gang Zhang",
+          "npi": "1447238373",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erik Torgerson",
+          "npi": "1972554277",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rogerio Huang",
+          "npi": "1639676984",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Carleen Bensen",
+          "npi": "1164463204",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Durbin",
+          "npi": "1124098173",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Samay Jain",
+          "npi": "1679505515",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Janet Lee",
+          "npi": "1952536906",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amy Li",
+          "npi": "1275823684",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katy Konkle",
+          "npi": "1467749978",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Wright",
+          "npi": "1336250752",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 17
+    },
+    {
+      "id": "500002",
+      "name": "PROVIDENCE ST MARY MEDICAL CENTER",
+      "address": "401 W POPLAR ST",
+      "city": "WALLA WALLA",
+      "state": "WA",
+      "zipCode": "99362",
+      "phone": "(509) 522-5900",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (712691)",
+      "catheterDays": 2557,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.073,
+      "sir": 0.482,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jose Echaiz Arroyo",
+          "npi": "1912155524",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kathleen Paranada",
+          "npi": "1750330601",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Catherine Bjerum",
+          "npi": "1275616021",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jason Sedarsky",
+          "npi": "1689985822",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gene Conley",
+          "npi": "1508862335",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Gavin",
+          "npi": "1861620627",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian York",
+          "npi": "1285709568",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Julio Slongo",
+          "npi": "1952797763",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Hutton",
+          "npi": "1932113347",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 9
+    },
+    {
+      "id": "500021",
+      "name": "ST CLARE HOSPITAL",
+      "address": "11315 BRIDGEPORT WAY S W",
+      "city": "LAKEWOOD",
+      "state": "WA",
+      "zipCode": "98499",
+      "phone": "(253) 588-1711",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 2298,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.334,
+      "sir": 0.428,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Mark Schomogyi",
+          "npi": "1407848559",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eugene Hong",
+          "npi": "1720166812",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alex Borchert",
+          "npi": "1295194850",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jolie Keenan",
+          "npi": "1407236417",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jaspreet Parihar",
+          "npi": "1447563317",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elizabeth Lien",
+          "npi": "1851489827",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Bak",
+          "npi": "1063413938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Leslie Linares-Hengen",
+          "npi": "1750565743",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "500060",
+      "name": "CASCADE VALLEY HOSPITAL",
+      "address": "330 S STILLAGUAMISH AVE",
+      "city": "ARLINGTON",
+      "state": "WA",
+      "zipCode": "98223",
+      "phone": "(360) 435-2133",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 1643,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.923,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Richard Ho",
+          "npi": "1457693244",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kyle Schuyler",
+          "npi": "1871882548",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jordan Kramer",
+          "npi": "1104302447",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "501330",
+      "name": "ASTRIA SUNNYSIDE HOSPITAL",
+      "address": "1016 TACOMA AVENUE",
+      "city": "SUNNYSIDE",
+      "state": "WA",
+      "zipCode": "98944",
+      "phone": "(509) 837-1500",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (2624946)",
+      "catheterDays": 1584,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 3.869,
+      "sir": 0.258,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Dithi Shetty",
+          "npi": "1427037357",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brian Cox",
+          "npi": "1215034111",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Mynatt",
+          "npi": "1568487627",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "500007",
+      "name": "ISLAND HOSPITAL",
+      "address": "1211  24TH STREET",
+      "city": "ANACORTES",
+      "state": "WA",
+      "zipCode": "98221",
+      "phone": "(360) 299-1300",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Vizient (63963)",
+      "catheterDays": 1432,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.717,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Richard Ho",
+          "npi": "1457693244",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Lin",
+          "npi": "1548356306",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Rice",
+          "npi": "1740232248",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Roeter",
+          "npi": "1386955870",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brock Boehm",
+          "npi": "1700299773",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Psutka",
+          "npi": "1235334897",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jordan Kramer",
+          "npi": "1104302447",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Curran Emeruwa",
+          "npi": "1558719609",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Pettit",
+          "npi": "1407937253",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mary Bavaro",
+          "npi": "1508837329",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "500033",
+      "name": "SAMARITAN HOSPITAL",
+      "address": "801 EAST WHEELER ROAD",
+      "city": "MOSES LAKE",
+      "state": "WA",
+      "zipCode": "98837",
+      "phone": "(509) 765-5606",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Vizient (73129), Vizient (701)",
+      "catheterDays": 1126,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.552,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Trisha Kruger",
+          "npi": "1639396930",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501333",
+      "name": "KITTITAS VALLEY COMMUNITY HOSPITAL",
+      "address": "603 SOUTH CHESTNUT",
+      "city": "ELLENSBURG",
+      "state": "WA",
+      "zipCode": "98926",
+      "phone": "(509) 962-9841",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 1062,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.693,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Thorner",
+          "npi": "1275795445",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Lauer",
+          "npi": "1154533297",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Kozlowski",
+          "npi": "1235231200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dennis Gaskill",
+          "npi": "1760479281",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Cox",
+          "npi": "1215034111",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Christopher Meier",
+          "npi": "1699033258",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Uhlman",
+          "npi": "1144546433",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "501339",
+      "name": "WHIDBEYHEALTH MEDICAL CENTER",
+      "address": "101 NORTH MAIN STREET",
+      "city": "COUPEVILLE",
+      "state": "WA",
+      "zipCode": "98239",
+      "phone": "(360) 678-5151",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 960,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.626,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Richard Ho",
+          "npi": "1457693244",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stephen Mock",
+          "npi": "1144488503",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Campbell Bryson",
+          "npi": "1225457773",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Rice",
+          "npi": "1740232248",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brock Boehm",
+          "npi": "1700299773",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "501308",
+      "name": "COULEE MEDICAL CENTER",
+      "address": "411 FORTUYN ROAD",
+      "city": "GRAND COULEE",
+      "state": "WA",
+      "zipCode": "99133",
+      "phone": "(509) 633-1753",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 766,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.871,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Trisha Kruger",
+          "npi": "1639396930",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501312",
+      "name": "PROSSER MEMORIAL HOSPITAL",
+      "address": "723 MEMORIAL STREET",
+      "city": "PROSSER",
+      "state": "WA",
+      "zipCode": "99350",
+      "phone": "(509) 786-2222",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier",
+      "catheterDays": 715,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.466,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Naeem Chavla",
+          "npi": "1528090032",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Thorner",
+          "npi": "1275795445",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Tieu",
+          "npi": "1396008892",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kathleen Paranada",
+          "npi": "1750330601",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Patrick Gavin",
+          "npi": "1861620627",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Spendlove",
+          "npi": "1356513014",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Cox",
+          "npi": "1215034111",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dennis Gaskill",
+          "npi": "1760479281",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Julio Slongo",
+          "npi": "1952797763",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Uhlman",
+          "npi": "1144546433",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "501323",
+      "name": "JEFFERSON HEALTHCARE",
+      "address": "834 SHERIDAN STREET",
+      "city": "PORT TOWNSEND",
+      "state": "WA",
+      "zipCode": "98368",
+      "phone": "(360) 385-2200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Vizient (911223)",
+      "catheterDays": 708,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.462,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Rogerio Huang",
+          "npi": "1639676984",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrew Stamm",
+          "npi": "1891182259",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Amy Li",
+          "npi": "1275823684",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Katy Konkle",
+          "npi": "1467749978",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dimitri Kuznetsov",
+          "npi": "1659473825",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jason Kowitz",
+          "npi": "1346700986",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Herman",
+          "npi": "1558358531",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "501321",
+      "name": "NORTH VALLEY HOSPITAL",
+      "address": "203 SOUTH WESTERN",
+      "city": "TONASKET",
+      "state": "WA",
+      "zipCode": "98855",
+      "phone": "(509) 486-2151",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Premier",
+      "catheterDays": 666,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.435,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501329",
+      "name": "PEACEHEALTH UNITED GENERAL MEDICAL CENTER",
+      "address": "2000 HOSPITAL DRIVE",
+      "city": "SEDRO WOOLLEY",
+      "state": "WA",
+      "zipCode": "98284",
+      "phone": "(360) 856-6021",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 662,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 1.617,
+      "sir": 1.237,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Reznicek",
+          "npi": "1134414477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Pettit",
+          "npi": "1407937253",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "501336",
+      "name": "MASON GENERAL HOSPITAL & FAMILY OF CLINICS",
+      "address": "901 MT VIEW DRIVE",
+      "city": "SHELTON",
+      "state": "WA",
+      "zipCode": "98584",
+      "phone": "(360) 426-1611",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 624,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.407,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Ward",
+          "npi": "1679502017",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Muenchrath",
+          "npi": "1104801356",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Brown",
+          "npi": "1043203771",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Murray",
+          "npi": "1548606346",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Greene",
+          "npi": "1568610707",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 5
+    },
+    {
+      "id": "501326",
+      "name": "PROVIDENCE MOUNT CARMEL HOSPITAL",
+      "address": "982 EAST COLUMBIA",
+      "city": "COLVILLE",
+      "state": "WA",
+      "zipCode": "99114",
+      "phone": "(509) 684-2561",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Vizient (84971)",
+      "catheterDays": 594,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.389,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Levi Deters",
+          "npi": "1942427471",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Lance",
+          "npi": "1710930607",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Evan Carlos",
+          "npi": "1063807477",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "501338",
+      "name": "SNOQUALMIE VALLEY HOSPITAL",
+      "address": "9801 FRONTIER AVE SE",
+      "city": "SNOQUALMIE",
+      "state": "WA",
+      "zipCode": "98065",
+      "phone": "(425) 831-2300",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Vizient (2749602)",
+      "catheterDays": 586,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.383,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jeremy Storm",
+          "npi": "1518151562",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "500037",
+      "name": "ASTRIA TOPPENISH HOSPITAL",
+      "address": "502 W FOURTH AVE",
+      "city": "TOPPENISH",
+      "state": "WA",
+      "zipCode": "98948",
+      "phone": "(509) 865-1520",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (2624696)",
+      "catheterDays": 539,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.293,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Richard Mynatt",
+          "npi": "1568487627",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "500084",
+      "name": "EVERGREENHEALTH MONROE",
+      "address": "14701 179TH AVE SE",
+      "city": "MONROE",
+      "state": "WA",
+      "zipCode": "98272",
+      "phone": "(360) 794-7497",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 513,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.253,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Philip May",
+          "npi": "1144595299",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Vanappledorn",
+          "npi": "1215923479",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jessica Dai",
+          "npi": "1407274905",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "501335",
+      "name": "ST ELIZABETH HOSPITAL",
+      "address": "1450 BATTERSBY AVENUE",
+      "city": "ENUMCLAW",
+      "state": "WA",
+      "zipCode": "98022",
+      "phone": "(360) 825-2505",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (60675), Vizient (2761675)",
+      "catheterDays": 510,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.332,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501328",
+      "name": "MID VALLEY HOSPITAL & CLINIC",
+      "address": "810 JASMINE STREET",
+      "city": "OMAK",
+      "state": "WA",
+      "zipCode": "98841",
+      "phone": "(509) 826-1760",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 503,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.228,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Travis Clark",
+          "npi": "1083647838",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bert Ivey",
+          "npi": "1245497825",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Johnson",
+          "npi": "1033105788",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brent Knight",
+          "npi": "1457713240",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ian Mclaren",
+          "npi": "1215290705",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Harris",
+          "npi": "1780614289",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "501331",
+      "name": "PULLMAN REGIONAL HOSPITAL",
+      "address": "835 S BISHOP BLVD",
+      "city": "PULLMAN",
+      "state": "WA",
+      "zipCode": "99163",
+      "phone": "(509) 332-2541",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Vizient (769444)",
+      "catheterDays": 448,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.292,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Ian Udell",
+          "npi": "1396065223",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tristan Berry",
+          "npi": "1366572356",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bryan Smith",
+          "npi": "1548243199",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Keizur",
+          "npi": "1578663399",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "501305",
+      "name": "LINCOLN HOSPITAL",
+      "address": "10 NICHOLS STREET",
+      "city": "DAVENPORT",
+      "state": "WA",
+      "zipCode": "99122",
+      "phone": "(509) 725-7101",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 352,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.23,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Bradford Nelson",
+          "npi": "1962466045",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501309",
+      "name": "PROVIDENCE ST JOSEPH HOSPITAL",
+      "address": "500 EAST WEBSTER",
+      "city": "CHEWELAH",
+      "state": "WA",
+      "zipCode": "99109",
+      "phone": "(509) 935-8211",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Vizient (714011)",
+      "catheterDays": 322,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.211,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Michael Maccini",
+          "npi": "1861767121",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501319",
+      "name": "ARBOR HEALTH MORTON HOSPITAL",
+      "address": "521 ADAMS STREET",
+      "city": "MORTON",
+      "state": "WA",
+      "zipCode": "98356",
+      "phone": "(360) 496-5112",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (43341)",
+      "catheterDays": 319,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.208,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "500052",
+      "name": "KAISER PERMANENTE CENTRAL HOSPITAL",
+      "address": "201 - 16TH AVENUE EAST",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98112",
+      "phone": "(206) 326-3000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 295,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.145,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "500154",
+      "name": "MULTICARE COVINGTON MEDICAL CENTER",
+      "address": "17700 SE 272ND ST",
+      "city": "COVINGTON",
+      "state": "WA",
+      "zipCode": "98042",
+      "phone": "(253) 372-7400",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 253,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.181,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Arnold Paul Cua",
+          "npi": "1649243304",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Anthony Caruso",
+          "npi": "1013913938",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Daniel Sackman",
+          "npi": "1730447731",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Pekala",
+          "npi": "1114375557",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Douglas Sutherland",
+          "npi": "1235210493",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Yi Hsieh",
+          "npi": "1184628661",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 6
+    },
+    {
+      "id": "501315",
+      "name": "SKYLINE HOSPITAL",
+      "address": "211 SKYLINE DRIVE",
+      "city": "WHITE SALMON",
+      "state": "WA",
+      "zipCode": "98672",
+      "phone": "(509) 491-1101",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (840983)",
+      "catheterDays": 239,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.156,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Gary Gingrich",
+          "npi": "1992879514",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marc Mcallister",
+          "npi": "1336274265",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "501314",
+      "name": "OCEAN BEACH HOSPITAL",
+      "address": "174 FIRST AVENUE NORTH",
+      "city": "ILWACO",
+      "state": "WA",
+      "zipCode": "98624",
+      "phone": "(360) 642-3181",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (2305240)",
+      "catheterDays": 223,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.145,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Mansfield",
+          "npi": "1588688402",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Grecori Anderson",
+          "npi": "1114213469",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "501311",
+      "name": "EAST ADAMS RURAL HOSPITAL",
+      "address": "903 SOUTH ADAMS",
+      "city": "RITZVILLE",
+      "state": "WA",
+      "zipCode": "99169",
+      "phone": "(509) 659-1200",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 200,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.131,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501303",
+      "name": "WILLAPA HARBOR HOSPITAL",
+      "address": "800 ALDER STREET",
+      "city": "SOUTH BEND",
+      "state": "WA",
+      "zipCode": "98586",
+      "phone": "(360) 875-5526",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 189,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.124,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Charles Best",
+          "npi": "1962423418",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Patrick Murray",
+          "npi": "1548606346",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Grecori Anderson",
+          "npi": "1114213469",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "501327",
+      "name": "WHITMAN HOSPITAL AND MEDICAL CENTER",
+      "address": "1200 WEST FAIRVIEW",
+      "city": "COLFAX",
+      "state": "WA",
+      "zipCode": "99111",
+      "phone": "(509) 397-3435",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 182,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.444,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Bryan Smith",
+          "npi": "1548243199",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Keizur",
+          "npi": "1578663399",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tristan Berry",
+          "npi": "1366572356",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "501320",
+      "name": "QUINCY VALLEY MEDICAL CENTER",
+      "address": "908 10TH AVENUE SOUTHWEST",
+      "city": "QUINCY",
+      "state": "WA",
+      "zipCode": "98848",
+      "phone": "(509) 787-3531",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 82,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.054,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501307",
+      "name": "ODESSA MEMORIAL HEALTHCARE CENTER",
+      "address": "502 E AMENDE DRIVE",
+      "city": "ODESSA",
+      "state": "WA",
+      "zipCode": "99159",
+      "phone": "(509) 982-2611",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 71,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.046,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501325",
+      "name": "FORKS COMMUNITY HOSPITAL",
+      "address": "530 BOGACHIEL WAY",
+      "city": "FORKS",
+      "state": "WA",
+      "zipCode": "98331",
+      "phone": "(360) 374-6271",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 64,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.156,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Timothy Hewitt",
+          "npi": "1396205332",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501340",
+      "name": "PEACEHEALTH PEACE ISLAND MEDICAL CENTER",
+      "address": "1117 SPRING STREET",
+      "city": "FRIDAY HARBOR",
+      "state": "WA",
+      "zipCode": "98250",
+      "phone": "(360) 378-2141",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier",
+      "catheterDays": 20,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.013,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Reznicek",
+          "npi": "1134414477",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Rice",
+          "npi": "1740232248",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brock Boehm",
+          "npi": "1700299773",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jordan Kramer",
+          "npi": "1104302447",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "501318",
+      "name": "OTHELLO COMMUNITY HOSPITAL",
+      "address": "315 NORTH 14TH AVENUE",
+      "city": "OTHELLO",
+      "state": "WA",
+      "zipCode": "99344",
+      "phone": "(509) 488-2636",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier",
+      "catheterDays": 18,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.012,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501324",
+      "name": "THREE RIVERS HOSPITAL",
+      "address": "507 HOSPITAL WAY",
+      "city": "BREWSTER",
+      "state": "WA",
+      "zipCode": "98812",
+      "phone": "(509) 689-2517",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Vizient (2901811)",
+      "catheterDays": 8,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.006,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "501301",
+      "name": "GARFIELD COUNTY PUBLIC HOSPITAL DISTRICT #1",
+      "address": "66 NORTH SIXTH STREET",
+      "city": "POMEROY",
+      "state": "WA",
+      "zipCode": "99347",
+      "phone": "(509) 843-1591",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Olympia Stafford",
+          "npi": "1740382670",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501302",
+      "name": "DAYTON GENERAL HOSPITAL",
+      "address": "1012 SOUTH 3RD STREET",
+      "city": "DAYTON",
+      "state": "WA",
+      "zipCode": "99328",
+      "phone": "(509) 382-2531",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (991562)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jason Sedarsky",
+          "npi": "1689985822",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gene Conley",
+          "npi": "1508862335",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "501304",
+      "name": "SUMMIT PACIFIC MEDICAL CENTER",
+      "address": "600 EAST MAIN STREET",
+      "city": "ELMA",
+      "state": "WA",
+      "zipCode": "98541",
+      "phone": "(360) 346-2222",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Daniel Brown",
+          "npi": "1043203771",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Charles Best",
+          "npi": "1962423418",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Greene",
+          "npi": "1568610707",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "501310",
+      "name": "NEWPORT COMMUNITY HOSPITAL",
+      "address": "714 WEST PINE STREET",
+      "city": "NEWPORT",
+      "state": "WA",
+      "zipCode": "99156",
+      "phone": "(509) 447-2441",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Premier, Vizient (6066001)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Randil Clark",
+          "npi": "1205961182",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Roxanne Haslam",
+          "npi": "1205368198",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shane Pearce",
+          "npi": "1518253988",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Lance",
+          "npi": "1710930607",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Mclaughlin",
+          "npi": "1215071469",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chad Peterson",
+          "npi": "1629284732",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Flores",
+          "npi": "1972892669",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    },
+    {
+      "id": "501313",
+      "name": "CASCADE MEDICAL CENTER",
+      "address": "817 COMMERCIAL STREET",
+      "city": "LEAVENWORTH",
+      "state": "WA",
+      "zipCode": "98826",
+      "phone": "(509) 548-5815",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Vizient (796252), Vizient (2304833)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Travis Clark",
+          "npi": "1083647838",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501316",
+      "name": "KLICKITAT VALLEY HOSPITAL",
+      "address": "310 SOUTH ROOSEVELT",
+      "city": "GOLDENDALE",
+      "state": "WA",
+      "zipCode": "98620",
+      "phone": "(509) 773-4022",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Gary Gingrich",
+          "npi": "1992879514",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marc Mcallister",
+          "npi": "1336274265",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 2
+    },
+    {
+      "id": "501317",
+      "name": "COLUMBIA BASIN HOSPITAL",
+      "address": "200 NAT WASHINGTON WAY",
+      "city": "EPHRATA",
+      "state": "WA",
+      "zipCode": "98823",
+      "phone": "(509) 754-4631",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier, Premier, Vizient (2752525)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Trisha Kruger",
+          "npi": "1639396930",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501322",
+      "name": "FERRY COUNTY MEMORIAL HOSPITAL",
+      "address": "36 KLONDIKE ROAD",
+      "city": "REPUBLIC",
+      "state": "WA",
+      "zipCode": "99166",
+      "phone": "(509) 775-3333",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Levi Deters",
+          "npi": "1942427471",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "501332",
+      "name": "TRI-STATE MEMORIAL HOSPITAL",
+      "address": "1221 HIGHLAND AVENUE",
+      "city": "CLARKSTON",
+      "state": "WA",
+      "zipCode": "99403",
+      "phone": "(509) 758-5511",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Ian Udell",
+          "npi": "1396065223",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Monica Cespedes Santana",
+          "npi": "1114204161",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kenneth Berger",
+          "npi": "1366407942",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Duncan Harris",
+          "npi": "1679528632",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "501334",
+      "name": "LAKE CHELAN COMMUNITY HOSPITAL",
+      "address": "110 S APPLE BLOSSOM DR",
+      "city": "CHELAN",
+      "state": "WA",
+      "zipCode": "98816",
+      "phone": "(509) 682-3300",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Hospital District or Authority",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Travis Clark",
+          "npi": "1083647838",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bert Ivey",
+          "npi": "1245497825",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ahmad Musmar",
+          "npi": "1003337031",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Brent Knight",
+          "npi": "1457713240",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "501337",
+      "name": "LOURDES MEDICAL CENTER",
+      "address": "520 N FOURTH AVENUE",
+      "city": "PASCO",
+      "state": "WA",
+      "zipCode": "99301",
+      "phone": "(509) 546-2278",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "David Vance",
+          "npi": "1326261637",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarath Nath",
+          "npi": "1265852446",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Nnadi",
+          "npi": "1558506782",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "503300",
+      "name": "SEATTLE CHILDREN'S HOSPITAL",
+      "address": "4800 SAND POINT WAY NE, PO BOX C-5371",
+      "city": "SEATTLE",
+      "state": "WA",
+      "zipCode": "98105",
+      "phone": "(206) 987-2000",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Zheyi Teoh",
+          "npi": "1285097824",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jennifer Ahn",
+          "npi": "1992931281",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jose Fernandez",
+          "npi": "1356506331",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "503301",
+      "name": "MARY BRIDGE CHILDREN'S HOSPITAL",
+      "address": "317 MARTIN LUTHER KING JR W BOX 5299",
+      "city": "TACOMA",
+      "state": "WA",
+      "zipCode": "98415",
+      "phone": "(253) 403-1400",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "503302",
+      "name": "SHRINERS HOSPITAL FOR CHILDREN",
+      "address": "911 WEST 5TH AVENUE",
+      "city": "SPOKANE",
+      "state": "WA",
+      "zipCode": "99204",
+      "phone": "(509) 623-0422",
+      "hospitalType": "Childrens",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    }
+  ],
+  "mapConfig": {
+    "priorityColors": {
+      "HIGH_CAUTI": "#e41a1c",
+      "HIGH_VOLUME": "#377eb8",
+      "STANDARD": "#4daf4a",
+      "VA": "#ff7f00"
+    },
+    "facilityTypes": [
+      "Acute Care - Veterans Administration",
+      "Acute Care Hospitals",
+      "Childrens",
+      "Critical Access Hospitals",
+      "Acute Care - Department of Defense"
+    ]
+  }
+}

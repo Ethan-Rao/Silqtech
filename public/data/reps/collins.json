@@ -1,0 +1,863 @@
+{
+  "meta": {
+    "slug": "collins",
+    "company": "Erin Collins",
+    "name": "Erin Collins",
+    "email": "erin@comedical.com",
+    "territory": [
+      "AK"
+    ],
+    "generated": "2026-02-08T03:46:08.065683Z",
+    "dataVersion": "08_2025"
+  },
+  "stats": {
+    "facilityCount": 23,
+    "totalCatheterDays": 28402,
+    "highCautiCount": 0,
+    "highVolumeCount": 0,
+    "physicianCount": 71
+  },
+  "facilities": [
+    {
+      "id": "020001",
+      "name": "PROVIDENCE ALASKA MEDICAL CENTER",
+      "address": "3200 PROVIDENCE DRIVE",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zipCode": "99508",
+      "phone": "(907) 562-2211",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "Vizient (43297)",
+      "catheterDays": 6969,
+      "observedCAUTI": 7,
+      "predictedCAUTI": 9.031,
+      "sir": 0.775,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Rachael Harrison",
+          "npi": "1477915395",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joseph Turner",
+          "npi": "1134150410",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tavis Shaw",
+          "npi": "1871662809",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Megan Clancy",
+          "npi": "1598713554",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andre Godet",
+          "npi": "1649211194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Max Levitt",
+          "npi": "1487499307",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrea Caballero",
+          "npi": "1003173824",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Erwin Tieva",
+          "npi": "1215221411",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Posey",
+          "npi": "1992901524",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Logan",
+          "npi": "1902067390",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Benjamin Westley",
+          "npi": "1083867592",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Owen Aftreth",
+          "npi": "1457715724",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Byard",
+          "npi": "1043205164",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 13
+    },
+    {
+      "id": "020006",
+      "name": "MAT-SU REGIONAL MEDICAL CENTER",
+      "address": "2500 SOUTH WOODWORTH LOOP",
+      "city": "PALMER",
+      "state": "AK",
+      "zipCode": "99645",
+      "phone": "(907) 861-6000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "",
+      "catheterDays": 5320,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 3.578,
+      "sir": 0.279,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Rachael Harrison",
+          "npi": "1477915395",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Greg Lund",
+          "npi": "1538169321",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Turner",
+          "npi": "1134150410",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Megan Clancy",
+          "npi": "1598713554",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andre Godet",
+          "npi": "1649211194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jeff Simerville",
+          "npi": "1871575506",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erwin Tieva",
+          "npi": "1215221411",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Posey",
+          "npi": "1992901524",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Benjamin Westley",
+          "npi": "1083867592",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Owen Aftreth",
+          "npi": "1457715724",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 10
+    },
+    {
+      "id": "020026",
+      "name": "ALASKA NATIVE MEDICAL CENTER",
+      "address": "4315 DIPLOMACY DR",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zipCode": "99508",
+      "phone": "(907) 563-2662",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Federal",
+      "gpo": "Premier, Vizient (2420073), Vizient (104511)",
+      "catheterDays": 5036,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 5.114,
+      "sir": 0.587,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Mariam Miller",
+          "npi": "1659533222",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tavis Shaw",
+          "npi": "1871662809",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elysia Spencer",
+          "npi": "1861831273",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Wright",
+          "npi": "1700102639",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jacob Gray",
+          "npi": "1699821215",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Clifford Schneider",
+          "npi": "1699932772",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Bryan Wilson",
+          "npi": "1366860314",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Sarah Beebe",
+          "npi": "1821594805",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "020017",
+      "name": "ALASKA REGIONAL HOSPITAL",
+      "address": "2801 DEBARR ROAD",
+      "city": "ANCHORAGE",
+      "state": "AK",
+      "zipCode": "99508",
+      "phone": "(907) 276-1131",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "",
+      "catheterDays": 4178,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 3.371,
+      "sir": 0.297,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Lawrence Strawbridge",
+          "npi": "1467405324",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Rachael Harrison",
+          "npi": "1477915395",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Joseph Turner",
+          "npi": "1134150410",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Megan Clancy",
+          "npi": "1598713554",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andre Godet",
+          "npi": "1649211194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andrea Caballero",
+          "npi": "1003173824",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Erwin Tieva",
+          "npi": "1215221411",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Posey",
+          "npi": "1992901524",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joshua Logan",
+          "npi": "1902067390",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Benjamin Westley",
+          "npi": "1083867592",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Owen Aftreth",
+          "npi": "1457715724",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 11
+    },
+    {
+      "id": "020012",
+      "name": "FAIRBANKS MEMORIAL HOSPITAL",
+      "address": "1650 COWLES STREET",
+      "city": "FAIRBANKS",
+      "state": "AK",
+      "zipCode": "99701",
+      "phone": "(907) 452-8181",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier",
+      "catheterDays": 3081,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 2.16,
+      "sir": 0.463,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Huffer",
+          "npi": "1154460194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Max Levitt",
+          "npi": "1487499307",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Shannon Smith",
+          "npi": "1043673791",
+          "specialty": "Urology"
+        },
+        {
+          "name": "David Sharp",
+          "npi": "1275720344",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 4
+    },
+    {
+      "id": "020024",
+      "name": "CENTRAL PENINSULA GENERAL HOSPITAL",
+      "address": "250 HOSPITAL PLACE",
+      "city": "SOLDOTNA",
+      "state": "AK",
+      "zipCode": "99669",
+      "phone": "(907) 262-4404",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (2623251)",
+      "catheterDays": 1520,
+      "observedCAUTI": 3,
+      "predictedCAUTI": 1.083,
+      "sir": 2.77,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jeff Simerville",
+          "npi": "1871575506",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Owen Aftreth",
+          "npi": "1457715724",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Cadoff",
+          "npi": "1821086927",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Erwin Tieva",
+          "npi": "1215221411",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andre Godet",
+          "npi": "1649211194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Andre Gilbert",
+          "npi": "1639110885",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Zachary Posey",
+          "npi": "1992901524",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Turner",
+          "npi": "1134150410",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 8
+    },
+    {
+      "id": "020008",
+      "name": "BARTLETT REGIONAL HOSPITAL",
+      "address": "3260 HOSPITAL DR",
+      "city": "JUNEAU",
+      "state": "AK",
+      "zipCode": "99801",
+      "phone": "(907) 796-8900",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (1074537)",
+      "catheterDays": 557,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 0.275,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Huffer",
+          "npi": "1154460194",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "02013F",
+      "name": "673rd Medical Group (Joint Base Elmendorf-Richardson)",
+      "address": "673 MDG 5955 Zeamer Ave",
+      "city": "JBER",
+      "state": "AK",
+      "zipCode": "99506",
+      "phone": "(907) 384-1110",
+      "hospitalType": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "gpo": "",
+      "catheterDays": 528,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.269,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021311",
+      "name": "PEACEHEALTH KETCHIKAN MEDICAL CENTER",
+      "address": "3100 TONGASS AVENUE",
+      "city": "KETCHIKAN",
+      "state": "AK",
+      "zipCode": "99901",
+      "phone": "(907) 225-5171",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 440,
+      "observedCAUTI": 1,
+      "predictedCAUTI": 0.287,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Huffer",
+          "npi": "1154460194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alan Kowitz",
+          "npi": "1235232745",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Catherine Bjerum",
+          "npi": "1275616021",
+          "specialty": "Infectious Disease"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "020018",
+      "name": "YUKON KUSKOKWIM DELTA REG HOSPITAL",
+      "address": "PO BOX 287",
+      "city": "BETHEL",
+      "state": "AK",
+      "zipCode": "99559",
+      "phone": "(907) 543-6000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Tribal",
+      "gpo": "",
+      "catheterDays": 374,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.266,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021313",
+      "name": "SOUTH PENINSULA HOSPITAL",
+      "address": "4300 BARTLETT ST",
+      "city": "HOMER",
+      "state": "AK",
+      "zipCode": "99603",
+      "phone": "(907) 235-8101",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Vizient (2305427)",
+      "catheterDays": 362,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.237,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Jeff Simerville",
+          "npi": "1871575506",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Cadoff",
+          "npi": "1821086927",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Turner",
+          "npi": "1134150410",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 3
+    },
+    {
+      "id": "021312",
+      "name": "SAMUEL SIMMONDS MEMORIAL HOSPITAL",
+      "address": "7000 UULA ST",
+      "city": "BARROW",
+      "state": "AK",
+      "zipCode": "99723",
+      "phone": "(907) 852-4611",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "gpo": "Premier, Vizient (2777235)",
+      "catheterDays": 24,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.017,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "02014F",
+      "name": "Bassett ACH (FT Wainwright)",
+      "address": "4076 Neely Rd",
+      "city": "Fort Wainwright",
+      "state": "AK",
+      "zipCode": "99703",
+      "phone": "(907) 361-4000",
+      "hospitalType": "Acute Care - Department of Defense",
+      "ownership": "Department of Defense",
+      "gpo": "",
+      "catheterDays": 13,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.006,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021301",
+      "name": "PROVIDENCE VALDEZ MEDICAL CENTER",
+      "address": "PO BOX 550",
+      "city": "VALDEZ",
+      "state": "AK",
+      "zipCode": "99686",
+      "phone": "(907) 835-2249",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021302",
+      "name": "PROVIDENCE SEWARD HOSPITAL",
+      "address": "417 FIRST AVENUE, PO BOX 365",
+      "city": "SEWARD",
+      "state": "AK",
+      "zipCode": "99664",
+      "phone": "(907) 224-5205",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021304",
+      "name": "PETERSBURG MEDICAL CENTER",
+      "address": "PO BOX 589",
+      "city": "PETERSBURG",
+      "state": "AK",
+      "zipCode": "99833",
+      "phone": "(907) 772-4291",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Premier",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "John Huffer",
+          "npi": "1154460194",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "021305",
+      "name": "SEARHC WRANGELL MEDICAL CENTER-CAH",
+      "address": "232 WOOD STREET",
+      "city": "WRANGELL",
+      "state": "AK",
+      "zipCode": "99929",
+      "phone": "(907) 874-7000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021306",
+      "name": "PROVIDENCE KODIAK ISLAND MEDICAL CTR",
+      "address": "1915 EAST REZANOF DRIVE",
+      "city": "KODIAK",
+      "state": "AK",
+      "zipCode": "99615",
+      "phone": "(907) 486-3281",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Church",
+      "gpo": "",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Erwin Tieva",
+          "npi": "1215221411",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "021307",
+      "name": "CORDOVA COMMUNITY MEDICAL CENTER",
+      "address": "PO BOX 160 - 602 CHASE AVENUE",
+      "city": "CORDOVA",
+      "state": "AK",
+      "zipCode": "99574",
+      "phone": "(907) 424-8000",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Government - Local",
+      "gpo": "Vizient (47148)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021308",
+      "name": "NORTON SOUND REGIONAL HOSPITAL",
+      "address": "1000 GREG KRUSCHEK AVENUE (P O BOX 966)",
+      "city": "NOME",
+      "state": "AK",
+      "zipCode": "99762",
+      "phone": "(907) 443-3311",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "gpo": "Vizient (2777196)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021309",
+      "name": "BRISTOL BAY AREA HEALTH CORPORATION",
+      "address": "P O BOX 130",
+      "city": "DILLINGHAM",
+      "state": "AK",
+      "zipCode": "99576",
+      "phone": "(907) 842-5201",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Premier, Vizient (90297)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [],
+      "physicianCount": 0
+    },
+    {
+      "id": "021310",
+      "name": "MANIILAQ HEALTH CENTER",
+      "address": "PO BOX 43",
+      "city": "KOTZEBUE",
+      "state": "AK",
+      "zipCode": "99752",
+      "phone": "(907) 442-3321",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Tribal",
+      "gpo": "Premier, Premier, Vizient (2472622)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Elysia Spencer",
+          "npi": "1861831273",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 1
+    },
+    {
+      "id": "021314",
+      "name": "SOUTHEAST ALASKA REGIONAL HEALTH CONSORTIUM",
+      "address": "222 TONGASS DR",
+      "city": "SITKA",
+      "state": "AK",
+      "zipCode": "99835",
+      "phone": "(907) 966-2411",
+      "hospitalType": "Critical Access Hospitals",
+      "ownership": "Voluntary non-profit - Private",
+      "gpo": "Vizient (1044598)",
+      "catheterDays": 0,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "Not Available",
+      "priority": "STANDARD",
+      "physicians": [
+        {
+          "name": "Tavis Shaw",
+          "npi": "1871662809",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Elysia Spencer",
+          "npi": "1861831273",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Huffer",
+          "npi": "1154460194",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Wright",
+          "npi": "1700102639",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sarah Beebe",
+          "npi": "1821594805",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mrinal Dhar",
+          "npi": "1417275256",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lynne Mccormick",
+          "npi": "1194779983",
+          "specialty": "Urology"
+        }
+      ],
+      "physicianCount": 7
+    }
+  ],
+  "mapConfig": {
+    "priorityColors": {
+      "HIGH_CAUTI": "#e41a1c",
+      "HIGH_VOLUME": "#377eb8",
+      "STANDARD": "#4daf4a",
+      "VA": "#ff7f00"
+    },
+    "facilityTypes": [
+      "Acute Care Hospitals",
+      "Critical Access Hospitals",
+      "Acute Care - Department of Defense"
+    ]
+  }
+}
