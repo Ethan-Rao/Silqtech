@@ -1,998 +1,998 @@
-﻿{
-    "generated":  "2026-03-23T17:09:07.437995Z",
-    "dataVersion":  "03_2026",
-    "totalReps":  68,
-    "reps":  [
-                 {
-                     "slug":  "proactive",
-                     "highVolumeCount":  30,
-                     "territory":  [
-                                       "NY"
-                                   ],
-                     "facilityCount":  161,
-                     "physicianCount":  1972,
-                     "highCautiCount":  2,
-                     "name":  "Mike Krym",
-                     "company":  "Proactive Representation",
-                     "email":  "mikekrym@proactiverep.com"
-                 },
-                 {
-                     "slug":  "healthcare-cellutions",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "AR",
-                                       "LA",
-                                       "OK",
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Brian McElhany",
-                     "company":  "Healthcare Cellutions of Texas",
-                     "email":  "brian@bioreach360.com"
-                 },
-                 {
-                     "slug":  "healthcare-cellutions",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "AR",
-                                       "LA",
-                                       "OK",
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Rocky Ray",
-                     "company":  "Healthcare Cellutions of Texas",
-                     "email":  "bioreach360@gmail.com"
-                 },
-                 {
-                     "slug":  "jordan-distribution",
-                     "highVolumeCount":  26,
-                     "territory":  [
-                                       "KY",
-                                       "OH",
-                                       "WV"
-                                   ],
-                     "facilityCount":  304,
-                     "physicianCount":  2200,
-                     "highCautiCount":  1,
-                     "name":  "Jason Jordan",
-                     "company":  "Jordan Distribution Company LLC",
-                     "email":  "jordandistributioncompany@gmail.com"
-                 },
-                 {
-                     "slug":  "gollar-medical",
-                     "highVolumeCount":  27,
-                     "territory":  [
-                                       "IN",
-                                       "KY",
-                                       "OH"
-                                   ],
-                     "facilityCount":  371,
-                     "physicianCount":  2909,
-                     "highCautiCount":  2,
-                     "name":  "Jansen Gollar",
-                     "company":  "Gollar Medical LLC",
-                     "email":  "jansen@gollarmedical.com"
-                 },
-                 {
-                     "slug":  "franklin-mountain-group",
-                     "highVolumeCount":  44,
-                     "territory":  [
-                                       "NM",
-                                       "TN",
-                                       "TX"
-                                   ],
-                     "facilityCount":  536,
-                     "physicianCount":  2799,
-                     "highCautiCount":  1,
-                     "name":  "Kevin Brisco",
-                     "company":  "Franklin Mountain Group Corp",
-                     "email":  "kevin.brisco@fmgmedical.com"
-                 },
-                 {
-                     "slug":  "expert-medical-sales",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "FL"
-                                   ],
-                     "facilityCount":  193,
-                     "physicianCount":  2452,
-                     "highCautiCount":  0,
-                     "name":  "Tony LaBruna",
-                     "company":  "Expert Medical Sales",
-                     "email":  "tonybufny@yahoo.com"
-                 },
-                 {
-                     "slug":  "activize",
-                     "highVolumeCount":  62,
-                     "territory":  [
-                                       "NJ",
-                                       "NY",
-                                       "PA"
-                                   ],
-                     "facilityCount":  387,
-                     "physicianCount":  5062,
-                     "highCautiCount":  2,
-                     "name":  "Steve Corsello",
-                     "company":  "Activize Inc",
-                     "email":  "steve@activize.com"
-                 },
-                 {
-                     "slug":  "southern-surgical",
-                     "highVolumeCount":  55,
-                     "territory":  [
-                                       "AL",
-                                       "FL",
-                                       "LA",
-                                       "MS",
-                                       "TN"
-                                   ],
-                     "facilityCount":  588,
-                     "physicianCount":  4148,
-                     "highCautiCount":  1,
-                     "name":  "Ron Wilkins",
-                     "company":  "Southern Surgical Medical Device LLC",
-                     "email":  "rwilkins.ssmd@gmail.com"
-                 },
-                 {
-                     "slug":  "samu-sales",
-                     "highVolumeCount":  39,
-                     "territory":  [
-                                       "NJ",
-                                       "NY"
-                                   ],
-                     "facilityCount":  225,
-                     "physicianCount":  3157,
-                     "highCautiCount":  2,
-                     "name":  "Scott Andrew",
-                     "company":  "SAMU Sales LLC",
-                     "email":  "scott@samusales.com"
-                 },
-                 {
-                     "slug":  "fladmo",
-                     "highVolumeCount":  34,
-                     "territory":  [
-                                       "FL",
-                                       "LA",
-                                       "MS"
-                                   ],
-                     "facilityCount":  398,
-                     "physicianCount":  3193,
-                     "highCautiCount":  0,
-                     "name":  "Brian Fladmo",
-                     "company":  "Fladmo LLC",
-                     "email":  "brianfladmo@gmail.com"
-                 },
-                 {
-                     "slug":  "a3-biomedical",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "FL"
-                                   ],
-                     "facilityCount":  193,
-                     "physicianCount":  2452,
-                     "highCautiCount":  0,
-                     "name":  "Alberto Espino",
-                     "company":  "A3Biomedical LLC",
-                     "email":  "aespino@a3biomedical.com"
-                 },
-                 {
-                     "slug":  "mjfhealth",
-                     "highVolumeCount":  30,
-                     "territory":  [
-                                       "NY"
-                                   ],
-                     "facilityCount":  161,
-                     "physicianCount":  1972,
-                     "highCautiCount":  2,
-                     "name":  "Myron Fox",
-                     "company":  "MJF Health Inc.",
-                     "email":  "myronfox@verizon.net"
-                 },
-                 {
-                     "slug":  "tplconsulting",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "FL"
-                                   ],
-                     "facilityCount":  193,
-                     "physicianCount":  2452,
-                     "highCautiCount":  0,
-                     "name":  "Tim Loughran",
-                     "company":  "TPL Consulting LLC",
-                     "email":  "loughran.timothy@gmail.com"
-                 },
-                 {
-                     "slug":  "hubgroup",
-                     "highVolumeCount":  34,
-                     "territory":  [
-                                       "DC",
-                                       "MD",
-                                       "NC",
-                                       "SC",
-                                       "VA"
-                                   ],
-                     "facilityCount":  307,
-                     "physicianCount":  2993,
-                     "highCautiCount":  0,
-                     "name":  "Scott Hubbard",
-                     "company":  "HUBgroup LLC",
-                     "email":  "scotthubbard707@gmail.com"
-                 },
-                 {
-                     "slug":  "zenecare",
-                     "highVolumeCount":  54,
-                     "territory":  [
-                                       "AZ",
-                                       "CA",
-                                       "NV",
-                                       "UT"
-                                   ],
-                     "facilityCount":  508,
-                     "physicianCount":  3719,
-                     "highCautiCount":  4,
-                     "name":  "Jeff Murphy",
-                     "company":  "Zenecare LLC",
-                     "email":  "jmurphy@zenecare.com"
-                 },
-                 {
-                     "slug":  "zenecare",
-                     "highVolumeCount":  54,
-                     "territory":  [
-                                       "AZ",
-                                       "CA",
-                                       "NV",
-                                       "UT"
-                                   ],
-                     "facilityCount":  508,
-                     "physicianCount":  3719,
-                     "highCautiCount":  4,
-                     "name":  "Tyler Dehart",
-                     "company":  "Zenecare LLC",
-                     "email":  "tyler@zenecare.com"
-                 },
-                 {
-                     "slug":  "zenecare",
-                     "highVolumeCount":  54,
-                     "territory":  [
-                                       "AZ",
-                                       "CA",
-                                       "NV",
-                                       "UT"
-                                   ],
-                     "facilityCount":  508,
-                     "physicianCount":  3719,
-                     "highCautiCount":  4,
-                     "name":  "Paul Ryan",
-                     "company":  "Zenecare LLC",
-                     "email":  "Pryan@zenecare.com"
-                 },
-                 {
-                     "slug":  "signature-medical",
-                     "highVolumeCount":  21,
-                     "territory":  [
-                                       "CT",
-                                       "MA",
-                                       "ME",
-                                       "NH",
-                                       "RI",
-                                       "VT"
-                                   ],
-                     "facilityCount":  180,
-                     "physicianCount":  2108,
-                     "highCautiCount":  2,
-                     "name":  "Tim Driscoll",
-                     "company":  "Signature Medical Products and Services LLC",
-                     "email":  "signaturemedicalproducts@gmail.com"
-                 },
-                 {
-                     "slug":  "uromobile",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Paulino Almaguer",
-                     "company":  "Uromobile LLC",
-                     "email":  "UroMobile@outlook.com"
-                 },
-                 {
-                     "slug":  "streamline",
-                     "highVolumeCount":  73,
-                     "territory":  [
-                                       "NY",
-                                       "OH",
-                                       "PA",
-                                       "WV"
-                                   ],
-                     "facilityCount":  535,
-                     "physicianCount":  5644,
-                     "highCautiCount":  3,
-                     "name":  "Gene Rozzi",
-                     "company":  "Streamline Savings LLC",
-                     "email":  "gene.rozzi@gmail.com"
-                 },
-                 {
-                     "slug":  "onpoint",
-                     "highVolumeCount":  39,
-                     "territory":  [
-                                       "NJ",
-                                       "NY"
-                                   ],
-                     "facilityCount":  225,
-                     "physicianCount":  3157,
-                     "highCautiCount":  2,
-                     "name":  "Jeffrey Jackson",
-                     "company":  "OnPoint Medcillory Solutions",
-                     "email":  "jeffreyjackson507@gmail.com"
-                 },
-                 {
-                     "slug":  "tbmedical",
-                     "highVolumeCount":  33,
-                     "territory":  [
-                                       "NC",
-                                       "SC",
-                                       "TN"
-                                   ],
-                     "facilityCount":  265,
-                     "physicianCount":  2033,
-                     "highCautiCount":  0,
-                     "name":  "Travis Beaulieu",
-                     "company":  "TB Medical Sales \u0026 Consulting",
-                     "email":  "tbmedicalsales@gmail.com"
-                 },
-                 {
-                     "slug":  "meinnovations",
-                     "highVolumeCount":  33,
-                     "territory":  [
-                                       "NM",
-                                       "TX"
-                                   ],
-                     "facilityCount":  436,
-                     "physicianCount":  2269,
-                     "highCautiCount":  1,
-                     "name":  "Brendon Wood",
-                     "company":  "Medical Equipment Innovations LLC",
-                     "email":  "bhwood1@sbcglobal.net"
-                 },
-                 {
-                     "slug":  "sandia",
-                     "highVolumeCount":  33,
-                     "territory":  [
-                                       "NM",
-                                       "TX"
-                                   ],
-                     "facilityCount":  436,
-                     "physicianCount":  2269,
-                     "highCautiCount":  1,
-                     "name":  "Luciano DeAngelis",
-                     "company":  "Sandia Medical Resources",
-                     "email":  "sandiamrtx@gmail.com"
-                 },
-                 {
-                     "slug":  "greatdane",
-                     "highVolumeCount":  32,
-                     "territory":  [
-                                       "AL",
-                                       "AR",
-                                       "MS",
-                                       "TN"
-                                   ],
-                     "facilityCount":  356,
-                     "physicianCount":  1405,
-                     "highCautiCount":  1,
-                     "name":  "Dane Cope",
-                     "company":  "Great Dane Medical Solutions",
-                     "email":  "Garycope@bellsouth.net"
-                 },
-                 {
-                     "slug":  "emina-taylor",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "FL"
-                                   ],
-                     "facilityCount":  193,
-                     "physicianCount":  2452,
-                     "highCautiCount":  0,
-                     "name":  "Emina Taylor",
-                     "company":  "Emina Taylor",
-                     "email":  "Emina@floridalitho.com"
-                 },
-                 {
-                     "slug":  "healthcare-cellutions",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Christy Bland",
-                     "company":  "Healthcare Cellutions of Texas",
-                     "email":  "Blandchristy@hotmail.com"
-                 },
-                 {
-                     "slug":  "noreaster",
-                     "highVolumeCount":  21,
-                     "territory":  [
-                                       "CT",
-                                       "MA",
-                                       "ME",
-                                       "NH",
-                                       "RI",
-                                       "VT"
-                                   ],
-                     "facilityCount":  180,
-                     "physicianCount":  2108,
-                     "highCautiCount":  2,
-                     "name":  "Bennett Petrescu",
-                     "company":  "Noreaster Medical LLC",
-                     "email":  "Bpetrescu@noreastermedical.com"
-                 },
-                 {
-                     "slug":  "chowning",
-                     "highVolumeCount":  28,
-                     "territory":  [
-                                       "AR",
-                                       "IL",
-                                       "KS",
-                                       "MO"
-                                   ],
-                     "facilityCount":  490,
-                     "physicianCount":  2868,
-                     "highCautiCount":  1,
-                     "name":  "Chowning",
-                     "company":  "Chowning",
-                     "email":  "tyler@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "gerrard",
-                     "highVolumeCount":  22,
-                     "territory":  [
-                                       "NC",
-                                       "SC"
-                                   ],
-                     "facilityCount":  165,
-                     "physicianCount":  1503,
-                     "highCautiCount":  0,
-                     "name":  "Gerrard",
-                     "company":  "Gerrard",
-                     "email":  "nick@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "ghanem",
-                     "highVolumeCount":  34,
-                     "territory":  [
-                                       "DE",
-                                       "MD",
-                                       "PA",
-                                       "VA"
-                                   ],
-                     "facilityCount":  304,
-                     "physicianCount":  3430,
-                     "highCautiCount":  0,
-                     "name":  "Ghanem",
-                     "company":  "Ghanem",
-                     "email":  "rawad@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "grosjean",
-                     "highVolumeCount":  37,
-                     "territory":  [
-                                       "CA"
-                                   ],
-                     "facilityCount":  338,
-                     "physicianCount":  2637,
-                     "highCautiCount":  3,
-                     "name":  "Grosjean",
-                     "company":  "Grosjean",
-                     "email":  "jase@altamedspec.com"
-                 },
-                 {
-                     "slug":  "jackson",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Jackson",
-                     "company":  "Jackson",
-                     "email":  "toby@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "lamitina",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "FL"
-                                   ],
-                     "facilityCount":  193,
-                     "physicianCount":  2452,
-                     "highCautiCount":  0,
-                     "name":  "Lamitina",
-                     "company":  "Lamitina",
-                     "email":  "austin@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "lucier",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "CT",
-                                       "MA",
-                                       "ME",
-                                       "NH",
-                                       "VT"
-                                   ],
-                     "facilityCount":  169,
-                     "physicianCount":  1941,
-                     "highCautiCount":  2,
-                     "name":  "Lucier",
-                     "company":  "Lucier",
-                     "email":  "noah@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "mahoney",
-                     "highVolumeCount":  3,
-                     "territory":  [
-                                       "UT"
-                                   ],
-                     "facilityCount":  47,
-                     "physicianCount":  237,
-                     "highCautiCount":  0,
-                     "name":  "Mahoney",
-                     "company":  "Mahoney",
-                     "email":  "darin@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "martinez",
-                     "highVolumeCount":  35,
-                     "territory":  [
-                                       "OK",
-                                       "TX"
-                                   ],
-                     "facilityCount":  515,
-                     "physicianCount":  2565,
-                     "highCautiCount":  2,
-                     "name":  "Martinez",
-                     "company":  "Martinez",
-                     "email":  "joshua@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "padilla",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "AL",
-                                       "GA",
-                                       "MS"
-                                   ],
-                     "facilityCount":  314,
-                     "physicianCount":  1710,
-                     "highCautiCount":  2,
-                     "name":  "Padilla",
-                     "company":  "Padilla",
-                     "email":  "Rick@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "pierro",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "CT",
-                                       "MA",
-                                       "ME",
-                                       "NH",
-                                       "VT"
-                                   ],
-                     "facilityCount":  169,
-                     "physicianCount":  1941,
-                     "highCautiCount":  2,
-                     "name":  "Pierro",
-                     "company":  "Pierro",
-                     "email":  "mpierro@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "ralenkotter",
-                     "highVolumeCount":  43,
-                     "territory":  [
-                                       "IN",
-                                       "KY",
-                                       "MI",
-                                       "OH",
-                                       "WV"
-                                   ],
-                     "facilityCount":  552,
-                     "physicianCount":  4385,
-                     "highCautiCount":  4,
-                     "name":  "Ralenkotter",
-                     "company":  "Ralenkotter",
-                     "email":  "cole@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "richards",
-                     "highVolumeCount":  11,
-                     "territory":  [
-                                       "TN"
-                                   ],
-                     "facilityCount":  100,
-                     "physicianCount":  530,
-                     "highCautiCount":  0,
-                     "name":  "Richards",
-                     "company":  "Richards",
-                     "email":  "nathan@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "salmons",
-                     "highVolumeCount":  20,
-                     "territory":  [
-                                       "FL"
-                                   ],
-                     "facilityCount":  193,
-                     "physicianCount":  2452,
-                     "highCautiCount":  0,
-                     "name":  "Salmons",
-                     "company":  "Salmons",
-                     "email":  "bsalmons@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "steimel",
-                     "highVolumeCount":  16,
-                     "territory":  [
-                                       "IA",
-                                       "MN",
-                                       "WI"
-                                   ],
-                     "facilityCount":  369,
-                     "physicianCount":  1703,
-                     "highCautiCount":  2,
-                     "name":  "Steimel",
-                     "company":  "Steimel",
-                     "email":  "taylor@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "streit",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Streit",
-                     "company":  "Streit",
-                     "email":  "Tstreit@wasatchmedpsec.com"
-                 },
-                 {
-                     "slug":  "towns",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "TX"
-                                   ],
-                     "facilityCount":  396,
-                     "physicianCount":  2142,
-                     "highCautiCount":  1,
-                     "name":  "Towns",
-                     "company":  "Towns",
-                     "email":  "blake@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "virgo",
-                     "highVolumeCount":  39,
-                     "territory":  [
-                                       "NJ",
-                                       "NY"
-                                   ],
-                     "facilityCount":  225,
-                     "physicianCount":  3157,
-                     "highCautiCount":  2,
-                     "name":  "Virgo",
-                     "company":  "Virgo",
-                     "email":  "errol@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "whisner",
-                     "highVolumeCount":  59,
-                     "territory":  [
-                                       "CT",
-                                       "MA",
-                                       "ME",
-                                       "NH",
-                                       "NJ",
-                                       "NY",
-                                       "VT"
-                                   ],
-                     "facilityCount":  394,
-                     "physicianCount":  5098,
-                     "highCautiCount":  4,
-                     "name":  "Whisner",
-                     "company":  "Whisner",
-                     "email":  "Jim@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "whittiker",
-                     "highVolumeCount":  5,
-                     "territory":  [
-                                       "CO"
-                                   ],
-                     "facilityCount":  88,
-                     "physicianCount":  653,
-                     "highCautiCount":  0,
-                     "name":  "Whittiker",
-                     "company":  "Whittiker",
-                     "email":  "john@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "wood",
-                     "highVolumeCount":  1,
-                     "territory":  [
-                                       "ND",
-                                       "NE",
-                                       "SD"
-                                   ],
-                     "facilityCount":  196,
-                     "physicianCount":  542,
-                     "highCautiCount":  1,
-                     "name":  "Wood",
-                     "company":  "Wood",
-                     "email":  "matt@wasatchmedspec.com"
-                 },
-                 {
-                     "slug":  "sisco",
-                     "highVolumeCount":  39,
-                     "territory":  [
-                                       "LA",
-                                       "TX"
-                                   ],
-                     "facilityCount":  510,
-                     "physicianCount":  2636,
-                     "highCautiCount":  1,
-                     "name":  "Sisco",
-                     "company":  "Sisco",
-                     "email":  ""
-                 },
-                 {
-                     "slug":  "dowdy",
-                     "highVolumeCount":  15,
-                     "territory":  [
-                                       "OR",
-                                       "WA"
-                                   ],
-                     "facilityCount":  151,
-                     "physicianCount":  1133,
-                     "highCautiCount":  2,
-                     "name":  "Marti Dowdy",
-                     "company":  "Marti Dowdy",
-                     "email":  "marti@comedical.com"
-                 },
-                 {
-                     "slug":  "dennehy",
-                     "highVolumeCount":  12,
-                     "territory":  [
-                                       "WA"
-                                   ],
-                     "facilityCount":  91,
-                     "physicianCount":  667,
-                     "highCautiCount":  0,
-                     "name":  "Molly Dennehy",
-                     "company":  "Molly Dennehy",
-                     "email":  "molly@comedical.com"
-                 },
-                 {
-                     "slug":  "murray",
-                     "highVolumeCount":  12,
-                     "territory":  [
-                                       "WA"
-                                   ],
-                     "facilityCount":  91,
-                     "physicianCount":  667,
-                     "highCautiCount":  0,
-                     "name":  "Ryan Murray",
-                     "company":  "Ryan Murray",
-                     "email":  "ryan@comedical.com"
-                 },
-                 {
-                     "slug":  "hagarty",
-                     "highVolumeCount":  19,
-                     "territory":  [
-                                       "ID",
-                                       "MT",
-                                       "OR",
-                                       "WA"
-                                   ],
-                     "facilityCount":  257,
-                     "physicianCount":  1527,
-                     "highCautiCount":  2,
-                     "name":  "Nick Hagarty",
-                     "company":  "Nick Hagarty",
-                     "email":  "nick@comedical.com"
-                 },
-                 {
-                     "slug":  "collins",
-                     "highVolumeCount":  0,
-                     "territory":  [
-                                       "AK"
-                                   ],
-                     "facilityCount":  23,
-                     "physicianCount":  71,
-                     "highCautiCount":  0,
-                     "name":  "Erin Collins",
-                     "company":  "Erin Collins",
-                     "email":  "erin@comedical.com"
-                 },
-                 {
-                     "slug":  "titan",
-                     "highVolumeCount":  73,
-                     "territory":  [
-                                       "NY",
-                                       "OH",
-                                       "PA",
-                                       "WV"
-                                   ],
-                     "facilityCount":  535,
-                     "physicianCount":  5644,
-                     "highCautiCount":  3,
-                     "name":  "Michael Kearney",
-                     "company":  "Titan MedTech, LLC",
-                     "email":  "michaelkearney11@hotmail.com"
-                 },
-                 {
-                     "slug":  "intuitek",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "GA"
-                                   ],
-                     "facilityCount":  314,
-                     "physicianCount":  1710,
-                     "highCautiCount":  2,
-                     "name":  "Kevin Turner",
-                     "company":  "Intuitek Medical, Inc.",
-                     "email":  "kturner@intuitekmedical.com"
-                 },
-                 {
-                     "slug":  "intuitek",
-                     "highVolumeCount":  31,
-                     "territory":  [
-                                       "SC"
-                                   ],
-                     "facilityCount":  314,
-                     "physicianCount":  1710,
-                     "highCautiCount":  2,
-                     "name":  "Jeff Britt",
-                     "company":  "Intuitek Medical, Inc.",
-                     "email":  "kturner@intuitekmedical.com"
-                 },
-                 {
-                     "slug":  "stengel",
-                     "highVolumeCount":  28,
-                     "territory":  [
-                                       "MO"
-                                   ],
-                     "facilityCount":  490,
-                     "physicianCount":  2868,
-                     "highCautiCount":  1,
-                     "name":  "David Hoffman",
-                     "company":  "Stengel Medical Supply",
-                     "email":  "dave@forefrontmedical.net"
-                 },
-                 {
-                     "slug":  "stengel",
-                     "highVolumeCount":  28,
-                     "territory":  [
-                                       "IA",
-                                       "MO"
-                                   ],
-                     "facilityCount":  490,
-                     "physicianCount":  2868,
-                     "highCautiCount":  1,
-                     "name":  "Brad Stengel",
-                     "company":  "Stengel Medical Supply",
-                     "email":  "dave@forefrontmedical.net"
-                 },
-                 {
-                     "slug":  "genesis",
-                     "highVolumeCount":  35,
-                     "territory":  [
-                                       "OK",
-                                       "TX"
-                                   ],
-                     "facilityCount":  515,
-                     "physicianCount":  2565,
-                     "highCautiCount":  2,
-                     "name":  "Dave Riddle",
-                     "company":  "Genesis Medical Group",
-                     "email":  "dave@genesismedicalgroup.net"
-                 },
-                 {
-                     "slug":  "klea",
-                     "highVolumeCount":  27,
-                     "territory":  [
-                                       "IN",
-                                       "KY",
-                                       "OH"
-                                   ],
-                     "facilityCount":  371,
-                     "physicianCount":  2909,
-                     "highCautiCount":  2,
-                     "name":  "Derek Colins",
-                     "company":  "Klea Medical LLC",
-                     "email":  "derek@kleamedical.com"
-                 },
-                 {
-                     "slug":  "kleamedical",
-                     "highVolumeCount":  27,
-                     "territory":  [
-                                       "IN",
-                                       "KY",
-                                       "OH"
-                                   ],
-                     "facilityCount":  371,
-                     "physicianCount":  2909,
-                     "highCautiCount":  2,
-                     "name":  "Paul Wilson",
-                     "company":  "Klea Medical LLC",
-                     "email":  "vmsmedprod@gmail.com"
-                 },
-                 {
-                     "slug":  "klea",
-                     "highVolumeCount":  27,
-                     "territory":  [
-                                       "IN",
-                                       "KY",
-                                       "OH"
-                                   ],
-                     "facilityCount":  371,
-                     "physicianCount":  2909,
-                     "highCautiCount":  2,
-                     "name":  "Joe Rodriguez",
-                     "company":  "Klea Medical LLC",
-                     "email":  "derek@kleamedical.com"
-                 },
-                 {
-                     "slug":  "lifesource",
-                     "highVolumeCount":  54,
-                     "territory":  [
-                                       "CA",
-                                       "NV"
-                                   ],
-                     "facilityCount":  508,
-                     "physicianCount":  3719,
-                     "highCautiCount":  4,
-                     "name":  "Ted Black",
-                     "company":  "Life Source Medical, Inc.",
-                     "email":  "cardiac.ted@gmail.com"
-                 },
-                 {
-                     "slug":  "gptsurgical",
-                     "highVolumeCount":  32,
-                     "territory":  [
-                                       "AR",
-                                       "OK"
-                                   ],
-                     "facilityCount":  356,
-                     "physicianCount":  1405,
-                     "highCautiCount":  1,
-                     "name":  "Brent Fine",
-                     "company":  "GPT Surgical LLC",
-                     "email":  "bfine20@att.net"
-                 },
-                 {
-                     "slug":  "gptsurgical",
-                     "highVolumeCount":  32,
-                     "territory":  [
-                                       "AR",
-                                       "OK"
-                                   ],
-                     "facilityCount":  356,
-                     "physicianCount":  1405,
-                     "highCautiCount":  1,
-                     "name":  "Brandi Fine",
-                     "company":  "GPT Surgical LLC",
-                     "email":  "bfine20@att.net"
-                 }
-             ]
+{
+  "generated": "2026-03-23T18:23:48.900220Z",
+  "dataVersion": "08_2025",
+  "totalReps": 68,
+  "reps": [
+    {
+      "slug": "proactive",
+      "company": "Proactive Representation",
+      "name": "Mike Krym",
+      "email": "mikekrym@proactiverep.com",
+      "territory": [
+        "NY"
+      ],
+      "facilityCount": 161,
+      "physicianCount": 1972,
+      "highCautiCount": 2,
+      "highVolumeCount": 30
+    },
+    {
+      "slug": "healthcare-cellutions",
+      "company": "Healthcare Cellutions of Texas",
+      "name": "Brian McElhany",
+      "email": "brian@bioreach360.com",
+      "territory": [
+        "AR",
+        "LA",
+        "OK",
+        "TX"
+      ],
+      "facilityCount": 704,
+      "physicianCount": 3262,
+      "highCautiCount": 2,
+      "highVolumeCount": 48
+    },
+    {
+      "slug": "healthcare-cellutions",
+      "company": "Healthcare Cellutions of Texas",
+      "name": "Rocky Ray",
+      "email": "bioreach360@gmail.com",
+      "territory": [
+        "AR",
+        "LA",
+        "OK",
+        "TX"
+      ],
+      "facilityCount": 704,
+      "physicianCount": 3262,
+      "highCautiCount": 2,
+      "highVolumeCount": 48
+    },
+    {
+      "slug": "jordan-distribution",
+      "company": "Jordan Distribution Company LLC",
+      "name": "Jason Jordan",
+      "email": "jordandistributioncompany@gmail.com",
+      "territory": [
+        "KY",
+        "OH",
+        "WV"
+      ],
+      "facilityCount": 304,
+      "physicianCount": 2200,
+      "highCautiCount": 1,
+      "highVolumeCount": 26
+    },
+    {
+      "slug": "gollar-medical",
+      "company": "Gollar Medical LLC",
+      "name": "Jansen Gollar",
+      "email": "jansen@gollarmedical.com",
+      "territory": [
+        "IN",
+        "KY",
+        "OH"
+      ],
+      "facilityCount": 371,
+      "physicianCount": 2909,
+      "highCautiCount": 2,
+      "highVolumeCount": 27
+    },
+    {
+      "slug": "franklin-mountain-group",
+      "company": "Franklin Mountain Group Corp",
+      "name": "Kevin Brisco",
+      "email": "kevin.brisco@fmgmedical.com",
+      "territory": [
+        "NM",
+        "TN",
+        "TX"
+      ],
+      "facilityCount": 536,
+      "physicianCount": 2799,
+      "highCautiCount": 1,
+      "highVolumeCount": 44
+    },
+    {
+      "slug": "expert-medical-sales",
+      "company": "Expert Medical Sales",
+      "name": "Tony LaBruna",
+      "email": "tonybufny@yahoo.com",
+      "territory": [
+        "FL"
+      ],
+      "facilityCount": 193,
+      "physicianCount": 2452,
+      "highCautiCount": 0,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "activize",
+      "company": "Activize Inc",
+      "name": "Steve Corsello",
+      "email": "steve@activize.com",
+      "territory": [
+        "NJ",
+        "NY",
+        "PA"
+      ],
+      "facilityCount": 387,
+      "physicianCount": 5062,
+      "highCautiCount": 2,
+      "highVolumeCount": 62
+    },
+    {
+      "slug": "southern-surgical",
+      "company": "Southern Surgical Medical Device LLC",
+      "name": "Ron Wilkins",
+      "email": "rwilkins.ssmd@gmail.com",
+      "territory": [
+        "AL",
+        "FL",
+        "LA",
+        "MS",
+        "TN"
+      ],
+      "facilityCount": 588,
+      "physicianCount": 4148,
+      "highCautiCount": 1,
+      "highVolumeCount": 55
+    },
+    {
+      "slug": "samu-sales",
+      "company": "SAMU Sales LLC",
+      "name": "Scott Andrew",
+      "email": "scott@samusales.com",
+      "territory": [
+        "NJ",
+        "NY"
+      ],
+      "facilityCount": 225,
+      "physicianCount": 3157,
+      "highCautiCount": 2,
+      "highVolumeCount": 39
+    },
+    {
+      "slug": "fladmo",
+      "company": "Fladmo LLC",
+      "name": "Brian Fladmo",
+      "email": "brianfladmo@gmail.com",
+      "territory": [
+        "FL",
+        "LA",
+        "MS"
+      ],
+      "facilityCount": 398,
+      "physicianCount": 3193,
+      "highCautiCount": 0,
+      "highVolumeCount": 34
+    },
+    {
+      "slug": "a3-biomedical",
+      "company": "A3Biomedical LLC",
+      "name": "Alberto Espino",
+      "email": "aespino@a3biomedical.com",
+      "territory": [
+        "FL"
+      ],
+      "facilityCount": 193,
+      "physicianCount": 2452,
+      "highCautiCount": 0,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "mjfhealth",
+      "company": "MJF Health Inc.",
+      "name": "Myron Fox",
+      "email": "myronfox@verizon.net",
+      "territory": [
+        "NY"
+      ],
+      "facilityCount": 161,
+      "physicianCount": 1972,
+      "highCautiCount": 2,
+      "highVolumeCount": 30
+    },
+    {
+      "slug": "tplconsulting",
+      "company": "TPL Consulting LLC",
+      "name": "Tim Loughran",
+      "email": "loughran.timothy@gmail.com",
+      "territory": [
+        "FL"
+      ],
+      "facilityCount": 193,
+      "physicianCount": 2452,
+      "highCautiCount": 0,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "hubgroup",
+      "company": "HUBgroup LLC",
+      "name": "Scott Hubbard",
+      "email": "scotthubbard707@gmail.com",
+      "territory": [
+        "DC",
+        "MD",
+        "NC",
+        "SC",
+        "VA"
+      ],
+      "facilityCount": 307,
+      "physicianCount": 2993,
+      "highCautiCount": 0,
+      "highVolumeCount": 34
+    },
+    {
+      "slug": "zenecare",
+      "company": "Zenecare LLC",
+      "name": "Jeff Murphy",
+      "email": "jmurphy@zenecare.com",
+      "territory": [
+        "AZ",
+        "CA",
+        "NV",
+        "UT"
+      ],
+      "facilityCount": 508,
+      "physicianCount": 3719,
+      "highCautiCount": 4,
+      "highVolumeCount": 54
+    },
+    {
+      "slug": "zenecare",
+      "company": "Zenecare LLC",
+      "name": "Tyler Dehart",
+      "email": "tyler@zenecare.com",
+      "territory": [
+        "AZ",
+        "CA",
+        "NV",
+        "UT"
+      ],
+      "facilityCount": 508,
+      "physicianCount": 3719,
+      "highCautiCount": 4,
+      "highVolumeCount": 54
+    },
+    {
+      "slug": "zenecare",
+      "company": "Zenecare LLC",
+      "name": "Paul Ryan",
+      "email": "Pryan@zenecare.com",
+      "territory": [
+        "AZ",
+        "CA",
+        "NV",
+        "UT"
+      ],
+      "facilityCount": 508,
+      "physicianCount": 3719,
+      "highCautiCount": 4,
+      "highVolumeCount": 54
+    },
+    {
+      "slug": "signature-medical",
+      "company": "Signature Medical Products and Services LLC",
+      "name": "Tim Driscoll",
+      "email": "signaturemedicalproducts@gmail.com",
+      "territory": [
+        "CT",
+        "MA",
+        "ME",
+        "NH",
+        "RI",
+        "VT"
+      ],
+      "facilityCount": 180,
+      "physicianCount": 2108,
+      "highCautiCount": 2,
+      "highVolumeCount": 21
+    },
+    {
+      "slug": "uromobile",
+      "company": "Uromobile LLC",
+      "name": "Paulino Almaguer",
+      "email": "UroMobile@outlook.com",
+      "territory": [
+        "TX"
+      ],
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31
+    },
+    {
+      "slug": "streamline",
+      "company": "Streamline Savings LLC",
+      "name": "Gene Rozzi",
+      "email": "gene.rozzi@gmail.com",
+      "territory": [
+        "NY",
+        "OH",
+        "PA",
+        "WV"
+      ],
+      "facilityCount": 535,
+      "physicianCount": 5644,
+      "highCautiCount": 3,
+      "highVolumeCount": 73
+    },
+    {
+      "slug": "onpoint",
+      "company": "OnPoint Medcillory Solutions",
+      "name": "Jeffrey Jackson",
+      "email": "jeffreyjackson507@gmail.com",
+      "territory": [
+        "NJ",
+        "NY"
+      ],
+      "facilityCount": 225,
+      "physicianCount": 3157,
+      "highCautiCount": 2,
+      "highVolumeCount": 39
+    },
+    {
+      "slug": "tbmedical",
+      "company": "TB Medical Sales & Consulting",
+      "name": "Travis Beaulieu",
+      "email": "tbmedicalsales@gmail.com",
+      "territory": [
+        "NC",
+        "SC",
+        "TN"
+      ],
+      "facilityCount": 265,
+      "physicianCount": 2033,
+      "highCautiCount": 0,
+      "highVolumeCount": 33
+    },
+    {
+      "slug": "meinnovations",
+      "company": "Medical Equipment Innovations LLC",
+      "name": "Brendon Wood",
+      "email": "bhwood1@sbcglobal.net",
+      "territory": [
+        "NM",
+        "TX"
+      ],
+      "facilityCount": 436,
+      "physicianCount": 2269,
+      "highCautiCount": 1,
+      "highVolumeCount": 33
+    },
+    {
+      "slug": "sandia",
+      "company": "Sandia Medical Resources",
+      "name": "Luciano DeAngelis",
+      "email": "sandiamrtx@gmail.com",
+      "territory": [
+        "NM",
+        "TX"
+      ],
+      "facilityCount": 436,
+      "physicianCount": 2269,
+      "highCautiCount": 1,
+      "highVolumeCount": 33
+    },
+    {
+      "slug": "greatdane",
+      "company": "Great Dane Medical Solutions",
+      "name": "Dane Cope",
+      "email": "Garycope@bellsouth.net",
+      "territory": [
+        "AL",
+        "AR",
+        "MS",
+        "TN"
+      ],
+      "facilityCount": 356,
+      "physicianCount": 1405,
+      "highCautiCount": 1,
+      "highVolumeCount": 32
+    },
+    {
+      "slug": "emina-taylor",
+      "company": "Emina Taylor",
+      "name": "Emina Taylor",
+      "email": "Emina@floridalitho.com",
+      "territory": [
+        "FL"
+      ],
+      "facilityCount": 193,
+      "physicianCount": 2452,
+      "highCautiCount": 0,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "noreaster",
+      "company": "Noreaster Medical LLC",
+      "name": "Bennett Petrescu",
+      "email": "Bpetrescu@noreastermedical.com",
+      "territory": [
+        "CT",
+        "MA",
+        "ME",
+        "NH",
+        "RI",
+        "VT"
+      ],
+      "facilityCount": 180,
+      "physicianCount": 2108,
+      "highCautiCount": 2,
+      "highVolumeCount": 21
+    },
+    {
+      "slug": "healthcare-cellutions",
+      "company": "Healthcare Cellutions of Texas",
+      "name": "Christy Bland",
+      "email": "Blandchristy@hotmail.com",
+      "territory": [
+        "TX"
+      ],
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31
+    },
+    {
+      "slug": "chowning",
+      "company": "Chowning",
+      "name": "Chowning",
+      "email": "tyler@wasatchmedspec.com",
+      "territory": [
+        "AR",
+        "IL",
+        "KS",
+        "MO"
+      ],
+      "facilityCount": 490,
+      "physicianCount": 2868,
+      "highCautiCount": 1,
+      "highVolumeCount": 28
+    },
+    {
+      "slug": "gerrard",
+      "company": "Gerrard",
+      "name": "Gerrard",
+      "email": "nick@wasatchmedspec.com",
+      "territory": [
+        "NC",
+        "SC"
+      ],
+      "facilityCount": 165,
+      "physicianCount": 1503,
+      "highCautiCount": 0,
+      "highVolumeCount": 22
+    },
+    {
+      "slug": "ghanem",
+      "company": "Ghanem",
+      "name": "Ghanem",
+      "email": "rawad@wasatchmedspec.com",
+      "territory": [
+        "DE",
+        "MD",
+        "PA",
+        "VA"
+      ],
+      "facilityCount": 304,
+      "physicianCount": 3430,
+      "highCautiCount": 0,
+      "highVolumeCount": 34
+    },
+    {
+      "slug": "grosjean",
+      "company": "Grosjean",
+      "name": "Grosjean",
+      "email": "jase@altamedspec.com",
+      "territory": [
+        "CA"
+      ],
+      "facilityCount": 338,
+      "physicianCount": 2637,
+      "highCautiCount": 3,
+      "highVolumeCount": 37
+    },
+    {
+      "slug": "jackson",
+      "company": "Jackson",
+      "name": "Jackson",
+      "email": "toby@wasatchmedspec.com",
+      "territory": [
+        "TX"
+      ],
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31
+    },
+    {
+      "slug": "lamitina",
+      "company": "Lamitina",
+      "name": "Lamitina",
+      "email": "austin@wasatchmedspec.com",
+      "territory": [
+        "FL"
+      ],
+      "facilityCount": 193,
+      "physicianCount": 2452,
+      "highCautiCount": 0,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "lucier",
+      "company": "Lucier",
+      "name": "Lucier",
+      "email": "noah@wasatchmedspec.com",
+      "territory": [
+        "CT",
+        "MA",
+        "ME",
+        "NH",
+        "VT"
+      ],
+      "facilityCount": 169,
+      "physicianCount": 1941,
+      "highCautiCount": 2,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "mahoney",
+      "company": "Mahoney",
+      "name": "Mahoney",
+      "email": "darin@wasatchmedspec.com",
+      "territory": [
+        "UT"
+      ],
+      "facilityCount": 47,
+      "physicianCount": 237,
+      "highCautiCount": 0,
+      "highVolumeCount": 3
+    },
+    {
+      "slug": "martinez",
+      "company": "Martinez",
+      "name": "Martinez",
+      "email": "joshua@wasatchmedspec.com",
+      "territory": [
+        "OK",
+        "TX"
+      ],
+      "facilityCount": 515,
+      "physicianCount": 2565,
+      "highCautiCount": 2,
+      "highVolumeCount": 35
+    },
+    {
+      "slug": "padilla",
+      "company": "Padilla",
+      "name": "Padilla",
+      "email": "Rick@wasatchmedspec.com",
+      "territory": [
+        "AL",
+        "GA",
+        "MS"
+      ],
+      "facilityCount": 314,
+      "physicianCount": 1710,
+      "highCautiCount": 2,
+      "highVolumeCount": 31
+    },
+    {
+      "slug": "pierro",
+      "company": "Pierro",
+      "name": "Pierro",
+      "email": "mpierro@wasatchmedspec.com",
+      "territory": [
+        "CT",
+        "MA",
+        "ME",
+        "NH",
+        "VT"
+      ],
+      "facilityCount": 169,
+      "physicianCount": 1941,
+      "highCautiCount": 2,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "ralenkotter",
+      "company": "Ralenkotter",
+      "name": "Ralenkotter",
+      "email": "cole@wasatchmedspec.com",
+      "territory": [
+        "IN",
+        "KY",
+        "MI",
+        "OH",
+        "WV"
+      ],
+      "facilityCount": 552,
+      "physicianCount": 4385,
+      "highCautiCount": 4,
+      "highVolumeCount": 43
+    },
+    {
+      "slug": "richards",
+      "company": "Richards",
+      "name": "Richards",
+      "email": "nathan@wasatchmedspec.com",
+      "territory": [
+        "TN"
+      ],
+      "facilityCount": 100,
+      "physicianCount": 530,
+      "highCautiCount": 0,
+      "highVolumeCount": 11
+    },
+    {
+      "slug": "salmons",
+      "company": "Salmons",
+      "name": "Salmons",
+      "email": "bsalmons@wasatchmedspec.com",
+      "territory": [
+        "FL"
+      ],
+      "facilityCount": 193,
+      "physicianCount": 2452,
+      "highCautiCount": 0,
+      "highVolumeCount": 20
+    },
+    {
+      "slug": "steimel",
+      "company": "Steimel",
+      "name": "Steimel",
+      "email": "taylor@wasatchmedspec.com",
+      "territory": [
+        "IA",
+        "MN",
+        "WI"
+      ],
+      "facilityCount": 369,
+      "physicianCount": 1703,
+      "highCautiCount": 2,
+      "highVolumeCount": 16
+    },
+    {
+      "slug": "streit",
+      "company": "Streit",
+      "name": "Streit",
+      "email": "Tstreit@wasatchmedpsec.com",
+      "territory": [
+        "TX"
+      ],
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31
+    },
+    {
+      "slug": "towns",
+      "company": "Towns",
+      "name": "Towns",
+      "email": "blake@wasatchmedspec.com",
+      "territory": [
+        "TX"
+      ],
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31
+    },
+    {
+      "slug": "virgo",
+      "company": "Virgo",
+      "name": "Virgo",
+      "email": "errol@wasatchmedspec.com",
+      "territory": [
+        "NJ",
+        "NY"
+      ],
+      "facilityCount": 225,
+      "physicianCount": 3157,
+      "highCautiCount": 2,
+      "highVolumeCount": 39
+    },
+    {
+      "slug": "whisner",
+      "company": "Whisner",
+      "name": "Whisner",
+      "email": "Jim@wasatchmedspec.com",
+      "territory": [
+        "CT",
+        "MA",
+        "ME",
+        "NH",
+        "NJ",
+        "NY",
+        "VT"
+      ],
+      "facilityCount": 394,
+      "physicianCount": 5098,
+      "highCautiCount": 4,
+      "highVolumeCount": 59
+    },
+    {
+      "slug": "whittiker",
+      "company": "Whittiker",
+      "name": "Whittiker",
+      "email": "john@wasatchmedspec.com",
+      "territory": [
+        "CO"
+      ],
+      "facilityCount": 88,
+      "physicianCount": 653,
+      "highCautiCount": 0,
+      "highVolumeCount": 5
+    },
+    {
+      "slug": "wood",
+      "company": "Wood",
+      "name": "Wood",
+      "email": "matt@wasatchmedspec.com",
+      "territory": [
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 196,
+      "physicianCount": 542,
+      "highCautiCount": 1,
+      "highVolumeCount": 1
+    },
+    {
+      "slug": "sisco",
+      "company": "Sisco",
+      "name": "Sisco",
+      "email": "NotListed",
+      "territory": [
+        "LA",
+        "TX"
+      ],
+      "facilityCount": 510,
+      "physicianCount": 2636,
+      "highCautiCount": 1,
+      "highVolumeCount": 39
+    },
+    {
+      "slug": "dowdy",
+      "company": "Marti  Dowdy",
+      "name": "Marti  Dowdy",
+      "email": "marti@comedical.com",
+      "territory": [
+        "OR",
+        "WA"
+      ],
+      "facilityCount": 151,
+      "physicianCount": 1133,
+      "highCautiCount": 2,
+      "highVolumeCount": 15
+    },
+    {
+      "slug": "dennehy",
+      "company": "Molly Dennehy",
+      "name": "Molly Dennehy",
+      "email": "molly@comedical.com",
+      "territory": [
+        "WA"
+      ],
+      "facilityCount": 91,
+      "physicianCount": 667,
+      "highCautiCount": 0,
+      "highVolumeCount": 12
+    },
+    {
+      "slug": "murray",
+      "company": "Ryan Murray",
+      "name": "Ryan Murray",
+      "email": "ryan@comedical.com",
+      "territory": [
+        "WA"
+      ],
+      "facilityCount": 91,
+      "physicianCount": 667,
+      "highCautiCount": 0,
+      "highVolumeCount": 12
+    },
+    {
+      "slug": "hagarty",
+      "company": "Nick Hagarty",
+      "name": "Nick Hagarty",
+      "email": "nick@comedical.com",
+      "territory": [
+        "ID",
+        "MT",
+        "OR",
+        "WA"
+      ],
+      "facilityCount": 257,
+      "physicianCount": 1527,
+      "highCautiCount": 2,
+      "highVolumeCount": 19
+    },
+    {
+      "slug": "collins",
+      "company": "Erin Collins",
+      "name": "Erin Collins",
+      "email": "erin@comedical.com",
+      "territory": [
+        "AK"
+      ],
+      "facilityCount": 23,
+      "physicianCount": 71,
+      "highCautiCount": 0,
+      "highVolumeCount": 0
+    },
+    {
+      "slug": "titan",
+      "company": "Titan MedTech, LLC",
+      "name": "Michael Kearney",
+      "email": "michaelkearney11@hotmail.com",
+      "territory": [
+        "NY",
+        "OH",
+        "PA",
+        "WV"
+      ],
+      "facilityCount": 535,
+      "physicianCount": 5644,
+      "highCautiCount": 3,
+      "highVolumeCount": 73
+    },
+    {
+      "slug": "intuitek",
+      "company": "Intuitek Medical, Inc.",
+      "name": "Kevin Turner",
+      "email": "kturner@intuitekmedical.com",
+      "territory": [
+        "GA"
+      ],
+      "facilityCount": 133,
+      "physicianCount": 1038,
+      "highCautiCount": 1,
+      "highVolumeCount": 15
+    },
+    {
+      "slug": "intuitek",
+      "company": "Intuitek Medical, Inc.",
+      "name": "Jeff Britt",
+      "email": "Jeffbrittmx3@gmail.com",
+      "territory": [
+        "SC"
+      ],
+      "facilityCount": 58,
+      "physicianCount": 534,
+      "highCautiCount": 0,
+      "highVolumeCount": 9
+    },
+    {
+      "slug": "stengel",
+      "company": "Stengel Medical Supply",
+      "name": "David Hoffman",
+      "email": "dave@forefrontmedical.net",
+      "territory": [
+        "MO"
+      ],
+      "facilityCount": 107,
+      "physicianCount": 701,
+      "highCautiCount": 1,
+      "highVolumeCount": 7
+    },
+    {
+      "slug": "stengel",
+      "company": "Stengel Medical Supply",
+      "name": "Brad Stengel",
+      "email": "stengelbrad@gmail.com",
+      "territory": [
+        "IA",
+        "MO"
+      ],
+      "facilityCount": 222,
+      "physicianCount": 1085,
+      "highCautiCount": 2,
+      "highVolumeCount": 10
+    },
+    {
+      "slug": "genesis",
+      "company": "Genesis Medical Group",
+      "name": "Dave Riddle",
+      "email": "dave@genesismedicalgroup.net",
+      "territory": [
+        "OK",
+        "TX"
+      ],
+      "facilityCount": 515,
+      "physicianCount": 2565,
+      "highCautiCount": 2,
+      "highVolumeCount": 35
+    },
+    {
+      "slug": "klea",
+      "company": "Klea Medical LLC",
+      "name": "Derek Colins",
+      "email": "derek@kleamedical.com",
+      "territory": [
+        "IN",
+        "KY",
+        "OH"
+      ],
+      "facilityCount": 371,
+      "physicianCount": 2909,
+      "highCautiCount": 2,
+      "highVolumeCount": 27
+    },
+    {
+      "slug": "kleamedical",
+      "company": "Klea Medical LLC",
+      "name": "Paul Wilson",
+      "email": "vmsmedprod@gmail.com",
+      "territory": [
+        "IN",
+        "KY",
+        "OH"
+      ],
+      "facilityCount": 371,
+      "physicianCount": 2909,
+      "highCautiCount": 2,
+      "highVolumeCount": 27
+    },
+    {
+      "slug": "klea",
+      "company": "Klea Medical LLC",
+      "name": "Joe Rodriguez",
+      "email": "joerodmedical@gmail.com",
+      "territory": [
+        "IN",
+        "KY",
+        "OH"
+      ],
+      "facilityCount": 371,
+      "physicianCount": 2909,
+      "highCautiCount": 2,
+      "highVolumeCount": 27
+    },
+    {
+      "slug": "lifesource",
+      "company": "Life Source Medical, Inc.",
+      "name": "Ted Black",
+      "email": "cardiac.ted@gmail.com",
+      "territory": [
+        "CA",
+        "NV"
+      ],
+      "facilityCount": 376,
+      "physicianCount": 2868,
+      "highCautiCount": 3,
+      "highVolumeCount": 42
+    },
+    {
+      "slug": "gptsurgical",
+      "company": "GPT Surgical LLC",
+      "name": "Brent Fine",
+      "email": "bfine20@att.net",
+      "territory": [
+        "AR",
+        "OK"
+      ],
+      "facilityCount": 194,
+      "physicianCount": 626,
+      "highCautiCount": 1,
+      "highVolumeCount": 9
+    },
+    {
+      "slug": "gptsurgical",
+      "company": "GPT Surgical LLC",
+      "name": "Brandi Fine",
+      "email": "brandi.fine@yahoo.com",
+      "territory": [
+        "AR",
+        "OK"
+      ],
+      "facilityCount": 194,
+      "physicianCount": 626,
+      "highCautiCount": 1,
+      "highVolumeCount": 9
+    }
+  ]
 }

@@ -425,8 +425,8 @@ def generate_rep_json(rep_row: pd.Series, facilities_df: pd.DataFrame) -> dict:
     # Parse URL to get slug
     slug = slugify(company)
     if url:
-        # Extract last part of URL as potential slug
-        url_parts = url.replace("silq.tech/", "").replace("https://", "").replace("http://", "").split("/")
+        url_clean = url.replace("https://", "").replace("http://", "").replace("www.", "")
+        url_parts = url_clean.replace("silq.tech/", "").split("/")
         if url_parts and url_parts[-1]:
             slug = slugify(url_parts[-1])
     
