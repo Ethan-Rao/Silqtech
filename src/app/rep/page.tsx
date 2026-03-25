@@ -8,6 +8,7 @@ import { PasswordGate } from '@/components/ui/PasswordGate'
 
 interface RepEntry {
   slug: string
+  urlPath: string
   company: string
   name: string
   email: string
@@ -63,11 +64,6 @@ export default function RepDirectoryPage() {
     return matchesSearch && matchesState
   }) || []
 
-  // Remove duplicates by slug
-  const uniqueReps = filteredReps.filter((rep, index, self) => 
-    index === self.findIndex(r => r.slug === rep.slug)
-  )
-
   if (loading) {
     return (
       <PasswordGate>
@@ -107,7 +103,7 @@ export default function RepDirectoryPage() {
                 className="mt-12 max-w-2xl mx-auto grid grid-cols-2 gap-4"
               >
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <p className="text-3xl font-bold">{uniqueReps.length}</p>
+                  <p className="text-3xl font-bold">{filteredReps.length}</p>
                   <p className="text-sm text-white/60">Total Reps</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
@@ -168,19 +164,19 @@ export default function RepDirectoryPage() {
       <section className="section-padding">
         <div className="container-silq">
           <p className="text-sm text-silq-dark/60 mb-6">
-            Showing {uniqueReps.length} territories
+            Showing {filteredReps.length} reps
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {uniqueReps.map((rep, index) => (
+            {filteredReps.map((rep, index) => (
               <motion.div
-                key={rep.slug}
+                key={`${rep.slug}-${rep.name}-${index}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
+                transition={{ duration: 0.4, delay: Math.min(index * 0.03, 1) }}
               >
                 <Link 
-                  href={`/rep/${rep.slug}`}
+                  href={rep.urlPath || `/${rep.slug}`}
                   className="block bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-silq-dark/5 hover:border-silq-blue/20 group"
                 >
                   <div className="flex items-start justify-between mb-4">
@@ -232,9 +228,9 @@ export default function RepDirectoryPage() {
             ))}
           </div>
 
-          {uniqueReps.length === 0 && (
+          {filteredReps.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-silq-dark/60">No territories match your search criteria.</p>
+              <p className="text-silq-dark/60">No reps match your search criteria.</p>
             </div>
           )}
         </div>

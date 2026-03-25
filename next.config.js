@@ -12,6 +12,7 @@ const nextConfig = {
   async rewrites() {
     return [
       // ROOT LEVEL REP PAGES
+      { source: '/healthcare-cellutions', destination: '/rep/healthcare-cellutions' },
       { source: '/jordan-distribution', destination: '/rep/jordan-distribution' },
       { source: '/gollar-medical', destination: '/rep/gollar-medical' },
       { source: '/franklin-mountain-group', destination: '/rep/franklin-mountain-group' },
@@ -79,8 +80,8 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Redirects from old /rep/old-slug to new canonical vanity URLs
-      { source: '/rep/healthcare-cellutions-of-texas', destination: '/rep/healthcare-cellutions', permanent: true },
+      // Redirects from old verbose /rep/old-slug to clean vanity URLs
+      { source: '/rep/healthcare-cellutions-of-texas', destination: '/healthcare-cellutions', permanent: true },
       { source: '/rep/jordan-distribution-company-llc', destination: '/jordan-distribution', permanent: true },
       { source: '/rep/gollar-medical-llc', destination: '/gollar-medical', permanent: true },
       { source: '/rep/franklin-mountain-group-corp', destination: '/franklin-mountain-group', permanent: true },
@@ -104,10 +105,11 @@ const nextConfig = {
       { source: '/rep/great-dane-medical-solutions', destination: '/greatdane', permanent: true },
       { source: '/rep/noreaster-medical-llc', destination: '/noreaster', permanent: true },
       { source: '/rep/emina-taylor', destination: '/emina-taylor', permanent: true },
-      // Also redirect old vanity URLs that have changed
-      { source: '/proactive-representation', destination: '/rep/proactive', permanent: true },
-      { source: '/healthcare-cellutions', destination: '/rep/healthcare-cellutions', permanent: true },
+
       // Removed rep redirects (point to rep directory)
+      { source: '/rep/proactive', destination: '/rep', permanent: true },
+      { source: '/proactive', destination: '/rep', permanent: true },
+      { source: '/proactive-representation', destination: '/rep', permanent: true },
       { source: '/rep/mark-klinkacek', destination: '/rep', permanent: true },
       { source: '/mark-klinkacek', destination: '/rep', permanent: true },
       { source: '/rep/jh-medical', destination: '/rep', permanent: true },
@@ -116,6 +118,7 @@ const nextConfig = {
       { source: '/patriot-medical', destination: '/rep', permanent: true },
       { source: '/rep/dwb-medical-inc', destination: '/rep', permanent: true },
       { source: '/dwb', destination: '/rep', permanent: true },
+
       // Wasatch redirects (old /rep/name → /wasatch/name)
       { source: '/rep/chowning', destination: '/wasatch/chowning', permanent: true },
       { source: '/rep/gerrard', destination: '/wasatch/gerrard', permanent: true },
@@ -139,18 +142,21 @@ const nextConfig = {
       { source: '/rep/whittiker', destination: '/wasatch/whittiker', permanent: true },
       { source: '/rep/wood', destination: '/wasatch/wood', permanent: true },
       { source: '/rep/sisco', destination: '/wasatch/sisco', permanent: true },
+
       // Comedical redirects (old /rep/name → /comedical/name)
       { source: '/rep/marti-dowdy', destination: '/comedical/dowdy', permanent: true },
       { source: '/rep/molly-dennehy', destination: '/comedical/dennehy', permanent: true },
       { source: '/rep/ryan-murray', destination: '/comedical/murray', permanent: true },
       { source: '/rep/nick-hagarty', destination: '/comedical/hagarty', permanent: true },
       { source: '/rep/erin-collins', destination: '/comedical/collins', permanent: true },
-      // Also redirect old comedical slugs that changed
       { source: '/rep/dowdy', destination: '/comedical/dowdy', permanent: true },
       { source: '/rep/dennehy', destination: '/comedical/dennehy', permanent: true },
       { source: '/rep/murray', destination: '/comedical/murray', permanent: true },
       { source: '/rep/hagarty', destination: '/comedical/hagarty', permanent: true },
       { source: '/rep/collins', destination: '/comedical/collins', permanent: true },
+
+      // Catch-all: any remaining /rep/slug → /slug (must be LAST)
+      { source: '/rep/:slug', destination: '/:slug', permanent: true },
     ]
   },
 }

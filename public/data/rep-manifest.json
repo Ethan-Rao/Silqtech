@@ -1,21 +1,8 @@
 {
-  "generated": "2026-03-23T18:23:48.900220Z",
+  "generated": "2026-03-25T22:44:58.473Z",
   "dataVersion": "08_2025",
-  "totalReps": 68,
+  "totalReps": 67,
   "reps": [
-    {
-      "slug": "proactive",
-      "company": "Proactive Representation",
-      "name": "Mike Krym",
-      "email": "mikekrym@proactiverep.com",
-      "territory": [
-        "NY"
-      ],
-      "facilityCount": 161,
-      "physicianCount": 1972,
-      "highCautiCount": 2,
-      "highVolumeCount": 30
-    },
     {
       "slug": "healthcare-cellutions",
       "company": "Healthcare Cellutions of Texas",
@@ -30,7 +17,8 @@
       "facilityCount": 704,
       "physicianCount": 3262,
       "highCautiCount": 2,
-      "highVolumeCount": 48
+      "highVolumeCount": 48,
+      "urlPath": "/healthcare-cellutions"
     },
     {
       "slug": "healthcare-cellutions",
@@ -46,7 +34,8 @@
       "facilityCount": 704,
       "physicianCount": 3262,
       "highCautiCount": 2,
-      "highVolumeCount": 48
+      "highVolumeCount": 48,
+      "urlPath": "/healthcare-cellutions"
     },
     {
       "slug": "jordan-distribution",
@@ -61,7 +50,8 @@
       "facilityCount": 304,
       "physicianCount": 2200,
       "highCautiCount": 1,
-      "highVolumeCount": 26
+      "highVolumeCount": 26,
+      "urlPath": "/jordan-distribution"
     },
     {
       "slug": "gollar-medical",
@@ -76,7 +66,8 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "urlPath": "/gollar-medical"
     },
     {
       "slug": "franklin-mountain-group",
@@ -91,7 +82,8 @@
       "facilityCount": 536,
       "physicianCount": 2799,
       "highCautiCount": 1,
-      "highVolumeCount": 44
+      "highVolumeCount": 44,
+      "urlPath": "/franklin-mountain-group"
     },
     {
       "slug": "expert-medical-sales",
@@ -104,7 +96,8 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/expert-medical-sales"
     },
     {
       "slug": "activize",
@@ -119,7 +112,8 @@
       "facilityCount": 387,
       "physicianCount": 5062,
       "highCautiCount": 2,
-      "highVolumeCount": 62
+      "highVolumeCount": 62,
+      "urlPath": "/activize"
     },
     {
       "slug": "southern-surgical",
@@ -136,7 +130,8 @@
       "facilityCount": 588,
       "physicianCount": 4148,
       "highCautiCount": 1,
-      "highVolumeCount": 55
+      "highVolumeCount": 55,
+      "urlPath": "/southern-surgical"
     },
     {
       "slug": "samu-sales",
@@ -150,7 +145,8 @@
       "facilityCount": 225,
       "physicianCount": 3157,
       "highCautiCount": 2,
-      "highVolumeCount": 39
+      "highVolumeCount": 39,
+      "urlPath": "/samu-sales"
     },
     {
       "slug": "fladmo",
@@ -165,7 +161,8 @@
       "facilityCount": 398,
       "physicianCount": 3193,
       "highCautiCount": 0,
-      "highVolumeCount": 34
+      "highVolumeCount": 34,
+      "urlPath": "/fladmo"
     },
     {
       "slug": "a3-biomedical",
@@ -178,7 +175,8 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/a3-biomedical"
     },
     {
       "slug": "mjfhealth",
@@ -191,7 +189,8 @@
       "facilityCount": 161,
       "physicianCount": 1972,
       "highCautiCount": 2,
-      "highVolumeCount": 30
+      "highVolumeCount": 30,
+      "urlPath": "/mjfhealth"
     },
     {
       "slug": "tplconsulting",
@@ -204,7 +203,8 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/tplconsulting"
     },
     {
       "slug": "hubgroup",
@@ -221,7 +221,8 @@
       "facilityCount": 307,
       "physicianCount": 2993,
       "highCautiCount": 0,
-      "highVolumeCount": 34
+      "highVolumeCount": 34,
+      "urlPath": "/hubgroup"
     },
     {
       "slug": "zenecare",
@@ -237,7 +238,8 @@
       "facilityCount": 508,
       "physicianCount": 3719,
       "highCautiCount": 4,
-      "highVolumeCount": 54
+      "highVolumeCount": 54,
+      "urlPath": "/zenecare"
     },
     {
       "slug": "zenecare",
@@ -253,7 +255,8 @@
       "facilityCount": 508,
       "physicianCount": 3719,
       "highCautiCount": 4,
-      "highVolumeCount": 54
+      "highVolumeCount": 54,
+      "urlPath": "/zenecare"
     },
     {
       "slug": "zenecare",
@@ -269,7 +272,8 @@
       "facilityCount": 508,
       "physicianCount": 3719,
       "highCautiCount": 4,
-      "highVolumeCount": 54
+      "highVolumeCount": 54,
+      "urlPath": "/zenecare"
     },
     {
       "slug": "signature-medical",
@@ -287,7 +291,8 @@
       "facilityCount": 180,
       "physicianCount": 2108,
       "highCautiCount": 2,
-      "highVolumeCount": 21
+      "highVolumeCount": 21,
+      "urlPath": "/signature-medical"
     },
     {
       "slug": "uromobile",
@@ -300,7 +305,8 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "urlPath": "/uromobile"
     },
     {
       "slug": "streamline",
@@ -316,7 +322,8 @@
       "facilityCount": 535,
       "physicianCount": 5644,
       "highCautiCount": 3,
-      "highVolumeCount": 73
+      "highVolumeCount": 73,
+      "urlPath": "/streamline"
     },
     {
       "slug": "onpoint",
@@ -330,7 +337,8 @@
       "facilityCount": 225,
       "physicianCount": 3157,
       "highCautiCount": 2,
-      "highVolumeCount": 39
+      "highVolumeCount": 39,
+      "urlPath": "/onpoint"
     },
     {
       "slug": "tbmedical",
@@ -345,7 +353,8 @@
       "facilityCount": 265,
       "physicianCount": 2033,
       "highCautiCount": 0,
-      "highVolumeCount": 33
+      "highVolumeCount": 33,
+      "urlPath": "/tbmedical"
     },
     {
       "slug": "meinnovations",
@@ -359,7 +368,8 @@
       "facilityCount": 436,
       "physicianCount": 2269,
       "highCautiCount": 1,
-      "highVolumeCount": 33
+      "highVolumeCount": 33,
+      "urlPath": "/meinnovations"
     },
     {
       "slug": "sandia",
@@ -373,7 +383,8 @@
       "facilityCount": 436,
       "physicianCount": 2269,
       "highCautiCount": 1,
-      "highVolumeCount": 33
+      "highVolumeCount": 33,
+      "urlPath": "/sandia"
     },
     {
       "slug": "greatdane",
@@ -389,7 +400,8 @@
       "facilityCount": 356,
       "physicianCount": 1405,
       "highCautiCount": 1,
-      "highVolumeCount": 32
+      "highVolumeCount": 32,
+      "urlPath": "/greatdane"
     },
     {
       "slug": "emina-taylor",
@@ -402,7 +414,8 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/emina-taylor"
     },
     {
       "slug": "noreaster",
@@ -420,7 +433,8 @@
       "facilityCount": 180,
       "physicianCount": 2108,
       "highCautiCount": 2,
-      "highVolumeCount": 21
+      "highVolumeCount": 21,
+      "urlPath": "/noreaster"
     },
     {
       "slug": "healthcare-cellutions",
@@ -433,7 +447,8 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "urlPath": "/healthcare-cellutions"
     },
     {
       "slug": "chowning",
@@ -449,7 +464,8 @@
       "facilityCount": 490,
       "physicianCount": 2868,
       "highCautiCount": 1,
-      "highVolumeCount": 28
+      "highVolumeCount": 28,
+      "urlPath": "/wasatch/chowning"
     },
     {
       "slug": "gerrard",
@@ -463,7 +479,8 @@
       "facilityCount": 165,
       "physicianCount": 1503,
       "highCautiCount": 0,
-      "highVolumeCount": 22
+      "highVolumeCount": 22,
+      "urlPath": "/wasatch/gerrard"
     },
     {
       "slug": "ghanem",
@@ -479,7 +496,8 @@
       "facilityCount": 304,
       "physicianCount": 3430,
       "highCautiCount": 0,
-      "highVolumeCount": 34
+      "highVolumeCount": 34,
+      "urlPath": "/wasatch/ghanem"
     },
     {
       "slug": "grosjean",
@@ -492,7 +510,8 @@
       "facilityCount": 338,
       "physicianCount": 2637,
       "highCautiCount": 3,
-      "highVolumeCount": 37
+      "highVolumeCount": 37,
+      "urlPath": "/wasatch/grosjean"
     },
     {
       "slug": "jackson",
@@ -505,7 +524,8 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "urlPath": "/wasatch/jackson"
     },
     {
       "slug": "lamitina",
@@ -518,7 +538,8 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/wasatch/lamitina"
     },
     {
       "slug": "lucier",
@@ -535,7 +556,8 @@
       "facilityCount": 169,
       "physicianCount": 1941,
       "highCautiCount": 2,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/wasatch/lucier"
     },
     {
       "slug": "mahoney",
@@ -548,7 +570,8 @@
       "facilityCount": 47,
       "physicianCount": 237,
       "highCautiCount": 0,
-      "highVolumeCount": 3
+      "highVolumeCount": 3,
+      "urlPath": "/wasatch/mahoney"
     },
     {
       "slug": "martinez",
@@ -562,7 +585,8 @@
       "facilityCount": 515,
       "physicianCount": 2565,
       "highCautiCount": 2,
-      "highVolumeCount": 35
+      "highVolumeCount": 35,
+      "urlPath": "/wasatch/martinez"
     },
     {
       "slug": "padilla",
@@ -577,7 +601,8 @@
       "facilityCount": 314,
       "physicianCount": 1710,
       "highCautiCount": 2,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "urlPath": "/wasatch/padilla"
     },
     {
       "slug": "pierro",
@@ -594,7 +619,8 @@
       "facilityCount": 169,
       "physicianCount": 1941,
       "highCautiCount": 2,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/wasatch/pierro"
     },
     {
       "slug": "ralenkotter",
@@ -611,7 +637,8 @@
       "facilityCount": 552,
       "physicianCount": 4385,
       "highCautiCount": 4,
-      "highVolumeCount": 43
+      "highVolumeCount": 43,
+      "urlPath": "/wasatch/ralenkotter"
     },
     {
       "slug": "richards",
@@ -624,7 +651,8 @@
       "facilityCount": 100,
       "physicianCount": 530,
       "highCautiCount": 0,
-      "highVolumeCount": 11
+      "highVolumeCount": 11,
+      "urlPath": "/wasatch/richards"
     },
     {
       "slug": "salmons",
@@ -637,7 +665,8 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "urlPath": "/wasatch/salmons"
     },
     {
       "slug": "steimel",
@@ -652,7 +681,8 @@
       "facilityCount": 369,
       "physicianCount": 1703,
       "highCautiCount": 2,
-      "highVolumeCount": 16
+      "highVolumeCount": 16,
+      "urlPath": "/wasatch/steimel"
     },
     {
       "slug": "streit",
@@ -665,7 +695,8 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "urlPath": "/wasatch/streit"
     },
     {
       "slug": "towns",
@@ -678,7 +709,8 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "urlPath": "/wasatch/towns"
     },
     {
       "slug": "virgo",
@@ -692,7 +724,8 @@
       "facilityCount": 225,
       "physicianCount": 3157,
       "highCautiCount": 2,
-      "highVolumeCount": 39
+      "highVolumeCount": 39,
+      "urlPath": "/wasatch/virgo"
     },
     {
       "slug": "whisner",
@@ -711,7 +744,8 @@
       "facilityCount": 394,
       "physicianCount": 5098,
       "highCautiCount": 4,
-      "highVolumeCount": 59
+      "highVolumeCount": 59,
+      "urlPath": "/wasatch/whisner"
     },
     {
       "slug": "whittiker",
@@ -724,7 +758,8 @@
       "facilityCount": 88,
       "physicianCount": 653,
       "highCautiCount": 0,
-      "highVolumeCount": 5
+      "highVolumeCount": 5,
+      "urlPath": "/wasatch/whittiker"
     },
     {
       "slug": "wood",
@@ -739,7 +774,8 @@
       "facilityCount": 196,
       "physicianCount": 542,
       "highCautiCount": 1,
-      "highVolumeCount": 1
+      "highVolumeCount": 1,
+      "urlPath": "/wasatch/wood"
     },
     {
       "slug": "sisco",
@@ -753,7 +789,8 @@
       "facilityCount": 510,
       "physicianCount": 2636,
       "highCautiCount": 1,
-      "highVolumeCount": 39
+      "highVolumeCount": 39,
+      "urlPath": "/wasatch/sisco"
     },
     {
       "slug": "dowdy",
@@ -767,7 +804,8 @@
       "facilityCount": 151,
       "physicianCount": 1133,
       "highCautiCount": 2,
-      "highVolumeCount": 15
+      "highVolumeCount": 15,
+      "urlPath": "/comedical/dowdy"
     },
     {
       "slug": "dennehy",
@@ -780,7 +818,8 @@
       "facilityCount": 91,
       "physicianCount": 667,
       "highCautiCount": 0,
-      "highVolumeCount": 12
+      "highVolumeCount": 12,
+      "urlPath": "/comedical/dennehy"
     },
     {
       "slug": "murray",
@@ -793,7 +832,8 @@
       "facilityCount": 91,
       "physicianCount": 667,
       "highCautiCount": 0,
-      "highVolumeCount": 12
+      "highVolumeCount": 12,
+      "urlPath": "/comedical/murray"
     },
     {
       "slug": "hagarty",
@@ -809,7 +849,8 @@
       "facilityCount": 257,
       "physicianCount": 1527,
       "highCautiCount": 2,
-      "highVolumeCount": 19
+      "highVolumeCount": 19,
+      "urlPath": "/comedical/hagarty"
     },
     {
       "slug": "collins",
@@ -822,7 +863,8 @@
       "facilityCount": 23,
       "physicianCount": 71,
       "highCautiCount": 0,
-      "highVolumeCount": 0
+      "highVolumeCount": 0,
+      "urlPath": "/comedical/collins"
     },
     {
       "slug": "titan",
@@ -838,7 +880,8 @@
       "facilityCount": 535,
       "physicianCount": 5644,
       "highCautiCount": 3,
-      "highVolumeCount": 73
+      "highVolumeCount": 73,
+      "urlPath": "/titan"
     },
     {
       "slug": "intuitek",
@@ -851,7 +894,8 @@
       "facilityCount": 133,
       "physicianCount": 1038,
       "highCautiCount": 1,
-      "highVolumeCount": 15
+      "highVolumeCount": 15,
+      "urlPath": "/intuitek"
     },
     {
       "slug": "intuitek",
@@ -864,7 +908,8 @@
       "facilityCount": 58,
       "physicianCount": 534,
       "highCautiCount": 0,
-      "highVolumeCount": 9
+      "highVolumeCount": 9,
+      "urlPath": "/intuitek"
     },
     {
       "slug": "stengel",
@@ -877,7 +922,8 @@
       "facilityCount": 107,
       "physicianCount": 701,
       "highCautiCount": 1,
-      "highVolumeCount": 7
+      "highVolumeCount": 7,
+      "urlPath": "/stengel"
     },
     {
       "slug": "stengel",
@@ -891,7 +937,8 @@
       "facilityCount": 222,
       "physicianCount": 1085,
       "highCautiCount": 2,
-      "highVolumeCount": 10
+      "highVolumeCount": 10,
+      "urlPath": "/stengel"
     },
     {
       "slug": "genesis",
@@ -905,7 +952,8 @@
       "facilityCount": 515,
       "physicianCount": 2565,
       "highCautiCount": 2,
-      "highVolumeCount": 35
+      "highVolumeCount": 35,
+      "urlPath": "/genesis"
     },
     {
       "slug": "klea",
@@ -920,7 +968,8 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "urlPath": "/klea"
     },
     {
       "slug": "kleamedical",
@@ -935,7 +984,8 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "urlPath": "/kleamedical"
     },
     {
       "slug": "klea",
@@ -950,7 +1000,8 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "urlPath": "/klea"
     },
     {
       "slug": "lifesource",
@@ -964,7 +1015,8 @@
       "facilityCount": 376,
       "physicianCount": 2868,
       "highCautiCount": 3,
-      "highVolumeCount": 42
+      "highVolumeCount": 42,
+      "urlPath": "/lifesource"
     },
     {
       "slug": "gptsurgical",
@@ -978,7 +1030,8 @@
       "facilityCount": 194,
       "physicianCount": 626,
       "highCautiCount": 1,
-      "highVolumeCount": 9
+      "highVolumeCount": 9,
+      "urlPath": "/gptsurgical"
     },
     {
       "slug": "gptsurgical",
@@ -992,7 +1045,8 @@
       "facilityCount": 194,
       "physicianCount": 626,
       "highCautiCount": 1,
-      "highVolumeCount": 9
+      "highVolumeCount": 9,
+      "urlPath": "/gptsurgical"
     }
   ]
 }
