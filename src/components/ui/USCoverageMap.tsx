@@ -66,6 +66,7 @@ interface RepEntry {
   name: string
   email: string
   territory: string[]
+  primaryState?: string
   facilityCount: number
   physicianCount: number
   highCautiCount: number
@@ -73,8 +74,10 @@ interface RepEntry {
 }
 
 interface StateData {
-  count: number
-  reps: RepEntry[]
+  primaryCount: number
+  secondaryCount: number
+  primaryReps: RepEntry[]
+  secondaryReps: RepEntry[]
 }
 
 interface USCoverageMapProps {
@@ -85,19 +88,26 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
   const [selectedState, setSelectedState] = useState<string | null>(null)
   const [hoveredState, setHoveredState] = useState<string | null>(null)
 
-  // Calculate reps per state
+  // Calculate reps per state, split into primary and secondary
   const repsByState = useMemo(() => {
     const stateData: Record<string, StateData> = {}
     
     reps.forEach(rep => {
       rep.territory.forEach(state => {
         if (!stateData[state]) {
-          stateData[state] = { count: 0, reps: [] }
+          stateData[state] = { primaryCount: 0, secondaryCount: 0, primaryReps: [], secondaryReps: [] }
         }
-        // Avoid duplicate reps (same email)
-        if (!stateData[state].reps.find(r => r.email === rep.email)) {
-          stateData[state].count++
-          stateData[state].reps.push(rep)
+        const isPrimary = rep.primaryState === state
+        if (isPrimary) {
+          if (!stateData[state].primaryReps.find(r => r.email === rep.email)) {
+            stateData[state].primaryCount++
+            stateData[state].primaryReps.push(rep)
+          }
+        } else {
+          if (!stateData[state].secondaryReps.find(r => r.email === rep.email)) {
+            stateData[state].secondaryCount++
+            stateData[state].secondaryReps.push(rep)
+          }
         }
       })
     })
@@ -105,19 +115,26 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
     return stateData
   }, [reps])
 
-  // Get color based on rep count
+  const getTotalCount = (stateCode: string) => {
+    const data = repsByState[stateCode]
+    return data ? data.primaryCount + data.secondaryCount : 0
+  }
+
+  // Get color based on primary rep count
   const getStateColor = (stateCode: string) => {
-    const count = repsByState[stateCode]?.count || 0
-    if (count === 0) return '#e5e7eb'  // gray-200
-    if (count <= 2) return '#bfdbfe'   // blue-200
-    if (count <= 5) return '#60a5fa'   // blue-400
-    return '#1e40af'                    // blue-800
+    const primary = repsByState[stateCode]?.primaryCount || 0
+    const total = getTotalCount(stateCode)
+    if (total === 0) return '#e5e7eb'  // gray-200 (no coverage)
+    if (primary === 0) return '#dbeafe' // blue-100 (secondary only)
+    if (primary <= 2) return '#bfdbfe'  // blue-200
+    if (primary <= 5) return '#60a5fa'  // blue-400
+    return '#1e40af'                     // blue-800
   }
 
   // Get text color based on background
   const getTextColor = (stateCode: string) => {
-    const count = repsByState[stateCode]?.count || 0
-    if (count > 5) return '#ffffff'
+    const primary = repsByState[stateCode]?.primaryCount || 0
+    if (primary > 5) return '#ffffff'
     return '#1f2937'  // gray-800
   }
 
@@ -181,9 +198,8 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
 
             {/* State Labels with Rep Count */}
             {Object.entries(stateCentroids).map(([stateCode, coords]) => {
-              const count = repsByState[stateCode]?.count || 0
-              // Skip states with no coverage and small states that would be hard to label
-              if (count === 0) return null
+              const total = getTotalCount(stateCode)
+              if (total === 0) return null
               const smallStates = ['CT', 'DE', 'DC', 'MA', 'MD', 'NH', 'NJ', 'RI', 'VT']
               if (smallStates.includes(stateCode)) return null
               
@@ -200,7 +216,7 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
                       pointerEvents: 'none',
                     }}
                   >
-                    {count}
+                    {total}
                   </text>
                 </Marker>
               )
@@ -218,7 +234,7 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
               >
                 <p className="font-semibold text-silq-dark">{stateNames[hoveredState] || hoveredState}</p>
                 <p className="text-sm text-silq-dark/60">
-                  {repsByState[hoveredState]?.count || 0} representative{(repsByState[hoveredState]?.count || 0) !== 1 ? 's' : ''}
+                  {repsByState[hoveredState]?.primaryCount || 0} primary, {repsByState[hoveredState]?.secondaryCount || 0} secondary
                 </p>
               </motion.div>
             )}
@@ -229,19 +245,23 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
         <div className="flex items-center justify-center gap-4 mt-4 flex-wrap">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded" style={{ backgroundColor: '#e5e7eb' }} />
-            <span className="text-xs text-silq-dark/60">0</span>
+            <span className="text-xs text-silq-dark/60">No coverage</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded" style={{ backgroundColor: '#dbeafe' }} />
+            <span className="text-xs text-silq-dark/60">Secondary only</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded" style={{ backgroundColor: '#bfdbfe' }} />
-            <span className="text-xs text-silq-dark/60">1-2</span>
+            <span className="text-xs text-silq-dark/60">1-2 primary</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded" style={{ backgroundColor: '#60a5fa' }} />
-            <span className="text-xs text-silq-dark/60">3-5</span>
+            <span className="text-xs text-silq-dark/60">3-5 primary</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded" style={{ backgroundColor: '#1e40af' }} />
-            <span className="text-xs text-silq-dark/60">6+</span>
+            <span className="text-xs text-silq-dark/60">6+ primary</span>
           </div>
         </div>
       </div>
@@ -260,7 +280,7 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
               <div>
                 <h4 className="text-xl font-bold">{stateNames[selectedState] || selectedState}</h4>
                 <p className="text-white/80 text-sm">
-                  {selectedStateData.count} representative{selectedStateData.count !== 1 ? 's' : ''} cover{selectedStateData.count === 1 ? 's' : ''} this state
+                  {selectedStateData.primaryCount} primary, {selectedStateData.secondaryCount} secondary coverage
                 </p>
               </div>
               <button
@@ -278,6 +298,7 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
               <table className="w-full">
                 <thead className="bg-silq-cream/50">
                   <tr>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-silq-dark">Coverage</th>
                     <th className="text-left px-4 py-3 text-sm font-semibold text-silq-dark">Name</th>
                     <th className="text-left px-4 py-3 text-sm font-semibold text-silq-dark">Company</th>
                     <th className="text-left px-4 py-3 text-sm font-semibold text-silq-dark">Email</th>
@@ -285,11 +306,14 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
                   </tr>
                 </thead>
                 <tbody>
-                  {selectedStateData.reps.map((rep, index) => (
+                  {selectedStateData.primaryReps.map((rep, index) => (
                     <tr 
-                      key={rep.email + index}
+                      key={'p-' + rep.email + index}
                       className="border-t border-silq-dark/5 hover:bg-silq-cream/30 transition-colors"
                     >
+                      <td className="px-4 py-3">
+                        <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-silq-blue text-white">Primary</span>
+                      </td>
                       <td className="px-4 py-3">
                         <span className="font-medium text-silq-dark">{rep.name}</span>
                       </td>
@@ -312,6 +336,46 @@ export function USCoverageMap({ reps }: USCoverageMapProps) {
                               className={`px-2 py-0.5 text-xs font-medium rounded-full ${
                                 state === selectedState
                                   ? 'bg-silq-blue text-white'
+                                  : 'bg-silq-blue/10 text-silq-blue'
+                              }`}
+                            >
+                              {state}
+                            </span>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                  {selectedStateData.secondaryReps.map((rep, index) => (
+                    <tr 
+                      key={'s-' + rep.email + index}
+                      className="border-t border-silq-dark/5 hover:bg-silq-cream/30 transition-colors"
+                    >
+                      <td className="px-4 py-3">
+                        <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-silq-dark/10 text-silq-dark/60">Secondary</span>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="font-medium text-silq-dark/70">{rep.name}</span>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="text-silq-dark/50">{rep.company}</span>
+                      </td>
+                      <td className="px-4 py-3">
+                        <a 
+                          href={`mailto:${rep.email}`}
+                          className="text-silq-blue/70 hover:underline text-sm"
+                        >
+                          {rep.email}
+                        </a>
+                      </td>
+                      <td className="px-4 py-3">
+                        <div className="flex flex-wrap gap-1">
+                          {rep.territory.map(state => (
+                            <span
+                              key={state}
+                              className={`px-2 py-0.5 text-xs font-medium rounded-full ${
+                                state === selectedState
+                                  ? 'bg-silq-dark/20 text-silq-dark/70'
                                   : 'bg-silq-blue/10 text-silq-blue'
                               }`}
                             >

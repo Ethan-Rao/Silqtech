@@ -9,6 +9,7 @@ import { PasswordGate } from '@/components/ui/PasswordGate'
 interface RepEntry {
   slug: string
   urlPath: string
+  primaryState: string
   company: string
   name: string
   email: string
@@ -53,8 +54,8 @@ export default function RepDirectoryPage() {
     .filter((v, i, a) => a.indexOf(v) === i)
     .sort() || []
 
-  // Filter reps
-  const filteredReps = manifest?.reps.filter(rep => {
+  // Filter reps, then sort primary-state reps first when filtering by state
+  const filteredReps = (manifest?.reps.filter(rep => {
     const matchesSearch = !searchTerm || 
       rep.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
       rep.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -62,7 +63,12 @@ export default function RepDirectoryPage() {
     const matchesState = !stateFilter || rep.territory.includes(stateFilter)
     
     return matchesSearch && matchesState
-  }) || []
+  }) || []).sort((a, b) => {
+    if (!stateFilter) return 0
+    const aIsPrimary = a.primaryState === stateFilter ? 0 : 1
+    const bIsPrimary = b.primaryState === stateFilter ? 0 : 1
+    return aIsPrimary - bIsPrimary
+  })
 
   if (loading) {
     return (
@@ -181,9 +187,20 @@ export default function RepDirectoryPage() {
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="font-bold text-lg text-silq-dark group-hover:text-silq-blue transition-colors">
-                        {rep.company}
-                      </h3>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-bold text-lg text-silq-dark group-hover:text-silq-blue transition-colors">
+                          {rep.company}
+                        </h3>
+                        {stateFilter && (
+                          <span className={`px-2 py-0.5 text-[10px] font-semibold rounded-full ${
+                            rep.primaryState === stateFilter
+                              ? 'bg-silq-blue/10 text-silq-blue'
+                              : 'bg-silq-dark/5 text-silq-dark/40'
+                          }`}>
+                            {rep.primaryState === stateFilter ? 'Primary' : 'Secondary'}
+                          </span>
+                        )}
+                      </div>
                       <p className="text-sm text-silq-dark/60">{rep.name}</p>
                     </div>
                     <div className="flex items-center gap-1 text-silq-blue group-hover:translate-x-1 transition-transform">
@@ -198,7 +215,11 @@ export default function RepDirectoryPage() {
                     {rep.territory.map(state => (
                       <span 
                         key={state}
-                        className="px-2 py-0.5 bg-silq-blue/10 text-silq-blue text-xs font-medium rounded-full"
+                        className={`px-2 py-0.5 text-xs font-medium rounded-full ${
+                          state === rep.primaryState
+                            ? 'bg-silq-blue text-white'
+                            : 'bg-silq-blue/10 text-silq-blue'
+                        }`}
                       >
                         {state}
                       </span>
