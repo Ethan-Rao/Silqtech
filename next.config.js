@@ -12,6 +12,7 @@ const nextConfig = {
   async rewrites() {
     return [
       // ROOT LEVEL REP PAGES
+      { source: '/activize', destination: '/rep/activize' },
       { source: '/proactive', destination: '/rep/proactive' },
       { source: '/healthcare-cellutions', destination: '/rep/healthcare-cellutions' },
       { source: '/jordan-distribution', destination: '/rep/jordan-distribution' },
@@ -103,8 +104,7 @@ const nextConfig = {
       { source: '/proactive-representation', destination: '/proactive', permanent: true },
 
       // Removed rep redirects (point to rep directory)
-      { source: '/rep/activize-inc', destination: '/rep', permanent: true },
-      { source: '/activize', destination: '/rep', permanent: true },
+      { source: '/rep/activize-inc', destination: '/activize', permanent: true },
       { source: '/rep/samu-sales-llc', destination: '/rep', permanent: true },
       { source: '/samu-sales', destination: '/rep', permanent: true },
       { source: '/rep/mark-klinkacek', destination: '/rep', permanent: true },

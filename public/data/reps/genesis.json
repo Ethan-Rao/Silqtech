@@ -16,7 +16,9 @@
     "totalCatheterDays": 1532447,
     "highCautiCount": 2,
     "highVolumeCount": 35,
-    "physicianCount": 2565
+    "physicianCount": 2565,
+    "hacPenalizedCount": 47,
+    "hacAtRiskCount": 11
   },
   "facilities": [
     {
@@ -68,7 +70,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370089",
@@ -104,7 +107,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450184",
@@ -475,7 +479,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 70
+      "physicianCount": 70,
+      "hacStatus": null
     },
     {
       "id": "450388",
@@ -711,7 +716,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 43
+      "physicianCount": 43,
+      "hacStatus": null
     },
     {
       "id": "450068",
@@ -907,7 +913,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 35
+      "physicianCount": 35,
+      "hacStatus": null
     },
     {
       "id": "450044",
@@ -1183,7 +1190,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 51
+      "physicianCount": 51,
+      "hacStatus": null
     },
     {
       "id": "370091",
@@ -1299,7 +1307,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 19
+      "physicianCount": 19,
+      "hacStatus": null
     },
     {
       "id": "450135",
@@ -1485,7 +1494,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 33
+      "physicianCount": 33,
+      "hacStatus": null
     },
     {
       "id": "450213",
@@ -1616,7 +1626,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 22
+      "physicianCount": 22,
+      "hacStatus": null
     },
     {
       "id": "450358",
@@ -1892,7 +1903,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 51
+      "physicianCount": 51,
+      "hacStatus": null
     },
     {
       "id": "450193",
@@ -2048,7 +2060,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 27
+      "physicianCount": 27,
+      "hacStatus": null
     },
     {
       "id": "450058",
@@ -2259,7 +2272,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 38
+      "physicianCount": 38,
+      "hacStatus": null
     },
     {
       "id": "370093",
@@ -2390,7 +2404,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 22
+      "physicianCount": 22,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450018",
@@ -2541,7 +2556,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 26
+      "physicianCount": 26,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450021",
@@ -2642,7 +2658,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 16
+      "physicianCount": 16,
+      "hacStatus": null
     },
     {
       "id": "370001",
@@ -2708,7 +2725,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "450686",
@@ -2799,7 +2817,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 14
+      "physicianCount": 14,
+      "hacStatus": null
     },
     {
       "id": "450015",
@@ -2980,7 +2999,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 32
+      "physicianCount": 32,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450054",
@@ -3141,7 +3161,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 28
+      "physicianCount": 28,
+      "hacStatus": null
     },
     {
       "id": "370028",
@@ -3297,7 +3318,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 27
+      "physicianCount": 27,
+      "hacStatus": null
     },
     {
       "id": "450651",
@@ -3418,7 +3440,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 20
+      "physicianCount": 20,
+      "hacStatus": null
     },
     {
       "id": "450033",
@@ -3459,7 +3482,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450040",
@@ -3550,7 +3574,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 14
+      "physicianCount": 14,
+      "hacStatus": null
     },
     {
       "id": "450046",
@@ -3631,7 +3656,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450119",
@@ -3707,7 +3733,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450820",
@@ -3913,7 +3940,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 37
+      "physicianCount": 37,
+      "hacStatus": null
     },
     {
       "id": "450775",
@@ -4029,7 +4057,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 19
+      "physicianCount": 19,
+      "hacStatus": null
     },
     {
       "id": "450231",
@@ -4105,7 +4134,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450289",
@@ -4286,7 +4316,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 32
+      "physicianCount": 32,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450083",
@@ -4387,7 +4418,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 16
+      "physicianCount": 16,
+      "hacStatus": null
     },
     {
       "id": "450462",
@@ -4483,7 +4515,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": null
     },
     {
       "id": "450647",
@@ -4579,7 +4612,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": null
     },
     {
       "id": "450537",
@@ -4660,7 +4694,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450788",
@@ -4726,7 +4761,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "450844",
@@ -4852,7 +4888,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 21
+      "physicianCount": 21,
+      "hacStatus": null
     },
     {
       "id": "450431",
@@ -4938,7 +4975,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 13
+      "physicianCount": 13,
+      "hacStatus": null
     },
     {
       "id": "450713",
@@ -5049,7 +5087,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "45066F",
@@ -5065,11 +5104,12 @@
       "catheterDays": 9544,
       "observedCAUTI": 0,
       "predictedCAUTI": 13.573,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "45074F",
@@ -5089,7 +5129,8 @@
       "cautiStatus": "Better than the National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "45090F",
@@ -5109,7 +5150,8 @@
       "cautiStatus": "Better than the National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "37014F",
@@ -5129,7 +5171,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "37012F",
@@ -5149,7 +5192,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "45086F",
@@ -5165,11 +5209,12 @@
       "catheterDays": 2449,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.871,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450617",
@@ -5255,7 +5300,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 13
+      "physicianCount": 13,
+      "hacStatus": null
     },
     {
       "id": "450723",
@@ -5311,7 +5357,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "450051",
@@ -5392,7 +5439,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450229",
@@ -5458,7 +5506,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "450209",
@@ -5504,7 +5553,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450324",
@@ -5555,7 +5605,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450024",
@@ -5631,7 +5682,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450610",
@@ -5747,7 +5799,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 19
+      "physicianCount": 19,
+      "hacStatus": null
     },
     {
       "id": "670077",
@@ -5868,7 +5921,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 20
+      "physicianCount": 20,
+      "hacStatus": null
     },
     {
       "id": "450102",
@@ -6034,7 +6088,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 29
+      "physicianCount": 29,
+      "hacStatus": null
     },
     {
       "id": "670122",
@@ -6050,7 +6105,7 @@
       "catheterDays": 9654,
       "observedCAUTI": 0,
       "predictedCAUTI": 8.007,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -6240,7 +6295,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 37
+      "physicianCount": 37,
+      "hacStatus": null
     },
     {
       "id": "450132",
@@ -6291,7 +6347,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670047",
@@ -6337,7 +6394,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450237",
@@ -6458,7 +6516,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 20
+      "physicianCount": 20,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450684",
@@ -6544,7 +6603,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 13
+      "physicianCount": 13,
+      "hacStatus": null
     },
     {
       "id": "450107",
@@ -6625,7 +6685,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "370013",
@@ -6706,7 +6767,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450424",
@@ -6722,7 +6784,7 @@
       "catheterDays": 8816,
       "observedCAUTI": 0,
       "predictedCAUTI": 7.683,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -6842,7 +6904,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 23
+      "physicianCount": 23,
+      "hacStatus": null
     },
     {
       "id": "450869",
@@ -6963,7 +7026,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 20
+      "physicianCount": 20,
+      "hacStatus": null
     },
     {
       "id": "370037",
@@ -7034,7 +7098,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450847",
@@ -7110,7 +7175,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450668",
@@ -7186,7 +7252,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450023",
@@ -7232,7 +7299,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450010",
@@ -7293,7 +7361,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370106",
@@ -7379,7 +7448,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 13
+      "physicianCount": 13,
+      "hacStatus": null
     },
     {
       "id": "370056",
@@ -7435,7 +7505,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450011",
@@ -7501,7 +7572,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "450101",
@@ -7547,7 +7619,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450634",
@@ -7613,7 +7686,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "370078",
@@ -7644,7 +7718,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370008",
@@ -7715,7 +7790,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "450862",
@@ -7791,7 +7867,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450133",
@@ -7842,7 +7919,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "45069F",
@@ -7862,7 +7940,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450801",
@@ -7913,7 +7992,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450029",
@@ -7949,7 +8029,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450137",
@@ -8030,7 +8111,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450571",
@@ -8096,7 +8178,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "450034",
@@ -8167,7 +8250,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "450809",
@@ -8318,7 +8402,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 26
+      "physicianCount": 26,
+      "hacStatus": null
     },
     {
       "id": "450039",
@@ -8419,7 +8504,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 16
+      "physicianCount": 16,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450702",
@@ -8470,7 +8556,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450718",
@@ -8546,7 +8633,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450656",
@@ -8577,7 +8665,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370202",
@@ -8633,7 +8722,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "670023",
@@ -8684,7 +8774,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450677",
@@ -8750,7 +8841,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "450346",
@@ -8811,7 +8903,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "450675",
@@ -8867,7 +8960,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "450771",
@@ -8978,7 +9072,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "670055",
@@ -9069,7 +9164,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 14
+      "physicianCount": 14,
+      "hacStatus": null
     },
     {
       "id": "450028",
@@ -9105,7 +9201,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "370114",
@@ -9221,7 +9318,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 19
+      "physicianCount": 19,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450638",
@@ -9277,7 +9375,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "450672",
@@ -9353,7 +9452,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450196",
@@ -9384,7 +9484,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450002",
@@ -9400,7 +9501,7 @@
       "catheterDays": 5692,
       "observedCAUTI": 0,
       "predictedCAUTI": 5.669,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -9455,7 +9556,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "370025",
@@ -9546,7 +9648,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 14
+      "physicianCount": 14,
+      "hacStatus": null
     },
     {
       "id": "450352",
@@ -9627,7 +9730,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450403",
@@ -9708,7 +9812,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450222",
@@ -9774,7 +9879,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450855",
@@ -9810,7 +9916,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "370215",
@@ -9826,7 +9933,7 @@
       "catheterDays": 5104,
       "observedCAUTI": 0,
       "predictedCAUTI": 3.09,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -9851,7 +9958,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450709",
@@ -9867,7 +9975,7 @@
       "catheterDays": 4977,
       "observedCAUTI": 0,
       "predictedCAUTI": 3.44,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -9982,7 +10090,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 22
+      "physicianCount": 22,
+      "hacStatus": null
     },
     {
       "id": "450097",
@@ -10033,7 +10142,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450563",
@@ -10144,7 +10254,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "450659",
@@ -10160,7 +10271,7 @@
       "catheterDays": 4849,
       "observedCAUTI": 0,
       "predictedCAUTI": 3.509,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -10190,7 +10301,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450064",
@@ -10241,7 +10353,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450211",
@@ -10282,7 +10395,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450662",
@@ -10308,7 +10422,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450890",
@@ -10419,7 +10534,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "450124",
@@ -10480,7 +10596,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450056",
@@ -10591,7 +10708,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "450643",
@@ -10632,7 +10750,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450079",
@@ -10708,7 +10827,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "370023",
@@ -10749,7 +10869,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670034",
@@ -10825,7 +10946,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "450644",
@@ -10886,7 +11008,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "450639",
@@ -10967,7 +11090,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450711",
@@ -11028,7 +11152,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "450848",
@@ -11139,7 +11264,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "450484",
@@ -11180,7 +11306,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450087",
@@ -11236,7 +11363,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "450176",
@@ -11272,7 +11400,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450779",
@@ -11288,7 +11417,7 @@
       "catheterDays": 3563,
       "observedCAUTI": 0,
       "predictedCAUTI": 4.288,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11373,7 +11502,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 16
+      "physicianCount": 16,
+      "hacStatus": null
     },
     {
       "id": "450670",
@@ -11389,7 +11519,7 @@
       "catheterDays": 3556,
       "observedCAUTI": 0,
       "predictedCAUTI": 3.078,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11434,7 +11564,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "370049",
@@ -11480,7 +11611,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "670088",
@@ -11531,7 +11663,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450347",
@@ -11547,7 +11680,7 @@
       "catheterDays": 3462,
       "observedCAUTI": 0,
       "predictedCAUTI": 2.459,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11572,7 +11705,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450688",
@@ -11588,7 +11722,7 @@
       "catheterDays": 3419,
       "observedCAUTI": 0,
       "predictedCAUTI": 3.117,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11608,7 +11742,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450007",
@@ -11664,7 +11799,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "670060",
@@ -11680,7 +11816,7 @@
       "catheterDays": 3217,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.673,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11705,7 +11841,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450743",
@@ -11721,7 +11858,7 @@
       "catheterDays": 3191,
       "observedCAUTI": 0,
       "predictedCAUTI": 3.144,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "Better than the National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11771,7 +11908,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "370014",
@@ -11787,7 +11925,7 @@
       "catheterDays": 3168,
       "observedCAUTI": 0,
       "predictedCAUTI": 2.442,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -11812,7 +11950,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670031",
@@ -11863,7 +12002,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450128",
@@ -11894,7 +12034,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "670068",
@@ -11955,7 +12096,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "370094",
@@ -12006,7 +12148,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450389",
@@ -12052,7 +12195,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "670053",
@@ -12068,7 +12212,7 @@
       "catheterDays": 2876,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.956,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12093,7 +12237,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "370034",
@@ -12149,7 +12294,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670044",
@@ -12165,7 +12311,7 @@
       "catheterDays": 2823,
       "observedCAUTI": 0,
       "predictedCAUTI": 2.285,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12200,7 +12346,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "370006",
@@ -12216,11 +12363,12 @@
       "catheterDays": 2815,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.438,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450104",
@@ -12261,7 +12409,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670082",
@@ -12367,7 +12516,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 17
+      "physicianCount": 17,
+      "hacStatus": null
     },
     {
       "id": "450730",
@@ -12383,7 +12533,7 @@
       "catheterDays": 2590,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.34,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12398,7 +12548,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450661",
@@ -12418,7 +12569,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670075",
@@ -12434,7 +12586,7 @@
       "catheterDays": 2572,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.74,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12469,7 +12621,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450152",
@@ -12485,7 +12638,7 @@
       "catheterDays": 2450,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.78,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12525,7 +12678,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "450669",
@@ -12561,7 +12715,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "45068F",
@@ -12581,7 +12736,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450447",
@@ -12597,7 +12753,7 @@
       "catheterDays": 2366,
       "observedCAUTI": 0,
       "predictedCAUTI": 2.327,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12607,7 +12763,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450236",
@@ -12643,7 +12800,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "670106",
@@ -12659,7 +12817,7 @@
       "catheterDays": 2309,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.203,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12684,7 +12842,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450035",
@@ -12715,7 +12874,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450876",
@@ -12766,7 +12926,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "670085",
@@ -12782,7 +12943,7 @@
       "catheterDays": 2229,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.56,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12817,7 +12978,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "370149",
@@ -12888,7 +13050,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "450203",
@@ -12904,7 +13067,7 @@
       "catheterDays": 2192,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.714,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12929,7 +13092,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450596",
@@ -12945,7 +13109,7 @@
       "catheterDays": 2157,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.259,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -12960,7 +13124,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370211",
@@ -13006,7 +13171,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450864",
@@ -13022,7 +13188,7 @@
       "catheterDays": 2080,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.019,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13047,7 +13213,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450747",
@@ -13063,7 +13230,7 @@
       "catheterDays": 2068,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.404,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13073,7 +13240,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670120",
@@ -13139,7 +13307,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": null
     },
     {
       "id": "670260",
@@ -13155,7 +13324,7 @@
       "catheterDays": 2060,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.408,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13220,7 +13389,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450330",
@@ -13236,7 +13406,7 @@
       "catheterDays": 2043,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.416,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13251,7 +13421,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "670080",
@@ -13267,7 +13438,7 @@
       "catheterDays": 2016,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.182,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13277,7 +13448,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670103",
@@ -13293,7 +13465,7 @@
       "catheterDays": 1902,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.337,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13313,7 +13485,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "370236",
@@ -13329,7 +13502,7 @@
       "catheterDays": 1901,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.953,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13394,7 +13567,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450072",
@@ -13410,7 +13584,7 @@
       "catheterDays": 1901,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.303,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13420,7 +13594,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370016",
@@ -13451,7 +13626,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "670056",
@@ -13502,7 +13678,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450092",
@@ -13518,7 +13695,7 @@
       "catheterDays": 1834,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.843,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13528,7 +13705,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670041",
@@ -13544,7 +13722,7 @@
       "catheterDays": 1812,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.891,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13554,7 +13732,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450742",
@@ -13570,7 +13749,7 @@
       "catheterDays": 1799,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.315,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13615,7 +13794,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "370210",
@@ -13751,7 +13931,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 23
+      "physicianCount": 23,
+      "hacStatus": null
     },
     {
       "id": "450508",
@@ -13777,7 +13958,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450840",
@@ -13823,7 +14005,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "450042",
@@ -13879,7 +14062,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "370020",
@@ -13895,7 +14079,7 @@
       "catheterDays": 1689,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.194,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13920,7 +14104,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670073",
@@ -13940,7 +14125,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670043",
@@ -13956,7 +14142,7 @@
       "catheterDays": 1610,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.051,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -13966,7 +14152,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370026",
@@ -14002,7 +14189,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "370022",
@@ -14033,7 +14221,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450154",
@@ -14064,7 +14253,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370171",
@@ -14130,7 +14320,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "45060F",
@@ -14150,7 +14341,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670098",
@@ -14166,7 +14358,7 @@
       "catheterDays": 1476,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.033,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -14191,7 +14383,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450090",
@@ -14227,7 +14420,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450822",
@@ -14243,7 +14437,7 @@
       "catheterDays": 1434,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.009,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -14263,7 +14457,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "370234",
@@ -14304,7 +14499,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450828",
@@ -14330,7 +14526,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450856",
@@ -14350,7 +14547,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450875",
@@ -14376,7 +14574,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450518",
@@ -14392,11 +14591,12 @@
       "catheterDays": 1269,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.065,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450885",
@@ -14457,7 +14657,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "450272",
@@ -14508,7 +14709,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450163",
@@ -14528,7 +14730,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450872",
@@ -14729,7 +14932,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 36
+      "physicianCount": 36,
+      "hacStatus": null
     },
     {
       "id": "370113",
@@ -14760,7 +14964,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450379",
@@ -14780,7 +14985,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370054",
@@ -14811,7 +15017,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "370039",
@@ -14857,7 +15064,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "370047",
@@ -14888,7 +15096,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370218",
@@ -14904,7 +15113,7 @@
       "catheterDays": 1081,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.027,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -14959,7 +15168,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "370097",
@@ -14985,7 +15195,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "371336",
@@ -15011,7 +15222,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450587",
@@ -15052,7 +15264,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450584",
@@ -15093,7 +15306,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "370019",
@@ -15124,7 +15338,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670071",
@@ -15144,7 +15359,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670300",
@@ -15185,7 +15401,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450604",
@@ -15226,7 +15443,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670108",
@@ -15277,7 +15495,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450539",
@@ -15313,7 +15532,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450055",
@@ -15344,7 +15564,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450853",
@@ -15425,7 +15646,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "370203",
@@ -15501,7 +15723,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "451380",
@@ -15517,7 +15740,7 @@
       "catheterDays": 914,
       "observedCAUTI": 0,
       "predictedCAUTI": 2.233,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -15527,7 +15750,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450694",
@@ -15558,7 +15782,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370180",
@@ -15594,7 +15819,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "670049",
@@ -15625,7 +15851,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450469",
@@ -15651,7 +15878,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370216",
@@ -15671,7 +15899,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450827",
@@ -15712,7 +15941,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450148",
@@ -15732,7 +15962,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450678",
@@ -15752,7 +15983,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451387",
@@ -15788,7 +16020,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450880",
@@ -15874,7 +16107,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 13
+      "physicianCount": 13,
+      "hacStatus": null
     },
     {
       "id": "450565",
@@ -15900,7 +16134,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450891",
@@ -15981,7 +16216,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "450080",
@@ -16007,7 +16243,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371320",
@@ -16027,7 +16264,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450194",
@@ -16058,7 +16296,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450351",
@@ -16089,7 +16328,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450465",
@@ -16120,7 +16360,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450082",
@@ -16140,7 +16381,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370018",
@@ -16196,7 +16438,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "370004",
@@ -16222,7 +16465,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450674",
@@ -16242,7 +16486,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450597",
@@ -16283,7 +16528,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "450653",
@@ -16309,7 +16555,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450867",
@@ -16415,7 +16662,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 17
+      "physicianCount": 17,
+      "hacStatus": null
     },
     {
       "id": "370002",
@@ -16441,7 +16689,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450165",
@@ -16467,7 +16716,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371342",
@@ -16487,7 +16737,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451395",
@@ -16513,7 +16764,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670090",
@@ -16539,7 +16791,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670132",
@@ -16580,7 +16833,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "451367",
@@ -16600,7 +16854,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450419",
@@ -16626,7 +16881,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451386",
@@ -16652,7 +16908,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451354",
@@ -16672,7 +16929,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450292",
@@ -16698,7 +16956,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450108",
@@ -16729,7 +16988,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370015",
@@ -16770,7 +17030,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450162",
@@ -16816,7 +17077,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "371313",
@@ -16847,7 +17109,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451397",
@@ -16863,7 +17126,7 @@
       "catheterDays": 504,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.231,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -16883,7 +17146,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450395",
@@ -16924,7 +17188,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670059",
@@ -16960,7 +17225,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450235",
@@ -16991,7 +17257,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451346",
@@ -17027,7 +17294,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450370",
@@ -17058,7 +17326,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "371317",
@@ -17074,7 +17343,7 @@
       "catheterDays": 455,
       "observedCAUTI": 0,
       "predictedCAUTI": 1.111,
-      "sir": 0.0,
+      "sir": 0,
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [
@@ -17104,7 +17373,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "451356",
@@ -17135,7 +17405,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451379",
@@ -17166,7 +17437,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450155",
@@ -17186,7 +17458,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670067",
@@ -17206,7 +17479,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450400",
@@ -17237,7 +17511,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370112",
@@ -17257,7 +17532,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370228",
@@ -17288,7 +17564,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451391",
@@ -17308,7 +17585,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450883",
@@ -17344,7 +17622,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450641",
@@ -17370,7 +17649,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451343",
@@ -17396,7 +17676,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371327",
@@ -17416,7 +17697,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371304",
@@ -17436,7 +17718,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370083",
@@ -17456,7 +17739,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450774",
@@ -17487,7 +17771,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451378",
@@ -17507,7 +17792,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451382",
@@ -17543,7 +17829,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "45070F",
@@ -17563,7 +17850,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370099",
@@ -17589,7 +17877,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450475",
@@ -17620,7 +17909,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450369",
@@ -17646,7 +17936,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450241",
@@ -17672,7 +17963,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "450690",
@@ -17733,7 +18025,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "670265",
@@ -17753,7 +18046,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450210",
@@ -17779,7 +18073,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670054",
@@ -17805,7 +18100,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451351",
@@ -17825,7 +18121,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451319",
@@ -17856,7 +18153,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450399",
@@ -17876,7 +18174,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451308",
@@ -17902,7 +18201,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451316",
@@ -17922,7 +18222,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370166",
@@ -17948,7 +18249,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451347",
@@ -17974,7 +18276,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450874",
@@ -18010,7 +18313,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450422",
@@ -18030,7 +18334,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451333",
@@ -18056,7 +18361,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370183",
@@ -18082,7 +18388,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451323",
@@ -18102,7 +18409,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670008",
@@ -18153,7 +18461,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450808",
@@ -18173,7 +18482,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370172",
@@ -18193,7 +18503,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371338",
@@ -18213,7 +18524,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450573",
@@ -18244,7 +18556,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "670006",
@@ -18264,7 +18577,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451305",
@@ -18284,7 +18598,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670076",
@@ -18315,7 +18630,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "670112",
@@ -18335,7 +18651,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670309",
@@ -18376,7 +18693,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "451361",
@@ -18407,7 +18725,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "371306",
@@ -18427,7 +18746,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370100",
@@ -18447,7 +18767,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451350",
@@ -18467,7 +18788,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670069",
@@ -18498,7 +18820,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370178",
@@ -18518,7 +18841,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451385",
@@ -18559,7 +18883,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "451377",
@@ -18585,7 +18910,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451303",
@@ -18621,7 +18947,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450451",
@@ -18652,7 +18979,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "451359",
@@ -18683,7 +19011,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370201",
@@ -18703,7 +19032,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451331",
@@ -18729,7 +19059,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370192",
@@ -18785,7 +19116,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 7
+      "physicianCount": 7,
+      "hacStatus": null
     },
     {
       "id": "450834",
@@ -18811,7 +19143,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451304",
@@ -18831,7 +19164,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371319",
@@ -18851,7 +19185,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450860",
@@ -18871,7 +19206,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "451364",
@@ -18897,7 +19233,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451322",
@@ -18917,7 +19254,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670102",
@@ -18937,7 +19275,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451392",
@@ -18963,7 +19302,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370244",
@@ -18983,7 +19323,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670005",
@@ -19019,7 +19360,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "371302",
@@ -19045,7 +19387,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451375",
@@ -19065,7 +19408,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370170",
@@ -19085,7 +19429,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450698",
@@ -19105,7 +19450,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370245",
@@ -19125,7 +19471,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370237",
@@ -19161,7 +19508,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "451342",
@@ -19181,7 +19529,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451376",
@@ -19227,7 +19576,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "451365",
@@ -19258,7 +19608,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450888",
@@ -19278,7 +19629,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370173",
@@ -19298,7 +19650,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451341",
@@ -19324,7 +19677,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450755",
@@ -19350,7 +19704,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450658",
@@ -19370,7 +19725,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371300",
@@ -19396,7 +19752,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370057",
@@ -19422,7 +19779,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451362",
@@ -19442,7 +19800,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451355",
@@ -19462,7 +19821,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371310",
@@ -19482,7 +19842,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450489",
@@ -19508,7 +19869,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451373",
@@ -19528,7 +19890,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371341",
@@ -19564,7 +19927,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "451353",
@@ -19584,7 +19948,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371326",
@@ -19610,7 +19975,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371322",
@@ -19630,7 +19996,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370158",
@@ -19671,7 +20038,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "451300",
@@ -19691,7 +20059,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451337",
@@ -19711,7 +20080,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670078",
@@ -19731,7 +20101,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370235",
@@ -19817,7 +20188,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 13
+      "physicianCount": 13,
+      "hacStatus": null
     },
     {
       "id": "451313",
@@ -19837,7 +20209,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451320",
@@ -19857,7 +20230,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451334",
@@ -19877,7 +20251,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451372",
@@ -19897,7 +20272,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670322",
@@ -19917,7 +20293,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370225",
@@ -19937,7 +20314,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451371",
@@ -19963,7 +20341,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371340",
@@ -19983,7 +20362,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451338",
@@ -20003,7 +20383,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451301",
@@ -20023,7 +20404,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451309",
@@ -20043,7 +20425,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370227",
@@ -20104,7 +20487,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370240",
@@ -20124,7 +20508,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451374",
@@ -20165,7 +20550,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670267",
@@ -20185,7 +20571,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451363",
@@ -20211,7 +20598,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451384",
@@ -20237,7 +20625,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450833",
@@ -20263,7 +20652,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450804",
@@ -20294,7 +20684,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451370",
@@ -20320,7 +20711,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670124",
@@ -20340,7 +20732,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450253",
@@ -20366,7 +20759,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450865",
@@ -20386,7 +20780,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670062",
@@ -20406,7 +20801,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450143",
@@ -20432,7 +20828,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "450889",
@@ -20463,7 +20860,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "451315",
@@ -20483,7 +20881,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451306",
@@ -20509,7 +20908,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371311",
@@ -20535,7 +20935,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670107",
@@ -20555,7 +20956,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670134",
@@ -20575,7 +20977,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450144",
@@ -20601,7 +21004,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451332",
@@ -20621,7 +21025,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370199",
@@ -20636,7 +21041,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -20647,7 +21052,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370206",
@@ -20662,7 +21068,7 @@
       "gpo": "Vizient (953715)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -20673,7 +21079,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "370212",
@@ -20688,7 +21095,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -20754,7 +21161,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "370214",
@@ -20769,12 +21177,13 @@
       "gpo": "Premier, Premier, Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370220",
@@ -20789,7 +21198,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -20835,7 +21244,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "370222",
@@ -20850,7 +21260,7 @@
       "gpo": "Vizient (2675984), Vizient (2675985), Vizient (2675986), Vizient (2675911)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -20866,7 +21276,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "370243",
@@ -20881,12 +21292,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "370246",
@@ -20901,12 +21313,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "370247",
@@ -20921,12 +21334,13 @@
       "gpo": "Vizient (4291677)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371301",
@@ -20941,12 +21355,13 @@
       "gpo": "Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371303",
@@ -20961,12 +21376,13 @@
       "gpo": "Premier, Vizient (2756464)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371305",
@@ -20981,12 +21397,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371307",
@@ -21001,12 +21418,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371309",
@@ -21021,12 +21439,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371312",
@@ -21041,12 +21460,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371314",
@@ -21061,12 +21481,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371316",
@@ -21081,12 +21502,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371318",
@@ -21101,12 +21523,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371321",
@@ -21121,7 +21544,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21132,7 +21555,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371323",
@@ -21147,7 +21571,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21168,7 +21592,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "371325",
@@ -21183,7 +21608,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21194,7 +21619,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "371328",
@@ -21209,7 +21635,7 @@
       "gpo": "Premier, Vizient (2623021)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21240,7 +21666,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 5
+      "physicianCount": 5,
+      "hacStatus": null
     },
     {
       "id": "371329",
@@ -21255,7 +21682,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21276,7 +21703,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "371330",
@@ -21291,12 +21719,13 @@
       "gpo": "Premier, Vizient (3004169)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371331",
@@ -21311,12 +21740,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371332",
@@ -21331,12 +21761,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371333",
@@ -21351,12 +21782,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371334",
@@ -21371,12 +21803,13 @@
       "gpo": "Premier, Premier, Vizient (49177)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371335",
@@ -21391,12 +21824,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "371337",
@@ -21411,7 +21845,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21422,7 +21856,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "373300",
@@ -21437,12 +21872,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "373303",
@@ -21457,12 +21893,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450032",
@@ -21477,7 +21914,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21523,7 +21960,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "450200",
@@ -21538,12 +21976,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450271",
@@ -21558,12 +21997,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450372",
@@ -21578,7 +22018,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21629,7 +22069,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450411",
@@ -21644,7 +22085,7 @@
       "gpo": "Premier, Premier, Vizient (961946)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21665,7 +22106,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "450460",
@@ -21680,7 +22122,7 @@
       "gpo": "Premier, Premier, Vizient (2622880)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21696,7 +22138,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "450498",
@@ -21711,12 +22154,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450654",
@@ -21731,12 +22175,13 @@
       "gpo": "Vizient (2565447)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "450825",
@@ -21751,12 +22196,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450831",
@@ -21771,12 +22217,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "450851",
@@ -21791,7 +22238,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21827,7 +22274,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "450893",
@@ -21842,12 +22290,13 @@
       "gpo": "Vizient (2624495)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451307",
@@ -21862,12 +22311,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451310",
@@ -21882,12 +22332,13 @@
       "gpo": "Premier, Premier, Premier, Vizient (1177672)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451311",
@@ -21902,7 +22353,7 @@
       "gpo": "Vizient (3831)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -21913,7 +22364,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451312",
@@ -21928,12 +22380,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451314",
@@ -21948,12 +22401,13 @@
       "gpo": "Vizient (1187315)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451317",
@@ -21968,12 +22422,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451318",
@@ -21988,12 +22443,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451324",
@@ -22008,7 +22464,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22019,7 +22475,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451325",
@@ -22034,12 +22491,13 @@
       "gpo": "Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451328",
@@ -22054,7 +22512,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22065,7 +22523,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451329",
@@ -22080,12 +22539,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451330",
@@ -22100,7 +22560,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22111,7 +22571,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451335",
@@ -22126,12 +22587,13 @@
       "gpo": "Vizient (2885682)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451339",
@@ -22146,12 +22608,13 @@
       "gpo": "Premier, Premier, Vizient (1173861)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451340",
@@ -22166,12 +22629,13 @@
       "gpo": "Premier, Vizient (6065876)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451344",
@@ -22186,12 +22650,13 @@
       "gpo": "Vizient (2194067)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451348",
@@ -22206,7 +22671,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22227,7 +22692,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "451349",
@@ -22242,7 +22708,7 @@
       "gpo": "Premier, Vizient (2623005)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22253,7 +22719,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451352",
@@ -22268,12 +22735,13 @@
       "gpo": "Premier, Premier, Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451358",
@@ -22288,12 +22756,13 @@
       "gpo": "Premier, Premier, Vizient (1160276), Vizient (1996), Vizient (2252), Vizient (779306), Vizient (3271206)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451366",
@@ -22308,12 +22777,13 @@
       "gpo": "Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451369",
@@ -22328,12 +22798,13 @@
       "gpo": "Vizient (2624681)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451381",
@@ -22348,12 +22819,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451389",
@@ -22368,12 +22840,13 @@
       "gpo": "Premier, Premier, Vizient (2749635)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451390",
@@ -22388,12 +22861,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451393",
@@ -22408,7 +22882,7 @@
       "gpo": "Premier, Premier, Vizient (48731)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22419,7 +22893,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "451394",
@@ -22434,12 +22909,13 @@
       "gpo": "Premier, Premier, Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451396",
@@ -22454,12 +22930,13 @@
       "gpo": "Vizient (2623957)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451398",
@@ -22474,12 +22951,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "451399",
@@ -22494,7 +22972,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22505,7 +22983,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "453300",
@@ -22520,7 +22999,7 @@
       "gpo": "Vizient (48709), Vizient (3608988)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22531,7 +23010,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "453301",
@@ -22546,12 +23026,13 @@
       "gpo": "Vizient (4211436), Vizient (872879)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453302",
@@ -22566,12 +23047,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453304",
@@ -22586,12 +23068,13 @@
       "gpo": "Vizient (898512), Vizient (2993107), Vizient (4126829), Vizient (4276911), Vizient (4276912), Vizient (4276913), Vizient (4276914)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453306",
@@ -22606,7 +23089,7 @@
       "gpo": "Vizient (8134)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22662,7 +23145,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "453309",
@@ -22677,12 +23161,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453310",
@@ -22697,12 +23182,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453311",
@@ -22717,12 +23203,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453313",
@@ -22737,12 +23224,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453314",
@@ -22757,12 +23245,13 @@
       "gpo": "Vizient (48857)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453315",
@@ -22777,7 +23266,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22788,7 +23277,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "453316",
@@ -22803,12 +23293,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453317",
@@ -22823,12 +23314,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453318",
@@ -22843,12 +23335,13 @@
       "gpo": "Vizient (4239949)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453319",
@@ -22863,12 +23356,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "453321",
@@ -22883,12 +23377,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670010",
@@ -22903,12 +23398,13 @@
       "gpo": "Premier, Vizient (969748)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "670025",
@@ -22923,7 +23419,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -22969,7 +23465,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "670093",
@@ -22984,7 +23481,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23030,7 +23527,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "670109",
@@ -23045,12 +23543,13 @@
       "gpo": "Vizient (909491)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670115",
@@ -23065,12 +23564,13 @@
       "gpo": "Premier, Premier, Premier, Premier, Premier, Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670121",
@@ -23085,12 +23585,13 @@
       "gpo": "Vizient (2623712)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670125",
@@ -23105,12 +23606,13 @@
       "gpo": "Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670128",
@@ -23125,7 +23627,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23151,7 +23653,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "670131",
@@ -23166,7 +23669,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23177,7 +23680,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670135",
@@ -23192,12 +23696,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670136",
@@ -23212,7 +23717,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23228,7 +23733,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "670266",
@@ -23243,7 +23749,7 @@
       "gpo": "Premier, Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23254,7 +23760,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "670285",
@@ -23269,12 +23776,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670314",
@@ -23289,12 +23797,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670320",
@@ -23309,7 +23818,7 @@
       "gpo": "Vizient (4212262)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23320,7 +23829,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670321",
@@ -23335,12 +23845,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "670326",
@@ -23355,12 +23866,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670327",
@@ -23375,12 +23887,13 @@
       "gpo": "Vizient (4291675)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670331",
@@ -23395,12 +23908,13 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "670333",
@@ -23415,7 +23929,7 @@
       "gpo": "",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23431,7 +23945,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "671300",
@@ -23446,7 +23961,7 @@
       "gpo": "Vizient (2304989)",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
@@ -23467,7 +23982,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "671301",
@@ -23482,12 +23998,13 @@
       "gpo": "Premier, Premier",
       "catheterDays": 0,
       "observedCAUTI": 0,
-      "predictedCAUTI": 0.0,
+      "predictedCAUTI": 0,
       "sir": null,
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     }
   ],
   "mapConfig": {

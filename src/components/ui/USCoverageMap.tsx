@@ -71,6 +71,8 @@ interface RepEntry {
   physicianCount: number
   highCautiCount: number
   highVolumeCount: number
+  hacPenalizedCount?: number
+  hacAtRiskCount?: number
 }
 
 interface StateData {

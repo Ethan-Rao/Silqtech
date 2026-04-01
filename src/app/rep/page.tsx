@@ -18,6 +18,8 @@ interface RepEntry {
   physicianCount: number
   highCautiCount: number
   highVolumeCount: number
+  hacPenalizedCount: number
+  hacAtRiskCount: number
 }
 
 interface RepManifest {
@@ -226,10 +228,14 @@ export default function RepDirectoryPage() {
                     ))}
                   </div>
 
-                  <div className="grid grid-cols-4 gap-2 text-center border-t border-silq-dark/5 pt-4">
+                  <div className="grid grid-cols-5 gap-2 text-center border-t border-silq-dark/5 pt-4">
                     <div>
                       <p className="text-lg font-bold text-silq-dark">{rep.facilityCount}</p>
                       <p className="text-xs text-silq-dark/50">Facilities</p>
+                    </div>
+                    <div>
+                      <p className="text-lg font-bold text-amber-500">{rep.hacPenalizedCount}</p>
+                      <p className="text-xs text-silq-dark/50">HAC Pen.</p>
                     </div>
                     <div>
                       <p className="text-lg font-bold text-red-500">{rep.highCautiCount}</p>

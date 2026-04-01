@@ -29,6 +29,7 @@ interface Facility {
   sir: number
   cautiStatus: string
   priority: 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
+  hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
   physicians: Physician[]
   physicianCount: number
 }
@@ -48,6 +49,8 @@ interface RepData {
     totalCatheterDays: number
     highCautiCount: number
     highVolumeCount: number
+    hacPenalizedCount: number
+    hacAtRiskCount: number
     physicianCount: number
   }
   facilities: Facility[]
@@ -122,6 +125,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       'ZIP Code',
       'Phone',
       'Priority',
+      'HAC Status',
       'Catheter Days',
       'SIR Score',
       'CAUTI Status',
@@ -138,6 +142,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       f.zipCode,
       f.phone,
       f.priority,
+      f.hacStatus || '',
       f.catheterDays,
       f.sir || 'N/A',
       `"${f.cautiStatus}"`,
@@ -317,11 +322,19 @@ export default function RepPage({ params }: { params: { slug: string } }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mb-10 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4"
+            className="mb-10 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4"
           >
             <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
               <p className="text-3xl font-bold text-silq-dark">{stats.facilityCount}</p>
               <p className="text-sm text-silq-dark/60">Facilities</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
+              <p className="text-3xl font-bold text-amber-500">{stats.hacPenalizedCount}</p>
+              <p className="text-sm text-silq-dark/60">HAC Penalized</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
+              <p className="text-3xl font-bold text-yellow-500">{stats.hacAtRiskCount}</p>
+              <p className="text-sm text-silq-dark/60">HAC At Risk</p>
             </div>
             <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
               <p className="text-3xl font-bold text-red-500">{stats.highCautiCount}</p>
@@ -367,6 +380,8 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                   {/* Priority Legend - Inside Map Card */}
                   <div className="flex flex-wrap items-center gap-3">
                     {[
+                      { key: 'HAC_PENALIZED', label: 'HAC Penalized', color: 'bg-amber-500' },
+                      { key: 'HAC_AT_RISK', label: 'HAC At Risk', color: 'bg-yellow-400' },
                       { key: 'HIGH_CAUTI', label: 'High CAUTI', color: 'bg-red-500' },
                       { key: 'HIGH_VOLUME', label: 'High Volume', color: 'bg-blue-500' },
                       { key: 'VA', label: 'VA', color: 'bg-orange-500' },
@@ -421,6 +436,15 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                            selectedFacility.priority === 'HIGH_VOLUME' ? 'High Volume' :
                            selectedFacility.priority === 'VA' ? 'VA' : 'Standard'}
                         </span>
+                        {selectedFacility.hacStatus && (
+                          <span className={`px-2 py-0.5 text-xs font-semibold rounded-full ${
+                            selectedFacility.hacStatus === 'HAC_PENALIZED'
+                              ? 'bg-amber-100 text-amber-700'
+                              : 'bg-yellow-100 text-yellow-700'
+                          }`}>
+                            {selectedFacility.hacStatus === 'HAC_PENALIZED' ? 'HAC Penalized' : 'HAC At Risk'}
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-xl font-bold text-silq-dark">{selectedFacility.name}</h3>
                       <p className="text-silq-dark/60">{selectedFacility.address}, {selectedFacility.city}, {selectedFacility.state} {selectedFacility.zipCode}</p>

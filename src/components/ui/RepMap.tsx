@@ -1117,6 +1117,7 @@ interface Facility {
   sir: number
   cautiStatus: string
   priority: 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
+  hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
   physicians: Array<{
     name: string
     npi: string
@@ -1206,12 +1207,14 @@ export function RepMap({
   const plotData = useMemo(() => {
     if (!isClient) return []
 
-    // Group by priority for layering (HIGH_CAUTI on top)
+    const traces: any[] = []
+
+    // Base priority layers (standard facilities without HAC flags)
     const priorities: ('STANDARD' | 'VA' | 'HIGH_VOLUME' | 'HIGH_CAUTI')[] = ['STANDARD', 'VA', 'HIGH_VOLUME', 'HIGH_CAUTI']
-    
-    return priorities.map(priority => {
-      const filtered = facilitiesWithCoords.filter(f => f.priority === priority)
-      return {
+    priorities.forEach(priority => {
+      const filtered = facilitiesWithCoords.filter(f => f.priority === priority && !f.hacStatus)
+      if (filtered.length === 0) return
+      traces.push({
         type: 'scattermapbox' as const,
         name: priority === 'HIGH_CAUTI' ? 'High CAUTI' :
               priority === 'HIGH_VOLUME' ? 'High Volume' :
@@ -1226,18 +1229,47 @@ export function RepMap({
         },
         customdata: filtered,
         hoverinfo: 'text' as const,
-        hovertext: filtered.map(f => 
+        hovertext: filtered.map(f =>
           `<b>${f.name}</b><br>` +
           `${f.city}, ${f.state}<br>` +
           `Catheter Days: ${f.catheterDays.toLocaleString()}<br>` +
           `Priority: ${f.priority.replace('_', ' ')}`
         ),
-        hoverlabel: {
-          bgcolor: 'white',
-          font: { color: 'black', size: 12 }
-        }
-      }
+        hoverlabel: { bgcolor: 'white', font: { color: 'black', size: 12 } }
+      })
     })
+
+    // HAC layers on top (with distinct amber/yellow markers)
+    const hacStatuses: ('HAC_AT_RISK' | 'HAC_PENALIZED')[] = ['HAC_AT_RISK', 'HAC_PENALIZED']
+    hacStatuses.forEach(status => {
+      const filtered = facilitiesWithCoords.filter(f => f.hacStatus === status)
+      if (filtered.length === 0) return
+      traces.push({
+        type: 'scattermapbox' as const,
+        name: status === 'HAC_PENALIZED' ? 'HAC Penalized' : 'HAC At Risk',
+        lat: filtered.map(f => f.lat),
+        lon: filtered.map(f => f.lon),
+        mode: 'markers' as const,
+        marker: {
+          size: status === 'HAC_PENALIZED' ? 16 : 14,
+          color: status === 'HAC_PENALIZED' ? '#f59e0b' : '#facc15',
+          opacity: 0.9,
+          symbol: 'circle',
+        },
+        customdata: filtered,
+        hoverinfo: 'text' as const,
+        hovertext: filtered.map(f =>
+          `<b>${f.name}</b><br>` +
+          `${f.city}, ${f.state}<br>` +
+          `HAC: ${status === 'HAC_PENALIZED' ? 'Currently Penalized' : 'At Risk'}<br>` +
+          `Catheter Days: ${f.catheterDays.toLocaleString()}<br>` +
+          `Priority: ${f.priority.replace('_', ' ')}`
+        ),
+        hoverlabel: { bgcolor: 'white', font: { color: 'black', size: 12 } }
+      })
+    })
+
+    return traces
   }, [facilitiesWithCoords, priorityColors, isClient])
 
   // Plotly layout

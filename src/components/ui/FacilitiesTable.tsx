@@ -27,6 +27,7 @@ interface Facility {
   sir: number
   cautiStatus: string
   priority: 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
+  hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
   physicians: Physician[]
   physicianCount: number
 }
@@ -42,17 +43,26 @@ type SortKey = 'name' | 'city' | 'catheterDays' | 'sir' | 'priority' | 'physicia
 type SortOrder = 'asc' | 'desc'
 
 const priorityOrder = { HIGH_CAUTI: 0, HIGH_VOLUME: 1, VA: 2, STANDARD: 3 }
+const hacOrder = { HAC_PENALIZED: 0, HAC_AT_RISK: 1 }
 const priorityColors = {
   HIGH_CAUTI: 'bg-red-500',
   HIGH_VOLUME: 'bg-blue-500',
   VA: 'bg-orange-500',
   STANDARD: 'bg-green-500',
 }
+const hacColors = {
+  HAC_PENALIZED: 'bg-amber-500',
+  HAC_AT_RISK: 'bg-yellow-400',
+}
 const priorityLabels = {
   HIGH_CAUTI: 'High CAUTI',
   HIGH_VOLUME: 'High Volume',
   VA: 'VA',
   STANDARD: 'Standard',
+}
+const hacLabels = {
+  HAC_PENALIZED: 'HAC Penalized',
+  HAC_AT_RISK: 'HAC At Risk',
 }
 
 export function FacilitiesTable({ 
@@ -66,6 +76,7 @@ export function FacilitiesTable({
   const [searchTerm, setSearchTerm] = useState('')
   const [expandedFacilityId, setExpandedFacilityId] = useState<string | null>(null)
   const [priorityFilter, setPriorityFilter] = useState<string[]>([])
+  const [hacFilter, setHacFilter] = useState<string[]>([])
 
   // Filter and sort facilities
   const filteredAndSorted = useMemo(() => {
@@ -84,6 +95,11 @@ export function FacilitiesTable({
     // Filter by priority
     if (priorityFilter.length > 0) {
       result = result.filter(f => priorityFilter.includes(f.priority))
+    }
+
+    // Filter by HAC status
+    if (hacFilter.length > 0) {
+      result = result.filter(f => f.hacStatus && hacFilter.includes(f.hacStatus))
     }
 
     // Sort
@@ -107,20 +123,26 @@ export function FacilitiesTable({
           comparison = a.physicianCount - b.physicianCount
           break
         case 'priority':
-        default:
-          comparison = priorityOrder[a.priority] - priorityOrder[b.priority]
-          // Secondary sort by catheter days
+        default: {
+          // HAC-flagged facilities sort to the top
+          const aHac = a.hacStatus ? hacOrder[a.hacStatus] : 2
+          const bHac = b.hacStatus ? hacOrder[b.hacStatus] : 2
+          comparison = aHac - bHac
+          if (comparison === 0) {
+            comparison = priorityOrder[a.priority] - priorityOrder[b.priority]
+          }
           if (comparison === 0) {
             comparison = b.catheterDays - a.catheterDays
           }
           break
+        }
       }
       
       return sortOrder === 'desc' ? -comparison : comparison
     })
 
     return result
-  }, [facilities, searchTerm, priorityFilter, sortKey, sortOrder])
+  }, [facilities, searchTerm, priorityFilter, hacFilter, sortKey, sortOrder])
 
   // Toggle sort
   const handleSort = (key: SortKey) => {
@@ -138,6 +160,15 @@ export function FacilitiesTable({
       prev.includes(priority) 
         ? prev.filter(p => p !== priority)
         : [...prev, priority]
+    )
+  }
+
+  // Toggle HAC filter
+  const toggleHacFilter = (status: string) => {
+    setHacFilter(prev =>
+      prev.includes(status)
+        ? prev.filter(s => s !== status)
+        : [...prev, status]
     )
   }
 
@@ -177,8 +208,26 @@ export function FacilitiesTable({
           </svg>
         </div>
 
-        {/* Priority Filters */}
+        {/* Priority & HAC Filters */}
         <div className={cn('flex flex-wrap', compact ? 'gap-1' : 'gap-2')}>
+          {(['HAC_PENALIZED', 'HAC_AT_RISK'] as const).map(status => (
+            <button
+              key={status}
+              onClick={() => toggleHacFilter(status)}
+              className={cn(
+                'flex items-center gap-1.5 rounded-full font-medium transition-all',
+                compact ? 'px-2 py-1 text-xs' : 'px-3 py-1.5 text-sm gap-2',
+                hacFilter.includes(status)
+                  ? 'bg-amber-500 text-white'
+                  : 'bg-silq-dark/5 text-silq-dark/70 hover:bg-silq-dark/10'
+              )}
+            >
+              <span className={cn('rounded-full', hacColors[status], compact ? 'w-2 h-2' : 'w-2.5 h-2.5')} />
+              {compact ? (
+                status === 'HAC_PENALIZED' ? 'HAC' : 'Risk'
+              ) : hacLabels[status]}
+            </button>
+          ))}
           {(['HIGH_CAUTI', 'HIGH_VOLUME', 'VA', 'STANDARD'] as const).map(priority => (
             <button
               key={priority}
@@ -289,11 +338,23 @@ export function FacilitiesTable({
                   )}
                 >
                   <td className={cn(compact ? 'px-2 py-2' : 'px-4 py-3')}>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1.5">
                       <span className={cn('rounded-full', priorityColors[facility.priority], compact ? 'w-2.5 h-2.5' : 'w-3 h-3')} />
+                      {facility.hacStatus && (
+                        <span className={cn(
+                          'rounded-full ring-1 ring-white',
+                          facility.hacStatus === 'HAC_PENALIZED' ? hacColors.HAC_PENALIZED : hacColors.HAC_AT_RISK,
+                          compact ? 'w-2.5 h-2.5' : 'w-3 h-3'
+                        )} />
+                      )}
                       {!compact && (
                         <span className="text-xs font-medium text-silq-dark/60 hidden sm:inline">
                           {priorityLabels[facility.priority]}
+                          {facility.hacStatus && (
+                            <span className={facility.hacStatus === 'HAC_PENALIZED' ? ' text-amber-600' : ' text-yellow-500'}>
+                              {' · '}{hacLabels[facility.hacStatus]}
+                            </span>
+                          )}
                         </span>
                       )}
                     </div>
@@ -428,6 +489,17 @@ export function FacilitiesTable({
                                     {facility.cautiStatus}
                                   </span>
                                 </div>
+                                {facility.hacStatus && (
+                                  <div>
+                                    <span className="text-silq-dark/60">HAC Status:</span>
+                                    <span className={cn(
+                                      'ml-2 font-medium',
+                                      facility.hacStatus === 'HAC_PENALIZED' ? 'text-amber-600' : 'text-yellow-600'
+                                    )}>
+                                      {hacLabels[facility.hacStatus]}
+                                    </span>
+                                  </div>
+                                )}
                               </div>
                             )}
                           </div>

@@ -1,7 +1,7 @@
 {
-  "generated": "2026-03-26T21:30:14.521Z",
+  "generated": "2026-04-01T18:09:02.377Z",
   "dataVersion": "08_2025",
-  "totalReps": 63,
+  "totalReps": 64,
   "reps": [
     {
       "slug": "proactive",
@@ -16,7 +16,28 @@
       "facilityCount": 161,
       "physicianCount": 1972,
       "highCautiCount": 2,
-      "highVolumeCount": 30
+      "highVolumeCount": 30,
+      "hacPenalizedCount": 45,
+      "hacAtRiskCount": 7
+    },
+    {
+      "slug": "activize",
+      "urlPath": "/activize",
+      "primaryState": "PA",
+      "company": "Activize Inc",
+      "name": "Steve Corsello",
+      "email": "steve@activize.com",
+      "territory": [
+        "PA",
+        "NJ",
+        "NY"
+      ],
+      "facilityCount": 387,
+      "physicianCount": 5062,
+      "highCautiCount": 2,
+      "highVolumeCount": 62,
+      "hacPenalizedCount": 86,
+      "hacAtRiskCount": 16
     },
     {
       "slug": "healthcare-cellutions",
@@ -31,10 +52,12 @@
         "OK",
         "LA"
       ],
-      "facilityCount": 704,
-      "physicianCount": 3262,
-      "highCautiCount": 2,
-      "highVolumeCount": 48
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "healthcare-cellutions",
@@ -49,10 +72,12 @@
         "OK",
         "LA"
       ],
-      "facilityCount": 704,
-      "physicianCount": 3262,
-      "highCautiCount": 2,
-      "highVolumeCount": 48
+      "facilityCount": 396,
+      "physicianCount": 2142,
+      "highCautiCount": 1,
+      "highVolumeCount": 31,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "jordan-distribution",
@@ -69,7 +94,9 @@
       "facilityCount": 304,
       "physicianCount": 2200,
       "highCautiCount": 1,
-      "highVolumeCount": 26
+      "highVolumeCount": 26,
+      "hacPenalizedCount": 64,
+      "hacAtRiskCount": 10
     },
     {
       "slug": "gollar-medical",
@@ -86,7 +113,9 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "hacPenalizedCount": 62,
+      "hacAtRiskCount": 13
     },
     {
       "slug": "franklin-mountain-group",
@@ -103,7 +132,9 @@
       "facilityCount": 536,
       "physicianCount": 2799,
       "highCautiCount": 1,
-      "highVolumeCount": 44
+      "highVolumeCount": 44,
+      "hacPenalizedCount": 58,
+      "hacAtRiskCount": 9
     },
     {
       "slug": "expert-medical-sales",
@@ -118,7 +149,9 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 18,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "southern-surgical",
@@ -137,7 +170,9 @@
       "facilityCount": 588,
       "physicianCount": 4148,
       "highCautiCount": 1,
-      "highVolumeCount": 55
+      "highVolumeCount": 55,
+      "hacPenalizedCount": 76,
+      "hacAtRiskCount": 14
     },
     {
       "slug": "fladmo",
@@ -154,7 +189,9 @@
       "facilityCount": 398,
       "physicianCount": 3193,
       "highCautiCount": 0,
-      "highVolumeCount": 34
+      "highVolumeCount": 34,
+      "hacPenalizedCount": 61,
+      "hacAtRiskCount": 12
     },
     {
       "slug": "a3-biomedical",
@@ -169,7 +206,9 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 18,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "mjfhealth",
@@ -184,7 +223,9 @@
       "facilityCount": 161,
       "physicianCount": 1972,
       "highCautiCount": 2,
-      "highVolumeCount": 30
+      "highVolumeCount": 30,
+      "hacPenalizedCount": 45,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "tplconsulting",
@@ -199,7 +240,9 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 18,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "hubgroup",
@@ -218,7 +261,9 @@
       "facilityCount": 307,
       "physicianCount": 2993,
       "highCautiCount": 0,
-      "highVolumeCount": 34
+      "highVolumeCount": 34,
+      "hacPenalizedCount": 37,
+      "hacAtRiskCount": 28
     },
     {
       "slug": "zenecare",
@@ -236,7 +281,9 @@
       "facilityCount": 508,
       "physicianCount": 3719,
       "highCautiCount": 4,
-      "highVolumeCount": 54
+      "highVolumeCount": 54,
+      "hacPenalizedCount": 5,
+      "hacAtRiskCount": 1
     },
     {
       "slug": "zenecare",
@@ -254,7 +301,9 @@
       "facilityCount": 508,
       "physicianCount": 3719,
       "highCautiCount": 4,
-      "highVolumeCount": 54
+      "highVolumeCount": 54,
+      "hacPenalizedCount": 5,
+      "hacAtRiskCount": 1
     },
     {
       "slug": "zenecare",
@@ -272,7 +321,9 @@
       "facilityCount": 508,
       "physicianCount": 3719,
       "highCautiCount": 4,
-      "highVolumeCount": 54
+      "highVolumeCount": 54,
+      "hacPenalizedCount": 5,
+      "hacAtRiskCount": 1
     },
     {
       "slug": "signature-medical",
@@ -292,7 +343,9 @@
       "facilityCount": 180,
       "physicianCount": 2108,
       "highCautiCount": 2,
-      "highVolumeCount": 21
+      "highVolumeCount": 21,
+      "hacPenalizedCount": 35,
+      "hacAtRiskCount": 8
     },
     {
       "slug": "uromobile",
@@ -307,7 +360,9 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "streamline",
@@ -325,7 +380,9 @@
       "facilityCount": 535,
       "physicianCount": 5644,
       "highCautiCount": 3,
-      "highVolumeCount": 73
+      "highVolumeCount": 73,
+      "hacPenalizedCount": 124,
+      "hacAtRiskCount": 22
     },
     {
       "slug": "onpoint",
@@ -341,7 +398,9 @@
       "facilityCount": 225,
       "physicianCount": 3157,
       "highCautiCount": 2,
-      "highVolumeCount": 39
+      "highVolumeCount": 39,
+      "hacPenalizedCount": 50,
+      "hacAtRiskCount": 10
     },
     {
       "slug": "tbmedical",
@@ -358,7 +417,9 @@
       "facilityCount": 265,
       "physicianCount": 2033,
       "highCautiCount": 0,
-      "highVolumeCount": 33
+      "highVolumeCount": 33,
+      "hacPenalizedCount": 47,
+      "hacAtRiskCount": 13
     },
     {
       "slug": "meinnovations",
@@ -374,7 +435,9 @@
       "facilityCount": 436,
       "physicianCount": 2269,
       "highCautiCount": 1,
-      "highVolumeCount": 33
+      "highVolumeCount": 33,
+      "hacPenalizedCount": 43,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "sandia",
@@ -390,7 +453,9 @@
       "facilityCount": 436,
       "physicianCount": 2269,
       "highCautiCount": 1,
-      "highVolumeCount": 33
+      "highVolumeCount": 33,
+      "hacPenalizedCount": 43,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "greatdane",
@@ -408,7 +473,9 @@
       "facilityCount": 356,
       "physicianCount": 1405,
       "highCautiCount": 1,
-      "highVolumeCount": 32
+      "highVolumeCount": 32,
+      "hacPenalizedCount": 33,
+      "hacAtRiskCount": 5
     },
     {
       "slug": "emina-taylor",
@@ -423,7 +490,9 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 18,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "noreaster",
@@ -443,7 +512,9 @@
       "facilityCount": 180,
       "physicianCount": 2108,
       "highCautiCount": 2,
-      "highVolumeCount": 21
+      "highVolumeCount": 21,
+      "hacPenalizedCount": 35,
+      "hacAtRiskCount": 8
     },
     {
       "slug": "healthcare-cellutions",
@@ -458,12 +529,14 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "chowning",
       "urlPath": "/wasatch/chowning",
-      "primaryState": "MO",
+      "primaryState": "MA",
       "company": "Wasatch Medical",
       "name": "Tyler Chowning",
       "email": "tyler@wasatchmedspec.com",
@@ -476,7 +549,9 @@
       "facilityCount": 490,
       "physicianCount": 2868,
       "highCautiCount": 1,
-      "highVolumeCount": 28
+      "highVolumeCount": 28,
+      "hacPenalizedCount": 50,
+      "hacAtRiskCount": 11
     },
     {
       "slug": "gerrard",
@@ -492,7 +567,9 @@
       "facilityCount": 165,
       "physicianCount": 1503,
       "highCautiCount": 0,
-      "highVolumeCount": 22
+      "highVolumeCount": 22,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 11
     },
     {
       "slug": "ghanem",
@@ -510,7 +587,9 @@
       "facilityCount": 304,
       "physicianCount": 3430,
       "highCautiCount": 0,
-      "highVolumeCount": 34
+      "highVolumeCount": 34,
+      "hacPenalizedCount": 41,
+      "hacAtRiskCount": 23
     },
     {
       "slug": "grosjean",
@@ -525,11 +604,13 @@
       "facilityCount": 338,
       "physicianCount": 2637,
       "highCautiCount": 3,
-      "highVolumeCount": 37
+      "highVolumeCount": 37,
+      "hacPenalizedCount": 0,
+      "hacAtRiskCount": 0
     },
     {
       "slug": "jimmerson",
-      "urlPath": "/wasatch/jimmerson",
+      "urlPath": "/wasatch/Jimmerson",
       "primaryState": "CA",
       "company": "Wasatch Medical",
       "name": "Derrick Jimmerson",
@@ -540,7 +621,9 @@
       "facilityCount": 338,
       "physicianCount": 2637,
       "highCautiCount": 3,
-      "highVolumeCount": 37
+      "highVolumeCount": 37,
+      "hacPenalizedCount": 0,
+      "hacAtRiskCount": 0
     },
     {
       "slug": "ju",
@@ -555,7 +638,9 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "lamitina",
@@ -570,7 +655,9 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 18,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "lucier",
@@ -589,7 +676,9 @@
       "facilityCount": 169,
       "physicianCount": 1941,
       "highCautiCount": 2,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 33,
+      "hacAtRiskCount": 8
     },
     {
       "slug": "martinez",
@@ -605,7 +694,9 @@
       "facilityCount": 515,
       "physicianCount": 2565,
       "highCautiCount": 2,
-      "highVolumeCount": 35
+      "highVolumeCount": 35,
+      "hacPenalizedCount": 47,
+      "hacAtRiskCount": 11
     },
     {
       "slug": "pierro",
@@ -624,7 +715,9 @@
       "facilityCount": 169,
       "physicianCount": 1941,
       "highCautiCount": 2,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 33,
+      "hacAtRiskCount": 8
     },
     {
       "slug": "richards",
@@ -639,7 +732,9 @@
       "facilityCount": 100,
       "physicianCount": 530,
       "highCautiCount": 0,
-      "highVolumeCount": 11
+      "highVolumeCount": 11,
+      "hacPenalizedCount": 15,
+      "hacAtRiskCount": 2
     },
     {
       "slug": "salmons",
@@ -654,7 +749,9 @@
       "facilityCount": 193,
       "physicianCount": 2452,
       "highCautiCount": 0,
-      "highVolumeCount": 20
+      "highVolumeCount": 20,
+      "hacPenalizedCount": 18,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "steimel",
@@ -671,7 +768,9 @@
       "facilityCount": 369,
       "physicianCount": 1703,
       "highCautiCount": 2,
-      "highVolumeCount": 16
+      "highVolumeCount": 16,
+      "hacPenalizedCount": 43,
+      "hacAtRiskCount": 8
     },
     {
       "slug": "streit",
@@ -686,7 +785,9 @@
       "facilityCount": 396,
       "physicianCount": 2142,
       "highCautiCount": 1,
-      "highVolumeCount": 31
+      "highVolumeCount": 31,
+      "hacPenalizedCount": 32,
+      "hacAtRiskCount": 7
     },
     {
       "slug": "whisner",
@@ -707,7 +808,9 @@
       "facilityCount": 394,
       "physicianCount": 5098,
       "highCautiCount": 4,
-      "highVolumeCount": 59
+      "highVolumeCount": 59,
+      "hacPenalizedCount": 83,
+      "hacAtRiskCount": 18
     },
     {
       "slug": "whittiker",
@@ -722,7 +825,9 @@
       "facilityCount": 88,
       "physicianCount": 653,
       "highCautiCount": 0,
-      "highVolumeCount": 5
+      "highVolumeCount": 5,
+      "hacPenalizedCount": 0,
+      "hacAtRiskCount": 0
     },
     {
       "slug": "wood",
@@ -739,7 +844,9 @@
       "facilityCount": 196,
       "physicianCount": 542,
       "highCautiCount": 1,
-      "highVolumeCount": 1
+      "highVolumeCount": 1,
+      "hacPenalizedCount": 10,
+      "hacAtRiskCount": 2
     },
     {
       "slug": "sisco",
@@ -755,14 +862,16 @@
       "facilityCount": 510,
       "physicianCount": 2636,
       "highCautiCount": 1,
-      "highVolumeCount": 39
+      "highVolumeCount": 39,
+      "hacPenalizedCount": 57,
+      "hacAtRiskCount": 9
     },
     {
       "slug": "dowdy",
       "urlPath": "/comedical/dowdy",
       "primaryState": "OR",
-      "company": "Marti Dowdy",
-      "name": "Marti Dowdy",
+      "company": "Marti  Dowdy",
+      "name": "Marti  Dowdy",
       "email": "marti@comedical.com",
       "territory": [
         "OR",
@@ -771,7 +880,9 @@
       "facilityCount": 151,
       "physicianCount": 1133,
       "highCautiCount": 2,
-      "highVolumeCount": 15
+      "highVolumeCount": 15,
+      "hacPenalizedCount": 25,
+      "hacAtRiskCount": 6
     },
     {
       "slug": "dennehy",
@@ -786,7 +897,9 @@
       "facilityCount": 91,
       "physicianCount": 667,
       "highCautiCount": 0,
-      "highVolumeCount": 12
+      "highVolumeCount": 12,
+      "hacPenalizedCount": 12,
+      "hacAtRiskCount": 3
     },
     {
       "slug": "murray",
@@ -801,7 +914,9 @@
       "facilityCount": 91,
       "physicianCount": 667,
       "highCautiCount": 0,
-      "highVolumeCount": 12
+      "highVolumeCount": 12,
+      "hacPenalizedCount": 12,
+      "hacAtRiskCount": 3
     },
     {
       "slug": "hagarty",
@@ -819,7 +934,9 @@
       "facilityCount": 257,
       "physicianCount": 1527,
       "highCautiCount": 2,
-      "highVolumeCount": 19
+      "highVolumeCount": 19,
+      "hacPenalizedCount": 31,
+      "hacAtRiskCount": 6
     },
     {
       "slug": "collins",
@@ -834,7 +951,9 @@
       "facilityCount": 23,
       "physicianCount": 71,
       "highCautiCount": 0,
-      "highVolumeCount": 0
+      "highVolumeCount": 0,
+      "hacPenalizedCount": 0,
+      "hacAtRiskCount": 0
     },
     {
       "slug": "titan",
@@ -852,7 +971,9 @@
       "facilityCount": 535,
       "physicianCount": 5644,
       "highCautiCount": 3,
-      "highVolumeCount": 73
+      "highVolumeCount": 73,
+      "hacPenalizedCount": 124,
+      "hacAtRiskCount": 22
     },
     {
       "slug": "intuitek",
@@ -864,10 +985,12 @@
       "territory": [
         "GA"
       ],
-      "facilityCount": 133,
-      "physicianCount": 1038,
-      "highCautiCount": 1,
-      "highVolumeCount": 15
+      "facilityCount": 58,
+      "physicianCount": 534,
+      "highCautiCount": 0,
+      "highVolumeCount": 9,
+      "hacPenalizedCount": 12,
+      "hacAtRiskCount": 3
     },
     {
       "slug": "intuitek",
@@ -882,7 +1005,9 @@
       "facilityCount": 58,
       "physicianCount": 534,
       "highCautiCount": 0,
-      "highVolumeCount": 9
+      "highVolumeCount": 9,
+      "hacPenalizedCount": 12,
+      "hacAtRiskCount": 3
     },
     {
       "slug": "stengel",
@@ -894,10 +1019,12 @@
       "territory": [
         "MO"
       ],
-      "facilityCount": 107,
-      "physicianCount": 701,
-      "highCautiCount": 1,
-      "highVolumeCount": 7
+      "facilityCount": 222,
+      "physicianCount": 1085,
+      "highCautiCount": 2,
+      "highVolumeCount": 10,
+      "hacPenalizedCount": 25,
+      "hacAtRiskCount": 6
     },
     {
       "slug": "stengel",
@@ -913,7 +1040,9 @@
       "facilityCount": 222,
       "physicianCount": 1085,
       "highCautiCount": 2,
-      "highVolumeCount": 10
+      "highVolumeCount": 10,
+      "hacPenalizedCount": 25,
+      "hacAtRiskCount": 6
     },
     {
       "slug": "genesis",
@@ -929,7 +1058,9 @@
       "facilityCount": 515,
       "physicianCount": 2565,
       "highCautiCount": 2,
-      "highVolumeCount": 35
+      "highVolumeCount": 35,
+      "hacPenalizedCount": 47,
+      "hacAtRiskCount": 11
     },
     {
       "slug": "genesis",
@@ -945,7 +1076,9 @@
       "facilityCount": 515,
       "physicianCount": 2565,
       "highCautiCount": 2,
-      "highVolumeCount": 35
+      "highVolumeCount": 35,
+      "hacPenalizedCount": 47,
+      "hacAtRiskCount": 11
     },
     {
       "slug": "klea",
@@ -962,7 +1095,9 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "hacPenalizedCount": 62,
+      "hacAtRiskCount": 13
     },
     {
       "slug": "kleamedical",
@@ -979,7 +1114,9 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "hacPenalizedCount": 62,
+      "hacAtRiskCount": 13
     },
     {
       "slug": "klea",
@@ -996,7 +1133,9 @@
       "facilityCount": 371,
       "physicianCount": 2909,
       "highCautiCount": 2,
-      "highVolumeCount": 27
+      "highVolumeCount": 27,
+      "hacPenalizedCount": 62,
+      "hacAtRiskCount": 13
     },
     {
       "slug": "lifesource",
@@ -1012,7 +1151,9 @@
       "facilityCount": 376,
       "physicianCount": 2868,
       "highCautiCount": 3,
-      "highVolumeCount": 42
+      "highVolumeCount": 42,
+      "hacPenalizedCount": 4,
+      "hacAtRiskCount": 0
     },
     {
       "slug": "gptsurgical",
@@ -1028,7 +1169,9 @@
       "facilityCount": 194,
       "physicianCount": 626,
       "highCautiCount": 1,
-      "highVolumeCount": 9
+      "highVolumeCount": 9,
+      "hacPenalizedCount": 15,
+      "hacAtRiskCount": 4
     },
     {
       "slug": "gptsurgical",
@@ -1044,7 +1187,9 @@
       "facilityCount": 194,
       "physicianCount": 626,
       "highCautiCount": 1,
-      "highVolumeCount": 9
+      "highVolumeCount": 9,
+      "hacPenalizedCount": 15,
+      "hacAtRiskCount": 4
     }
   ]
 }
