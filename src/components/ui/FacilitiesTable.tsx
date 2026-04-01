@@ -223,9 +223,7 @@ export function FacilitiesTable({
               )}
             >
               <span className={cn('rounded-full', hacColors[status], compact ? 'w-2 h-2' : 'w-2.5 h-2.5')} />
-              {compact ? (
-                status === 'HAC_PENALIZED' ? 'HAC' : 'Risk'
-              ) : hacLabels[status]}
+              {hacLabels[status]}
             </button>
           ))}
           {(['HIGH_CAUTI', 'HIGH_VOLUME', 'VA', 'STANDARD'] as const).map(priority => (
@@ -241,11 +239,7 @@ export function FacilitiesTable({
               )}
             >
               <span className={cn('rounded-full', priorityColors[priority], compact ? 'w-2 h-2' : 'w-2.5 h-2.5')} />
-              {compact ? (
-                priority === 'HIGH_CAUTI' ? 'CAUTI' :
-                priority === 'HIGH_VOLUME' ? 'Vol.' :
-                priority === 'VA' ? 'VA' : 'Std'
-              ) : priorityLabels[priority]}
+              {priorityLabels[priority]}
             </button>
           ))}
         </div>
