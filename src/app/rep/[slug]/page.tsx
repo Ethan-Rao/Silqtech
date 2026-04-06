@@ -352,46 +352,35 @@ export default function RepPage({ params }: { params: { slug: string } }) {
             </div>
           </motion.div>
           
-          {/* Two Column Grid - Facilities (65%) + Map (35%) */}
-          <div className="grid lg:grid-cols-[65fr_35fr] gap-8">
-            {/* Left Column: Facilities Table (wider) */}
-            <div className="order-2 lg:order-1">
-              <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 max-h-[800px] overflow-hidden flex flex-col">
-                <h3 className="text-lg font-bold text-silq-dark mb-4">Facilities List</h3>
-                <div className="flex-1 overflow-auto">
-                  <FacilitiesTable 
-                    facilities={facilities}
-                    compact={true}
-                  />
-                </div>
-              </div>
+          {/* Interactive Map - Full width, inline with stats */}
+          <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 mb-10">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-bold text-silq-dark">Interactive Map</h3>
+              <button
+                onClick={handleExportFacilities}
+                className="flex items-center gap-2 px-4 py-2 bg-silq-blue text-white rounded-xl text-sm font-medium hover:bg-silq-blue-700 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Export All ({repData?.facilities.length || 0})
+              </button>
             </div>
-            
-            {/* Right Column: Map + Export Button */}
-            <div className="order-1 lg:order-2">
-              <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-bold text-silq-dark">Interactive Map</h3>
-                </div>
-                
-                <RepMap 
-                  facilities={facilities}
-                  territory={meta.territory}
-                  priorityColors={priorityColors}
-                  showLegend={true}
-                />
-                
-                {/* Export Button */}
-                <button
-                  onClick={handleExportFacilities}
-                  className="mt-4 w-full flex items-center justify-center gap-2 px-6 py-3 bg-silq-blue text-white rounded-xl font-medium hover:bg-silq-blue-700 transition-colors"
-                >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                  Export All Facilities ({repData?.facilities.length || 0})
-                </button>
-              </div>
+            <RepMap 
+              facilities={facilities}
+              territory={meta.territory}
+              priorityColors={priorityColors}
+              showLegend={true}
+            />
+          </div>
+
+          {/* Facilities Table - Full width on its own line */}
+          <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 max-h-[800px] overflow-hidden flex flex-col">
+            <h3 className="text-lg font-bold text-silq-dark mb-4">Facilities List</h3>
+            <div className="flex-1 overflow-auto">
+              <FacilitiesTable 
+                facilities={facilities}
+              />
             </div>
           </div>
         </div>

@@ -1163,29 +1163,49 @@ export function RepMap({
     })
   }, [])
 
-  // Calculate map center from territory states
-  const mapCenter = useMemo(() => {
-    if (territory.length === 0) return { lat: 39.8283, lon: -98.5795 }
-    
-    const coords = territory
-      .map(state => stateCoordinates[state])
-      .filter(Boolean)
-    
-    if (coords.length === 0) return { lat: 39.8283, lon: -98.5795 }
-    
-    const avgLat = coords.reduce((sum, c) => sum + c.lat, 0) / coords.length
-    const avgLon = coords.reduce((sum, c) => sum + c.lon, 0) / coords.length
-    
-    return { lat: avgLat, lon: avgLon }
-  }, [territory])
+  // Calculate map center and zoom from actual facility coordinates to ensure all dots are visible
+  const { mapCenter, mapZoom } = useMemo(() => {
+    const defaultCenter = { lat: 39.8283, lon: -98.5795 }
 
-  // Calculate zoom level based on territory size
-  const mapZoom = useMemo(() => {
-    if (territory.length <= 1) return 6
-    if (territory.length <= 3) return 5
-    if (territory.length <= 6) return 4.5
-    return 4
-  }, [territory])
+    // Build a list of all relevant coords: facility positions + territory state centers
+    const allCoords: { lat: number; lon: number }[] = []
+
+    facilities.forEach(f => {
+      const zipCoords = getZipCoordinates(f.zipCode)
+      const coords = zipCoords || stateCoordinates[f.state]
+      if (coords) allCoords.push(coords)
+    })
+
+    territory.forEach(st => {
+      const c = stateCoordinates[st]
+      if (c) allCoords.push(c)
+    })
+
+    if (allCoords.length === 0) return { mapCenter: defaultCenter, mapZoom: 4 }
+
+    const lats = allCoords.map(c => c.lat)
+    const lons = allCoords.map(c => c.lon)
+    const minLat = Math.min(...lats)
+    const maxLat = Math.max(...lats)
+    const minLon = Math.min(...lons)
+    const maxLon = Math.max(...lons)
+
+    const center = { lat: (minLat + maxLat) / 2, lon: (minLon + maxLon) / 2 }
+
+    const latSpan = maxLat - minLat
+    const lonSpan = maxLon - minLon
+    const span = Math.max(latSpan, lonSpan * 0.6)
+
+    let zoom: number
+    if (span < 1) zoom = 7
+    else if (span < 3) zoom = 6
+    else if (span < 6) zoom = 5
+    else if (span < 12) zoom = 4.5
+    else if (span < 20) zoom = 4
+    else zoom = 3.5
+
+    return { mapCenter: center, mapZoom: zoom }
+  }, [facilities, territory])
 
   // Add coordinates to facilities
   const facilitiesWithCoords = useMemo(() => {
