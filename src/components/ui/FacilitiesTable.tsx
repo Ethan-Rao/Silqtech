@@ -292,7 +292,7 @@ export function FacilitiesTable({
                   onClick={() => handleSort('catheterDays')} 
                   className="flex items-center justify-end w-full hover:text-white/80 transition-colors"
                 >
-                  {compact ? 'Cath' : 'Cath Days'}
+                  Cath Days
                   <SortIcon active={sortKey === 'catheterDays'} order={sortOrder} />
                 </button>
               </th>
@@ -312,7 +312,7 @@ export function FacilitiesTable({
                   onClick={() => handleSort('physicianCount')} 
                   className="flex items-center justify-center w-full hover:text-white/80 transition-colors"
                 >
-                  {compact ? 'Docs' : 'Physicians'}
+                  Physicians
                   <SortIcon active={sortKey === 'physicianCount'} order={sortOrder} />
                 </button>
               </th>
@@ -323,11 +323,11 @@ export function FacilitiesTable({
               <>
                 <tr 
                   key={facility.id}
-                  onClick={() => onFacilitySelect?.(facility)}
+                  onClick={() => setExpandedFacilityId(expandedFacilityId === facility.id ? null : facility.id)}
                   className={cn(
                     'border-b border-silq-dark/5 cursor-pointer transition-colors',
                     index % 2 === 0 ? 'bg-white' : 'bg-silq-cream/30',
-                    selectedFacilityId === facility.id && 'bg-silq-blue/10',
+                    expandedFacilityId === facility.id && 'bg-silq-blue/10',
                     'hover:bg-silq-blue/5'
                   )}
                 >
@@ -384,117 +384,139 @@ export function FacilitiesTable({
                       </span>
                     </td>
                   )}
-                  <td className={cn('text-center', compact ? 'px-2 py-2' : 'px-4 py-3')}>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        setExpandedFacilityId(expandedFacilityId === facility.id ? null : facility.id)
-                      }}
-                      className={cn(
-                        'bg-gradient-to-r from-silq-blue to-silq-blue-700 text-white rounded-lg font-medium hover:shadow-lg transition-all',
-                        compact ? 'px-2 py-1 text-xs' : 'px-3 py-1.5 text-sm'
-                      )}
-                    >
-                      {expandedFacilityId === facility.id ? '−' : '+'} {facility.physicianCount}
-                    </button>
+                  <td className={cn('text-center font-medium text-silq-dark', compact ? 'px-2 py-2 text-xs' : 'px-4 py-3')}>
+                    <span className="inline-flex items-center gap-1">
+                      <span className={cn(
+                        'inline-block w-4 text-silq-blue transition-transform',
+                        expandedFacilityId === facility.id && 'rotate-90'
+                      )}>▶</span>
+                      {facility.physicianCount}
+                    </span>
                   </td>
                 </tr>
                 
-                {/* Expanded physicians row */}
+                {/* Expanded facility detail row */}
                 <AnimatePresence>
                   {expandedFacilityId === facility.id && (
                     <tr key={`${facility.id}-expanded`}>
-                      <td colSpan={compact ? 4 : 6} className={cn('bg-silq-cream/50', compact ? 'px-2 py-2' : 'px-4 py-4')}>
+                      <td colSpan={compact ? 4 : 6} className="bg-silq-cream/50 px-3 py-3">
                         <motion.div
                           initial={{ opacity: 0, height: 0 }}
                           animate={{ opacity: 1, height: 'auto' }}
                           exit={{ opacity: 0, height: 0 }}
                           className="overflow-hidden"
                         >
-                          <div className={cn('bg-white rounded-xl shadow-inner', compact ? 'p-2' : 'p-4')}>
-                            <div className={cn('flex items-center justify-between', compact ? 'mb-2' : 'mb-4')}>
-                              <h4 className={cn('font-semibold text-silq-dark', compact && 'text-xs')}>
-                                {compact ? 'Physicians' : `Physicians at ${facility.name}`}
-                              </h4>
-                              <a 
+                          <div className="bg-white rounded-xl shadow-inner p-4">
+                            {/* Status badges row */}
+                            <div className="flex items-center gap-2 mb-3">
+                              <span className={cn('w-3 h-3 rounded-full', priorityColors[facility.priority])} />
+                              <span className="text-sm font-medium text-silq-dark/60">
+                                {priorityLabels[facility.priority]}
+                              </span>
+                              {facility.hacStatus && (
+                                <span className={cn(
+                                  'px-2 py-0.5 text-xs font-semibold rounded-full',
+                                  facility.hacStatus === 'HAC_PENALIZED'
+                                    ? 'bg-amber-100 text-amber-700'
+                                    : 'bg-yellow-100 text-yellow-700'
+                                )}>
+                                  {hacLabels[facility.hacStatus]}
+                                </span>
+                              )}
+                              <a
                                 href={`tel:${facility.phone}`}
-                                className={cn('text-silq-blue hover:underline flex items-center gap-1', compact ? 'text-xs' : 'text-sm')}
+                                onClick={(e) => e.stopPropagation()}
+                                className="ml-auto text-silq-blue hover:underline flex items-center gap-1 text-sm"
                               >
-                                <svg className={cn(compact ? 'w-3 h-3' : 'w-4 h-4')} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 {facility.phone}
                               </a>
                             </div>
-                            
+
+                            {/* Stats cards */}
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
+                                <p className="text-xl font-bold text-silq-dark">{facility.catheterDays.toLocaleString()}</p>
+                                <p className="text-xs text-silq-dark/60">Catheter Days</p>
+                              </div>
+                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
+                                <p className={cn(
+                                  'text-xl font-bold',
+                                  facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
+                                  facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
+                                  'text-silq-dark'
+                                )}>
+                                  {facility.sir ? facility.sir.toFixed(2) : 'N/A'}
+                                </p>
+                                <p className="text-xs text-silq-dark/60">SIR Score</p>
+                              </div>
+                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
+                                <p className="text-xl font-bold text-silq-dark">{facility.physicianCount}</p>
+                                <p className="text-xs text-silq-dark/60">Physicians</p>
+                              </div>
+                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
+                                <p className="text-sm font-medium text-silq-dark">{facility.city}, {facility.state} {facility.zipCode}</p>
+                                <p className="text-xs text-silq-dark/60">Location</p>
+                              </div>
+                            </div>
+
+                            {/* Facility details */}
+                            <div className="grid sm:grid-cols-2 gap-x-4 gap-y-1 text-sm mb-4 pb-4 border-b border-silq-dark/10">
+                              <div>
+                                <span className="text-silq-dark/60">Address:</span>
+                                <span className="ml-1 text-silq-dark">{facility.address}</span>
+                              </div>
+                              <div>
+                                <span className="text-silq-dark/60">Type:</span>
+                                <span className="ml-1 text-silq-dark">{facility.hospitalType}</span>
+                              </div>
+                              {facility.gpo && (
+                                <div>
+                                  <span className="text-silq-dark/60">GPO:</span>
+                                  <span className="ml-1 text-silq-dark">{facility.gpo.split(',')[0]}</span>
+                                </div>
+                              )}
+                              <div>
+                                <span className="text-silq-dark/60">CAUTI:</span>
+                                <span className={cn(
+                                  'ml-1',
+                                  facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
+                                  facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
+                                  'text-silq-dark'
+                                )}>
+                                  {facility.cautiStatus}
+                                </span>
+                              </div>
+                            </div>
+
+                            {/* Physicians list */}
+                            <h4 className="text-sm font-semibold text-silq-dark mb-2">
+                              Physicians ({facility.physicianCount})
+                            </h4>
                             {facility.physicians.length > 0 ? (
-                              <div className={cn(
-                                'grid gap-2',
-                                compact ? 'grid-cols-1' : 'sm:grid-cols-2 lg:grid-cols-3'
-                              )}>
-                                {facility.physicians.slice(0, compact ? 5 : undefined).map((physician, i) => (
-                                  <div 
+                              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-1.5 max-h-[250px] overflow-y-auto">
+                                {facility.physicians.map((physician, i) => (
+                                  <div
                                     key={i}
-                                    className={cn('flex items-center gap-2 rounded-lg bg-silq-cream/50', compact ? 'p-1.5' : 'p-2')}
+                                    className="flex items-center gap-2 p-1.5 rounded-lg bg-silq-cream/50"
                                   >
                                     <span className={cn(
-                                      'w-2 h-2 rounded-full',
-                                      physician.specialty === 'Urology' ? 'bg-silq-blue' : 'bg-silq-teal'
+                                      'w-2 h-2 rounded-full flex-shrink-0',
+                                      physician.specialty === 'Urology' ? 'bg-silq-blue' :
+                                      physician.specialty === 'Infectious Disease' ? 'bg-red-400' :
+                                      'bg-silq-teal'
                                     )} />
-                                    <div>
-                                      <p className={cn('font-medium text-silq-dark', compact ? 'text-xs' : 'text-sm')}>{physician.name}</p>
-                                      {!compact && <p className="text-xs text-silq-dark/60">{physician.specialty}</p>}
+                                    <div className="min-w-0">
+                                      <p className="text-xs font-medium text-silq-dark truncate">{physician.name}</p>
+                                      <p className="text-[10px] text-silq-dark/50">{physician.specialty}</p>
                                     </div>
                                   </div>
                                 ))}
-                                {compact && facility.physicians.length > 5 && (
-                                  <p className="text-xs text-silq-dark/50 italic">+{facility.physicians.length - 5} more</p>
-                                )}
                               </div>
                             ) : (
-                              <p className={cn('text-silq-dark/60 italic', compact ? 'text-xs' : 'text-sm')}>No physicians data available</p>
-                            )}
-
-                            {/* Additional facility info - hide in compact mode */}
-                            {!compact && (
-                              <div className="mt-4 pt-4 border-t border-silq-dark/10 grid sm:grid-cols-2 gap-4 text-sm">
-                                <div>
-                                  <span className="text-silq-dark/60">Address:</span>
-                                  <span className="ml-2 text-silq-dark">{facility.address}, {facility.city}, {facility.state} {facility.zipCode}</span>
-                                </div>
-                                {facility.gpo && (
-                                  <div>
-                                    <span className="text-silq-dark/60">GPO:</span>
-                                    <span className="ml-2 text-silq-dark">{facility.gpo.split(',')[0]}</span>
-                                  </div>
-                                )}
-                                <div>
-                                  <span className="text-silq-dark/60">Type:</span>
-                                  <span className="ml-2 text-silq-dark">{facility.hospitalType}</span>
-                                </div>
-                                <div>
-                                  <span className="text-silq-dark/60">CAUTI Status:</span>
-                                  <span className={cn(
-                                    'ml-2',
-                                    facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
-                                    facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
-                                    'text-silq-dark'
-                                  )}>
-                                    {facility.cautiStatus}
-                                  </span>
-                                </div>
-                                {facility.hacStatus && (
-                                  <div>
-                                    <span className="text-silq-dark/60">HAC Status:</span>
-                                    <span className={cn(
-                                      'ml-2 font-medium',
-                                      facility.hacStatus === 'HAC_PENALIZED' ? 'text-amber-600' : 'text-yellow-600'
-                                    )}>
-                                      {hacLabels[facility.hacStatus]}
-                                    </span>
-                                  </div>
-                                )}
-                              </div>
+                              <p className="text-sm text-silq-dark/60 italic">No physician data available</p>
                             )}
                           </div>
                         </motion.div>

@@ -86,8 +86,6 @@ export default function RepPage({ params }: { params: { slug: string } }) {
   const [repData, setRepData] = useState<RepData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [selectedFacility, setSelectedFacility] = useState<Facility | null>(null)
-  const [showPhysicians, setShowPhysicians] = useState(false)
 
   // Load rep data from JSON
   useEffect(() => {
@@ -313,7 +311,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               Facilities & Interactive Map
             </h2>
             <p className="mt-4 text-silq-dark/70 max-w-2xl mx-auto">
-              Browse facilities on the left, view them on the map. Click markers or table rows to see details.
+              Click any facility row to expand and view full details, stats, and physicians.
             </p>
           </div>
 
@@ -354,17 +352,15 @@ export default function RepPage({ params }: { params: { slug: string } }) {
             </div>
           </motion.div>
           
-          {/* Two Column Grid */}
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Left Column: Facilities Table */}
+          {/* Two Column Grid - Facilities (65%) + Map (35%) */}
+          <div className="grid lg:grid-cols-[65fr_35fr] gap-8">
+            {/* Left Column: Facilities Table (wider) */}
             <div className="order-2 lg:order-1">
-              <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 h-[700px] overflow-hidden flex flex-col">
+              <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 max-h-[800px] overflow-hidden flex flex-col">
                 <h3 className="text-lg font-bold text-silq-dark mb-4">Facilities List</h3>
                 <div className="flex-1 overflow-auto">
                   <FacilitiesTable 
                     facilities={facilities}
-                    onFacilitySelect={(facility) => { setSelectedFacility(facility); setShowPhysicians(false) }}
-                    selectedFacilityId={selectedFacility?.id}
                     compact={true}
                   />
                 </div>
@@ -376,32 +372,13 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-bold text-silq-dark">Interactive Map</h3>
-                  
-                  {/* Priority Legend - Inside Map Card */}
-                  <div className="flex flex-wrap items-center gap-3">
-                    {[
-                      { key: 'HAC_PENALIZED', label: 'HAC Penalized', color: 'bg-amber-500' },
-                      { key: 'HAC_AT_RISK', label: 'HAC At Risk', color: 'bg-yellow-400' },
-                      { key: 'HIGH_CAUTI', label: 'High CAUTI', color: 'bg-red-500' },
-                      { key: 'HIGH_VOLUME', label: 'High Volume', color: 'bg-blue-500' },
-                      { key: 'VA', label: 'VA', color: 'bg-orange-500' },
-                      { key: 'STANDARD', label: 'Standard', color: 'bg-green-500' },
-                    ].map(item => (
-                      <div key={item.key} className="flex items-center gap-1.5">
-                        <span className={`w-2.5 h-2.5 rounded-full ${item.color}`} />
-                        <span className="text-xs text-silq-dark/60">{item.label}</span>
-                      </div>
-                    ))}
-                  </div>
                 </div>
                 
                 <RepMap 
                   facilities={facilities}
                   territory={meta.territory}
                   priorityColors={priorityColors}
-                  onFacilitySelect={(facility) => { setSelectedFacility(facility); setShowPhysicians(false) }}
-                  selectedFacilityId={selectedFacility?.id}
-                  showLegend={false}
+                  showLegend={true}
                 />
                 
                 {/* Export Button */}
@@ -415,132 +392,6 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                   Export All Facilities ({repData?.facilities.length || 0})
                 </button>
               </div>
-              
-              {/* Selected Facility Detail Card */}
-              {selectedFacility && (
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="mt-6 bg-white rounded-2xl p-6 shadow-lg border border-silq-dark/10"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className={`w-3 h-3 rounded-full ${
-                          selectedFacility.priority === 'HIGH_CAUTI' ? 'bg-red-500' :
-                          selectedFacility.priority === 'HIGH_VOLUME' ? 'bg-blue-500' :
-                          selectedFacility.priority === 'VA' ? 'bg-orange-500' : 'bg-green-500'
-                        }`} />
-                        <span className="text-sm font-medium text-silq-dark/60">
-                          {selectedFacility.priority === 'HIGH_CAUTI' ? 'High CAUTI' :
-                           selectedFacility.priority === 'HIGH_VOLUME' ? 'High Volume' :
-                           selectedFacility.priority === 'VA' ? 'VA' : 'Standard'}
-                        </span>
-                        {selectedFacility.hacStatus && (
-                          <span className={`px-2 py-0.5 text-xs font-semibold rounded-full ${
-                            selectedFacility.hacStatus === 'HAC_PENALIZED'
-                              ? 'bg-amber-100 text-amber-700'
-                              : 'bg-yellow-100 text-yellow-700'
-                          }`}>
-                            {selectedFacility.hacStatus === 'HAC_PENALIZED' ? 'HAC Penalized' : 'HAC At Risk'}
-                          </span>
-                        )}
-                      </div>
-                      <h3 className="text-xl font-bold text-silq-dark">{selectedFacility.name}</h3>
-                      <p className="text-silq-dark/60">{selectedFacility.address}, {selectedFacility.city}, {selectedFacility.state} {selectedFacility.zipCode}</p>
-                    </div>
-                    <button 
-                      onClick={() => setSelectedFacility(null)}
-                      className="text-silq-dark/40 hover:text-silq-dark transition-colors"
-                    >
-                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                  
-                  <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="bg-silq-cream rounded-xl p-3 text-center">
-                      <p className="text-2xl font-bold text-silq-dark">{selectedFacility.catheterDays.toLocaleString()}</p>
-                      <p className="text-xs text-silq-dark/60">Catheter Days</p>
-                    </div>
-                    <div className="bg-silq-cream rounded-xl p-3 text-center">
-                      <p className={`text-2xl font-bold ${
-                        selectedFacility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
-                        selectedFacility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
-                        'text-silq-dark'
-                      }`}>
-                        {selectedFacility.sir ? selectedFacility.sir.toFixed(2) : 'N/A'}
-                      </p>
-                      <p className="text-xs text-silq-dark/60">SIR Score</p>
-                    </div>
-                    <div className="bg-silq-cream rounded-xl p-3 text-center">
-                      <p className="text-2xl font-bold text-silq-dark">{selectedFacility.physicianCount}</p>
-                      <p className="text-xs text-silq-dark/60">Physicians</p>
-                    </div>
-                    <div className="bg-silq-cream rounded-xl p-3 text-center">
-                      <a 
-                        href={`tel:${selectedFacility.phone}`}
-                        className="text-silq-blue hover:underline text-sm font-medium"
-                      >
-                        {selectedFacility.phone}
-                      </a>
-                      <p className="text-xs text-silq-dark/60">Phone</p>
-                    </div>
-                  </div>
-
-                  {/* View Physicians Button */}
-                  <button
-                    onClick={() => setShowPhysicians(!showPhysicians)}
-                    className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-silq-blue to-silq-blue-700 text-white rounded-xl font-medium hover:shadow-lg transition-all"
-                  >
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                    {showPhysicians ? 'Hide Physicians' : `View ${selectedFacility.physicianCount} Physicians`}
-                    <svg className={`w-4 h-4 transition-transform ${showPhysicians ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-
-                  {/* Physicians List */}
-                  {showPhysicians && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      className="mt-4 overflow-hidden"
-                    >
-                      <div className="bg-silq-cream/50 rounded-xl p-4 border border-silq-dark/5">
-                        <h4 className="text-sm font-semibold text-silq-dark mb-3">
-                          Physicians at {selectedFacility.name}
-                        </h4>
-                        {selectedFacility.physicians.length > 0 ? (
-                          <div className="grid sm:grid-cols-2 gap-2 max-h-[300px] overflow-y-auto">
-                            {selectedFacility.physicians.map((physician, i) => (
-                              <div 
-                                key={i}
-                                className="flex items-center gap-2.5 p-2.5 rounded-lg bg-white border border-silq-dark/5"
-                              >
-                                <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${
-                                  physician.specialty === 'Urology' ? 'bg-silq-blue' : 
-                                  physician.specialty === 'Infectious Disease' ? 'bg-red-400' :
-                                  'bg-silq-teal'
-                                }`} />
-                                <div className="min-w-0">
-                                  <p className="text-sm font-medium text-silq-dark truncate">{physician.name}</p>
-                                  <p className="text-xs text-silq-dark/60">{physician.specialty}</p>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <p className="text-sm text-silq-dark/60 italic">No physician data available for this facility.</p>
-                        )}
-                      </div>
-                    </motion.div>
-                  )}
-                </motion.div>
-              )}
             </div>
           </div>
         </div>
