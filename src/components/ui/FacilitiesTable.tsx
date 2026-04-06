@@ -399,124 +399,137 @@ export function FacilitiesTable({
                 <AnimatePresence>
                   {expandedFacilityId === facility.id && (
                     <tr key={`${facility.id}-expanded`}>
-                      <td colSpan={compact ? 4 : 6} className="bg-silq-cream/50 px-3 py-3">
+                      <td colSpan={compact ? 4 : 6} className="bg-silq-cream/30 px-0 py-0">
                         <motion.div
                           initial={{ opacity: 0, height: 0 }}
                           animate={{ opacity: 1, height: 'auto' }}
                           exit={{ opacity: 0, height: 0 }}
                           className="overflow-hidden"
                         >
-                          <div className="bg-white rounded-xl shadow-inner p-4">
-                            {/* Status badges row */}
-                            <div className="flex items-center gap-2 mb-3">
-                              <span className={cn('w-3 h-3 rounded-full', priorityColors[facility.priority])} />
-                              <span className="text-sm font-medium text-silq-dark/60">
-                                {priorityLabels[facility.priority]}
-                              </span>
-                              {facility.hacStatus && (
-                                <span className={cn(
-                                  'px-2 py-0.5 text-xs font-semibold rounded-full',
-                                  facility.hacStatus === 'HAC_PENALIZED'
-                                    ? 'bg-amber-100 text-amber-700'
-                                    : 'bg-yellow-100 text-yellow-700'
-                                )}>
-                                  {hacLabels[facility.hacStatus]}
-                                </span>
-                              )}
+                          <div className="p-4 lg:p-5">
+                            {/* Top bar: phone + badges + close */}
+                            <div className="flex items-center gap-3 mb-4">
                               <a
                                 href={`tel:${facility.phone}`}
                                 onClick={(e) => e.stopPropagation()}
-                                className="ml-auto text-silq-blue hover:underline flex items-center gap-1 text-sm"
+                                className="inline-flex items-center gap-2 px-4 py-2 bg-silq-blue text-white rounded-lg font-semibold text-sm hover:bg-silq-blue-700 transition-colors shadow-sm"
                               >
                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 {facility.phone}
                               </a>
-                            </div>
-
-                            {/* Stats cards */}
-                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
-                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
-                                <p className="text-xl font-bold text-silq-dark">{facility.catheterDays.toLocaleString()}</p>
-                                <p className="text-xs text-silq-dark/60">Catheter Days</p>
-                              </div>
-                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
-                                <p className={cn(
-                                  'text-xl font-bold',
-                                  facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
-                                  facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
-                                  'text-silq-dark'
+                              <div className="flex items-center gap-2">
+                                <span className={cn('px-2 py-0.5 text-xs font-semibold rounded-full', 
+                                  facility.priority === 'HIGH_CAUTI' ? 'bg-red-100 text-red-700' :
+                                  facility.priority === 'HIGH_VOLUME' ? 'bg-blue-100 text-blue-700' :
+                                  facility.priority === 'VA' ? 'bg-orange-100 text-orange-700' :
+                                  'bg-green-100 text-green-700'
                                 )}>
-                                  {facility.sir ? facility.sir.toFixed(2) : 'N/A'}
-                                </p>
-                                <p className="text-xs text-silq-dark/60">SIR Score</p>
-                              </div>
-                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
-                                <p className="text-xl font-bold text-silq-dark">{facility.physicianCount}</p>
-                                <p className="text-xs text-silq-dark/60">Physicians</p>
-                              </div>
-                              <div className="bg-silq-cream rounded-lg p-2.5 text-center">
-                                <p className="text-sm font-medium text-silq-dark">{facility.city}, {facility.state} {facility.zipCode}</p>
-                                <p className="text-xs text-silq-dark/60">Location</p>
-                              </div>
-                            </div>
-
-                            {/* Facility details */}
-                            <div className="grid sm:grid-cols-2 gap-x-4 gap-y-1 text-sm mb-4 pb-4 border-b border-silq-dark/10">
-                              <div>
-                                <span className="text-silq-dark/60">Address:</span>
-                                <span className="ml-1 text-silq-dark">{facility.address}</span>
-                              </div>
-                              <div>
-                                <span className="text-silq-dark/60">Type:</span>
-                                <span className="ml-1 text-silq-dark">{facility.hospitalType}</span>
-                              </div>
-                              {facility.gpo && (
-                                <div>
-                                  <span className="text-silq-dark/60">GPO:</span>
-                                  <span className="ml-1 text-silq-dark">{facility.gpo.split(',')[0]}</span>
-                                </div>
-                              )}
-                              <div>
-                                <span className="text-silq-dark/60">CAUTI:</span>
-                                <span className={cn(
-                                  'ml-1',
-                                  facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
-                                  facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
-                                  'text-silq-dark'
-                                )}>
-                                  {facility.cautiStatus}
+                                  {priorityLabels[facility.priority]}
                                 </span>
+                                {facility.hacStatus && (
+                                  <span className={cn(
+                                    'px-2 py-0.5 text-xs font-semibold rounded-full',
+                                    facility.hacStatus === 'HAC_PENALIZED'
+                                      ? 'bg-amber-100 text-amber-700'
+                                      : 'bg-yellow-100 text-yellow-700'
+                                  )}>
+                                    {hacLabels[facility.hacStatus]}
+                                  </span>
+                                )}
+                              </div>
+                              <button
+                                onClick={(e) => { e.stopPropagation(); setExpandedFacilityId(null) }}
+                                className="ml-auto p-1.5 rounded-lg hover:bg-silq-dark/10 text-silq-dark/40 hover:text-silq-dark transition-colors"
+                                aria-label="Close details"
+                              >
+                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                              </button>
+                            </div>
+
+                            {/* Two-column layout: info left, stats right */}
+                            <div className="grid sm:grid-cols-[1fr_auto] gap-4 mb-4">
+                              <div className="space-y-1.5 text-sm">
+                                <div className="flex gap-2">
+                                  <span className="text-silq-dark/50 w-16 flex-shrink-0">Address</span>
+                                  <span className="text-silq-dark">{facility.address}, {facility.city}, {facility.state} {facility.zipCode}</span>
+                                </div>
+                                <div className="flex gap-2">
+                                  <span className="text-silq-dark/50 w-16 flex-shrink-0">Type</span>
+                                  <span className="text-silq-dark">{facility.hospitalType}</span>
+                                </div>
+                                {facility.gpo && (
+                                  <div className="flex gap-2">
+                                    <span className="text-silq-dark/50 w-16 flex-shrink-0">GPO</span>
+                                    <span className="text-silq-dark">{facility.gpo.split(',')[0]}</span>
+                                  </div>
+                                )}
+                                <div className="flex gap-2">
+                                  <span className="text-silq-dark/50 w-16 flex-shrink-0">CAUTI</span>
+                                  <span className={cn(
+                                    facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
+                                    facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
+                                    'text-silq-dark'
+                                  )}>
+                                    {facility.cautiStatus}
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex gap-3">
+                                <div className="bg-white rounded-lg px-4 py-2 text-center shadow-sm border border-silq-dark/5">
+                                  <p className="text-lg font-bold text-silq-dark">{facility.catheterDays.toLocaleString()}</p>
+                                  <p className="text-[11px] text-silq-dark/50">Cath Days</p>
+                                </div>
+                                <div className="bg-white rounded-lg px-4 py-2 text-center shadow-sm border border-silq-dark/5">
+                                  <p className={cn(
+                                    'text-lg font-bold',
+                                    facility.cautiStatus === 'Worse than the National Benchmark' ? 'text-red-600' :
+                                    facility.cautiStatus === 'Better than the National Benchmark' ? 'text-green-600' :
+                                    'text-silq-dark'
+                                  )}>
+                                    {facility.sir ? facility.sir.toFixed(2) : 'N/A'}
+                                  </p>
+                                  <p className="text-[11px] text-silq-dark/50">SIR</p>
+                                </div>
+                                <div className="bg-white rounded-lg px-4 py-2 text-center shadow-sm border border-silq-dark/5">
+                                  <p className="text-lg font-bold text-silq-dark">{facility.physicianCount}</p>
+                                  <p className="text-[11px] text-silq-dark/50">Physicians</p>
+                                </div>
                               </div>
                             </div>
 
                             {/* Physicians list */}
-                            <h4 className="text-sm font-semibold text-silq-dark mb-2">
-                              Physicians ({facility.physicianCount})
-                            </h4>
-                            {facility.physicians.length > 0 ? (
-                              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-1.5 max-h-[250px] overflow-y-auto">
-                                {facility.physicians.map((physician, i) => (
-                                  <div
-                                    key={i}
-                                    className="flex items-center gap-2 p-1.5 rounded-lg bg-silq-cream/50"
-                                  >
-                                    <span className={cn(
-                                      'w-2 h-2 rounded-full flex-shrink-0',
-                                      physician.specialty === 'Urology' ? 'bg-silq-blue' :
-                                      physician.specialty === 'Infectious Disease' ? 'bg-red-400' :
-                                      'bg-silq-teal'
-                                    )} />
-                                    <div className="min-w-0">
-                                      <p className="text-xs font-medium text-silq-dark truncate">{physician.name}</p>
-                                      <p className="text-[10px] text-silq-dark/50">{physician.specialty}</p>
+                            {facility.physicians.length > 0 && (
+                              <div>
+                                <h4 className="text-xs font-semibold text-silq-dark/60 uppercase tracking-wider mb-2">
+                                  Physicians ({facility.physicianCount})
+                                </h4>
+                                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-1.5 max-h-[200px] overflow-y-auto">
+                                  {facility.physicians.map((physician, i) => (
+                                    <div
+                                      key={i}
+                                      className="flex items-center gap-2 p-1.5 rounded-lg bg-white/70"
+                                    >
+                                      <span className={cn(
+                                        'w-2 h-2 rounded-full flex-shrink-0',
+                                        physician.specialty === 'Urology' ? 'bg-silq-blue' :
+                                        physician.specialty === 'Infectious Disease' ? 'bg-red-400' :
+                                        'bg-silq-teal'
+                                      )} />
+                                      <div className="min-w-0">
+                                        <p className="text-xs font-medium text-silq-dark truncate">{physician.name}</p>
+                                        <p className="text-[10px] text-silq-dark/50">{physician.specialty}</p>
+                                      </div>
                                     </div>
-                                  </div>
-                                ))}
+                                  ))}
+                                </div>
                               </div>
-                            ) : (
-                              <p className="text-sm text-silq-dark/60 italic">No physician data available</p>
+                            )}
+                            {facility.physicians.length === 0 && (
+                              <p className="text-sm text-silq-dark/50 italic">No physician data available</p>
                             )}
                           </div>
                         </motion.div>

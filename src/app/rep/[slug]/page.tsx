@@ -315,47 +315,57 @@ export default function RepPage({ params }: { params: { slug: string } }) {
             </p>
           </div>
 
-          {/* Stats Cards - Below Section Title */}
+          {/* Compact Stats Bar */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mb-10 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4"
+            className="mb-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2"
           >
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
-              <p className="text-3xl font-bold text-silq-dark">{stats.facilityCount}</p>
-              <p className="text-sm text-silq-dark/60">Facilities</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
-              <p className="text-3xl font-bold text-amber-500">{stats.hacPenalizedCount}</p>
-              <p className="text-sm text-silq-dark/60">HAC Penalized</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
-              <p className="text-3xl font-bold text-yellow-500">{stats.hacAtRiskCount}</p>
-              <p className="text-sm text-silq-dark/60">HAC At Risk</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
-              <p className="text-3xl font-bold text-red-500">{stats.highCautiCount}</p>
-              <p className="text-sm text-silq-dark/60">High CAUTI</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
-              <p className="text-3xl font-bold text-blue-500">{stats.highVolumeCount}</p>
-              <p className="text-sm text-silq-dark/60">High Volume</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5">
-              <p className="text-3xl font-bold text-silq-dark">{(stats.totalCatheterDays / 1000000).toFixed(1)}M</p>
-              <p className="text-sm text-silq-dark/60">Cath Days</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 text-center shadow-md border border-silq-dark/5 col-span-2 md:col-span-1">
-              <p className="text-3xl font-bold text-silq-dark">{stats.physicianCount.toLocaleString()}</p>
-              <p className="text-sm text-silq-dark/60">Physicians</p>
-            </div>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="font-bold text-silq-dark">{stats.facilityCount}</span>
+              <span className="text-silq-dark/50">Facilities</span>
+            </span>
+            <span className="hidden sm:inline text-silq-dark/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="w-2 h-2 rounded-full bg-amber-500" />
+              <span className="font-bold text-amber-600">{stats.hacPenalizedCount}</span>
+              <span className="text-silq-dark/50">HAC Penalized</span>
+            </span>
+            <span className="hidden sm:inline text-silq-dark/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="w-2 h-2 rounded-full bg-yellow-400" />
+              <span className="font-bold text-yellow-600">{stats.hacAtRiskCount}</span>
+              <span className="text-silq-dark/50">HAC At Risk</span>
+            </span>
+            <span className="hidden sm:inline text-silq-dark/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="w-2 h-2 rounded-full bg-red-500" />
+              <span className="font-bold text-red-600">{stats.highCautiCount}</span>
+              <span className="text-silq-dark/50">High CAUTI</span>
+            </span>
+            <span className="hidden sm:inline text-silq-dark/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="w-2 h-2 rounded-full bg-blue-500" />
+              <span className="font-bold text-blue-600">{stats.highVolumeCount}</span>
+              <span className="text-silq-dark/50">High Volume</span>
+            </span>
+            <span className="hidden sm:inline text-silq-dark/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="font-bold text-silq-dark">{(stats.totalCatheterDays / 1000000).toFixed(1)}M</span>
+              <span className="text-silq-dark/50">Cath Days</span>
+            </span>
+            <span className="hidden sm:inline text-silq-dark/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-sm">
+              <span className="font-bold text-silq-dark">{stats.physicianCount.toLocaleString()}</span>
+              <span className="text-silq-dark/50">Physicians</span>
+            </span>
           </motion.div>
-          
-          {/* Interactive Map - Full width, inline with stats */}
-          <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 mb-10">
+
+          {/* Facilities Table - Primary content, full width */}
+          <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 max-h-[800px] overflow-hidden flex flex-col mb-8">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-bold text-silq-dark">Interactive Map</h3>
+              <h3 className="text-lg font-bold text-silq-dark">Facilities List</h3>
               <button
                 onClick={handleExportFacilities}
                 className="flex items-center gap-2 px-4 py-2 bg-silq-blue text-white rounded-xl text-sm font-medium hover:bg-silq-blue-700 transition-colors"
@@ -363,25 +373,25 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Export All ({repData?.facilities.length || 0})
+                Export CSV
               </button>
             </div>
+            <div className="flex-1 overflow-auto">
+              <FacilitiesTable 
+                facilities={facilities}
+              />
+            </div>
+          </div>
+
+          {/* Interactive Map - Below the table */}
+          <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6">
+            <h3 className="text-lg font-bold text-silq-dark mb-4">Interactive Map</h3>
             <RepMap 
               facilities={facilities}
               territory={meta.territory}
               priorityColors={priorityColors}
               showLegend={true}
             />
-          </div>
-
-          {/* Facilities Table - Full width on its own line */}
-          <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 max-h-[800px] overflow-hidden flex flex-col">
-            <h3 className="text-lg font-bold text-silq-dark mb-4">Facilities List</h3>
-            <div className="flex-1 overflow-auto">
-              <FacilitiesTable 
-                facilities={facilities}
-              />
-            </div>
           </div>
         </div>
       </section>
