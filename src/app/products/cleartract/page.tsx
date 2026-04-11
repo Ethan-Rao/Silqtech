@@ -127,7 +127,7 @@ export default function ClearTractPage() {
                 FDA 510(k) Cleared
               </span>
               <h1 className="text-hero-sm md:text-hero font-bold text-silq-dark">
-                ClearTract SPT<span className="text-[0.5em] align-super">®</span> Foley Catheters
+                ClearTract SPT<span className="text-[0.5em] align-super">®</span> Specialty Foley Catheters
               </h1>
               <p className="mt-4 text-lg text-silq-dark/70">
                 Drug-free surface treatment designed to reduce infections and encrustation, and improve patient comfort.

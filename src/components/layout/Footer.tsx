@@ -36,7 +36,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-white/50">
               <li>
                 <Link href="/products/cleartract" className="hover:text-white transition-colors">
-                  ClearTract SPT® Catheters
+                  ClearTract SPT® Specialty Foley Catheters
                 </Link>
               </li>
               <li>
