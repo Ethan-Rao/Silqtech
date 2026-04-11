@@ -172,7 +172,7 @@ export default function HomePage() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold">
-              ClearTract SPT® Foley Catheters
+              ClearTract SPT® Specialty Foley Catheters
             </h2>
             <p className="mt-4 text-white/70 max-w-2xl mx-auto">
               Drug-free surface treatment designed to reduce infections and encrustation, and improve patient comfort.
