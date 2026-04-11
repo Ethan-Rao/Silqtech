@@ -68,8 +68,8 @@ const pricingSheets = [
 ]
 
 const infoMaterials = [
-  { name: 'ClearTract IFU', path: '/pdfs/cleartract-ifu.pdf' },
-  { name: 'ClearTract Bi-Fold PDF', path: '/pdfs/cleartract-bifold.pdf' },
+  { name: 'ClearTract SPT IFU', path: '/pdfs/cleartract-ifu.pdf' },
+  { name: 'ClearTract SPT Bi-Fold PDF', path: '/pdfs/cleartract-bifold.pdf' },
   { name: 'Sales & Marketing Slides', path: '/pdfs/sales-marketing-slides.pdf' },
   { name: 'Technology Overview', path: '/pdfs/technology-overview.pdf' },
   { name: 'Physician & Patient Testimonial', path: '/pdfs/testimonials.pdf' },
@@ -407,7 +407,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               Video Resources
             </h2>
             <p className="mt-4 text-silq-dark/70 max-w-2xl mx-auto">
-              Watch demonstrations of ClearTract® technology and hear from physicians and patients.
+              Watch demonstrations of ClearTract SPT® technology and hear from physicians and patients.
             </p>
           </div>
           

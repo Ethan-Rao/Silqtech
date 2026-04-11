@@ -7,12 +7,12 @@ import { CTABanner } from '@/components/sections/CTABanner'
 
 export const metadata: Metadata = {
   title: 'Products',
-  description: 'Explore Silq Technologies products including ClearTract® Foley Catheters and surface treatment services for B2B partners.',
+  description: 'Explore Silq Technologies products including ClearTract SPT® Foley Catheters and surface treatment services for B2B partners.',
 }
 
 const products = [
   {
-    title: 'ClearTract® Foley Catheters',
+    title: 'ClearTract SPT® Foley Catheters',
     description: 'FDA-cleared urinary catheters featuring our patented zwitterionic surface treatment to reduce catheter-associated infections without antibiotics.',
     image: '/images/products/BoxV2.jpg',
     href: '/products/cleartract',
@@ -39,7 +39,7 @@ export default function ProductsPage() {
             Technology That <span className="bg-gradient-to-r from-silq-blue to-silq-teal bg-clip-text text-transparent">Transforms</span>
           </h1>
           <p className="mt-6 text-lg text-silq-dark/70 max-w-2xl mx-auto">
-            From our flagship ClearTract® catheters to custom surface treatment solutions, 
+            From our flagship ClearTract SPT® catheters to custom surface treatment solutions, 
             we&apos;re bringing zwitterionic technology to healthcare and industry.
           </p>
         </div>

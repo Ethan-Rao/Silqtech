@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/Button'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Technology', href: '/technology' },
-  { name: 'ClearTract®', href: '/products/cleartract' },
+  { name: 'ClearTract SPT®', href: '/products/cleartract' },
   { name: 'Surface Treatment Services', href: '/products/surface-treatment' },
   {
     name: 'About',

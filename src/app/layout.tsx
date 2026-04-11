@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     template: '%s | Silq Technologies',
   },
   description:
-    'Silq Technologies is a medical device company developing advanced biomaterials technology born from UCLA research. Our ClearTract® Foley Catheter uses patented zwitterionic surface treatment to resist biofouling.',
+    'Silq Technologies is a medical device company developing advanced biomaterials technology born from UCLA research. Our ClearTract SPT® Foley Catheter uses patented zwitterionic surface treatment to resist biofouling.',
   keywords: [
     'medical devices',
     'biomaterials',
     'zwitterionic',
     'catheter',
-    'ClearTract',
+    'ClearTract SPT',
     'Foley catheter',
     'antibiofouling',
     'UCLA research',
@@ -114,7 +114,7 @@ export default function RootLayout({
               "name": "Silq Technologies",
               "url": "https://silq.tech",
               "logo": "https://silq.tech/images/logos/silq-logo.png",
-              "description": "Medical device company developing advanced biomaterials technology for safer medical implants. FDA-cleared ClearTract® Foley Catheters with zwitterionic surface treatment.",
+              "description": "Medical device company developing advanced biomaterials technology for safer medical implants. FDA-cleared ClearTract SPT® Foley Catheters with zwitterionic surface treatment.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "323 Sunny Isles Blvd., 7th Floor",

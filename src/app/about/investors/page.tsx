@@ -140,7 +140,7 @@ export default function InvestorsPage() {
             <div className="rounded-2xl overflow-hidden">
               <Image
                 src="/images/products/BoxV2.jpg"
-                alt="ClearTract Foley Catheter product"
+                alt="ClearTract SPT Foley Catheter product"
                 width={600}
                 height={300}
                 className="w-full h-64 object-cover"

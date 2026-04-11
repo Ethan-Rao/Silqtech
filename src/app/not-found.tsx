@@ -65,7 +65,7 @@ export default function NotFound() {
             <p className="text-sm text-silq-dark/50 mb-4">Try these:</p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <Link href="/products/cleartract" className="text-silq-blue hover:underline">
-                ClearTract® Catheters
+                ClearTract SPT® Catheters
               </Link>
               <Link href="/technology" className="text-silq-blue hover:underline">
                 Our Technology

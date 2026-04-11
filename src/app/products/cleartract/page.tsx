@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 import { TestimonialCarousel } from '@/components/ui/TestimonialCarousel'
 
 export const metadata: Metadata = {
-  title: 'ClearTract® Foley Catheters',
+  title: 'ClearTract SPT® Foley Catheters',
   description: 'FDA-cleared urinary catheters with drug-free zwitterionic surface treatment to reduce infection, encrustation, and improve comfort.',
 }
 
@@ -19,7 +19,7 @@ Sometime in the last year the University of Michigan Hospital Urology Clinic rec
 
 Needless to say, this has been a life-changing event for not only Nathan, but also his group home and us, his parents who take him to his appointments! This has been like a miracle for us and are unbelievably grateful for Brian McVerry and the SILQ Corporation for this incredible breakthrough and hope that this technology will soon be available widespread to any and all who need it.`,
     author: "Stephen Newhouse",
-    role: "Caregiver to ClearTract Patient",
+    role: "Caregiver to ClearTract SPT Patient",
     initials: "SN",
   },
   // 2. Matthew Bui
@@ -41,7 +41,7 @@ I highly recommend Foley catheters with Silq coating to anyone in need of long-t
 
 When I was approached with the option to try the Silq catheter I was excited to see if it would help. From the time I started using Silq everything changed, I no longer had to flush with anything whatsoever. I went over 6 months before I had a slight infection. I was able to clear out the infection in no time and stayed clear. I have said it more than once, but I won't use any other catheter out there, I will do everything possible to make sure I don't use any other. If Silq made this big of a change in my quality of life I can only imagine how many other lives it can and has impacted.`,
     author: "Dulce Garcia",
-    role: "Long-term ClearTract Patient",
+    role: "Long-term ClearTract SPT Patient",
     initials: "DG",
   },
   // 4. Evgeniy Kreydin
@@ -55,17 +55,17 @@ When I was approached with the option to try the Silq catheter I was excited to 
   // 5. Ana Garcia
   {
     quote: "I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis.",
-    fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
+    fullContent: `My name is Ana Garcia; I am one of Dr. Kreydin's patients who was able to use the ClearTract SPT catheters as a trial. I have Spinal Muscular Dystrophy; I am in a wheelchair for 12 hrs a day. I have full sensation but using a suprapubic catheter provided me with more independence and the ability to stay hydrated. I however did not know that there would be obstacles when having a catheter. When using the regular red catheters there was lots of pain when changing it, foul odor coming through the rubber, and general discomfort from my bladder. I also developed bladder stones.
 
-One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I am lucky because this catheter is being available at Rancho Los Amigos now. I do not think I would go back to the other catheters ever again. I believe it's important to make this product available to more patients who would not only benefit from the catheter but have a better quality of life with something so simple as a catheter.`,
+One day Dr. Kreydin presented the ClearTract SPT catheter for me to use as a trial. I was immediately impressed with the difference with this catheter. There was no pain or bladder spasms on a daily basis. I noticed there were no particles floating around when irrigation was done. I do not have pain when catheter is changed. I also have not developed any bladder stones since using this catheter. I am lucky because this catheter is being available at Rancho Los Amigos now. I do not think I would go back to the other catheters ever again. I believe it's important to make this product available to more patients who would not only benefit from the catheter but have a better quality of life with something so simple as a catheter.`,
     author: "Ana Garcia",
-    role: "Long-term ClearTract Patient",
+    role: "Long-term ClearTract SPT Patient",
     initials: "AG",
   },
   // 6. Jennifer Linehan
   {
-    quote: "Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking.",
-    fullContent: `I have been using the Silq ClearTract catheters in my neurogenic bladder patients who use chronic indwelling suprapubic tubes. These are a population of patients that are at high risk for infections, colonization and the SPT often will get clogged/encrusted. Since I have been using the Silq ClearTract catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking from the catheter becoming clogged with sediment and debris. Just recently, I had three patients who were in the ER every other week for SPT changes because the tubes were clogged. Now I am seeing them every 4 weeks for change with no recent ER visits.`,
+    quote: "Since I have been using the Silq ClearTract SPT catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking.",
+    fullContent: `I have been using the Silq ClearTract SPT catheters in my neurogenic bladder patients who use chronic indwelling suprapubic tubes. These are a population of patients that are at high risk for infections, colonization and the SPT often will get clogged/encrusted. Since I have been using the Silq ClearTract SPT catheters, not only have we seen a decrease in symptomatic infection, but also decrease in obstruction and leaking from the catheter becoming clogged with sediment and debris. Just recently, I had three patients who were in the ER every other week for SPT changes because the tubes were clogged. Now I am seeing them every 4 weeks for change with no recent ER visits.`,
     author: "Jennifer Linehan, M.D.",
     role: "Associate Professor of Urology, St. John Cancer Institute",
     initials: "JL",
@@ -85,7 +85,7 @@ One day Dr. Kreydin presented the ClearTract catheter for me to use as a trial. 
 
 On one of my mom's monthly appointments to replace the old catheter, her physician Dr. Kreydin told her of a new suprapubic product called Silq and she agreed to try it. Ever since my mom started using the new Silq suprapubic tube (5 months), her urinary tract infections have subsided, no more blockage of sediment and the tube doesn't stick to the stroma during removal for replacement of new tubes every month. My mom is completely relieved and satisfied with the new Silq suprapubic tubes. She hopes this testimony helps other patients with similar situations that may benefit from the new Silq suprapubic tubes. It has improved my mom's health both physically and mentally.`,
     author: "Jesus Trevino",
-    role: "Caregiver to ClearTract Patient",
+    role: "Caregiver to ClearTract SPT Patient",
     initials: "JT",
   },
 ]
@@ -101,7 +101,7 @@ export default function ClearTractPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MedicalDevice",
-            "name": "ClearTract® Foley Catheter",
+            "name": "ClearTract SPT® Foley Catheter",
             "description": "FDA-cleared urinary catheter with drug-free zwitterionic surface treatment to reduce infection, encrustation, and improve patient comfort.",
             "manufacturer": {
               "@type": "Organization",
@@ -127,7 +127,7 @@ export default function ClearTractPage() {
                 FDA 510(k) Cleared
               </span>
               <h1 className="text-hero-sm md:text-hero font-bold text-silq-dark">
-                ClearTract<span className="text-[0.5em] align-super">®</span> Foley Catheters
+                ClearTract SPT<span className="text-[0.5em] align-super">®</span> Foley Catheters
               </h1>
               <p className="mt-4 text-lg text-silq-dark/70">
                 Drug-free surface treatment designed to reduce infections and encrustation, and improve patient comfort.
@@ -155,7 +155,7 @@ export default function ClearTractPage() {
             
             <Image
               src="/images/products/BoxV2.jpg"
-              alt="ClearTract"
+              alt="ClearTract SPT"
               width={600}
               height={600}
               className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto"
@@ -313,7 +313,7 @@ export default function ClearTractPage() {
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
                   className="absolute top-0 left-0 w-full h-full"
-                  title="ClearTract Technology Overview"
+                  title="ClearTract SPT Technology Overview"
                 />
               </div>
             </div>
