@@ -44,6 +44,8 @@ const nextConfig = {
       { source: '/kleamedical', destination: '/rep/kleamedical' },
       { source: '/lifesource', destination: '/rep/lifesource' },
       { source: '/gptsurgical', destination: '/rep/gptsurgical' },
+      { source: '/parkingangels', destination: '/rep/parkingangels' },
+      { source: '/sciotex', destination: '/rep/sciotex' },
 
       // WASATCH REP PAGES
       { source: '/wasatch/chowning', destination: '/rep/chowning' },

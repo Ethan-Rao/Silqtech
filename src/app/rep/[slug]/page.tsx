@@ -67,12 +67,16 @@ const pricingSheets = [
   { name: 'VA Facility Pricing Sheet', path: '/pdfs/pricing/va-pricing.pdf' },
 ]
 
-const infoMaterials = [
+const infoMaterialsLeft = [
   { name: 'ClearTract SPT IFU', path: '/pdfs/cleartract-ifu.pdf' },
   { name: 'ClearTract SPT Bi-Fold PDF', path: '/pdfs/cleartract-bifold.pdf' },
   { name: 'Sales & Marketing Slides', path: '/pdfs/sales-marketing-slides.pdf' },
+]
+
+const infoMaterialsRight = [
   { name: 'Technology Overview', path: '/pdfs/technology-overview.pdf' },
-  { name: 'Physician & Patient Testimonial', path: '/pdfs/testimonials.pdf' },
+  { name: 'Full Physician and Patient Testimonials', path: '/pdfs/testimonials.pdf' },
+  { name: 'ClearTract Testimonial Handout', path: '/pdfs/cleartract-testimonial-handout.pdf' },
 ]
 
 const defaultPriorityColors = {
@@ -243,8 +247,8 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                 Sales Resources & Downloads
               </h3>
               
-              {/* Two-column grid for download categories */}
-              <div className="grid sm:grid-cols-2 gap-4">
+              {/* Three-column grid for download categories */}
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {/* Pricing Sheets Column */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4">
                   <h4 className="text-sm font-semibold text-silq-teal mb-3">Pricing Sheets</h4>
@@ -270,11 +274,35 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                   </div>
                 </div>
                 
-                {/* Informational Materials Column */}
+                {/* Informational Materials - Left Column */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4">
-                  <h4 className="text-sm font-semibold text-silq-teal mb-3">Informational Materials</h4>
+                  <h4 className="text-sm font-semibold text-silq-teal mb-3">Product Materials</h4>
                   <div className="space-y-2">
-                    {infoMaterials.map(pdf => (
+                    {infoMaterialsLeft.map(pdf => (
+                      <a 
+                        key={pdf.name}
+                        href={pdf.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors group"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-silq-teal/20 flex items-center justify-center text-silq-teal group-hover:bg-silq-teal group-hover:text-white transition-colors flex-shrink-0">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8ZM13,9V3.5L18.5,9Z"/>
+                          </svg>
+                        </div>
+                        <span className="text-white/90 text-xs font-medium group-hover:text-white">
+                          {pdf.name}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                {/* Informational Materials - Right Column */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4">
+                  <h4 className="text-sm font-semibold text-silq-teal mb-3">Testimonials & Overview</h4>
+                  <div className="space-y-2">
+                    {infoMaterialsRight.map(pdf => (
                       <a 
                         key={pdf.name}
                         href={pdf.path}

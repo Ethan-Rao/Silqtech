@@ -1,7 +1,7 @@
 {
-  "generated": "2026-04-01T18:09:02.377Z",
+  "generated": "2026-04-20T17:32:32.610Z",
   "dataVersion": "08_2025",
-  "totalReps": 64,
+  "totalReps": 67,
   "reps": [
     {
       "slug": "proactive",
@@ -609,7 +609,7 @@
       "hacAtRiskCount": 0
     },
     {
-      "slug": "jimmerson",
+      "slug": "Jimmerson",
       "urlPath": "/wasatch/Jimmerson",
       "primaryState": "CA",
       "company": "Wasatch Medical",
@@ -1190,6 +1190,68 @@
       "highVolumeCount": 9,
       "hacPenalizedCount": 15,
       "hacAtRiskCount": 4
+    },
+    {
+      "slug": "parkingangels",
+      "urlPath": "/parkingangels",
+      "primaryState": "CT",
+      "company": "Parking Angels, LLC",
+      "name": "Larry Snyder",
+      "email": "Larryjsnyder17@gmail.com",
+      "territory": [
+        "CT",
+        "NY",
+        "RI",
+        "MA"
+      ],
+      "facilityCount": 266,
+      "physicianCount": 3561,
+      "highCautiCount": 4,
+      "highVolumeCount": 46,
+      "hacPenalizedCount": 67,
+      "hacAtRiskCount": 13
+    },
+    {
+      "slug": "sciotex",
+      "urlPath": "/sciotex",
+      "primaryState": "MN",
+      "company": "Sciotex, LLC",
+      "name": "Kevin Connolly",
+      "email": "kevin@sciotex.org",
+      "territory": [
+        "MN",
+        "ND",
+        "SD",
+        "IA",
+        "NE"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12,
+      "hacPenalizedCount": 37,
+      "hacAtRiskCount": 6
+    },
+    {
+      "slug": "sciotex",
+      "urlPath": "/sciotex",
+      "primaryState": "MN",
+      "company": "Sciotex ,LLC",
+      "name": "Derek Lidbom",
+      "email": "Derek@sciotex.org",
+      "territory": [
+        "MN",
+        "ND",
+        "SD",
+        "IA",
+        "NE"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12,
+      "hacPenalizedCount": 37,
+      "hacAtRiskCount": 6
     }
   ]
 }
