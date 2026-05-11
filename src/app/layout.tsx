@@ -9,6 +9,8 @@ import { Footer } from '@/components/layout/Footer'
 const GTM_ID = 'GTM-WW5WDN4T'
 // Google Ads Tag ID
 const GADS_ID = 'AW-16744648389'
+// Milly AI chat (site-wide floating widget)
+const MILLY_STORE_ID = '9b9e5263-b3a3-4fb6-a67e-2c93f3fb4097'
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin'],
@@ -144,6 +146,13 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        {/* Milly chat — loads after page is interactive; floating bubble unless inline containers exist */}
+        <Script
+          id="milly-chat"
+          src="https://cdn.millysoftware.com/widget.js"
+          strategy="afterInteractive"
+          data-store-id={MILLY_STORE_ID}
+        />
       </body>
     </html>
   )
