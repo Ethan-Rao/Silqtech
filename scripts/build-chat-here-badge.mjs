@@ -19,8 +19,8 @@ const dataUri = `data:image/png;base64,${b64}`
 // viewBox 200x200: logo fills circle; speech bubble overlaid in center (rounded rect, no tail)
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="badgeTitle badgeDesc">
-  <title id="badgeTitle">Silq - Chat here</title>
-  <desc id="badgeDesc">Silq monogram filling the badge with a centered Chat here speech bubble overlay.</desc>
+  <title id="badgeTitle">Silq - Chat Here!</title>
+  <desc id="badgeDesc">Silq monogram filling the badge with a centered Chat Here! speech bubble overlay.</desc>
   <defs>
     <clipPath id="logoClip">
       <circle cx="100" cy="100" r="100"/>
@@ -67,7 +67,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
       font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
       font-size="30"
       font-weight="700"
-    >Chat here</text>
+    >Chat Here!</text>
   </g>
 </svg>
 `
