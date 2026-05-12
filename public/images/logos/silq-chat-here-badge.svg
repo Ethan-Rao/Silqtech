@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Silq  Chat here</title>
+  <desc id="desc">Silq monogram with a speech bubble above that says Chat here.</desc>
+  <defs>
+    <filter id="bubbleShadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0e1216" flood-opacity="0.14"/>
+    </filter>
+    <filter id="logoShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0e1216" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Monogram (black circle matches existing monogram canvas) -->
+  <g filter="url(#logoShadow)">
+    <circle cx="100" cy="150" r="48" fill="#0E1216"/>
+    <image
+      href="/images/logos/silq-monogram.png"
+      x="56"
+      y="106"
+      width="88"
+      height="88"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  </g>
+
+  <!-- Speech bubble body + tail -->
+  <g filter="url(#bubbleShadow)">
+    <rect
+      x="18"
+      y="8"
+      width="164"
+      height="54"
+      rx="16"
+      fill="#ffffff"
+      stroke="#314780"
+      stroke-width="2.5"
+    />
+    <path
+      d="M 76 62 L 100 102 L 124 62 Z"
+      fill="#ffffff"
+      stroke="#314780"
+      stroke-width="2.5"
+      stroke-linejoin="round"
+    />
+    <!-- Hide inner seam between tail and bar -->
+    <rect x="22" y="56" width="156" height="10" fill="#ffffff" />
+  </g>
+
+  <text
+    x="100"
+    y="44"
+    text-anchor="middle"
+    fill="#0E1216"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="700"
+  >
+    Chat here
+  </text>
+</svg>
