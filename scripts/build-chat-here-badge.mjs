@@ -60,10 +60,11 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     x="100"
     y="100"
     text-anchor="middle"
-    dominant-baseline="middle"
+    dominant-baseline="central"
+    alignment-baseline="central"
     fill="#0E1216"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
-    font-size="16"
+    font-size="20"
     font-weight="700"
   >Chat here</text>
 </svg>
