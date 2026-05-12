@@ -42,37 +42,39 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     />
   </g>
   <circle cx="100" cy="100" r="99.5" fill="none" stroke="#0E1216" stroke-width="1" opacity="0.25"/>
-  <!-- Centered dialogue box overlay -->
+  <!-- Centered dialogue box overlay (1.5x prior 112x44; center 100,100) -->
   <g filter="url(#bubbleShadow)">
     <rect
-      x="44"
-      y="78"
-      width="112"
-      height="44"
-      rx="14"
-      ry="14"
+      x="16"
+      y="67"
+      width="168"
+      height="66"
+      rx="21"
+      ry="21"
       fill="#ffffff"
       stroke="#314780"
-      stroke-width="2.25"
+      stroke-width="3.5"
     />
   </g>
-  <text
-    x="100"
-    y="100"
-    text-anchor="middle"
-    dominant-baseline="central"
-    alignment-baseline="central"
-    fill="#0E1216"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
-    font-size="20"
-    font-weight="700"
-  >Chat here</text>
+  <!-- Geometric center of box = (100,100); middle of text at that point -->
+  <g transform="translate(100, 100)">
+    <text
+      x="0"
+      y="0"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      fill="#0E1216"
+      font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+      font-size="30"
+      font-weight="700"
+    >Chat here</text>
+  </g>
 </svg>
 `
 
 fs.writeFileSync(svgOut, svg, 'utf8')
 
-await sharp(Buffer.from(svg), { density: 220 })
+await sharp(Buffer.from(svg), { density: 360 })
   .resize(200, 200, {
     fit: 'contain',
     background: { r: 0, g: 0, b: 0, alpha: 0 },
