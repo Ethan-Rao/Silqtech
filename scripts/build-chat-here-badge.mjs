@@ -16,6 +16,7 @@ const pngOut = path.join(root, 'public/images/logos/silq-chat-here-badge.png')
 const b64 = fs.readFileSync(monogramPath).toString('base64')
 const dataUri = `data:image/png;base64,${b64}`
 
+// viewBox 200x200 — smaller bubble (all corners rounded via single path), larger monogram, ~200px PNG
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="badgeTitle badgeDesc">
   <title id="badgeTitle">Silq - Chat here</title>
@@ -29,22 +30,47 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     </filter>
   </defs>
   <g filter="url(#logoShadow)">
-    <circle cx="100" cy="150" r="48" fill="#0E1216"/>
-    <image href="${dataUri}" x="56" y="106" width="88" height="88" preserveAspectRatio="xMidYMid meet"/>
+    <circle cx="100" cy="142" r="54" fill="#0E1216"/>
+    <image href="${dataUri}" x="46" y="88" width="108" height="108" preserveAspectRatio="xMidYMid meet"/>
   </g>
   <g filter="url(#bubbleShadow)">
-    <rect x="18" y="8" width="164" height="54" rx="16" fill="#ffffff" stroke="#314780" stroke-width="2.5"/>
-    <path d="M 76 62 L 100 102 L 124 62 Z" fill="#ffffff" stroke="#314780" stroke-width="2.5" stroke-linejoin="round"/>
-    <rect x="22" y="56" width="156" height="10" fill="#ffffff"/>
+    <path
+      fill="#ffffff"
+      stroke="#314780"
+      stroke-width="2.25"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      d="M 57 14
+         H 143
+         A 9 9 0 0 1 152 23
+         V 33
+         A 9 9 0 0 1 143 42
+         H 114
+         L 100 62
+         L 86 42
+         H 57
+         A 9 9 0 0 1 48 33
+         V 23
+         A 9 9 0 0 1 57 14
+         Z"
+    />
   </g>
-  <text x="100" y="44" text-anchor="middle" fill="#0E1216" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">Chat here</text>
+  <text
+    x="100"
+    y="31"
+    text-anchor="middle"
+    fill="#0E1216"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+    font-size="12"
+    font-weight="700"
+  >Chat here</text>
 </svg>
 `
 
 fs.writeFileSync(svgOut, svg, 'utf8')
 
-await sharp(Buffer.from(svg), { density: 192 })
-  .resize(512, 512, {
+await sharp(Buffer.from(svg), { density: 220 })
+  .resize(200, 200, {
     fit: 'contain',
     background: { r: 0, g: 0, b: 0, alpha: 0 },
   })
