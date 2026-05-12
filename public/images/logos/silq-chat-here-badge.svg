@@ -37,13 +37,13 @@
       stroke-width="3.5"
     />
   </g>
-  <!-- Geometric center of box = (100,100); middle of text at that point -->
+  <!-- Origin = box center; y = alphabetic baseline (rsvg-compatible) -->
   <g transform="translate(100, 100)">
     <text
       x="0"
-      y="0"
+      y="12"
       text-anchor="middle"
-      dominant-baseline="middle"
+      dominant-baseline="alphabetic"
       fill="#0E1216"
       font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
       font-size="30"

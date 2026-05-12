@@ -1,6 +1,10 @@
 /**
  * Regenerates silq-chat-here-badge.svg (self-contained) and silq-chat-here-badge.png (transparent).
  * Full-area logo with centered dialogue overlay. Run: npm run build:chat-badge
+ *
+ * Note: Sharp uses librsvg for SVG rasterization. librsvg largely treats <text y> as the
+ * alphabetic baseline and ignores dominant-baseline="middle", which makes PNGs look top-heavy.
+ * We position y explicitly so SVG (browser) and PNG (rsvg) match.
  */
 import fs from 'fs'
 import path from 'path'
@@ -15,6 +19,10 @@ const pngOut = path.join(root, 'public/images/logos/silq-chat-here-badge.png')
 
 const b64 = fs.readFileSync(monogramPath).toString('base64')
 const dataUri = `data:image/png;base64,${b64}`
+
+const FONT_SIZE = 30
+// Local y inside translate(100,100): alphabetic baseline below center for optical vertical centering
+const TEXT_BASELINE_Y = Math.round(FONT_SIZE * 0.4)
 
 // viewBox 200x200: logo fills circle; speech bubble overlaid in center (rounded rect, no tail)
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
@@ -56,16 +64,16 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
       stroke-width="3.5"
     />
   </g>
-  <!-- Geometric center of box = (100,100); middle of text at that point -->
+  <!-- Origin = box center; y = alphabetic baseline (rsvg-compatible) -->
   <g transform="translate(100, 100)">
     <text
       x="0"
-      y="0"
+      y="${TEXT_BASELINE_Y}"
       text-anchor="middle"
-      dominant-baseline="middle"
+      dominant-baseline="alphabetic"
       fill="#0E1216"
       font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
-      font-size="30"
+      font-size="${FONT_SIZE}"
       font-weight="700"
     >Chat Here!</text>
   </g>
