@@ -1,6 +1,6 @@
 /**
  * Regenerates silq-chat-here-badge.svg (self-contained) and silq-chat-here-badge.png (transparent).
- * Run: npm run build:chat-badge
+ * Full-area logo with centered dialogue overlay. Run: npm run build:chat-badge
  */
 import fs from 'fs'
 import path from 'path'
@@ -16,52 +16,54 @@ const pngOut = path.join(root, 'public/images/logos/silq-chat-here-badge.png')
 const b64 = fs.readFileSync(monogramPath).toString('base64')
 const dataUri = `data:image/png;base64,${b64}`
 
-// viewBox 200x200 — smaller bubble (all corners rounded via single path), larger monogram, ~200px PNG
+// viewBox 200x200: logo fills circle; speech bubble overlaid in center (rounded rect, no tail)
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="badgeTitle badgeDesc">
   <title id="badgeTitle">Silq - Chat here</title>
-  <desc id="badgeDesc">Silq monogram with a speech bubble above that says Chat here.</desc>
+  <desc id="badgeDesc">Silq monogram filling the badge with a centered Chat here speech bubble overlay.</desc>
   <defs>
-    <filter id="bubbleShadow" x="-8%" y="-8%" width="116%" height="116%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0e1216" flood-opacity="0.14"/>
-    </filter>
-    <filter id="logoShadow" x="-12%" y="-12%" width="124%" height="124%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0e1216" flood-opacity="0.18"/>
+    <clipPath id="logoClip">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+    <filter id="bubbleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0e1216" flood-opacity="0.22"/>
     </filter>
   </defs>
-  <g filter="url(#logoShadow)">
-    <circle cx="100" cy="142" r="54" fill="#0E1216"/>
-    <image href="${dataUri}" x="46" y="88" width="108" height="108" preserveAspectRatio="xMidYMid meet"/>
+  <!-- Logo fills circular badge -->
+  <g clip-path="url(#logoClip)">
+    <rect x="0" y="0" width="200" height="200" fill="#0E1216"/>
+    <image
+      href="${dataUri}"
+      x="0"
+      y="0"
+      width="200"
+      height="200"
+      preserveAspectRatio="xMidYMid slice"
+    />
   </g>
+  <circle cx="100" cy="100" r="99.5" fill="none" stroke="#0E1216" stroke-width="1" opacity="0.25"/>
+  <!-- Centered dialogue box overlay -->
   <g filter="url(#bubbleShadow)">
-    <path
+    <rect
+      x="44"
+      y="78"
+      width="112"
+      height="44"
+      rx="14"
+      ry="14"
       fill="#ffffff"
       stroke="#314780"
       stroke-width="2.25"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      d="M 57 14
-         H 143
-         A 9 9 0 0 1 152 23
-         V 33
-         A 9 9 0 0 1 143 42
-         H 114
-         L 100 62
-         L 86 42
-         H 57
-         A 9 9 0 0 1 48 33
-         V 23
-         A 9 9 0 0 1 57 14
-         Z"
     />
   </g>
   <text
     x="100"
-    y="31"
+    y="100"
     text-anchor="middle"
+    dominant-baseline="middle"
     fill="#0E1216"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
-    font-size="12"
+    font-size="13"
     font-weight="700"
   >Chat here</text>
 </svg>
