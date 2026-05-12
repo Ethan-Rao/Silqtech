@@ -63,7 +63,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     dominant-baseline="middle"
     fill="#0E1216"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
-    font-size="13"
+    font-size="16"
     font-weight="700"
   >Chat here</text>
 </svg>
