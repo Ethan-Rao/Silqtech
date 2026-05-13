@@ -72,7 +72,7 @@ Always clarify when unsure: *“Are you mainly interested in our catheter produc
 
 ## Site map note (for maintainers and tooling)
 
-**Milly URL Sync:** use **`https://www.silq.tech/sitemap.xml`**, produced by Next from **`src/app/sitemap.ts`** (seven public marketing URLs only; no rep paths). Prefer **www** for this URL: the **apex** host **`https://silq.tech/...`** may still forward to **www** in a way that **drops the path**, so **`https://silq.tech/sitemap.xml`** is not reliable for crawlers until that redirect preserves the full URI. **`src/app/robots.ts`** references **`https://www.silq.tech/sitemap.xml`**.
+**Milly URL Sync:** use **`https://www.silq.tech/sitemap.xml`**. The response is served by **`src/app/sitemap.xml/route.ts`** (explicit `GET` handler so `/sitemap.xml` is always a normal App Router route). Prefer **www** for this URL: the **apex** host **`https://silq.tech/...`** may still forward to **www** in a way that **drops the path**, so **`https://silq.tech/sitemap.xml`** is not reliable for crawlers until that redirect preserves the full URI. **`src/app/robots.ts`** references **`https://www.silq.tech/sitemap.xml`**.
 
 The sitemap lists **seven** public marketing URLs that appear in the **header, footer, and main body** of the homepage (no **`/rep`**, no rep vanity paths, no **`/products`** hub—it is not linked from the home shell).
 
