@@ -72,9 +72,11 @@ Always clarify when unsure: *“Are you mainly interested in our catheter produc
 
 ## Site map note (for maintainers and tooling)
 
-There is **no machine-generated `sitemap.xml` in the repository today**. Primary routes are implied by the **Next.js App Router** structure and navigation. If Milly or SEO needs an explicit list, the main **marketing** URLs include:
+**Milly URL Sync:** use **`https://www.silq.tech/sitemap.xml`**, produced by Next from **`src/app/sitemap.ts`** (seven public marketing URLs only; no rep paths). Prefer **www** for this URL: the **apex** host **`https://silq.tech/...`** may still forward to **www** in a way that **drops the path**, so **`https://silq.tech/sitemap.xml`** is not reliable for crawlers until that redirect preserves the full URI. **`src/app/robots.ts`** references **`https://www.silq.tech/sitemap.xml`**.
 
-`/`, `/technology`, `/products`, `/products/cleartract`, `/products/surface-treatment`, `/about`, `/about/team`, `/about/investors`, `/contact`, `/rep` (rep directory), plus dynamic rep pages under `/rep/[slug]` (and clean URL rewrites as configured on production).
+The sitemap lists **seven** public marketing URLs that appear in the **header, footer, and main body** of the homepage (no **`/rep`**, no rep vanity paths, no **`/products`** hub—it is not linked from the home shell).
+
+For a quick mental checklist: `/`, `/technology`, `/products/cleartract`, `/products/surface-treatment`, `/about/team`, `/about/investors`, `/contact`. Rep and vanity URLs remain discoverable via normal site navigation but are intentionally omitted from this crawl list.
 
 ---
 
