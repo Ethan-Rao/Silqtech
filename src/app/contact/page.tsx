@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import { Suspense } from 'react'
 import { ContactForm } from '@/components/sections/ContactForm'
 
 export const metadata: Metadata = {
@@ -49,7 +50,17 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Form */}
             <div>
-              <ContactForm />
+              <Suspense
+                fallback={
+                  <div
+                    className="section-padding bg-white min-h-[28rem] rounded-2xl border border-silq-dark/5 animate-pulse"
+                    aria-busy="true"
+                    aria-label="Loading contact form"
+                  />
+                }
+              >
+                <ContactForm />
+              </Suspense>
             </div>
 
             {/* Contact Info */}

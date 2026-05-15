@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -24,6 +25,41 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>
 
+/** Max prefilled characters from `?message=` (URL size / abuse guard). */
+const MESSAGE_PREFILL_MAX_LEN = 2000
+
+/**
+ * Parses the raw `message` query value: one decodeURIComponent, trim, strip NUL,
+ * enforce min length (matches Zod) and max length. Returns null if invalid or empty.
+ */
+function parseContactMessageFromSearchParam(raw: string | null): string | null {
+  if (raw === null) return null
+
+  let decoded: string
+  try {
+    decoded = decodeURIComponent(raw)
+  } catch {
+    return null
+  }
+
+  const withoutNul = decoded.replace(/\0/g, '')
+  const trimmed = withoutNul.trim()
+  if (trimmed.length === 0) return null
+
+  if (trimmed.length < 10) {
+    if (process.env.NODE_ENV === 'development') {
+      console.debug(
+        '[ContactForm] Skipped message URL prefill: decoded text is shorter than 10 characters.',
+      )
+    }
+    return null
+  }
+
+  return trimmed.length > MESSAGE_PREFILL_MAX_LEN
+    ? trimmed.slice(0, MESSAGE_PREFILL_MAX_LEN)
+    : trimmed
+}
+
 interface ContactFormProps {
   title?: string
   subtitle?: string
@@ -33,15 +69,37 @@ interface ContactFormProps {
 export function ContactForm({ title, subtitle, className }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const searchParams = useSearchParams()
+  const urlMessagePrefillDoneRef = useRef(false)
 
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
     reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   })
+
+  useEffect(() => {
+    if (urlMessagePrefillDoneRef.current) return
+    urlMessagePrefillDoneRef.current = true
+
+    const raw = searchParams.get('message')
+    const message = parseContactMessageFromSearchParam(raw)
+    if (!message) return
+
+    setValue('message', message, { shouldValidate: true, shouldDirty: true })
+
+    if (typeof window !== 'undefined' && raw !== null && raw !== '') {
+      const url = new URL(window.location.href)
+      url.searchParams.delete('message')
+      const nextSearch = url.searchParams.toString()
+      const nextUrl = `${url.pathname}${nextSearch ? `?${nextSearch}` : ''}${url.hash}`
+      window.history.replaceState(window.history.state, '', nextUrl)
+    }
+  }, [searchParams, setValue])
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
