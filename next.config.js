@@ -104,7 +104,6 @@ const nextConfig = {
       { source: '/rep/great-dane-medical-solutions', destination: '/greatdane', permanent: true },
       { source: '/rep/noreaster-medical-llc', destination: '/noreaster', permanent: true },
       { source: '/rep/emina-taylor', destination: '/emina-taylor', permanent: true },
-      { source: '/rep/acme-medical-products', destination: '/Acme', permanent: true },
       { source: '/rep/proactive', destination: '/proactive', permanent: true },
       { source: '/proactive-representation', destination: '/proactive', permanent: true },
 
@@ -166,6 +165,10 @@ const nextConfig = {
       { source: '/rep/murray', destination: '/comedical/murray', permanent: true },
       { source: '/rep/hagarty', destination: '/comedical/hagarty', permanent: true },
       { source: '/rep/collins', destination: '/comedical/collins', permanent: true },
+
+      // ACME: keep branded path from 1099 URLs (before /rep/:slug catch-all)
+      { source: '/rep/acme', destination: '/Acme', permanent: true },
+      { source: '/rep/acme-medical-products', destination: '/Acme', permanent: true },
 
       // Catch-all: any remaining /rep/slug → /slug (must be LAST)
       { source: '/rep/:slug', destination: '/:slug', permanent: true },
