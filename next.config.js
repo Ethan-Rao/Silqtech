@@ -36,7 +36,6 @@ const nextConfig = {
       { source: '/greatdane', destination: '/rep/greatdane' },
       { source: '/emina-taylor', destination: '/rep/emina-taylor' },
       { source: '/noreaster', destination: '/rep/noreaster' },
-      { source: '/titan', destination: '/rep/titan' },
       { source: '/intuitek', destination: '/rep/intuitek' },
       { source: '/stengel', destination: '/rep/stengel' },
       { source: '/genesis', destination: '/rep/genesis' },
@@ -46,6 +45,9 @@ const nextConfig = {
       { source: '/gptsurgical', destination: '/rep/gptsurgical' },
       { source: '/parkingangels', destination: '/rep/parkingangels' },
       { source: '/sciotex', destination: '/rep/sciotex' },
+      // ACME (CSV uses mixed-case path; support both for links and redirects)
+      { source: '/Acme', destination: '/rep/acme' },
+      { source: '/acme', destination: '/rep/acme' },
 
       // WASATCH REP PAGES
       { source: '/wasatch/chowning', destination: '/rep/chowning' },
@@ -102,6 +104,7 @@ const nextConfig = {
       { source: '/rep/great-dane-medical-solutions', destination: '/greatdane', permanent: true },
       { source: '/rep/noreaster-medical-llc', destination: '/noreaster', permanent: true },
       { source: '/rep/emina-taylor', destination: '/emina-taylor', permanent: true },
+      { source: '/rep/acme-medical-products', destination: '/Acme', permanent: true },
       { source: '/rep/proactive', destination: '/proactive', permanent: true },
       { source: '/proactive-representation', destination: '/proactive', permanent: true },
 
