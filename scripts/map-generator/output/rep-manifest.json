@@ -1,7 +1,7 @@
 {
-  "generated": "2026-03-23T18:23:48.900220Z",
+  "generated": "2026-05-20T17:33:24.653763Z",
   "dataVersion": "08_2025",
-  "totalReps": 68,
+  "totalReps": 69,
   "reps": [
     {
       "slug": "proactive",
@@ -15,6 +15,21 @@
       "physicianCount": 1972,
       "highCautiCount": 2,
       "highVolumeCount": 30
+    },
+    {
+      "slug": "activize",
+      "company": "Activize Inc",
+      "name": "Steve Corsello",
+      "email": "steve@activize.com",
+      "territory": [
+        "NJ",
+        "NY",
+        "PA"
+      ],
+      "facilityCount": 387,
+      "physicianCount": 5062,
+      "highCautiCount": 2,
+      "highVolumeCount": 62
     },
     {
       "slug": "healthcare-cellutions",
@@ -107,21 +122,6 @@
       "highVolumeCount": 20
     },
     {
-      "slug": "activize",
-      "company": "Activize Inc",
-      "name": "Steve Corsello",
-      "email": "steve@activize.com",
-      "territory": [
-        "NJ",
-        "NY",
-        "PA"
-      ],
-      "facilityCount": 387,
-      "physicianCount": 5062,
-      "highCautiCount": 2,
-      "highVolumeCount": 62
-    },
-    {
       "slug": "southern-surgical",
       "company": "Southern Surgical Medical Device LLC",
       "name": "Ron Wilkins",
@@ -137,20 +137,6 @@
       "physicianCount": 4148,
       "highCautiCount": 1,
       "highVolumeCount": 55
-    },
-    {
-      "slug": "samu-sales",
-      "company": "SAMU Sales LLC",
-      "name": "Scott Andrew",
-      "email": "scott@samusales.com",
-      "territory": [
-        "NJ",
-        "NY"
-      ],
-      "facilityCount": 225,
-      "physicianCount": 3157,
-      "highCautiCount": 2,
-      "highVolumeCount": 39
     },
     {
       "slug": "fladmo",
@@ -437,8 +423,8 @@
     },
     {
       "slug": "chowning",
-      "company": "Chowning",
-      "name": "Chowning",
+      "company": "Wasatch Medical",
+      "name": "Tyler Chowning",
       "email": "tyler@wasatchmedspec.com",
       "territory": [
         "AR",
@@ -453,8 +439,8 @@
     },
     {
       "slug": "gerrard",
-      "company": "Gerrard",
-      "name": "Gerrard",
+      "company": "Wasatch Medical",
+      "name": "Nicholas Gerrard",
       "email": "nick@wasatchmedspec.com",
       "territory": [
         "NC",
@@ -467,8 +453,8 @@
     },
     {
       "slug": "ghanem",
-      "company": "Ghanem",
-      "name": "Ghanem",
+      "company": "Wasatch Medical",
+      "name": "Rawad Ghanem",
       "email": "rawad@wasatchmedspec.com",
       "territory": [
         "DE",
@@ -483,8 +469,8 @@
     },
     {
       "slug": "grosjean",
-      "company": "Grosjean",
-      "name": "Grosjean",
+      "company": "Wasatch Medical",
+      "name": "Jase Grosjean",
       "email": "jase@altamedspec.com",
       "territory": [
         "CA"
@@ -495,10 +481,23 @@
       "highVolumeCount": 37
     },
     {
-      "slug": "jackson",
-      "company": "Jackson",
-      "name": "Jackson",
-      "email": "toby@wasatchmedspec.com",
+      "slug": "jimmerson",
+      "company": "Wasatch Medical",
+      "name": "Derrick Jimmerson",
+      "email": "Derrick@wasatchmedspec.com",
+      "territory": [
+        "CA"
+      ],
+      "facilityCount": 338,
+      "physicianCount": 2637,
+      "highCautiCount": 3,
+      "highVolumeCount": 37
+    },
+    {
+      "slug": "ju",
+      "company": "Wasatch Medical",
+      "name": "Jason Ju",
+      "email": "Jason@wasatchmedspec.com",
       "territory": [
         "TX"
       ],
@@ -509,8 +508,8 @@
     },
     {
       "slug": "lamitina",
-      "company": "Lamitina",
-      "name": "Lamitina",
+      "company": "Wasatch Medical",
+      "name": "Austin Lamitina",
       "email": "austin@wasatchmedspec.com",
       "territory": [
         "FL"
@@ -522,8 +521,8 @@
     },
     {
       "slug": "lucier",
-      "company": "Lucier",
-      "name": "Lucier",
+      "company": "Wasatch Medical",
+      "name": "Noah Lucier",
       "email": "noah@wasatchmedspec.com",
       "territory": [
         "CT",
@@ -538,22 +537,9 @@
       "highVolumeCount": 20
     },
     {
-      "slug": "mahoney",
-      "company": "Mahoney",
-      "name": "Mahoney",
-      "email": "darin@wasatchmedspec.com",
-      "territory": [
-        "UT"
-      ],
-      "facilityCount": 47,
-      "physicianCount": 237,
-      "highCautiCount": 0,
-      "highVolumeCount": 3
-    },
-    {
       "slug": "martinez",
-      "company": "Martinez",
-      "name": "Martinez",
+      "company": "Wasatch Medical",
+      "name": "Josh Martinez",
       "email": "joshua@wasatchmedspec.com",
       "territory": [
         "OK",
@@ -565,24 +551,9 @@
       "highVolumeCount": 35
     },
     {
-      "slug": "padilla",
-      "company": "Padilla",
-      "name": "Padilla",
-      "email": "Rick@wasatchmedspec.com",
-      "territory": [
-        "AL",
-        "GA",
-        "MS"
-      ],
-      "facilityCount": 314,
-      "physicianCount": 1710,
-      "highCautiCount": 2,
-      "highVolumeCount": 31
-    },
-    {
       "slug": "pierro",
-      "company": "Pierro",
-      "name": "Pierro",
+      "company": "Wasatch Medical",
+      "name": "Mike Pierro",
       "email": "mpierro@wasatchmedspec.com",
       "territory": [
         "CT",
@@ -597,26 +568,9 @@
       "highVolumeCount": 20
     },
     {
-      "slug": "ralenkotter",
-      "company": "Ralenkotter",
-      "name": "Ralenkotter",
-      "email": "cole@wasatchmedspec.com",
-      "territory": [
-        "IN",
-        "KY",
-        "MI",
-        "OH",
-        "WV"
-      ],
-      "facilityCount": 552,
-      "physicianCount": 4385,
-      "highCautiCount": 4,
-      "highVolumeCount": 43
-    },
-    {
       "slug": "richards",
-      "company": "Richards",
-      "name": "Richards",
+      "company": "Wasatch Medical",
+      "name": "Nathan Richards",
       "email": "nathan@wasatchmedspec.com",
       "territory": [
         "TN"
@@ -628,8 +582,8 @@
     },
     {
       "slug": "salmons",
-      "company": "Salmons",
-      "name": "Salmons",
+      "company": "Wasatch Medical",
+      "name": "Brent Salmons",
       "email": "bsalmons@wasatchmedspec.com",
       "territory": [
         "FL"
@@ -641,8 +595,8 @@
     },
     {
       "slug": "steimel",
-      "company": "Steimel",
-      "name": "Steimel",
+      "company": "Wasatch Medical",
+      "name": "Taylor Steimel",
       "email": "taylor@wasatchmedspec.com",
       "territory": [
         "IA",
@@ -656,8 +610,8 @@
     },
     {
       "slug": "streit",
-      "company": "Streit",
-      "name": "Streit",
+      "company": "Wasatch Medical",
+      "name": "Tyler Streit",
       "email": "Tstreit@wasatchmedpsec.com",
       "territory": [
         "TX"
@@ -668,36 +622,9 @@
       "highVolumeCount": 31
     },
     {
-      "slug": "towns",
-      "company": "Towns",
-      "name": "Towns",
-      "email": "blake@wasatchmedspec.com",
-      "territory": [
-        "TX"
-      ],
-      "facilityCount": 396,
-      "physicianCount": 2142,
-      "highCautiCount": 1,
-      "highVolumeCount": 31
-    },
-    {
-      "slug": "virgo",
-      "company": "Virgo",
-      "name": "Virgo",
-      "email": "errol@wasatchmedspec.com",
-      "territory": [
-        "NJ",
-        "NY"
-      ],
-      "facilityCount": 225,
-      "physicianCount": 3157,
-      "highCautiCount": 2,
-      "highVolumeCount": 39
-    },
-    {
       "slug": "whisner",
-      "company": "Whisner",
-      "name": "Whisner",
+      "company": "Wasatch Medical",
+      "name": "Jim Whisner",
       "email": "Jim@wasatchmedspec.com",
       "territory": [
         "CT",
@@ -715,8 +642,8 @@
     },
     {
       "slug": "whittiker",
-      "company": "Whittiker",
-      "name": "Whittiker",
+      "company": "Wasatch Medical",
+      "name": "John Whittiker",
       "email": "john@wasatchmedspec.com",
       "territory": [
         "CO"
@@ -728,8 +655,8 @@
     },
     {
       "slug": "wood",
-      "company": "Wood",
-      "name": "Wood",
+      "company": "Wasatch Medical",
+      "name": "Matthew Wood",
       "email": "matt@wasatchmedspec.com",
       "territory": [
         "ND",
@@ -743,9 +670,9 @@
     },
     {
       "slug": "sisco",
-      "company": "Sisco",
-      "name": "Sisco",
-      "email": "NotListed",
+      "company": "Wasatch Medical",
+      "name": "John Sisco",
+      "email": "Jsisco@wasatchmedspec.com",
       "territory": [
         "LA",
         "TX"
@@ -825,22 +752,6 @@
       "highVolumeCount": 0
     },
     {
-      "slug": "titan",
-      "company": "Titan MedTech, LLC",
-      "name": "Michael Kearney",
-      "email": "michaelkearney11@hotmail.com",
-      "territory": [
-        "NY",
-        "OH",
-        "PA",
-        "WV"
-      ],
-      "facilityCount": 535,
-      "physicianCount": 5644,
-      "highCautiCount": 3,
-      "highVolumeCount": 73
-    },
-    {
       "slug": "intuitek",
       "company": "Intuitek Medical, Inc.",
       "name": "Kevin Turner",
@@ -898,6 +809,20 @@
       "company": "Genesis Medical Group",
       "name": "Dave Riddle",
       "email": "dave@genesismedicalgroup.net",
+      "territory": [
+        "OK",
+        "TX"
+      ],
+      "facilityCount": 515,
+      "physicianCount": 2565,
+      "highCautiCount": 2,
+      "highVolumeCount": 35
+    },
+    {
+      "slug": "genesis",
+      "company": "Genesis Medical Group",
+      "name": "Robert Stitle",
+      "email": "rcmedsurge@gmail.com",
       "territory": [
         "OK",
         "TX"
@@ -993,6 +918,104 @@
       "physicianCount": 626,
       "highCautiCount": 1,
       "highVolumeCount": 9
+    },
+    {
+      "slug": "parkingangels",
+      "company": "Parking Angels, LLC",
+      "name": "Larry Snyder",
+      "email": "Larryjsnyder17@gmail.com",
+      "territory": [
+        "CT",
+        "MA",
+        "NY",
+        "RI"
+      ],
+      "facilityCount": 266,
+      "physicianCount": 3561,
+      "highCautiCount": 4,
+      "highVolumeCount": 46
+    },
+    {
+      "slug": "sciotex",
+      "company": "Sciotex, LLC",
+      "name": "Kevin Connolly",
+      "email": "kevin@sciotex.org",
+      "territory": [
+        "IA",
+        "MN",
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12
+    },
+    {
+      "slug": "sciotex",
+      "company": "Sciotex ,LLC",
+      "name": "Derek Lidbom",
+      "email": "Derek@sciotex.org",
+      "territory": [
+        "IA",
+        "MN",
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12
+    },
+    {
+      "slug": "genesis",
+      "company": "Genesis Medical Group",
+      "name": "Robert Stitle",
+      "email": "rcmedsurge@gmail.com",
+      "territory": [
+        "OK",
+        "TX"
+      ],
+      "facilityCount": 515,
+      "physicianCount": 2565,
+      "highCautiCount": 2,
+      "highVolumeCount": 35
+    },
+    {
+      "slug": "acme",
+      "company": "ACME Medical Products",
+      "name": "Matthew Baity",
+      "email": "matt@novusmedsales.com",
+      "territory": [
+        "IA",
+        "MN",
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12
+    },
+    {
+      "slug": "acme",
+      "company": "ACME Medical Products",
+      "name": "Scot Abels",
+      "email": "scotables@gmail.com",
+      "territory": [
+        "IA",
+        "MN",
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12
     }
   ]
 }

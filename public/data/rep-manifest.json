@@ -1,7 +1,7 @@
 {
-  "generated": "2026-04-20T17:32:32.610Z",
+  "generated": "2026-05-20T17:34:59.887054Z",
   "dataVersion": "08_2025",
-  "totalReps": 67,
+  "totalReps": 68,
   "reps": [
     {
       "slug": "proactive",
@@ -28,9 +28,9 @@
       "name": "Steve Corsello",
       "email": "steve@activize.com",
       "territory": [
-        "PA",
         "NJ",
-        "NY"
+        "NY",
+        "PA"
       ],
       "facilityCount": 387,
       "physicianCount": 5062,
@@ -47,10 +47,7 @@
       "name": "Brian McElhany",
       "email": "brian@bioreach360.com",
       "territory": [
-        "TX",
-        "AR",
-        "OK",
-        "LA"
+        "TX"
       ],
       "facilityCount": 396,
       "physicianCount": 2142,
@@ -67,10 +64,7 @@
       "name": "Rocky Ray",
       "email": "bioreach360@gmail.com",
       "territory": [
-        "TX",
-        "AR",
-        "OK",
-        "LA"
+        "TX"
       ],
       "facilityCount": 396,
       "physicianCount": 2142,
@@ -88,8 +82,8 @@
       "email": "jordandistributioncompany@gmail.com",
       "territory": [
         "KY",
-        "WV",
-        "OH"
+        "OH",
+        "WV"
       ],
       "facilityCount": 304,
       "physicianCount": 2200,
@@ -106,8 +100,8 @@
       "name": "Jansen Gollar",
       "email": "jansen@gollarmedical.com",
       "territory": [
-        "KY",
         "IN",
+        "KY",
         "OH"
       ],
       "facilityCount": 371,
@@ -125,9 +119,9 @@
       "name": "Kevin Brisco",
       "email": "kevin.brisco@fmgmedical.com",
       "territory": [
+        "NM",
         "TN",
-        "TX",
-        "NM"
+        "TX"
       ],
       "facilityCount": 536,
       "physicianCount": 2799,
@@ -161,11 +155,11 @@
       "name": "Ron Wilkins",
       "email": "rwilkins.ssmd@gmail.com",
       "territory": [
+        "AL",
         "FL",
         "LA",
         "MS",
-        "TN",
-        "AL"
+        "TN"
       ],
       "facilityCount": 588,
       "physicianCount": 4148,
@@ -182,9 +176,9 @@
       "name": "Brian Fladmo",
       "email": "brianfladmo@gmail.com",
       "territory": [
+        "FL",
         "LA",
-        "MS",
-        "FL"
+        "MS"
       ],
       "facilityCount": 398,
       "physicianCount": 3193,
@@ -252,11 +246,11 @@
       "name": "Scott Hubbard",
       "email": "scotthubbard707@gmail.com",
       "territory": [
-        "SC",
-        "NC",
-        "VA",
+        "DC",
         "MD",
-        "DC"
+        "NC",
+        "SC",
+        "VA"
       ],
       "facilityCount": 307,
       "physicianCount": 2993,
@@ -273,9 +267,9 @@
       "name": "Jeff Murphy",
       "email": "jmurphy@zenecare.com",
       "territory": [
+        "AZ",
         "CA",
         "NV",
-        "AZ",
         "UT"
       ],
       "facilityCount": 508,
@@ -293,9 +287,9 @@
       "name": "Tyler Dehart",
       "email": "tyler@zenecare.com",
       "territory": [
+        "AZ",
         "CA",
         "NV",
-        "AZ",
         "UT"
       ],
       "facilityCount": 508,
@@ -313,9 +307,9 @@
       "name": "Paul Ryan",
       "email": "Pryan@zenecare.com",
       "territory": [
+        "AZ",
         "CA",
         "NV",
-        "AZ",
         "UT"
       ],
       "facilityCount": 508,
@@ -333,12 +327,12 @@
       "name": "Tim Driscoll",
       "email": "signaturemedicalproducts@gmail.com",
       "territory": [
-        "MA",
-        "RI",
-        "VT",
         "CT",
+        "MA",
+        "ME",
         "NH",
-        "ME"
+        "RI",
+        "VT"
       ],
       "facilityCount": 180,
       "physicianCount": 2108,
@@ -372,9 +366,9 @@
       "name": "Gene Rozzi",
       "email": "gene.rozzi@gmail.com",
       "territory": [
-        "PA",
         "NY",
         "OH",
+        "PA",
         "WV"
       ],
       "facilityCount": 535,
@@ -392,8 +386,8 @@
       "name": "Jeffrey Jackson",
       "email": "jeffreyjackson507@gmail.com",
       "territory": [
-        "NY",
-        "NJ"
+        "NJ",
+        "NY"
       ],
       "facilityCount": 225,
       "physicianCount": 3157,
@@ -410,9 +404,9 @@
       "name": "Travis Beaulieu",
       "email": "tbmedicalsales@gmail.com",
       "territory": [
-        "TN",
         "NC",
-        "SC"
+        "SC",
+        "TN"
       ],
       "facilityCount": 265,
       "physicianCount": 2033,
@@ -429,8 +423,8 @@
       "name": "Brendon Wood",
       "email": "bhwood1@sbcglobal.net",
       "territory": [
-        "TX",
-        "NM"
+        "NM",
+        "TX"
       ],
       "facilityCount": 436,
       "physicianCount": 2269,
@@ -447,8 +441,8 @@
       "name": "Luciano DeAngelis",
       "email": "sandiamrtx@gmail.com",
       "territory": [
-        "TX",
-        "NM"
+        "NM",
+        "TX"
       ],
       "facilityCount": 436,
       "physicianCount": 2269,
@@ -466,9 +460,9 @@
       "email": "Garycope@bellsouth.net",
       "territory": [
         "AL",
+        "AR",
         "MS",
-        "TN",
-        "AR"
+        "TN"
       ],
       "facilityCount": 356,
       "physicianCount": 1405,
@@ -502,12 +496,12 @@
       "name": "Bennett Petrescu",
       "email": "Bpetrescu@noreastermedical.com",
       "territory": [
-        "MA",
-        "RI",
-        "VT",
         "CT",
+        "MA",
+        "ME",
         "NH",
-        "ME"
+        "RI",
+        "VT"
       ],
       "facilityCount": 180,
       "physicianCount": 2108,
@@ -541,10 +535,10 @@
       "name": "Tyler Chowning",
       "email": "tyler@wasatchmedspec.com",
       "territory": [
-        "MO",
-        "KS",
         "AR",
-        "IL"
+        "IL",
+        "KS",
+        "MO"
       ],
       "facilityCount": 490,
       "physicianCount": 2868,
@@ -579,10 +573,10 @@
       "name": "Rawad Ghanem",
       "email": "rawad@wasatchmedspec.com",
       "territory": [
-        "VA",
-        "MD",
         "DE",
-        "PA"
+        "MD",
+        "PA",
+        "VA"
       ],
       "facilityCount": 304,
       "physicianCount": 3430,
@@ -609,7 +603,7 @@
       "hacAtRiskCount": 0
     },
     {
-      "slug": "Jimmerson",
+      "slug": "jimmerson",
       "urlPath": "/wasatch/Jimmerson",
       "primaryState": "CA",
       "company": "Wasatch Medical",
@@ -669,9 +663,9 @@
       "territory": [
         "CT",
         "MA",
-        "VT",
+        "ME",
         "NH",
-        "ME"
+        "VT"
       ],
       "facilityCount": 169,
       "physicianCount": 1941,
@@ -688,8 +682,8 @@
       "name": "Josh Martinez",
       "email": "joshua@wasatchmedspec.com",
       "territory": [
-        "TX",
-        "OK"
+        "OK",
+        "TX"
       ],
       "facilityCount": 515,
       "physicianCount": 2565,
@@ -708,9 +702,9 @@
       "territory": [
         "CT",
         "MA",
-        "VT",
+        "ME",
         "NH",
-        "ME"
+        "VT"
       ],
       "facilityCount": 169,
       "physicianCount": 1941,
@@ -797,13 +791,13 @@
       "name": "Jim Whisner",
       "email": "Jim@wasatchmedspec.com",
       "territory": [
-        "MA",
         "CT",
+        "MA",
         "ME",
-        "VT",
         "NH",
+        "NJ",
         "NY",
-        "NJ"
+        "VT"
       ],
       "facilityCount": 394,
       "physicianCount": 5098,
@@ -837,9 +831,9 @@
       "name": "Matthew Wood",
       "email": "matt@wasatchmedspec.com",
       "territory": [
+        "ND",
         "NE",
-        "SD",
-        "ND"
+        "SD"
       ],
       "facilityCount": 196,
       "physicianCount": 542,
@@ -856,8 +850,8 @@
       "name": "John Sisco",
       "email": "Jsisco@wasatchmedspec.com",
       "territory": [
-        "TX",
-        "LA"
+        "LA",
+        "TX"
       ],
       "facilityCount": 510,
       "physicianCount": 2636,
@@ -926,10 +920,10 @@
       "name": "Nick Hagarty",
       "email": "nick@comedical.com",
       "territory": [
-        "WA",
         "ID",
+        "MT",
         "OR",
-        "MT"
+        "WA"
       ],
       "facilityCount": 257,
       "physicianCount": 1527,
@@ -956,26 +950,6 @@
       "hacAtRiskCount": 0
     },
     {
-      "slug": "titan",
-      "urlPath": "/titan",
-      "primaryState": "PA",
-      "company": "Titan MedTech, LLC",
-      "name": "Michael Kearney",
-      "email": "michaelkearney11@hotmail.com",
-      "territory": [
-        "NY",
-        "PA",
-        "WV",
-        "OH"
-      ],
-      "facilityCount": 535,
-      "physicianCount": 5644,
-      "highCautiCount": 3,
-      "highVolumeCount": 73,
-      "hacPenalizedCount": 124,
-      "hacAtRiskCount": 22
-    },
-    {
       "slug": "intuitek",
       "urlPath": "/intuitek",
       "primaryState": "GA",
@@ -983,7 +957,7 @@
       "name": "Kevin Turner",
       "email": "kturner@intuitekmedical.com",
       "territory": [
-        "GA"
+        "SC"
       ],
       "facilityCount": 58,
       "physicianCount": 534,
@@ -1017,6 +991,7 @@
       "name": "David Hoffman",
       "email": "dave@forefrontmedical.net",
       "territory": [
+        "IA",
         "MO"
       ],
       "facilityCount": 222,
@@ -1034,8 +1009,8 @@
       "name": "Brad Stengel",
       "email": "stengelbrad@gmail.com",
       "territory": [
-        "MO",
-        "IA"
+        "IA",
+        "MO"
       ],
       "facilityCount": 222,
       "physicianCount": 1085,
@@ -1052,8 +1027,8 @@
       "name": "Dave Riddle",
       "email": "dave@genesismedicalgroup.net",
       "territory": [
-        "TX",
-        "OK"
+        "OK",
+        "TX"
       ],
       "facilityCount": 515,
       "physicianCount": 2565,
@@ -1070,8 +1045,8 @@
       "name": "Robert Stitle",
       "email": "rcmedsurge@gmail.com",
       "territory": [
-        "TX",
-        "OK"
+        "OK",
+        "TX"
       ],
       "facilityCount": 515,
       "physicianCount": 2565,
@@ -1088,9 +1063,9 @@
       "name": "Derek Colins",
       "email": "derek@kleamedical.com",
       "territory": [
-        "OH",
+        "IN",
         "KY",
-        "IN"
+        "OH"
       ],
       "facilityCount": 371,
       "physicianCount": 2909,
@@ -1107,9 +1082,9 @@
       "name": "Paul Wilson",
       "email": "vmsmedprod@gmail.com",
       "territory": [
-        "OH",
+        "IN",
         "KY",
-        "IN"
+        "OH"
       ],
       "facilityCount": 371,
       "physicianCount": 2909,
@@ -1126,9 +1101,9 @@
       "name": "Joe Rodriguez",
       "email": "joerodmedical@gmail.com",
       "territory": [
-        "OH",
+        "IN",
         "KY",
-        "IN"
+        "OH"
       ],
       "facilityCount": 371,
       "physicianCount": 2909,
@@ -1163,8 +1138,8 @@
       "name": "Brent Fine",
       "email": "bfine20@att.net",
       "territory": [
-        "OK",
-        "AR"
+        "AR",
+        "OK"
       ],
       "facilityCount": 194,
       "physicianCount": 626,
@@ -1181,8 +1156,8 @@
       "name": "Brandi Fine",
       "email": "brandi.fine@yahoo.com",
       "territory": [
-        "OK",
-        "AR"
+        "AR",
+        "OK"
       ],
       "facilityCount": 194,
       "physicianCount": 626,
@@ -1200,9 +1175,9 @@
       "email": "Larryjsnyder17@gmail.com",
       "territory": [
         "CT",
+        "MA",
         "NY",
-        "RI",
-        "MA"
+        "RI"
       ],
       "facilityCount": 266,
       "physicianCount": 3561,
@@ -1219,11 +1194,11 @@
       "name": "Kevin Connolly",
       "email": "kevin@sciotex.org",
       "territory": [
+        "IA",
         "MN",
         "ND",
-        "SD",
-        "IA",
-        "NE"
+        "NE",
+        "SD"
       ],
       "facilityCount": 437,
       "physicianCount": 1541,
@@ -1240,11 +1215,11 @@
       "name": "Derek Lidbom",
       "email": "Derek@sciotex.org",
       "territory": [
+        "IA",
         "MN",
         "ND",
-        "SD",
-        "IA",
-        "NE"
+        "NE",
+        "SD"
       ],
       "facilityCount": 437,
       "physicianCount": 1541,
@@ -1252,6 +1227,48 @@
       "highVolumeCount": 12,
       "hacPenalizedCount": 37,
       "hacAtRiskCount": 6
+    },
+    {
+      "slug": "acme",
+      "urlPath": "/Acme",
+      "primaryState": "NE",
+      "company": "ACME Medical Products",
+      "name": "Matthew Baity",
+      "email": "matt@novusmedsales.com",
+      "territory": [
+        "IA",
+        "MN",
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12,
+      "hacPenalizedCount": 0,
+      "hacAtRiskCount": 0
+    },
+    {
+      "slug": "acme",
+      "urlPath": "/Acme",
+      "primaryState": "NE",
+      "company": "ACME Medical Products",
+      "name": "Scot Abels",
+      "email": "scotables@gmail.com",
+      "territory": [
+        "IA",
+        "MN",
+        "ND",
+        "NE",
+        "SD"
+      ],
+      "facilityCount": 437,
+      "physicianCount": 1541,
+      "highCautiCount": 3,
+      "highVolumeCount": 12,
+      "hacPenalizedCount": 0,
+      "hacAtRiskCount": 0
     }
   ]
 }

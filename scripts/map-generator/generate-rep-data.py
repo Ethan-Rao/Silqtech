@@ -127,7 +127,7 @@ def format_phone(phone: str) -> str:
 def load_1099_master(filepath: str) -> pd.DataFrame:
     """Load rep roster with geography assignments."""
     print(f"Loading 1099 Master from {filepath}...")
-    df = pd.read_csv(filepath, dtype=str).fillna("")
+    df = pd.read_csv(filepath, dtype=str, encoding="utf-8-sig").fillna("")
     df.columns = df.columns.str.strip()
     print(f"  Loaded {len(df)} reps")
     return df

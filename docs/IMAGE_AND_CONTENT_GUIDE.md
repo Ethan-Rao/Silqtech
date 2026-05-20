@@ -140,7 +140,7 @@ The following PDFs in `/public/pdfs/` are placeholder files and need to be repla
 |------|---------|
 | `pricing/premier-pricing.pdf` | Premier facility pricing |
 | `pricing/vizient-pricing.pdf` | Vizient facility pricing |
-| `pricing/va-pricing.pdf` | VA facility pricing |
+| `pricing/va-pricing.pdf` | VA facility pricing (2026 sheet) |
 | `cleartract-ifu.pdf` | Instructions for use |
 | `cleartract-bifold.pdf` | Marketing bi-fold |
 | `sales-marketing-slides.pdf` | Sales presentation |

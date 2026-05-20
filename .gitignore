@@ -46,4 +46,5 @@ Thumbs.db
 # Large data files (map generator source data)
 scripts/map-generator/data/
 scripts/map-generator/*.csv
+!scripts/map-generator/1099Master.csv
 *.xlsx

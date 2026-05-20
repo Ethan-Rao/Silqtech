@@ -1,9 +1,9 @@
 {
   "meta": {
-    "slug": "sciotex",
-    "company": "Sciotex ,LLC",
-    "name": "Derek Lidbom",
-    "email": "Derek@sciotex.org",
+    "slug": "acme",
+    "company": "ACME Medical Products",
+    "name": "Scot Abels",
+    "email": "scotables@gmail.com",
     "territory": [
       "IA",
       "MN",
@@ -11,7 +11,7 @@
       "NE",
       "SD"
     ],
-    "generated": "2026-05-20T17:33:24.492171Z",
+    "generated": "2026-05-20T17:33:24.630669Z",
     "dataVersion": "08_2025"
   },
   "stats": {
@@ -20,8 +20,8 @@
     "highCautiCount": 3,
     "highVolumeCount": 12,
     "physicianCount": 1541,
-    "hacPenalizedCount": 37,
-    "hacAtRiskCount": 6
+    "hacPenalizedCount": 0,
+    "hacAtRiskCount": 0
   },
   "facilities": [
     {
@@ -94,7 +94,7 @@
         }
       ],
       "physicianCount": 10,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160030",
@@ -141,7 +141,7 @@
         }
       ],
       "physicianCount": 5,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "431319",
@@ -841,7 +841,7 @@
         }
       ],
       "physicianCount": 43,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160082",
@@ -1995,7 +1995,7 @@
         }
       ],
       "physicianCount": 16,
-      "hacStatus": "HAC_AT_RISK"
+      "hacStatus": null
     },
     {
       "id": "240036",
@@ -2708,7 +2708,7 @@
         }
       ],
       "physicianCount": 23,
-      "hacStatus": "HAC_AT_RISK"
+      "hacStatus": null
     },
     {
       "id": "160064",
@@ -3180,7 +3180,7 @@
         }
       ],
       "physicianCount": 10,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160110",
@@ -3526,7 +3526,7 @@
         }
       ],
       "physicianCount": 29,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160079",
@@ -3608,7 +3608,7 @@
         }
       ],
       "physicianCount": 12,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240210",
@@ -4160,7 +4160,7 @@
         }
       ],
       "physicianCount": 2,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "350006",
@@ -4286,7 +4286,7 @@
         }
       ],
       "physicianCount": 5,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "280003",
@@ -4644,7 +4644,7 @@
         }
       ],
       "physicianCount": 7,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "350070",
@@ -5113,7 +5113,7 @@
         }
       ],
       "physicianCount": 1,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160016",
@@ -5155,7 +5155,7 @@
         }
       ],
       "physicianCount": 4,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160080",
@@ -5321,7 +5321,7 @@
         }
       ],
       "physicianCount": 8,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "280132",
@@ -5455,7 +5455,7 @@
         }
       ],
       "physicianCount": 4,
-      "hacStatus": "HAC_AT_RISK"
+      "hacStatus": null
     },
     {
       "id": "280009",
@@ -5609,7 +5609,7 @@
         }
       ],
       "physicianCount": 14,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240056",
@@ -5656,7 +5656,7 @@
         }
       ],
       "physicianCount": 5,
-      "hacStatus": "HAC_AT_RISK"
+      "hacStatus": null
     },
     {
       "id": "240213",
@@ -6009,7 +6009,7 @@
         }
       ],
       "physicianCount": 9,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240214",
@@ -6118,7 +6118,7 @@
         }
       ],
       "physicianCount": 7,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160028",
@@ -6519,7 +6519,7 @@
         }
       ],
       "physicianCount": 2,
-      "hacStatus": "HAC_AT_RISK"
+      "hacStatus": null
     },
     {
       "id": "160112",
@@ -6576,7 +6576,7 @@
         }
       ],
       "physicianCount": 7,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "241322",
@@ -6849,7 +6849,7 @@
         }
       ],
       "physicianCount": 1,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "430005",
@@ -6876,7 +6876,7 @@
         }
       ],
       "physicianCount": 1,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "280125",
@@ -6928,7 +6928,7 @@
         }
       ],
       "physicianCount": 6,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "161379",
@@ -7111,7 +7111,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "430015",
@@ -7143,7 +7143,7 @@
         }
       ],
       "physicianCount": 2,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160089",
@@ -7264,7 +7264,7 @@
         }
       ],
       "physicianCount": 2,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "241361",
@@ -7338,7 +7338,7 @@
         }
       ],
       "physicianCount": 2,
-      "hacStatus": "HAC_AT_RISK"
+      "hacStatus": null
     },
     {
       "id": "161365",
@@ -7397,7 +7397,7 @@
         }
       ],
       "physicianCount": 2,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240052",
@@ -7434,7 +7434,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "160147",
@@ -7476,7 +7476,7 @@
         }
       ],
       "physicianCount": 4,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240141",
@@ -7671,7 +7671,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240020",
@@ -7863,7 +7863,7 @@
       "priority": "STANDARD",
       "physicians": [],
       "physicianCount": 0,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240006",
@@ -7910,7 +7910,7 @@
         }
       ],
       "physicianCount": 5,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "281364",
@@ -8028,7 +8028,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "240101",
@@ -8206,7 +8206,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "351334",
@@ -8981,7 +8981,7 @@
         }
       ],
       "physicianCount": 1,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "161359",
@@ -9565,7 +9565,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "161326",
@@ -9951,7 +9951,7 @@
         }
       ],
       "physicianCount": 4,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "241335",
@@ -11060,7 +11060,7 @@
         }
       ],
       "physicianCount": 3,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "280105",
@@ -15517,7 +15517,7 @@
         }
       ],
       "physicianCount": 7,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "280127",
@@ -15591,7 +15591,7 @@
         }
       ],
       "physicianCount": 1,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "280129",
@@ -15633,7 +15633,7 @@
       "priority": "STANDARD",
       "physicians": [],
       "physicianCount": 0,
-      "hacStatus": "HAC_PENALIZED"
+      "hacStatus": null
     },
     {
       "id": "281300",

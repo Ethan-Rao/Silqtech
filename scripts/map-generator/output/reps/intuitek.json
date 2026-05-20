@@ -7,7 +7,7 @@
     "territory": [
       "SC"
     ],
-    "generated": "2026-03-23T18:23:48.434248Z",
+    "generated": "2026-05-20T17:33:23.909560Z",
     "dataVersion": "08_2025"
   },
   "stats": {
@@ -15,7 +15,9 @@
     "totalCatheterDays": 259648,
     "highCautiCount": 0,
     "highVolumeCount": 9,
-    "physicianCount": 534
+    "physicianCount": 534,
+    "hacPenalizedCount": 12,
+    "hacAtRiskCount": 3
   },
   "facilities": [
     {
@@ -37,6 +39,116 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
+          "name": "Courtney Harris",
+          "npi": "1245694744",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Eric Wallen",
+          "npi": "1386730729",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Simmons",
+          "npi": "1487826244",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alexandra Mills",
+          "npi": "1083146351",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Richard Lueking",
+          "npi": "1912435397",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Barry Lifson",
+          "npi": "1659319200",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Allison Eckard",
+          "npi": "1922212968",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1013081678",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Susan Dorman",
+          "npi": "1134169253",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Grubb",
+          "npi": "1558388058",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Largen",
+          "npi": "1336435205",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matvey Tsivian",
+          "npi": "1588001044",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alexander Coltoff",
+          "npi": "1588026736",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ruth Adekunle",
+          "npi": "1366784530",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Jaya Sai Chavali",
+          "npi": "1003349846",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Hsia",
+          "npi": "1487879151",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Mckinnon",
+          "npi": "1891944526",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Todd Vandenberg",
+          "npi": "1558367623",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Camelia Marculescu",
+          "npi": "1477661338",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Sundip Patel",
+          "npi": "1487857025",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Rovner",
+          "npi": "1841237013",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Scott Curry",
+          "npi": "1982806063",
+          "specialty": "Infectious Disease"
+        },
+        {
           "name": "Evgenia Kagan",
           "npi": "1578759502",
           "specialty": "Infectious Disease"
@@ -47,38 +159,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Harry Clarke",
-          "npi": "1477590503",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Cameron Selent",
-          "npi": "1295119865",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Barry Lifson",
-          "npi": "1659319200",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Matvey Tsivian",
-          "npi": "1588001044",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Eric Meissner",
-          "npi": "1497954036",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Dannah Wray",
-          "npi": "1609984640",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "John Adams",
-          "npi": "1013081678",
+          "name": "Gwen Choi",
+          "npi": "1528287836",
           "specialty": "Urology"
         },
         {
@@ -87,8 +169,48 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Jaya Sai Chavali",
-          "npi": "1003349846",
+          "name": "Joseph John",
+          "npi": "1598866592",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Dannah Wray",
+          "npi": "1609984640",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Lindsey Cox",
+          "npi": "1063674133",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Samies",
+          "npi": "1801850128",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Matthew Kasson",
+          "npi": "1982166716",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Harry Clarke",
+          "npi": "1477590503",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Drew Charles",
+          "npi": "1972064715",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Hay",
+          "npi": "1336145408",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stephen Savage",
+          "npi": "1669428553",
           "specialty": "Urology"
         },
         {
@@ -97,28 +219,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Richard Lueking",
-          "npi": "1912435397",
+          "name": "Charles Teixeira",
+          "npi": "1033567888",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Alexandra Mills",
-          "npi": "1083146351",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Eric Rovner",
-          "npi": "1841237013",
-          "specialty": "Urology"
-        },
-        {
-          "name": "William Largen",
-          "npi": "1336435205",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "John Samies",
-          "npi": "1801850128",
+          "name": "Eric Meissner",
+          "npi": "1497954036",
           "specialty": "Infectious Disease"
         },
         {
@@ -127,108 +234,13 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Robert Grubb",
-          "npi": "1558388058",
+          "name": "Solomon Hayon",
+          "npi": "1023544046",
           "specialty": "Urology"
         },
         {
-          "name": "Sundip Patel",
-          "npi": "1487857025",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Allison Eckard",
-          "npi": "1922212968",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Benjamin Stone",
-          "npi": "1801328778",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Camelia Marculescu",
-          "npi": "1477661338",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "John Mckinnon",
-          "npi": "1891944526",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Eric Wallen",
-          "npi": "1386730729",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Joseph John",
-          "npi": "1598866592",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Alexander Coltoff",
-          "npi": "1588026736",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Matthew Simmons",
-          "npi": "1487826244",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Courtney Harris",
-          "npi": "1245694744",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Charles Teixeira",
-          "npi": "1033567888",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Stephen Savage",
-          "npi": "1669428553",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Michael Hsia",
-          "npi": "1487879151",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Matthew Kasson",
-          "npi": "1982166716",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ruth Adekunle",
-          "npi": "1366784530",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Drew Charles",
-          "npi": "1972064715",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Gwen Choi",
-          "npi": "1528287836",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Lindsey Cox",
-          "npi": "1063674133",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Susan Dorman",
-          "npi": "1134169253",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Scott Curry",
-          "npi": "1982806063",
+          "name": "Cameron Selent",
+          "npi": "1295119865",
           "specialty": "Infectious Disease"
         },
         {
@@ -237,22 +249,13 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Todd Vandenberg",
-          "npi": "1558367623",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Michael Hay",
-          "npi": "1336145408",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Solomon Hayon",
-          "npi": "1023544046",
+          "name": "Benjamin Stone",
+          "npi": "1801328778",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 43
+      "physicianCount": 43,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420007",
@@ -273,58 +276,8 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
-          "name": "Robert Britanisky",
-          "npi": "1093775926",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Benjamin Whitt",
-          "npi": "1447755145",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Paul Ellis",
-          "npi": "1356317325",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stanley Miller",
-          "npi": "1902851710",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Eric Coronato",
-          "npi": "1740304419",
-          "specialty": "Urology"
-        },
-        {
           "name": "Gregory Valainis",
           "npi": "1215906151",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Gerald Hull",
-          "npi": "1639130628",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Michael Pryor",
-          "npi": "1699711317",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Necia Pope",
-          "npi": "1396732145",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ali Latefi",
-          "npi": "1215972732",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Casey Cronan",
-          "npi": "1821415647",
           "specialty": "Infectious Disease"
         },
         {
@@ -333,8 +286,38 @@
           "specialty": "Urology"
         },
         {
-          "name": "Robert Strehlow",
-          "npi": "1467893404",
+          "name": "Stanley Miller",
+          "npi": "1902851710",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Marlon Rampaul",
+          "npi": "1528355484",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Benjamin Whitt",
+          "npi": "1447755145",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Michael Pryor",
+          "npi": "1699711317",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Casey Cronan",
+          "npi": "1821415647",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Ellis",
+          "npi": "1356317325",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Necia Pope",
+          "npi": "1396732145",
           "specialty": "Urology"
         },
         {
@@ -343,17 +326,38 @@
           "specialty": "Infectious Disease"
         },
         {
+          "name": "Robert Strehlow",
+          "npi": "1467893404",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ali Latefi",
+          "npi": "1215972732",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerald Hull",
+          "npi": "1639130628",
+          "specialty": "Urology"
+        },
+        {
           "name": "Debra Miller Cox",
           "npi": "1144279860",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Marlon Rampaul",
-          "npi": "1528355484",
-          "specialty": "Infectious Disease"
+          "name": "Eric Coronato",
+          "npi": "1740304419",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Britanisky",
+          "npi": "1093775926",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 16
+      "physicianCount": 16,
+      "hacStatus": null
     },
     {
       "id": "420027",
@@ -374,43 +378,13 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
-          "name": "Robert King",
-          "npi": "1982091237",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Quinton Cancel",
-          "npi": "1083885644",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Vidal Despradel",
-          "npi": "1689632697",
+          "name": "Jonathan Picard",
+          "npi": "1619142841",
           "specialty": "Urology"
         },
         {
           "name": "Jeffrey Larson",
           "npi": "1013166990",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Raymond Seiler",
-          "npi": "1073625307",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Anand Mohapatra",
-          "npi": "1982068904",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Dennis Whatley",
-          "npi": "1518079839",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Jonathan Picard",
-          "npi": "1619142841",
           "specialty": "Urology"
         },
         {
@@ -422,9 +396,40 @@
           "name": "Joseph Busby",
           "npi": "1417064460",
           "specialty": "Urology"
+        },
+        {
+          "name": "Quinton Cancel",
+          "npi": "1083885644",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Anand Mohapatra",
+          "npi": "1982068904",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Vidal Despradel",
+          "npi": "1689632697",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert King",
+          "npi": "1982091237",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Raymond Seiler",
+          "npi": "1073625307",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Dennis Whatley",
+          "npi": "1518079839",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": null
     },
     {
       "id": "420078",
@@ -445,48 +450,28 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
-          "name": "Amanda Schnee",
-          "npi": "1487093837",
+          "name": "Ryan Mart",
+          "npi": "1245763002",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Giovanni Colombo",
-          "npi": "1679537831",
+          "name": "William Flanagan",
+          "npi": "1689626459",
           "specialty": "Urology"
         },
         {
-          "name": "Prerana Roth",
-          "npi": "1548434863",
+          "name": "Patrick Kent",
+          "npi": "1194250183",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Blake Wynia",
-          "npi": "1942591961",
+          "name": "Ryan Werntz",
+          "npi": "1780940023",
           "specialty": "Urology"
         },
         {
-          "name": "Kandasamy Perumal",
-          "npi": "1255319992",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Nicholas Noble",
-          "npi": "1770146359",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Charles Marguet",
-          "npi": "1154522399",
-          "specialty": "Urology"
-        },
-        {
-          "name": "James Johnson",
-          "npi": "1609923416",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Gabriel Fiscus",
-          "npi": "1245673466",
+          "name": "William Springhart",
+          "npi": "1760479968",
           "specialty": "Urology"
         },
         {
@@ -495,18 +480,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Ryan Werntz",
-          "npi": "1780940023",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Johnny Lindquist",
-          "npi": "1619406766",
-          "specialty": "Urology"
-        },
-        {
-          "name": "William Flanagan",
-          "npi": "1689626459",
+          "name": "Kandasamy Perumal",
+          "npi": "1255319992",
           "specialty": "Urology"
         },
         {
@@ -515,13 +490,38 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Tim Large",
-          "npi": "1386906907",
+          "name": "Johnny Lindquist",
+          "npi": "1619406766",
           "specialty": "Urology"
+        },
+        {
+          "name": "Charles Marguet",
+          "npi": "1154522399",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Chukwunyelu Enwezor",
+          "npi": "1740545185",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Amanda Schnee",
+          "npi": "1487093837",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Kimberly Burgess",
           "npi": "1578760450",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gabriel Fiscus",
+          "npi": "1245673466",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicholas Noble",
+          "npi": "1770146359",
           "specialty": "Urology"
         },
         {
@@ -530,14 +530,14 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Ryan Mart",
-          "npi": "1245763002",
+          "name": "Prerana Roth",
+          "npi": "1548434863",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Patrick Kent",
-          "npi": "1194250183",
-          "specialty": "Infectious Disease"
+          "name": "Tim Large",
+          "npi": "1386906907",
+          "specialty": "Urology"
         },
         {
           "name": "Elizabeth Abell",
@@ -545,17 +545,23 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "William Springhart",
-          "npi": "1760479968",
+          "name": "Blake Wynia",
+          "npi": "1942591961",
           "specialty": "Urology"
         },
         {
-          "name": "Chukwunyelu Enwezor",
-          "npi": "1740545185",
+          "name": "James Johnson",
+          "npi": "1609923416",
           "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Giovanni Colombo",
+          "npi": "1679537831",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 22
+      "physicianCount": 22,
+      "hacStatus": null
     },
     {
       "id": "420073",
@@ -581,8 +587,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "Keith Brightbill",
-          "npi": "1104049980",
+          "name": "Kelly Maloney",
+          "npi": "1356431589",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kamla Sanasi-Bhola",
+          "npi": "1316178213",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Terence Chapman",
+          "npi": "1346299674",
           "specialty": "Urology"
         },
         {
@@ -591,34 +607,9 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Kelly Maloney",
-          "npi": "1356431589",
-          "specialty": "Urology"
-        },
-        {
           "name": "Elizabeth Nimmich",
           "npi": "1164663068",
           "specialty": "Infectious Disease"
-        },
-        {
-          "name": "David Lamb",
-          "npi": "1215961842",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Richard Morrow",
-          "npi": "1962481853",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Emilio Perez Jorge",
-          "npi": "1902898752",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Goran Rac",
-          "npi": "1104271980",
-          "specialty": "Urology"
         },
         {
           "name": "Griffin Morrisson",
@@ -631,24 +622,9 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Terence Chapman",
-          "npi": "1346299674",
+          "name": "Goran Rac",
+          "npi": "1104271980",
           "specialty": "Urology"
-        },
-        {
-          "name": "Wajid Siddiqui",
-          "npi": "1669647889",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Lee Hugar",
-          "npi": "1790199636",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Djeunou Tchamba",
-          "npi": "1346478153",
-          "specialty": "Infectious Disease"
         },
         {
           "name": "John Beasley",
@@ -656,8 +632,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Aaron Yunker",
-          "npi": "1366974958",
+          "name": "Lee Hugar",
+          "npi": "1790199636",
           "specialty": "Urology"
         },
         {
@@ -666,12 +642,43 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Kamla Sanasi-Bhola",
-          "npi": "1316178213",
+          "name": "Wajid Siddiqui",
+          "npi": "1669647889",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Djeunou Tchamba",
+          "npi": "1346478153",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "David Lamb",
+          "npi": "1215961842",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Keith Brightbill",
+          "npi": "1104049980",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Richard Morrow",
+          "npi": "1962481853",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Aaron Yunker",
+          "npi": "1366974958",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Emilio Perez Jorge",
+          "npi": "1902898752",
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 19
+      "physicianCount": 19,
+      "hacStatus": null
     },
     {
       "id": "420018",
@@ -692,13 +699,13 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
-          "name": "Tameka Funny",
-          "npi": "1972794394",
-          "specialty": "Infectious Disease"
+          "name": "Nicholas Noble",
+          "npi": "1770146359",
+          "specialty": "Urology"
         },
         {
-          "name": "Majdi Al-Hasan",
-          "npi": "1477525822",
+          "name": "Kamla Sanasi-Bhola",
+          "npi": "1316178213",
           "specialty": "Infectious Disease"
         },
         {
@@ -707,53 +714,23 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Alexander Milgrom",
-          "npi": "1295117307",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Brian Cope",
-          "npi": "1902893506",
-          "specialty": "Urology"
-        },
-        {
           "name": "Sharon Weissman",
           "npi": "1023049269",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Gwen Choi",
-          "npi": "1528287836",
-          "specialty": "Urology"
+          "name": "Majdi Al-Hasan",
+          "npi": "1477525822",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Helmut Albrecht",
+          "npi": "1780618223",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Edwin Hayes",
           "npi": "1942543632",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Pamela Bailey",
-          "npi": "1730509829",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Nicholas Pickersgill",
-          "npi": "1821659632",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Timothy Averch",
-          "npi": "1578535977",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Wajid Siddiqui",
-          "npi": "1669647889",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Harmeet Gill",
-          "npi": "1659703981",
           "specialty": "Infectious Disease"
         },
         {
@@ -762,8 +739,33 @@
           "specialty": "Urology"
         },
         {
+          "name": "William Wooten",
+          "npi": "1548604341",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Averch",
+          "npi": "1578535977",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nicholas Pickersgill",
+          "npi": "1821659632",
+          "specialty": "Urology"
+        },
+        {
           "name": "Michael Moran",
           "npi": "1912957473",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Wajid Siddiqui",
+          "npi": "1669647889",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gwen Choi",
+          "npi": "1528287836",
           "specialty": "Urology"
         },
         {
@@ -772,32 +774,38 @@
           "specialty": "Infectious Disease"
         },
         {
+          "name": "Brian Cope",
+          "npi": "1902893506",
+          "specialty": "Urology"
+        },
+        {
           "name": "Sarah Battle",
           "npi": "1023561719",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Nicholas Noble",
-          "npi": "1770146359",
-          "specialty": "Urology"
-        },
-        {
-          "name": "William Wooten",
-          "npi": "1548604341",
+          "name": "Harmeet Gill",
+          "npi": "1659703981",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Kamla Sanasi-Bhola",
-          "npi": "1316178213",
+          "name": "Tameka Funny",
+          "npi": "1972794394",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Helmut Albrecht",
-          "npi": "1780618223",
+          "name": "Pamela Bailey",
+          "npi": "1730509829",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Milgrom",
+          "npi": "1295117307",
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 21
+      "physicianCount": 21,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "420051",
@@ -818,58 +826,13 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
-          "name": "Peter Okelly",
-          "npi": "1033289673",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ramesh Bharadwaj",
-          "npi": "1467634030",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Brian Evans",
-          "npi": "1457365900",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ronald Glinski",
-          "npi": "1801836747",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Vijay Pinto",
-          "npi": "1811002371",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Quinton Cancel",
-          "npi": "1083885644",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Gary Bozeman",
-          "npi": "1659348514",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Samuel Peretsman",
-          "npi": "1912946336",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Glenn Gangi",
-          "npi": "1932176195",
-          "specialty": "Urology"
-        },
-        {
           "name": "Sisay Debebe",
           "npi": "1891083143",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Elizabeth Dray",
-          "npi": "1225359243",
+          "name": "David Chadbourne",
+          "npi": "1740277011",
           "specialty": "Urology"
         },
         {
@@ -878,28 +841,13 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Edward Pienkos",
-          "npi": "1356324669",
+          "name": "Elizabeth Dray",
+          "npi": "1225359243",
           "specialty": "Urology"
         },
         {
-          "name": "David Chadbourne",
-          "npi": "1740277011",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Elizabeth Bozeman",
-          "npi": "1891751764",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Jesse Rockmore",
-          "npi": "1225532690",
-          "specialty": "Urology"
-        },
-        {
-          "name": "James Herman",
-          "npi": "1538166657",
+          "name": "Peter Okelly",
+          "npi": "1033289673",
           "specialty": "Urology"
         },
         {
@@ -908,9 +856,59 @@
           "specialty": "Urology"
         },
         {
+          "name": "Elizabeth Bozeman",
+          "npi": "1891751764",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Vijay Pinto",
+          "npi": "1811002371",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Ronald Glinski",
+          "npi": "1801836747",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Quinton Cancel",
+          "npi": "1083885644",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mathew Kaufman",
+          "npi": "1104354760",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gary Bozeman",
+          "npi": "1659348514",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Glenn Gangi",
+          "npi": "1932176195",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Edward Pienkos",
+          "npi": "1356324669",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jesse Rockmore",
+          "npi": "1225532690",
+          "specialty": "Urology"
+        },
+        {
           "name": "Robert Bonzani",
           "npi": "1376548750",
           "specialty": "Urology"
+        },
+        {
+          "name": "Ramesh Bharadwaj",
+          "npi": "1467634030",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Stefanie Seixas-Mikelus",
@@ -923,12 +921,23 @@
           "specialty": "Urology"
         },
         {
-          "name": "Mathew Kaufman",
-          "npi": "1104354760",
+          "name": "Samuel Peretsman",
+          "npi": "1912946336",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Evans",
+          "npi": "1457365900",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Herman",
+          "npi": "1538166657",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 22
+      "physicianCount": 22,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "420023",
@@ -949,8 +958,63 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
+          "name": "Ryan Mart",
+          "npi": "1245763002",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Andrew Bullock",
+          "npi": "1194936385",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Prerana Roth",
+          "npi": "1548434863",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Elizabeth Abell",
+          "npi": "1083623805",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Thomas Hamilton",
+          "npi": "1053349555",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Call",
+          "npi": "1548210115",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "James Monroe",
+          "npi": "1225067556",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Philip Fontenot",
+          "npi": "1790121424",
+          "specialty": "Urology"
+        },
+        {
           "name": "Samuel Sterrett",
           "npi": "1356460281",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Johnson",
+          "npi": "1609923416",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Chukwunyelu Enwezor",
+          "npi": "1740545185",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "William Lowrance",
+          "npi": "1922155878",
           "specialty": "Urology"
         },
         {
@@ -964,67 +1028,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Thomas Hamilton",
-          "npi": "1053349555",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Philip Fontenot",
-          "npi": "1790121424",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ryan Mart",
-          "npi": "1245763002",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Mark Call",
-          "npi": "1548210115",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Prerana Roth",
-          "npi": "1548434863",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Patrick Kent",
           "npi": "1194250183",
           "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Elizabeth Abell",
-          "npi": "1083623805",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "James Monroe",
-          "npi": "1225067556",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Chukwunyelu Enwezor",
-          "npi": "1740545185",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Andrew Bullock",
-          "npi": "1194936385",
-          "specialty": "Urology"
-        },
-        {
-          "name": "James Johnson",
-          "npi": "1609923416",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "William Lowrance",
-          "npi": "1922155878",
-          "specialty": "Urology"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": null
     },
     {
       "id": "420085",
@@ -1045,9 +1055,24 @@
       "priority": "HIGH_VOLUME",
       "physicians": [
         {
-          "name": "Kevin Shea",
-          "npi": "1265474324",
-          "specialty": "Infectious Disease"
+          "name": "David Rich",
+          "npi": "1790025435",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Roberts",
+          "npi": "1700877909",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Timothy Gajewski",
+          "npi": "1841239233",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lauren Cooley",
+          "npi": "1366973265",
+          "specialty": "Urology"
         },
         {
           "name": "Robert Jansen",
@@ -1060,28 +1085,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "Jacquelyn Booher",
-          "npi": "1275069890",
-          "specialty": "Urology"
-        },
-        {
-          "name": "David Rich",
-          "npi": "1790025435",
-          "specialty": "Urology"
-        },
-        {
           "name": "Neal Shore",
           "npi": "1265423453",
           "specialty": "Urology"
         },
         {
-          "name": "Glenn Gangi",
-          "npi": "1932176195",
-          "specialty": "Urology"
+          "name": "Kevin Shea",
+          "npi": "1265474324",
+          "specialty": "Infectious Disease"
         },
         {
-          "name": "Lauren Cooley",
-          "npi": "1366973265",
+          "name": "Jacquelyn Booher",
+          "npi": "1275069890",
           "specialty": "Urology"
         },
         {
@@ -1090,13 +1105,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Timothy Gajewski",
-          "npi": "1841239233",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Brian Roberts",
-          "npi": "1700877909",
+          "name": "Glenn Gangi",
+          "npi": "1932176195",
           "specialty": "Urology"
         },
         {
@@ -1105,7 +1115,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "42029F",
@@ -1125,7 +1136,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "42011F",
@@ -1145,7 +1157,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "VA",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "420002",
@@ -1166,28 +1179,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Ashima Singal",
-          "npi": "1194117226",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Matthew Newsome",
-          "npi": "1033614110",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Alexandra Santiago Vazquez",
-          "npi": "1053623520",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Abhijeet Nadkarni",
           "npi": "1356469555",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Djeunou Tchamba",
-          "npi": "1346478153",
           "specialty": "Infectious Disease"
         },
         {
@@ -1196,17 +1189,38 @@
           "specialty": "Urology"
         },
         {
+          "name": "Alexandra Santiago Vazquez",
+          "npi": "1053623520",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Ashima Singal",
+          "npi": "1194117226",
+          "specialty": "Urology"
+        },
+        {
           "name": "Thomas Douglas",
           "npi": "1336213883",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matthew Newsome",
+          "npi": "1033614110",
           "specialty": "Urology"
         },
         {
           "name": "Tue Ngo",
           "npi": "1194872903",
           "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Djeunou Tchamba",
+          "npi": "1346478153",
+          "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "420079",
@@ -1227,43 +1241,13 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Joseph John",
-          "npi": "1598866592",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Marshall Wingo",
-          "npi": "1831395334",
+          "name": "Case Wood",
+          "npi": "1316305881",
           "specialty": "Urology"
-        },
-        {
-          "name": "Kelly Shaffer",
-          "npi": "1710060017",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Theodore Brisson",
-          "npi": "1699759563",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Cameron Selent",
-          "npi": "1295119865",
-          "specialty": "Infectious Disease"
         },
         {
           "name": "David Brandli",
           "npi": "1356330260",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Taylor Vaughan",
-          "npi": "1467770131",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mary James",
-          "npi": "1538320924",
           "specialty": "Urology"
         },
         {
@@ -1277,14 +1261,24 @@
           "specialty": "Urology"
         },
         {
-          "name": "Case Wood",
-          "npi": "1316305881",
+          "name": "Kelly Shaffer",
+          "npi": "1710060017",
           "specialty": "Urology"
         },
         {
-          "name": "Samuel Nickles",
-          "npi": "1275854457",
+          "name": "Marshall Wingo",
+          "npi": "1831395334",
           "specialty": "Urology"
+        },
+        {
+          "name": "Mary James",
+          "npi": "1538320924",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Cameron Selent",
+          "npi": "1295119865",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Ludwig Lettau",
@@ -1292,12 +1286,33 @@
           "specialty": "Infectious Disease"
         },
         {
+          "name": "Samuel Nickles",
+          "npi": "1275854457",
+          "specialty": "Urology"
+        },
+        {
           "name": "Justin Ellett",
           "npi": "1275827248",
           "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Brisson",
+          "npi": "1699759563",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph John",
+          "npi": "1598866592",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Taylor Vaughan",
+          "npi": "1467770131",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 14
+      "physicianCount": 14,
+      "hacStatus": null
     },
     {
       "id": "420105",
@@ -1318,13 +1333,23 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Kevin Shea",
-          "npi": "1265474324",
+          "name": "Sisay Debebe",
+          "npi": "1891083143",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Ramesh Bharadwaj",
-          "npi": "1467634030",
+          "name": "Timothy Gajewski",
+          "npi": "1841239233",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Roberto Ferraro",
+          "npi": "1396788733",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kevin Shea",
+          "npi": "1265474324",
           "specialty": "Infectious Disease"
         },
         {
@@ -1333,22 +1358,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Sisay Debebe",
-          "npi": "1891083143",
+          "name": "Ramesh Bharadwaj",
+          "npi": "1467634030",
           "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Roberto Ferraro",
-          "npi": "1396788733",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Timothy Gajewski",
-          "npi": "1841239233",
-          "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "420082",
@@ -1369,11 +1385,6 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Aneta Tarasiuk-Rusek",
-          "npi": "1851655047",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Jonathan Anderson",
           "npi": "1346226958",
           "specialty": "Urology"
@@ -1384,12 +1395,18 @@
           "specialty": "Urology"
         },
         {
+          "name": "Aneta Tarasiuk-Rusek",
+          "npi": "1851655047",
+          "specialty": "Infectious Disease"
+        },
+        {
           "name": "Gerald Gordon",
           "npi": "1396738753",
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "420071",
@@ -1410,13 +1427,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Todd Hansen",
-          "npi": "1245293455",
-          "specialty": "Urology"
-        },
-        {
-          "name": "John Beasley",
-          "npi": "1962416073",
+          "name": "Herman Parramore",
+          "npi": "1255325122",
           "specialty": "Urology"
         },
         {
@@ -1425,12 +1437,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "Herman Parramore",
-          "npi": "1255325122",
+          "name": "Todd Hansen",
+          "npi": "1245293455",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Beasley",
+          "npi": "1962416073",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": null
     },
     {
       "id": "420091",
@@ -1451,18 +1469,23 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Peter Okelly",
-          "npi": "1033289673",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ramesh Bharadwaj",
-          "npi": "1467634030",
+          "name": "Sisay Debebe",
+          "npi": "1891083143",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Brian Evans",
-          "npi": "1457365900",
+          "name": "Michael Hsia",
+          "npi": "1487879151",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Temujin Chavez",
+          "npi": "1558323543",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Peter Okelly",
+          "npi": "1033289673",
           "specialty": "Urology"
         },
         {
@@ -1476,42 +1499,38 @@
           "specialty": "Urology"
         },
         {
-          "name": "Alexander Coltoff",
-          "npi": "1588026736",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Larry Rabon",
-          "npi": "1003844044",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Sisay Debebe",
-          "npi": "1891083143",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Stephen Savage",
           "npi": "1669428553",
           "specialty": "Urology"
         },
         {
-          "name": "Temujin Chavez",
-          "npi": "1558323543",
+          "name": "Alexander Coltoff",
+          "npi": "1588026736",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Michael Hsia",
-          "npi": "1487879151",
-          "specialty": "Urology"
+          "name": "Ramesh Bharadwaj",
+          "npi": "1467634030",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Barry Bodie",
           "npi": "1295736163",
           "specialty": "Urology"
+        },
+        {
+          "name": "Brian Evans",
+          "npi": "1457365900",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Larry Rabon",
+          "npi": "1003844044",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420087",
@@ -1532,24 +1551,9 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "William Largen",
-          "npi": "1336435205",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Marshall Wingo",
-          "npi": "1831395334",
+          "name": "Case Wood",
+          "npi": "1316305881",
           "specialty": "Urology"
-        },
-        {
-          "name": "John Britton",
-          "npi": "1356394126",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Cameron Selent",
-          "npi": "1295119865",
-          "specialty": "Infectious Disease"
         },
         {
           "name": "David Brandli",
@@ -1557,18 +1561,33 @@
           "specialty": "Urology"
         },
         {
-          "name": "Taylor Vaughan",
-          "npi": "1467770131",
+          "name": "Jonathan Picard",
+          "npi": "1619142841",
           "specialty": "Urology"
         },
         {
-          "name": "Tracy Tipton",
-          "npi": "1326487588",
+          "name": "Alexander Ramsay",
+          "npi": "1871592089",
           "specialty": "Urology"
         },
         {
           "name": "Bradley Steele",
           "npi": "1811940646",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nelson Ploch",
+          "npi": "1205824489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stanley Hall",
+          "npi": "1003815259",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marshall Wingo",
+          "npi": "1831395334",
           "specialty": "Urology"
         },
         {
@@ -1582,29 +1601,9 @@
           "specialty": "Urology"
         },
         {
-          "name": "Alexander Ramsay",
-          "npi": "1871592089",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stanley Hall",
-          "npi": "1003815259",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Nelson Ploch",
-          "npi": "1205824489",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mark Buchanan",
-          "npi": "1104825637",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Case Wood",
-          "npi": "1316305881",
-          "specialty": "Urology"
+          "name": "Cameron Selent",
+          "npi": "1295119865",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Samuel Nickles",
@@ -1612,8 +1611,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Jonathan Picard",
-          "npi": "1619142841",
+          "name": "Tracy Tipton",
+          "npi": "1326487588",
           "specialty": "Urology"
         },
         {
@@ -1622,12 +1621,33 @@
           "specialty": "Urology"
         },
         {
+          "name": "John Britton",
+          "npi": "1356394126",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Largen",
+          "npi": "1336435205",
+          "specialty": "Infectious Disease"
+        },
+        {
           "name": "Jonathan Donaldson",
           "npi": "1881693026",
           "specialty": "Urology"
+        },
+        {
+          "name": "Mark Buchanan",
+          "npi": "1104825637",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taylor Vaughan",
+          "npi": "1467770131",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 19
+      "physicianCount": 19,
+      "hacStatus": null
     },
     {
       "id": "420026",
@@ -1648,9 +1668,9 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Keith Brightbill",
-          "npi": "1104049980",
-          "specialty": "Urology"
+          "name": "Natalie Cauthen",
+          "npi": "1124095658",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Addie Spier",
@@ -1658,23 +1678,8 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Robert Grubb",
-          "npi": "1558388058",
-          "specialty": "Urology"
-        },
-        {
           "name": "Matthew Simmons",
           "npi": "1487826244",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Matvey Tsivian",
-          "npi": "1588001044",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stephen Savage",
-          "npi": "1669428553",
           "specialty": "Urology"
         },
         {
@@ -1683,8 +1688,33 @@
           "specialty": "Urology"
         },
         {
+          "name": "Eric Rovner",
+          "npi": "1841237013",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Grubb",
+          "npi": "1558388058",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stephen Savage",
+          "npi": "1669428553",
+          "specialty": "Urology"
+        },
+        {
           "name": "Gwen Choi",
           "npi": "1528287836",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Matvey Tsivian",
+          "npi": "1588001044",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Keith Brightbill",
+          "npi": "1104049980",
           "specialty": "Urology"
         },
         {
@@ -1693,22 +1723,13 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Natalie Cauthen",
-          "npi": "1124095658",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Manish Patel",
           "npi": "1578559860",
           "specialty": "Urology"
-        },
-        {
-          "name": "Eric Rovner",
-          "npi": "1841237013",
-          "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420049",
@@ -1729,6 +1750,16 @@
       "priority": "STANDARD",
       "physicians": [
         {
+          "name": "David Rich",
+          "npi": "1790025435",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Fogarty",
+          "npi": "1801841523",
+          "specialty": "Urology"
+        },
+        {
           "name": "Robert Jansen",
           "npi": "1316180847",
           "specialty": "Urology"
@@ -1739,14 +1770,14 @@
           "specialty": "Urology"
         },
         {
-          "name": "David Rich",
-          "npi": "1790025435",
-          "specialty": "Urology"
-        },
-        {
           "name": "Neal Shore",
           "npi": "1265423453",
           "specialty": "Urology"
+        },
+        {
+          "name": "Maria Bandres Urbina",
+          "npi": "1174975098",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Ambreen Khalil",
@@ -1754,22 +1785,13 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "James Fogarty",
-          "npi": "1801841523",
-          "specialty": "Urology"
-        },
-        {
           "name": "Joseph Wood",
           "npi": "1881640746",
           "specialty": "Urology"
-        },
-        {
-          "name": "Maria Bandres Urbina",
-          "npi": "1174975098",
-          "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": null
     },
     {
       "id": "420067",
@@ -1790,18 +1812,58 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Eric Gwynn",
-          "npi": "1467586628",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Louis Plzak",
-          "npi": "1881768430",
+          "name": "Bradley Steele",
+          "npi": "1811940646",
           "specialty": "Urology"
         },
         {
           "name": "Harry Clarke",
           "npi": "1477590503",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Michael Langley",
+          "npi": "1376570515",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Louis Remynse",
+          "npi": "1649280793",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Russo",
+          "npi": "1720065105",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Milhoua",
+          "npi": "1306040589",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gaines Hammond",
+          "npi": "1922168830",
+          "specialty": "Urology"
+        },
+        {
+          "name": "John Adams",
+          "npi": "1013081678",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Melissa Wynn",
+          "npi": "1215934898",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Manuel Perez",
+          "npi": "1083627814",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Gwynn",
+          "npi": "1467586628",
           "specialty": "Urology"
         },
         {
@@ -1815,57 +1877,18 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Paul Russo",
-          "npi": "1720065105",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Bradley Steele",
-          "npi": "1811940646",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Michael Langley",
-          "npi": "1376570515",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Gaines Hammond",
-          "npi": "1922168830",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Louis Remynse",
-          "npi": "1649280793",
-          "specialty": "Urology"
-        },
-        {
           "name": "Nenad Avramovski",
           "npi": "1760480701",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Paul Milhoua",
-          "npi": "1306040589",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Melissa Wynn",
-          "npi": "1215934898",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "John Adams",
-          "npi": "1013081678",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Manuel Perez",
-          "npi": "1083627814",
+          "name": "Louis Plzak",
+          "npi": "1881768430",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420065",
@@ -1886,28 +1909,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "William Largen",
-          "npi": "1336435205",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Marshall Wingo",
-          "npi": "1831395334",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Kelly Shaffer",
-          "npi": "1710060017",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Theodore Brisson",
-          "npi": "1699759563",
-          "specialty": "Urology"
-        },
-        {
-          "name": "John Britton",
-          "npi": "1356394126",
+          "name": "Case Wood",
+          "npi": "1316305881",
           "specialty": "Urology"
         },
         {
@@ -1916,13 +1919,38 @@
           "specialty": "Urology"
         },
         {
-          "name": "Tracy Tipton",
-          "npi": "1326487588",
+          "name": "Jonathan Picard",
+          "npi": "1619142841",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Alexander Ramsay",
+          "npi": "1871592089",
           "specialty": "Urology"
         },
         {
           "name": "Bradley Steele",
           "npi": "1811940646",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nelson Ploch",
+          "npi": "1205824489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Shaffer",
+          "npi": "1710060017",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stanley Hall",
+          "npi": "1003815259",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marshall Wingo",
+          "npi": "1831395334",
           "specialty": "Urology"
         },
         {
@@ -1936,33 +1964,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Alexander Ramsay",
-          "npi": "1871592089",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stanley Hall",
-          "npi": "1003815259",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Nelson Ploch",
-          "npi": "1205824489",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mark Buchanan",
-          "npi": "1104825637",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Case Wood",
-          "npi": "1316305881",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Jonathan Picard",
-          "npi": "1619142841",
+          "name": "Tracy Tipton",
+          "npi": "1326487588",
           "specialty": "Urology"
         },
         {
@@ -1971,12 +1974,33 @@
           "specialty": "Urology"
         },
         {
+          "name": "John Britton",
+          "npi": "1356394126",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Brisson",
+          "npi": "1699759563",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Largen",
+          "npi": "1336435205",
+          "specialty": "Infectious Disease"
+        },
+        {
           "name": "Jonathan Donaldson",
           "npi": "1881693026",
           "specialty": "Urology"
+        },
+        {
+          "name": "Mark Buchanan",
+          "npi": "1104825637",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420036",
@@ -2007,7 +2031,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "420009",
@@ -2028,13 +2053,33 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Amanda Schnee",
-          "npi": "1487093837",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Ryan Werntz",
           "npi": "1780940023",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Springhart",
+          "npi": "1760479968",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Flanagan",
+          "npi": "1689626459",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Joseph Busby",
+          "npi": "1417064460",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kandasamy Perumal",
+          "npi": "1255319992",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Blake Wynia",
+          "npi": "1942591961",
           "specialty": "Urology"
         },
         {
@@ -2043,9 +2088,14 @@
           "specialty": "Urology"
         },
         {
-          "name": "William Flanagan",
-          "npi": "1689626459",
+          "name": "Charles Marguet",
+          "npi": "1154522399",
           "specialty": "Urology"
+        },
+        {
+          "name": "Amanda Schnee",
+          "npi": "1487093837",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Giovanni Colombo",
@@ -2056,34 +2106,10 @@
           "name": "Patrick Kent",
           "npi": "1194250183",
           "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Kandasamy Perumal",
-          "npi": "1255319992",
-          "specialty": "Urology"
-        },
-        {
-          "name": "William Springhart",
-          "npi": "1760479968",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Blake Wynia",
-          "npi": "1942591961",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Charles Marguet",
-          "npi": "1154522399",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Joseph Busby",
-          "npi": "1417064460",
-          "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "420048",
@@ -2104,17 +2130,18 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Manish Patel",
-          "npi": "1578559860",
-          "specialty": "Urology"
-        },
-        {
           "name": "Stephen Savage",
           "npi": "1669428553",
           "specialty": "Urology"
+        },
+        {
+          "name": "Manish Patel",
+          "npi": "1578559860",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "420080",
@@ -2135,21 +2162,6 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Robert King",
-          "npi": "1982091237",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Eric Gwynn",
-          "npi": "1467586628",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Taras Nebeluk",
-          "npi": "1477914661",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Michael Langley",
           "npi": "1376570515",
           "specialty": "Urology"
@@ -2163,9 +2175,25 @@
           "name": "Manuel Perez",
           "npi": "1083627814",
           "specialty": "Urology"
+        },
+        {
+          "name": "Eric Gwynn",
+          "npi": "1467586628",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert King",
+          "npi": "1982091237",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taras Nebeluk",
+          "npi": "1477914661",
+          "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "420015",
@@ -2186,8 +2214,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Kimberly Burgess",
-          "npi": "1578760450",
+          "name": "Nicholas Noble",
+          "npi": "1770146359",
           "specialty": "Urology"
         },
         {
@@ -2196,23 +2224,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Johnny Lindquist",
-          "npi": "1619406766",
-          "specialty": "Urology"
-        },
-        {
           "name": "William Flanagan",
           "npi": "1689626459",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mark Call",
-          "npi": "1548210115",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Tim Large",
-          "npi": "1386906907",
           "specialty": "Urology"
         },
         {
@@ -2221,8 +2234,23 @@
           "specialty": "Urology"
         },
         {
-          "name": "Nicholas Noble",
-          "npi": "1770146359",
+          "name": "Tim Large",
+          "npi": "1386906907",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mark Call",
+          "npi": "1548210115",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Johnny Lindquist",
+          "npi": "1619406766",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kimberly Burgess",
+          "npi": "1578760450",
           "specialty": "Urology"
         },
         {
@@ -2231,7 +2259,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420086",
@@ -2252,13 +2281,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Tameka Funny",
-          "npi": "1972794394",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "David Donaldson",
-          "npi": "1508867474",
+          "name": "Nicholas Noble",
+          "npi": "1770146359",
           "specialty": "Urology"
         },
         {
@@ -2267,13 +2291,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Brian Cope",
-          "npi": "1902893506",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Gwen Choi",
-          "npi": "1528287836",
+          "name": "Jessica Rueb",
+          "npi": "1497199400",
           "specialty": "Urology"
         },
         {
@@ -2282,8 +2301,8 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Nicholas Pickersgill",
-          "npi": "1821659632",
+          "name": "Kolawole Olugbade",
+          "npi": "1831519024",
           "specialty": "Urology"
         },
         {
@@ -2292,23 +2311,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Wajid Siddiqui",
-          "npi": "1669647889",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Harmeet Gill",
-          "npi": "1659703981",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Jessica Rueb",
-          "npi": "1497199400",
+          "name": "David Donaldson",
+          "npi": "1508867474",
           "specialty": "Urology"
         },
         {
-          "name": "Kolawole Olugbade",
-          "npi": "1831519024",
+          "name": "Nicholas Pickersgill",
+          "npi": "1821659632",
           "specialty": "Urology"
         },
         {
@@ -2317,17 +2326,38 @@
           "specialty": "Urology"
         },
         {
-          "name": "Nicholas Noble",
-          "npi": "1770146359",
+          "name": "Wajid Siddiqui",
+          "npi": "1669647889",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gwen Choi",
+          "npi": "1528287836",
           "specialty": "Urology"
+        },
+        {
+          "name": "Brian Cope",
+          "npi": "1902893506",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Harmeet Gill",
+          "npi": "1659703981",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Michael Kongnyuy",
           "npi": "1952833006",
           "specialty": "Urology"
+        },
+        {
+          "name": "Tameka Funny",
+          "npi": "1972794394",
+          "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": null
     },
     {
       "id": "420101",
@@ -2358,6 +2388,16 @@
           "specialty": "Urology"
         },
         {
+          "name": "Taras Nebeluk",
+          "npi": "1477914661",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Manuel Perez",
+          "npi": "1083627814",
+          "specialty": "Urology"
+        },
+        {
           "name": "Eric Gwynn",
           "npi": "1467586628",
           "specialty": "Urology"
@@ -2366,19 +2406,10 @@
           "name": "Michael Langley",
           "npi": "1376570515",
           "specialty": "Urology"
-        },
-        {
-          "name": "Manuel Perez",
-          "npi": "1083627814",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Taras Nebeluk",
-          "npi": "1477914661",
-          "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "420033",
@@ -2399,23 +2430,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Kimberly Burgess",
-          "npi": "1578760450",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Amanda Schnee",
-          "npi": "1487093837",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Ryan Werntz",
-          "npi": "1780940023",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Johnny Lindquist",
-          "npi": "1619406766",
+          "name": "Nicholas Noble",
+          "npi": "1770146359",
           "specialty": "Urology"
         },
         {
@@ -2424,13 +2440,18 @@
           "specialty": "Infectious Disease"
         },
         {
+          "name": "Ryan Werntz",
+          "npi": "1780940023",
+          "specialty": "Urology"
+        },
+        {
           "name": "William Springhart",
           "npi": "1760479968",
           "specialty": "Urology"
         },
         {
-          "name": "Tim Large",
-          "npi": "1386906907",
+          "name": "Joseph Busby",
+          "npi": "1417064460",
           "specialty": "Urology"
         },
         {
@@ -2439,8 +2460,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Nicholas Noble",
-          "npi": "1770146359",
+          "name": "Tim Large",
+          "npi": "1386906907",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Johnny Lindquist",
+          "npi": "1619406766",
           "specialty": "Urology"
         },
         {
@@ -2449,17 +2475,23 @@
           "specialty": "Urology"
         },
         {
-          "name": "Gabriel Fiscus",
-          "npi": "1245673466",
+          "name": "Amanda Schnee",
+          "npi": "1487093837",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kimberly Burgess",
+          "npi": "1578760450",
           "specialty": "Urology"
         },
         {
-          "name": "Joseph Busby",
-          "npi": "1417064460",
+          "name": "Gabriel Fiscus",
+          "npi": "1245673466",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 12
+      "physicianCount": 12,
+      "hacStatus": null
     },
     {
       "id": "420103",
@@ -2480,9 +2512,9 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Robert Britanisky",
-          "npi": "1093775926",
-          "specialty": "Urology"
+          "name": "Stanley Miller",
+          "npi": "1902851710",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Benjamin Whitt",
@@ -2490,38 +2522,8 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Paul Ellis",
-          "npi": "1356317325",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stanley Miller",
-          "npi": "1902851710",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Eric Coronato",
-          "npi": "1740304419",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Gerald Hull",
-          "npi": "1639130628",
-          "specialty": "Urology"
-        },
-        {
           "name": "Michael Pryor",
           "npi": "1699711317",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Necia Pope",
-          "npi": "1396732145",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Ali Latefi",
-          "npi": "1215972732",
           "specialty": "Urology"
         },
         {
@@ -2530,12 +2532,43 @@
           "specialty": "Infectious Disease"
         },
         {
+          "name": "Paul Ellis",
+          "npi": "1356317325",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Necia Pope",
+          "npi": "1396732145",
+          "specialty": "Urology"
+        },
+        {
           "name": "Robert Strehlow",
           "npi": "1467893404",
           "specialty": "Urology"
+        },
+        {
+          "name": "Ali Latefi",
+          "npi": "1215972732",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gerald Hull",
+          "npi": "1639130628",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Coronato",
+          "npi": "1740304419",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Robert Britanisky",
+          "npi": "1093775926",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "420070",
@@ -2556,13 +2589,28 @@
       "priority": "STANDARD",
       "physicians": [
         {
+          "name": "Kamla Sanasi-Bhola",
+          "npi": "1316178213",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Divya Ahuja",
+          "npi": "1134105760",
+          "specialty": "Infectious Disease"
+        },
+        {
           "name": "Majdi Al-Hasan",
           "npi": "1477525822",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Sarah Al Mansi",
-          "npi": "1538680343",
+          "name": "Jessica Rueb",
+          "npi": "1497199400",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Helmut Albrecht",
+          "npi": "1780618223",
           "specialty": "Infectious Disease"
         },
         {
@@ -2571,8 +2619,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Divya Ahuja",
-          "npi": "1134105760",
+          "name": "Sarah Al Mansi",
+          "npi": "1538680343",
           "specialty": "Infectious Disease"
         },
         {
@@ -2581,8 +2629,8 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Pamela Bailey",
-          "npi": "1730509829",
+          "name": "William Wooten",
+          "npi": "1548604341",
           "specialty": "Infectious Disease"
         },
         {
@@ -2591,18 +2639,13 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Harmeet Gill",
-          "npi": "1659703981",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Jesse Rockmore",
           "npi": "1225532690",
           "specialty": "Urology"
         },
         {
-          "name": "Jessica Rueb",
-          "npi": "1497199400",
+          "name": "Stefanie Seixas-Mikelus",
+          "npi": "1962666784",
           "specialty": "Urology"
         },
         {
@@ -2611,27 +2654,18 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Stefanie Seixas-Mikelus",
-          "npi": "1962666784",
-          "specialty": "Urology"
-        },
-        {
-          "name": "William Wooten",
-          "npi": "1548604341",
+          "name": "Harmeet Gill",
+          "npi": "1659703981",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Kamla Sanasi-Bhola",
-          "npi": "1316178213",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Helmut Albrecht",
-          "npi": "1780618223",
+          "name": "Pamela Bailey",
+          "npi": "1730509829",
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": null
     },
     {
       "id": "420098",
@@ -2652,9 +2686,34 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Jo Anne Klein",
-          "npi": "1548465651",
-          "specialty": "Infectious Disease"
+          "name": "David Rich",
+          "npi": "1790025435",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Wallen",
+          "npi": "1386730729",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Fogarty",
+          "npi": "1801841523",
+          "specialty": "Urology"
+        },
+        {
+          "name": "James Okelly",
+          "npi": "1598736274",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Brian Roberts",
+          "npi": "1700877909",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Lauren Cooley",
+          "npi": "1366973265",
+          "specialty": "Urology"
         },
         {
           "name": "Geoffrey Habermacher",
@@ -2667,28 +2726,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Harry Clarke",
-          "npi": "1477590503",
-          "specialty": "Urology"
-        },
-        {
           "name": "Richard Young",
           "npi": "1518948587",
-          "specialty": "Urology"
-        },
-        {
-          "name": "David Rich",
-          "npi": "1790025435",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Robert Grubb",
-          "npi": "1558388058",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stephen Savage",
-          "npi": "1669428553",
           "specialty": "Urology"
         },
         {
@@ -2697,8 +2736,23 @@
           "specialty": "Urology"
         },
         {
-          "name": "Lauren Cooley",
-          "npi": "1366973265",
+          "name": "Harry Clarke",
+          "npi": "1477590503",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jo Anne Klein",
+          "npi": "1548465651",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Susan Dorman",
+          "npi": "1134169253",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Grubb",
+          "npi": "1558388058",
           "specialty": "Urology"
         },
         {
@@ -2707,18 +2761,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "James Okelly",
-          "npi": "1598736274",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Susan Dorman",
-          "npi": "1134169253",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "James Fogarty",
-          "npi": "1801841523",
+          "name": "Stephen Savage",
+          "npi": "1669428553",
           "specialty": "Urology"
         },
         {
@@ -2727,22 +2771,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Eric Wallen",
-          "npi": "1386730729",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Brian Roberts",
-          "npi": "1700877909",
-          "specialty": "Urology"
-        },
-        {
           "name": "Jessica Swaim",
           "npi": "1457912909",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 18
+      "physicianCount": 18,
+      "hacStatus": null
     },
     {
       "id": "420089",
@@ -2763,23 +2798,18 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "David Brandli",
-          "npi": "1356330260",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Taylor Vaughan",
-          "npi": "1467770131",
-          "specialty": "Urology"
-        },
-        {
           "name": "Marshall Wingo",
           "npi": "1831395334",
           "specialty": "Urology"
         },
         {
-          "name": "Kelly Shaffer",
-          "npi": "1710060017",
+          "name": "David Brandli",
+          "npi": "1356330260",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Brisson",
+          "npi": "1699759563",
           "specialty": "Urology"
         },
         {
@@ -2788,12 +2818,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "Theodore Brisson",
-          "npi": "1699759563",
+          "name": "Kelly Shaffer",
+          "npi": "1710060017",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taylor Vaughan",
+          "npi": "1467770131",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 6
+      "physicianCount": 6,
+      "hacStatus": null
     },
     {
       "id": "420107",
@@ -2814,17 +2850,18 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Ramesh Bharadwaj",
-          "npi": "1467634030",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Ronald Glinski",
           "npi": "1801836747",
           "specialty": "Urology"
+        },
+        {
+          "name": "Ramesh Bharadwaj",
+          "npi": "1467634030",
+          "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "420104",
@@ -2845,18 +2882,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "William Largen",
-          "npi": "1336435205",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Kelly Shaffer",
-          "npi": "1710060017",
-          "specialty": "Urology"
-        },
-        {
-          "name": "John Britton",
-          "npi": "1356394126",
+          "name": "Case Wood",
+          "npi": "1316305881",
           "specialty": "Urology"
         },
         {
@@ -2865,13 +2892,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Tracy Tipton",
-          "npi": "1326487588",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mary James",
-          "npi": "1538320924",
+          "name": "Jonathan Picard",
+          "npi": "1619142841",
           "specialty": "Urology"
         },
         {
@@ -2880,19 +2902,34 @@
           "specialty": "Urology"
         },
         {
+          "name": "Kelly Shaffer",
+          "npi": "1710060017",
+          "specialty": "Urology"
+        },
+        {
           "name": "Stanley Hall",
           "npi": "1003815259",
           "specialty": "Urology"
         },
         {
-          "name": "Case Wood",
-          "npi": "1316305881",
+          "name": "Mary James",
+          "npi": "1538320924",
           "specialty": "Urology"
         },
         {
-          "name": "Jonathan Picard",
-          "npi": "1619142841",
+          "name": "Tracy Tipton",
+          "npi": "1326487588",
           "specialty": "Urology"
+        },
+        {
+          "name": "John Britton",
+          "npi": "1356394126",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Largen",
+          "npi": "1336435205",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Jonathan Donaldson",
@@ -2900,7 +2937,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 11
+      "physicianCount": 11,
+      "hacStatus": null
     },
     {
       "id": "420030",
@@ -2921,17 +2959,18 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Theodore Brisson",
-          "npi": "1699759563",
-          "specialty": "Urology"
-        },
-        {
           "name": "Samuel Nickles",
           "npi": "1275854457",
           "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Brisson",
+          "npi": "1699759563",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "420110",
@@ -2952,88 +2991,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "William Largen",
-          "npi": "1336435205",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Marshall Wingo",
-          "npi": "1831395334",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Kelly Shaffer",
-          "npi": "1710060017",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Theodore Brisson",
-          "npi": "1699759563",
-          "specialty": "Urology"
-        },
-        {
-          "name": "John Britton",
-          "npi": "1356394126",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Cameron Selent",
-          "npi": "1295119865",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Taylor Vaughan",
-          "npi": "1467770131",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Tracy Tipton",
-          "npi": "1326487588",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Bradley Steele",
-          "npi": "1811940646",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mary James",
-          "npi": "1538320924",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Alexander Ramsay",
-          "npi": "1871592089",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Gwen Choi",
-          "npi": "1528287836",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Stanley Hall",
-          "npi": "1003815259",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Nelson Ploch",
-          "npi": "1205824489",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Mark Buchanan",
-          "npi": "1104825637",
-          "specialty": "Urology"
-        },
-        {
           "name": "Case Wood",
           "npi": "1316305881",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Samuel Nickles",
-          "npi": "1275854457",
           "specialty": "Urology"
         },
         {
@@ -3042,17 +3001,98 @@
           "specialty": "Urology"
         },
         {
+          "name": "Alexander Ramsay",
+          "npi": "1871592089",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Bradley Steele",
+          "npi": "1811940646",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Nelson Ploch",
+          "npi": "1205824489",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Kelly Shaffer",
+          "npi": "1710060017",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Stanley Hall",
+          "npi": "1003815259",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Marshall Wingo",
+          "npi": "1831395334",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Mary James",
+          "npi": "1538320924",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Cameron Selent",
+          "npi": "1295119865",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Samuel Nickles",
+          "npi": "1275854457",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tracy Tipton",
+          "npi": "1326487588",
+          "specialty": "Urology"
+        },
+        {
           "name": "Justin Ellett",
           "npi": "1275827248",
           "specialty": "Urology"
         },
         {
+          "name": "John Britton",
+          "npi": "1356394126",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Theodore Brisson",
+          "npi": "1699759563",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Gwen Choi",
+          "npi": "1528287836",
+          "specialty": "Urology"
+        },
+        {
+          "name": "William Largen",
+          "npi": "1336435205",
+          "specialty": "Infectious Disease"
+        },
+        {
           "name": "Jonathan Donaldson",
           "npi": "1881693026",
           "specialty": "Urology"
+        },
+        {
+          "name": "Mark Buchanan",
+          "npi": "1104825637",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Taylor Vaughan",
+          "npi": "1467770131",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 20
+      "physicianCount": 20,
+      "hacStatus": null
     },
     {
       "id": "420020",
@@ -3073,28 +3113,8 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Jo Anne Klein",
-          "npi": "1548465651",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Geoffrey Habermacher",
-          "npi": "1083882096",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Robert Grubb",
-          "npi": "1558388058",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Thomas Cerasaro",
-          "npi": "1295765402",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Lauren Cooley",
-          "npi": "1366973265",
+          "name": "Lindsey Cox",
+          "npi": "1063674133",
           "specialty": "Urology"
         },
         {
@@ -3103,8 +3123,28 @@
           "specialty": "Urology"
         },
         {
-          "name": "Lindsey Cox",
-          "npi": "1063674133",
+          "name": "Lauren Cooley",
+          "npi": "1366973265",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Geoffrey Habermacher",
+          "npi": "1083882096",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Cerasaro",
+          "npi": "1295765402",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Jo Anne Klein",
+          "npi": "1548465651",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Robert Grubb",
+          "npi": "1558388058",
           "specialty": "Urology"
         },
         {
@@ -3113,7 +3153,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 8
+      "physicianCount": 8,
+      "hacStatus": "HAC_AT_RISK"
     },
     {
       "id": "420053",
@@ -3144,7 +3185,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "420043",
@@ -3165,8 +3207,23 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Gerald Hull",
-          "npi": "1639130628",
+          "name": "Erin Anderson",
+          "npi": "1821226960",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Paul Ellis",
+          "npi": "1356317325",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Coronato",
+          "npi": "1740304419",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Necia Pope",
+          "npi": "1396732145",
           "specialty": "Urology"
         },
         {
@@ -3180,37 +3237,23 @@
           "specialty": "Urology"
         },
         {
-          "name": "Ali Latefi",
-          "npi": "1215972732",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Paul Ellis",
-          "npi": "1356317325",
-          "specialty": "Urology"
-        },
-        {
           "name": "Michael Pryor",
           "npi": "1699711317",
           "specialty": "Urology"
         },
         {
-          "name": "Necia Pope",
-          "npi": "1396732145",
+          "name": "Ali Latefi",
+          "npi": "1215972732",
           "specialty": "Urology"
         },
         {
-          "name": "Eric Coronato",
-          "npi": "1740304419",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Erin Anderson",
-          "npi": "1821226960",
+          "name": "Gerald Hull",
+          "npi": "1639130628",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420106",
@@ -3231,24 +3274,9 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Majdi Al-Hasan",
-          "npi": "1477525822",
-          "specialty": "Infectious Disease"
-        },
-        {
           "name": "Divya Ahuja",
           "npi": "1134105760",
           "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Alexander Milgrom",
-          "npi": "1295117307",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Brian Cope",
-          "npi": "1902893506",
-          "specialty": "Urology"
         },
         {
           "name": "Sharon Weissman",
@@ -3256,13 +3284,8 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Timothy Averch",
-          "npi": "1578535977",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Harmeet Gill",
-          "npi": "1659703981",
+          "name": "Majdi Al-Hasan",
+          "npi": "1477525822",
           "specialty": "Infectious Disease"
         },
         {
@@ -3271,17 +3294,38 @@
           "specialty": "Urology"
         },
         {
+          "name": "William Wooten",
+          "npi": "1548604341",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Timothy Averch",
+          "npi": "1578535977",
+          "specialty": "Urology"
+        },
+        {
           "name": "Michael Moran",
           "npi": "1912957473",
           "specialty": "Urology"
         },
         {
-          "name": "William Wooten",
-          "npi": "1548604341",
+          "name": "Brian Cope",
+          "npi": "1902893506",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Harmeet Gill",
+          "npi": "1659703981",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Alexander Milgrom",
+          "npi": "1295117307",
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420109",
@@ -3302,13 +3346,13 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Ronald Glinski",
-          "npi": "1801836747",
+          "name": "Vijay Pinto",
+          "npi": "1811002371",
           "specialty": "Urology"
         },
         {
-          "name": "Vijay Pinto",
-          "npi": "1811002371",
+          "name": "Ronald Glinski",
+          "npi": "1801836747",
           "specialty": "Urology"
         },
         {
@@ -3317,7 +3361,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "420072",
@@ -3343,7 +3388,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420037",
@@ -3364,21 +3410,6 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Kimberly Burgess",
-          "npi": "1578760450",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Amanda Schnee",
-          "npi": "1487093837",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "William Flanagan",
-          "npi": "1689626459",
-          "specialty": "Urology"
-        },
-        {
           "name": "Prerana Roth",
           "npi": "1548434863",
           "specialty": "Infectious Disease"
@@ -3389,13 +3420,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "Tim Large",
-          "npi": "1386906907",
+          "name": "William Flanagan",
+          "npi": "1689626459",
           "specialty": "Urology"
         },
         {
           "name": "Blake Wynia",
           "npi": "1942591961",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Tim Large",
+          "npi": "1386906907",
           "specialty": "Urology"
         },
         {
@@ -3409,12 +3445,23 @@
           "specialty": "Infectious Disease"
         },
         {
+          "name": "Amanda Schnee",
+          "npi": "1487093837",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kimberly Burgess",
+          "npi": "1578760450",
+          "specialty": "Urology"
+        },
+        {
           "name": "Gabriel Fiscus",
           "npi": "1245673466",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 10
+      "physicianCount": 10,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420005",
@@ -3435,13 +3482,13 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Ramesh Bharadwaj",
-          "npi": "1467634030",
+          "name": "Sisay Debebe",
+          "npi": "1891083143",
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Sisay Debebe",
-          "npi": "1891083143",
+          "name": "Ramesh Bharadwaj",
+          "npi": "1467634030",
           "specialty": "Infectious Disease"
         },
         {
@@ -3450,7 +3497,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "420038",
@@ -3476,7 +3524,8 @@
           "specialty": "Infectious Disease"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "420010",
@@ -3502,17 +3551,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "David Horger",
-          "npi": "1104814409",
-          "specialty": "Urology"
-        },
-        {
           "name": "Winston Vaught",
           "npi": "1053310110",
           "specialty": "Urology"
+        },
+        {
+          "name": "David Horger",
+          "npi": "1104814409",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "421301",
@@ -3532,7 +3582,8 @@
       "cautiStatus": "No Different than National Benchmark",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "420055",
@@ -3573,7 +3624,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 4
+      "physicianCount": 4,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "420011",
@@ -3599,17 +3651,18 @@
           "specialty": "Urology"
         },
         {
-          "name": "Thomas Serey",
-          "npi": "1851398929",
-          "specialty": "Urology"
-        },
-        {
           "name": "Raymond Seiler",
           "npi": "1073625307",
           "specialty": "Urology"
+        },
+        {
+          "name": "Thomas Serey",
+          "npi": "1851398929",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 3
+      "physicianCount": 3,
+      "hacStatus": null
     },
     {
       "id": "420019",
@@ -3635,7 +3688,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 1
+      "physicianCount": 1,
+      "hacStatus": null
     },
     {
       "id": "421300",
@@ -3656,17 +3710,18 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Jonathan Anderson",
-          "npi": "1346226958",
-          "specialty": "Urology"
-        },
-        {
           "name": "Darren Mack",
           "npi": "1366679318",
           "specialty": "Urology"
+        },
+        {
+          "name": "Jonathan Anderson",
+          "npi": "1346226958",
+          "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "421304",
@@ -3697,7 +3752,8 @@
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 2
+      "physicianCount": 2,
+      "hacStatus": null
     },
     {
       "id": "420102",
@@ -3718,9 +3774,9 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Kimberly Burgess",
-          "npi": "1578760450",
-          "specialty": "Urology"
+          "name": "Ryan Mart",
+          "npi": "1245763002",
+          "specialty": "Infectious Disease"
         },
         {
           "name": "Ryan Werntz",
@@ -3728,8 +3784,8 @@
           "specialty": "Urology"
         },
         {
-          "name": "Johnny Lindquist",
-          "npi": "1619406766",
+          "name": "William Springhart",
+          "npi": "1760479968",
           "specialty": "Urology"
         },
         {
@@ -3738,19 +3794,9 @@
           "specialty": "Urology"
         },
         {
-          "name": "Ryan Mart",
-          "npi": "1245763002",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Mark Call",
-          "npi": "1548210115",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Patrick Kent",
-          "npi": "1194250183",
-          "specialty": "Infectious Disease"
+          "name": "Joseph Busby",
+          "npi": "1417064460",
+          "specialty": "Urology"
         },
         {
           "name": "Elizabeth Abell",
@@ -3758,19 +3804,19 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "William Springhart",
-          "npi": "1760479968",
-          "specialty": "Urology"
-        },
-        {
           "name": "Tim Large",
           "npi": "1386906907",
           "specialty": "Urology"
         },
         {
-          "name": "Chukwunyelu Enwezor",
-          "npi": "1740545185",
+          "name": "Mark Call",
+          "npi": "1548210115",
           "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Johnny Lindquist",
+          "npi": "1619406766",
+          "specialty": "Urology"
         },
         {
           "name": "Charles Marguet",
@@ -3783,17 +3829,28 @@
           "specialty": "Infectious Disease"
         },
         {
-          "name": "Gabriel Fiscus",
-          "npi": "1245673466",
+          "name": "Chukwunyelu Enwezor",
+          "npi": "1740545185",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Kimberly Burgess",
+          "npi": "1578760450",
           "specialty": "Urology"
         },
         {
-          "name": "Joseph Busby",
-          "npi": "1417064460",
+          "name": "Patrick Kent",
+          "npi": "1194250183",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Gabriel Fiscus",
+          "npi": "1245673466",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 15
+      "physicianCount": 15,
+      "hacStatus": null
     },
     {
       "id": "42009F",
@@ -3813,7 +3870,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     },
     {
       "id": "420108",
@@ -3834,8 +3892,28 @@
       "priority": "STANDARD",
       "physicians": [
         {
-          "name": "Gerald Hull",
-          "npi": "1639130628",
+          "name": "Erin Anderson",
+          "npi": "1821226960",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Casey Cronan",
+          "npi": "1821415647",
+          "specialty": "Infectious Disease"
+        },
+        {
+          "name": "Paul Ellis",
+          "npi": "1356317325",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Eric Coronato",
+          "npi": "1740304419",
+          "specialty": "Urology"
+        },
+        {
+          "name": "Necia Pope",
+          "npi": "1396732145",
           "specialty": "Urology"
         },
         {
@@ -3854,32 +3932,13 @@
           "specialty": "Urology"
         },
         {
-          "name": "Paul Ellis",
-          "npi": "1356317325",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Necia Pope",
-          "npi": "1396732145",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Eric Coronato",
-          "npi": "1740304419",
-          "specialty": "Urology"
-        },
-        {
-          "name": "Casey Cronan",
-          "npi": "1821415647",
-          "specialty": "Infectious Disease"
-        },
-        {
-          "name": "Erin Anderson",
-          "npi": "1821226960",
+          "name": "Gerald Hull",
+          "npi": "1639130628",
           "specialty": "Urology"
         }
       ],
-      "physicianCount": 9
+      "physicianCount": 9,
+      "hacStatus": "HAC_PENALIZED"
     },
     {
       "id": "423300",
@@ -3899,7 +3958,8 @@
       "cautiStatus": "Not Available",
       "priority": "STANDARD",
       "physicians": [],
-      "physicianCount": 0
+      "physicianCount": 0,
+      "hacStatus": null
     }
   ],
   "mapConfig": {
@@ -3912,9 +3972,9 @@
     "facilityTypes": [
       "Childrens",
       "Critical Access Hospitals",
-      "Acute Care Hospitals",
       "Acute Care - Veterans Administration",
-      "Acute Care - Department of Defense"
+      "Acute Care - Department of Defense",
+      "Acute Care Hospitals"
     ]
   }
 }
