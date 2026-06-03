@@ -60,11 +60,19 @@ interface RepData {
   }
 }
 
-// PDF Downloads Data
-const pricingSheets = [
+// Comedical reps receive their own pricing sheets (V2); all others use standard sheets
+const COMEDICAL_SLUGS = new Set(['dowdy', 'dennehy', 'murray', 'hagarty', 'collins'])
+
+const standardPricingSheets = [
   { name: 'Premier Facility Pricing Sheet', path: '/pdfs/pricing/premier-pricing.pdf' },
   { name: 'Vizient Facility Pricing Sheet', path: '/pdfs/pricing/vizient-pricing.pdf' },
   { name: 'VA Facility Pricing Sheet (2026)', path: '/pdfs/pricing/va-pricing.pdf' },
+]
+
+const comedicalPricingSheets = [
+  { name: 'Premier Facility Pricing Sheet', path: '/pdfs/comedicalpricing/premier-pricing.pdf' },
+  { name: 'Vizient Facility Pricing Sheet', path: '/pdfs/comedicalpricing/vizient-pricing.pdf' },
+  { name: 'VA Facility Pricing Sheet (2026)', path: '/pdfs/comedicalpricing/va-pricing.pdf' },
 ]
 
 const infoMaterialsLeft = [
@@ -90,6 +98,10 @@ export default function RepPage({ params }: { params: { slug: string } }) {
   const [repData, setRepData] = useState<RepData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+
+  const pricingSheets = COMEDICAL_SLUGS.has(params.slug)
+    ? comedicalPricingSheets
+    : standardPricingSheets
 
   // Load rep data from JSON
   useEffect(() => {
