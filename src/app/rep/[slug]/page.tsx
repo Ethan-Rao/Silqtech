@@ -124,6 +124,64 @@ export default function RepPage({ params }: { params: { slug: string } }) {
     loadRepData()
   }, [params.slug])
 
+  // Top Target List download handler
+  const handleDownloadTopTargets = useCallback(() => {
+    if (!repData) return
+
+    const { meta, facilities } = repData
+
+    // Compute 90th-percentile catheter-days threshold within this rep's territory
+    const validDays = facilities.map(f => f.catheterDays).filter(d => d > 0).sort((a, b) => a - b)
+    const p90Index = Math.floor(validDays.length * 0.9)
+    const highVolumeThreshold = validDays[p90Index] ?? 0
+
+    // Include facilities meeting any criterion
+    const targets = facilities.filter(f =>
+      f.hacStatus === 'HAC_PENALIZED' ||
+      f.hacStatus === 'HAC_AT_RISK' ||
+      f.cautiStatus?.includes('Worse') ||
+      (highVolumeThreshold > 0 && f.catheterDays >= highVolumeThreshold)
+    )
+
+    const headers = [
+      'Facility Name',
+      'Address',
+      'City',
+      'State',
+      'ZIP Code',
+      'Phone',
+      'Catheter Volume',
+      'HAC Status',
+      'CAUTI Status',
+      'GPO',
+      'Physician Count',
+    ]
+
+    const rows = targets.map(f => [
+      `"${f.name.replace(/"/g, '""')}"`,
+      `"${f.address.replace(/"/g, '""')}"`,
+      `"${f.city}"`,
+      f.state,
+      f.zipCode,
+      f.phone,
+      f.catheterDays >= highVolumeThreshold && highVolumeThreshold > 0 ? 'High Volume' : 'Standard',
+      f.hacStatus || '',
+      `"${f.cautiStatus}"`,
+      `"${(f.gpo || '').replace(/"/g, '""')}"`,
+      f.physicianCount,
+    ])
+
+    const csvContent = [headers.join(','), ...rows.map(r => r.join(','))].join('\n')
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
+    const link = document.createElement('a')
+    link.setAttribute('href', URL.createObjectURL(blob))
+    link.setAttribute('download', `${meta.company.replace(/\s+/g, '_')}_top_targets_${new Date().toISOString().split('T')[0]}.csv`)
+    link.style.visibility = 'hidden'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }, [repData])
+
   // CSV Export Handler
   const handleExportFacilities = useCallback(() => {
     if (!repData) return
@@ -247,6 +305,15 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               <p className="text-silq-teal">
                 Please email <a href="mailto:chuckg@silq.tech" className="hover:underline font-medium">chuckg@silq.tech</a> for any sample requests
               </p>
+              <button
+                onClick={handleDownloadTopTargets}
+                className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-white/80 hover:text-white transition-colors group"
+              >
+                <svg className="w-4 h-4 text-silq-teal group-hover:translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Top Target List
+              </button>
             </motion.div>
 
             {/* Right Column: PDF Downloads */}
