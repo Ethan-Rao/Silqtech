@@ -136,23 +136,28 @@ export default function RepPage({ params }: { params: { slug: string } }) {
     const highVolumeThreshold = validDays[p90Index] ?? 0
     const isHighVolume = (f: Facility) => highVolumeThreshold > 0 && f.catheterDays >= highVolumeThreshold
 
-    // Assign sort rank — lower = higher priority in CSV
-    // 1: HAC Penalized  2: Worse CAUTI  3: High Volume  4: HAC At Risk
-    const sortRank = (f: Facility): number => {
-      if (f.hacStatus === 'HAC_PENALIZED') return 1
-      if (f.cautiStatus?.includes('Worse')) return 2
-      if (isHighVolume(f)) return 3
-      return 4 // HAC_AT_RISK
+    // Primary sort rank: 1 HAC Penalized · 2 Worse CAUTI · 3 High Volume · 4 HAC At Risk
+    // Secondary: within each primary group, High Volume facilities rank first (0) vs last (1)
+    const sortKey = (f: Facility): [number, number] => {
+      const vol = isHighVolume(f) ? 0 : 1
+      if (f.hacStatus === 'HAC_PENALIZED') return [1, vol]
+      if (f.cautiStatus?.includes('Worse'))  return [2, vol]
+      if (isHighVolume(f))                   return [3, 0]
+      return [4, vol] // HAC_AT_RISK
     }
 
     const targets = facilities
       .filter(f =>
         f.hacStatus === 'HAC_PENALIZED' ||
-        f.hacStatus === 'HAC_AT_RISK' ||
+        f.hacStatus === 'HAC_AT_RISK'   ||
         f.cautiStatus?.includes('Worse') ||
         isHighVolume(f)
       )
-      .sort((a, b) => sortRank(a) - sortRank(b))
+      .sort((a, b) => {
+        const [ap, as_] = sortKey(a)
+        const [bp, bs]  = sortKey(b)
+        return ap !== bp ? ap - bp : as_ - bs
+      })
 
     const headers = [
       'Facility Name',
@@ -164,21 +169,33 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       'Catheter Volume',
       'HAC Status',
       'CAUTI Status',
-      'Physician Count',
+      'Urologists',
+      'Infectious Disease Physicians',
     ]
 
-    const rows = targets.map(f => [
-      `"${f.name.replace(/"/g, '""')}"`,
-      `"${f.address.replace(/"/g, '""')}"`,
-      `"${f.city}"`,
-      f.state,
-      f.zipCode,
-      f.phone,
-      isHighVolume(f) ? 'High Volume' : 'Standard',
-      f.hacStatus || '',
-      `"${f.cautiStatus}"`,
-      f.physicianCount,
-    ])
+    const rows = targets.map(f => {
+      const urologists = f.physicians
+        .filter(p => p.specialty === 'Urology')
+        .map(p => p.name)
+        .join('; ')
+      const idPhysicians = f.physicians
+        .filter(p => p.specialty === 'Infectious Disease')
+        .map(p => p.name)
+        .join('; ')
+      return [
+        `"${f.name.replace(/"/g, '""')}"`,
+        `"${f.address.replace(/"/g, '""')}"`,
+        `"${f.city}"`,
+        f.state,
+        f.zipCode,
+        f.phone,
+        isHighVolume(f) ? 'High Volume' : 'Standard',
+        f.hacStatus || '',
+        `"${f.cautiStatus}"`,
+        `"${urologists}"`,
+        `"${idPhysicians}"`,
+      ]
+    })
 
     const csvContent = [headers.join(','), ...rows.map(r => r.join(','))].join('\n')
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
