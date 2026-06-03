@@ -130,18 +130,29 @@ export default function RepPage({ params }: { params: { slug: string } }) {
 
     const { meta, facilities } = repData
 
-    // Compute 90th-percentile catheter-days threshold within this rep's territory
+    // 90th-percentile catheter-days threshold within this rep's territory
     const validDays = facilities.map(f => f.catheterDays).filter(d => d > 0).sort((a, b) => a - b)
     const p90Index = Math.floor(validDays.length * 0.9)
     const highVolumeThreshold = validDays[p90Index] ?? 0
+    const isHighVolume = (f: Facility) => highVolumeThreshold > 0 && f.catheterDays >= highVolumeThreshold
 
-    // Include facilities meeting any criterion
-    const targets = facilities.filter(f =>
-      f.hacStatus === 'HAC_PENALIZED' ||
-      f.hacStatus === 'HAC_AT_RISK' ||
-      f.cautiStatus?.includes('Worse') ||
-      (highVolumeThreshold > 0 && f.catheterDays >= highVolumeThreshold)
-    )
+    // Assign sort rank — lower = higher priority in CSV
+    // 1: HAC Penalized  2: Worse CAUTI  3: High Volume  4: HAC At Risk
+    const sortRank = (f: Facility): number => {
+      if (f.hacStatus === 'HAC_PENALIZED') return 1
+      if (f.cautiStatus?.includes('Worse')) return 2
+      if (isHighVolume(f)) return 3
+      return 4 // HAC_AT_RISK
+    }
+
+    const targets = facilities
+      .filter(f =>
+        f.hacStatus === 'HAC_PENALIZED' ||
+        f.hacStatus === 'HAC_AT_RISK' ||
+        f.cautiStatus?.includes('Worse') ||
+        isHighVolume(f)
+      )
+      .sort((a, b) => sortRank(a) - sortRank(b))
 
     const headers = [
       'Facility Name',
@@ -153,7 +164,6 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       'Catheter Volume',
       'HAC Status',
       'CAUTI Status',
-      'GPO',
       'Physician Count',
     ]
 
@@ -164,10 +174,9 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       f.state,
       f.zipCode,
       f.phone,
-      f.catheterDays >= highVolumeThreshold && highVolumeThreshold > 0 ? 'High Volume' : 'Standard',
+      isHighVolume(f) ? 'High Volume' : 'Standard',
       f.hacStatus || '',
       `"${f.cautiStatus}"`,
-      `"${(f.gpo || '').replace(/"/g, '""')}"`,
       f.physicianCount,
     ])
 
@@ -307,12 +316,12 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               </p>
               <button
                 onClick={handleDownloadTopTargets}
-                className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-white/80 hover:text-white transition-colors group"
+                className="mt-5 w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl font-bold text-base bg-silq-teal text-white shadow-lg shadow-silq-teal/30 hover:bg-silq-teal/90 hover:shadow-silq-teal/50 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
               >
-                <svg className="w-4 h-4 text-silq-teal group-hover:translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                <svg className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Top Target List
+                Download Top Target List
               </button>
             </motion.div>
 
