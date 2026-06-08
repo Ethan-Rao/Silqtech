@@ -81,6 +81,12 @@ const infoMaterialsLeft = [
   { name: 'Sales & Marketing Slides', path: '/pdfs/sales-marketing-slides.pdf' },
 ]
 
+const comedicalInfoMaterialsLeft = [
+  { name: 'ClearTract SPT IFU', path: '/pdfs/cleartract-ifu.pdf' },
+  { name: 'ClearTract SPT Bi-Fold PDF', path: '/pdfs/cleartract-bifold-comedical.pdf' },
+  { name: 'Sales & Marketing Slides', path: '/pdfs/sales-marketing-slides.pdf' },
+]
+
 const infoMaterialsRight = [
   { name: 'Technology Overview', path: '/pdfs/technology-overview.pdf' },
   { name: 'Full Physician and Patient Testimonials', path: '/pdfs/testimonials.pdf' },
@@ -99,9 +105,9 @@ export default function RepPage({ params }: { params: { slug: string } }) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const pricingSheets = COMEDICAL_SLUGS.has(params.slug)
-    ? comedicalPricingSheets
-    : standardPricingSheets
+  const isComedical = COMEDICAL_SLUGS.has(params.slug)
+  const pricingSheets = isComedical ? comedicalPricingSheets : standardPricingSheets
+  const currentInfoMaterialsLeft = isComedical ? comedicalInfoMaterialsLeft : infoMaterialsLeft
 
   // Load rep data from JSON
   useEffect(() => {
@@ -383,7 +389,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4">
                   <h4 className="text-sm font-semibold text-silq-teal mb-3">Product Materials</h4>
                   <div className="space-y-2">
-                    {infoMaterialsLeft.map(pdf => (
+                    {currentInfoMaterialsLeft.map(pdf => (
                       <a 
                         key={pdf.name}
                         href={pdf.path}
