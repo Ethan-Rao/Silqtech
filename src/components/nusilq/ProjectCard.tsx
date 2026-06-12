@@ -44,22 +44,26 @@ type ProjectCardProps = {
   project: OngoingProject
   onAddNote: (id: string, author: string, text: string) => void
   onEditBase: (id: string, updates: Partial<OngoingProject>) => void
+  /** When true, the card spans both columns in a 2-col grid when expanded */
+  twoCol?: boolean
 } | {
   section: 'targets'
   project: ActiveTarget
   onAddNote: (id: string, author: string, text: string) => void
   onEditBase: (id: string, updates: Partial<ActiveTarget>) => void
+  twoCol?: boolean
 } | {
   section: 'stalled'
   project: StalledProject
   onAddNote: (id: string, author: string, text: string) => void
   onEditBase: (id: string, updates: Partial<StalledProject>) => void
+  twoCol?: boolean
 }
 
 // ── component ──────────────────────────────────────────────────────────────
 
 export function ProjectCard(props: ProjectCardProps) {
-  const { section, project, onAddNote } = props
+  const { section, project, onAddNote, twoCol } = props
   const [expanded, setExpanded] = useState(false)
   const [editing, setEditing] = useState(false)
   const [editState, setEditState] = useState<Record<string, string>>({})
@@ -170,7 +174,7 @@ export function ProjectCard(props: ProjectCardProps) {
         ]
 
   return (
-    <div className={`bg-white rounded-xl shadow-sm ${accentClass} overflow-hidden mb-3`}>
+    <div className={`bg-white rounded-xl shadow-sm border border-slate-100 ${accentClass} overflow-hidden transition-all duration-300${twoCol && expanded ? ' md:col-span-2' : ''}`}>
       {/* ── collapsed header ── */}
       <button
         onClick={() => setExpanded(v => !v)}
