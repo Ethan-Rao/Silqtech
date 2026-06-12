@@ -1,0 +1,501 @@
+{
+  "generated": "2026-06-12T21:32:35.869Z",
+  "ongoing": [
+    {
+      "id": "aspero",
+      "companyName": "Aspero",
+      "currentActionItem": "Testing Silq Treated Samples",
+      "projectStatus": "Performance Testing",
+      "tNDA": "Signed",
+      "lastUpdated": "2026-06-09",
+      "applicationDescription": "Endoscope Tubing",
+      "notes": []
+    },
+    {
+      "id": "ab",
+      "companyName": "AB",
+      "currentActionItem": "Silq Performing Electrochemical Testing",
+      "projectStatus": "Electrochemical analysis, performance testing starting Q3",
+      "tNDA": "Signed",
+      "lastUpdated": "2026-06-02",
+      "applicationDescription": "Cochlear Implants",
+      "notes": []
+    },
+    {
+      "id": "bmc-health",
+      "companyName": "BMC Health",
+      "currentActionItem": "Regulatory Discussions",
+      "projectStatus": "Feasibility Complete, samples remain",
+      "tNDA": "Signed 2/16/26",
+      "lastUpdated": "2026-06-01",
+      "applicationDescription": "Penile Implant",
+      "notes": []
+    },
+    {
+      "id": "medtronic",
+      "companyName": "Medtronic",
+      "currentActionItem": "MTA In Development",
+      "projectStatus": "Initiated",
+      "tNDA": "",
+      "lastUpdated": "2026-06-01",
+      "applicationDescription": "Hydrocephalus Shunt",
+      "notes": []
+    },
+    {
+      "id": "boston-scientific-ireland",
+      "companyName": "Boston Scientific (Ireland)",
+      "currentActionItem": "NDA in Development",
+      "projectStatus": "Initiated",
+      "tNDA": "",
+      "lastUpdated": "2026-06-01",
+      "applicationDescription": "Urology Device",
+      "notes": []
+    },
+    {
+      "id": "establishment-labs",
+      "companyName": "Establishment Labs",
+      "currentActionItem": "Nusil to Coordinate TNDA",
+      "projectStatus": "Very interested, but cash constrained",
+      "tNDA": "",
+      "lastUpdated": "2025-09-12",
+      "applicationDescription": "Breast Implants",
+      "notes": []
+    },
+    {
+      "id": "abbott",
+      "companyName": "Abbott",
+      "currentActionItem": "Silq to treat 20cm Samples and invoice work",
+      "projectStatus": "",
+      "tNDA": "Signed",
+      "lastUpdated": "2025-09-05",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "med-el",
+      "companyName": "Med-El",
+      "currentActionItem": "Eugiene to follow up upon return",
+      "projectStatus": "Pre-NDA Samples Sent 8.12.25",
+      "tNDA": "",
+      "lastUpdated": "2025-08-15",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "gc-aesthetics",
+      "companyName": "GC Aesthetics",
+      "currentActionItem": "GC to Review Proposal",
+      "projectStatus": "Feasibility quote sent with biological testing",
+      "tNDA": "Signed",
+      "lastUpdated": "2025-07-18",
+      "applicationDescription": "Breast Implants",
+      "notes": []
+    },
+    {
+      "id": "todoc",
+      "companyName": "Todoc",
+      "currentActionItem": "",
+      "projectStatus": "Todoc are evaluating their resource availablity for this project",
+      "tNDA": "Sent June 9 '25",
+      "lastUpdated": "2025-07-01",
+      "applicationDescription": "Cochlear Implants",
+      "notes": []
+    },
+    {
+      "id": "silimed",
+      "companyName": "Silimed",
+      "currentActionItem": "NDA under review",
+      "projectStatus": "Meeting with distributor in Brazil - setting up additional SIlq introductory meetings",
+      "tNDA": "",
+      "lastUpdated": "2025-07-01",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "abbvie",
+      "companyName": "Abbvie",
+      "currentActionItem": "Project transitioning to Costa Rica team",
+      "projectStatus": "3-way NDA signed 6/30/25",
+      "tNDA": "Signed",
+      "lastUpdated": "2025-06-30",
+      "applicationDescription": "Tissue Expander Component",
+      "notes": []
+    },
+    {
+      "id": "sophysa",
+      "companyName": "Sophysa",
+      "currentActionItem": "",
+      "projectStatus": "Awaiting decision on their part on NDA/TNDA signature",
+      "tNDA": "",
+      "lastUpdated": "2025-01-31",
+      "applicationDescription": "Hydrocephalus Shunt",
+      "notes": []
+    },
+    {
+      "id": "gulf-rubber",
+      "companyName": "Gulf Rubber",
+      "currentActionItem": "",
+      "projectStatus": "Awaiting Nusil follow up on introductory call",
+      "tNDA": "Signed",
+      "lastUpdated": "2025-01-28",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "pelican-health",
+      "companyName": "Pelican Health",
+      "currentActionItem": "",
+      "projectStatus": "NDA Sent",
+      "tNDA": "",
+      "lastUpdated": null,
+      "applicationDescription": "Digestive sampling device",
+      "notes": []
+    }
+  ],
+  "targets": [
+    {
+      "id": "j-j",
+      "companyName": "J&J",
+      "application": "glaucoma implants",
+      "deviceDetails": "Silicone device includes holes to allow fibrous tissue growth",
+      "notes": [
+        {
+          "id": "seed-j-j-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Baerveldt nonvalved Implant J&J"
+        }
+      ]
+    },
+    {
+      "id": "glaukos-corp",
+      "companyName": "Glaukos Corp.",
+      "application": "glaucoma implants",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "myra-medical",
+      "companyName": "Myra Medical",
+      "application": "glaucoma implants",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "hpbio-brazil",
+      "companyName": "HPBio (Brazil)",
+      "application": "",
+      "deviceDetails": "Neurosurgical (Drains, shunts), Gastroenterology (feeding catheter, silicone)",
+      "notes": [
+        {
+          "id": "seed-hpbio-brazil-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Looking to schedule call in Nov."
+        }
+      ]
+    },
+    {
+      "id": "lifesil-brazil",
+      "companyName": "LifeSil (Brazil)",
+      "application": "Breast Implants.",
+      "deviceDetails": "",
+      "notes": [
+        {
+          "id": "seed-lifesil-brazil-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Looking to schedule call."
+        }
+      ]
+    },
+    {
+      "id": "fci-france",
+      "companyName": "FCI (France)",
+      "application": "Ocular",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "aspero-medical",
+      "companyName": "Aspero Medical",
+      "application": "Endoscopic",
+      "deviceDetails": "",
+      "notes": [
+        {
+          "id": "seed-aspero-medical-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "They have not made a decision yet.  Need to follow up."
+        }
+      ]
+    },
+    {
+      "id": "ventura-biomedica",
+      "companyName": "Ventura Biomedica",
+      "application": "Hydrocephalous",
+      "deviceDetails": "ventricular catheters",
+      "notes": [
+        {
+          "id": "seed-ventura-biomedica-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Scheduling call"
+        }
+      ]
+    },
+    {
+      "id": "kerecis",
+      "companyName": "Kerecis",
+      "application": "Wound management",
+      "deviceDetails": "Fish skin based skingrafts",
+      "notes": [
+        {
+          "id": "seed-kerecis-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Scheduling call"
+        }
+      ]
+    },
+    {
+      "id": "cirtec",
+      "companyName": "Cirtec",
+      "application": "Various",
+      "deviceDetails": "Catheters and various other HC/MI devices",
+      "notes": [
+        {
+          "id": "seed-cirtec-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Intro call on 2/12/26"
+        }
+      ]
+    },
+    {
+      "id": "bmc",
+      "companyName": "BMC",
+      "application": "Penile implant",
+      "deviceDetails": "",
+      "notes": [
+        {
+          "id": "seed-bmc-0",
+          "timestamp": "2026-06-12T21:32:35.868Z",
+          "author": "Excel import",
+          "text": "Meeting at MD&M.  Callon 2/12/26"
+        }
+      ]
+    },
+    {
+      "id": "nexsilis",
+      "companyName": "Nexsilis",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "medicone",
+      "companyName": "Medicone",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "silimed",
+      "companyName": "Silimed",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "faj",
+      "companyName": "FAJ",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "ibeg",
+      "companyName": "IBEG",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "gabisa",
+      "companyName": "Gabisa",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "faga-medical",
+      "companyName": "Faga Medical",
+      "application": "Breast Implants.",
+      "deviceDetails": "Breastimplant with PU foam setcion.  May want echogenic silicone",
+      "notes": []
+    }
+  ],
+  "stalled": [
+    {
+      "id": "procope-medicals",
+      "companyName": "Procope Medicals",
+      "projectStatus": "project stalled due to other priorities in house, research should resume in next couple months",
+      "applicationDescription": "total artificial heart",
+      "lastContact": "2025-03-13",
+      "notes": []
+    },
+    {
+      "id": "mitka",
+      "companyName": "Mitka",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "bsc-via-nusil",
+      "companyName": "BSC (via Nusil)",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "j-j-via-nusil",
+      "companyName": "J&J (via Nusil)",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "edwards-life-sceinces",
+      "companyName": "Edwards Life Sceinces",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "luna",
+      "companyName": "Luna",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "newronika",
+      "companyName": "Newronika",
+      "projectStatus": "quote was sent to them but fell through",
+      "applicationDescription": "",
+      "lastContact": "2024-10-25",
+      "notes": []
+    },
+    {
+      "id": "becton-dickenson",
+      "companyName": "Becton Dickenson",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "perikinetics",
+      "companyName": "Perikinetics",
+      "projectStatus": "Focused on alternative design priority",
+      "applicationDescription": "artificial pancreas for insulin therapy. Insulin denaturing, foreign body response, catheter occlusion (collagen)",
+      "lastContact": "2021-10-05",
+      "notes": []
+    },
+    {
+      "id": "nurotron",
+      "companyName": "Nurotron",
+      "projectStatus": "last discussed feasibility testing on coated electrodes",
+      "applicationDescription": "Cochlear Device",
+      "lastContact": "2022-05-16",
+      "notes": []
+    },
+    {
+      "id": "freudenberg-inhealth",
+      "companyName": "Freudenberg (inhealth)",
+      "projectStatus": "",
+      "applicationDescription": "Voice Prosthesis",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "microport",
+      "companyName": "Microport",
+      "projectStatus": "Not seeking novel technology, only small iterative improvements",
+      "applicationDescription": "Pacemaker",
+      "lastContact": "2023-11-10",
+      "notes": []
+    },
+    {
+      "id": "med-el",
+      "companyName": "MED-EL",
+      "projectStatus": "not seeking new filing of devices yet, might be intersted for new devices later on",
+      "applicationDescription": "cochler devices",
+      "lastContact": "2025-06-02",
+      "notes": []
+    },
+    {
+      "id": "polytech",
+      "companyName": "Polytech",
+      "projectStatus": "were not interested when contacted",
+      "applicationDescription": "BIs",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "vygon",
+      "companyName": "Vygon",
+      "projectStatus": "TNDA sent for approval 4/2 to not restrict to any geography. Preliminary silicone CVC samples to be provided for evaluationent for approval. Decided not to pursue",
+      "applicationDescription": "Catheters",
+      "lastContact": "2025-04-02",
+      "notes": []
+    },
+    {
+      "id": "tingo",
+      "companyName": "Tingo",
+      "projectStatus": "",
+      "applicationDescription": "",
+      "lastContact": null,
+      "notes": []
+    },
+    {
+      "id": "cochlear-australia",
+      "companyName": "Cochlear Australia",
+      "projectStatus": "Brian provided ASTM Test Results. Awaiting their response on next steps. Silq to provide summary document describing deposition procedure to their devices",
+      "applicationDescription": "Cochlear Implants",
+      "lastContact": "2025-02-12",
+      "notes": []
+    },
+    {
+      "id": "next-step-visionair",
+      "companyName": "Next Step/Visionair",
+      "projectStatus": "Simulated Mucus recieved 3/12. Feasability testing difficult for their specific purpose",
+      "applicationDescription": "Signed",
+      "lastContact": "2025-05-14",
+      "notes": []
+    },
+    {
+      "id": "hpbio",
+      "companyName": "HPBio",
+      "projectStatus": "Customer decided to stay with method of dipping the device in an active.",
+      "applicationDescription": "",
+      "lastContact": "2026-03-26",
+      "notes": []
+    },
+    {
+      "id": "new-world",
+      "companyName": "New World",
+      "projectStatus": "Pricing discussion 9/30/25. Aging Samples Finishing 8/30. Nylon Feasability Completed. & Dedicated Fixture proposal approved",
+      "applicationDescription": "Glaucoma Treatment Drain",
+      "lastContact": "2025-09-12",
+      "notes": []
+    }
+  ]
+}

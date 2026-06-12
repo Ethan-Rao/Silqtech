@@ -48,3 +48,4 @@ scripts/map-generator/data/
 scripts/map-generator/*.csv
 !scripts/map-generator/1099Master.csv
 *.xlsx
+!NuSilq/*.xlsx
