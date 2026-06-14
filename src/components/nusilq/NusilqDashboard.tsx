@@ -155,96 +155,90 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
       })
     : '—'
 
-  const totalActive = data.ongoing.length + data.targets.length
-
   return (
-    <div className="min-h-screen bg-slate-50">
+    // pt-20 accounts for the fixed site header (h-20 = 80px)
+    <div className="min-h-screen bg-[#F4F5F7] pt-20">
 
-      {/* ── STICKY TOOLBAR ──────────────────────────────────────────────── */}
-      <div className="bg-silq-dark text-white sticky top-0 z-40 shadow-md">
-        <div className="max-w-screen-xl mx-auto px-6 py-2.5 flex items-center gap-4 flex-wrap">
-          <div className="flex-1 min-w-[180px]">
-            <div className="relative">
-              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <input
-                type="text"
-                placeholder="Search all companies…"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                className="w-full max-w-xs pl-9 pr-3 py-1.5 rounded-lg bg-white/10 border border-white/15 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-silq-teal focus:bg-white/15 transition-all"
-              />
-            </div>
+      {/* ── STICKY TOOLBAR — sticks just below the fixed site header ──── */}
+      <div className="sticky top-20 z-40 bg-[#1C2333] border-b border-white/5 shadow-lg">
+        <div className="max-w-screen-2xl mx-auto px-6 py-3 flex items-center gap-6 flex-wrap">
+
+          {/* Search */}
+          <div className="relative flex-1 min-w-[200px] max-w-sm">
+            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/35 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search companies…"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              className="w-full pl-10 pr-4 py-2 rounded-lg bg-white/8 border border-white/12 text-white placeholder:text-white/35 text-sm focus:outline-none focus:border-silq-teal/60 focus:bg-white/12 transition-all"
+            />
           </div>
-          <div className="flex items-center gap-4 shrink-0 ml-auto">
-            <span className="text-xs text-white/35 hidden md:block">Synced {generated}</span>
+
+          <div className="flex items-center gap-4 ml-auto">
+            <span className="text-xs text-white/30 hidden lg:block">
+              Data synced {generated}
+            </span>
             <button
               onClick={handleExport}
-              className="text-xs px-3 py-1.5 rounded-lg border border-white/20 text-white/65 hover:text-white hover:border-white/40 transition-colors flex items-center gap-1.5"
+              className="inline-flex items-center gap-2 text-xs px-3.5 py-2 rounded-lg border border-white/15 text-white/55 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all"
             >
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Export JSON
+              Export
             </button>
           </div>
         </div>
       </div>
 
       {/* ── TITLE / LOGO BANNER ─────────────────────────────────────────── */}
-      <div className="bg-white border-b border-slate-200 shadow-sm">
-        <div className="max-w-screen-xl mx-auto px-6 py-5">
-          <div className="flex items-center justify-between flex-wrap gap-4">
+      <div className="bg-white border-b border-slate-200/80">
+        <div className="max-w-screen-2xl mx-auto px-6 py-6">
+          <div className="flex items-center justify-between flex-wrap gap-6">
 
             {/* NuSil / Avantor logo */}
-            <div className="shrink-0">
-              <Image
-                src="/images/logos/nusil-logo.png"
-                alt="Avantor NuSil"
-                width={220}
-                height={56}
-                className="h-10 w-auto object-contain"
-                unoptimized
-              />
-            </div>
+            <Image
+              src="/images/logos/nusil-logo.png"
+              alt="Avantor NuSil"
+              width={200}
+              height={52}
+              className="h-9 w-auto object-contain"
+              unoptimized
+            />
 
             {/* Center: title */}
-            <div className="flex-1 text-center min-w-[200px]">
-              <h1 className="text-xl md:text-2xl font-bold text-silq-dark tracking-tight">
+            <div className="flex-1 text-center min-w-[220px]">
+              <h1 className="text-2xl font-bold text-silq-dark tracking-tight">
                 NuSil — Silq Project Dashboard
               </h1>
-              <p className="text-sm text-slate-500 mt-0.5">
-                {totalActive} active partnerships · {data.stalled.length} stalled
-              </p>
             </div>
 
             {/* Silq logo */}
-            <div className="shrink-0">
-              <Image
-                src="/images/logos/logo-oneline.png"
-                alt="Silq Technologies"
-                width={180}
-                height={40}
-                className="h-7 w-auto object-contain"
-                unoptimized
-              />
-            </div>
+            <Image
+              src="/images/logos/logo-oneline.png"
+              alt="Silq Technologies"
+              width={160}
+              height={36}
+              className="h-6 w-auto object-contain opacity-80"
+              unoptimized
+            />
           </div>
         </div>
       </div>
 
       {/* ── MAIN CONTENT ────────────────────────────────────────────────── */}
-      <main className="max-w-screen-xl mx-auto px-4 py-6">
+      <main className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-6 space-y-6">
 
-        {/* Top row: Ongoing (2/3) + Active Targets (1/3) — same height, targets scrollable */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 xl:items-stretch">
+        {/* Top row: Ongoing (2/3) + Active Targets (1/3) */}
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-5">
 
-          {/* ── Ongoing Projects — 2 columns within 2/3 ── */}
-          <section className="xl:col-span-2">
+          {/* ── Ongoing Projects — 2/3 width, 2-col card grid ── */}
+          <section className="xl:col-span-2 flex flex-col gap-3">
             <SectionHeader
               title="Ongoing Projects"
-              count={filteredOngoing.length}
               accent="blue"
               onAdd={() => setAddModalSection('ongoing')}
             />
@@ -267,15 +261,15 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
             }
           </section>
 
-          {/* ── Active Targets — 1/3 — same height as Ongoing, card list scrolls ── */}
-          <section className="xl:col-span-1 xl:flex xl:flex-col">
+          {/* ── Active Targets — 1/3 width, fixed height + scroll ── */}
+          <section className="xl:col-span-1 flex flex-col gap-3">
             <SectionHeader
               title="Active Targets"
-              count={filteredTargets.length}
               accent="teal"
               onAdd={() => setAddModalSection('targets')}
             />
-            <div className="xl:flex-1 xl:overflow-y-auto xl:pr-1 space-y-3">
+            {/* max-h matches approximately the ongoing section; scrolls when it overflows */}
+            <div className="overflow-y-auto max-h-[calc(100vh-300px)] xl:max-h-none xl:flex-1 xl:overflow-y-auto space-y-2.5 pr-0.5">
               {filteredTargets.length === 0
                 ? <EmptyState />
                 : filteredTargets.map(p => (
@@ -292,15 +286,14 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
           </section>
         </div>
 
-        {/* ── Stalled Projects — full width, 3-col grid ── */}
-        <section className="mt-8">
+        {/* ── Stalled Projects — full width ── */}
+        <section className="flex flex-col gap-3">
           <SectionHeader
             title="Stalled Projects"
-            count={filteredStalled.length}
             accent="muted"
             onAdd={() => setAddModalSection('stalled')}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             {filteredStalled.length === 0
               ? <EmptyState />
               : filteredStalled.map(p => (
@@ -328,48 +321,40 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   )
 }
 
-// ── helpers ────────────────────────────────────────────────────────────────
+// ── Section header ─────────────────────────────────────────────────────────
 
-const ACCENT_DOT: Record<string, string> = {
-  blue: 'bg-silq-blue',
-  teal: 'bg-silq-teal',
-  muted: 'bg-slate-400',
-}
-
-const ACCENT_BORDER: Record<string, string> = {
-  blue: 'border-silq-blue',
-  teal: 'border-silq-teal',
-  muted: 'border-slate-300',
-}
+const ACCENT_CONFIG = {
+  blue:  { bar: 'bg-silq-blue',  text: 'text-silq-blue',  border: 'border-silq-blue/30' },
+  teal:  { bar: 'bg-silq-teal',  text: 'text-silq-teal',  border: 'border-silq-teal/30' },
+  muted: { bar: 'bg-slate-400',  text: 'text-slate-500',  border: 'border-slate-300' },
+} as const
 
 function SectionHeader({
   title,
-  count,
   accent,
   onAdd,
 }: {
   title: string
-  count: number
   accent: 'blue' | 'teal' | 'muted'
   onAdd: () => void
 }) {
+  const { bar, text, border } = ACCENT_CONFIG[accent]
   return (
-    <div className={`flex items-center justify-between mb-3 pb-2.5 border-b-2 ${ACCENT_BORDER[accent]}`}>
-      <div className="flex items-center gap-2">
-        <div className={`w-2.5 h-2.5 rounded-full ${ACCENT_DOT[accent]}`} />
-        <h2 className="font-semibold text-silq-dark text-sm uppercase tracking-wide">
+    <div className={`flex items-center justify-between py-2 border-b ${border}`}>
+      <div className="flex items-center gap-2.5">
+        <div className={`w-1 h-5 rounded-full ${bar}`} />
+        <h2 className={`font-semibold text-sm uppercase tracking-widest ${text}`}>
           {title}
-          <span className="ml-2 font-normal text-slate-400 normal-case tracking-normal text-sm">({count})</span>
         </h2>
       </div>
       <button
         onClick={onAdd}
-        className="text-xs px-3 py-1.5 rounded-lg border border-slate-200 text-slate-500 hover:text-silq-blue hover:border-silq-blue bg-white transition-colors flex items-center gap-1 shadow-sm"
+        className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-500 hover:text-silq-blue hover:border-silq-blue/40 hover:shadow-sm transition-all font-medium"
       >
         <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
         </svg>
-        Add New
+        Add
       </button>
     </div>
   )
@@ -377,6 +362,8 @@ function SectionHeader({
 
 function EmptyState() {
   return (
-    <p className="text-sm text-slate-400 py-6 text-center col-span-2">No projects match your search.</p>
+    <div className="col-span-full flex items-center justify-center py-10 text-slate-400 text-sm">
+      No projects match your search.
+    </div>
   )
 }
