@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T21:32:35.869Z",
+  "generated": "2026-06-18T18:19:14.461Z",
   "ongoing": [
     {
       "id": "aspero",
@@ -161,7 +161,7 @@
       "notes": [
         {
           "id": "seed-j-j-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Baerveldt nonvalved Implant J&J"
         }
@@ -189,7 +189,7 @@
       "notes": [
         {
           "id": "seed-hpbio-brazil-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Looking to schedule call in Nov."
         }
@@ -203,7 +203,7 @@
       "notes": [
         {
           "id": "seed-lifesil-brazil-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Looking to schedule call."
         }
@@ -224,9 +224,9 @@
       "notes": [
         {
           "id": "seed-aspero-medical-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
-          "text": "They have not made a decision yet.  Need to follow up."
+          "text": "Active Project"
         }
       ]
     },
@@ -238,7 +238,7 @@
       "notes": [
         {
           "id": "seed-ventura-biomedica-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Scheduling call"
         }
@@ -252,7 +252,7 @@
       "notes": [
         {
           "id": "seed-kerecis-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Scheduling call"
         }
@@ -266,7 +266,7 @@
       "notes": [
         {
           "id": "seed-cirtec-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Intro call on 2/12/26"
         }
@@ -280,7 +280,7 @@
       "notes": [
         {
           "id": "seed-bmc-0",
-          "timestamp": "2026-06-12T21:32:35.868Z",
+          "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Meeting at MD&M.  Callon 2/12/26"
         }
@@ -294,29 +294,29 @@
       "notes": []
     },
     {
-      "id": "medicone",
-      "companyName": "Medicone",
+      "id": "medicone-brazil",
+      "companyName": "Medicone (Brazil)",
       "application": "",
       "deviceDetails": "",
       "notes": []
     },
     {
-      "id": "silimed",
-      "companyName": "Silimed",
+      "id": "silimed-brazil",
+      "companyName": "Silimed (Brazil)",
       "application": "",
       "deviceDetails": "",
       "notes": []
     },
     {
-      "id": "faj",
-      "companyName": "FAJ",
+      "id": "faj-brazil",
+      "companyName": "FAJ (Brazil)",
       "application": "",
       "deviceDetails": "",
       "notes": []
     },
     {
-      "id": "ibeg",
-      "companyName": "IBEG",
+      "id": "ibeg-brazil",
+      "companyName": "IBEG (Brazil)",
       "application": "",
       "deviceDetails": "",
       "notes": []
@@ -329,10 +329,45 @@
       "notes": []
     },
     {
-      "id": "faga-medical",
-      "companyName": "Faga Medical",
+      "id": "faga-medical-brazil",
+      "companyName": "Faga Medical (Brazil)",
       "application": "Breast Implants.",
       "deviceDetails": "Breastimplant with PU foam setcion.  May want echogenic silicone",
+      "notes": []
+    },
+    {
+      "id": "medtronic",
+      "companyName": "Medtronic",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "osstem-implant-korea",
+      "companyName": "Osstem Implant (Korea)",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "bs-research-korea",
+      "companyName": "BS Research (Korea)",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "hans-biomed-korea",
+      "companyName": "Hans Biomed (Korea)",
+      "application": "",
+      "deviceDetails": "",
+      "notes": []
+    },
+    {
+      "id": "boston-scientific-ireland",
+      "companyName": "Boston Scientific (Ireland)",
+      "application": "",
+      "deviceDetails": "",
       "notes": []
     }
   ],

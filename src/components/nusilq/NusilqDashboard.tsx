@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import Image from 'next/image'
 import { ProjectCard } from './ProjectCard'
 import { AddProjectModal } from './AddProjectModal'
@@ -64,6 +64,19 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   const [overlay, setOverlay] = useState<Overlay>({})
   const [search, setSearch] = useState('')
   const [addModalSection, setAddModalSection] = useState<SectionKey | null>(null)
+
+  // ResizeObserver: keeps Active Targets exactly as tall as Ongoing Projects
+  const ongoingRef = useRef<HTMLElement>(null)
+  const [ongoingHeight, setOngoingHeight] = useState<number | null>(null)
+
+  useEffect(() => {
+    const el = ongoingRef.current
+    if (!el) return
+    const ro = new ResizeObserver(() => setOngoingHeight(el.offsetHeight))
+    ro.observe(el)
+    setOngoingHeight(el.offsetHeight)
+    return () => ro.disconnect()
+  }, [])
 
   useEffect(() => {
     const ov = loadOverlay()
@@ -159,11 +172,9 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
     // pt-20 accounts for the fixed site header (h-20 = 80px)
     <div className="min-h-screen bg-[#F4F5F7] pt-20">
 
-      {/* ── STICKY TOOLBAR — sticks just below the fixed site header ──── */}
+      {/* ── STICKY TOOLBAR ──────────────────────────────────────────────── */}
       <div className="sticky top-20 z-40 bg-[#1C2333] border-b border-white/5 shadow-lg">
         <div className="max-w-screen-2xl mx-auto px-6 py-3 flex items-center gap-6 flex-wrap">
-
-          {/* Search */}
           <div className="relative flex-1 min-w-[200px] max-w-sm">
             <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/35 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -176,11 +187,8 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
               className="w-full pl-10 pr-4 py-2 rounded-lg bg-white/8 border border-white/12 text-white placeholder:text-white/35 text-sm focus:outline-none focus:border-silq-teal/60 focus:bg-white/12 transition-all"
             />
           </div>
-
           <div className="flex items-center gap-4 ml-auto">
-            <span className="text-xs text-white/30 hidden lg:block">
-              Data synced {generated}
-            </span>
+            <span className="text-xs text-white/30 hidden lg:block">Data synced {generated}</span>
             <button
               onClick={handleExport}
               className="inline-flex items-center gap-2 text-xs px-3.5 py-2 rounded-lg border border-white/15 text-white/55 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all"
@@ -196,35 +204,27 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
 
       {/* ── TITLE / LOGO BANNER ─────────────────────────────────────────── */}
       <div className="bg-white border-b border-slate-200/80">
-        <div className="max-w-screen-2xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between flex-wrap gap-6">
+        <div className="max-w-screen-2xl mx-auto px-8 py-5">
+          <div className="flex items-center gap-8">
 
-            {/* NuSil / Avantor logo */}
-            <Image
-              src="/images/logos/nusil-logo.png"
-              alt="Avantor NuSil"
-              width={200}
-              height={52}
-              className="h-9 w-auto object-contain"
-              unoptimized
-            />
-
-            {/* Center: title */}
-            <div className="flex-1 text-center min-w-[220px]">
+            {/* Title — takes all available space */}
+            <div className="flex-1">
               <h1 className="text-2xl font-bold text-silq-dark tracking-tight">
                 NuSil — Silq Project Dashboard
               </h1>
             </div>
 
-            {/* Silq logo */}
-            <Image
-              src="/images/logos/logo-oneline.png"
-              alt="Silq Technologies"
-              width={160}
-              height={36}
-              className="h-6 w-auto object-contain opacity-80"
-              unoptimized
-            />
+            {/* Combo logo (SILQ + avantor|NuSil stacked) — right side */}
+            <div className="shrink-0">
+              <Image
+                src="/images/logos/silq-nusil-combo.jpg"
+                alt="Silq Technologies × Avantor NuSil"
+                width={200}
+                height={100}
+                className="h-16 w-auto object-contain"
+                unoptimized
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -232,11 +232,11 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
       {/* ── MAIN CONTENT ────────────────────────────────────────────────── */}
       <main className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-6 space-y-6">
 
-        {/* Top row: Ongoing (2/3) + Active Targets (1/3) */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-5">
+        {/* Top row: Ongoing (2/3) + Active Targets (1/3, height-matched) */}
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-5 items-start">
 
           {/* ── Ongoing Projects — 2/3 width, 2-col card grid ── */}
-          <section className="xl:col-span-2 flex flex-col gap-3">
+          <section ref={ongoingRef} className="xl:col-span-2 flex flex-col gap-3">
             <SectionHeader
               title="Ongoing Projects"
               accent="blue"
@@ -261,15 +261,18 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
             }
           </section>
 
-          {/* ── Active Targets — 1/3 width, fixed height + scroll ── */}
-          <section className="xl:col-span-1 flex flex-col gap-3">
+          {/* ── Active Targets — 1/3 width, same height as Ongoing, card list scrolls ── */}
+          <section
+            className="xl:col-span-1 flex flex-col gap-3"
+            style={ongoingHeight ? { height: `${ongoingHeight}px` } : undefined}
+          >
             <SectionHeader
               title="Active Targets"
               accent="teal"
               onAdd={() => setAddModalSection('targets')}
             />
-            {/* max-h matches approximately the ongoing section; scrolls when it overflows */}
-            <div className="overflow-y-auto max-h-[calc(100vh-300px)] xl:max-h-none xl:flex-1 xl:overflow-y-auto space-y-2.5 pr-0.5">
+            {/* min-h-0 is required so the flex child can shrink below its content size */}
+            <div className="flex-1 overflow-y-auto min-h-0 space-y-2.5 pr-0.5">
               {filteredTargets.length === 0
                 ? <EmptyState />
                 : filteredTargets.map(p => (
