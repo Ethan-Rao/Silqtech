@@ -2,11 +2,6 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import { CustomerContactForm } from '@/components/sections/CustomerContactForm'
 
-// force-dynamic makes Next.js emit Cache-Control: no-store so no CDN or browser
-// caches the RSC payload for this route — fixing the stale-cache navigation bug
-// where clicking a link showed the homepage instead of this page.
-export const dynamic = 'force-dynamic'
-
 export const metadata: Metadata = {
   title: 'ClearTract Customer Contact',
   description: 'Contact the ClearTract support team with questions, product issues, or ordering requests.',
