@@ -81,6 +81,10 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // QR code short-link safety net: if qrco.de routes to /bgshcA instead of /customercontact
+      { source: '/bgshcA', destination: '/customercontact', permanent: false },
+      { source: '/bqshcA', destination: '/customercontact', permanent: false },
+
       // Redirects from old verbose /rep/old-slug to clean vanity URLs
       { source: '/rep/healthcare-cellutions-of-texas', destination: '/healthcare-cellutions', permanent: true },
       { source: '/rep/jordan-distribution-company-llc', destination: '/jordan-distribution', permanent: true },
