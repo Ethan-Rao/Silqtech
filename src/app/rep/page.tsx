@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { USCoverageMap } from '@/components/ui/USCoverageMap'
@@ -29,11 +29,79 @@ interface RepManifest {
   reps: RepEntry[]
 }
 
+// ── shared types (mirrors rep/[slug]/page.tsx) ─────────────────────────────
+interface Physician { name: string; npi: string; specialty: string }
+interface Facility {
+  id: string; name: string; address: string; city: string; state: string
+  zipCode: string; phone: string; catheterDays: number; cautiStatus: string
+  hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null; priority: string
+  physicians: Physician[]; physicianCount: number; sir: number
+}
+interface RepData {
+  meta: {
+    slug: string; company: string; name: string; email: string
+    territory: string[]
+    reps?: { name: string; email: string; territory: string[] }[]
+    generated: string; dataVersion: string
+  }
+  facilities: Facility[]
+}
+
+// ── top-targets logic (matches rep/[slug]/page.tsx) ─────────────────────────
+function buildTopTargetsCsv(repName: string, facilities: Facility[]): string {
+  const validDays = facilities.map(f => f.catheterDays).filter(d => d > 0).sort((a, b) => a - b)
+  const p90Index = Math.floor(validDays.length * 0.9)
+  const highVolumeThreshold = validDays[p90Index] ?? 0
+  const isHighVolume = (f: Facility) => highVolumeThreshold > 0 && f.catheterDays >= highVolumeThreshold
+
+  const sortKey = (f: Facility): [number, number] => {
+    const vol = isHighVolume(f) ? 0 : 1
+    if (f.hacStatus === 'HAC_PENALIZED')      return [1, vol]
+    if (f.cautiStatus?.includes('Worse'))      return [2, vol]
+    if (isHighVolume(f))                       return [3, 0]
+    return [4, vol]
+  }
+
+  const targets = facilities
+    .filter(f =>
+      f.hacStatus === 'HAC_PENALIZED' || f.hacStatus === 'HAC_AT_RISK' ||
+      f.cautiStatus?.includes('Worse') || isHighVolume(f)
+    )
+    .sort((a, b) => {
+      const [ap, as_] = sortKey(a); const [bp, bs] = sortKey(b)
+      return ap !== bp ? ap - bp : as_ - bs
+    })
+
+  if (targets.length === 0) return ''
+
+  const headers = [
+    'Rep Name','Facility Name','Address','City','State','ZIP Code','Phone',
+    'Catheter Volume','HAC Status','CAUTI Status','Urologists','Infectious Disease Physicians',
+  ]
+  const rows = targets.map(f => {
+    const uros = f.physicians.filter(p => p.specialty === 'Urology').map(p => p.name).join('; ')
+    const ids  = f.physicians.filter(p => p.specialty === 'Infectious Disease').map(p => p.name).join('; ')
+    return [
+      `"${repName}"`,
+      `"${f.name.replace(/"/g, '""')}"`,
+      `"${f.address.replace(/"/g, '""')}"`,
+      `"${f.city}"`, f.state, f.zipCode, f.phone,
+      isHighVolume(f) ? 'High Volume' : 'Standard',
+      f.hacStatus || '',
+      `"${f.cautiStatus}"`,
+      `"${uros}"`, `"${ids}"`,
+    ]
+  })
+  return [headers.join(','), ...rows.map(r => r.join(','))].join('\n')
+}
+
 export default function RepDirectoryPage() {
   const [manifest, setManifest] = useState<RepManifest | null>(null)
   const [loading, setLoading] = useState(true)
   const [searchTerm, setSearchTerm] = useState('')
   const [stateFilter, setStateFilter] = useState<string>('')
+  const [downloadingAll, setDownloadingAll] = useState(false)
+  const [downloadProgress, setDownloadProgress] = useState<{done: number; total: number} | null>(null)
 
   useEffect(() => {
     async function loadManifest() {
@@ -49,6 +117,78 @@ export default function RepDirectoryPage() {
     }
     loadManifest()
   }, [])
+
+  // Download all top-target CSVs bundled in a ZIP
+  const handleDownloadAll = useCallback(async () => {
+    if (!manifest || downloadingAll) return
+    setDownloadingAll(true)
+    setDownloadProgress({ done: 0, total: 0 })
+
+    try {
+      const JSZip = (await import('jszip')).default
+      const zip = new JSZip()
+
+      // Deduplicate slugs (multi-rep entries share a slug)
+      const uniqueSlugs = Array.from(new Set(manifest.reps.map(r => r.slug)))
+      setDownloadProgress({ done: 0, total: uniqueSlugs.length })
+
+      let done = 0
+      // Fetch all rep data in parallel batches of 8 to avoid overwhelming the server
+      const BATCH = 8
+      for (let i = 0; i < uniqueSlugs.length; i += BATCH) {
+        const batch = uniqueSlugs.slice(i, i + BATCH)
+        await Promise.all(batch.map(async (slug) => {
+          try {
+            const res = await fetch(`/data/reps/${slug}.json`)
+            if (!res.ok) return
+            const data: RepData = await res.json()
+
+            if (data.meta.reps?.length) {
+              // Multi-rep: generate one CSV per sub-rep, filtered to their territory
+              data.meta.reps.forEach(rep => {
+                const repFacilities = rep.territory.length
+                  ? data.facilities.filter(f => rep.territory.includes(f.state))
+                  : data.facilities
+                const csv = buildTopTargetsCsv(rep.name, repFacilities)
+                if (csv) {
+                  const safeName = rep.name.replace(/[^a-zA-Z0-9]/g, '_')
+                  zip.file(`${safeName}_top_targets.csv`, csv)
+                }
+              })
+            } else {
+              // Single rep
+              const csv = buildTopTargetsCsv(data.meta.name, data.facilities)
+              if (csv) {
+                const safeName = data.meta.name.replace(/[^a-zA-Z0-9]/g, '_')
+                zip.file(`${safeName}_top_targets.csv`, csv)
+              }
+            }
+          } catch {
+            // skip rep on error — don't abort the whole zip
+          } finally {
+            done++
+            setDownloadProgress({ done, total: uniqueSlugs.length })
+          }
+        }))
+      }
+
+      const blob = await zip.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } })
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = `all_rep_top_targets_${new Date().toISOString().split('T')[0]}.zip`
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      URL.revokeObjectURL(url)
+    } catch (err) {
+      console.error('Error building ZIP:', err)
+      alert('Failed to generate ZIP. Please try again.')
+    } finally {
+      setDownloadingAll(false)
+      setDownloadProgress(null)
+    }
+  }, [manifest, downloadingAll])
 
   // Get unique states from all reps
   const allStates = manifest?.reps
@@ -258,6 +398,49 @@ export default function RepDirectoryPage() {
           {filteredReps.length === 0 && (
             <div className="text-center py-12">
               <p className="text-silq-dark/60">No reps match your search criteria.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Download All Target Lists */}
+      <section className="py-10 bg-silq-cream border-t border-silq-dark/10">
+        <div className="container-silq text-center">
+          <p className="text-sm text-silq-dark/50 mb-4">
+            Download every rep&apos;s top-target list in one ZIP file — one CSV per rep.
+          </p>
+          <button
+            onClick={handleDownloadAll}
+            disabled={downloadingAll || !manifest}
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-base bg-gradient-to-r from-silq-blue to-silq-blue-700 text-white shadow-xl shadow-silq-blue/25 hover:shadow-silq-blue/40 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 transition-all duration-200 group"
+          >
+            {downloadingAll ? (
+              <>
+                <svg className="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                {downloadProgress
+                  ? `Building ZIP… ${downloadProgress.done} / ${downloadProgress.total}`
+                  : 'Preparing…'}
+              </>
+            ) : (
+              <>
+                <svg className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download All Target Lists
+              </>
+            )}
+          </button>
+          {downloadProgress && (
+            <div className="mt-4 max-w-xs mx-auto">
+              <div className="h-1.5 bg-silq-dark/10 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-silq-teal rounded-full transition-all duration-300"
+                  style={{ width: `${Math.round((downloadProgress.done / downloadProgress.total) * 100)}%` }}
+                />
+              </div>
             </div>
           )}
         </div>
