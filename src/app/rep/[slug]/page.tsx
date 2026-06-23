@@ -34,6 +34,12 @@ interface Facility {
   physicianCount: number
 }
 
+interface RepInfo {
+  name: string
+  email: string
+  territory: string[]
+}
+
 interface RepData {
   meta: {
     slug: string
@@ -41,6 +47,7 @@ interface RepData {
     name: string
     email: string
     territory: string[]
+    reps?: RepInfo[]
     generated: string
     dataVersion: string
   }
@@ -130,11 +137,16 @@ export default function RepPage({ params }: { params: { slug: string } }) {
     loadRepData()
   }, [params.slug])
 
-  // Top Target List download handler
-  const handleDownloadTopTargets = useCallback(() => {
+  // Top Target List download handler — accepts optional territory filter and rep name
+  const handleDownloadTopTargets = useCallback((repTerritory?: string[], repName?: string) => {
     if (!repData) return
 
-    const { meta, facilities } = repData
+    const { meta, facilities: allFacilities } = repData
+
+    // If a specific rep territory is provided, filter to those states only
+    const facilities = repTerritory?.length
+      ? allFacilities.filter(f => repTerritory.includes(f.state))
+      : allFacilities
 
     // 90th-percentile catheter-days threshold within this rep's territory
     const validDays = facilities.map(f => f.catheterDays).filter(d => d > 0).sort((a, b) => a - b)
@@ -207,7 +219,7 @@ export default function RepPage({ params }: { params: { slug: string } }) {
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
     const link = document.createElement('a')
     link.setAttribute('href', URL.createObjectURL(blob))
-    link.setAttribute('download', `${meta.company.replace(/\s+/g, '_')}_top_targets_${new Date().toISOString().split('T')[0]}.csv`)
+    link.setAttribute('download', `${(repName || meta.company).replace(/\s+/g, '_')}_top_targets_${new Date().toISOString().split('T')[0]}.csv`)
     link.style.visibility = 'hidden'
     document.body.appendChild(link)
     link.click()
@@ -328,24 +340,57 @@ export default function RepPage({ params }: { params: { slug: string } }) {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                 {meta.company}
               </h1>
-              <p className="text-xl text-white/70 mb-2">
-                {meta.name}
-              </p>
-              <p className="text-lg text-white/50 mb-4">
-                Territory: {meta.territory.join(', ')}
-              </p>
-              <p className="text-silq-teal">
+
+              {/* Multi-rep: show each rep with their own territory + download button */}
+              {meta.reps ? (
+                <div className="space-y-4 mb-4">
+                  {meta.reps.map((rep) => (
+                    <div key={rep.name} className="flex flex-col sm:flex-row sm:items-center gap-3">
+                      <div className="flex-1">
+                        <p className="text-xl text-white/90 font-medium">{rep.name}</p>
+                        <p className="text-sm text-white/50">Territory: {rep.territory.join(', ')}</p>
+                      </div>
+                      <button
+                        onClick={() => handleDownloadTopTargets(rep.territory, rep.name)}
+                        className="sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm bg-silq-teal text-white shadow-lg shadow-silq-teal/30 hover:bg-silq-teal/90 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
+                      >
+                        <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        {rep.name.split(' ')[0]}&apos;s Top Targets
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <>
+                  <p className="text-xl text-white/70 mb-2">
+                    {meta.name}
+                  </p>
+                  <p className="text-lg text-white/50 mb-4">
+                    Territory: {meta.territory.join(', ')}
+                  </p>
+                  <button
+                    onClick={() => handleDownloadTopTargets()}
+                    className="mt-5 w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl font-bold text-base bg-silq-teal text-white shadow-lg shadow-silq-teal/30 hover:bg-silq-teal/90 hover:shadow-silq-teal/50 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
+                  >
+                    <svg className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download Top Target List
+                  </button>
+                </>
+              )}
+
+              {meta.reps && (
+                <p className="text-lg text-white/50 mb-4">
+                  Combined Territory: {meta.territory.join(', ')}
+                </p>
+              )}
+
+              <p className="text-silq-teal mt-2">
                 Please email <a href="mailto:chuckg@silq.tech" className="hover:underline font-medium">chuckg@silq.tech</a> for any sample requests
               </p>
-              <button
-                onClick={handleDownloadTopTargets}
-                className="mt-5 w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl font-bold text-base bg-silq-teal text-white shadow-lg shadow-silq-teal/30 hover:bg-silq-teal/90 hover:shadow-silq-teal/50 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
-              >
-                <svg className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Download Top Target List
-              </button>
             </motion.div>
 
             {/* Right Column: PDF Downloads */}
