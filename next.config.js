@@ -40,7 +40,7 @@ const nextConfig = {
       { source: '/stengel', destination: '/rep/stengel' },
       { source: '/genesis', destination: '/rep/genesis' },
       { source: '/klea', destination: '/rep/klea' },
-      { source: '/kleamedical', destination: '/rep/kleamedical' },
+      // /kleamedical is handled via redirect below (→ /klea)
       { source: '/lifesource', destination: '/rep/lifesource' },
       { source: '/gptsurgical', destination: '/rep/gptsurgical' },
       { source: '/parkingangels', destination: '/rep/parkingangels' },
@@ -84,6 +84,10 @@ const nextConfig = {
       // QR code short-link safety net: if qrco.de routes to /bgshcA instead of /customercontact
       { source: '/bgshcA', destination: '/customercontact', permanent: false },
       { source: '/bqshcA', destination: '/customercontact', permanent: false },
+
+      // /kleamedical → /klea (two URLs were issued; consolidate to one)
+      { source: '/kleamedical', destination: '/klea', permanent: true },
+      { source: '/rep/kleamedical', destination: '/klea', permanent: true },
 
       // Redirects from old verbose /rep/old-slug to clean vanity URLs
       { source: '/rep/healthcare-cellutions-of-texas', destination: '/healthcare-cellutions', permanent: true },

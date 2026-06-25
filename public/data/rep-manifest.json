@@ -1065,31 +1065,13 @@
       "territory": [
         "IN",
         "KY",
-        "OH"
+        "OH",
+        "WV"
       ],
-      "facilityCount": 371,
-      "physicianCount": 2909,
+      "facilityCount": 421,
+      "physicianCount": 3142,
       "highCautiCount": 2,
-      "highVolumeCount": 27,
-      "hacPenalizedCount": 62,
-      "hacAtRiskCount": 13
-    },
-    {
-      "slug": "kleamedical",
-      "urlPath": "/kleamedical",
-      "primaryState": "OH",
-      "company": "Klea Medical LLC",
-      "name": "Paul Wilson",
-      "email": "vmsmedprod@gmail.com",
-      "territory": [
-        "IN",
-        "KY",
-        "OH"
-      ],
-      "facilityCount": 371,
-      "physicianCount": 2909,
-      "highCautiCount": 2,
-      "highVolumeCount": 27,
+      "highVolumeCount": 31,
       "hacPenalizedCount": 62,
       "hacAtRiskCount": 13
     },
@@ -1103,12 +1085,13 @@
       "territory": [
         "IN",
         "KY",
-        "OH"
+        "OH",
+        "WV"
       ],
-      "facilityCount": 371,
-      "physicianCount": 2909,
+      "facilityCount": 421,
+      "physicianCount": 3142,
       "highCautiCount": 2,
-      "highVolumeCount": 27,
+      "highVolumeCount": 31,
       "hacPenalizedCount": 62,
       "hacAtRiskCount": 13
     },
