@@ -63,7 +63,7 @@ export function NewsCarousel({ items }: NewsCarouselProps) {
               )}
               <span className="text-xs text-silq-dark/40">{item.source}</span>
             </div>
-            <h4 className="flex-1 text-sm font-semibold text-silq-dark leading-snug line-clamp-3">
+            <h4 className="flex-1 text-sm font-semibold text-silq-dark leading-snug line-clamp-4">
               {item.title}
             </h4>
             <p className="text-xs text-silq-blue mt-3 flex items-center gap-1">
