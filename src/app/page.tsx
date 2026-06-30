@@ -491,9 +491,9 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
               href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
               target="_blank"
               rel="noopener noreferrer"
-              className="block md:w-[58%] rounded-2xl overflow-hidden shadow-lg"
+              className="block md:w-[58%] rounded-2xl overflow-hidden shadow-lg bg-[#0b3d2b]"
             >
-              <div className="relative w-full bg-[#0b3d2b]" style={{ aspectRatio: '16/9' }}>
+              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
                 <Image
                   src="/images/news/rsc-horizon-prize-2026.png"
                   alt="The Kaner Group at UCLA and SILQ Technologies — 2026 RSC Materials Chemistry Horizon Prize"
@@ -509,7 +509,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
               href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative md:w-[42%] bg-silq-dark rounded-2xl shadow-lg flex flex-col justify-between p-6 md:p-8 overflow-hidden"
+              className="group relative md:w-[42%] bg-silq-dark rounded-2xl shadow-lg flex flex-col justify-between p-5 md:p-6 overflow-hidden"
             >
               {/* Teal top accent bar */}
               <div className="absolute top-0 left-0 right-0 h-[3px] bg-silq-teal" />
@@ -518,19 +518,19 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                 <h3 className="text-xl md:text-2xl font-bold text-white leading-tight mb-1">
                   Materials Chemistry Horizon Prize
                 </h3>
-                <p className="text-white/50 text-sm mb-5">
-                  Stephanie L Kwolek Prize · Royal Society of Chemistry · 2026
+                <p className="text-white/50 text-sm mb-4">
+                  Stephanie L Kwolek Prize · Royal Society of Chemistry · Awarded June 17, 2026
                 </p>
-                <div className="border-t border-white/10 mb-4" />
+                <div className="border-t border-white/10 mb-3" />
                 <p className="text-white/75 text-sm italic leading-relaxed">
                   &ldquo;For the development of a zwitterion polymer surface treatment for medical devices that prevents infections in patients.&rdquo;
                 </p>
               </div>
 
               {/* Bottom row */}
-              <div className="flex justify-between items-end mt-6 gap-4">
+              <div className="flex justify-between items-center mt-4 gap-4">
                 <p className="text-white/45 text-xs leading-relaxed max-w-[60%]">
-                  The RSC Horizon Prize recognizes the most significant recent advances in the chemical sciences — the first international recognition of this caliber for Silq&apos;s zwitterionic surface technology.
+                  The RSC Horizon Prize recognizes the most significant recent advances in the chemical sciences.
                 </p>
                 <span className="text-silq-teal text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all whitespace-nowrap">
                   View Award
