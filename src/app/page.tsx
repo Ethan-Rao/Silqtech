@@ -482,12 +482,12 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
             href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-xl mb-8 max-w-5xl mx-auto"
+            className="group flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-xl mb-8 max-w-5xl mx-auto"
             whileHover={{ scale: 1.005 }}
             transition={{ duration: 0.2 }}
           >
             {/* Left column — image */}
-            <div className="relative w-full md:w-[60%] min-h-[220px] md:min-h-[280px]">
+            <div className="relative w-full md:w-[60%] min-h-[220px] md:min-h-[320px]">
               <Image
                 src="/images/news/rsc-horizon-prize-2026.png"
                 alt="The Kaner Group at UCLA and SILQ Technologies — 2026 RSC Materials Chemistry Horizon Prize"
@@ -548,7 +548,7 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-silq-cream rounded-xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-silq-dark/5"
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] bg-silq-cream rounded-xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-silq-dark/5"
               >
                 <div className="flex items-center gap-3 mb-3">
                   {item.logo ? (
