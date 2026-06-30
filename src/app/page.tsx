@@ -380,7 +380,79 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
         </div>
       </section>
 
-      {/* Section 4: Surface Treatment Services Teaser */}
+      {/* Section 4: News */}
+      <section className="py-10 bg-white">
+        <div className="container-silq">
+          <p className="text-sm font-semibold uppercase tracking-wider text-silq-blue text-center mb-8">
+            In The News
+          </p>
+
+          {/* RSC Horizon Prize Featured Banner */}
+          <div className="flex flex-col md:flex-row gap-4 max-w-5xl mx-auto mb-8">
+            {/* Left card — image only */}
+            <a
+              href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block md:w-[58%] rounded-2xl overflow-hidden shadow-lg bg-[#0b3d2b]"
+            >
+              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+                <Image
+                  src="/images/news/rsc-horizon-prize-2026.png"
+                  alt="The Kaner Group at UCLA and SILQ Technologies — 2026 RSC Materials Chemistry Horizon Prize"
+                  fill
+                  className="object-contain scale-110"
+                  unoptimized
+                />
+              </div>
+            </a>
+
+            {/* Right card — award details */}
+            <a
+              href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative md:w-[42%] bg-silq-dark rounded-2xl shadow-lg flex flex-col justify-between p-5 md:p-6 overflow-hidden"
+            >
+              {/* Teal top accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-[3px] bg-silq-teal" />
+
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold text-white leading-tight mb-1">
+                  Materials Chemistry Horizon Prize
+                </h3>
+                <p className="text-white/50 text-sm mb-4">
+                  Stephanie L Kwolek Prize · Royal Society of Chemistry · Awarded June 17, 2026
+                </p>
+                <div className="border-t border-white/10 mb-3" />
+                <p className="text-white/75 text-sm italic leading-relaxed">
+                  &ldquo;For the development of a zwitterion polymer surface treatment for medical devices that prevents infections in patients.&rdquo;
+                </p>
+              </div>
+
+              {/* Bottom row */}
+              <div className="flex justify-between items-center mt-4 gap-4">
+                <p className="text-white/45 text-xs leading-relaxed max-w-[60%]">
+                  An internationally recognized award for the most significant recent advances in the chemical sciences.
+                </p>
+                <span className="text-silq-teal text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all whitespace-nowrap">
+                  View Award
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <NewsCarousel items={newsItems} />
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-silq-dark/10 to-transparent" />
+
+      {/* Section 5: Surface Treatment Services */}
       <section className="py-20 bg-silq-cream relative overflow-hidden">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
@@ -471,78 +543,6 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Section Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-silq-dark/10 to-transparent" />
-
-      {/* Section 5: News */}
-      <section className="py-10 bg-white">
-        <div className="container-silq">
-          <p className="text-sm font-semibold uppercase tracking-wider text-silq-blue text-center mb-8">
-            In The News
-          </p>
-
-          {/* RSC Horizon Prize Featured Banner */}
-          <div className="flex flex-col md:flex-row gap-4 max-w-5xl mx-auto mb-8">
-            {/* Left card — image only */}
-            <a
-              href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block md:w-[58%] rounded-2xl overflow-hidden shadow-lg bg-[#0b3d2b]"
-            >
-              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-                <Image
-                  src="/images/news/rsc-horizon-prize-2026.png"
-                  alt="The Kaner Group at UCLA and SILQ Technologies — 2026 RSC Materials Chemistry Horizon Prize"
-                  fill
-                  className="object-contain"
-                  unoptimized
-                />
-              </div>
-            </a>
-
-            {/* Right card — award details */}
-            <a
-              href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative md:w-[42%] bg-silq-dark rounded-2xl shadow-lg flex flex-col justify-between p-5 md:p-6 overflow-hidden"
-            >
-              {/* Teal top accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-[3px] bg-silq-teal" />
-
-              <div>
-                <h3 className="text-xl md:text-2xl font-bold text-white leading-tight mb-1">
-                  Materials Chemistry Horizon Prize
-                </h3>
-                <p className="text-white/50 text-sm mb-4">
-                  Stephanie L Kwolek Prize · Royal Society of Chemistry · Awarded June 17, 2026
-                </p>
-                <div className="border-t border-white/10 mb-3" />
-                <p className="text-white/75 text-sm italic leading-relaxed">
-                  &ldquo;For the development of a zwitterion polymer surface treatment for medical devices that prevents infections in patients.&rdquo;
-                </p>
-              </div>
-
-              {/* Bottom row */}
-              <div className="flex justify-between items-center mt-4 gap-4">
-                <p className="text-white/45 text-xs leading-relaxed max-w-[60%]">
-                  The RSC Horizon Prize recognizes the most significant recent advances in the chemical sciences.
-                </p>
-                <span className="text-silq-teal text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all whitespace-nowrap">
-                  View Award
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-              </div>
-            </a>
-          </div>
-
-          <NewsCarousel items={newsItems} />
         </div>
       </section>
 
