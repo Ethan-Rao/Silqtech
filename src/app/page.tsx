@@ -46,7 +46,13 @@ const features = [
   },
 ]
 
-const newsItems = [
+const newsItems: { source: string; title: string; url: string; logo: string | null }[] = [
+  {
+    source: 'Royal Society of Chemistry',
+    title: 'Silq Technologies Wins 2026 Materials Chemistry Horizon Prize',
+    url: 'https://www.chemistry.ucla.edu/news/ucla-led-team-wins-royal-society-of-chemistrys-2026-materials-chemistry-horizon-prize/',
+    logo: null,
+  },
   {
     source: 'KGET News',
     title: 'Silq Technologies Awarded Group Purchasing Agreement for ClearTract SPT® Catheters with Premier, Inc.',
@@ -470,6 +476,71 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
           <p className="text-sm font-semibold uppercase tracking-wider text-silq-blue text-center mb-8">
             In The News
           </p>
+
+          {/* RSC Horizon Prize Featured Banner */}
+          <motion.a
+            href="https://www.rsc.org/standards-and-recognition/prizes/winners/the-kaner-group-at-ucla-and-silq-technologies"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-xl mb-8 max-w-5xl mx-auto"
+            whileHover={{ scale: 1.005 }}
+            transition={{ duration: 0.2 }}
+          >
+            {/* Left column — image */}
+            <div className="relative w-full md:w-[60%] min-h-[220px] md:min-h-[280px]">
+              <Image
+                src="/images/news/rsc-horizon-prize-2026.png"
+                alt="The Kaner Group at UCLA and SILQ Technologies — 2026 RSC Materials Chemistry Horizon Prize"
+                fill
+                className="object-cover rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
+                unoptimized
+              />
+            </div>
+
+            {/* Right column — award details */}
+            <div className="relative w-full md:w-[40%] bg-silq-dark flex flex-col justify-between p-6 md:p-8">
+              {/* Amber accent bar */}
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-amber-400 rounded-none" />
+
+              <div>
+                {/* Badge */}
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/15 text-amber-400 text-xs font-semibold tracking-widest uppercase">
+                    <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    2026 Horizon Prize
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl md:text-2xl font-bold text-white leading-tight mb-1">
+                  Materials Chemistry Horizon Prize
+                </h3>
+                <p className="text-white/60 text-sm mb-4">
+                  Stephanie L Kwolek Prize · Royal Society of Chemistry
+                </p>
+
+                <div className="border-t border-white/10 my-4" />
+
+                {/* Citation */}
+                <p className="text-white/80 text-sm italic leading-relaxed">
+                  &ldquo;For the development of a zwitterion polymer surface treatment for medical devices that prevents infections in patients.&rdquo;
+                </p>
+              </div>
+
+              {/* CTA */}
+              <div className="flex justify-end mt-6">
+                <span className="text-amber-400 text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                  View Award
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </motion.a>
+
           <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
             {newsItems.map((item, index) => (
               <a
@@ -480,13 +551,19 @@ On one of my mom's monthly appointments to replace the old catheter, her physici
                 className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-silq-cream rounded-xl p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-silq-dark/5"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <Image 
-                    src={item.logo} 
-                    alt={item.source} 
-                    width={80} 
-                    height={24} 
-                    className="h-5 w-auto object-contain opacity-60"
-                  />
+                  {item.logo ? (
+                    <Image 
+                      src={item.logo} 
+                      alt={item.source} 
+                      width={80} 
+                      height={24} 
+                      className="h-5 w-auto object-contain opacity-60"
+                    />
+                  ) : (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold tracking-wide text-silq-blue bg-silq-blue/10">
+                      RSC
+                    </span>
+                  )}
                   <span className="text-xs text-silq-dark/40">{item.source}</span>
                 </div>
                 <h4 className="text-sm font-semibold text-silq-dark leading-snug line-clamp-3">
