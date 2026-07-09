@@ -15,8 +15,50 @@ import type {
   Overlay,
 } from './types'
 
-// ── localStorage note: per-browser per-device only.
-// For cross-device sync, migrate to an API route writing to a persistent volume.
+// Merges two overlay objects: combines notes (deduped by id), merges baseOverrides (b wins).
+function mergeOverlays(a: Overlay, b: Overlay): Overlay {
+  const allIds = Array.from(new Set([...Object.keys(a), ...Object.keys(b)]))
+  const merged: Overlay = {}
+  for (const id of allIds) {
+    const ea = a[id] ?? {}
+    const eb = b[id] ?? {}
+    const noteMap = new Map<string, NoteEntry>()
+    for (const n of ea.notes ?? []) noteMap.set(n.id, n)
+    for (const n of eb.notes ?? []) noteMap.set(n.id, n)
+    const notes = Array.from(noteMap.values()).sort((x, y) => x.timestamp.localeCompare(y.timestamp))
+    const baseOverride =
+      ea.baseOverride || eb.baseOverride
+        ? { ...(ea.baseOverride ?? {}), ...(eb.baseOverride ?? {}) }
+        : undefined
+    merged[id] = {
+      ...(notes.length ? { notes } : {}),
+      ...(baseOverride ? { baseOverride } : {}),
+    }
+  }
+  return merged
+}
+
+async function fetchSpacesOverlay(): Promise<Overlay> {
+  try {
+    const res = await fetch('/api/nusilq/notes', { cache: 'no-store' })
+    if (!res.ok) return {}
+    return (await res.json()) as Overlay
+  } catch {
+    return {}
+  }
+}
+
+async function pushSpacesOverlay(overlay: Overlay): Promise<void> {
+  try {
+    await fetch('/api/nusilq/notes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(overlay),
+    })
+  } catch {
+    // silently fail — localStorage still has the data
+  }
+}
 
 function mergeData(base: ProjectsData, overlay: Overlay): ProjectsData {
   function applyOverlay<T extends { id: string; notes: NoteEntry[] }>(items: T[]): T[] {
@@ -64,6 +106,7 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   const [overlay, setOverlay] = useState<Overlay>({})
   const [search, setSearch] = useState('')
   const [addModalSection, setAddModalSection] = useState<SectionKey | null>(null)
+  const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'error'>('idle')
 
   // ResizeObserver: keeps Active Targets exactly as tall as Ongoing Projects
   const ongoingRef = useRef<HTMLElement>(null)
@@ -79,9 +122,24 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   }, [])
 
   useEffect(() => {
-    const ov = loadOverlay()
-    setOverlay(ov)
-    setData(mergeData(baseData, ov))
+    // Step 1: apply localStorage immediately for instant render
+    const local = loadOverlay()
+    setOverlay(local)
+    setData(mergeData(baseData, local))
+
+    // Step 2: fetch Spaces overlay in the background and merge
+    setSyncStatus('syncing')
+    fetchSpacesOverlay().then(spaces => {
+      const merged = mergeOverlays(spaces, local)
+      setOverlay(merged)
+      saveOverlay(merged)
+      setData(mergeData(baseData, merged))
+      // Write merged result back to Spaces so all users stay in sync
+      pushSpacesOverlay(merged).then(() => setSyncStatus('synced')).catch(() => setSyncStatus('error'))
+    }).catch(() => {
+      setSyncStatus('error')
+    })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [baseData])
 
   const updateOverlay = useCallback(
@@ -89,6 +147,10 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
       setOverlay(newOverlay)
       saveOverlay(newOverlay)
       setData(mergeData(baseData, newOverlay))
+      setSyncStatus('syncing')
+      pushSpacesOverlay(newOverlay)
+        .then(() => setSyncStatus('synced'))
+        .catch(() => setSyncStatus('error'))
     },
     [baseData],
   )
@@ -189,6 +251,32 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
           </div>
           <div className="flex items-center gap-4 ml-auto">
             <span className="text-xs text-white/30 hidden lg:block">Data synced {generated}</span>
+            {/* Spaces sync indicator */}
+            {syncStatus === 'syncing' && (
+              <span className="hidden sm:flex items-center gap-1.5 text-xs text-white/35">
+                <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                </svg>
+                Syncing…
+              </span>
+            )}
+            {syncStatus === 'synced' && (
+              <span className="hidden sm:flex items-center gap-1 text-xs text-emerald-400/70">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                Synced
+              </span>
+            )}
+            {syncStatus === 'error' && (
+              <span className="hidden sm:flex items-center gap-1 text-xs text-amber-400/70" title="Notes saved locally — cloud sync unavailable">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M12 3a9 9 0 100 18A9 9 0 0012 3z" />
+                </svg>
+                Local only
+              </span>
+            )}
             <button
               onClick={handleExport}
               className="inline-flex items-center gap-2 text-xs px-3.5 py-2 rounded-lg border border-white/15 text-white/55 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all"
