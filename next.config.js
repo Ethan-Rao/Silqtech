@@ -9,6 +9,15 @@ const nextConfig = {
     ],
   },
   
+  async headers() {
+    return [
+      {
+        source: '/nusilq',
+        headers: [{ key: 'Cache-Control', value: 'no-store, must-revalidate' }],
+      },
+    ]
+  },
+
   async rewrites() {
     return [
       // ROOT LEVEL REP PAGES
@@ -81,6 +90,8 @@ const nextConfig = {
 
   async redirects() {
     return [
+      { source: '/nusil', destination: '/nusilq', permanent: false },
+
       // QR code short-link safety net: if qrco.de routes to /bgshcA instead of /customercontact
       { source: '/bgshcA', destination: '/customercontact', permanent: false },
       { source: '/bqshcA', destination: '/customercontact', permanent: false },

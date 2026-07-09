@@ -1,6 +1,56 @@
 {
-  "generated": "2026-06-18T18:19:14.461Z",
+  "generated": "2026-07-09T00:00:00.000Z",
   "ongoing": [
+    {
+      "id": "medicone",
+      "companyName": "Medicone",
+      "currentActionItem": "Valerie sent tNDA for signature 6/29/26",
+      "projectStatus": "",
+      "tNDA": "",
+      "lastUpdated": "2026-07-09",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "alcon",
+      "companyName": "Alcon",
+      "currentActionItem": "Introductory meeting 5/28/26",
+      "projectStatus": "Valerie sent tNDA for review on 7/8/26",
+      "tNDA": "",
+      "lastUpdated": "2026-07-09",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "promed-liquid-medical",
+      "companyName": "Promed/Liquid Medical",
+      "currentActionItem": "Introductory meeting 6/25/26",
+      "projectStatus": "Jan Koscielniak requested mNDA and samples on 6/25/26",
+      "tNDA": "",
+      "lastUpdated": "2026-07-09",
+      "applicationDescription": "Glaucoma Implants",
+      "notes": []
+    },
+    {
+      "id": "stedical-scientific",
+      "companyName": "Stedical Scientific",
+      "currentActionItem": "Introductory meeting 6/23/26",
+      "projectStatus": "",
+      "tNDA": "",
+      "lastUpdated": "2026-07-09",
+      "applicationDescription": "",
+      "notes": []
+    },
+    {
+      "id": "liqid-medical",
+      "companyName": "Liqid Medical",
+      "currentActionItem": "Silq to approve of sharing samples",
+      "projectStatus": "Initial Meeting 6/26",
+      "tNDA": "",
+      "lastUpdated": "2026-06-26",
+      "applicationDescription": "Glaucoma Implants",
+      "notes": []
+    },
     {
       "id": "aspero",
       "companyName": "Aspero",
@@ -25,11 +75,18 @@
       "id": "bmc-health",
       "companyName": "BMC Health",
       "currentActionItem": "Regulatory Discussions",
-      "projectStatus": "Feasibility Complete, samples remain",
+      "projectStatus": "Evaluation Phase Pending agreement",
       "tNDA": "Signed 2/16/26",
       "lastUpdated": "2026-06-01",
       "applicationDescription": "Penile Implant",
-      "notes": []
+      "notes": [
+        {
+          "id": "note-bmc-health-bm617",
+          "timestamp": "2026-07-09T00:00:00.000Z",
+          "author": "BM6.17 history",
+          "text": "Previous project status (as of BM6.17): Feasibility Complete, samples remain"
+        }
+      ]
     },
     {
       "id": "medtronic",
@@ -79,16 +136,6 @@
       "tNDA": "",
       "lastUpdated": "2025-08-15",
       "applicationDescription": "",
-      "notes": []
-    },
-    {
-      "id": "gc-aesthetics",
-      "companyName": "GC Aesthetics",
-      "currentActionItem": "GC to Review Proposal",
-      "projectStatus": "Feasibility quote sent with biological testing",
-      "tNDA": "Signed",
-      "lastUpdated": "2025-07-18",
-      "applicationDescription": "Breast Implants",
       "notes": []
     },
     {
@@ -154,20 +201,6 @@
   ],
   "targets": [
     {
-      "id": "j-j",
-      "companyName": "J&J",
-      "application": "glaucoma implants",
-      "deviceDetails": "Silicone device includes holes to allow fibrous tissue growth",
-      "notes": [
-        {
-          "id": "seed-j-j-0",
-          "timestamp": "2026-06-18T18:19:14.461Z",
-          "author": "Excel import",
-          "text": "Baerveldt nonvalved Implant J&J"
-        }
-      ]
-    },
-    {
       "id": "glaukos-corp",
       "companyName": "Glaukos Corp.",
       "application": "glaucoma implants",
@@ -217,20 +250,6 @@
       "notes": []
     },
     {
-      "id": "aspero-medical",
-      "companyName": "Aspero Medical",
-      "application": "Endoscopic",
-      "deviceDetails": "",
-      "notes": [
-        {
-          "id": "seed-aspero-medical-0",
-          "timestamp": "2026-06-18T18:19:14.461Z",
-          "author": "Excel import",
-          "text": "Active Project"
-        }
-      ]
-    },
-    {
       "id": "ventura-biomedica",
       "companyName": "Ventura Biomedica",
       "application": "Hydrocephalous",
@@ -269,20 +288,6 @@
           "timestamp": "2026-06-18T18:19:14.461Z",
           "author": "Excel import",
           "text": "Intro call on 2/12/26"
-        }
-      ]
-    },
-    {
-      "id": "bmc",
-      "companyName": "BMC",
-      "application": "Penile implant",
-      "deviceDetails": "",
-      "notes": [
-        {
-          "id": "seed-bmc-0",
-          "timestamp": "2026-06-18T18:19:14.461Z",
-          "author": "Excel import",
-          "text": "Meeting at MD&M.  Callon 2/12/26"
         }
       ]
     },
@@ -531,6 +536,36 @@
       "applicationDescription": "Glaucoma Treatment Drain",
       "lastContact": "2025-09-12",
       "notes": []
+    },
+    {
+      "id": "j-j",
+      "companyName": "J&J",
+      "projectStatus": "Baerveldt nonvalved Implant J&J",
+      "applicationDescription": "glaucoma implants",
+      "lastContact": "2025-09-12",
+      "notes": [
+        {
+          "id": "note-j-j-moved",
+          "timestamp": "2026-07-09T00:00:00.000Z",
+          "author": "BM7.9 update",
+          "text": "Moved from Active Targets. Previously tracked as a glaucoma implant prospect (Baerveldt nonvalved Implant)."
+        }
+      ]
+    },
+    {
+      "id": "gc-aesthetics",
+      "companyName": "GC Aesthetics",
+      "projectStatus": "GC to Review Proposal. Feasibility quote sent with biological testing. Signed tNDA",
+      "applicationDescription": "Breast Implants",
+      "lastContact": null,
+      "notes": [
+        {
+          "id": "note-gc-aesthetics-moved",
+          "timestamp": "2026-07-09T00:00:00.000Z",
+          "author": "BM7.9 update",
+          "text": "Moved from Ongoing Projects. Last active status: Feasibility quote sent with biological testing (tNDA signed). Action item was: GC to Review Proposal."
+        }
+      ]
     }
   ]
 }
