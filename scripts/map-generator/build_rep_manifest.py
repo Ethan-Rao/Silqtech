@@ -120,7 +120,7 @@ def main() -> None:
 
     manifest = {
         "generated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "dataVersion": "08_2025",
+        "dataVersion": "07_2026",
         "totalReps": len(manifest_reps),
         "reps": manifest_reps,
     }

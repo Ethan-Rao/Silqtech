@@ -30,12 +30,31 @@ interface RepManifest {
 }
 
 // ── shared types (mirrors rep/[slug]/page.tsx) ─────────────────────────────
-interface Physician { name: string; npi: string; specialty: string }
+interface Physician {
+  name: string
+  npi: string
+  specialty: string
+  billsCatheterProcedures?: boolean
+}
 interface Facility {
-  id: string; name: string; address: string; city: string; state: string
-  zipCode: string; phone: string; catheterDays: number; cautiStatus: string
-  hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null; priority: string
-  physicians: Physician[]; physicianCount: number; sir: number
+  id: string
+  name: string
+  address: string
+  city: string
+  state: string
+  zipCode: string
+  phone: string
+  catheterDays: number
+  cautiStatus: string
+  hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
+  priority: string
+  physicians: Physician[]
+  physicianCount: number
+  sir: number | null
+  hacTierLabel?: string | null
+  hacTotalScore?: number | null
+  cautiVbpScore?: number | null
+  starRating?: number | null
 }
 interface RepData {
   meta: {
@@ -56,10 +75,19 @@ function buildTopTargetsCsv(repName: string, facilities: Facility[]): string {
 
   const sortKey = (f: Facility): [number, number] => {
     const vol = isHighVolume(f) ? 0 : 1
-    if (f.hacStatus === 'HAC_PENALIZED')      return [1, vol]
-    if (f.cautiStatus?.includes('Worse'))      return [2, vol]
-    if (isHighVolume(f))                       return [3, 0]
-    return [4, vol]
+    const worseCAUTI = f.cautiStatus?.includes('Worse') ?? false
+    const penalized = f.hacStatus === 'HAC_PENALIZED'
+    const atRisk = f.hacStatus === 'HAC_AT_RISK'
+
+    if (penalized && worseCAUTI) return [1, vol]
+    if (penalized) return [2, vol]
+    if (worseCAUTI) return [3, vol]
+    if (atRisk && isHighVolume(f)) return [4, 0]
+    if (isHighVolume(f)) return [5, 0]
+    if (atRisk) return [6, vol]
+    const medianDays = validDays[Math.floor(validDays.length * 0.5)] ?? 0
+    if ((f.cautiVbpScore ?? 10) <= 3 && f.catheterDays > medianDays) return [7, vol]
+    return [8, vol]
   }
 
   const targets = facilities
@@ -75,20 +103,31 @@ function buildTopTargetsCsv(repName: string, facilities: Facility[]): string {
   if (targets.length === 0) return ''
 
   const headers = [
-    'Rep Name','Facility Name','Address','City','State','ZIP Code','Phone',
-    'Catheter Volume','HAC Status','CAUTI Status','Urologists','Infectious Disease Physicians',
+    'Rep Name', 'Facility Name', 'Address', 'City', 'State', 'ZIP Code', 'Phone',
+    'Catheter Days', 'Catheter Volume Band', 'HAC Status', 'HAC Tier', 'Total HAC Score',
+    'CAUTI Status', 'CAUTI VBP Score', 'Star Rating',
+    'Urologists', 'Infectious Disease Physicians',
   ]
   const rows = targets.map(f => {
     const uros = f.physicians.filter(p => p.specialty === 'Urology').map(p => p.name).join('; ')
-    const ids  = f.physicians.filter(p => p.specialty === 'Infectious Disease').map(p => p.name).join('; ')
+    const ids = f.physicians.filter(p => p.specialty === 'Infectious Disease').map(p => p.name).join('; ')
+    const volBand = isHighVolume(f) ? 'High Volume' : 'Standard'
+    const tierShort = f.hacTierLabel
+      ? `Tier ${f.hacTierLabel.match(/\d+/)?.[0] ?? ''}`.trim()
+      : ''
     return [
       `"${repName}"`,
       `"${f.name.replace(/"/g, '""')}"`,
       `"${f.address.replace(/"/g, '""')}"`,
       `"${f.city}"`, f.state, f.zipCode, f.phone,
-      isHighVolume(f) ? 'High Volume' : 'Standard',
+      f.catheterDays,
+      volBand,
       f.hacStatus || '',
+      tierShort,
+      f.hacTotalScore != null ? f.hacTotalScore.toFixed(4) : '',
       `"${f.cautiStatus}"`,
+      f.cautiVbpScore != null ? `${f.cautiVbpScore}/10` : '',
+      f.starRating != null ? `${f.starRating}/5` : 'N/A',
       `"${uros}"`, `"${ids}"`,
     ]
   })

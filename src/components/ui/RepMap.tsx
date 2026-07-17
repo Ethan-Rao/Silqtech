@@ -1114,7 +1114,7 @@ interface Facility {
   catheterDays: number
   observedCAUTI: number
   predictedCAUTI: number
-  sir: number
+  sir: number | null
   cautiStatus: string
   priority: 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
   hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
@@ -1122,8 +1122,16 @@ interface Facility {
     name: string
     npi: string
     specialty: string
+    billsCatheterProcedures?: boolean
   }>
   physicianCount: number
+  hacTierLabel?: string | null
+  hacTotalScore?: number | null
+  cautiSirHac?: number | null
+  cautiWzScore?: number | null
+  cautiVbpScore?: number | null
+  cautiVbpPerformanceRate?: number | null
+  starRating?: number | null
 }
 
 interface RepMapProps {

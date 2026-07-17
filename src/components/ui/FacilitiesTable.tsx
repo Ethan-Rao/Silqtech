@@ -8,6 +8,7 @@ interface Physician {
   name: string
   npi: string
   specialty: string
+  billsCatheterProcedures?: boolean
 }
 
 interface Facility {
@@ -24,12 +25,19 @@ interface Facility {
   catheterDays: number
   observedCAUTI: number
   predictedCAUTI: number
-  sir: number
+  sir: number | null
   cautiStatus: string
   priority: 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
   hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
   physicians: Physician[]
   physicianCount: number
+  hacTierLabel?: string | null
+  hacTotalScore?: number | null
+  cautiSirHac?: number | null
+  cautiWzScore?: number | null
+  cautiVbpScore?: number | null
+  cautiVbpPerformanceRate?: number | null
+  starRating?: number | null
 }
 
 interface FacilitiesTableProps {
@@ -501,9 +509,80 @@ export function FacilitiesTable({
                               </div>
                             </div>
 
+                            {/* CMS Quality Metrics */}
+                            {(facility.starRating != null ||
+                              facility.hacTierLabel ||
+                              facility.hacTotalScore != null ||
+                              facility.cautiSirHac != null ||
+                              facility.cautiVbpScore != null) && (
+                              <div className="mt-4 pt-4 border-t border-gray-100">
+                                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+                                  CMS Quality Metrics
+                                </h4>
+                                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                                  {facility.starRating != null && (
+                                    <div className="bg-gray-50 rounded-lg p-3">
+                                      <p className="text-xs text-gray-500 mb-1">Overall Rating</p>
+                                      <p className="text-sm font-semibold">
+                                        {'★'.repeat(facility.starRating)}
+                                        {'☆'.repeat(5 - facility.starRating)}
+                                        <span className="text-gray-400 text-xs ml-1">
+                                          ({facility.starRating}/5)
+                                        </span>
+                                      </p>
+                                    </div>
+                                  )}
+                                  {facility.hacTierLabel && (
+                                    <div className="bg-gray-50 rounded-lg p-3">
+                                      <p className="text-xs text-gray-500 mb-1">HAC Tier</p>
+                                      <p className="text-sm font-semibold">
+                                        {facility.hacTierLabel
+                                          .replace(' (highest HAC risk)', '')
+                                          .replace(' (elevated HAC risk)', '')
+                                          .replace(' (lower HAC risk)', '')}
+                                      </p>
+                                      <p className="text-xs text-gray-400">
+                                        {facility.hacTierLabel.match(/\(.*\)/)?.[0] ?? ''}
+                                      </p>
+                                    </div>
+                                  )}
+                                  {facility.hacTotalScore != null && (
+                                    <div className="bg-gray-50 rounded-lg p-3">
+                                      <p className="text-xs text-gray-500 mb-1">Total HAC Score</p>
+                                      <p className="text-sm font-semibold">
+                                        {facility.hacTotalScore.toFixed(4)}
+                                      </p>
+                                    </div>
+                                  )}
+                                  {facility.cautiSirHac != null && (
+                                    <div className="bg-gray-50 rounded-lg p-3">
+                                      <p className="text-xs text-gray-500 mb-1">CAUTI SIR (HAC)</p>
+                                      <p
+                                        className={`text-sm font-semibold ${
+                                          facility.cautiSirHac > 1 ? 'text-red-600' : 'text-green-600'
+                                        }`}
+                                      >
+                                        {facility.cautiSirHac.toFixed(3)}
+                                      </p>
+                                      <p className="text-xs text-gray-400">HAC program window</p>
+                                    </div>
+                                  )}
+                                  {facility.cautiVbpScore != null && (
+                                    <div className="bg-gray-50 rounded-lg p-3">
+                                      <p className="text-xs text-gray-500 mb-1">CAUTI VBP Score</p>
+                                      <p className="text-sm font-semibold">
+                                        {facility.cautiVbpScore} / 10
+                                      </p>
+                                      <p className="text-xs text-gray-400">Value-Based Purchasing</p>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            )}
+
                             {/* Physicians list */}
                             {facility.physicians.length > 0 && (
-                              <div>
+                              <div className="mt-4">
                                 <h4 className="text-xs font-semibold text-silq-dark/60 uppercase tracking-wider mb-2">
                                   Physicians ({facility.physicianCount})
                                 </h4>
@@ -520,7 +599,14 @@ export function FacilitiesTable({
                                         'bg-silq-teal'
                                       )} />
                                       <div className="min-w-0">
-                                        <p className="text-xs font-medium text-silq-dark truncate">{physician.name}</p>
+                                        <p className="text-xs font-medium text-silq-dark truncate">
+                                          {physician.name}
+                                          {physician.billsCatheterProcedures && (
+                                            <span className="ml-1 text-[10px] bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">
+                                              Cath Proc
+                                            </span>
+                                          )}
+                                        </p>
                                         <p className="text-[10px] text-silq-dark/50">{physician.specialty}</p>
                                       </div>
                                     </div>

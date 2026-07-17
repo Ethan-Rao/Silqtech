@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate combined klea.json for Klea Medical LLC (IN+KY+OH+WV).
+Generate combined stengel.json (Brad Stengel: IA+MO; David Hoffman: MO).
 """
 
 import os
@@ -18,32 +18,29 @@ spec.loader.exec_module(gen)
 
 
 def main():
-    print("Generating combined klea.json (IN + KY + OH + WV)...")
+    print("Generating combined stengel.json (IA + MO)...")
     os.chdir(script_dir)
 
     facilities_df = gen.load_all_facility_sources()
-    combined_states = {"IN", "KY", "OH", "WV"}
-    filtered = gen.filter_facilities_for_rep(facilities_df, combined_states)
+    filtered = gen.filter_facilities_for_rep(facilities_df, {"IA", "MO"})
     facilities_list = [gen.facility_row_to_dict(fac) for _, fac in filtered.iterrows()]
 
-    for st in sorted(combined_states):
-        print(f"  {st}: {sum(1 for f in facilities_list if f['state'] == st)} facilities")
+    print(f"  IA: {sum(1 for f in facilities_list if f['state'] == 'IA')} facilities")
+    print(f"  MO: {sum(1 for f in facilities_list if f['state'] == 'MO')} facilities")
     print(f"  Total: {len(facilities_list)}")
 
-    rep_territory = ["IN", "KY", "OH", "WV"]
     output = {
         "meta": {
-            "slug": "klea",
-            "company": "Klea Medical LLC",
-            "name": "Derek Colins / Paul Wilson / Joe Rodriguez",
-            "email": "derek@kleamedical.com",
-            "territory": sorted(list(combined_states)),
+            "slug": "stengel",
+            "company": "Stengel Medical Supply",
+            "name": "Brad Stengel",
+            "email": "stengelbrad@gmail.com",
+            "territory": ["IA", "MO"],
             "generated": datetime.utcnow().isoformat() + "Z",
             "dataVersion": gen.CONFIG["dataVersion"],
             "reps": [
-                {"name": "Derek Colins", "email": "derek@kleamedical.com", "territory": rep_territory},
-                {"name": "Paul Wilson", "email": "vmsmedprod@gmail.com", "territory": rep_territory},
-                {"name": "Joe Rodriguez", "email": "joerodmedical@gmail.com", "territory": rep_territory},
+                {"name": "Brad Stengel", "email": "stengelbrad@gmail.com", "territory": ["IA", "MO"]},
+                {"name": "David Hoffman", "email": "dave@forefrontmedical.net", "territory": ["MO"]},
             ],
         },
         "stats": {
@@ -65,8 +62,8 @@ def main():
     }
 
     out_paths = [
-        os.path.join(script_dir, "output/reps/klea.json"),
-        os.path.normpath(os.path.join(script_dir, "../../public/data/reps/klea.json")),
+        os.path.join(script_dir, "output/reps/stengel.json"),
+        os.path.normpath(os.path.join(script_dir, "../../public/data/reps/stengel.json")),
     ]
     for out_path in out_paths:
         os.makedirs(os.path.dirname(out_path), exist_ok=True)

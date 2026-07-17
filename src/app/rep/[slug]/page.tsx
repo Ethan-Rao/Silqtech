@@ -10,6 +10,7 @@ interface Physician {
   name: string
   npi: string
   specialty: string
+  billsCatheterProcedures?: boolean
 }
 
 interface Facility {
@@ -26,12 +27,19 @@ interface Facility {
   catheterDays: number
   observedCAUTI: number
   predictedCAUTI: number
-  sir: number
+  sir: number | null
   cautiStatus: string
   priority: 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
   hacStatus: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
   physicians: Physician[]
   physicianCount: number
+  hacTierLabel?: string | null
+  hacTotalScore?: number | null
+  cautiSirHac?: number | null
+  cautiWzScore?: number | null
+  cautiVbpScore?: number | null
+  cautiVbpPerformanceRate?: number | null
+  starRating?: number | null
 }
 
 interface RepInfo {
@@ -154,26 +162,34 @@ export default function RepPage({ params }: { params: { slug: string } }) {
     const highVolumeThreshold = validDays[p90Index] ?? 0
     const isHighVolume = (f: Facility) => highVolumeThreshold > 0 && f.catheterDays >= highVolumeThreshold
 
-    // Primary sort rank: 1 HAC Penalized · 2 Worse CAUTI · 3 High Volume · 4 HAC At Risk
-    // Secondary: within each primary group, High Volume facilities rank first (0) vs last (1)
+    // v2 priority sort — 7 levels
     const sortKey = (f: Facility): [number, number] => {
       const vol = isHighVolume(f) ? 0 : 1
-      if (f.hacStatus === 'HAC_PENALIZED') return [1, vol]
-      if (f.cautiStatus?.includes('Worse'))  return [2, vol]
-      if (isHighVolume(f))                   return [3, 0]
-      return [4, vol] // HAC_AT_RISK
+      const worseCAUTI = f.cautiStatus?.includes('Worse') ?? false
+      const penalized = f.hacStatus === 'HAC_PENALIZED'
+      const atRisk = f.hacStatus === 'HAC_AT_RISK'
+
+      if (penalized && worseCAUTI) return [1, vol]
+      if (penalized) return [2, vol]
+      if (worseCAUTI) return [3, vol]
+      if (atRisk && isHighVolume(f)) return [4, 0]
+      if (isHighVolume(f)) return [5, 0]
+      if (atRisk) return [6, vol]
+      const medianDays = validDays[Math.floor(validDays.length * 0.5)] ?? 0
+      if ((f.cautiVbpScore ?? 10) <= 3 && f.catheterDays > medianDays) return [7, vol]
+      return [8, vol]
     }
 
     const targets = facilities
       .filter(f =>
         f.hacStatus === 'HAC_PENALIZED' ||
-        f.hacStatus === 'HAC_AT_RISK'   ||
+        f.hacStatus === 'HAC_AT_RISK' ||
         f.cautiStatus?.includes('Worse') ||
         isHighVolume(f)
       )
       .sort((a, b) => {
         const [ap, as_] = sortKey(a)
-        const [bp, bs]  = sortKey(b)
+        const [bp, bs] = sortKey(b)
         return ap !== bp ? ap - bp : as_ - bs
       })
 
@@ -184,9 +200,14 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       'State',
       'ZIP Code',
       'Phone',
-      'Catheter Volume',
+      'Catheter Days',
+      'Catheter Volume Band',
       'HAC Status',
+      'HAC Tier',
+      'Total HAC Score',
       'CAUTI Status',
+      'CAUTI VBP Score',
+      'Star Rating',
       'Urologists',
       'Infectious Disease Physicians',
     ]
@@ -200,6 +221,10 @@ export default function RepPage({ params }: { params: { slug: string } }) {
         .filter(p => p.specialty === 'Infectious Disease')
         .map(p => p.name)
         .join('; ')
+      const volBand = isHighVolume(f) ? 'High Volume' : 'Standard'
+      const tierShort = f.hacTierLabel
+        ? `Tier ${f.hacTierLabel.match(/\d+/)?.[0] ?? ''}`.trim()
+        : ''
       return [
         `"${f.name.replace(/"/g, '""')}"`,
         `"${f.address.replace(/"/g, '""')}"`,
@@ -207,9 +232,14 @@ export default function RepPage({ params }: { params: { slug: string } }) {
         f.state,
         f.zipCode,
         f.phone,
-        isHighVolume(f) ? 'High Volume' : 'Standard',
+        f.catheterDays,
+        volBand,
         f.hacStatus || '',
+        tierShort,
+        f.hacTotalScore != null ? f.hacTotalScore.toFixed(4) : '',
         `"${f.cautiStatus}"`,
+        f.cautiVbpScore != null ? `${f.cautiVbpScore}/10` : '',
+        f.starRating != null ? `${f.starRating}/5` : 'N/A',
         `"${urologists}"`,
         `"${idPhysicians}"`,
       ]

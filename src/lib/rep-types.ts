@@ -4,6 +4,7 @@ export interface Physician {
   name: string
   npi: string
   specialty: string
+  billsCatheterProcedures?: boolean
 }
 
 export interface Facility {
@@ -20,11 +21,19 @@ export interface Facility {
   catheterDays: number
   observedCAUTI: number
   predictedCAUTI: number
-  sir: number
+  sir: number | null
   cautiStatus: string
   priority: FacilityPriority
+  hacStatus?: 'HAC_PENALIZED' | 'HAC_AT_RISK' | null
   physicians: Physician[]
   physicianCount: number
+  hacTierLabel?: string | null
+  hacTotalScore?: number | null
+  cautiSirHac?: number | null
+  cautiWzScore?: number | null
+  cautiVbpScore?: number | null
+  cautiVbpPerformanceRate?: number | null
+  starRating?: number | null
 }
 
 export type FacilityPriority = 'HIGH_CAUTI' | 'HIGH_VOLUME' | 'VA' | 'STANDARD'
@@ -44,6 +53,8 @@ export interface RepStats {
   totalCatheterDays: number
   highCautiCount: number
   highVolumeCount: number
+  hacPenalizedCount?: number
+  hacAtRiskCount?: number
   physicianCount: number
 }
 
