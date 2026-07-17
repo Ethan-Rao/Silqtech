@@ -3236,7 +3236,7 @@
       "zipCode": "43210",
       "phone": "",
       "hospitalType": "Acute Care Hospitals",
-      "ownership": NaN,
+      "ownership": null,
       "gpo": "",
       "catheterDays": 22099,
       "observedCAUTI": 9,

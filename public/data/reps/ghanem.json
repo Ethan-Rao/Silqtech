@@ -32,7 +32,7 @@
       "zipCode": "19111",
       "phone": "",
       "hospitalType": "Acute Care Hospitals",
-      "ownership": NaN,
+      "ownership": null,
       "gpo": "",
       "catheterDays": 4598,
       "observedCAUTI": 7,

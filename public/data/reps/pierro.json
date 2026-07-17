@@ -16386,7 +16386,7 @@
       "zipCode": "02115",
       "phone": "",
       "hospitalType": "Acute Care Hospitals",
-      "ownership": NaN,
+      "ownership": null,
       "gpo": "Vizient (935458)",
       "catheterDays": 797,
       "observedCAUTI": 1,

@@ -909,7 +909,7 @@
       "zipCode": "77030",
       "phone": "",
       "hospitalType": "Acute Care Hospitals",
-      "ownership": NaN,
+      "ownership": null,
       "gpo": "",
       "catheterDays": 31269,
       "observedCAUTI": 21,

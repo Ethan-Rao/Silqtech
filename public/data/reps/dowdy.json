@@ -11479,7 +11479,7 @@
       "zipCode": "98109",
       "phone": "",
       "hospitalType": "Acute Care Hospitals",
-      "ownership": NaN,
+      "ownership": null,
       "gpo": "",
       "catheterDays": 161,
       "observedCAUTI": 1,
