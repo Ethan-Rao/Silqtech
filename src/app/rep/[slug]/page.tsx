@@ -156,6 +156,14 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       ? allFacilities.filter(f => repTerritory.includes(f.state))
       : allFacilities
 
+    const vbpLabel = (score: number): string => {
+      if (score <= 2) return 'Underperforming'
+      if (score <= 4) return 'Below Average'
+      if (score <= 6) return 'Average'
+      if (score <= 8) return 'Above Average'
+      return 'Top Performer'
+    }
+
     // 90th-percentile catheter-days threshold within this rep's territory
     const validDays = facilities.map(f => f.catheterDays).filter(d => d > 0).sort((a, b) => a - b)
     const p90Index = Math.floor(validDays.length * 0.9)
@@ -204,10 +212,9 @@ export default function RepPage({ params }: { params: { slug: string } }) {
       'Catheter Volume Band',
       'HAC Status',
       'HAC Tier',
-      'Total HAC Score',
       'CAUTI Status',
-      'CAUTI VBP Score',
-      'Star Rating',
+      'CAUTI Quality Score',
+      'Star Rating (CMS)',
       'Urologists',
       'Infectious Disease Physicians',
     ]
@@ -236,10 +243,9 @@ export default function RepPage({ params }: { params: { slug: string } }) {
         volBand,
         f.hacStatus || '',
         tierShort,
-        f.hacTotalScore != null ? f.hacTotalScore.toFixed(4) : '',
         `"${f.cautiStatus}"`,
-        f.cautiVbpScore != null ? `${f.cautiVbpScore}/10` : '',
-        f.starRating != null ? `${f.starRating}/5` : 'N/A',
+        f.cautiVbpScore != null ? `"${f.cautiVbpScore} pts \u2014 ${vbpLabel(f.cautiVbpScore)}"` : '',
+        f.starRating != null ? String(f.starRating) : '',
         `"${urologists}"`,
         `"${idPhysicians}"`,
       ]

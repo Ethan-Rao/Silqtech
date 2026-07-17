@@ -66,6 +66,15 @@ interface RepData {
   facilities: Facility[]
 }
 
+// ── VBP label helper (mirrors rep/[slug]/page.tsx) ───────────────────────────
+function vbpLabel(score: number): string {
+  if (score <= 2) return 'Underperforming'
+  if (score <= 4) return 'Below Average'
+  if (score <= 6) return 'Average'
+  if (score <= 8) return 'Above Average'
+  return 'Top Performer'
+}
+
 // ── top-targets logic (matches rep/[slug]/page.tsx) ─────────────────────────
 function buildTopTargetsCsv(repName: string, facilities: Facility[]): string {
   const validDays = facilities.map(f => f.catheterDays).filter(d => d > 0).sort((a, b) => a - b)
@@ -104,8 +113,8 @@ function buildTopTargetsCsv(repName: string, facilities: Facility[]): string {
 
   const headers = [
     'Rep Name', 'Facility Name', 'Address', 'City', 'State', 'ZIP Code', 'Phone',
-    'Catheter Days', 'Catheter Volume Band', 'HAC Status', 'HAC Tier', 'Total HAC Score',
-    'CAUTI Status', 'CAUTI VBP Score', 'Star Rating',
+    'Catheter Days', 'Catheter Volume Band', 'HAC Status', 'HAC Tier',
+    'CAUTI Status', 'CAUTI Quality Score', 'Star Rating (CMS)',
     'Urologists', 'Infectious Disease Physicians',
   ]
   const rows = targets.map(f => {
@@ -124,10 +133,9 @@ function buildTopTargetsCsv(repName: string, facilities: Facility[]): string {
       volBand,
       f.hacStatus || '',
       tierShort,
-      f.hacTotalScore != null ? f.hacTotalScore.toFixed(4) : '',
       `"${f.cautiStatus}"`,
-      f.cautiVbpScore != null ? `${f.cautiVbpScore}/10` : '',
-      f.starRating != null ? `${f.starRating}/5` : 'N/A',
+      f.cautiVbpScore != null ? `"${f.cautiVbpScore} pts \u2014 ${vbpLabel(f.cautiVbpScore)}"` : '',
+      f.starRating != null ? String(f.starRating) : '',
       `"${uros}"`, `"${ids}"`,
     ]
   })
