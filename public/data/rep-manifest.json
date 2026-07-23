@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-17T22:50:44.755144Z",
+  "generated": "2026-07-23T00:00:00Z",
   "dataVersion": "07_2026",
-  "totalReps": 68,
+  "totalReps": 62,
   "reps": [
     {
       "slug": "proactive",
@@ -47,14 +47,17 @@
       "name": "Brian McElhany",
       "email": "brian@bioreach360.com",
       "territory": [
+        "AR",
+        "LA",
+        "OK",
         "TX"
       ],
-      "facilityCount": 407,
-      "physicianCount": 2720,
-      "highCautiCount": 0,
-      "highVolumeCount": 32,
-      "hacPenalizedCount": 32,
-      "hacAtRiskCount": 7
+      "facilityCount": 726,
+      "physicianCount": 4047,
+      "highCautiCount": 2,
+      "highVolumeCount": 50,
+      "hacPenalizedCount": 86,
+      "hacAtRiskCount": 15
     },
     {
       "slug": "healthcare-cellutions",
@@ -64,52 +67,17 @@
       "name": "Rocky Ray",
       "email": "bioreach360@gmail.com",
       "territory": [
+        "AR",
+        "LA",
+        "OK",
         "TX"
       ],
-      "facilityCount": 407,
-      "physicianCount": 2720,
-      "highCautiCount": 0,
-      "highVolumeCount": 32,
-      "hacPenalizedCount": 32,
-      "hacAtRiskCount": 7
-    },
-    {
-      "slug": "jordan-distribution",
-      "urlPath": "/jordan-distribution",
-      "primaryState": "WV",
-      "company": "Jordan Distribution Company LLC",
-      "name": "Jason Jordan",
-      "email": "jordandistributioncompany@gmail.com",
-      "territory": [
-        "KY",
-        "OH",
-        "WV"
-      ],
-      "facilityCount": 308,
-      "physicianCount": 2760,
-      "highCautiCount": 1,
-      "highVolumeCount": 26,
-      "hacPenalizedCount": 64,
-      "hacAtRiskCount": 10
-    },
-    {
-      "slug": "gollar-medical",
-      "urlPath": "/gollar-medical",
-      "primaryState": "KY",
-      "company": "Gollar Medical LLC",
-      "name": "Jansen Gollar",
-      "email": "jansen@gollarmedical.com",
-      "territory": [
-        "IN",
-        "KY",
-        "OH"
-      ],
-      "facilityCount": 375,
-      "physicianCount": 3544,
-      "highCautiCount": 1,
-      "highVolumeCount": 28,
-      "hacPenalizedCount": 62,
-      "hacAtRiskCount": 13
+      "facilityCount": 726,
+      "physicianCount": 4047,
+      "highCautiCount": 2,
+      "highVolumeCount": 50,
+      "hacPenalizedCount": 86,
+      "hacAtRiskCount": 15
     },
     {
       "slug": "franklin-mountain-group",
@@ -169,25 +137,6 @@
       "hacAtRiskCount": 18
     },
     {
-      "slug": "fladmo",
-      "urlPath": "/fladmo",
-      "primaryState": "LA",
-      "company": "Fladmo LLC",
-      "name": "Brian Fladmo",
-      "email": "brianfladmo@gmail.com",
-      "territory": [
-        "FL",
-        "LA",
-        "MS"
-      ],
-      "facilityCount": 406,
-      "physicianCount": 3999,
-      "highCautiCount": 1,
-      "highVolumeCount": 33,
-      "hacPenalizedCount": 61,
-      "hacAtRiskCount": 12
-    },
-    {
       "slug": "a3-biomedical",
       "urlPath": "/a3-biomedical",
       "primaryState": "FL",
@@ -205,20 +154,20 @@
       "hacAtRiskCount": 7
     },
     {
-      "slug": "mjfhealth",
-      "urlPath": "/mjfhealth",
-      "primaryState": "NY",
-      "company": "MJF Health Inc.",
-      "name": "Myron Fox",
-      "email": "myronfox@verizon.net",
+      "slug": "tplconsulting",
+      "urlPath": "/tplconsulting",
+      "primaryState": "FL",
+      "company": "TPL Consulting LLC",
+      "name": "Heather Gaspar",
+      "email": "heather.gaspar26@gmail.com",
       "territory": [
-        "NY"
+        "FL"
       ],
-      "facilityCount": 164,
-      "physicianCount": 2392,
-      "highCautiCount": 2,
-      "highVolumeCount": 32,
-      "hacPenalizedCount": 45,
+      "facilityCount": 193,
+      "physicianCount": 3075,
+      "highCautiCount": 0,
+      "highVolumeCount": 19,
+      "hacPenalizedCount": 18,
       "hacAtRiskCount": 7
     },
     {
@@ -237,27 +186,6 @@
       "highVolumeCount": 19,
       "hacPenalizedCount": 18,
       "hacAtRiskCount": 7
-    },
-    {
-      "slug": "hubgroup",
-      "urlPath": "/hubgroup",
-      "primaryState": "NC",
-      "company": "HUBgroup LLC",
-      "name": "Scott Hubbard",
-      "email": "scotthubbard707@gmail.com",
-      "territory": [
-        "DC",
-        "MD",
-        "NC",
-        "SC",
-        "VA"
-      ],
-      "facilityCount": 307,
-      "physicianCount": 3787,
-      "highCautiCount": 0,
-      "highVolumeCount": 34,
-      "hacPenalizedCount": 38,
-      "hacAtRiskCount": 29
     },
     {
       "slug": "zenecare",
@@ -379,24 +307,6 @@
       "hacAtRiskCount": 22
     },
     {
-      "slug": "onpoint",
-      "urlPath": "/onpoint",
-      "primaryState": "NJ",
-      "company": "OnPoint Medcillory Solutions",
-      "name": "Jeffrey Jackson",
-      "email": "jeffreyjackson507@gmail.com",
-      "territory": [
-        "NJ",
-        "NY"
-      ],
-      "facilityCount": 228,
-      "physicianCount": 3873,
-      "highCautiCount": 3,
-      "highVolumeCount": 39,
-      "hacPenalizedCount": 50,
-      "hacAtRiskCount": 10
-    },
-    {
       "slug": "tbmedical",
       "urlPath": "/tbmedical",
       "primaryState": "TN",
@@ -509,23 +419,6 @@
       "highVolumeCount": 18,
       "hacPenalizedCount": 38,
       "hacAtRiskCount": 9
-    },
-    {
-      "slug": "healthcare-cellutions",
-      "urlPath": "/healthcare-cellutions",
-      "primaryState": "TX",
-      "company": "Healthcare Cellutions of Texas",
-      "name": "Christy Bland",
-      "email": "Blandchristy@hotmail.com",
-      "territory": [
-        "TX"
-      ],
-      "facilityCount": 407,
-      "physicianCount": 2720,
-      "highCautiCount": 0,
-      "highVolumeCount": 32,
-      "hacPenalizedCount": 32,
-      "hacAtRiskCount": 7
     },
     {
       "slug": "chowning",
@@ -993,7 +886,6 @@
       "name": "David Hoffman",
       "email": "dave@forefrontmedical.net",
       "territory": [
-        "IA",
         "MO"
       ],
       "facilityCount": 222,
