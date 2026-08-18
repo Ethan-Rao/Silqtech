@@ -193,20 +193,6 @@
       "notes": []
     },
     {
-      "id": "hpbio-brazil",
-      "companyName": "HPBio (Brazil)",
-      "application": "",
-      "deviceDetails": "Neurosurgical (Drains, shunts), Gastroenterology (feeding catheter, silicone)",
-      "notes": [
-        {
-          "id": "seed-hpbio-brazil-0",
-          "timestamp": "2026-06-18T18:19:14.461Z",
-          "author": "Excel import",
-          "text": "Looking to schedule call in Nov."
-        }
-      ]
-    },
-    {
       "id": "lifesil-brazil",
       "companyName": "LifeSil (Brazil)",
       "application": "Breast Implants.",
@@ -277,20 +263,6 @@
       "notes": []
     },
     {
-      "id": "medicone-brazil",
-      "companyName": "Medicone (Brazil)",
-      "application": "",
-      "deviceDetails": "",
-      "notes": []
-    },
-    {
-      "id": "silimed-brazil",
-      "companyName": "Silimed (Brazil)",
-      "application": "",
-      "deviceDetails": "",
-      "notes": []
-    },
-    {
       "id": "faj-brazil",
       "companyName": "FAJ (Brazil)",
       "application": "",
@@ -316,13 +288,6 @@
       "companyName": "Faga Medical (Brazil)",
       "application": "Breast Implants.",
       "deviceDetails": "Breastimplant with PU foam setcion.  May want echogenic silicone",
-      "notes": []
-    },
-    {
-      "id": "medtronic",
-      "companyName": "Medtronic",
-      "application": "",
-      "deviceDetails": "",
       "notes": []
     },
     {
@@ -374,14 +339,6 @@
     {
       "id": "bsc-via-nusil",
       "companyName": "BSC (via Nusil)",
-      "projectStatus": "",
-      "applicationDescription": "",
-      "lastContact": null,
-      "notes": []
-    },
-    {
-      "id": "j-j-via-nusil",
-      "companyName": "J&J (via Nusil)",
       "projectStatus": "",
       "applicationDescription": "",
       "lastContact": null,
