@@ -2,11 +2,11 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import type { SectionKey, OngoingProject, ActiveTarget, StalledProject } from './types'
+import type { SectionKey, OngoingProject, PlannedEngagement, ActiveTarget, StalledProject } from './types'
 
 interface AddProjectModalProps {
   section: SectionKey
-  onAdd: (project: OngoingProject | ActiveTarget | StalledProject) => void
+  onAdd: (project: OngoingProject | PlannedEngagement | ActiveTarget | StalledProject) => void
   onClose: () => void
 }
 
@@ -43,6 +43,17 @@ export function AddProjectModal({ section, onAdd, onClose }: AddProjectModalProp
         source: 'manual',
       }
       onAdd(project)
+    } else if (section === 'planned') {
+      const project: PlannedEngagement = {
+        id,
+        companyName: companyName.trim(),
+        application: field1,
+        engagementPlanDescription: field2,
+        lastUpdated: field3 || null,
+        notes: [],
+        source: 'manual',
+      }
+      onAdd(project)
     } else if (section === 'targets') {
       const project: ActiveTarget = {
         id,
@@ -67,11 +78,20 @@ export function AddProjectModal({ section, onAdd, onClose }: AddProjectModalProp
     }
   }
 
-  const labels = {
+  const labels: Record<SectionKey, string[]> = {
     ongoing: ['Current Action Item', 'Project Status', 'tNDA', 'Last Updated (YYYY-MM-DD)'],
+    planned: ['Application', 'Engagement Plan Description', 'Last Updated (YYYY-MM-DD)'],
     targets: ['Application', 'Device Details'],
     stalled: ['Project Status', 'Application Description', 'Last Contact (YYYY-MM-DD)'],
   }
+
+  const dateFieldLabels = new Set(['Last Updated (YYYY-MM-DD)', 'Last Contact (YYYY-MM-DD)'])
+
+  const sectionTitle =
+    section === 'ongoing' ? 'Ongoing Project'
+    : section === 'planned' ? 'Planned Engagement'
+    : section === 'targets' ? 'Active Target'
+    : 'Stalled Project'
 
   const fields = [field1, field2, field3, field4]
   const setters = [setField1, setField2, setField3, setField4]
@@ -98,7 +118,7 @@ export function AddProjectModal({ section, onAdd, onClose }: AddProjectModalProp
         >
           <div className="flex items-center justify-between mb-5">
             <h2 className="text-lg font-bold text-silq-dark">
-              Add New {section === 'ongoing' ? 'Ongoing Project' : section === 'targets' ? 'Active Target' : 'Stalled Project'}
+              Add New {sectionTitle}
             </h2>
             <button onClick={onClose} className="text-silq-dark/40 hover:text-silq-dark transition-colors p-1">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,7 +145,7 @@ export function AddProjectModal({ section, onAdd, onClose }: AddProjectModalProp
               <div key={label}>
                 <label className="block text-sm font-medium text-silq-dark mb-1">{label}</label>
                 <input
-                  type="text"
+                  type={dateFieldLabels.has(label) ? 'date' : 'text'}
                   value={fields[i]}
                   onChange={e => setters[i](e.target.value)}
                   className="w-full px-3 py-2 rounded-lg border border-silq-dark/20 focus:border-silq-blue focus:ring-1 focus:ring-silq-blue/20 outline-none text-sm"

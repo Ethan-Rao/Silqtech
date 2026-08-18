@@ -32,16 +32,6 @@
       "notes": []
     },
     {
-      "id": "stedical-scientific",
-      "companyName": "Stedical Scientific",
-      "currentActionItem": "Introductory meeting 6/23/26",
-      "projectStatus": "",
-      "tNDA": "",
-      "lastUpdated": "2026-07-09",
-      "applicationDescription": "",
-      "notes": []
-    },
-    {
       "id": "liqid-medical",
       "companyName": "Liqid Medical",
       "currentActionItem": "Silq to approve of sharing samples",
@@ -129,26 +119,6 @@
       "notes": []
     },
     {
-      "id": "med-el",
-      "companyName": "Med-El",
-      "currentActionItem": "Eugiene to follow up upon return",
-      "projectStatus": "Pre-NDA Samples Sent 8.12.25",
-      "tNDA": "",
-      "lastUpdated": "2025-08-15",
-      "applicationDescription": "",
-      "notes": []
-    },
-    {
-      "id": "todoc",
-      "companyName": "Todoc",
-      "currentActionItem": "",
-      "projectStatus": "Todoc are evaluating their resource availablity for this project",
-      "tNDA": "Sent June 9 '25",
-      "lastUpdated": "2025-07-01",
-      "applicationDescription": "Cochlear Implants",
-      "notes": []
-    },
-    {
       "id": "silimed",
       "companyName": "Silimed",
       "currentActionItem": "NDA under review",
@@ -169,16 +139,6 @@
       "notes": []
     },
     {
-      "id": "sophysa",
-      "companyName": "Sophysa",
-      "currentActionItem": "",
-      "projectStatus": "Awaiting decision on their part on NDA/TNDA signature",
-      "tNDA": "",
-      "lastUpdated": "2025-01-31",
-      "applicationDescription": "Hydrocephalus Shunt",
-      "notes": []
-    },
-    {
       "id": "gulf-rubber",
       "companyName": "Gulf Rubber",
       "currentActionItem": "",
@@ -196,6 +156,24 @@
       "tNDA": "",
       "lastUpdated": null,
       "applicationDescription": "Digestive sampling device",
+      "notes": []
+    }
+  ],
+  "planned": [
+    {
+      "id": "med-el-planned",
+      "companyName": "Med-El",
+      "application": "Cochlear Implants",
+      "engagementPlanDescription": "Joseph to inquire during visit 7/29",
+      "lastUpdated": "2026-07-15",
+      "notes": []
+    },
+    {
+      "id": "sophysa",
+      "companyName": "Sophysa",
+      "application": "Hydrocephalus Shunt",
+      "engagementPlanDescription": "To follow up after Silq hydrocephalus shunt data/abstract published (August)",
+      "lastUpdated": "2026-07-15",
       "notes": []
     }
   ],
@@ -564,6 +542,36 @@
           "timestamp": "2026-07-09T00:00:00.000Z",
           "author": "BM7.9 update",
           "text": "Moved from Ongoing Projects. Last active status: Feasibility quote sent with biological testing (tNDA signed). Action item was: GC to Review Proposal."
+        }
+      ]
+    },
+    {
+      "id": "stedical-scientific",
+      "companyName": "Stedical Scientific",
+      "projectStatus": "Introductory meeting held 6/23/26. No further engagement.",
+      "applicationDescription": "",
+      "lastContact": "2026-06-23",
+      "notes": [
+        {
+          "id": "note-stedical-moved",
+          "timestamp": "2026-08-18T00:00:00.000Z",
+          "author": "Aug 2026 update",
+          "text": "Moved from Ongoing Projects. Initial meeting on 6/23/26; no further engagement logged."
+        }
+      ]
+    },
+    {
+      "id": "todoc",
+      "companyName": "Todoc",
+      "projectStatus": "Todoc evaluating resource availability. No confirmed next steps.",
+      "applicationDescription": "Cochlear Implants",
+      "lastContact": "2025-07-01",
+      "notes": [
+        {
+          "id": "note-todoc-moved",
+          "timestamp": "2026-08-18T00:00:00.000Z",
+          "author": "Aug 2026 update",
+          "text": "Moved from Ongoing Projects. Last status: evaluating their resource availability for this project. tNDA sent June 9 2025."
         }
       ]
     }

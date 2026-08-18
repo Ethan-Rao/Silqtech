@@ -8,12 +8,25 @@ import { loadOverlay, saveOverlay } from './overlay'
 import type {
   ProjectsData,
   OngoingProject,
+  PlannedEngagement,
   ActiveTarget,
   StalledProject,
   NoteEntry,
   SectionKey,
   Overlay,
 } from './types'
+
+function sortByDate<T extends object>(items: T[]): T[] {
+  return [...items].sort((a, b) => {
+    const rec = (x: object) => x as { lastUpdated?: string | null; lastContact?: string | null }
+    const da = rec(a).lastUpdated ?? rec(a).lastContact ?? null
+    const db = rec(b).lastUpdated ?? rec(b).lastContact ?? null
+    if (!da && !db) return 0
+    if (!da) return 1   // nulls sink to bottom
+    if (!db) return -1
+    return db.localeCompare(da) // descending: newer first
+  })
+}
 
 // Merges two overlay objects: combines notes (deduped by id), merges baseOverrides (b wins).
 function mergeOverlays(a: Overlay, b: Overlay): Overlay {
@@ -74,13 +87,20 @@ function mergeData(base: ProjectsData, overlay: Overlay): ProjectsData {
     })
   }
 
+  const plannedBase = base.planned ?? []
+
   const manualOngoing = Object.values(overlay)
-    .filter(e => e.baseOverride?.source === 'manual' && e.baseOverride?.companyName)
+    .filter(e => e.baseOverride?.source === 'manual' && e.baseOverride?.currentActionItem !== undefined)
     .map(e => e.baseOverride as OngoingProject)
     .filter(p => !base.ongoing.find(x => x.id === p.id))
 
+  const manualPlanned = Object.values(overlay)
+    .filter(e => e.baseOverride?.source === 'manual' && e.baseOverride?.engagementPlanDescription !== undefined)
+    .map(e => e.baseOverride as PlannedEngagement)
+    .filter(p => !plannedBase.find(x => x.id === p.id))
+
   const manualTargets = Object.values(overlay)
-    .filter(e => e.baseOverride?.source === 'manual' && e.baseOverride?.application !== undefined && !e.baseOverride?.projectStatus)
+    .filter(e => e.baseOverride?.source === 'manual' && e.baseOverride?.deviceDetails !== undefined && e.baseOverride?.engagementPlanDescription === undefined)
     .map(e => e.baseOverride as ActiveTarget)
     .filter(p => !base.targets.find(x => x.id === p.id))
 
@@ -92,6 +112,7 @@ function mergeData(base: ProjectsData, overlay: Overlay): ProjectsData {
   return {
     ...base,
     ongoing: [...applyOverlay(base.ongoing), ...manualOngoing],
+    planned: [...applyOverlay(plannedBase), ...manualPlanned],
     targets: [...applyOverlay(base.targets), ...manualTargets],
     stalled: [...applyOverlay(base.stalled), ...manualStalled],
   }
@@ -173,7 +194,7 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   )
 
   const handleEditBase = useCallback(
-    (id: string, updates: Partial<OngoingProject & ActiveTarget & StalledProject>) => {
+    (id: string, updates: Partial<OngoingProject & PlannedEngagement & ActiveTarget & StalledProject>) => {
       const newOverlay: Overlay = {
         ...overlay,
         [id]: {
@@ -187,18 +208,19 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   )
 
   const handleAddProject = useCallback(
-    (project: OngoingProject | ActiveTarget | StalledProject) => {
+    (project: OngoingProject | PlannedEngagement | ActiveTarget | StalledProject) => {
       const section = addModalSection!
       const newOverlay: Overlay = {
         ...overlay,
         [project.id]: {
-          baseOverride: { ...project, source: 'manual' } as Partial<OngoingProject & ActiveTarget & StalledProject>,
+          baseOverride: { ...project, source: 'manual' } as Partial<OngoingProject & PlannedEngagement & ActiveTarget & StalledProject>,
           notes: [],
         },
       }
       const newBase = {
         ...baseData,
-        [section]: [...(baseData[section] as (OngoingProject | ActiveTarget | StalledProject)[]), project],
+        planned: baseData.planned ?? [],
+        [section]: [...((baseData[section] ?? []) as (OngoingProject | PlannedEngagement | ActiveTarget | StalledProject)[]), project],
       } as ProjectsData
       saveOverlay(newOverlay)
       setOverlay(newOverlay)
@@ -219,9 +241,10 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
   }
 
   const q = search.toLowerCase()
-  const filteredOngoing = data.ongoing.filter(p => p.companyName.toLowerCase().includes(q))
-  const filteredTargets = data.targets.filter(p => p.companyName.toLowerCase().includes(q))
-  const filteredStalled = data.stalled.filter(p => p.companyName.toLowerCase().includes(q))
+  const filteredOngoing = sortByDate(data.ongoing.filter(p => p.companyName.toLowerCase().includes(q)))
+  const filteredPlanned = sortByDate((data.planned ?? []).filter(p => p.companyName.toLowerCase().includes(q)))
+  const filteredTargets = sortByDate(data.targets.filter(p => p.companyName.toLowerCase().includes(q)))
+  const filteredStalled = sortByDate(data.stalled.filter(p => p.companyName.toLowerCase().includes(q)))
 
   const generated = baseData.generated
     ? new Date(baseData.generated).toLocaleString('en-US', {
@@ -349,30 +372,55 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
             }
           </section>
 
-          {/* ── Active Targets — 1/3 width, same height as Ongoing, card list scrolls ── */}
+          {/* ── Right 1/3: Planned Engagements + Active Targets ── */}
           <section
             className="xl:col-span-1 flex flex-col gap-3"
             style={ongoingHeight ? { height: `${ongoingHeight}px` } : undefined}
           >
-            <SectionHeader
-              title="Active Targets"
-              accent="teal"
-              onAdd={() => setAddModalSection('targets')}
-            />
-            {/* min-h-0 is required so the flex child can shrink below its content size */}
-            <div className="flex-1 overflow-y-auto min-h-0 space-y-2.5 pr-0.5">
-              {filteredTargets.length === 0
-                ? <EmptyState />
-                : filteredTargets.map(p => (
-                    <ProjectCard
-                      key={p.id}
-                      section="targets"
-                      project={p}
-                      onAddNote={handleAddNote}
-                      onEditBase={handleEditBase}
-                    />
-                  ))
-              }
+            {/* Planned Engagements — compact, fixed max height */}
+            <div className="flex flex-col gap-2">
+              <SectionHeader
+                title="Planned Engagements"
+                accent="planned"
+                onAdd={() => setAddModalSection('planned')}
+              />
+              <div className="overflow-y-auto max-h-52 space-y-2 pr-0.5">
+                {filteredPlanned.length === 0
+                  ? <EmptyState />
+                  : filteredPlanned.map(p => (
+                      <ProjectCard
+                        key={p.id}
+                        section="planned"
+                        project={p}
+                        onAddNote={handleAddNote}
+                        onEditBase={handleEditBase}
+                      />
+                    ))
+                }
+              </div>
+            </div>
+
+            {/* Active Targets — takes remaining space */}
+            <div className="flex flex-col gap-2 flex-1 min-h-0">
+              <SectionHeader
+                title="Active Targets"
+                accent="teal"
+                onAdd={() => setAddModalSection('targets')}
+              />
+              <div className="flex-1 overflow-y-auto min-h-0 space-y-2.5 pr-0.5">
+                {filteredTargets.length === 0
+                  ? <EmptyState />
+                  : filteredTargets.map(p => (
+                      <ProjectCard
+                        key={p.id}
+                        section="targets"
+                        project={p}
+                        onAddNote={handleAddNote}
+                        onEditBase={handleEditBase}
+                      />
+                    ))
+                }
+              </div>
             </div>
           </section>
         </div>
@@ -415,9 +463,10 @@ export function NusilqDashboard({ baseData }: NusilqDashboardProps) {
 // ── Section header ─────────────────────────────────────────────────────────
 
 const ACCENT_CONFIG = {
-  blue:  { bar: 'bg-silq-blue',  text: 'text-silq-blue',  border: 'border-silq-blue/30' },
-  teal:  { bar: 'bg-silq-teal',  text: 'text-silq-teal',  border: 'border-silq-teal/30' },
-  muted: { bar: 'bg-slate-400',  text: 'text-slate-500',  border: 'border-slate-300' },
+  blue:    { bar: 'bg-silq-blue',   text: 'text-silq-blue',   border: 'border-silq-blue/30' },
+  teal:    { bar: 'bg-silq-teal',   text: 'text-silq-teal',   border: 'border-silq-teal/30' },
+  muted:   { bar: 'bg-slate-400',   text: 'text-slate-500',   border: 'border-slate-300' },
+  planned: { bar: 'bg-violet-400',  text: 'text-violet-600',  border: 'border-violet-200' },
 } as const
 
 function SectionHeader({
@@ -426,7 +475,7 @@ function SectionHeader({
   onAdd,
 }: {
   title: string
-  accent: 'blue' | 'teal' | 'muted'
+  accent: 'blue' | 'teal' | 'muted' | 'planned'
   onAdd: () => void
 }) {
   const { bar, text, border } = ACCENT_CONFIG[accent]

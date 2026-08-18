@@ -19,7 +19,7 @@ function getProjectsData(): ProjectsData {
     const raw = readFileSync(filePath, 'utf8')
     return JSON.parse(raw) as ProjectsData
   } catch {
-    return { generated: new Date().toISOString(), ongoing: [], targets: [], stalled: [] }
+    return { generated: new Date().toISOString(), ongoing: [], planned: [], targets: [], stalled: [] }
   }
 }
 

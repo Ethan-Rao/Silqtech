@@ -18,6 +18,17 @@ export interface OngoingProject {
   _edited?: boolean
 }
 
+export interface PlannedEngagement {
+  id: string
+  companyName: string
+  application: string
+  engagementPlanDescription: string
+  lastUpdated: string | null
+  notes: NoteEntry[]
+  source?: 'excel' | 'manual'
+  _edited?: boolean
+}
+
 export interface ActiveTarget {
   id: string
   companyName: string
@@ -42,17 +53,18 @@ export interface StalledProject {
 export interface ProjectsData {
   generated: string
   ongoing: OngoingProject[]
+  planned: PlannedEngagement[]
   targets: ActiveTarget[]
   stalled: StalledProject[]
 }
 
-export type AnyProject = OngoingProject | ActiveTarget | StalledProject
-export type SectionKey = 'ongoing' | 'targets' | 'stalled'
+export type AnyProject = OngoingProject | PlannedEngagement | ActiveTarget | StalledProject
+export type SectionKey = 'ongoing' | 'planned' | 'targets' | 'stalled'
 
 /** What we store per project in the localStorage overlay */
 export interface OverlayEntry {
   notes?: NoteEntry[]
-  baseOverride?: Partial<OngoingProject & ActiveTarget & StalledProject>
+  baseOverride?: Partial<OngoingProject & PlannedEngagement & ActiveTarget & StalledProject>
 }
 
 export type Overlay = Record<string, OverlayEntry>

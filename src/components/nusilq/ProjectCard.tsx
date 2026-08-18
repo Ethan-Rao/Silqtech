@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { AddNoteForm } from './AddNoteForm'
-import type { OngoingProject, ActiveTarget, StalledProject, NoteEntry, SectionKey } from './types'
+import type { OngoingProject, PlannedEngagement, ActiveTarget, StalledProject, NoteEntry, SectionKey } from './types'
 
 // ── helpers ────────────────────────────────────────────────────────────────
 
@@ -35,12 +35,14 @@ function tNDAConfig(val: string): { label: string; dot: string; pill: string } |
 
 const CARD_ACCENT: Record<SectionKey, string> = {
   ongoing: 'border-l-[3px] border-l-silq-blue',
+  planned: 'border-l-[3px] border-l-violet-400',
   targets: 'border-l-[3px] border-l-silq-teal',
   stalled: 'border-l-[3px] border-l-slate-300',
 }
 
 const HOVER_BG: Record<SectionKey, string> = {
   ongoing: 'hover:bg-silq-blue/[0.02]',
+  planned: 'hover:bg-violet-50',
   targets: 'hover:bg-silq-teal/[0.02]',
   stalled: 'hover:bg-slate-50',
 }
@@ -52,6 +54,12 @@ type ProjectCardProps = {
   project: OngoingProject
   onAddNote: (id: string, author: string, text: string) => void
   onEditBase: (id: string, updates: Partial<OngoingProject>) => void
+  twoCol?: boolean
+} | {
+  section: 'planned'
+  project: PlannedEngagement
+  onAddNote: (id: string, author: string, text: string) => void
+  onEditBase: (id: string, updates: Partial<PlannedEngagement>) => void
   twoCol?: boolean
 } | {
   section: 'targets'
@@ -90,6 +98,11 @@ export function ProjectCard(props: ProjectCardProps) {
     actionLabel = p.currentActionItem || p.projectStatus
     dateValue = p.lastUpdated
     tNDA = p.tNDA
+  } else if (section === 'planned') {
+    const p = project as PlannedEngagement
+    subtitle = p.application
+    actionLabel = p.engagementPlanDescription
+    dateValue = p.lastUpdated
   } else if (section === 'targets') {
     const p = project as ActiveTarget
     subtitle = p.application
@@ -114,6 +127,12 @@ export function ProjectCard(props: ProjectCardProps) {
         projectStatus: p.projectStatus, tNDA: p.tNDA,
         lastUpdated: p.lastUpdated ?? '', applicationDescription: p.applicationDescription,
       })
+    } else if (section === 'planned') {
+      const p = project as PlannedEngagement
+      Object.assign(base, {
+        companyName: p.companyName, application: p.application,
+        engagementPlanDescription: p.engagementPlanDescription, lastUpdated: p.lastUpdated ?? '',
+      })
     } else if (section === 'targets') {
       const p = project as ActiveTarget
       Object.assign(base, { companyName: p.companyName, application: p.application, deviceDetails: p.deviceDetails })
@@ -135,6 +154,11 @@ export function ProjectCard(props: ProjectCardProps) {
         companyName: editState.companyName, currentActionItem: editState.currentActionItem,
         projectStatus: editState.projectStatus, tNDA: editState.tNDA,
         lastUpdated: editState.lastUpdated || null, applicationDescription: editState.applicationDescription,
+      })
+    } else if (section === 'planned') {
+      props.onEditBase(project.id, {
+        companyName: editState.companyName, application: editState.application,
+        engagementPlanDescription: editState.engagementPlanDescription, lastUpdated: editState.lastUpdated || null,
       })
     } else if (section === 'targets') {
       props.onEditBase(project.id, {
@@ -158,6 +182,13 @@ export function ProjectCard(props: ProjectCardProps) {
           { key: 'tNDA', label: 'tNDA' },
           { key: 'lastUpdated', label: 'Last Updated', type: 'date' },
           { key: 'applicationDescription', label: 'Application' },
+        ]
+      : section === 'planned'
+      ? [
+          { key: 'companyName', label: 'Company Name' },
+          { key: 'application', label: 'Application' },
+          { key: 'engagementPlanDescription', label: 'Engagement Plan Description' },
+          { key: 'lastUpdated', label: 'Last Updated', type: 'date' },
         ]
       : section === 'targets'
       ? [
@@ -279,6 +310,16 @@ export function ProjectCard(props: ProjectCardProps) {
                             : <dd className="text-slate-500">—</dd>
                           }
                         </div>
+                        <Field label="Last Updated" value={formatDate(p.lastUpdated)} />
+                      </>
+                    )
+                  })()}
+                  {section === 'planned' && (() => {
+                    const p = project as PlannedEngagement
+                    return (
+                      <>
+                        {p.application && <Field label="Application" value={p.application} />}
+                        {p.engagementPlanDescription && <Field label="Engagement Plan" value={p.engagementPlanDescription} />}
                         <Field label="Last Updated" value={formatDate(p.lastUpdated)} />
                       </>
                     )

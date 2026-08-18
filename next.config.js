@@ -12,8 +12,22 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains',
+          },
+        ],
+      },
+      {
         source: '/nusilq',
-        headers: [{ key: 'Cache-Control', value: 'no-store, must-revalidate' }],
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, must-revalidate',
+          },
+        ],
       },
     ]
   },
