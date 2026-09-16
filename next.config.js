@@ -55,7 +55,6 @@ const nextConfig = {
       { source: '/noreaster', destination: '/rep/noreaster' },
       { source: '/intuitek', destination: '/rep/intuitek' },
       { source: '/stengel', destination: '/rep/stengel' },
-      { source: '/genesis', destination: '/rep/genesis' },
       { source: '/klea', destination: '/rep/klea' },
       // /kleamedical is handled via redirect below (→ /klea)
       { source: '/lifesource', destination: '/rep/lifesource' },

@@ -1,7 +1,7 @@
 {
   "generated": "2026-07-23T00:00:00Z",
   "dataVersion": "07_2026",
-  "totalReps": 62,
+  "totalReps": 59,
   "reps": [
     {
       "slug": "proactive",
@@ -914,42 +914,6 @@
       "hacAtRiskCount": 6
     },
     {
-      "slug": "genesis",
-      "urlPath": "/genesis",
-      "primaryState": "TX",
-      "company": "Genesis Medical Group",
-      "name": "Dave Riddle",
-      "email": "dave@genesismedicalgroup.net",
-      "territory": [
-        "OK",
-        "TX"
-      ],
-      "facilityCount": 530,
-      "physicianCount": 3210,
-      "highCautiCount": 1,
-      "highVolumeCount": 37,
-      "hacPenalizedCount": 47,
-      "hacAtRiskCount": 11
-    },
-    {
-      "slug": "genesis",
-      "urlPath": "/genesis",
-      "primaryState": "TX",
-      "company": "Genesis Medical Group",
-      "name": "Robert Stitle",
-      "email": "rcmedsurge@gmail.com",
-      "territory": [
-        "OK",
-        "TX"
-      ],
-      "facilityCount": 530,
-      "physicianCount": 3210,
-      "highCautiCount": 1,
-      "highVolumeCount": 37,
-      "hacPenalizedCount": 47,
-      "hacAtRiskCount": 11
-    },
-    {
       "slug": "klea",
       "urlPath": "/klea",
       "primaryState": "IN",
@@ -967,25 +931,6 @@
       "highCautiCount": 2,
       "highVolumeCount": 32,
       "hacPenalizedCount": 74,
-      "hacAtRiskCount": 13
-    },
-    {
-      "slug": "kleamedical",
-      "urlPath": "/kleamedical",
-      "primaryState": "OH",
-      "company": "Klea Medical LLC",
-      "name": "Paul Wilson",
-      "email": "vmsmedprod@gmail.com",
-      "territory": [
-        "IN",
-        "KY",
-        "OH"
-      ],
-      "facilityCount": 375,
-      "physicianCount": 3544,
-      "highCautiCount": 1,
-      "highVolumeCount": 28,
-      "hacPenalizedCount": 62,
       "hacAtRiskCount": 13
     },
     {

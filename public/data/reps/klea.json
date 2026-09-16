@@ -2,7 +2,7 @@
   "meta": {
     "slug": "klea",
     "company": "Klea Medical LLC",
-    "name": "Derek Colins / Paul Wilson / Joe Rodriguez",
+    "name": "Derek Colins / Joe Rodriguez",
     "email": "derek@kleamedical.com",
     "territory": [
       "IN",
@@ -16,16 +16,6 @@
       {
         "name": "Derek Colins",
         "email": "derek@kleamedical.com",
-        "territory": [
-          "IN",
-          "KY",
-          "OH",
-          "WV"
-        ]
-      },
-      {
-        "name": "Paul Wilson",
-        "email": "vmsmedprod@gmail.com",
         "territory": [
           "IN",
           "KY",

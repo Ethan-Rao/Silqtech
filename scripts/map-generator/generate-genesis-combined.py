@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """
-Generate combined genesis.json (Robert Stitle + Dave Riddle: OK+TX).
+DEPRECATED — do not run to restore public data.
+
+Genesis Medical Group was removed from the live site in Sep 2026
+(/genesis now 404s). This script must not be used to recreate
+public/data/reps/genesis.json or re-add genesis to rep-manifest.json.
+
+Originally generated combined genesis.json (Robert Stitle + Dave Riddle: OK+TX).
 """
 
 import os
@@ -18,7 +24,11 @@ spec.loader.exec_module(gen)
 
 
 def main():
-    print("Generating combined genesis.json (OK + TX)...")
+    raise SystemExit(
+        "Refusing to generate genesis.json: Genesis Medical Group was removed "
+        "from the live site in Sep 2026. /genesis must 404. Do not restore "
+        "public/data/reps/genesis.json."
+    )
     os.chdir(script_dir)
 
     facilities_df = gen.load_all_facility_sources()

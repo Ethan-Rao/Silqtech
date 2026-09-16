@@ -1,7 +1,7 @@
 {
   "generated": "2026-07-17T22:36:36.932923Z",
   "dataVersion": "07_2026",
-  "totalReps": 69,
+  "totalReps": 65,
   "reps": [
     {
       "slug": "proactive",
@@ -915,59 +915,10 @@
       "hacAtRiskCount": 6
     },
     {
-      "slug": "genesis",
-      "company": "Genesis Medical Group",
-      "name": "Dave Riddle",
-      "email": "dave@genesismedicalgroup.net",
-      "territory": [
-        "OK",
-        "TX"
-      ],
-      "facilityCount": 530,
-      "physicianCount": 3210,
-      "highCautiCount": 1,
-      "highVolumeCount": 37,
-      "hacPenalizedCount": 47,
-      "hacAtRiskCount": 11
-    },
-    {
-      "slug": "genesis",
-      "company": "Genesis Medical Group",
-      "name": "Robert Stitle",
-      "email": "rcmedsurge@gmail.com",
-      "territory": [
-        "OK",
-        "TX"
-      ],
-      "facilityCount": 530,
-      "physicianCount": 3210,
-      "highCautiCount": 1,
-      "highVolumeCount": 37,
-      "hacPenalizedCount": 47,
-      "hacAtRiskCount": 11
-    },
-    {
       "slug": "klea",
       "company": "Klea Medical LLC",
       "name": "Derek Colins",
       "email": "derek@kleamedical.com",
-      "territory": [
-        "IN",
-        "KY",
-        "OH"
-      ],
-      "facilityCount": 375,
-      "physicianCount": 3544,
-      "highCautiCount": 1,
-      "highVolumeCount": 28,
-      "hacPenalizedCount": 62,
-      "hacAtRiskCount": 13
-    },
-    {
-      "slug": "kleamedical",
-      "company": "Klea Medical LLC",
-      "name": "Paul Wilson",
-      "email": "vmsmedprod@gmail.com",
       "territory": [
         "IN",
         "KY",
@@ -1100,22 +1051,6 @@
       "highVolumeCount": 15,
       "hacPenalizedCount": 37,
       "hacAtRiskCount": 6
-    },
-    {
-      "slug": "genesis",
-      "company": "Genesis Medical Group",
-      "name": "Robert Stitle",
-      "email": "rcmedsurge@gmail.com",
-      "territory": [
-        "OK",
-        "TX"
-      ],
-      "facilityCount": 530,
-      "physicianCount": 3210,
-      "highCautiCount": 1,
-      "highVolumeCount": 37,
-      "hacPenalizedCount": 47,
-      "hacAtRiskCount": 11
     },
     {
       "slug": "acme",
