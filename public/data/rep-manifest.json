@@ -13,7 +13,7 @@
       "territory": [
         "NY"
       ],
-      "facilityCount": 164,
+      "facilityCount": 176,
       "physicianCount": 2392,
       "highCautiCount": 2,
       "highVolumeCount": 32,
@@ -32,7 +32,7 @@
         "NY",
         "PA"
       ],
-      "facilityCount": 390,
+      "facilityCount": 462,
       "physicianCount": 6190,
       "highCautiCount": 4,
       "highVolumeCount": 62,
@@ -52,7 +52,7 @@
         "OK",
         "TX"
       ],
-      "facilityCount": 726,
+      "facilityCount": 835,
       "physicianCount": 4047,
       "highCautiCount": 2,
       "highVolumeCount": 50,
@@ -72,7 +72,7 @@
         "OK",
         "TX"
       ],
-      "facilityCount": 726,
+      "facilityCount": 835,
       "physicianCount": 4047,
       "highCautiCount": 2,
       "highVolumeCount": 50,
@@ -91,7 +91,7 @@
         "TN",
         "TX"
       ],
-      "facilityCount": 549,
+      "facilityCount": 648,
       "physicianCount": 3521,
       "highCautiCount": 0,
       "highVolumeCount": 47,
@@ -108,7 +108,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -129,7 +129,7 @@
         "MS",
         "TN"
       ],
-      "facilityCount": 598,
+      "facilityCount": 698,
       "physicianCount": 5203,
       "highCautiCount": 1,
       "highVolumeCount": 57,
@@ -146,7 +146,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -163,7 +163,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -180,7 +180,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -200,7 +200,7 @@
         "NV",
         "UT"
       ],
-      "facilityCount": 512,
+      "facilityCount": 564,
       "physicianCount": 4596,
       "highCautiCount": 1,
       "highVolumeCount": 54,
@@ -220,7 +220,7 @@
         "NV",
         "UT"
       ],
-      "facilityCount": 512,
+      "facilityCount": 564,
       "physicianCount": 4596,
       "highCautiCount": 1,
       "highVolumeCount": 54,
@@ -240,7 +240,7 @@
         "NV",
         "UT"
       ],
-      "facilityCount": 512,
+      "facilityCount": 564,
       "physicianCount": 4596,
       "highCautiCount": 1,
       "highVolumeCount": 54,
@@ -262,7 +262,7 @@
         "RI",
         "VT"
       ],
-      "facilityCount": 178,
+      "facilityCount": 214,
       "physicianCount": 2673,
       "highCautiCount": 1,
       "highVolumeCount": 18,
@@ -279,7 +279,7 @@
       "territory": [
         "TX"
       ],
-      "facilityCount": 407,
+      "facilityCount": 482,
       "physicianCount": 2720,
       "highCautiCount": 0,
       "highVolumeCount": 32,
@@ -299,7 +299,7 @@
         "PA",
         "WV"
       ],
-      "facilityCount": 541,
+      "facilityCount": 627,
       "physicianCount": 6912,
       "highCautiCount": 4,
       "highVolumeCount": 76,
@@ -318,7 +318,7 @@
         "SC",
         "TN"
       ],
-      "facilityCount": 265,
+      "facilityCount": 311,
       "physicianCount": 2552,
       "highCautiCount": 0,
       "highVolumeCount": 36,
@@ -336,7 +336,7 @@
         "NM",
         "TX"
       ],
-      "facilityCount": 448,
+      "facilityCount": 528,
       "physicianCount": 2858,
       "highCautiCount": 0,
       "highVolumeCount": 34,
@@ -354,7 +354,7 @@
         "NM",
         "TX"
       ],
-      "facilityCount": 448,
+      "facilityCount": 528,
       "physicianCount": 2858,
       "highCautiCount": 0,
       "highVolumeCount": 34,
@@ -374,7 +374,7 @@
         "MS",
         "TN"
       ],
-      "facilityCount": 371,
+      "facilityCount": 409,
       "physicianCount": 1795,
       "highCautiCount": 0,
       "highVolumeCount": 33,
@@ -391,7 +391,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -413,7 +413,7 @@
         "RI",
         "VT"
       ],
-      "facilityCount": 178,
+      "facilityCount": 214,
       "physicianCount": 2673,
       "highCautiCount": 1,
       "highVolumeCount": 18,
@@ -433,7 +433,7 @@
         "KS",
         "MO"
       ],
-      "facilityCount": 499,
+      "facilityCount": 545,
       "physicianCount": 3470,
       "highCautiCount": 0,
       "highVolumeCount": 28,
@@ -451,7 +451,7 @@
         "NC",
         "SC"
       ],
-      "facilityCount": 164,
+      "facilityCount": 191,
       "physicianCount": 1889,
       "highCautiCount": 0,
       "highVolumeCount": 23,
@@ -471,7 +471,7 @@
         "PA",
         "VA"
       ],
-      "facilityCount": 305,
+      "facilityCount": 371,
       "physicianCount": 4250,
       "highCautiCount": 1,
       "highVolumeCount": 34,
@@ -488,7 +488,7 @@
       "territory": [
         "CA"
       ],
-      "facilityCount": 340,
+      "facilityCount": 363,
       "physicianCount": 3239,
       "highCautiCount": 1,
       "highVolumeCount": 38,
@@ -505,7 +505,7 @@
       "territory": [
         "CA"
       ],
-      "facilityCount": 340,
+      "facilityCount": 363,
       "physicianCount": 3239,
       "highCautiCount": 1,
       "highVolumeCount": 38,
@@ -522,7 +522,7 @@
       "territory": [
         "TX"
       ],
-      "facilityCount": 407,
+      "facilityCount": 482,
       "physicianCount": 2720,
       "highCautiCount": 0,
       "highVolumeCount": 32,
@@ -539,7 +539,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -560,7 +560,7 @@
         "NH",
         "VT"
       ],
-      "facilityCount": 167,
+      "facilityCount": 202,
       "physicianCount": 2470,
       "highCautiCount": 1,
       "highVolumeCount": 17,
@@ -578,7 +578,7 @@
         "OK",
         "TX"
       ],
-      "facilityCount": 530,
+      "facilityCount": 614,
       "physicianCount": 3210,
       "highCautiCount": 1,
       "highVolumeCount": 37,
@@ -599,7 +599,7 @@
         "NH",
         "VT"
       ],
-      "facilityCount": 167,
+      "facilityCount": 202,
       "physicianCount": 2470,
       "highCautiCount": 1,
       "highVolumeCount": 17,
@@ -616,7 +616,7 @@
       "territory": [
         "TN"
       ],
-      "facilityCount": 101,
+      "facilityCount": 120,
       "physicianCount": 663,
       "highCautiCount": 0,
       "highVolumeCount": 13,
@@ -633,7 +633,7 @@
       "territory": [
         "FL"
       ],
-      "facilityCount": 193,
+      "facilityCount": 246,
       "physicianCount": 3075,
       "highCautiCount": 0,
       "highVolumeCount": 19,
@@ -652,7 +652,7 @@
         "MN",
         "WI"
       ],
-      "facilityCount": 369,
+      "facilityCount": 386,
       "physicianCount": 2072,
       "highCautiCount": 0,
       "highVolumeCount": 18,
@@ -669,7 +669,7 @@
       "territory": [
         "TX"
       ],
-      "facilityCount": 407,
+      "facilityCount": 482,
       "physicianCount": 2720,
       "highCautiCount": 0,
       "highVolumeCount": 32,
@@ -692,7 +692,7 @@
         "NY",
         "VT"
       ],
-      "facilityCount": 395,
+      "facilityCount": 455,
       "physicianCount": 6343,
       "highCautiCount": 4,
       "highVolumeCount": 56,
@@ -709,7 +709,7 @@
       "territory": [
         "CO"
       ],
-      "facilityCount": 88,
+      "facilityCount": 102,
       "physicianCount": 830,
       "highCautiCount": 0,
       "highVolumeCount": 5,
@@ -728,7 +728,7 @@
         "NE",
         "SD"
       ],
-      "facilityCount": 196,
+      "facilityCount": 202,
       "physicianCount": 625,
       "highCautiCount": 0,
       "highVolumeCount": 2,
@@ -746,7 +746,7 @@
         "LA",
         "TX"
       ],
-      "facilityCount": 522,
+      "facilityCount": 614,
       "physicianCount": 3305,
       "highCautiCount": 1,
       "highVolumeCount": 41,
@@ -764,7 +764,7 @@
         "OR",
         "WA"
       ],
-      "facilityCount": 152,
+      "facilityCount": 157,
       "physicianCount": 1424,
       "highCautiCount": 1,
       "highVolumeCount": 13,
@@ -781,7 +781,7 @@
       "territory": [
         "WA"
       ],
-      "facilityCount": 92,
+      "facilityCount": 96,
       "physicianCount": 827,
       "highCautiCount": 1,
       "highVolumeCount": 11,
@@ -798,7 +798,7 @@
       "territory": [
         "WA"
       ],
-      "facilityCount": 92,
+      "facilityCount": 96,
       "physicianCount": 827,
       "highCautiCount": 1,
       "highVolumeCount": 11,
@@ -818,7 +818,7 @@
         "OR",
         "WA"
       ],
-      "facilityCount": 258,
+      "facilityCount": 268,
       "physicianCount": 1865,
       "highCautiCount": 2,
       "highVolumeCount": 17,
@@ -853,7 +853,7 @@
         "GA",
         "SC"
       ],
-      "facilityCount": 194,
+      "facilityCount": 220,
       "physicianCount": 1968,
       "highCautiCount": 0,
       "highVolumeCount": 22,
@@ -871,7 +871,7 @@
         "GA",
         "SC"
       ],
-      "facilityCount": 194,
+      "facilityCount": 220,
       "physicianCount": 1968,
       "highCautiCount": 0,
       "highVolumeCount": 22,
@@ -888,7 +888,7 @@
       "territory": [
         "MO"
       ],
-      "facilityCount": 222,
+      "facilityCount": 237,
       "physicianCount": 1302,
       "highCautiCount": 0,
       "highVolumeCount": 11,
@@ -906,7 +906,7 @@
         "IA",
         "MO"
       ],
-      "facilityCount": 222,
+      "facilityCount": 237,
       "physicianCount": 1302,
       "highCautiCount": 0,
       "highVolumeCount": 11,
@@ -926,7 +926,7 @@
         "OH",
         "WV"
       ],
-      "facilityCount": 425,
+      "facilityCount": 471,
       "physicianCount": 3844,
       "highCautiCount": 2,
       "highVolumeCount": 32,
@@ -946,7 +946,7 @@
         "OH",
         "WV"
       ],
-      "facilityCount": 425,
+      "facilityCount": 471,
       "physicianCount": 3844,
       "highCautiCount": 2,
       "highVolumeCount": 32,
@@ -964,7 +964,7 @@
         "CA",
         "NV"
       ],
-      "facilityCount": 378,
+      "facilityCount": 408,
       "physicianCount": 3518,
       "highCautiCount": 1,
       "highVolumeCount": 43,
@@ -982,7 +982,7 @@
         "AR",
         "OK"
       ],
-      "facilityCount": 204,
+      "facilityCount": 221,
       "physicianCount": 742,
       "highCautiCount": 1,
       "highVolumeCount": 9,
@@ -1000,7 +1000,7 @@
         "AR",
         "OK"
       ],
-      "facilityCount": 204,
+      "facilityCount": 221,
       "physicianCount": 742,
       "highCautiCount": 1,
       "highVolumeCount": 9,
@@ -1020,7 +1020,7 @@
         "NY",
         "RI"
       ],
-      "facilityCount": 269,
+      "facilityCount": 308,
       "physicianCount": 4391,
       "highCautiCount": 2,
       "highVolumeCount": 47,
@@ -1041,7 +1041,7 @@
         "NE",
         "SD"
       ],
-      "facilityCount": 437,
+      "facilityCount": 449,
       "physicianCount": 1833,
       "highCautiCount": 0,
       "highVolumeCount": 15,
@@ -1062,7 +1062,7 @@
         "NE",
         "SD"
       ],
-      "facilityCount": 437,
+      "facilityCount": 449,
       "physicianCount": 1833,
       "highCautiCount": 0,
       "highVolumeCount": 15,
@@ -1083,7 +1083,7 @@
         "NE",
         "SD"
       ],
-      "facilityCount": 437,
+      "facilityCount": 449,
       "physicianCount": 1833,
       "highCautiCount": 0,
       "highVolumeCount": 15,
@@ -1104,7 +1104,7 @@
         "NE",
         "SD"
       ],
-      "facilityCount": 437,
+      "facilityCount": 449,
       "physicianCount": 1833,
       "highCautiCount": 0,
       "highVolumeCount": 15,

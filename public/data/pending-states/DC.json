@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "state": "DC",
+    "generated": "2026-09-16T17:47:32Z",
+    "source": "Facilities_All.xlsx",
+    "facilityCount": 5,
+    "physicianCount": 22
+  },
+  "stats": {
+    "facilityCount": 5,
+    "totalCatheterDays": 27870,
+    "physicianCount": 22
+  },
+  "facilities": [
+    {
+      "id": "090001",
+      "name": "GEORGE WASHINGTON UNIV HOSPITAL",
+      "address": "900 23RD ST NW",
+      "city": "WASHINGTON",
+      "state": "DC",
+      "zipCode": "20037",
+      "phone": "(202) 716-4605",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Vizient (MS1301), Premier (BT-NS-002)",
+      "catheterDays": 12037,
+      "observedCAUTI": 5,
+      "predictedCAUTI": 13.028,
+      "sir": 0.384,
+      "cautiStatus": "Better than the National Benchmark",
+      "priority": "STANDARD",
+      "hacStatus": "HAC_AT_RISK",
+      "physicians": [
+        {
+          "name": "Afsoon Roberts",
+          "npi": "1124114277",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Hana Akselrod",
+          "npi": "1295171353",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Jose Lucar",
+          "npi": "1780970772",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Marc Siegel",
+          "npi": "1306866140",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Maria Ruiz",
+          "npi": "1811947260",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Oleksandr Semeniuk",
+          "npi": "1528452794",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Daniel Stein",
+          "npi": "1841447513",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Michael Whalen",
+          "npi": "1164675245",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Nabil Khawand",
+          "npi": "1366455719",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Neil Mendhiratta",
+          "npi": "1023472248",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Patrick Mufarrij",
+          "npi": "1992900526",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Rachael Sussman",
+          "npi": "1366718504",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Ramez Andrawis",
+          "npi": "1326192360",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Robert Dean",
+          "npi": "1326119025",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Timothy Schneidau",
+          "npi": "1629144977",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        }
+      ],
+      "physicianCount": 15,
+      "hacTierLabel": "Tier 2 (elevated HAC risk)",
+      "hacTotalScore": 0.3419,
+      "cautiSirHac": 0.553,
+      "cautiWzScore": 0.0144,
+      "cautiVbpScore": 6,
+      "cautiVbpPerformanceRate": 0.504,
+      "starRating": 2
+    },
+    {
+      "id": "FA-2001",
+      "name": "BRIDGEPOINT HOSPITAL NATIONAL HARBORSIDE",
+      "address": "4601 Martin Luther King Jr Ave Sw",
+      "city": "WASHINGTON",
+      "state": "DC",
+      "zipCode": "20016",
+      "phone": "(202) 476-5000",
+      "hospitalType": "Rehabilitation",
+      "ownership": "",
+      "gpo": "Vizient (MS1301)",
+      "catheterDays": 8000,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 0.0,
+      "sir": null,
+      "cautiStatus": "",
+      "priority": "STANDARD",
+      "hacStatus": null,
+      "physicians": [],
+      "physicianCount": 0,
+      "hacTierLabel": null,
+      "hacTotalScore": null,
+      "cautiSirHac": null,
+      "cautiWzScore": null,
+      "cautiVbpScore": null,
+      "cautiVbpPerformanceRate": null,
+      "starRating": null
+    },
+    {
+      "id": "090003",
+      "name": "HOWARD UNIVERSITY HOSPITAL CORP",
+      "address": "2041 GEORGIA AVE NW",
+      "city": "WASHINGTON",
+      "state": "DC",
+      "zipCode": "20060",
+      "phone": "(202) 745-6100",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Voluntary non-profit - Other",
+      "gpo": "Vizient (MS1301), Premier (BT-NS-002)",
+      "catheterDays": 3883,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 5.455,
+      "sir": 0.367,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "hacStatus": "HAC_PENALIZED",
+      "physicians": [
+        {
+          "name": "Elias Mamo",
+          "npi": "1881800332",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Huda Gasmelseed",
+          "npi": "1669688461",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Jhansi Gajjala",
+          "npi": "1548437106",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Robert Delapenha",
+          "npi": "1942351291",
+          "specialty": "Infectious Disease",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Jeremy Tonkin",
+          "npi": "1447309992",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Leslie Deane",
+          "npi": "1700987153",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        },
+        {
+          "name": "Pamela Coleman",
+          "npi": "1457459778",
+          "specialty": "Urology",
+          "billsCatheterProcedures": false
+        }
+      ],
+      "physicianCount": 7,
+      "hacTierLabel": "Tier 1 (highest HAC risk)",
+      "hacTotalScore": 0.5994,
+      "cautiSirHac": 0.732,
+      "cautiWzScore": 0.4459,
+      "cautiVbpScore": 0,
+      "cautiVbpPerformanceRate": 0.709,
+      "starRating": 1
+    },
+    {
+      "id": "090008",
+      "name": "UNITED MEDICAL CENTER",
+      "address": "1310 SOUTHERN AVENUE  SE",
+      "city": "WASHINGTON",
+      "state": "DC",
+      "zipCode": "20032",
+      "phone": "(202) 574-6000",
+      "hospitalType": "Acute Care Hospitals",
+      "ownership": "Proprietary",
+      "gpo": "Vizient (MS1301), Premier (BT-NS-002)",
+      "catheterDays": 1975,
+      "observedCAUTI": 0,
+      "predictedCAUTI": 1.036,
+      "sir": 0.0,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "STANDARD",
+      "hacStatus": null,
+      "physicians": [],
+      "physicianCount": 0,
+      "hacTierLabel": "Tier 3 (lower HAC risk)",
+      "hacTotalScore": -0.1729,
+      "cautiSirHac": 0.338,
+      "cautiWzScore": -0.5039,
+      "cautiVbpScore": null,
+      "cautiVbpPerformanceRate": null,
+      "starRating": 3
+    },
+    {
+      "id": "09002F",
+      "name": "WASHINGTON DC VA MEDICAL CENTER",
+      "address": "50 IRVING STREET N.W.",
+      "city": "WASHINGTON",
+      "state": "DC",
+      "zipCode": "20422",
+      "phone": "(202) 745-8000",
+      "hospitalType": "Acute Care - Veterans Administration",
+      "ownership": "Veterans Health Administration",
+      "gpo": "Marathon Medical (FFS Approval: 36F79718D0321)",
+      "catheterDays": 1975,
+      "observedCAUTI": 2,
+      "predictedCAUTI": 4.404,
+      "sir": 0.454,
+      "cautiStatus": "No Different than National Benchmark",
+      "priority": "VA",
+      "hacStatus": null,
+      "physicians": [],
+      "physicianCount": 0,
+      "hacTierLabel": null,
+      "hacTotalScore": null,
+      "cautiSirHac": null,
+      "cautiWzScore": null,
+      "cautiVbpScore": null,
+      "cautiVbpPerformanceRate": null,
+      "starRating": 3
+    }
+  ]
+}
