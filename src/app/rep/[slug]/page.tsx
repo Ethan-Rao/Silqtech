@@ -81,7 +81,7 @@ const COMEDICAL_SLUGS = new Set(['dowdy', 'dennehy', 'murray', 'hagarty', 'colli
 const standardPricingSheets = [
   { name: 'Premier Facility Pricing Sheet', path: '/pdfs/pricing/premier-pricing.pdf' },
   { name: 'Vizient Facility Pricing Sheet', path: '/pdfs/pricing/vizient-pricing.pdf' },
-  { name: 'VA Facility Pricing Sheet (2026)', path: '/pdfs/pricing/va-pricing.pdf' },
+  { name: 'VA Facility Pricing Sheet', path: '/pdfs/pricing/va-pricing.pdf' },
 ]
 
 const comedicalPricingSheets = [
