@@ -1,0 +1,144 @@
+{
+  "generated": "2026-10-06T22:26:16.261Z",
+  "tier1": [
+    {
+      "id": "neptune",
+      "companyName": "Neptune",
+      "application": "Endoscope Lense",
+      "projectStatus": "Samples recieved 10.5",
+      "tier": 1,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "fearsome",
+      "companyName": "Fearsome",
+      "application": "PEEK Neuroimplant",
+      "projectStatus": "Samples recieved waiting optical waters",
+      "tier": 1,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "alcon",
+      "companyName": "Alcon",
+      "application": "Contact/IoL",
+      "projectStatus": "Meeting 10/5/26",
+      "tier": 1,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "abyrx",
+      "companyName": "Abyrx",
+      "application": "Bone Void Filler Syringe",
+      "projectStatus": "Second set of samples being prepared",
+      "tier": 1,
+      "lastUpdated": null,
+      "notes": []
+    }
+  ],
+  "tier2": [
+    {
+      "id": "ab",
+      "companyName": "AB",
+      "application": "Cochlear Implant",
+      "projectStatus": "Awaiting 10 SlimJs",
+      "tier": 2,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "aspero",
+      "companyName": "Aspero",
+      "application": "Endoscope Tubing",
+      "projectStatus": "Two sets of PVP coated samples being sent for testing",
+      "tier": 2,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "medicone",
+      "companyName": "Medicone",
+      "application": "Gastric Balloon",
+      "projectStatus": "Gastric Balloon. Needs to be inflated before coating. Inflation parts being sent",
+      "tier": 2,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "p-trap",
+      "companyName": "P-Trap",
+      "application": "P Trap",
+      "projectStatus": "9-11 Day Experiment Starting 10/1/26",
+      "tier": 2,
+      "lastUpdated": null,
+      "notes": []
+    }
+  ],
+  "tier3": [
+    {
+      "id": "momentum",
+      "companyName": "Ernesto Andrade/Momentum",
+      "application": "",
+      "projectStatus": "Awaiting Response on quote",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "mayo-clinic",
+      "companyName": "Mayo Clinic",
+      "application": "",
+      "projectStatus": "NDA signed",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "boston-scientific",
+      "companyName": "Boston Scientific",
+      "application": "Biliary Shunt",
+      "projectStatus": "Experimental Protocol in process. Follow up early november",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "mazon",
+      "companyName": "Mazon",
+      "application": "Sutures",
+      "projectStatus": "Term sheet being prepared",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "design-33",
+      "companyName": "Design 33",
+      "application": "",
+      "projectStatus": "PU samples being sent. Friction",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "liqid-medical",
+      "companyName": "Liqid Medical",
+      "application": "",
+      "projectStatus": "Brian to reach out",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    },
+    {
+      "id": "bmc",
+      "companyName": "BMC",
+      "application": "Penile Implant",
+      "projectStatus": "Brian to reach out",
+      "tier": 3,
+      "lastUpdated": null,
+      "notes": []
+    }
+  ]
+}

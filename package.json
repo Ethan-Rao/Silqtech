@@ -11,13 +11,17 @@
     "start": "next start",
     "lint": "next lint",
     "build:chat-badge": "node scripts/build-chat-here-badge.mjs",
-    "build:nusilq-data": "node scripts/generate-nusilq-data.mjs"
+    "build:nusilq-data": "node scripts/generate-nusilq-data.mjs",
+    "build:rd-data": "node scripts/generate-rd-data.mjs",
+    "sync:rd-files": "node scripts/sync-rd-files.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1084.0",
+    "@aws-sdk/s3-request-presigner": "^3.1146.0",
     "@hookform/resolvers": "^3.9.0",
     "clsx": "^2.1.1",
     "d3-geo": "^3.1.1",
+    "dotenv": "^18.0.6",
     "framer-motion": "^11.11.0",
     "jszip": "^3.10.1",
     "next": "14.2.18",

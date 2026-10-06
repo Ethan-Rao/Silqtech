@@ -21,7 +21,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/nusilq',
+        source: '/(nusilq|rd)',
         headers: [
           {
             key: 'Cache-Control',
