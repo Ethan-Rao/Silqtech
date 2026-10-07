@@ -28,9 +28,12 @@ const FOLDER_SLUG_MAP = {
   'Design-33': 'design-33',
   'Liqid-Medical': 'liqid-medical',
   'BMC': 'bmc',
+  'CHOC': 'choc',
+  'Ureteral-Stent': 'ureteral-stent',
 }
 
 const IGNORED_FILES = new Set(['README.md', '.DS_Store', 'Thumbs.db'])
+const MAX_BYTES = 50 * 1024 * 1024
 
 const region = process.env.DO_SPACES_REGION
 const key = process.env.DO_SPACES_KEY
@@ -74,9 +77,23 @@ for (const [folder, slug] of Object.entries(FOLDER_SLUG_MAP)) {
   for (const file of files) {
     if (IGNORED_FILES.has(file) || file.startsWith('.')) continue
     const filePath = join(folderPath, file)
-    if (!statSync(filePath).isFile()) continue
+    const stats = statSync(filePath)
+    if (!stats.isFile()) continue
 
+    const prior = previous.find(entry => entry.filename === file)
     const objectKey = `rd-files/${slug}/${file}`
+
+    if (stats.size > MAX_BYTES) {
+      console.warn(`  ⚠ SKIPPED (>50MB): ${objectKey} (${(stats.size / 1024 / 1024).toFixed(1)} MB)`)
+      manifest[slug].push({
+        filename: file,
+        description: prior?.description ?? '',
+        uploadedAt: prior?.uploadedAt ?? new Date().toISOString(),
+        oversized: true,
+      })
+      continue
+    }
+
     const body = readFileSync(filePath)
     await s3.send(new PutObjectCommand({
       Bucket: bucket,
@@ -86,11 +103,11 @@ for (const [folder, slug] of Object.entries(FOLDER_SLUG_MAP)) {
       ContentType: getContentType(extname(file)),
     }))
 
-    const prior = previous.find(entry => entry.filename === file)
     manifest[slug].push({
       filename: file,
       description: prior?.description ?? '',
       uploadedAt: prior?.uploadedAt ?? new Date().toISOString(),
+      ...(prior?.oversized ? { oversized: false } : {}),
     })
     console.log(`  ✓ Uploaded: ${objectKey}`)
   }
@@ -107,7 +124,9 @@ function getContentType(ext) {
     '.csv': 'text/csv',
     '.png': 'image/png',
     '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
     '.zip': 'application/zip',
+    '.pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
   }
   return map[ext.toLowerCase()] ?? 'application/octet-stream'
 }

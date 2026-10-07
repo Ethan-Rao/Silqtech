@@ -17,8 +17,8 @@ export function saveOverlay(overlay: Overlay): void {
   localStorage.setItem(OVERLAY_KEY, JSON.stringify(overlay))
 }
 
-function asTier(value: unknown): 1 | 2 | 3 {
-  return value === 1 || value === 2 || value === 3 ? value : 3
+function asTier(value: unknown): 1 | 2 | 3 | 4 {
+  return value === 1 || value === 2 || value === 3 || value === 4 ? value : 3
 }
 
 export function mergeData(base: RdProjectsData, overlay: Overlay): RdProjectsData {
@@ -35,10 +35,12 @@ export function mergeData(base: RdProjectsData, overlay: Overlay): RdProjectsDat
     })
   }
 
+  const tier4 = base.tier4 ?? []
   const known = new Set<string>([
     ...base.tier1.map(p => p.id),
     ...base.tier2.map(p => p.id),
     ...base.tier3.map(p => p.id),
+    ...tier4.map(p => p.id),
   ])
 
   const manuals = Object.entries(overlay)
@@ -52,13 +54,16 @@ export function mergeData(base: RdProjectsData, overlay: Overlay): RdProjectsDat
         projectStatus: override.projectStatus ?? '',
         tier: asTier(override.tier),
         lastUpdated: override.lastUpdated ?? null,
+        nreStatus: override.nreStatus ?? '',
+        isInternal: override.isInternal,
+        logoPath: override.logoPath,
         notes: [...(override.notes ?? []), ...(entry.notes ?? [])],
         source: 'manual',
       }
     })
 
-  const byTier = (tier: 1 | 2 | 3, key: TierKey) => [
-    ...applyOverlay(base[key]),
+  const byTier = (tier: 1 | 2 | 3 | 4, key: TierKey) => [
+    ...applyOverlay(key === 'tier4' ? tier4 : base[key]),
     ...manuals.filter(p => p.tier === tier),
   ]
 
@@ -67,5 +72,6 @@ export function mergeData(base: RdProjectsData, overlay: Overlay): RdProjectsDat
     tier1: byTier(1, 'tier1'),
     tier2: byTier(2, 'tier2'),
     tier3: byTier(3, 'tier3'),
+    tier4: byTier(4, 'tier4'),
   }
 }

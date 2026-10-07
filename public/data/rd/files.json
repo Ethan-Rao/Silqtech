@@ -1,17 +1,42 @@
 {
+  "ab": [
+    { "filename": "AB PPT.pptx", "description": "Advanced Bionics company overview and technical requirements presentation", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "AB QUOTATION 0625-ElectrochemicalAnalysis (1).pdf", "description": "NRE quotation for Electrochemical Analysis (June 2025)", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "AB QUOTATION 082026 Electrochemical SOW III.pdf", "description": "NRE quotation for Electrochemical Analysis SOW III (August 2026)", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "Animal Implant Results.pptx", "description": "Animal implant study results summary presentation", "uploadedAt": "2026-10-07T00:00:00.000Z", "oversized": false },
+    { "filename": "Electrochemical Analysis SOW II Data Report.pdf", "description": "Raw data and analysis for Electrochemical Analysis SOW II", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "Electrochemical Analysis SOW II Report V1.docx", "description": "Formal technical report for Electrochemical Analysis SOW II", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "ElectrodeMapping.xlsx", "description": "Electrode mapping data for cochlear implant array", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "Electrodes on PCB for SilQ_05-29-2026 (1).xlsx", "description": "PCB electrode configuration data (May 29, 2026)", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "PO Silq Aug 2026 Animal Implants.pdf", "description": "Purchase order for August 2026 animal implant experiments", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "PTW_L23_2_Fouling_EIS_1Hz.xlsx", "description": "Electrochemical Impedance Spectroscopy (EIS) fouling data at 1 Hz", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "SILQ-AB 4.29.26.pptx", "description": "Full results presentation — April 29, 2026 evaluation", "uploadedAt": "2026-10-07T00:00:00.000Z", "oversized": true },
+    { "filename": "SILQ-AB May Results.pptx", "description": "Full results presentation — May 2026 evaluation", "uploadedAt": "2026-10-07T00:00:00.000Z", "oversized": true }
+  ],
+  "abyrx": [
+    { "filename": "AbryxInc Silq Mutual NDA Mutually signed.pdf", "description": "Fully executed mutual NDA between Abyrx Inc. and Silq Technologies", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "Mix Tip Material Specification.pdf", "description": "Material specification for the mix tip syringe applicator (MONTAGE bone putty product)", "uploadedAt": "2026-10-07T00:00:00.000Z" }
+  ],
+  "aspero": [
+    { "filename": "Aspero Sample Set 2 Parameters.xlsx", "description": "Treatment parameters and specifications for Sample Set 2", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "Result Set 1 7.7.26.pptx", "description": "Results presentation for Sample Set 1 surface treatment evaluation (July 7, 2026)", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "SOP_10.7.26.docx", "description": "Standard operating procedure for Aspero endoscope tubing surface treatment (Oct 7, 2026)", "uploadedAt": "2026-10-07T00:00:00.000Z" }
+  ],
+  "p-trap": [
+    { "filename": "DataSet3.pdf", "description": "Experimental dataset 3 from the 9-day P-Trap study (started 10/4/26)", "uploadedAt": "2026-10-07T00:00:00.000Z" },
+    { "filename": "SILQ Invention Disclosure [FINAL].docx", "description": "Silq Technologies internal invention disclosure document for P-Trap technology", "uploadedAt": "2026-10-07T00:00:00.000Z" }
+  ],
   "neptune": [],
   "fearsome": [],
   "alcon": [],
-  "abyrx": [],
-  "ab": [],
-  "aspero": [],
-  "medicone": [],
-  "p-trap": [],
   "momentum": [],
   "mayo-clinic": [],
   "boston-scientific": [],
+  "medicone": [],
   "mazon": [],
   "design-33": [],
   "liqid-medical": [],
-  "bmc": []
+  "bmc": [],
+  "choc": [],
+  "ureteral-stent": []
 }

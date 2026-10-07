@@ -51,6 +51,15 @@ async function pushSpacesOverlay(overlay: Overlay): Promise<void> {
   if (!res.ok) throw new Error('Notes sync failed')
 }
 
+function sortByDate(items: RdProject[]): RdProject[] {
+  return [...items].sort((a, b) => {
+    if (!a.lastUpdated && !b.lastUpdated) return 0
+    if (!a.lastUpdated) return 1
+    if (!b.lastUpdated) return -1
+    return b.lastUpdated.localeCompare(a.lastUpdated)
+  })
+}
+
 interface RdDashboardProps {
   baseData: RdProjectsData
   filesManifest: RdFilesManifest
@@ -60,7 +69,7 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
   const [data, setData] = useState<RdProjectsData>(baseData)
   const [overlay, setOverlay] = useState<Overlay>({})
   const [search, setSearch] = useState('')
-  const [addTier, setAddTier] = useState<1 | 2 | 3 | null>(null)
+  const [addTier, setAddTier] = useState<1 | 2 | 3 | 4 | null>(null)
   const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'error'>('idle')
 
   useEffect(() => {
@@ -158,9 +167,10 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
     p.projectStatus.toLowerCase().includes(q)
 
   const filtered: Record<TierKey, RdProject[]> = {
-    tier1: data.tier1.filter(matches),
-    tier2: data.tier2.filter(matches),
-    tier3: data.tier3.filter(matches),
+    tier1: sortByDate(data.tier1.filter(matches)),
+    tier2: sortByDate(data.tier2.filter(matches)),
+    tier3: sortByDate(data.tier3.filter(matches)),
+    tier4: sortByDate((data.tier4 ?? []).filter(matches)),
   }
 
   const generated = baseData.generated
@@ -233,6 +243,7 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
               <h1 className="text-2xl font-bold text-silq-dark tracking-tight">
                 Silq R&D Project Dashboard
               </h1>
+              <p className="text-sm text-slate-400 mt-1">Last data refresh: {generated}</p>
             </div>
             <div className="shrink-0">
               <Image
@@ -270,13 +281,26 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
           onEditBase={handleEditBase}
         />
         <TierSection
-          title="Tier 3 — Awaiting External"
-          accent="muted"
+          title="Tier 3 — Pending Follow-Up"
+          accent="amber"
           projects={filtered.tier3}
           filesManifest={filesManifest}
           columns="md:grid-cols-2 lg:grid-cols-3"
           compact
           onAdd={() => setAddTier(3)}
+          onAddNote={handleAddNote}
+          onEditBase={handleEditBase}
+        />
+        <TierSection
+          title="On Hold"
+          accent="muted"
+          projects={filtered.tier4}
+          filesManifest={filesManifest}
+          columns="md:grid-cols-2 lg:grid-cols-3"
+          compact
+          collapsible
+          defaultCollapsed
+          onAdd={() => setAddTier(4)}
           onAddNote={handleAddNote}
           onEditBase={handleEditBase}
         />
@@ -296,6 +320,7 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
 const ACCENT_CONFIG = {
   blue:  { bar: 'bg-silq-blue', text: 'text-silq-blue', border: 'border-silq-blue/30' },
   teal:  { bar: 'bg-silq-teal', text: 'text-silq-teal', border: 'border-silq-teal/30' },
+  amber: { bar: 'bg-amber-500', text: 'text-amber-600', border: 'border-amber-200' },
   muted: { bar: 'bg-slate-400', text: 'text-slate-500', border: 'border-slate-300' },
 } as const
 
@@ -306,55 +331,87 @@ function TierSection({
   filesManifest,
   columns,
   compact,
+  collapsible,
+  defaultCollapsed,
   onAdd,
   onAddNote,
   onEditBase,
 }: {
   title: string
-  accent: 'blue' | 'teal' | 'muted'
+  accent: 'blue' | 'teal' | 'amber' | 'muted'
   projects: RdProject[]
   filesManifest: RdFilesManifest
   columns: string
   compact?: boolean
+  collapsible?: boolean
+  defaultCollapsed?: boolean
   onAdd: () => void
   onAddNote: (id: string, author: string, text: string) => void
   onEditBase: (id: string, updates: Partial<RdProject>) => void
 }) {
+  const [open, setOpen] = useState(!defaultCollapsed)
   const { bar, text, border } = ACCENT_CONFIG[accent]
+  const collapsed = !!collapsible && !open
+
   return (
     <section className="flex flex-col gap-3">
       <div className={`flex items-center justify-between py-2 border-b ${border}`}>
-        <div className="flex items-center gap-2.5">
-          <div className={`w-1 h-5 rounded-full ${bar}`} />
-          <h2 className={`font-semibold text-sm uppercase tracking-widest ${text}`}>
-            {title}
-          </h2>
-        </div>
-        <button
-          onClick={onAdd}
-          className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-500 hover:text-silq-blue hover:border-silq-blue/40 hover:shadow-sm transition-all font-medium"
-        >
-          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
-          </svg>
-          Add
-        </button>
+        {collapsed ? (
+          <button
+            onClick={() => setOpen(true)}
+            className={`inline-flex items-center gap-2 font-semibold text-sm ${text}`}
+          >
+            <span aria-hidden>▶</span>
+            Show On Hold ({projects.length})
+          </button>
+        ) : (
+          <div className="flex items-center gap-2.5">
+            <div className={`w-1 h-5 rounded-full ${bar}`} />
+            <h2 className={`font-semibold text-sm uppercase tracking-widest ${text}`}>
+              {title}
+              <span className="font-normal normal-case tracking-normal text-sm opacity-60 ml-2">
+                ({projects.length})
+              </span>
+            </h2>
+            {collapsible && (
+              <button
+                onClick={() => setOpen(false)}
+                className="text-xs text-slate-400 hover:text-slate-600 ml-2"
+              >
+                Hide
+              </button>
+            )}
+          </div>
+        )}
+        {!collapsed && (
+          <button
+            onClick={onAdd}
+            className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-500 hover:text-silq-blue hover:border-silq-blue/40 hover:shadow-sm transition-all font-medium"
+          >
+            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+            </svg>
+            Add
+          </button>
+        )}
       </div>
-      {projects.length === 0 ? (
-        <EmptyState />
-      ) : (
-        <div className={`grid grid-cols-1 ${columns} gap-3`}>
-          {projects.map(p => (
-            <RdProjectCard
-              key={p.id}
-              project={p}
-              files={filesManifest[p.id] ?? []}
-              onAddNote={onAddNote}
-              onEditBase={onEditBase}
-              compact={compact}
-            />
-          ))}
-        </div>
+      {!collapsed && (
+        projects.length === 0 ? (
+          <EmptyState />
+        ) : (
+          <div className={`grid grid-cols-1 ${columns} gap-3`}>
+            {projects.map(p => (
+              <RdProjectCard
+                key={p.id}
+                project={p}
+                files={filesManifest[p.id] ?? []}
+                onAddNote={onAddNote}
+                onEditBase={onEditBase}
+                compact={compact}
+              />
+            ))}
+          </div>
+        )
       )}
     </section>
   )

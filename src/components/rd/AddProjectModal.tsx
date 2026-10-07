@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import type { RdProject } from './types'
 
 interface AddProjectModalProps {
-  tier: 1 | 2 | 3
+  tier: 1 | 2 | 3 | 4
   onAdd: (project: RdProject) => void
   onClose: () => void
 }
@@ -14,10 +14,11 @@ function slugify(str: string) {
   return str.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 }
 
-const TIER_TITLE: Record<1 | 2 | 3, string> = {
+const TIER_TITLE: Record<1 | 2 | 3 | 4, string> = {
   1: 'Tier 1 — Immediate Action',
   2: 'Tier 2 — Awaiting Partner',
-  3: 'Tier 3 — Awaiting External',
+  3: 'Tier 3 — Pending Follow-Up',
+  4: 'On Hold',
 }
 
 export function AddProjectModal({ tier, onAdd, onClose }: AddProjectModalProps) {
@@ -40,6 +41,7 @@ export function AddProjectModal({ tier, onAdd, onClose }: AddProjectModalProps) 
       projectStatus: projectStatus.trim(),
       tier,
       lastUpdated: lastUpdated || null,
+      nreStatus: '',
       notes: [],
       source: 'manual',
     }

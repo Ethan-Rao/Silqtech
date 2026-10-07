@@ -21,13 +21,27 @@ const TIER_ACCENT = {
     badge: 'bg-silq-teal/10 text-silq-teal border-silq-teal/20',
   },
   3: {
+    border: 'border-l-[3px] border-l-amber-400',
+    text: 'text-amber-600',
+    bg: 'bg-amber-50',
+    hover: 'hover:bg-amber-50/40',
+    badge: 'bg-amber-50 text-amber-700 border-amber-200',
+  },
+  4: {
     border: 'border-l-[3px] border-l-slate-300',
     text: 'text-slate-500',
     bg: 'bg-slate-100',
     hover: 'hover:bg-slate-50',
-    badge: 'bg-slate-100 text-slate-500 border-slate-200',
+    badge: 'bg-slate-100 text-slate-600 border-slate-200',
   },
 } as const
+
+const NRE_BADGE: Record<string, string> = {
+  'Paid': 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  'Feasibility Initiated': 'bg-silq-blue/10 text-silq-blue border-silq-blue/20',
+  'Quote Sent': 'bg-amber-50 text-amber-700 border-amber-200',
+  'Internal': 'bg-violet-50 text-violet-700 border-violet-200',
+}
 
 function formatDate(iso: string | null | undefined): string {
   if (!iso) return '—'
@@ -103,6 +117,7 @@ interface RdProjectCardProps {
 export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }: RdProjectCardProps) {
   const [expanded, setExpanded] = useState(false)
   const [editing, setEditing] = useState(false)
+  const [logoFailed, setLogoFailed] = useState(false)
   const [editState, setEditState] = useState({
     companyName: '',
     application: '',
@@ -111,7 +126,8 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
   })
 
   const accent = TIER_ACCENT[project.tier]
-  const tierLabel = project.tier === 1 ? 'Tier 1' : project.tier === 2 ? 'Tier 2' : 'Tier 3'
+  const tierLabel = project.tier === 4 ? 'On Hold' : `Tier ${project.tier}`
+  const nreClass = NRE_BADGE[project.nreStatus]
 
   const startEditing = () => {
     setEditState({
@@ -140,6 +156,7 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
         'bg-white rounded-xl border border-slate-100 shadow-sm',
         'overflow-hidden transition-shadow duration-200 hover:shadow-md',
         accent.border,
+        project.tier === 4 ? 'opacity-80 hover:opacity-100' : '',
         expanded ? 'col-span-full' : '',
       ].join(' ')}
     >
@@ -164,6 +181,21 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
             )}
           </div>
 
+          {(nreClass || project.isInternal) && (
+            <div className="mt-1.5 flex items-center gap-1.5 flex-wrap">
+              {nreClass && (
+                <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded border leading-none ${nreClass}`}>
+                  {project.nreStatus}
+                </span>
+              )}
+              {project.isInternal && (
+                <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-violet-50 text-violet-700 border border-violet-200">
+                  ⚙ Internal
+                </span>
+              )}
+            </div>
+          )}
+
           {project.application && (
             <p className="text-xs text-slate-400 mt-0.5 truncate">{project.application}</p>
           )}
@@ -176,6 +208,16 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
         </div>
 
         <div className="flex flex-col items-end gap-1.5 shrink-0 pt-0.5">
+          {project.logoPath && !logoFailed && (
+            <div className="shrink-0 w-12 h-8 flex items-center justify-end">
+              <img
+                src={project.logoPath}
+                alt={`${project.companyName} logo`}
+                className="max-h-7 max-w-[48px] object-contain opacity-75"
+                onError={() => setLogoFailed(true)}
+              />
+            </div>
+          )}
           {project.lastUpdated && (
             <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap tabular-nums">
               {formatDate(project.lastUpdated)}
@@ -210,7 +252,11 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
                 <dl className="space-y-2">
                   <Field label="Status" value={project.projectStatus} />
                   <Field label="Application" value={project.application} />
+                  <Field label="NRE Status" value={project.nreStatus} />
                   <Field label="Last Updated" value={formatDate(project.lastUpdated)} />
+                  {project.isInternal && (
+                    <p className="text-xs text-slate-400 italic">This is a Silq internal R&D project.</p>
+                  )}
                   <div className="flex gap-3 text-sm">
                     <dt className="text-slate-400 shrink-0 w-28">Tier</dt>
                     <dd>
@@ -273,18 +319,34 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
                 ) : (
                   <div className="flex flex-col gap-2">
                     {files.map(f => (
-                      <a
-                        key={f.filename}
-                        href={`/api/rd/download?slug=${project.id}&file=${encodeURIComponent(f.filename)}`}
-                        className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-silq-blue/40 hover:bg-silq-blue/5 transition-all text-sm text-slate-700 hover:text-silq-blue"
-                        download
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FileIcon ext={getExt(f.filename)} />
-                        <span className="font-medium truncate max-w-xs">{f.filename}</span>
-                        {f.description && <span className="text-xs text-slate-400 truncate">— {f.description}</span>}
-                      </a>
+                      f.oversized ? (
+                        <div
+                          key={f.filename}
+                          className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-50 border border-dashed border-slate-200 text-sm text-slate-400"
+                        >
+                          <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                          <span className="truncate max-w-xs">{f.filename}</span>
+                          {f.description && <span className="text-xs truncate">— {f.description}</span>}
+                          <span className="ml-auto text-xs font-medium text-amber-600 whitespace-nowrap">
+                            Large file — contact Ethan
+                          </span>
+                        </div>
+                      ) : (
+                        <a
+                          key={f.filename}
+                          href={`/api/rd/download?slug=${project.id}&file=${encodeURIComponent(f.filename)}`}
+                          className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-silq-blue/40 hover:bg-silq-blue/5 transition-all text-sm text-slate-700 hover:text-silq-blue"
+                          download
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FileIcon ext={getExt(f.filename)} />
+                          <span className="font-medium truncate max-w-xs">{f.filename}</span>
+                          {f.description && <span className="text-xs text-slate-400 truncate">— {f.description}</span>}
+                        </a>
+                      )
                     ))}
                   </div>
                 )}
