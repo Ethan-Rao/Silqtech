@@ -1,13 +1,25 @@
 {
-  "generated": "2026-10-07T18:10:09.885Z",
+  "generated": "2026-10-19T17:04:47.479Z",
   "tier1": [
+    {
+      "id": "ab",
+      "companyName": "AB",
+      "application": "Cochlear Implant",
+      "projectStatus": "10 SlimJs to be coated for AB Friction Testing. 5 with Primer, 5 without primer",
+      "tier": 1,
+      "lastUpdated": "2026-10-19",
+      "nreStatus": "Paid",
+      "isInternal": false,
+      "notes": [],
+      "logoPath": "/images/rd-logos/ab.svg"
+    },
     {
       "id": "neptune",
       "companyName": "Neptune",
       "application": "Endoscope Lense",
-      "projectStatus": "Silq to return Two sets of 10 samples. Received 10/5",
+      "projectStatus": "Silq to return Two sets of 10 samples. Received 10/16",
       "tier": 1,
-      "lastUpdated": "2026-10-07",
+      "lastUpdated": "2026-10-19",
       "nreStatus": "Paid",
       "isInternal": false,
       "notes": [],
@@ -17,9 +29,9 @@
       "id": "fearsome",
       "companyName": "Fearsome",
       "application": "PEEK Neuroimplant",
-      "projectStatus": "Samples recieved awaiting optical waters",
+      "projectStatus": "Assembling components to power setup",
       "tier": 1,
-      "lastUpdated": "2026-10-04",
+      "lastUpdated": "2026-10-19",
       "nreStatus": "Paid",
       "isInternal": false,
       "notes": []
@@ -40,27 +52,15 @@
       "id": "abyrx",
       "companyName": "Abyrx",
       "application": "Bone Void Filler Syringe",
-      "projectStatus": "Second set of samples being prepared. Min to perform Instron 10/10/26",
+      "projectStatus": "Meeting 10.19",
       "tier": 1,
-      "lastUpdated": "2026-10-07",
+      "lastUpdated": "2026-10-19",
       "nreStatus": "Paid",
       "isInternal": false,
       "notes": []
     }
   ],
   "tier2": [
-    {
-      "id": "ab",
-      "companyName": "AB",
-      "application": "Cochlear Implant",
-      "projectStatus": "Awaiting 10 SlimJs to be coated for AB Friction Testing. 5 with Primer, 5 without primer",
-      "tier": 2,
-      "lastUpdated": "2026-10-07",
-      "nreStatus": "Paid",
-      "isInternal": false,
-      "notes": [],
-      "logoPath": "/images/rd-logos/ab.svg"
-    },
     {
       "id": "aspero",
       "companyName": "Aspero",
