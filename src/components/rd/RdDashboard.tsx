@@ -80,7 +80,7 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
     setSyncStatus('syncing')
     fetchSpacesOverlay()
       .then(spaces => {
-        const merged = mergeOverlays(spaces, local)
+        const merged = mergeOverlays(local, spaces)
         setOverlay(merged)
         saveOverlay(merged)
         setData(mergeData(baseData, merged))

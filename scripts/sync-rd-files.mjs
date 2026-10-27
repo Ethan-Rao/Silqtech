@@ -69,7 +69,10 @@ const manifest = {}
 for (const [folder, slug] of Object.entries(FOLDER_SLUG_MAP)) {
   const folderPath = join(RD_ROOT, folder)
   let files
-  try { files = readdirSync(folderPath) } catch { continue }
+  try { files = readdirSync(folderPath) } catch {
+    manifest[slug] = Array.isArray(existing[slug]) ? existing[slug] : []
+    continue
+  }
 
   manifest[slug] = []
   const previous = Array.isArray(existing[slug]) ? existing[slug] : []
