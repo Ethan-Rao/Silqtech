@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { RdProjectCard } from './RdProjectCard'
 import { AddProjectModal } from './AddProjectModal'
+import { EmailDigestModal } from './EmailDigestModal'
 import { loadOverlay, saveOverlay, mergeData } from './overlay'
 import type {
   RdProjectsData,
@@ -71,6 +72,7 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
   const [search, setSearch] = useState('')
   const [addTier, setAddTier] = useState<1 | 2 | 3 | 4 | null>(null)
   const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'error'>('idle')
+  const [emailOpen, setEmailOpen] = useState(false)
 
   useEffect(() => {
     const local = loadOverlay()
@@ -224,6 +226,15 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
               </span>
             )}
             <button
+              onClick={() => setEmailOpen(true)}
+              className="inline-flex items-center gap-2 text-xs px-3.5 py-2 rounded-lg border border-white/15 text-white/55 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Email team
+            </button>
+            <button
               onClick={handleExport}
               className="inline-flex items-center gap-2 text-xs px-3.5 py-2 rounded-lg border border-white/15 text-white/55 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all"
             >
@@ -305,6 +316,18 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
           onEditBase={handleEditBase}
         />
       </main>
+
+      {emailOpen && (
+        <EmailDigestModal
+          projects={{
+            ...data,
+            tier1: sortByDate(data.tier1),
+            tier2: sortByDate(data.tier2),
+            tier3: sortByDate(data.tier3),
+          }}
+          onClose={() => setEmailOpen(false)}
+        />
+      )}
 
       {addTier && (
         <AddProjectModal
