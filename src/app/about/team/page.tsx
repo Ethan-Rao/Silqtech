@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: 'D. Verne Sharma',
     credentials: 'MBA',
-    title: 'Executive Chairman',
+    title: 'Executive Chairman, Board of Directors',
     image: '/images/team/verne-sharma.jpg',
     bio: 'D. Verne Sharma is a former Chairman, Chief Executive Officer and President of both public and private companies. Mr. Sharma was most recently Chairman, CEO and President of Rx Sight Inc. (formerly Calhoun Vision Inc.), serving from 2008 until his retirement in early 2015. Rx Sight developed an intraocular lens that can be adjusted to the precise prescription of each patient by application of light, eliminating the need for glasses. The company received FDA approval in November 2017. Mr. Sharma has had 25 years of senior level medical device experience at public companies including General Electric Medical Systems, US Surgical Corp. and Summit Technology Inc. As President and COO of Summit, he pioneered the development and worldwide commercialization of LASIK, leading to the sale of the company in 2000 for $963 million. He served on the Board of American Medical Systems (acquired for $3 billion in 2011) and was a director of ZetaRx, which was acquired by Juno Therapeutics in 2013 (Juno was later acquired by Celgene for $10.1 billion). Mr. Sharma holds an MBA with distinction from the Wharton School of the University of Pennsylvania and an undergraduate degree in Chemical Engineering from the University of the West Indies.',
     shortBio: 'Former Chairman, CEO and President of Rx Sight Inc. 25 years of senior medical device experience at GE Medical Systems, US Surgical Corp, and Summit Technology. Pioneered LASIK commercialization. MBA from Wharton.',
