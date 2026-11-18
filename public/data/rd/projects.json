@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T00:05:22.399Z",
+  "generated": "2026-11-18T00:20:57.913Z",
   "tier1": [
     {
       "id": "fearsome",
@@ -11,7 +11,8 @@
       "nreStatus": "Paid",
       "isInternal": false,
       "owners": [
-        "Ethan"
+        "Ethan",
+        "Min"
       ],
       "notes": []
     },
@@ -74,7 +75,7 @@
       "id": "ureteral-stent-tensile",
       "companyName": "Ureteral Stent Tensile",
       "application": "Ureteral Stent",
-      "projectStatus": "Min to test 1 Sample on Instron",
+      "projectStatus": "Min to test on Instron",
       "tier": 1,
       "lastUpdated": "2026-11-16",
       "nreStatus": "Internal",
@@ -88,7 +89,7 @@
       "id": "ureteral-stent-retention",
       "companyName": "Ureteral Stent Retention",
       "application": "Ureteral Stent",
-      "projectStatus": "Min to evaluate (potentially on 2nd iteration)",
+      "projectStatus": "Min to evaluate (likely will need to repeat on 2nd iteration)",
       "tier": 1,
       "lastUpdated": "2026-11-16",
       "nreStatus": "Internal",

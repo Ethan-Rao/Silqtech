@@ -114,7 +114,7 @@ function projectText(project: RdProject): string {
 
 function emailSections(projects: RdProjectsData, name: string) {
   return [
-    { title: 'Your priorities', color: '#1C2333', items: prioritiesFor(projects, name) },
+    { title: `${name} Action Items`, color: '#1C2333', items: prioritiesFor(projects, name) },
     ...CLASS_SECTIONS.map(section => ({
       title: section.title,
       color: section.color,

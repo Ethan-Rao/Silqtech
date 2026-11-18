@@ -220,7 +220,7 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
                 {intro.trim() && (
                   <p className="text-sm text-slate-700 whitespace-pre-wrap mb-4">{intro.trim()}</p>
                 )}
-                <PreviewSection title="Your priorities" titleClass="text-slate-700" border="border-l-slate-800" projects={personal} />
+                <PreviewSection title={`${previewMember.name} Action Items`} titleClass="text-slate-700" border="border-l-slate-800" projects={personal} />
                 {CLASS_SECTIONS.map(section => (
                   <PreviewSection
                     key={section.key}
