@@ -20,6 +20,13 @@ function excelSerialToISO(serial) {
   return date.toISOString().slice(0, 10)
 }
 
+function parseOwners(value) {
+  return String(value || '')
+    .split(',')
+    .map(name => name.trim())
+    .filter(Boolean)
+}
+
 const SLUG_OVERRIDES = {
   'Ernesto Andrade/Momentum': 'momentum',
   'P-Trap': 'p-trap',
@@ -91,6 +98,7 @@ for (const row of rows) {
     lastUpdated: excelSerialToISO(row['Last Updated']),
     nreStatus,
     isInternal: nreStatus.toLowerCase() === 'internal',
+    owners: parseOwners(row['Owner']),
     notes: [],
   }
   if (priorById[slug]?.logoPath) entry.logoPath = priorById[slug].logoPath

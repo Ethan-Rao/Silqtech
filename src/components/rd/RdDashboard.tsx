@@ -61,6 +61,16 @@ function sortByDate(items: RdProject[]): RdProject[] {
   })
 }
 
+function isUreteralSubproject(project: RdProject): boolean {
+  return project.companyName.startsWith('Ureteral Stent ')
+}
+
+function arrangeTier(items: RdProject[]): RdProject[] {
+  const stents = items.filter(isUreteralSubproject)
+  const rest = sortByDate(items.filter(project => !isUreteralSubproject(project)))
+  return [...rest, ...stents]
+}
+
 interface RdDashboardProps {
   baseData: RdProjectsData
   filesManifest: RdFilesManifest
@@ -169,10 +179,10 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
     p.projectStatus.toLowerCase().includes(q)
 
   const filtered: Record<TierKey, RdProject[]> = {
-    tier1: sortByDate(data.tier1.filter(matches)),
-    tier2: sortByDate(data.tier2.filter(matches)),
-    tier3: sortByDate(data.tier3.filter(matches)),
-    tier4: sortByDate((data.tier4 ?? []).filter(matches)),
+    tier1: arrangeTier(data.tier1.filter(matches)),
+    tier2: arrangeTier(data.tier2.filter(matches)),
+    tier3: arrangeTier(data.tier3.filter(matches)),
+    tier4: arrangeTier((data.tier4 ?? []).filter(matches)),
   }
 
   const generated = baseData.generated
@@ -321,9 +331,9 @@ export function RdDashboard({ baseData, filesManifest }: RdDashboardProps) {
         <EmailDigestModal
           projects={{
             ...data,
-            tier1: sortByDate(data.tier1),
-            tier2: sortByDate(data.tier2),
-            tier3: sortByDate(data.tier3),
+            tier1: arrangeTier(data.tier1),
+            tier2: arrangeTier(data.tier2),
+            tier3: arrangeTier(data.tier3),
           }}
           onClose={() => setEmailOpen(false)}
         />
@@ -375,6 +385,8 @@ function TierSection({
   const [open, setOpen] = useState(!defaultCollapsed)
   const { bar, text, border } = ACCENT_CONFIG[accent]
   const collapsed = !!collapsible && !open
+  const stents = projects.filter(isUreteralSubproject)
+  const primary = projects.filter(project => !isUreteralSubproject(project))
 
   return (
     <section className="flex flex-col gap-3">
@@ -419,20 +431,42 @@ function TierSection({
         )}
       </div>
       {!collapsed && (
-        projects.length === 0 ? (
+        primary.length === 0 && stents.length === 0 ? (
           <EmptyState />
         ) : (
-          <div className={`grid grid-cols-1 ${columns} gap-3`}>
-            {projects.map(p => (
-              <RdProjectCard
-                key={p.id}
-                project={p}
-                files={filesManifest[p.id] ?? []}
-                onAddNote={onAddNote}
-                onEditBase={onEditBase}
-                compact={compact}
-              />
-            ))}
+          <div className="flex flex-col gap-3">
+            {primary.length > 0 && (
+              <div className={`grid grid-cols-1 ${columns} gap-3`}>
+                {primary.map(p => (
+                  <RdProjectCard
+                    key={p.id}
+                    project={p}
+                    files={filesManifest[p.id] ?? []}
+                    onAddNote={onAddNote}
+                    onEditBase={onEditBase}
+                    compact={compact}
+                  />
+                ))}
+              </div>
+            )}
+            {stents.length > 0 && (
+              <div className="flex flex-col gap-2">
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">Ureteral Stent</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2">
+                  {stents.map(p => (
+                    <RdProjectCard
+                      key={p.id}
+                      project={p}
+                      files={filesManifest[p.id] ?? []}
+                      onAddNote={onAddNote}
+                      onEditBase={onEditBase}
+                      compact
+                      dense
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )
       )}

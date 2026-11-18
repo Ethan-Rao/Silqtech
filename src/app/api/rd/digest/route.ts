@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import type { NoteEntry, RdProject, RdProjectsData } from '@/components/rd/types'
+import { memberByEmail, prioritiesFor, type RdTeamMember } from '@/lib/rd/team'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -12,10 +13,11 @@ const MAX_RECIPIENTS = 20
 const MAX_INTRO = 2000
 const MAX_NOTE = 5000
 
-const SECTIONS = [
-  { key: 'tier1' as const, title: 'Tier 1 — Immediate Action', color: '#1B6CA8' },
-  { key: 'tier2' as const, title: 'Tier 2 — Awaiting Partner', color: '#1F8A8A' },
-  { key: 'tier3' as const, title: 'Tier 3 — Pending Follow-Up', color: '#D97706' },
+const SUBJECT = 'Silq NRE Project Weekly Brief'
+
+const CLASS_SECTIONS = [
+  { key: 'tier1' as const, title: 'Class I — Immediate Action', color: '#1B6CA8' },
+  { key: 'tier2' as const, title: 'Class II — Awaiting Partner', color: '#1F8A8A' },
 ]
 
 function escapeHtml(value: string): string {
@@ -39,15 +41,6 @@ function formatSent(date: Date): string {
     year: 'numeric',
     hour: 'numeric',
     minute: '2-digit',
-  })
-}
-
-function formatSubjectDate(date: Date): string {
-  return date.toLocaleDateString('en-US', {
-    timeZone: 'America/Los_Angeles',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
   })
 }
 
@@ -119,17 +112,27 @@ function projectText(project: RdProject): string {
   return lines.join('\n')
 }
 
-function buildText(intro: string, projects: RdProjectsData, sentAt: Date): string {
-  const parts = ['Silq R&D update', formatSent(sentAt)]
+function emailSections(projects: RdProjectsData, name: string) {
+  return [
+    { title: 'Your priorities', color: '#1C2333', items: prioritiesFor(projects, name) },
+    ...CLASS_SECTIONS.map(section => ({
+      title: section.title,
+      color: section.color,
+      items: projects[section.key] ?? [],
+    })),
+  ]
+}
+
+function buildText(intro: string, projects: RdProjectsData, sentAt: Date, name: string): string {
+  const parts = ['Silq NRE Project Weekly Brief', formatSent(sentAt), `Prepared for ${name}`]
   if (intro) parts.push('', intro)
-  for (const section of SECTIONS) {
-    const items = projects[section.key] ?? []
+  for (const section of emailSections(projects, name)) {
     parts.push('', section.title)
-    if (items.length === 0) {
+    if (section.items.length === 0) {
       parts.push('None.')
       continue
     }
-    for (const project of items) {
+    for (const project of section.items) {
       parts.push('', projectText(project))
     }
   }
@@ -167,11 +170,10 @@ function projectHtml(project: RdProject, color: string): string {
   </div>`
 }
 
-function buildHtml(intro: string, projects: RdProjectsData, sentAt: Date): string {
-  const sections = SECTIONS.map(section => {
-    const items = projects[section.key] ?? []
-    const body = items.length
-      ? items.map(project => projectHtml(project, section.color)).join('')
+function buildHtml(intro: string, projects: RdProjectsData, sentAt: Date, name: string): string {
+  const sections = emailSections(projects, name).map(section => {
+    const body = section.items.length
+      ? section.items.map(project => projectHtml(project, section.color)).join('')
       : `<p style="margin:0 0 16px;color:#64748b;font-size:14px;">None.</p>`
     return `<h2 style="margin:24px 0 12px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:${section.color};">${escapeHtml(section.title)}</h2>${body}`
   }).join('')
@@ -183,8 +185,9 @@ function buildHtml(intro: string, projects: RdProjectsData, sentAt: Date): strin
 <body style="margin:0;padding:24px;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#0f172a;">
   <div style="max-width:640px;margin:0 auto;background:#ffffff;border-radius:12px;overflow:hidden;">
     <div style="background:#1C2333;color:#ffffff;padding:24px;">
-      <h1 style="margin:0;font-size:22px;">Silq R&amp;D update</h1>
+      <h1 style="margin:0;font-size:22px;">Silq NRE Project Weekly Brief</h1>
       <p style="margin:8px 0 0;font-size:13px;color:#cbd5e1;">${escapeHtml(formatSent(sentAt))}</p>
+      <p style="margin:4px 0 0;font-size:13px;color:#cbd5e1;">Prepared for ${escapeHtml(name)}</p>
     </div>
     <div style="padding:8px 24px 24px;">
       ${introBlock}
@@ -217,8 +220,17 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: parsed.error }, { status: 400 })
   }
 
+  const members: RdTeamMember[] = []
+  for (const email of parsed.recipients) {
+    const member = memberByEmail(email)
+    if (!member) {
+      return NextResponse.json({ error: 'Choose a team member' }, { status: 400 })
+    }
+    members.push(member)
+  }
+
   const projects = body.projects
-  if (!projects || !isProjectArray(projects.tier1) || !isProjectArray(projects.tier2) || !isProjectArray(projects.tier3)) {
+  if (!projects || !isProjectArray(projects.tier1) || !isProjectArray(projects.tier2)) {
     return NextResponse.json({ error: 'Project data is missing' }, { status: 400 })
   }
 
@@ -233,24 +245,27 @@ export async function POST(req: Request) {
   }
 
   const sentAt = new Date()
-  const subject = `Silq R&D update — ${formatSubjectDate(sentAt)}`
+  const sentTo: string[] = []
 
   try {
     const resend = new Resend(apiKey)
-    await resend.emails.send({
-      from: process.env.EMAIL_FROM || 'Silq Website <noreply@silq.tech>',
-      to: parsed.recipients,
-      replyTo: REPLY_TO,
-      subject,
-      html: buildHtml(intro, projects, sentAt),
-      text: buildText(intro, projects, sentAt),
-    })
+    for (const member of members) {
+      await resend.emails.send({
+        from: process.env.EMAIL_FROM || 'Silq Website <noreply@silq.tech>',
+        to: member.email,
+        replyTo: REPLY_TO,
+        subject: SUBJECT,
+        html: buildHtml(intro, projects, sentAt, member.name),
+        text: buildText(intro, projects, sentAt, member.name),
+      })
+      sentTo.push(member.email)
+    }
   } catch (err) {
     console.error('[POST /api/rd/digest]', sentAt.toISOString(), err instanceof Error ? err.name : 'send failed')
     const message = err instanceof Error && err.message ? err.message : 'Email failed to send'
     return NextResponse.json({ error: message }, { status: 500 })
   }
 
-  console.log('[POST /api/rd/digest]', sentAt.toISOString(), 'recipients', parsed.recipients.length)
-  return NextResponse.json({ ok: true, sentTo: parsed.recipients })
+  console.log('[POST /api/rd/digest]', sentAt.toISOString(), 'recipients', sentTo.length)
+  return NextResponse.json({ ok: true, sentTo })
 }

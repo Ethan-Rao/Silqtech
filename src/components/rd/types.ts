@@ -15,6 +15,7 @@ export interface RdProject {
   nreStatus: string
   isInternal?: boolean
   logoPath?: string
+  owners?: string[]
   notes: NoteEntry[]
   source?: 'excel' | 'manual'
   _edited?: boolean

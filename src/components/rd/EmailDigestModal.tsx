@@ -3,31 +3,15 @@
 import { useEffect, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { RdProject, RdProjectsData } from './types'
+import { RD_TEAM, prioritiesFor } from '@/lib/rd/team'
 
 const RECIPIENTS_KEY = 'rd-digest-recipients'
 const DASHBOARD_PASSWORD = 'Membrane1'
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const MAX_RECIPIENTS = 20
 
-const SECTIONS = [
-  { key: 'tier1' as const, title: 'Tier 1 — Immediate Action', border: 'border-l-silq-blue', titleClass: 'text-silq-blue' },
-  { key: 'tier2' as const, title: 'Tier 2 — Awaiting Partner', border: 'border-l-silq-teal', titleClass: 'text-silq-teal' },
-  { key: 'tier3' as const, title: 'Tier 3 — Pending Follow-Up', border: 'border-l-amber-500', titleClass: 'text-amber-600' },
+const CLASS_SECTIONS = [
+  { key: 'tier1' as const, title: 'Class I — Immediate Action', border: 'border-l-silq-blue', titleClass: 'text-silq-blue' },
+  { key: 'tier2' as const, title: 'Class II — Awaiting Partner', border: 'border-l-silq-teal', titleClass: 'text-silq-teal' },
 ]
-
-function parseRecipients(raw: string): { valid: string[]; invalid: string[] } {
-  const seen = new Set<string>()
-  const valid: string[] = []
-  const invalid: string[] = []
-  for (const token of raw.split(/[,;\n]+/)) {
-    const email = token.trim().toLowerCase()
-    if (!email || seen.has(email)) continue
-    seen.add(email)
-    if (EMAIL_PATTERN.test(email)) valid.push(email)
-    else invalid.push(email)
-  }
-  return { valid, invalid }
-}
 
 function formatDay(iso: string | null | undefined): string {
   if (!iso) return '—'
@@ -61,7 +45,8 @@ interface EmailDigestModalProps {
 }
 
 export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
-  const [recipients, setRecipients] = useState('')
+  const [selected, setSelected] = useState<string[]>(RD_TEAM.map(member => member.email))
+  const [previewEmail, setPreviewEmail] = useState(RD_TEAM[0].email)
   const [intro, setIntro] = useState('')
   const [sending, setSending] = useState(false)
   const [error, setError] = useState('')
@@ -69,12 +54,36 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
 
   useEffect(() => {
     const saved = localStorage.getItem(RECIPIENTS_KEY)
-    if (saved) setRecipients(saved)
+    if (!saved) return
+    try {
+      const parsed = JSON.parse(saved) as unknown
+      if (!Array.isArray(parsed)) return
+      const emails = parsed.filter((email): email is string =>
+        typeof email === 'string' && RD_TEAM.some(member => member.email === email)
+      )
+      if (emails.length > 0) {
+        setSelected(emails)
+        setPreviewEmail(emails[0])
+      }
+    } catch {
+      // Older saves were a plain address string. Start from the full team.
+    }
   }, [])
 
-  const parsed = useMemo(() => parseRecipients(recipients), [recipients])
-  const tooMany = parsed.valid.length > MAX_RECIPIENTS
-  const canSend = parsed.valid.length > 0 && parsed.invalid.length === 0 && !tooMany && !sending
+  const previewMember = RD_TEAM.find(member => member.email === previewEmail) ?? RD_TEAM[0]
+  const personal = useMemo(
+    () => prioritiesFor(projects, previewMember.name),
+    [projects, previewMember.name],
+  )
+  const canSend = selected.length > 0 && !sending
+
+  const toggle = (email: string) => {
+    setSelected(current => {
+      const next = current.includes(email) ? current.filter(item => item !== email) : [...current, email]
+      if (!next.includes(previewEmail) && next.length > 0) setPreviewEmail(next[0])
+      return next
+    })
+  }
 
   const handleClose = () => {
     if (sending) return
@@ -92,7 +101,7 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
         body: JSON.stringify({
           password: DASHBOARD_PASSWORD,
           intro: intro.trim(),
-          recipients: parsed.valid,
+          recipients: selected,
           projects,
         }),
       })
@@ -102,8 +111,8 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
         setSending(false)
         return
       }
-      const sent = body.sentTo ?? parsed.valid
-      localStorage.setItem(RECIPIENTS_KEY, sent.join(', '))
+      const sent = body.sentTo ?? selected
+      localStorage.setItem(RECIPIENTS_KEY, JSON.stringify(sent))
       setSentTo(sent)
       setSending(false)
     } catch {
@@ -158,24 +167,26 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
           ) : (
             <>
               <p className="text-sm text-slate-500 mb-5">
-                Sends Tiers 1–3 as they look on this dashboard. Files and On Hold projects are not included.
+                Each person gets their own email. Their projects are listed first, then every Class I and Class II project. Pending Follow-Up, On Hold, and files are not included.
               </p>
 
-              <label className="block text-sm font-medium text-silq-dark mb-1" htmlFor="rd-digest-to">To</label>
-              <textarea
-                id="rd-digest-to"
-                value={recipients}
-                onChange={e => setRecipients(e.target.value)}
-                rows={2}
-                placeholder="name@company.com, other@company.com"
-                className="w-full px-3 py-2 rounded-lg border border-silq-dark/20 focus:border-silq-blue focus:ring-1 focus:ring-silq-blue/20 outline-none text-sm"
-              />
-              {parsed.invalid.length > 0 && (
-                <p className="text-red-500 text-xs mt-1">Check the email addresses.</p>
-              )}
-              {tooMany && (
-                <p className="text-red-500 text-xs mt-1">Send to 20 recipients or fewer.</p>
-              )}
+              <p className="block text-sm font-medium text-silq-dark mb-2">To</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {RD_TEAM.map(member => (
+                  <label key={member.email} className="flex items-start gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm">
+                    <input
+                      type="checkbox"
+                      className="mt-0.5"
+                      checked={selected.includes(member.email)}
+                      onChange={() => toggle(member.email)}
+                    />
+                    <span>
+                      <span className="font-medium text-slate-800">{member.name}</span>
+                      <span className="block text-xs text-slate-400">{member.email}</span>
+                    </span>
+                  </label>
+                ))}
+              </div>
 
               <label className="block text-sm font-medium text-silq-dark mt-4 mb-1" htmlFor="rd-digest-note">
                 Note for this update
@@ -191,25 +202,34 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
               />
 
               <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-4">
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-3">Preview</p>
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Preview</p>
+                  <label className="text-xs text-slate-500 flex items-center gap-2">
+                    As
+                    <select
+                      value={previewMember.email}
+                      onChange={e => setPreviewEmail(e.target.value)}
+                      className="rounded-md border border-slate-200 bg-white px-2 py-1 text-xs text-slate-700"
+                    >
+                      {RD_TEAM.filter(member => selected.includes(member.email)).map(member => (
+                        <option key={member.email} value={member.email}>{member.name}</option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
                 {intro.trim() && (
                   <p className="text-sm text-slate-700 whitespace-pre-wrap mb-4">{intro.trim()}</p>
                 )}
-                {SECTIONS.map(section => {
-                  const items = projects[section.key] ?? []
-                  return (
-                    <div key={section.key} className="mb-4 last:mb-0">
-                      <h3 className={`text-xs font-semibold uppercase tracking-widest mb-2 ${section.titleClass}`}>
-                        {section.title}
-                      </h3>
-                      {items.length === 0 ? (
-                        <p className="text-sm text-slate-400">None.</p>
-                      ) : items.map(project => (
-                        <PreviewProject key={project.id} project={project} border={section.border} />
-                      ))}
-                    </div>
-                  )
-                })}
+                <PreviewSection title="Your priorities" titleClass="text-slate-700" border="border-l-slate-800" projects={personal} />
+                {CLASS_SECTIONS.map(section => (
+                  <PreviewSection
+                    key={section.key}
+                    title={section.title}
+                    titleClass={section.titleClass}
+                    border={section.border}
+                    projects={projects[section.key] ?? []}
+                  />
+                ))}
               </div>
 
               {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
@@ -237,6 +257,29 @@ export function EmailDigestModal({ projects, onClose }: EmailDigestModalProps) {
         </motion.div>
       </motion.div>
     </AnimatePresence>
+  )
+}
+
+function PreviewSection({
+  title,
+  titleClass,
+  border,
+  projects,
+}: {
+  title: string
+  titleClass: string
+  border: string
+  projects: RdProject[]
+}) {
+  return (
+    <div className="mb-4 last:mb-0">
+      <h3 className={`text-xs font-semibold uppercase tracking-widest mb-2 ${titleClass}`}>{title}</h3>
+      {projects.length === 0 ? (
+        <p className="text-sm text-slate-400">None.</p>
+      ) : projects.map(project => (
+        <PreviewProject key={`${title}-${project.id}`} project={project} border={border} />
+      ))}
+    </div>
   )
 }
 

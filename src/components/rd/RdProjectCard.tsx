@@ -112,9 +112,10 @@ interface RdProjectCardProps {
   onAddNote: (id: string, author: string, text: string) => void
   onEditBase: (id: string, updates: Partial<RdProject>) => void
   compact?: boolean
+  dense?: boolean
 }
 
-export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }: RdProjectCardProps) {
+export function RdProjectCard({ project, files, onAddNote, onEditBase, compact, dense }: RdProjectCardProps) {
   const [expanded, setExpanded] = useState(false)
   const [editing, setEditing] = useState(false)
   const [logoFailed, setLogoFailed] = useState(false)
@@ -162,11 +163,11 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
     >
       <button
         onClick={() => setExpanded(v => !v)}
-        className={`w-full text-left ${compact ? 'px-3.5 py-3' : 'px-4 py-3.5'} flex items-start gap-3 transition-colors ${accent.hover}`}
+        className={`w-full text-left ${dense ? 'px-3 py-2' : compact ? 'px-3.5 py-3' : 'px-4 py-3.5'} flex items-start gap-3 transition-colors ${accent.hover}`}
       >
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className={`font-semibold text-slate-800 leading-tight ${compact ? 'text-sm' : 'text-[15px]'}`}>
+            <span className={`font-semibold text-slate-800 leading-tight ${dense ? 'text-[13px]' : compact ? 'text-sm' : 'text-[15px]'}`}>
               {project.companyName}
             </span>
             {project._edited && (
@@ -181,7 +182,7 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
             )}
           </div>
 
-          {(nreClass || project.isInternal) && (
+          {!dense && (nreClass || project.isInternal) && (
             <div className="mt-1.5 flex items-center gap-1.5 flex-wrap">
               {nreClass && (
                 <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded border leading-none ${nreClass}`}>
@@ -196,12 +197,12 @@ export function RdProjectCard({ project, files, onAddNote, onEditBase, compact }
             </div>
           )}
 
-          {project.application && (
+          {!dense && project.application && (
             <p className="text-xs text-slate-400 mt-0.5 truncate">{project.application}</p>
           )}
 
           {project.projectStatus && (
-            <p className={`text-xs font-medium mt-1.5 leading-snug line-clamp-2 ${accent.text}`}>
+            <p className={`font-medium leading-snug line-clamp-2 ${dense ? 'text-[11px] mt-1' : 'text-xs mt-1.5'} ${accent.text}`}>
               {project.projectStatus}
             </p>
           )}

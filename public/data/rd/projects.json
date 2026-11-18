@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T19:18:47.808Z",
+  "generated": "2026-11-18T00:05:22.399Z",
   "tier1": [
     {
       "id": "fearsome",
@@ -10,17 +10,23 @@
       "lastUpdated": "2026-10-19",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [
+        "Ethan"
+      ],
       "notes": []
     },
     {
       "id": "alcon",
       "companyName": "Alcon",
       "application": "Contact/IoL",
-      "projectStatus": "Meeting 10/5/26. Silq to perform feasibility on Extracted Lenses",
+      "projectStatus": "Awaiting cell adhesion procedure. Audrey working on lense CA",
       "tier": 1,
-      "lastUpdated": "2026-10-07",
+      "lastUpdated": "2026-11-17",
       "nreStatus": "Feasibility Initiated",
       "isInternal": false,
+      "owners": [
+        "Audrey"
+      ],
       "notes": [],
       "logoPath": "/images/rd-logos/alcon.svg"
     },
@@ -33,6 +39,121 @@
       "lastUpdated": "2026-11-16",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [
+        "Na"
+      ],
+      "notes": []
+    },
+    {
+      "id": "medicone",
+      "companyName": "Medicone",
+      "application": "Gastric Balloon",
+      "projectStatus": "Inflation Parts received 11/12. Na to perform feasibility",
+      "tier": 1,
+      "lastUpdated": "2026-11-15",
+      "nreStatus": "Feasibility Initiated",
+      "isInternal": false,
+      "owners": [
+        "Na"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-coating",
+      "companyName": "Ureteral Stent Coating",
+      "application": "Ureteral Stent",
+      "projectStatus": "Optimization",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-tensile",
+      "companyName": "Ureteral Stent Tensile",
+      "application": "Ureteral Stent",
+      "projectStatus": "Min to test 1 Sample on Instron",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [
+        "Min"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-retention",
+      "companyName": "Ureteral Stent Retention",
+      "application": "Ureteral Stent",
+      "projectStatus": "Min to evaluate (potentially on 2nd iteration)",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [
+        "Min"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-radioopacity",
+      "companyName": "Ureteral Stent Radioopacity",
+      "application": "Ureteral Stent",
+      "projectStatus": "Brian to send to Dr Baldwin, Min to check in with former advisor",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [
+        "Brian",
+        "Min"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-biofilm",
+      "companyName": "Ureteral Stent Biofilm",
+      "application": "Ureteral Stent",
+      "projectStatus": "Develop Test Method",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [
+        "Ethan"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-encrustation",
+      "companyName": "Ureteral Stent Encrustation",
+      "application": "Ureteral Stent",
+      "projectStatus": "Determine what chemicals required & ordering",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [
+        "Ethan",
+        "Na",
+        "Audrey",
+        "Bella"
+      ],
+      "notes": []
+    },
+    {
+      "id": "ureteral-stent-friction-force",
+      "companyName": "Ureteral Stent Friction Force",
+      "application": "Ureteral Stent",
+      "projectStatus": "Evaluate after coating process optimized",
+      "tier": 1,
+      "lastUpdated": "2026-11-16",
+      "nreStatus": "Internal",
+      "isInternal": true,
+      "owners": [],
       "notes": []
     }
   ],
@@ -41,11 +162,12 @@
       "id": "ab",
       "companyName": "AB",
       "application": "Cochlear Implant",
-      "projectStatus": "explore simulated fouling & roughened platinum",
+      "projectStatus": "Explore simulated fouling & roughened platinum. Receiving roughening recipe 11/18",
       "tier": 2,
       "lastUpdated": "2026-11-14",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/ab.svg"
     },
@@ -58,6 +180,7 @@
       "lastUpdated": "2026-11-10",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/neptune.png"
     },
@@ -65,24 +188,16 @@
       "id": "aspero",
       "companyName": "Aspero",
       "application": "Endoscope Tubing",
-      "projectStatus": "send sample & follow up on testing",
+      "projectStatus": "Brian to send email asking about new sample testing",
       "tier": 2,
       "lastUpdated": "2026-11-14",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [
+        "Brian"
+      ],
       "notes": [],
       "logoPath": "/images/rd-logos/aspero.jpg"
-    },
-    {
-      "id": "medicone",
-      "companyName": "Medicone",
-      "application": "Gastric Balloon",
-      "projectStatus": "Gastric Balloon. Needs to be inflated before coating. Inflation parts being sent",
-      "tier": 2,
-      "lastUpdated": "2026-10-05",
-      "nreStatus": "Feasibility Initiated",
-      "isInternal": false,
-      "notes": []
     },
     {
       "id": "p-trap",
@@ -93,17 +208,10 @@
       "lastUpdated": "2026-11-04",
       "nreStatus": "Internal",
       "isInternal": true,
-      "notes": []
-    },
-    {
-      "id": "ureteral-stent",
-      "companyName": "Ureteral Stent",
-      "application": "Ureteral Stent",
-      "projectStatus": "send samples to Dr Baldwin",
-      "tier": 2,
-      "lastUpdated": "2026-11-16",
-      "nreStatus": "Internal",
-      "isInternal": true,
+      "owners": [
+        "Ethan",
+        "Brian"
+      ],
       "notes": []
     }
   ],
@@ -117,6 +225,7 @@
       "lastUpdated": "2026-09-15",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [],
       "notes": []
     },
     {
@@ -126,8 +235,9 @@
       "projectStatus": "Awaiting Response on quote + samples",
       "tier": 3,
       "lastUpdated": "2026-09-15",
-      "nreStatus": "Quote Sent",
+      "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/mayo-clinic.svg"
     },
@@ -140,6 +250,7 @@
       "lastUpdated": "2026-10-04",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/boston-scientific.svg"
     },
@@ -152,6 +263,7 @@
       "lastUpdated": "2026-10-01",
       "nreStatus": "Quote Sent",
       "isInternal": false,
+      "owners": [],
       "notes": []
     },
     {
@@ -163,6 +275,7 @@
       "lastUpdated": "2026-09-15",
       "nreStatus": "Feasibility Initiated",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/liqid-medical.svg"
     },
@@ -175,6 +288,7 @@
       "lastUpdated": "2026-09-01",
       "nreStatus": "Quote Sent",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/bmc.png"
     },
@@ -187,6 +301,7 @@
       "lastUpdated": "2026-09-01",
       "nreStatus": "Paid",
       "isInternal": false,
+      "owners": [],
       "notes": [],
       "logoPath": "/images/rd-logos/choc.svg"
     }
